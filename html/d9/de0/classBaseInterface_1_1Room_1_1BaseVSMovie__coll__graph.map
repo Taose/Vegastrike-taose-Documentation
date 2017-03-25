@@ -1,0 +1,5 @@
+<map id="BaseInterface::Room::BaseVSMovie" name="BaseInterface::Room::BaseVSMovie">
+<area shape="rect" id="node2" href="$df/da2/classBaseInterface_1_1Room_1_1BaseVSSprite.html" title="{BaseInterface::Room\l::BaseVSSprite\n|+ soundsource\l|+ Draw()\l+ ~BaseVSSprite()\l+ BaseVSSprite()\l+ SetSprite()\l+ SetPos()\l+ SetSize()\l+ SetTime()\l+ isPlaying()\l# BaseVSSprite()\l}" alt="" coords="164,292,311,501"/>
+<area shape="rect" id="node3" href="$df/db7/classBaseInterface_1_1Room_1_1BaseObj.html" title="{BaseInterface::Room\l::BaseObj\n|+ index\l|+ Draw()\l+ ~BaseObj()\l+ BaseObj()\l}" alt="" coords="5,57,152,178"/>
+<area shape="rect" id="node4" href="$d0/d8d/classVSSprite.html" title="{VSSprite\n||+ VSSprite()\l+ VSSprite()\l+ VSSprite()\l+ ~VSSprite()\l+ LoadSuccess()\l+ Draw()\l+ DrawHere()\l+ Rotate()\l+ SetRotation()\l+ GetRotation()\land 15 more...\l}" alt="" coords="177,5,298,229"/>
+</map>

@@ -1,0 +1,245 @@
+\hypertarget{classTexture}{}\section{Texture Class Reference}
+\label{classTexture}\index{Texture@{Texture}}
+
+
+{\ttfamily \#include $<$aux\+\_\+texture.\+h$>$}
+
+
+
+Inheritance diagram for Texture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d3e/classTexture__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Texture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d5c/classTexture__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries File\+Not\+Found} (const std\+::string \&)\hypertarget{classTexture_a3b498b3b776cec2c43776f747edcbc08}{}\label{classTexture_a3b498b3b776cec2c43776f747edcbc08}
+
+\item 
+G\+F\+X\+B\+O\+OL \hyperlink{classTexture_ac99df9f719e9a2827996b0b103de567c}{checkold} (const std\+::string \&s, bool shared, std\+::string \&hashname)\hypertarget{classTexture_ac99df9f719e9a2827996b0b103de567c}{}\label{classTexture_ac99df9f719e9a2827996b0b103de567c}
+
+\begin{DoxyCompactList}\small\item\em Returns if this texture is actually already loaded. \end{DoxyCompactList}\item 
+void {\bfseries modold} (const std\+::string \&s, bool shared, std\+::string \&hashname)\hypertarget{classTexture_a8c3995e4bfe9f63861927e69a5efc542}{}\label{classTexture_a8c3995e4bfe9f63861927e69a5efc542}
+
+\item 
+void \hyperlink{classTexture_afd58d306700b125c3b950e188c5d9ebf}{setold} ()\hypertarget{classTexture_afd58d306700b125c3b950e188c5d9ebf}{}\label{classTexture_afd58d306700b125c3b950e188c5d9ebf}
+
+\begin{DoxyCompactList}\small\item\em Loads the old texture. \end{DoxyCompactList}\item 
+bool {\bfseries checkbad} (const string \&s)\hypertarget{classTexture_aee814d208d5cc0cf33852f22b1c78293}{}\label{classTexture_aee814d208d5cc0cf33852f22b1c78293}
+
+\item 
+void {\bfseries setbad} (const string \&s)\hypertarget{classTexture_afb3ee7b2f78e50775209c9fbffec671d}{}\label{classTexture_afb3ee7b2f78e50775209c9fbffec671d}
+
+\item 
+void \hyperlink{classTexture_af5fe76ea4a6c966f825179f8401f71ef}{Init\+Texture} ()\hypertarget{classTexture_af5fe76ea4a6c966f825179f8401f71ef}{}\label{classTexture_af5fe76ea4a6c966f825179f8401f71ef}
+
+\begin{DoxyCompactList}\small\item\em Inits the class with default values. \end{DoxyCompactList}\item 
+int \hyperlink{classTexture_a61ad536db7446e794f7029b79216a301}{Bind} (\hyperlink{classTexture}{Texture} $\ast$other, int maxdimension=65536, G\+F\+X\+B\+O\+OL detailtexture=G\+F\+X\+F\+A\+L\+SE)\hypertarget{classTexture_a61ad536db7446e794f7029b79216a301}{}\label{classTexture_a61ad536db7446e794f7029b79216a301}
+
+\begin{DoxyCompactList}\small\item\em Binds this texture to the same name as the given texture -\/ for multipart textures. \end{DoxyCompactList}\item 
+\hyperlink{classTexture_ab06b53898d40d647c57b87f5f52238e2}{Texture} (int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}=0, enum F\+I\+L\+T\+ER mipmap=M\+I\+P\+M\+AP, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+ET target=T\+E\+X\+T\+U\+R\+E2D, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+A\+R\+G\+ET imagetarget=T\+E\+X\+T\+U\+R\+E\+\_\+2D, enum A\+D\+D\+R\+E\+S\+S\+M\+O\+DE \hyperlink{classTexture_af3605a5ea18f32b7669cf0db94b12fe6}{address\+\_\+mode}=D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+O\+DE)\hypertarget{classTexture_ab06b53898d40d647c57b87f5f52238e2}{}\label{classTexture_ab06b53898d40d647c57b87f5f52238e2}
+
+\begin{DoxyCompactList}\small\item\em Creates an unbounded texture. Set data and dimensions before binding. Or explicitly load a file. \end{DoxyCompactList}\item 
+\hyperlink{classTexture_a22e32e2bfe52be64ca89206a1e18672e}{Texture} (const char $\ast$, const char $\ast$, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}=0, enum F\+I\+L\+T\+ER mipmap=M\+I\+P\+M\+AP, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+ET target=T\+E\+X\+T\+U\+R\+E2D, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+A\+R\+G\+ET imagetarget=T\+E\+X\+T\+U\+R\+E\+\_\+2D, float alpha=1, int zeroval=0, G\+F\+X\+B\+O\+OL force=G\+F\+X\+F\+A\+L\+SE, int max\+\_\+dimension\+\_\+size=65536, G\+F\+X\+B\+O\+OL detail\+\_\+texture=G\+F\+X\+F\+A\+L\+SE, G\+F\+X\+B\+O\+OL nocache=false, enum A\+D\+D\+R\+E\+S\+S\+M\+O\+DE \hyperlink{classTexture_af3605a5ea18f32b7669cf0db94b12fe6}{address\+\_\+mode}=D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+O\+DE, \hyperlink{classTexture}{Texture} $\ast$main=0)\hypertarget{classTexture_a22e32e2bfe52be64ca89206a1e18672e}{}\label{classTexture_a22e32e2bfe52be64ca89206a1e18672e}
+
+\begin{DoxyCompactList}\small\item\em Creates a texture with a single bitmap as color data and another grayscale .bmp as alpha data. \end{DoxyCompactList}\item 
+\hyperlink{classTexture_ab99bca7c7a33ab105a90cbedbb911011}{Texture} (const char $\ast$File\+Name, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}=0, enum F\+I\+L\+T\+ER mipmap=M\+I\+P\+M\+AP, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+ET target=T\+E\+X\+T\+U\+R\+E2D, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+A\+R\+G\+ET imagetarget=T\+E\+X\+T\+U\+R\+E\+\_\+2D, G\+F\+X\+B\+O\+OL force=G\+F\+X\+F\+A\+L\+SE, int max\+\_\+dimension\+\_\+size=65536, G\+F\+X\+B\+O\+OL detail\+\_\+texture=G\+F\+X\+F\+A\+L\+SE, G\+F\+X\+B\+O\+OL nocache=false, enum A\+D\+D\+R\+E\+S\+S\+M\+O\+DE \hyperlink{classTexture_af3605a5ea18f32b7669cf0db94b12fe6}{address\+\_\+mode}=D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+O\+DE, \hyperlink{classTexture}{Texture} $\ast$main=0)\hypertarget{classTexture_ab99bca7c7a33ab105a90cbedbb911011}{}\label{classTexture_ab99bca7c7a33ab105a90cbedbb911011}
+
+\begin{DoxyCompactList}\small\item\em Creates a texture with only color data as a single bitmap. \end{DoxyCompactList}\item 
+{\bfseries Texture} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} $\ast$f, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}=0, enum F\+I\+L\+T\+ER mipmap=M\+I\+P\+M\+AP, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+ET target=T\+E\+X\+T\+U\+R\+E2D, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+A\+R\+G\+ET imagetarget=T\+E\+X\+T\+U\+R\+E\+\_\+2D, G\+F\+X\+B\+O\+OL force=G\+F\+X\+F\+A\+L\+SE, int max\+\_\+dimension\+\_\+size=65536, G\+F\+X\+B\+O\+OL detail\+\_\+texture=G\+F\+X\+F\+A\+L\+SE, G\+F\+X\+B\+O\+OL nocache=false, enum A\+D\+D\+R\+E\+S\+S\+M\+O\+DE \hyperlink{classTexture_af3605a5ea18f32b7669cf0db94b12fe6}{address\+\_\+mode}=D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+O\+DE, \hyperlink{classTexture}{Texture} $\ast$main=0)\hypertarget{classTexture_ac3709238a9d466ffe0e0c76e07ba8985}{}\label{classTexture_ac3709238a9d466ffe0e0c76e07ba8985}
+
+\item 
+void {\bfseries Load} (const char $\ast$, const char $\ast$, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}=0, enum F\+I\+L\+T\+ER mipmap=M\+I\+P\+M\+AP, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+ET target=T\+E\+X\+T\+U\+R\+E2D, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+A\+R\+G\+ET imagetarget=T\+E\+X\+T\+U\+R\+E\+\_\+2D, float alpha=1, int zeroval=0, G\+F\+X\+B\+O\+OL force=G\+F\+X\+F\+A\+L\+SE, int max\+\_\+dimension\+\_\+size=65536, G\+F\+X\+B\+O\+OL detail\+\_\+texture=G\+F\+X\+F\+A\+L\+SE, G\+F\+X\+B\+O\+OL nocache=false, enum A\+D\+D\+R\+E\+S\+S\+M\+O\+DE \hyperlink{classTexture_af3605a5ea18f32b7669cf0db94b12fe6}{address\+\_\+mode}=D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+O\+DE, \hyperlink{classTexture}{Texture} $\ast$main=0)\hypertarget{classTexture_a9fedcad630f2aa5e5f629759447728aa}{}\label{classTexture_a9fedcad630f2aa5e5f629759447728aa}
+
+\item 
+void {\bfseries Load} (const char $\ast$File\+Name, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}=0, enum F\+I\+L\+T\+ER mipmap=M\+I\+P\+M\+AP, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+ET target=T\+E\+X\+T\+U\+R\+E2D, enum T\+E\+X\+T\+U\+R\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+A\+R\+G\+ET imagetarget=T\+E\+X\+T\+U\+R\+E\+\_\+2D, G\+F\+X\+B\+O\+OL force=G\+F\+X\+F\+A\+L\+SE, int max\+\_\+dimension\+\_\+size=65536, G\+F\+X\+B\+O\+OL detail\+\_\+texture=G\+F\+X\+F\+A\+L\+SE, G\+F\+X\+B\+O\+OL nocache=false, enum A\+D\+D\+R\+E\+S\+S\+M\+O\+DE \hyperlink{classTexture_af3605a5ea18f32b7669cf0db94b12fe6}{address\+\_\+mode}=D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+O\+DE, \hyperlink{classTexture}{Texture} $\ast$main=0)\hypertarget{classTexture_abb770d07e43571cb3356e2be331ad41b}{}\label{classTexture_abb770d07e43571cb3356e2be331ad41b}
+
+\item 
+virtual const \hyperlink{classTexture}{Texture} $\ast$ {\bfseries Original} () const \hypertarget{classTexture_a36e363bd778ddff0e7085eb9ab8ee60a}{}\label{classTexture_a36e363bd778ddff0e7085eb9ab8ee60a}
+
+\item 
+virtual \hyperlink{classTexture}{Texture} $\ast$ {\bfseries Original} ()\hypertarget{classTexture_a758598c87efbf7233145349247963d57}{}\label{classTexture_a758598c87efbf7233145349247963d57}
+
+\item 
+virtual \hyperlink{classTexture}{Texture} $\ast$ {\bfseries Clone} ()\hypertarget{classTexture_a15a4db24b3483becd6a69bae7a59a812}{}\label{classTexture_a15a4db24b3483becd6a69bae7a59a812}
+
+\item 
+virtual \hyperlink{classTexture_a09c4bcb7462f64c1d20fa69dba3cee8a}{$\sim$\+Texture} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTexture}{Texture} copy constructor that increases appropriate refcounts. \end{DoxyCompactList}\item 
+virtual unsigned int {\bfseries num\+Frames} () const \hypertarget{classTexture_a7712a1c9134f080fc43d2c5b16bd94b5}{}\label{classTexture_a7712a1c9134f080fc43d2c5b16bd94b5}
+
+\item 
+virtual double {\bfseries cur\+Time} () const \hypertarget{classTexture_a8f6192089c6b5f04ba046a010bc53afc}{}\label{classTexture_a8f6192089c6b5f04ba046a010bc53afc}
+
+\item 
+virtual void {\bfseries set\+Time} (double tim)\hypertarget{classTexture_ab8f40937156cac9d36d16e64a5ce2194}{}\label{classTexture_ab8f40937156cac9d36d16e64a5ce2194}
+
+\item 
+virtual float {\bfseries frames\+Per\+Second} () const \hypertarget{classTexture_a0a34172dfe3326baa5bf0e59dda7b2c9}{}\label{classTexture_a0a34172dfe3326baa5bf0e59dda7b2c9}
+
+\item 
+virtual unsigned int {\bfseries num\+Layers} () const \hypertarget{classTexture_a1137cd82c92f457e46debd7472947852}{}\label{classTexture_a1137cd82c92f457e46debd7472947852}
+
+\item 
+virtual unsigned int {\bfseries num\+Passes} () const \hypertarget{classTexture_a79f2e10209e75f5c3587ce789f2319f1}{}\label{classTexture_a79f2e10209e75f5c3587ce789f2319f1}
+
+\item 
+virtual bool {\bfseries can\+Multi\+Pass} () const \hypertarget{classTexture_ad69491cb5a9f9af2c33db44126185ad8}{}\label{classTexture_ad69491cb5a9f9af2c33db44126185ad8}
+
+\item 
+virtual bool {\bfseries const\+Frame\+Rate} () const \hypertarget{classTexture_a88e17a2c2e99b8053ec65fd5ef980bdf}{}\label{classTexture_a88e17a2c2e99b8053ec65fd5ef980bdf}
+
+\item 
+int {\bfseries get\+Stage} () const \hypertarget{classTexture_a446c438652b64c3fd33af5cf6e22608e}{}\label{classTexture_a446c438652b64c3fd33af5cf6e22608e}
+
+\item 
+int {\bfseries get\+Filter} () const \hypertarget{classTexture_acb7966f4de6d05b3a781dbf393da8545}{}\label{classTexture_acb7966f4de6d05b3a781dbf393da8545}
+
+\item 
+int {\bfseries get\+Target} () const \hypertarget{classTexture_aa158d6436ea204b3bc0550b856ec7e64}{}\label{classTexture_aa158d6436ea204b3bc0550b856ec7e64}
+
+\item 
+int {\bfseries get\+Image\+Target} () const \hypertarget{classTexture_aaebcc99c95b8c4d42e6d125815c62574}{}\label{classTexture_aaebcc99c95b8c4d42e6d125815c62574}
+
+\item 
+bool \hyperlink{classTexture_a1e091aa3df9fc30ecc304b196e30aed3}{operator$<$} (const \hyperlink{classTexture}{Texture} \&b) const \hypertarget{classTexture_a1e091aa3df9fc30ecc304b196e30aed3}{}\label{classTexture_a1e091aa3df9fc30ecc304b196e30aed3}
+
+\begin{DoxyCompactList}\small\item\em A way to sort the texture by the original address (to make sure like textures stick togehter. \end{DoxyCompactList}\item 
+bool \hyperlink{classTexture_a7f0ed892596465c2ae15198cb190d4e6}{operator==} (const \hyperlink{classTexture}{Texture} \&b) const \hypertarget{classTexture_a7f0ed892596465c2ae15198cb190d4e6}{}\label{classTexture_a7f0ed892596465c2ae15198cb190d4e6}
+
+\begin{DoxyCompactList}\small\item\em A way to test if the texture is equal to another based on original values. \end{DoxyCompactList}\item 
+void \hyperlink{classTexture_a55ace9fa6d4c6abf95e675da0b61eec0}{set\+Reference} (\hyperlink{classTexture}{Texture} $\ast$other)\hypertarget{classTexture_a55ace9fa6d4c6abf95e675da0b61eec0}{}\label{classTexture_a55ace9fa6d4c6abf95e675da0b61eec0}
+
+\begin{DoxyCompactList}\small\item\em Make this instance a reference of \char`\"{}other\char`\"{}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classTexture_a523bfee50afd5493517b766a7f2e3353}{Make\+Active} ()\hypertarget{classTexture_a523bfee50afd5493517b766a7f2e3353}{}\label{classTexture_a523bfee50afd5493517b766a7f2e3353}
+
+\begin{DoxyCompactList}\small\item\em Binds the texture in the G\+FX library. \end{DoxyCompactList}\item 
+virtual void {\bfseries Make\+Active} (int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage})\hypertarget{classTexture_ae083c91307c6c90808716512a47d36f9}{}\label{classTexture_ae083c91307c6c90808716512a47d36f9}
+
+\item 
+virtual void {\bfseries Make\+Active} (int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}, int pass)\hypertarget{classTexture_a1ae482eda855a59c51d4107c5f999257}{}\label{classTexture_a1ae482eda855a59c51d4107c5f999257}
+
+\item 
+virtual bool {\bfseries Setup\+Pass} (int pass, const enum B\+L\+E\+N\+D\+F\+U\+NC src, const enum B\+L\+E\+N\+D\+F\+U\+NC dst)\hypertarget{classTexture_a7e666fc7111ec55f5f697b54b09ad8e2}{}\label{classTexture_a7e666fc7111ec55f5f697b54b09ad8e2}
+
+\item 
+virtual bool {\bfseries Setup\+Pass} (int pass, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}, const enum B\+L\+E\+N\+D\+F\+U\+NC src, const enum B\+L\+E\+N\+D\+F\+U\+NC dst)\hypertarget{classTexture_af1317a9badd9f131e7efd0fda4bb84a7}{}\label{classTexture_af1317a9badd9f131e7efd0fda4bb84a7}
+
+\item 
+virtual bool \hyperlink{classTexture_afaf6605b891adcd286a1f5cba1a4eb8b}{Load\+Success} ()\hypertarget{classTexture_afaf6605b891adcd286a1f5cba1a4eb8b}{}\label{classTexture_afaf6605b891adcd286a1f5cba1a4eb8b}
+
+\begin{DoxyCompactList}\small\item\em If the texture has loaded properly returns true. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classTexture_a9d88413bd0033594e3387337e49569b1}{Prioritize} (float)\hypertarget{classTexture_a9d88413bd0033594e3387337e49569b1}{}\label{classTexture_a9d88413bd0033594e3387337e49569b1}
+
+\begin{DoxyCompactList}\small\item\em Changes priority of texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classTexture}{Texture} $\ast$ \hyperlink{classTexture_a75eeb31b81520a95d67659d780e0bddb}{Exists} (std\+::string s)\hypertarget{classTexture_a75eeb31b81520a95d67659d780e0bddb}{}\label{classTexture_a75eeb31b81520a95d67659d780e0bddb}
+
+\begin{DoxyCompactList}\small\item\em Whether or not the string exists as a texture. \end{DoxyCompactList}\item 
+static \hyperlink{classTexture}{Texture} $\ast$ \hyperlink{classTexture_ac937a48949ff7105281199958b549065}{Exists} (std\+::string s, std\+::string a)\hypertarget{classTexture_ac937a48949ff7105281199958b549065}{}\label{classTexture_ac937a48949ff7105281199958b549065}
+
+\begin{DoxyCompactList}\small\item\em Whether or not the color and alpha data already exist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSharedPool_1_1Reference}{String\+Pool\+::\+Reference} \hyperlink{classTexture_aea05e2470a26a6b4c5b42b5e5709e6f8}{texfilename}\hypertarget{classTexture_aea05e2470a26a6b4c5b42b5e5709e6f8}{}\label{classTexture_aea05e2470a26a6b4c5b42b5e5709e6f8}
+
+\begin{DoxyCompactList}\small\item\em The file name used to load this texture. \end{DoxyCompactList}\item 
+enum F\+I\+L\+T\+ER \hyperlink{classTexture_a6d6d79e546a62f8103aa4a74a419e713}{ismipmapped}\hypertarget{classTexture_a6d6d79e546a62f8103aa4a74a419e713}{}\label{classTexture_a6d6d79e546a62f8103aa4a74a419e713}
+
+\begin{DoxyCompactList}\small\item\em the filter mode of this texture \end{DoxyCompactList}\item 
+unsigned char $\ast$ \hyperlink{classTexture_ab0308cd773b72a1ba4e061f2145f5bfc}{data}\hypertarget{classTexture_ab0308cd773b72a1ba4e061f2145f5bfc}{}\label{classTexture_ab0308cd773b72a1ba4e061f2145f5bfc}
+
+\begin{DoxyCompactList}\small\item\em The data of this texture (used in between functions, deleted) \end{DoxyCompactList}\item 
+int \hyperlink{classTexture_a7a67d7de5c0c57db884feb4d7228aaf0}{name}\hypertarget{classTexture_a7a67d7de5c0c57db884feb4d7228aaf0}{}\label{classTexture_a7a67d7de5c0c57db884feb4d7228aaf0}
+
+\begin{DoxyCompactList}\small\item\em The G\+F\+Xname of this texture. \end{DoxyCompactList}\item 
+int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}\hypertarget{classTexture_aa38999434f9fcf409ca20b4523852b7b}{}\label{classTexture_aa38999434f9fcf409ca20b4523852b7b}
+
+\begin{DoxyCompactList}\small\item\em The multitexture stage of this texture. \end{DoxyCompactList}\item 
+Vector \hyperlink{classTexture_a4dc650c6fc7b876b6231f6f0b0696c03}{mintcoord}\hypertarget{classTexture_a4dc650c6fc7b876b6231f6f0b0696c03}{}\label{classTexture_a4dc650c6fc7b876b6231f6f0b0696c03}
+
+\begin{DoxyCompactList}\small\item\em The minimum/maximum texturing coordinates for this texture (have in mind that it is not always enforce, ie. for meshes) (i=s, j=t, k=u) \end{DoxyCompactList}\item 
+Vector {\bfseries maxtcoord}\hypertarget{classTexture_a996cdd4622e301d17c36033e5b3ac59d}{}\label{classTexture_a996cdd4622e301d17c36033e5b3ac59d}
+
+\item 
+\hyperlink{classTexture}{Texture} $\ast$ \hyperlink{classTexture_a46f17f1846a20ed29ac78431d9f1c73b}{original}\hypertarget{classTexture_a46f17f1846a20ed29ac78431d9f1c73b}{}\label{classTexture_a46f17f1846a20ed29ac78431d9f1c73b}
+
+\begin{DoxyCompactList}\small\item\em The original data that would represent this texture. \end{DoxyCompactList}\item 
+bool \hyperlink{classTexture_aa6c1c659fed7f20e7c01c7299f55efc1}{bound}\hypertarget{classTexture_aa6c1c659fed7f20e7c01c7299f55efc1}{}\label{classTexture_aa6c1c659fed7f20e7c01c7299f55efc1}
+
+\begin{DoxyCompactList}\small\item\em For re-\/biding. \end{DoxyCompactList}\item 
+uint {\bfseries bound\+SizeX}\hypertarget{classTexture_acdcfd172fd8f9311c2199f8ba002b3fe}{}\label{classTexture_acdcfd172fd8f9311c2199f8ba002b3fe}
+
+\item 
+uint {\bfseries bound\+SizeY}\hypertarget{classTexture_ac02a8de3287fb6310b774ad1cd1adf38}{}\label{classTexture_ac02a8de3287fb6310b774ad1cd1adf38}
+
+\item 
+V\+S\+Image\+Mode {\bfseries bound\+Mode}\hypertarget{classTexture_a718baa12e337a272acf252ff3c0d4c32}{}\label{classTexture_a718baa12e337a272acf252ff3c0d4c32}
+
+\item 
+int \hyperlink{classTexture_ab9b8539453dedc8763c5395be406dee6}{refcount}\hypertarget{classTexture_ab9b8539453dedc8763c5395be406dee6}{}\label{classTexture_ab9b8539453dedc8763c5395be406dee6}
+
+\begin{DoxyCompactList}\small\item\em The number of references on the original data. \end{DoxyCompactList}\item 
+enum T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+A\+R\+G\+ET \hyperlink{classTexture_ae2c36cb036ba6661e8e1e3281f63a204}{texture\+\_\+target}\hypertarget{classTexture_ae2c36cb036ba6661e8e1e3281f63a204}{}\label{classTexture_ae2c36cb036ba6661e8e1e3281f63a204}
+
+\begin{DoxyCompactList}\small\item\em The target this will go to (cubemap or otherwise) \end{DoxyCompactList}\item 
+enum T\+E\+X\+T\+U\+R\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+A\+R\+G\+ET {\bfseries image\+\_\+target}\hypertarget{classTexture_aece3d961e45967bd6bcf6f1b88e82de9}{}\label{classTexture_aece3d961e45967bd6bcf6f1b88e82de9}
+
+\item 
+enum A\+D\+D\+R\+E\+S\+S\+M\+O\+DE \hyperlink{classTexture_af3605a5ea18f32b7669cf0db94b12fe6}{address\+\_\+mode}\hypertarget{classTexture_af3605a5ea18f32b7669cf0db94b12fe6}{}\label{classTexture_af3605a5ea18f32b7669cf0db94b12fe6}
+
+\begin{DoxyCompactList}\small\item\em The address mode being used with this texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classTexture_ad7796654adb56565345c8c3b72435d9e}{Bind} (int maxdimension, G\+F\+X\+B\+O\+OL detailtexture)\hypertarget{classTexture_ad7796654adb56565345c8c3b72435d9e}{}\label{classTexture_ad7796654adb56565345c8c3b72435d9e}
+
+\begin{DoxyCompactList}\small\item\em Binds this texture to G\+FX library. \end{DoxyCompactList}\item 
+void \hyperlink{classTexture_a33fc12d5a64480dc06dba802f77b7482}{Un\+Bind} ()\hypertarget{classTexture_a33fc12d5a64480dc06dba802f77b7482}{}\label{classTexture_a33fc12d5a64480dc06dba802f77b7482}
+
+\begin{DoxyCompactList}\small\item\em Un\+Binds from G\+FX library. \end{DoxyCompactList}\item 
+void \hyperlink{classTexture_a6e958c2bef6f438f357bb4a3764fe478}{Transfer} (int maxdimension, G\+F\+X\+B\+O\+OL detailtexture)\hypertarget{classTexture_a6e958c2bef6f438f357bb4a3764fe478}{}\label{classTexture_a6e958c2bef6f438f357bb4a3764fe478}
+
+\begin{DoxyCompactList}\small\item\em Transfers this texture to G\+FX library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The texture class defines a method of loading bitmap textures It also defines a hash table in which textures are kept and looked up to prevent the loading of duplicate textures 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Texture@{Texture}!````~Texture@{$\sim$\+Texture}}
+\index{````~Texture@{$\sim$\+Texture}!Texture@{Texture}}
+\subsubsection[{\texorpdfstring{$\sim$\+Texture()}{~Texture()}}]{\setlength{\rightskip}{0pt plus 5cm}Texture\+::$\sim$\+Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classTexture_a09c4bcb7462f64c1d20fa69dba3cee8a}{}\label{classTexture_a09c4bcb7462f64c1d20fa69dba3cee8a}
+
+
+\hyperlink{classTexture}{Texture} copy constructor that increases appropriate refcounts. 
+
+Destructor for texture D\+E\+P\+R\+E\+C\+A\+T\+ED if(data != N\+U\+LL) \{ delete \mbox{[}\mbox{]} data;
+
+data = N\+U\+LL; \}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/aux\+\_\+texture.\+h\item 
+gfx/aux\+\_\+texture.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="VsnetDownload::Client::Notify" name="VsnetDownload::Client::Notify">
+<area shape="rect" id="node2" href="$d4/da3/classVsnetDownload_1_1Client_1_1FileSet_1_1NotifyConclusion.html" title="{VsnetDownload::Client\l::FileSet::NotifyConclusion\n||+ NotifyConclusion()\l+ ~NotifyConclusion()\l+ notify()\l}" alt="" coords="5,219,184,340"/>
+<area shape="rect" id="node3" href="$d6/dc5/classVsnetDownload_1_1Client_1_1Notify__f.html" title="{VsnetDownload::Client\l::Notify_f\n||+ Notify_f()\l+ ~Notify_f()\l+ notify()\l+ setTotalBytes()\l+ addBytes()\l}" alt="" coords="209,204,365,355"/>
+<area shape="rect" id="node4" href="$d1/dc5/classVsnetDownload_1_1Client_1_1NotifyMe.html" title="{VsnetDownload::Client\l::NotifyMe\n||+ NotifyMe()\l+ ~NotifyMe()\l+ notify()\l+ setTotalBytes()\l+ addBytes()\l+ done()\l+ ok()\l+ total()\l+ offset()\l}" alt="" coords="389,175,545,384"/>
+<area shape="rect" id="node6" href="$d4/db4/classVsnetDownload_1_1Client_1_1VSNotify.html" title="{VsnetDownload::Client\l::VSNotify\n||+ notify()\l+ setTotalBytes()\l+ addBytes()\l}" alt="" coords="569,219,725,340"/>
+<area shape="rect" id="node5" href="$de/ddf/classVsnetDownload_1_1Client_1_1TestItem.html" title="{VsnetDownload::Client\l::TestItem\n||+ TestItem()\l+ ~TestItem()\l# childSetSize()\l# childAppend()\l}" alt="" coords="389,432,545,568"/>
+</map>

@@ -1,0 +1,162 @@
+\hypertarget{classNavPath}{}\section{Nav\+Path Class Reference}
+\label{classNavPath}\index{Nav\+Path@{Nav\+Path}}
+
+
+Collaboration diagram for Nav\+Path\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d87/classNavPath__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+Absolute} () const \hypertarget{classNavPath_a5d98f6989c07d3e7e6c04ad40fefb5c2}{}\label{classNavPath_a5d98f6989c07d3e7e6c04ad40fefb5c2}
+
+\item 
+bool {\bfseries is\+Evaluated} () const \hypertarget{classNavPath_aa4f305bef6069d86d94066f1a7f98682}{}\label{classNavPath_aa4f305bef6069d86d94066f1a7f98682}
+
+\item 
+bool {\bfseries is\+Complete} () const \hypertarget{classNavPath_af2b224525e222b04ae636a41e6f6f69f}{}\label{classNavPath_af2b224525e222b04ae636a41e6f6f69f}
+
+\item 
+bool {\bfseries is\+Current\+Dependant} () const \hypertarget{classNavPath_aaa3b3eede7fb937712b20f6b2b409df9}{}\label{classNavPath_aaa3b3eede7fb937712b20f6b2b409df9}
+
+\item 
+bool {\bfseries is\+Target\+Dependant} () const \hypertarget{classNavPath_abf767e66143d51ba5a7a269fe1e82980}{}\label{classNavPath_abf767e66143d51ba5a7a269fe1e82980}
+
+\item 
+std\+::string {\bfseries get\+Description} () const \hypertarget{classNavPath_ae6ef3d064a9619e2d620e8e9a6402d15}{}\label{classNavPath_ae6ef3d064a9619e2d620e8e9a6402d15}
+
+\item 
+void {\bfseries set\+Visible} (bool vis)\hypertarget{classNavPath_af07e105cecb68d8113c71e066fd5a19d}{}\label{classNavPath_af07e105cecb68d8113c71e066fd5a19d}
+
+\item 
+void {\bfseries set\+Color} (\hyperlink{structGFXColor}{G\+F\+X\+Color} col)\hypertarget{classNavPath_a6c1d8c0c77e9a867540e0d4311b91a56}{}\label{classNavPath_a6c1d8c0c77e9a867540e0d4311b91a56}
+
+\item 
+void {\bfseries set\+Name} (std\+::string n)\hypertarget{classNavPath_ae5b0ad00646f77c9bd7335ce4c25b3ea}{}\label{classNavPath_ae5b0ad00646f77c9bd7335ce4c25b3ea}
+
+\item 
+bool {\bfseries get\+Visible} () const \hypertarget{classNavPath_a8365396d71624b3ccc752466a519d32c}{}\label{classNavPath_a8365396d71624b3ccc752466a519d32c}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries get\+Color} () const \hypertarget{classNavPath_a02b0f2de6ffc34646b05bdb8e1594431}{}\label{classNavPath_a02b0f2de6ffc34646b05bdb8e1594431}
+
+\item 
+std\+::string {\bfseries get\+Name} () const \hypertarget{classNavPath_a2499e4cda1620fc0e9e71d1b566f31b8}{}\label{classNavPath_a2499e4cda1620fc0e9e71d1b566f31b8}
+
+\item 
+bool {\bfseries set\+Source\+Node} (\hyperlink{classPathNode}{Path\+Node} $\ast$node)\hypertarget{classNavPath_a2109e531b34ba425f321646d2d657669}{}\label{classNavPath_a2109e531b34ba425f321646d2d657669}
+
+\item 
+bool {\bfseries set\+Destination\+Node} (\hyperlink{classPathNode}{Path\+Node} $\ast$node)\hypertarget{classNavPath_a0a284c0c7db854eda0af8017fdb6746d}{}\label{classNavPath_a0a284c0c7db854eda0af8017fdb6746d}
+
+\item 
+\hyperlink{classPathNode}{Path\+Node} $\ast$ {\bfseries get\+Source\+Node} ()\hypertarget{classNavPath_ac4acb59d92ec447a77a0e650af19aece}{}\label{classNavPath_ac4acb59d92ec447a77a0e650af19aece}
+
+\item 
+\hyperlink{classPathNode}{Path\+Node} $\ast$ {\bfseries get\+Destination\+Node} ()\hypertarget{classNavPath_a86ee41d99826615beddbfbd830a9659d}{}\label{classNavPath_a86ee41d99826615beddbfbd830a9659d}
+
+\item 
+const \hyperlink{classPathNode}{Path\+Node} $\ast$ {\bfseries get\+Source\+Node} () const \hypertarget{classNavPath_a68d01840244ca442d574f81e3a3ebeff}{}\label{classNavPath_a68d01840244ca442d574f81e3a3ebeff}
+
+\item 
+const \hyperlink{classPathNode}{Path\+Node} $\ast$ {\bfseries get\+Destination\+Node} () const \hypertarget{classNavPath_a9e8dd250e0d5c739d5b4343be7c4368f}{}\label{classNavPath_a9e8dd250e0d5c739d5b4343be7c4368f}
+
+\item 
+unsigned {\bfseries get\+Absolute\+Source} () const \hypertarget{classNavPath_a952b510f076d40649b4cd8807a89a1df}{}\label{classNavPath_a952b510f076d40649b4cd8807a89a1df}
+
+\item 
+unsigned {\bfseries get\+Absolute\+Destination} () const \hypertarget{classNavPath_afe8c6f05de51430516210ff8a9cc10f8}{}\label{classNavPath_afe8c6f05de51430516210ff8a9cc10f8}
+
+\item 
+const std\+::list$<$ unsigned $>$ $\ast$ {\bfseries get\+All\+Points} () const \hypertarget{classNavPath_af7cfca1b42395037a214ac5911b38b84}{}\label{classNavPath_af7cfca1b42395037a214ac5911b38b84}
+
+\item 
+std\+::list$<$ unsigned $>$ $\ast$ {\bfseries get\+All\+Points} ()\hypertarget{classNavPath_ac9b642aa9a702fe19b9a0c8ad7b32cda}{}\label{classNavPath_ac9b642aa9a702fe19b9a0c8ad7b32cda}
+
+\item 
+void {\bfseries add\+Dependant} (\hyperlink{classNavPath}{Nav\+Path} $\ast$dependant)\hypertarget{classNavPath_a11cfaf443a8cd934dbfc7c7fb74c095c}{}\label{classNavPath_a11cfaf443a8cd934dbfc7c7fb74c095c}
+
+\item 
+void {\bfseries remove\+Dependant} (\hyperlink{classNavPath}{Nav\+Path} $\ast$dependant)\hypertarget{classNavPath_a4b9be54eb74610348bde00054419227e}{}\label{classNavPath_a4b9be54eb74610348bde00054419227e}
+
+\item 
+const std\+::set$<$ \hyperlink{classNavPath}{Nav\+Path} $\ast$ $>$ $\ast$ {\bfseries get\+Dependants} () const \hypertarget{classNavPath_a3e84af9f03533a4d27aac21d0a46b3e9}{}\label{classNavPath_a3e84af9f03533a4d27aac21d0a46b3e9}
+
+\item 
+std\+::set$<$ \hyperlink{classNavPath}{Nav\+Path} $\ast$ $>$ $\ast$ {\bfseries get\+Dependants} ()\hypertarget{classNavPath_a51a93a4b1f8b86077aca55fd9317b52d}{}\label{classNavPath_a51a93a4b1f8b86077aca55fd9317b52d}
+
+\item 
+std\+::vector$<$ \hyperlink{classNavPath}{Nav\+Path} $\ast$ $>$ {\bfseries get\+Required\+Paths} () const \hypertarget{classNavPath_ab417e3cdfe7e193e757806b6e0046905}{}\label{classNavPath_ab417e3cdfe7e193e757806b6e0046905}
+
+\item 
+bool {\bfseries check\+For\+Cycles} () const \hypertarget{classNavPath_a123a2047d77aaf154035ca4a171f1a46}{}\label{classNavPath_a123a2047d77aaf154035ca4a171f1a46}
+
+\item 
+bool {\bfseries evaluate} ()\hypertarget{classNavPath_a02d9dd4ae2879b88fe806c791d7c47f7}{}\label{classNavPath_a02d9dd4ae2879b88fe806c791d7c47f7}
+
+\item 
+void {\bfseries remove\+Old\+Path} ()\hypertarget{classNavPath_ae8b283e8ee739d43d6a51b5b61351db4}{}\label{classNavPath_ae8b283e8ee739d43d6a51b5b61351db4}
+
+\item 
+void {\bfseries add\+New\+Path} ()\hypertarget{classNavPath_a268fa50e133db27d33acf607a0e59eb8}{}\label{classNavPath_a268fa50e133db27d33acf607a0e59eb8}
+
+\item 
+bool {\bfseries update} ()\hypertarget{classNavPath_ab253f2b9baf4f74eeaa82c2fe07dcc35}{}\label{classNavPath_ab253f2b9baf4f74eeaa82c2fe07dcc35}
+
+\item 
+bool {\bfseries is\+Neighbor\+Path} (unsigned system, unsigned neighbor)\hypertarget{classNavPath_a92d4544a8216c2143de21d15ef4bb286}{}\label{classNavPath_a92d4544a8216c2143de21d15ef4bb286}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries visible}\hypertarget{classNavPath_aa051d31e0e7b72df438810a214b5512c}{}\label{classNavPath_aa051d31e0e7b72df438810a214b5512c}
+
+\item 
+std\+::string {\bfseries name}\hypertarget{classNavPath_a9452b05b8ca647d405224a1a89078757}{}\label{classNavPath_a9452b05b8ca647d405224a1a89078757}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries color}\hypertarget{classNavPath_abda50432888fdfaf615a9b19caa422a0}{}\label{classNavPath_abda50432888fdfaf615a9b19caa422a0}
+
+\item 
+\hyperlink{classPathNode}{Path\+Node} $\ast$ {\bfseries source}\hypertarget{classNavPath_a17002566eb65066de5558f12931c9339}{}\label{classNavPath_a17002566eb65066de5558f12931c9339}
+
+\item 
+\hyperlink{classPathNode}{Path\+Node} $\ast$ {\bfseries destination}\hypertarget{classNavPath_a8fa9086cf104ee17330f023f9ba7d153}{}\label{classNavPath_a8fa9086cf104ee17330f023f9ba7d153}
+
+\item 
+std\+::list$<$ unsigned $>$ {\bfseries path}\hypertarget{classNavPath_aeb0459c9685eb7d3a147a00b7f1fd030}{}\label{classNavPath_aeb0459c9685eb7d3a147a00b7f1fd030}
+
+\item 
+std\+::map$<$ unsigned, std\+::pair$<$ unsigned, unsigned $>$ $>$ {\bfseries path\+Neighbors}\hypertarget{classNavPath_a6382d08080cf8289774e6326d9aead91}{}\label{classNavPath_a6382d08080cf8289774e6326d9aead91}
+
+\item 
+std\+::set$<$ \hyperlink{classNavPath}{Nav\+Path} $\ast$ $>$ {\bfseries dependants}\hypertarget{classNavPath_a3f77f3fde97eea87c767e628b7d33ab2}{}\label{classNavPath_a3f77f3fde97eea87c767e628b7d33ab2}
+
+\item 
+Topo\+Color {\bfseries topo\+Color}\hypertarget{classNavPath_a05cecbc43d63fdd324cbe451796b2a32}{}\label{classNavPath_a05cecbc43d63fdd324cbe451796b2a32}
+
+\item 
+unsigned {\bfseries topo\+Time}\hypertarget{classNavPath_a4772c5bdf55c78781adb22cdfc97b323}{}\label{classNavPath_a4772c5bdf55c78781adb22cdfc97b323}
+
+\item 
+bool {\bfseries updated}\hypertarget{classNavPath_a5c0f68654c49e0b0babbbc7c943d3e86}{}\label{classNavPath_a5c0f68654c49e0b0babbbc7c943d3e86}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Path\+Manager}\hypertarget{classNavPath_a2142fc9a622affd7844e372a514326f6}{}\label{classNavPath_a2142fc9a622affd7844e372a514326f6}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/nav/navpath.\+h\item 
+gfx/nav/navpath.\+cpp\end{DoxyCompactItemize}

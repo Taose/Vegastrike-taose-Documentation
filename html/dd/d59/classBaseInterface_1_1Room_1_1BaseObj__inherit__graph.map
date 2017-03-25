@@ -1,0 +1,8 @@
+<map id="BaseInterface::Room::BaseObj" name="BaseInterface::Room::BaseObj">
+<area shape="rect" id="node2" href="$d4/d38/classBaseInterface_1_1Room_1_1BasePython.html" title="{BaseInterface::Room\l::BasePython\n|+ pythonfile\l+ timeleft\l+ maxtime\l|+ Draw()\l+ ~BasePython()\l+ BasePython()\l+ Relink()\l}" alt="" coords="5,211,152,377"/>
+<area shape="rect" id="node3" href="$df/dfa/classBaseInterface_1_1Room_1_1BaseShip.html" title="{BaseInterface::Room\l::BaseShip\n|+ mat\l|+ Draw()\l+ ~BaseShip()\l+ BaseShip()\l+ BaseShip()\l}" alt="" coords="176,226,323,362"/>
+<area shape="rect" id="node4" href="$d9/dfd/classBaseInterface_1_1Room_1_1BaseTalk.html" title="{BaseInterface::Room\l::BaseTalk\n|+ curchar\l+ curtime\l+ message\l+ hastalked\l|+ Draw()\l+ ~BaseTalk()\l+ BaseTalk()\l}" alt="" coords="347,211,493,377"/>
+<area shape="rect" id="node5" href="$dc/d3f/classBaseInterface_1_1Room_1_1BaseText.html" title="{BaseInterface::Room\l::BaseText\n|+ text\l|+ Draw()\l+ ~BaseText()\l+ BaseText()\l+ SetText()\l+ SetPos()\l+ SetSize()\l}" alt="" coords="517,211,664,377"/>
+<area shape="rect" id="node6" href="$df/da2/classBaseInterface_1_1Room_1_1BaseVSSprite.html" title="{BaseInterface::Room\l::BaseVSSprite\n|+ spr\l+ soundsource\l+ soundscene\l|+ Draw()\l+ ~BaseVSSprite()\l+ BaseVSSprite()\l+ SetSprite()\l+ SetPos()\l+ SetSize()\l+ SetTime()\l+ isPlaying()\l# BaseVSSprite()\l}" alt="" coords="688,175,835,413"/>
+<area shape="rect" id="node7" href="$d4/d85/classBaseInterface_1_1Room_1_1BaseVSMovie.html" title="{BaseInterface::Room\l::BaseVSMovie\n||+ ~BaseVSMovie()\l+ BaseVSMovie()\l+ SetMovie()\l+ GetTime()\l+ SetTime()\l+ GetHidePointer()\l+ SetHidePointer()\l+ getCallback()\l+ setCallback()\l+ Draw()\l}" alt="" coords="688,461,835,685"/>
+</map>

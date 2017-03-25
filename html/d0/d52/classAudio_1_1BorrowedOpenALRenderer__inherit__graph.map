@@ -1,0 +1,4 @@
+<map id="Audio::BorrowedOpenALRenderer" name="Audio::BorrowedOpenALRenderer">
+<area shape="rect" id="node2" href="$d0/da7/classAudio_1_1OpenALRenderer.html" title="{Audio::OpenALRenderer\n|# data\l|+ OpenALRenderer()\l+ ~OpenALRenderer()\l+ getSound()\l+ owns()\l+ attach()\l+ attach()\l+ detach()\l+ detach()\l+ setMeterDistance()\l+ setDopplerFactor()\l+ setOutputFormat()\l+ beginTransaction()\l+ commitTransaction()\l# checkContext()\l# initContext()\l# setupDopplerEffect()\l}" alt="" coords="33,277,196,575"/>
+<area shape="rect" id="node3" href="$da/d03/classAudio_1_1Renderer.html" title="{Audio::Renderer\n||+ Renderer()\l+ ~Renderer()\l+ getSound()\l+ owns()\l+ attach()\l+ attach()\l+ detach()\l+ detach()\l+ setMeterDistance()\l+ getMeterDistance()\land 6 more...\l}" alt="" coords="42,5,187,229"/>
+</map>

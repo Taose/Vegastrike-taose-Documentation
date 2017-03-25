@@ -1,0 +1,4 @@
+<map id="GFXLight" name="GFXLight">
+<area shape="rect" id="node2" href="$d9/dcc/classgfx__light.html" title="{gfx_light\n||+ gfx_light()\l+ operator=()\l+ lightNum()\l+ LocalLight()\l+ enabled()\l+ Target()\l+ Create()\l+ Kill()\l+ SendGLPosition()\l+ ClobberGLLight()\land 9 more...\l+ dopickenables()\l}" alt="" coords="5,424,141,663"/>
+<area shape="rect" id="node3" href="$dd/d24/classMeshFX.html" title="{MeshFX\n|+ delta\l+ TTL\l+ TTD\l|+ MeshFX()\l+ MeshFX()\l+ MergeLights()\l+ Update()\l}" alt="" coords="166,468,279,619"/>
+</map>

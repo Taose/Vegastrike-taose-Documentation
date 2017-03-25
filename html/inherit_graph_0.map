@@ -1,0 +1,27 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$d2/dec/class____impl_1_1Exception.html" title="__impl::Exception" alt="" coords="133,56,259,83"/>
+<area shape="rect" id="node5" href="$d4/d80/classAudio_1_1Exception.html" title="Audio::Exception" alt="" coords="135,477,257,504"/>
+<area shape="rect" id="node20" href="$d4/d67/classException.html" title="Exception" alt="" coords="156,704,236,731"/>
+<area shape="rect" id="node22" href="$dc/d14/classVidFile_1_1Exception.html" title="VidFile::Exception" alt="" coords="132,980,260,1007"/>
+<area shape="rect" id="node3" href="$d8/ddc/class____impl_1_1InvalidParameters.html" title="__impl::InvalidParameters" alt="" coords="333,5,506,32"/>
+<area shape="rect" id="node4" href="$d5/dcc/class____impl_1_1ProgramCompileError.html" title="__impl::ProgramCompileError" alt="" coords="323,56,516,83"/>
+<area shape="rect" id="node6" href="$d0/da0/classAudio_1_1CodecNotFoundException.html" title="Audio::CodecNotFoundException" alt="" coords="311,107,527,133"/>
+<area shape="rect" id="node7" href="$da/da5/classAudio_1_1CorruptStreamException.html" title="Audio::CorruptStreamException" alt="" coords="316,157,523,184"/>
+<area shape="rect" id="node8" href="$de/dcd/classAudio_1_1DuplicateObjectException.html" title="Audio::DuplicateObjectException" alt="" coords="312,208,527,235"/>
+<area shape="rect" id="node9" href="$d9/dab/classAudio_1_1EndOfStreamException.html" title="Audio::EndOfStreamException" alt="" coords="319,259,519,285"/>
+<area shape="rect" id="node10" href="$db/dff/classAudio_1_1FileFormatException.html" title="Audio::FileFormatException" alt="" coords="328,309,511,336"/>
+<area shape="rect" id="node11" href="$d0/d6d/classAudio_1_1FileOpenException.html" title="Audio::FileOpenException" alt="" coords="333,360,506,387"/>
+<area shape="rect" id="node12" href="$d0/db9/classAudio_1_1InvalidParametersException.html" title="Audio::InvalidParameters\lException" alt="" coords="335,411,503,453"/>
+<area shape="rect" id="node13" href="$d6/dd3/classAudio_1_1NotFoundException.html" title="Audio::NotFoundException" alt="" coords="330,477,509,504"/>
+<area shape="rect" id="node14" href="$de/d2e/classAudio_1_1NotImplementedException.html" title="Audio::NotImplementedException" alt="" coords="311,528,528,555"/>
+<area shape="rect" id="node15" href="$d8/d94/classAudio_1_1OutOfMemoryException.html" title="Audio::OutOfMemoryException" alt="" coords="318,579,521,605"/>
+<area shape="rect" id="node16" href="$d3/d44/classAudio_1_1ResourceAlreadyLoadedException.html" title="Audio::ResourceAlreadyLoaded\lException" alt="" coords="317,630,522,671"/>
+<area shape="rect" id="node17" href="$dd/dfc/classAudio_1_1ResourceNotLoadedException.html" title="Audio::ResourceNotLoaded\lException" alt="" coords="328,695,511,737"/>
+<area shape="rect" id="node18" href="$d0/dfa/classAudio_1_1Stream_1_1NoBufferException.html" title="Audio::Stream::NoBufferException" alt="" coords="308,761,531,788"/>
+<area shape="rect" id="node19" href="$d8/d35/classAudio_1_1UnsupportedFormatException.html" title="Audio::UnsupportedFormat\lException" alt="" coords="330,813,509,854"/>
+<area shape="rect" id="node21" href="$d9/d7d/classMissingTexture.html" title="MissingTexture" alt="" coords="364,879,475,905"/>
+<area shape="rect" id="node23" href="$dc/da2/classVidFile_1_1EndOfStreamException.html" title="VidFile::EndOfStreamException" alt="" coords="316,929,523,956"/>
+<area shape="rect" id="node24" href="$de/da8/classVidFile_1_1FileOpenException.html" title="VidFile::FileOpenException" alt="" coords="329,980,509,1007"/>
+<area shape="rect" id="node25" href="$de/dc7/classVidFile_1_1FrameDecodeException.html" title="VidFile::FrameDecodeException" alt="" coords="314,1031,525,1057"/>
+<area shape="rect" id="node26" href="$d9/d2e/classVidFile_1_1UnsupportedCodecException.html" title="VidFile::UnsupportedCodec\lException" alt="" coords="328,1082,511,1123"/>
+</map>

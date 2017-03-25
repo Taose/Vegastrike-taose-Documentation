@@ -1,0 +1,7 @@
+<map id="Opcode::VolumeCache" name="Opcode::VolumeCache">
+<area shape="rect" id="node2" href="$d9/d5f/structOpcode_1_1AABBCache.html" title="{Opcode::AABBCache\n|+ FatBox\l+ FatCoeff\l|+ AABBCache()\l}" alt="" coords="5,175,155,267"/>
+<area shape="rect" id="node3" href="$d4/d52/structOpcode_1_1LSSCache.html" title="{Opcode::LSSCache\n|+ Previous\l+ FatCoeff\l|+ LSSCache()\l}" alt="" coords="179,175,317,267"/>
+<area shape="rect" id="node4" href="$d9/df1/structOpcode_1_1OBBCache.html" title="{Opcode::OBBCache\n|+ FatBox\l+ FatCoeff\l|+ OBBCache()\l}" alt="" coords="341,175,483,267"/>
+<area shape="rect" id="node5" href="$d6/d95/structOpcode_1_1PlanesCache.html" title="{Opcode::PlanesCache\n||+ PlanesCache()\l}" alt="" coords="507,182,661,259"/>
+<area shape="rect" id="node6" href="$dc/d35/structOpcode_1_1SphereCache.html" title="{Opcode::SphereCache\n|+ Center\l+ FatRadius2\l+ FatCoeff\l|+ SphereCache()\l+ ~SphereCache()\l}" alt="" coords="685,160,840,281"/>
+</map>

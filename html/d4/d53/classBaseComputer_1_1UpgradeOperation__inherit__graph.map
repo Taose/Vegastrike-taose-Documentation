@@ -1,0 +1,5 @@
+<map id="BaseComputer::UpgradeOperation" name="BaseComputer::UpgradeOperation">
+<area shape="rect" id="node3" href="$d4/d87/classBaseComputer_1_1BuyUpgradeOperation.html" title="{BaseComputer::BuyUpgrade\lOperation\n|# m_theTemplate\l# m_addMultMode\l|+ start()\l+ BuyUpgradeOperation()\l# checkTransaction()\l# concludeTransaction()\l# selectMount()\l# ~BuyUpgradeOperation()\l}" alt="" coords="5,505,195,685"/>
+<area shape="rect" id="node4" href="$d6/dce/classBaseComputer_1_1SellUpgradeOperation.html" title="{BaseComputer::SellUpgrade\lOperation\n|# m_downgradeLimiter\l|+ start()\l+ SellUpgradeOperation()\l# checkTransaction()\l# concludeTransaction()\l# selectMount()\l# ~SellUpgradeOperation()\l}" alt="" coords="219,513,407,678"/>
+<area shape="rect" id="node2" href="$d3/d12/classModalDialogCallback.html" title="{ModalDialogCallback\n||+ modalDialogResult()\l}" alt="" coords="131,5,283,83"/>
+</map>

@@ -1,0 +1,110 @@
+\hypertarget{structGFXVertex}{}\section{G\+F\+X\+Vertex Struct Reference}
+\label{structGFXVertex}\index{G\+F\+X\+Vertex@{G\+F\+X\+Vertex}}
+
+
+Vertex, Normal, \hyperlink{classTexture}{Texture}, and (deprecated) Environment Mapping T2\+F\+\_\+\+N3\+F\+\_\+\+V3F format.  
+
+
+
+
+{\ttfamily \#include $<$gfxlib\+\_\+struct.\+h$>$}
+
+
+
+Collaboration diagram for G\+F\+X\+Vertex\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{da/da3/structGFXVertex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries G\+F\+X\+Vertex} (const Q\+Vector \&vert, const Vector \&norm, float s, float t)\hypertarget{structGFXVertex_a4cb4af00ea2eb9ef561b0914219c1402}{}\label{structGFXVertex_a4cb4af00ea2eb9ef561b0914219c1402}
+
+\item 
+{\bfseries G\+F\+X\+Vertex} (const Vector \&vert, const Vector \&norm, float s, float t)\hypertarget{structGFXVertex_a64179a4ffca6b7835a93b5ed9788b74d}{}\label{structGFXVertex_a64179a4ffca6b7835a93b5ed9788b74d}
+
+\item 
+{\bfseries G\+F\+X\+Vertex} (float x, float y, float z, float i, float j, float k, float s, float t)\hypertarget{structGFXVertex_aad80fdf078cb59343eee1baa478c052c}{}\label{structGFXVertex_aad80fdf078cb59343eee1baa478c052c}
+
+\item 
+\hyperlink{structGFXVertex}{G\+F\+X\+Vertex} \& {\bfseries Set\+Tex\+Coord} (float s, float t)\hypertarget{structGFXVertex_a30236eb6fbb17f9587c815a3f1e5c01f}{}\label{structGFXVertex_a30236eb6fbb17f9587c815a3f1e5c01f}
+
+\item 
+\hyperlink{structGFXVertex}{G\+F\+X\+Vertex} \& {\bfseries Set\+Normal} (const Vector \&norm)\hypertarget{structGFXVertex_a893537687bd89e16da91f9c54c2f210b}{}\label{structGFXVertex_a893537687bd89e16da91f9c54c2f210b}
+
+\item 
+\hyperlink{structGFXVertex}{G\+F\+X\+Vertex} \& {\bfseries Set\+Vertex} (const Vector \&vert)\hypertarget{structGFXVertex_a0d5b989eb01869fda1121ade33ddccfa}{}\label{structGFXVertex_a0d5b989eb01869fda1121ade33ddccfa}
+
+\item 
+\hyperlink{structGFXVertex}{G\+F\+X\+Vertex} \& {\bfseries Set\+Tangent} (const Vector \&tgt, float parity=1.f)\hypertarget{structGFXVertex_ab6193e794ed00601a8822824d930b9b2}{}\label{structGFXVertex_ab6193e794ed00601a8822824d930b9b2}
+
+\item 
+Vector {\bfseries Get\+Vertex} () const \hypertarget{structGFXVertex_a70331ce6d7a3db37fdf0729740cbf88e}{}\label{structGFXVertex_a70331ce6d7a3db37fdf0729740cbf88e}
+
+\item 
+const Vector \& {\bfseries Get\+Const\+Vertex} () const \hypertarget{structGFXVertex_ac0d1a37f29c051a7141d3c3e4d190337}{}\label{structGFXVertex_ac0d1a37f29c051a7141d3c3e4d190337}
+
+\item 
+Vector {\bfseries Get\+Normal} () const \hypertarget{structGFXVertex_a7632d0534c86ae6f7e3d23ea8b807c9c}{}\label{structGFXVertex_a7632d0534c86ae6f7e3d23ea8b807c9c}
+
+\item 
+Vector {\bfseries Get\+Position} () const \hypertarget{structGFXVertex_ab95c89c70f6e43ec7e2c636883852e5e}{}\label{structGFXVertex_ab95c89c70f6e43ec7e2c636883852e5e}
+
+\item 
+Vector {\bfseries Get\+Tangent} () const \hypertarget{structGFXVertex_a3ab5907b39764b1d7d35306bd655a232}{}\label{structGFXVertex_a3ab5907b39764b1d7d35306bd655a232}
+
+\item 
+float {\bfseries Get\+Tangent\+Parity} () const \hypertarget{structGFXVertex_a3dd7146ec51bcaba5ca16a4c1242b0d7}{}\label{structGFXVertex_a3dd7146ec51bcaba5ca16a4c1242b0d7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries s}\hypertarget{structGFXVertex_a7b867a247dd1e843392ccc3d888cfe1b}{}\label{structGFXVertex_a7b867a247dd1e843392ccc3d888cfe1b}
+
+\item 
+float {\bfseries t}\hypertarget{structGFXVertex_a35e69cb828a5e35e931ac6ac64443495}{}\label{structGFXVertex_a35e69cb828a5e35e931ac6ac64443495}
+
+\item 
+float {\bfseries i}\hypertarget{structGFXVertex_a9eff48b97e60ebb42920ae1b89d4fef3}{}\label{structGFXVertex_a9eff48b97e60ebb42920ae1b89d4fef3}
+
+\item 
+float {\bfseries j}\hypertarget{structGFXVertex_abacb3b68f11caacd75972e3d30ed629e}{}\label{structGFXVertex_abacb3b68f11caacd75972e3d30ed629e}
+
+\item 
+float {\bfseries k}\hypertarget{structGFXVertex_a7a907088b5c175ae4ec425bb4ba1f096}{}\label{structGFXVertex_a7a907088b5c175ae4ec425bb4ba1f096}
+
+\item 
+float {\bfseries x}\hypertarget{structGFXVertex_a2016b98fa14b3962e0f0065d226b1fea}{}\label{structGFXVertex_a2016b98fa14b3962e0f0065d226b1fea}
+
+\item 
+float {\bfseries y}\hypertarget{structGFXVertex_af83363fb8c850dbe06a0a9aeaa63dd4d}{}\label{structGFXVertex_af83363fb8c850dbe06a0a9aeaa63dd4d}
+
+\item 
+float {\bfseries z}\hypertarget{structGFXVertex_a9cec4d82ecaf4846ada539723082678d}{}\label{structGFXVertex_a9cec4d82ecaf4846ada539723082678d}
+
+\item 
+float {\bfseries tx}\hypertarget{structGFXVertex_a2360bad239b4a6b251f3d3f22c3191d7}{}\label{structGFXVertex_a2360bad239b4a6b251f3d3f22c3191d7}
+
+\item 
+float {\bfseries ty}\hypertarget{structGFXVertex_a16db83540495ff1d36dfbffea570a32f}{}\label{structGFXVertex_a16db83540495ff1d36dfbffea570a32f}
+
+\item 
+float {\bfseries tz}\hypertarget{structGFXVertex_a8a8f986bcfd83da3b09b5792cdd2ac6a}{}\label{structGFXVertex_a8a8f986bcfd83da3b09b5792cdd2ac6a}
+
+\item 
+float {\bfseries tw}\hypertarget{structGFXVertex_a31161eadc7ff52c7bc3b6f0cfb9aed83}{}\label{structGFXVertex_a31161eadc7ff52c7bc3b6f0cfb9aed83}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vertex, Normal, \hyperlink{classTexture}{Texture}, and (deprecated) Environment Mapping T2\+F\+\_\+\+N3\+F\+\_\+\+V3F format. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gfxlib\+\_\+struct.\+h\end{DoxyCompactItemize}

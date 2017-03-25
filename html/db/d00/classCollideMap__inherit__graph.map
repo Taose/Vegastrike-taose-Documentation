@@ -1,0 +1,3 @@
+<map id="CollideMap" name="CollideMap">
+<area shape="rect" id="node2" href="$d2/d44/classCollideArray.html" title="{CollideArray\n|+ max_radius\l+ location_index\l+ sorted\l+ unsorted\l+ toflattenhints\l+ count\l+ max_bolt_radius\l|+ SetLocationIndex()\l+ Iterable()\l+ UpdateBoltInfo()\l+ flatten()\l+ flatten()\l+ insert()\l+ insert()\l+ changeKey()\l+ changeKey()\l+ begin()\l+ end()\l+ lower_bound()\l+ erase()\l+ checkSet()\l+ CollideArray()\l}" alt="" coords="15,5,157,376"/>
+</map>

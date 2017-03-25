@@ -1,0 +1,326 @@
+\hypertarget{classAudio_1_1SourceTemplate}{}\section{Audio\+:\+:Source\+Template Class Reference}
+\label{classAudio_1_1SourceTemplate}\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+
+
+{\ttfamily \#include $<$Source\+Template.\+h$>$}
+
+
+
+Collaboration diagram for Audio\+:\+:Source\+Template\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d0/daf/classAudio_1_1SourceTemplate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1SourceTemplate_a5b7f98e2ac7d948a90852dfbec636de9}{Source\+Template} (const std\+::string \&sound\+Name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=V\+S\+File\+System\+::\+Unknown\+File, bool looping=false)  throw ()
+\item 
+std\+::string \hyperlink{classAudio_1_1SourceTemplate_a3c2742afdd174800d18af2acc398b022}{get\+Sound\+Name} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_a1e70f53912da8ad647fd8dcef1a8f368}{set\+Sound\+Name} (const std\+::string \&new\+Name)  throw ()
+\item 
+V\+S\+File\+System\+::\+V\+S\+File\+Type \hyperlink{classAudio_1_1SourceTemplate_a5829d1ec32f75dd20fd69a811e690ac7}{get\+Sound\+Type} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_a6b1dacc381fb5c9d4e6beb3033000457}{set\+Sound\+Type} (V\+S\+File\+System\+::\+V\+S\+File\+Type type)  throw ()
+\item 
+\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ \hyperlink{classAudio_1_1SourceTemplate_afcbec57262895a6c5e9885aab4662e6f}{get\+Angle\+Range} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_aadc97f5080adf1cbb15f20d061d0e397}{set\+Angle\+Range} (\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ r)  throw ()
+\item 
+\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ \hyperlink{classAudio_1_1SourceTemplate_a54a2abd999f613f635c9b9d901aa4fea}{get\+Cos\+Angle\+Range} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_af93314a3fc44556f9f9299914181d665}{set\+Cos\+Angle\+Range} (\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ r)  throw ()
+\item 
+\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ \hyperlink{classAudio_1_1SourceTemplate_a32d443597eac6996201ba1d07a770b4f}{get\+Per\+Frequency\+Radius\+Ratios} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_aaf4c561a7c143dc1324e78b32e4d9cc2}{set\+Per\+Frequency\+Radius\+Ratios} (\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ val)  throw ()
+\item 
+\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ \hyperlink{classAudio_1_1SourceTemplate_abe3c6d8a236dddd50ed03cce50448e05}{get\+Reference\+Freqs} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_a908c46f1c25c32246a300d30165e387f}{set\+Reference\+Freqs} (\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ val)  throw ()
+\item 
+Scalar \hyperlink{classAudio_1_1SourceTemplate_ac8eadf0c4ab034dfe327b7fe963e805f}{get\+Gain} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_a4b33145dd0795b7c838453ec7808383b}{set\+Gain} (Scalar g)  throw ()
+\item 
+bool \hyperlink{classAudio_1_1SourceTemplate_a40525714198401f362e36d1fd97e9ae8}{is\+Looping} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_a87ec2b4321b72fae628850dab4210be1}{set\+Looping} (bool loop)  throw ()
+\item 
+bool \hyperlink{classAudio_1_1SourceTemplate_a7f485fd65f56404c7c2b332c7339722a}{is\+Relative} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_af5c0a2582db1284321fd7e400cc8bbe9}{set\+Relative} (bool relative)  throw ()
+\item 
+bool \hyperlink{classAudio_1_1SourceTemplate_ae998cfbbd58fe8682eeeb6737f23f116}{is\+Attenuated} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_a34dcb3269cbb9c12f349bc185bd8040e}{set\+Attenuated} (bool loop)  throw ()
+\item 
+bool \hyperlink{classAudio_1_1SourceTemplate_a80fc12341bd463446441b58fadf0c655}{is\+Streaming} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SourceTemplate_ac7363bd8522adcb2ea04acb941cfbde5}{set\+Streaming} (bool stream)  throw ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1SourceTemplate}{Source\+Template} class
+
+\begin{DoxyRemark}{Remarks}
+This class holds enough information to spawn new sources independent of the \hyperlink{classAudio_1_1SceneManager}{Scene\+Manager} or underlying implementation. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{The Template\+Manager may be used to construct them out of external}
+resources. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{They are better suited for aggregation into entities that might}
+spawn active sources, templates are optimal inactive sources as they do not contain usually bulky state information required for active ones. Scene\+Managers know how to derive a \hyperlink{classAudio_1_1Source}{Source} out of a \hyperlink{classAudio_1_1SourceTemplate}{Source\+Template}, so they can be converted into those at a moment\textquotesingle{}s notice. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Furthermore, since they do not require any state information, source templates}
+may be shared among multiple entities, further reducing overhead. 
+\end{DoxyParagraph}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1TemplateManager}{Template\+Manager} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!Source\+Template@{Source\+Template}}
+\index{Source\+Template@{Source\+Template}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{Source\+Template(const std\+::string \&sound\+Name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=\+V\+S\+File\+System\+::\+Unknown\+File, bool looping=false)}{SourceTemplate(const std::string &soundName, VSFileSystem::VSFileType type=VSFileSystem::UnknownFile, bool looping=false)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Source\+Template\+::\+Source\+Template (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{sound\+Name, }
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type = {\ttfamily VSFileSystem\+:\+:UnknownFile}, }
+\item[{bool}]{looping = {\ttfamily false}}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SourceTemplate_a5b7f98e2ac7d948a90852dfbec636de9}{}\label{classAudio_1_1SourceTemplate_a5b7f98e2ac7d948a90852dfbec636de9}
+Construct a template \begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1SceneManager_a357857cb8cd5e4793336c613783e4f05}{Scene\+Manager\+::create\+Source}, \hyperlink{classAudio_1_1Renderer_a540813191ac8b7e8fac070f15e7c1203}{Renderer\+::get\+Sound}, 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!get\+Angle\+Range@{get\+Angle\+Range}}
+\index{get\+Angle\+Range@{get\+Angle\+Range}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{get\+Angle\+Range() const }{getAngleRange() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Range}$<$ Scalar $>$ Audio\+::\+Source\+Template\+::get\+Angle\+Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1SourceTemplate_afcbec57262895a6c5e9885aab4662e6f}{}\label{classAudio_1_1SourceTemplate_afcbec57262895a6c5e9885aab4662e6f}
+Return the source\textquotesingle{}s minimum/maximum propagation angle \begin{DoxyRemark}{Remarks}
+\hyperlink{classAudio_1_1Sound}{Sound} will fully propagate in directions within minimum directional drift. Further drift will attenuate the sound until it (practically) disappears by the maximum propagation angle. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d77/classAudio_1_1SourceTemplate_afcbec57262895a6c5e9885aab4662e6f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!get\+Cos\+Angle\+Range@{get\+Cos\+Angle\+Range}}
+\index{get\+Cos\+Angle\+Range@{get\+Cos\+Angle\+Range}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{get\+Cos\+Angle\+Range() const }{getCosAngleRange() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Range}$<$Scalar$>$ Audio\+::\+Source\+Template\+::get\+Cos\+Angle\+Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a54a2abd999f613f635c9b9d901aa4fea}{}\label{classAudio_1_1SourceTemplate_a54a2abd999f613f635c9b9d901aa4fea}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1SourceTemplate_afcbec57262895a6c5e9885aab4662e6f}{get\+Angle\+Range} 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+This version returns cosine-\/angles rather than radians, much quicker 
+\end{DoxyRemark}
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!get\+Gain@{get\+Gain}}
+\index{get\+Gain@{get\+Gain}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{get\+Gain() const }{getGain() const }}]{\setlength{\rightskip}{0pt plus 5cm}Scalar Audio\+::\+Source\+Template\+::get\+Gain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_ac8eadf0c4ab034dfe327b7fe963e805f}{}\label{classAudio_1_1SourceTemplate_ac8eadf0c4ab034dfe327b7fe963e805f}
+Get the source\textquotesingle{}s main gain \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!get\+Per\+Frequency\+Radius\+Ratios@{get\+Per\+Frequency\+Radius\+Ratios}}
+\index{get\+Per\+Frequency\+Radius\+Ratios@{get\+Per\+Frequency\+Radius\+Ratios}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{get\+Per\+Frequency\+Radius\+Ratios() const }{getPerFrequencyRadiusRatios() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Per\+Frequency}$<$Scalar$>$ Audio\+::\+Source\+Template\+::get\+Per\+Frequency\+Radius\+Ratios (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a32d443597eac6996201ba1d07a770b4f}{}\label{classAudio_1_1SourceTemplate_a32d443597eac6996201ba1d07a770b4f}
+Get the source\textquotesingle{}s frequency-\/dependant radius ratios \begin{DoxyRemark}{Remarks}
+\hyperlink{classAudio_1_1Sound}{Sound} propagation goes different for low and high frequencies than for others. \hyperlink{classAudio_1_1Sound}{Sound} creation does too -\/ this specifies the ratio of a source\textquotesingle{}s volume that is generating high/low frequency vibrations. This will affect propagation of those frequencies over distance. 
+\end{DoxyRemark}
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!get\+Reference\+Freqs@{get\+Reference\+Freqs}}
+\index{get\+Reference\+Freqs@{get\+Reference\+Freqs}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{get\+Reference\+Freqs() const }{getReferenceFreqs() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Per\+Frequency}$<$Scalar$>$ Audio\+::\+Source\+Template\+::get\+Reference\+Freqs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_abe3c6d8a236dddd50ed03cce50448e05}{}\label{classAudio_1_1SourceTemplate_abe3c6d8a236dddd50ed03cce50448e05}
+Get the source\textquotesingle{}s refernece frequencies \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!get\+Sound\+Name@{get\+Sound\+Name}}
+\index{get\+Sound\+Name@{get\+Sound\+Name}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{get\+Sound\+Name() const }{getSoundName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Audio\+::\+Source\+Template\+::get\+Sound\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a3c2742afdd174800d18af2acc398b022}{}\label{classAudio_1_1SourceTemplate_a3c2742afdd174800d18af2acc398b022}
+Get the sound resource name \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!get\+Sound\+Type@{get\+Sound\+Type}}
+\index{get\+Sound\+Type@{get\+Sound\+Type}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{get\+Sound\+Type() const }{getSoundType() const }}]{\setlength{\rightskip}{0pt plus 5cm}V\+S\+File\+System\+::\+V\+S\+File\+Type Audio\+::\+Source\+Template\+::get\+Sound\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a5829d1ec32f75dd20fd69a811e690ac7}{}\label{classAudio_1_1SourceTemplate_a5829d1ec32f75dd20fd69a811e690ac7}
+Get the sound file type \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!is\+Attenuated@{is\+Attenuated}}
+\index{is\+Attenuated@{is\+Attenuated}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{is\+Attenuated() const }{isAttenuated() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Source\+Template\+::is\+Attenuated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_ae998cfbbd58fe8682eeeb6737f23f116}{}\label{classAudio_1_1SourceTemplate_ae998cfbbd58fe8682eeeb6737f23f116}
+Is the source using distance attenuation? \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!is\+Looping@{is\+Looping}}
+\index{is\+Looping@{is\+Looping}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{is\+Looping() const }{isLooping() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Source\+Template\+::is\+Looping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a40525714198401f362e36d1fd97e9ae8}{}\label{classAudio_1_1SourceTemplate_a40525714198401f362e36d1fd97e9ae8}
+Is the source in looping mode? \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!is\+Relative@{is\+Relative}}
+\index{is\+Relative@{is\+Relative}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{is\+Relative() const }{isRelative() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Source\+Template\+::is\+Relative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a7f485fd65f56404c7c2b332c7339722a}{}\label{classAudio_1_1SourceTemplate_a7f485fd65f56404c7c2b332c7339722a}
+Is the source\textquotesingle{}s position always relative to the root listener? \begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_a56cfa694bccbfac0a7adc232750ae3fe}{Source\+::is\+Relative()} 
+\end{DoxySeeAlso}
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!is\+Streaming@{is\+Streaming}}
+\index{is\+Streaming@{is\+Streaming}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{is\+Streaming() const }{isStreaming() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Source\+Template\+::is\+Streaming (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a80fc12341bd463446441b58fadf0c655}{}\label{classAudio_1_1SourceTemplate_a80fc12341bd463446441b58fadf0c655}
+Is the source in streaming mode? \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Angle\+Range@{set\+Angle\+Range}}
+\index{set\+Angle\+Range@{set\+Angle\+Range}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Angle\+Range(\+Range$<$ Scalar $>$ r)}{setAngleRange(Range< Scalar > r)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Angle\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}$<$ Scalar $>$}]{r}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SourceTemplate_aadc97f5080adf1cbb15f20d061d0e397}{}\label{classAudio_1_1SourceTemplate_aadc97f5080adf1cbb15f20d061d0e397}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1SourceTemplate_afcbec57262895a6c5e9885aab4662e6f}{get\+Angle\+Range} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d77/classAudio_1_1SourceTemplate_aadc97f5080adf1cbb15f20d061d0e397_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Attenuated@{set\+Attenuated}}
+\index{set\+Attenuated@{set\+Attenuated}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Attenuated(bool loop)}{setAttenuated(bool loop)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Attenuated (
+\begin{DoxyParamCaption}
+\item[{bool}]{loop}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a34dcb3269cbb9c12f349bc185bd8040e}{}\label{classAudio_1_1SourceTemplate_a34dcb3269cbb9c12f349bc185bd8040e}
+Set whether the source will use distance attenuation \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Cos\+Angle\+Range@{set\+Cos\+Angle\+Range}}
+\index{set\+Cos\+Angle\+Range@{set\+Cos\+Angle\+Range}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Cos\+Angle\+Range(\+Range$<$ Scalar $>$ r)}{setCosAngleRange(Range< Scalar > r)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Cos\+Angle\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}$<$ Scalar $>$}]{r}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_af93314a3fc44556f9f9299914181d665}{}\label{classAudio_1_1SourceTemplate_af93314a3fc44556f9f9299914181d665}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1SourceTemplate_afcbec57262895a6c5e9885aab4662e6f}{get\+Angle\+Range} 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+This version takes cosine-\/angles rather than radians, much quicker 
+\end{DoxyRemark}
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Gain@{set\+Gain}}
+\index{set\+Gain@{set\+Gain}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Gain(\+Scalar g)}{setGain(Scalar g)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Gain (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{g}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a4b33145dd0795b7c838453ec7808383b}{}\label{classAudio_1_1SourceTemplate_a4b33145dd0795b7c838453ec7808383b}
+Set the source\textquotesingle{}s main gain \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Looping@{set\+Looping}}
+\index{set\+Looping@{set\+Looping}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Looping(bool loop)}{setLooping(bool loop)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Looping (
+\begin{DoxyParamCaption}
+\item[{bool}]{loop}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a87ec2b4321b72fae628850dab4210be1}{}\label{classAudio_1_1SourceTemplate_a87ec2b4321b72fae628850dab4210be1}
+Set the source\textquotesingle{}s looping mode \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Per\+Frequency\+Radius\+Ratios@{set\+Per\+Frequency\+Radius\+Ratios}}
+\index{set\+Per\+Frequency\+Radius\+Ratios@{set\+Per\+Frequency\+Radius\+Ratios}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Per\+Frequency\+Radius\+Ratios(\+Per\+Frequency$<$ Scalar $>$ val)}{setPerFrequencyRadiusRatios(PerFrequency< Scalar > val)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Per\+Frequency\+Radius\+Ratios (
+\begin{DoxyParamCaption}
+\item[{{\bf Per\+Frequency}$<$ Scalar $>$}]{val}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_aaf4c561a7c143dc1324e78b32e4d9cc2}{}\label{classAudio_1_1SourceTemplate_aaf4c561a7c143dc1324e78b32e4d9cc2}
+Set the source\textquotesingle{}s frequency-\/dependant radius ratios \begin{DoxySeeAlso}{See also}
+get\+Radius\+Ratios 
+\end{DoxySeeAlso}
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Reference\+Freqs@{set\+Reference\+Freqs}}
+\index{set\+Reference\+Freqs@{set\+Reference\+Freqs}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Reference\+Freqs(\+Per\+Frequency$<$ Scalar $>$ val)}{setReferenceFreqs(PerFrequency< Scalar > val)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Reference\+Freqs (
+\begin{DoxyParamCaption}
+\item[{{\bf Per\+Frequency}$<$ Scalar $>$}]{val}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a908c46f1c25c32246a300d30165e387f}{}\label{classAudio_1_1SourceTemplate_a908c46f1c25c32246a300d30165e387f}
+Set the source\textquotesingle{}s reference frequencies \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Relative@{set\+Relative}}
+\index{set\+Relative@{set\+Relative}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Relative(bool relative)}{setRelative(bool relative)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Relative (
+\begin{DoxyParamCaption}
+\item[{bool}]{relative}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_af5c0a2582db1284321fd7e400cc8bbe9}{}\label{classAudio_1_1SourceTemplate_af5c0a2582db1284321fd7e400cc8bbe9}
+Set whether the source\textquotesingle{}s position is always relative to the root listener \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Sound\+Name@{set\+Sound\+Name}}
+\index{set\+Sound\+Name@{set\+Sound\+Name}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Sound\+Name(const std\+::string \&new\+Name)}{setSoundName(const std::string &newName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Sound\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{new\+Name}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a1e70f53912da8ad647fd8dcef1a8f368}{}\label{classAudio_1_1SourceTemplate_a1e70f53912da8ad647fd8dcef1a8f368}
+Set the sound resource name \index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Sound\+Type@{set\+Sound\+Type}}
+\index{set\+Sound\+Type@{set\+Sound\+Type}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Sound\+Type(\+V\+S\+File\+System\+::\+V\+S\+File\+Type type)}{setSoundType(VSFileSystem::VSFileType type)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Sound\+Type (
+\begin{DoxyParamCaption}
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_a6b1dacc381fb5c9d4e6beb3033000457}{}\label{classAudio_1_1SourceTemplate_a6b1dacc381fb5c9d4e6beb3033000457}
+Set the sound file type 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d77/classAudio_1_1SourceTemplate_a6b1dacc381fb5c9d4e6beb3033000457_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}!set\+Streaming@{set\+Streaming}}
+\index{set\+Streaming@{set\+Streaming}!Audio\+::\+Source\+Template@{Audio\+::\+Source\+Template}}
+\subsubsection[{\texorpdfstring{set\+Streaming(bool stream)}{setStreaming(bool stream)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+Template\+::set\+Streaming (
+\begin{DoxyParamCaption}
+\item[{bool}]{stream}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SourceTemplate_ac7363bd8522adcb2ea04acb941cfbde5}{}\label{classAudio_1_1SourceTemplate_ac7363bd8522adcb2ea04acb941cfbde5}
+Set the source\textquotesingle{}s streaming mode 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Source\+Template.\+h\item 
+audio/Source\+Template.\+cpp\end{DoxyCompactItemize}

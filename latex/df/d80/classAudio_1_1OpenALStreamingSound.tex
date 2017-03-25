@@ -1,0 +1,225 @@
+\hypertarget{classAudio_1_1OpenALStreamingSound}{}\section{Audio\+:\+:Open\+A\+L\+Streaming\+Sound Class Reference}
+\label{classAudio_1_1OpenALStreamingSound}\index{Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}}
+
+
+{\ttfamily \#include $<$Open\+A\+L\+Streaming\+Sound.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Open\+A\+L\+Streaming\+Sound\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d36/classAudio_1_1OpenALStreamingSound__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Open\+A\+L\+Streaming\+Sound\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/dad/classAudio_1_1OpenALStreamingSound__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1OpenALStreamingSound_a33958fdf51c537c813adc50ff44a84ae}{Open\+A\+L\+Streaming\+Sound} (const std\+::string \&name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=V\+S\+File\+System\+::\+Unknown\+File, unsigned int buffer\+Samples=0)  throw ()
+\item 
+A\+L\+Buffer\+Handle \hyperlink{classAudio_1_1OpenALStreamingSound_a14ebc3d2ad5412bf0ff44ebd0082f5f1}{read\+And\+Flip} ()  throw (\+Exception)
+\item 
+void \hyperlink{classAudio_1_1OpenALStreamingSound_a618fdc59cbbd807f53d4a91c65591470}{unqueue\+Buffer} (A\+L\+Buffer\+Handle buffer)  throw (\+Exception)
+\item 
+void \hyperlink{classAudio_1_1OpenALStreamingSound_a94b15fbaadc6fcd6ca8ba28717521d27}{flush\+Buffers} ()  throw ()
+\item 
+Timestamp \hyperlink{classAudio_1_1OpenALStreamingSound_a42543025d30ebff2be13ecde1e9c53ff}{get\+Time\+Base} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1OpenALStreamingSound_a12a989004d25224a6326828dd3cef0db}{seek} (double position)  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALStreamingSound_a3d4600e6d5c74d32954daa2267a46236}{load\+Impl} (bool wait)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALStreamingSound_a9dedea62e451a2587b86fef7b8488d55}{unload\+Impl} ()  throw ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Open\+AL Streaming \hyperlink{classAudio_1_1Sound}{Sound} implementation class
+
+\begin{DoxyRemark}{Remarks}
+This class implements streaming Open\+AL sounds. This will load the sound in chunks into Open\+AL buffers, with double-\/buffering to make certain there\textquotesingle{}s something to be played while the application is loading the next.
+\end{DoxyRemark}
+A package-\/private function is called to fill buffers for a configurable amount of buffer time -\/ whenever a source is playing this sound, this has to happen regularly.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Sound}{Sound}, \hyperlink{classAudio_1_1SimpleSound}{Simple\+Sound} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}!Open\+A\+L\+Streaming\+Sound@{Open\+A\+L\+Streaming\+Sound}}
+\index{Open\+A\+L\+Streaming\+Sound@{Open\+A\+L\+Streaming\+Sound}!Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}}
+\subsubsection[{\texorpdfstring{Open\+A\+L\+Streaming\+Sound(const std\+::string \&name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=\+V\+S\+File\+System\+::\+Unknown\+File, unsigned int buffer\+Samples=0)}{OpenALStreamingSound(const std::string &name, VSFileSystem::VSFileType type=VSFileSystem::UnknownFile, unsigned int bufferSamples=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Open\+A\+L\+Streaming\+Sound\+::\+Open\+A\+L\+Streaming\+Sound (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type = {\ttfamily VSFileSystem\+:\+:UnknownFile}, }
+\item[{unsigned int}]{buffer\+Samples = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1OpenALStreamingSound_a33958fdf51c537c813adc50ff44a84ae}{}\label{classAudio_1_1OpenALStreamingSound_a33958fdf51c537c813adc50ff44a84ae}
+Internal constructor used by derived classes 
+\begin{DoxyParams}{Parameters}
+{\em name} & the resource\textquotesingle{}s name \\
+\hline
+{\em type} & the resource\textquotesingle{}s type \\
+\hline
+{\em buffer\+Samples} & how many samples a single buffer should hold. remember double buffering is used, so this holds the number of samples below which a read would be triggered. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}!flush\+Buffers@{flush\+Buffers}}
+\index{flush\+Buffers@{flush\+Buffers}!Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}}
+\subsubsection[{\texorpdfstring{flush\+Buffers()}{flushBuffers()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Streaming\+Sound\+::flush\+Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1OpenALStreamingSound_a94b15fbaadc6fcd6ca8ba28717521d27}{}\label{classAudio_1_1OpenALStreamingSound_a94b15fbaadc6fcd6ca8ba28717521d27}
+Reset the buffer queue \index{Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}!get\+Time\+Base@{get\+Time\+Base}}
+\index{get\+Time\+Base@{get\+Time\+Base}!Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}}
+\subsubsection[{\texorpdfstring{get\+Time\+Base() const }{getTimeBase() const }}]{\setlength{\rightskip}{0pt plus 5cm}Timestamp Audio\+::\+Open\+A\+L\+Streaming\+Sound\+::get\+Time\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1OpenALStreamingSound_a42543025d30ebff2be13ecde1e9c53ff}{}\label{classAudio_1_1OpenALStreamingSound_a42543025d30ebff2be13ecde1e9c53ff}
+Get the time base of the stream
+
+\begin{DoxyReturn}{Returns}
+The timestamp of the first unreturned buffer\textquotesingle{}s starting point. 
+\end{DoxyReturn}
+\index{Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}!load\+Impl@{load\+Impl}}
+\index{load\+Impl@{load\+Impl}!Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}}
+\subsubsection[{\texorpdfstring{load\+Impl(bool wait)}{loadImpl(bool wait)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Streaming\+Sound\+::load\+Impl (
+\begin{DoxyParamCaption}
+\item[{bool}]{wait}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALStreamingSound_a3d4600e6d5c74d32954daa2267a46236}{}\label{classAudio_1_1OpenALStreamingSound_a3d4600e6d5c74d32954daa2267a46236}
+
+
+
+
+Load the resource \begin{DoxyNote}{Note}
+Assume it is unloaded and not loading 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classAudio_1_1Sound_a32acc8687f9c7f0741363c73fd8ff5e1}{Audio\+::\+Sound}.
+
+\index{Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}!read\+And\+Flip@{read\+And\+Flip}}
+\index{read\+And\+Flip@{read\+And\+Flip}!Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}}
+\subsubsection[{\texorpdfstring{read\+And\+Flip()}{readAndFlip()}}]{\setlength{\rightskip}{0pt plus 5cm}A\+L\+Buffer\+Handle Audio\+::\+Open\+A\+L\+Streaming\+Sound\+::read\+And\+Flip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1OpenALStreamingSound_a14ebc3d2ad5412bf0ff44ebd0082f5f1}{}\label{classAudio_1_1OpenALStreamingSound_a14ebc3d2ad5412bf0ff44ebd0082f5f1}
+Keep buffers going.
+
+\begin{DoxyReturn}{Returns}
+An AL buffer handle that can be queued in an AL streaming source, or A\+L\+\_\+\+N\+U\+L\+L\+\_\+\+B\+U\+F\+F\+ER if there\textquotesingle{}s no available buffer for the operation (which means the source should free some buffers) 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+It will check the buffer queue, and if there are free buffers, it will free one with new data. Basically, if you call this function often enough, you\textquotesingle{}ll keep the source playing. 
+\end{DoxyRemark}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classAudio_1_1EndOfStreamException}{End\+Of\+Stream\+Exception}} & when there\textquotesingle{}s no more data to feed from the stream. You may seek the stream and keep going, for instance, for a looping stream. Any other exception would be fatal. \\
+\hline
+\end{DoxyExceptions}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d80/classAudio_1_1OpenALStreamingSound_a14ebc3d2ad5412bf0ff44ebd0082f5f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}!seek@{seek}}
+\index{seek@{seek}!Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}}
+\subsubsection[{\texorpdfstring{seek(double position)}{seek(double position)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Streaming\+Sound\+::seek (
+\begin{DoxyParamCaption}
+\item[{double}]{position}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1OpenALStreamingSound_a12a989004d25224a6326828dd3cef0db}{}\label{classAudio_1_1OpenALStreamingSound_a12a989004d25224a6326828dd3cef0db}
+Set the stream\textquotesingle{}s position, in seconds \begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Stream_a5edea4e4a4d7c7569f12bc8f2a913aa0}{Stream\+::seek(double)} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d80/classAudio_1_1OpenALStreamingSound_a12a989004d25224a6326828dd3cef0db_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}!unload\+Impl@{unload\+Impl}}
+\index{unload\+Impl@{unload\+Impl}!Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}}
+\subsubsection[{\texorpdfstring{unload\+Impl()}{unloadImpl()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Streaming\+Sound\+::unload\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALStreamingSound_a9dedea62e451a2587b86fef7b8488d55}{}\label{classAudio_1_1OpenALStreamingSound_a9dedea62e451a2587b86fef7b8488d55}
+
+
+
+
+Unload the resource. \begin{DoxyNote}{Note}
+Assume it is loaded 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classAudio_1_1Sound_a01bd788703f9ac9855ed6e52045f344c}{Audio\+::\+Sound}.
+
+\index{Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}!unqueue\+Buffer@{unqueue\+Buffer}}
+\index{unqueue\+Buffer@{unqueue\+Buffer}!Audio\+::\+Open\+A\+L\+Streaming\+Sound@{Audio\+::\+Open\+A\+L\+Streaming\+Sound}}
+\subsubsection[{\texorpdfstring{unqueue\+Buffer(\+A\+L\+Buffer\+Handle buffer)}{unqueueBuffer(ALBufferHandle buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Streaming\+Sound\+::unqueue\+Buffer (
+\begin{DoxyParamCaption}
+\item[{A\+L\+Buffer\+Handle}]{buffer}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1OpenALStreamingSound_a618fdc59cbbd807f53d4a91c65591470}{}\label{classAudio_1_1OpenALStreamingSound_a618fdc59cbbd807f53d4a91c65591470}
+Notify a dequeued buffer
+
+\begin{DoxyRemark}{Remarks}
+The function will not do anything, but it will mark the specified buffer as dequeued, allowing \hyperlink{classAudio_1_1OpenALStreamingSound_a14ebc3d2ad5412bf0ff44ebd0082f5f1}{read\+And\+Flip()} to use it for new data. The caller is expected to have detached the buffer from the source. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d80/classAudio_1_1OpenALStreamingSound_a618fdc59cbbd807f53d4a91c65591470_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Streaming\+Sound.\+h\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Streaming\+Sound.\+cpp\end{DoxyCompactItemize}

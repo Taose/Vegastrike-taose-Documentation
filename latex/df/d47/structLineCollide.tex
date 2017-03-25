@@ -1,0 +1,68 @@
+\hypertarget{structLineCollide}{}\section{Line\+Collide Struct Reference}
+\label{structLineCollide}\index{Line\+Collide@{Line\+Collide}}
+
+
+Collaboration diagram for Line\+Collide\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1e/structLineCollide__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries collidables} \{ \\*
+{\bfseries U\+N\+IT}, 
+{\bfseries B\+E\+AM}, 
+{\bfseries B\+A\+LL}, 
+{\bfseries B\+O\+LT}, 
+\\*
+{\bfseries P\+R\+O\+J\+E\+C\+T\+I\+LE}
+ \}\hypertarget{structLineCollide_ad1c90a89c9143c9b32ac1b49d9b4aebf}{}\label{structLineCollide_ad1c90a89c9143c9b32ac1b49d9b4aebf}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Line\+Collide} (void $\ast$objec, collidables typ, const Q\+Vector \&st, const Q\+Vector \&en)\hypertarget{structLineCollide_ad57ac908b8d9f73f9a9ae47bf14fb594}{}\label{structLineCollide_ad57ac908b8d9f73f9a9ae47bf14fb594}
+
+\item 
+{\bfseries Line\+Collide} (const \hyperlink{structLineCollide}{Line\+Collide} \&l)\hypertarget{structLineCollide_ab4543d2ff9c9a93ea7fe8ec546f3d205}{}\label{structLineCollide_ab4543d2ff9c9a93ea7fe8ec546f3d205}
+
+\item 
+\hyperlink{structLineCollide}{Line\+Collide} \& {\bfseries operator=} (const \hyperlink{structLineCollide}{Line\+Collide} \&l)\hypertarget{structLineCollide_a38ff1d57c90273dc2c2293fe47cd6a96}{}\label{structLineCollide_a38ff1d57c90273dc2c2293fe47cd6a96}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+O\+B\+J\+E\+CT \hyperlink{structLineCollide_ad5eed5f93fffe7f6a2d8e46659eb7748}{object}\hypertarget{structLineCollide_ad5eed5f93fffe7f6a2d8e46659eb7748}{}\label{structLineCollide_ad5eed5f93fffe7f6a2d8e46659eb7748}
+
+\begin{DoxyCompactList}\small\item\em The object that this \hyperlink{structLineCollide}{Line\+Collide} approximates. \end{DoxyCompactList}\item 
+Q\+Vector \hyperlink{structLineCollide_a0fb31e503f18410bd557df42cd2f97c6}{Mini}\hypertarget{structLineCollide_a0fb31e503f18410bd557df42cd2f97c6}{}\label{structLineCollide_a0fb31e503f18410bd557df42cd2f97c6}
+
+\begin{DoxyCompactList}\small\item\em The minimum x,y,z that this object has. \end{DoxyCompactList}\item 
+Q\+Vector \hyperlink{structLineCollide_a90ce83ba60ef7500e2c39d5ba781835c}{Maxi}\hypertarget{structLineCollide_a90ce83ba60ef7500e2c39d5ba781835c}{}\label{structLineCollide_a90ce83ba60ef7500e2c39d5ba781835c}
+
+\begin{DoxyCompactList}\small\item\em The maximum x,y,z that this object has. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{structLineCollide_ad90845099647656b719f14a462044894}{lastchecked}
+\item 
+collidables \hyperlink{structLineCollide_ac80a4c0d0f329a6ce6f3a9cb8fcc9517}{type}\hypertarget{structLineCollide_ac80a4c0d0f329a6ce6f3a9cb8fcc9517}{}\label{structLineCollide_ac80a4c0d0f329a6ce6f3a9cb8fcc9517}
+
+\begin{DoxyCompactList}\small\item\em Which type of unit it is. Used for subsequently calling object\textquotesingle{}s Accurate collide func. \end{DoxyCompactList}\item 
+bool \hyperlink{structLineCollide_a600f6736e7d05ee0f555a99027169855}{hhuge}\hypertarget{structLineCollide_a600f6736e7d05ee0f555a99027169855}{}\label{structLineCollide_a600f6736e7d05ee0f555a99027169855}
+
+\begin{DoxyCompactList}\small\item\em If this object was saved as a huge object (hhuge for dos oddities) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{Line\+Collide@{Line\+Collide}!lastchecked@{lastchecked}}
+\index{lastchecked@{lastchecked}!Line\+Collide@{Line\+Collide}}
+\subsubsection[{\texorpdfstring{lastchecked}{lastchecked}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Line\+Collide\+::lastchecked}\hypertarget{structLineCollide_ad90845099647656b719f14a462044894}{}\label{structLineCollide_ad90845099647656b719f14a462044894}
+The last item that checked this for collisions to prevent duplicate selection 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+linecollide.\+h\end{DoxyCompactItemize}

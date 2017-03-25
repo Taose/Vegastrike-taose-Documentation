@@ -1,0 +1,4 @@
+<map id="CriteriaNot" name="CriteriaNot">
+<area shape="rect" id="node2" href="$d6/da7/classCriteriaParent.html" title="{CriteriaParent\n||+ unhook()\l+ clone()\l+ CriteriaParent()\l+ ~CriteriaParent()\l+ replaceChild()\l}" alt="" coords="106,264,237,400"/>
+<area shape="rect" id="node3" href="$df/d68/classCriteriaNode.html" title="{CriteriaNode\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ unhook()\l+ getChildren()\l+ clone()\l+ CriteriaNode()\l+ ~CriteriaNode()\l+ setParent()\l+ getParent()\l}" alt="" coords="5,5,132,215"/>
+</map>

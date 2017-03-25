@@ -1,0 +1,177 @@
+\hypertarget{classPicker}{}\section{Picker Class Reference}
+\label{classPicker}\index{Picker@{Picker}}
+
+
+Inheritance diagram for Picker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d26/classPicker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Picker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/d79/classPicker__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structPicker_1_1DisplayCell}{Display\+Cell}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries save\+Open\+Categories} (std\+::list$<$ std\+::list$<$ std\+::string $>$ $>$ \&id\+List) const \hypertarget{classPicker_a7d88c122aef1c983b876525cb06cbd3a}{}\label{classPicker_a7d88c122aef1c983b876525cb06cbd3a}
+
+\item 
+int {\bfseries restore\+Open\+Categories} (const std\+::list$<$ std\+::list$<$ std\+::string $>$ $>$ \&id\+List)\hypertarget{classPicker_afaaab26a7b360ace074f710c5719dcd0}{}\label{classPicker_afaaab26a7b360ace074f710c5719dcd0}
+
+\item 
+virtual void {\bfseries draw} (void)\hypertarget{classPicker_a8aa6f5368c8ca76921b83f4743f25ae5}{}\label{classPicker_a8aa6f5368c8ca76921b83f4743f25ae5}
+
+\item 
+virtual \hyperlink{classPickerCells}{Picker\+Cells} $\ast$ {\bfseries cells} (void)\hypertarget{classPicker_ad2f05927cd5e3e803e8b43c6f8afb424}{}\label{classPicker_ad2f05927cd5e3e803e8b43c6f8afb424}
+
+\item 
+virtual const \hyperlink{classPickerCells}{Picker\+Cells} $\ast$ {\bfseries cells} (void) const \hypertarget{classPicker_a59be072e1915d5411f59a07c46ed873b}{}\label{classPicker_a59be072e1915d5411f59a07c46ed873b}
+
+\item 
+virtual void {\bfseries select\+Cell} (\hyperlink{classPickerCell}{Picker\+Cell} $\ast$cell, bool scroll=false)\hypertarget{classPicker_a218f741e0aeb6b4133c943fd0bc54948}{}\label{classPicker_a218f741e0aeb6b4133c943fd0bc54948}
+
+\item 
+virtual \hyperlink{classPickerCell}{Picker\+Cell} $\ast$ {\bfseries selected\+Cell} (void)\hypertarget{classPicker_a1e405570b64522d15f5028b6b1bc7fd4}{}\label{classPicker_a1e405570b64522d15f5028b6b1bc7fd4}
+
+\item 
+virtual int {\bfseries selected\+Item} (void)\hypertarget{classPicker_a84467d876fb19d30fa928de800a09775}{}\label{classPicker_a84467d876fb19d30fa928de800a09775}
+
+\item 
+virtual void {\bfseries scroll\+To\+Cell} (const \hyperlink{classPickerCell}{Picker\+Cell} $\ast$cell, bool middle=false)\hypertarget{classPicker_af787de9f5861e03362b9e4367a995ecd}{}\label{classPicker_af787de9f5861e03362b9e4367a995ecd}
+
+\item 
+virtual void {\bfseries set\+Must\+Recalc} (void)\hypertarget{classPicker_a892c2ddc7d408b4d9979529513e7bea7}{}\label{classPicker_a892c2ddc7d408b4d9979529513e7bea7}
+
+\item 
+virtual float {\bfseries extra\+Cell\+Height} (void)\hypertarget{classPicker_a3ced8cb4e7b7de52e528f7ca11aacdab}{}\label{classPicker_a3ced8cb4e7b7de52e528f7ca11aacdab}
+
+\item 
+virtual void {\bfseries set\+Extra\+Cell\+Height} (float f)\hypertarget{classPicker_a48c7884882332d16e7ad49c062fa70cd}{}\label{classPicker_a48c7884882332d16e7ad49c062fa70cd}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries selection\+Color} (void)\hypertarget{classPicker_a05c80dd0a41e9f5319cca1df1cd1ec2d}{}\label{classPicker_a05c80dd0a41e9f5319cca1df1cd1ec2d}
+
+\item 
+virtual void {\bfseries set\+Selection\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classPicker_a0631229043589103bf2ecb539f565e47}{}\label{classPicker_a0631229043589103bf2ecb539f565e47}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries selection\+Text\+Color} (void)\hypertarget{classPicker_a438e921a7f3d9d74c481988aa601c924}{}\label{classPicker_a438e921a7f3d9d74c481988aa601c924}
+
+\item 
+virtual void {\bfseries set\+Selection\+Text\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classPicker_a2d56c1cd2073315266006a393f3f6ab0}{}\label{classPicker_a2d56c1cd2073315266006a393f3f6ab0}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries highlight\+Color} (void)\hypertarget{classPicker_ab4f57d07d6af9b4cb1765a1b24cb0bf7}{}\label{classPicker_ab4f57d07d6af9b4cb1765a1b24cb0bf7}
+
+\item 
+virtual void {\bfseries set\+Highlight\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classPicker_a5c7da5cdd7b7b3961c7bc2c90706468e}{}\label{classPicker_a5c7da5cdd7b7b3961c7bc2c90706468e}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries highlight\+Text\+Color} (void)\hypertarget{classPicker_a4d3bfe6e658320d2a3277423fcef91f1}{}\label{classPicker_a4d3bfe6e658320d2a3277423fcef91f1}
+
+\item 
+virtual void {\bfseries set\+Highlight\+Text\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classPicker_a4aacb5f94bac6a66f1f5378b0b47499c}{}\label{classPicker_a4aacb5f94bac6a66f1f5378b0b47499c}
+
+\item 
+virtual \hyperlink{structSize}{Size} {\bfseries text\+Margins} (void)\hypertarget{classPicker_a4f7fc62fae00faf311c630ea7348939c}{}\label{classPicker_a4f7fc62fae00faf311c630ea7348939c}
+
+\item 
+virtual void {\bfseries set\+Text\+Margins} (const \hyperlink{structSize}{Size} \&s)\hypertarget{classPicker_a3ee00a7c9aae20ada93c0c7ca4c6d7ff}{}\label{classPicker_a3ee00a7c9aae20ada93c0c7ca4c6d7ff}
+
+\item 
+virtual void {\bfseries set\+Scroller} (\hyperlink{classScroller}{Scroller} $\ast$s)\hypertarget{classPicker_a54d4789b628c8f07bc05ad00eb57ae5a}{}\label{classPicker_a54d4789b628c8f07bc05ad00eb57ae5a}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Down} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classPicker_a02be56c3c93e035390f520ad84e9d82e}{}\label{classPicker_a02be56c3c93e035390f520ad84e9d82e}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Up} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classPicker_a35801795e12d2dcb78253b061179b182}{}\label{classPicker_a35801795e12d2dcb78253b061179b182}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Move} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classPicker_ae4b7577ed08a01dd03b827a746716fa2}{}\label{classPicker_ae4b7577ed08a01dd03b827a746716fa2}
+
+\item 
+virtual bool {\bfseries process\+Command} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classPicker_a7140b53eefff3cdca086c8d098e77c3f}{}\label{classPicker_a7140b53eefff3cdca086c8d098e77c3f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries total\+Cell\+Height} (void)\hypertarget{classPicker_a096dbead02718291d6db28809acc5b6c}{}\label{classPicker_a096dbead02718291d6db28809acc5b6c}
+
+\item 
+\hyperlink{classPickerCell}{Picker\+Cell} $\ast$ {\bfseries cell\+For\+Mouse} (const \hyperlink{classPoint}{Point} \&p)\hypertarget{classPicker_a050b1895ac3495dd4053868f96215cb3}{}\label{classPicker_a050b1895ac3495dd4053868f96215cb3}
+
+\item 
+virtual void {\bfseries recalc\+Display} (void)\hypertarget{classPicker_a1bf1c9aed9aa1b297d6f676f485c0e1e}{}\label{classPicker_a1bf1c9aed9aa1b297d6f676f485c0e1e}
+
+\item 
+void {\bfseries add\+List\+To\+Display} (\hyperlink{classPickerCells}{Picker\+Cells} $\ast$list, int level)\hypertarget{classPicker_a754ade23cc1f993ab83f39b087dc14a7}{}\label{classPicker_a754ade23cc1f993ab83f39b087dc14a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPickerCells}{Picker\+Cells} $\ast$ {\bfseries m\+\_\+cells}\hypertarget{classPicker_aac47fe393c70f2a0487e51f808b528bf}{}\label{classPicker_aac47fe393c70f2a0487e51f808b528bf}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+selection\+Color}\hypertarget{classPicker_a6e52512a619403794fccc1b0c65b3476}{}\label{classPicker_a6e52512a619403794fccc1b0c65b3476}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+selection\+Text\+Color}\hypertarget{classPicker_a55e19e70dd3fca4ba9314e8a54351255}{}\label{classPicker_a55e19e70dd3fca4ba9314e8a54351255}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+highlight\+Color}\hypertarget{classPicker_aa49d7d969c5446d4bcb06a1b5d1dae92}{}\label{classPicker_aa49d7d969c5446d4bcb06a1b5d1dae92}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+highlight\+Text\+Color}\hypertarget{classPicker_af0b08532b1108ddff76a579b12bbf350}{}\label{classPicker_af0b08532b1108ddff76a579b12bbf350}
+
+\item 
+float {\bfseries m\+\_\+extra\+Cell\+Height}\hypertarget{classPicker_ae60d98961a1412b437d1357d2c39a61d}{}\label{classPicker_ae60d98961a1412b437d1357d2c39a61d}
+
+\item 
+\hyperlink{structSize}{Size} {\bfseries m\+\_\+text\+Margins}\hypertarget{classPicker_ab546edfcb868b53b51eb040069b7d79f}{}\label{classPicker_ab546edfcb868b53b51eb040069b7d79f}
+
+\item 
+\hyperlink{classPickerCell}{Picker\+Cell} $\ast$ {\bfseries m\+\_\+cell\+Pressed}\hypertarget{classPicker_a17a97806241259ca79fd29717048ce97}{}\label{classPicker_a17a97806241259ca79fd29717048ce97}
+
+\item 
+const \hyperlink{classPickerCell}{Picker\+Cell} $\ast$ {\bfseries m\+\_\+highlighted\+Cell}\hypertarget{classPicker_a4fac960e8948ddc7d8241ea3480c6209}{}\label{classPicker_a4fac960e8948ddc7d8241ea3480c6209}
+
+\item 
+\hyperlink{classPickerCell}{Picker\+Cell} $\ast$ {\bfseries m\+\_\+selected\+Cell}\hypertarget{classPicker_a035aa1e346a397fef0d93b86b7d1aeb9}{}\label{classPicker_a035aa1e346a397fef0d93b86b7d1aeb9}
+
+\item 
+\hyperlink{classScroller}{Scroller} $\ast$ {\bfseries m\+\_\+scroller}\hypertarget{classPicker_a7d05259c578a23da6fbcbd2f53cd1950}{}\label{classPicker_a7d05259c578a23da6fbcbd2f53cd1950}
+
+\item 
+size\+\_\+t {\bfseries m\+\_\+scroll\+Position}\hypertarget{classPicker_aab8484b50df0cedc515c5a04410881b1}{}\label{classPicker_aab8484b50df0cedc515c5a04410881b1}
+
+\item 
+bool {\bfseries m\+\_\+need\+Recalc\+Display}\hypertarget{classPicker_ad6af1faa43d0afef02a5922a792d8f4c}{}\label{classPicker_ad6af1faa43d0afef02a5922a792d8f4c}
+
+\item 
+std\+::vector$<$ \hyperlink{structPicker_1_1DisplayCell}{Display\+Cell} $>$ {\bfseries m\+\_\+display\+Cells}\hypertarget{classPicker_a68832392b4dbc38e1b648ddd0cc43978}{}\label{classPicker_a68832392b4dbc38e1b648ddd0cc43978}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/picker.\+h\item 
+gui/picker.\+cpp\end{DoxyCompactItemize}

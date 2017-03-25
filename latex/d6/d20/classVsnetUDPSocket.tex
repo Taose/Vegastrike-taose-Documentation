@@ -1,0 +1,76 @@
+\hypertarget{classVsnetUDPSocket}{}\section{Vsnet\+U\+D\+P\+Socket Class Reference}
+\label{classVsnetUDPSocket}\index{Vsnet\+U\+D\+P\+Socket@{Vsnet\+U\+D\+P\+Socket}}
+
+
+Inheritance diagram for Vsnet\+U\+D\+P\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/dec/classVsnetUDPSocket__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Vsnet\+U\+D\+P\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d9f/classVsnetUDPSocket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Vsnet\+U\+D\+P\+Socket} (int sock, const \hyperlink{structAddressIP}{Address\+IP} \&remote\+\_\+ip, \hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{classVsnetUDPSocket_aedcbc7dfc479ac23b11a17b270670fd9}{}\label{classVsnetUDPSocket_aedcbc7dfc479ac23b11a17b270670fd9}
+
+\item 
+virtual bool {\bfseries is\+Tcp} () const \hypertarget{classVsnetUDPSocket_a95f0b322feb5c8d1b656963285a0aebb}{}\label{classVsnetUDPSocket_a95f0b322feb5c8d1b656963285a0aebb}
+
+\item 
+virtual int {\bfseries opt\+Payload\+Size} () const \hypertarget{classVsnetUDPSocket_aa6c85a30ed44926b130ab10452bbf7e9}{}\label{classVsnetUDPSocket_aa6c85a30ed44926b130ab10452bbf7e9}
+
+\item 
+virtual int {\bfseries queue\+Len} (int pri)\hypertarget{classVsnetUDPSocket_a332073bb31cb321ed8205887ac9c5052}{}\label{classVsnetUDPSocket_a332073bb31cb321ed8205887ac9c5052}
+
+\item 
+virtual bool {\bfseries is\+Active} ()\hypertarget{classVsnetUDPSocket_a63581c381f6673a05fc9b123b3eb71ba}{}\label{classVsnetUDPSocket_a63581c381f6673a05fc9b123b3eb71ba}
+
+\item 
+virtual int {\bfseries sendbuf} (\hyperlink{classPacket}{Packet} $\ast$packet, const \hyperlink{structAddressIP}{Address\+IP} $\ast$to, int pcktflags)\hypertarget{classVsnetUDPSocket_ae1472a8e29191c9c837595f9c6c4117f}{}\label{classVsnetUDPSocket_ae1472a8e29191c9c837595f9c6c4117f}
+
+\item 
+virtual int \hyperlink{classVsnetUDPSocket_ad503a9d7cada896837a3fc2f3888bdec}{recvbuf} (\hyperlink{classPacket}{Packet} $\ast$p, \hyperlink{structAddressIP}{Address\+IP} $\ast$ipadr)
+\item 
+virtual bool {\bfseries lower\+\_\+selected} (int datalen=-\/1)\hypertarget{classVsnetUDPSocket_a5416cc9b960df097c379335761bb4b94}{}\label{classVsnetUDPSocket_a5416cc9b960df097c379335761bb4b94}
+
+\item 
+virtual void {\bfseries dump} (std\+::ostream \&ostr) const \hypertarget{classVsnetUDPSocket_a1f8667ced4925c6eabd5c7bda39556ff}{}\label{classVsnetUDPSocket_a1f8667ced4925c6eabd5c7bda39556ff}
+
+\item 
+virtual bool {\bfseries set\+Remote\+Address} (const \hyperlink{structAddressIP}{Address\+IP} \&inp)\hypertarget{classVsnetUDPSocket_a2e79635ad85d01f019a275ca874b2f88}{}\label{classVsnetUDPSocket_a2e79635ad85d01f019a275ca874b2f88}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Vsnet\+U\+D\+P\+Socket@{Vsnet\+U\+D\+P\+Socket}!recvbuf@{recvbuf}}
+\index{recvbuf@{recvbuf}!Vsnet\+U\+D\+P\+Socket@{Vsnet\+U\+D\+P\+Socket}}
+\subsubsection[{\texorpdfstring{recvbuf(\+Packet $\ast$p, Address\+I\+P $\ast$ipadr)}{recvbuf(Packet *p, AddressIP *ipadr)}}]{\setlength{\rightskip}{0pt plus 5cm}int Vsnet\+U\+D\+P\+Socket\+::recvbuf (
+\begin{DoxyParamCaption}
+\item[{{\bf Packet} $\ast$}]{p, }
+\item[{{\bf Address\+IP} $\ast$}]{from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classVsnetUDPSocket_ad503a9d7cada896837a3fc2f3888bdec}{}\label{classVsnetUDPSocket_ad503a9d7cada896837a3fc2f3888bdec}
+This function copies or moves data into the given \hyperlink{classPacketMem}{Packet\+Mem} variable. It is preferred over the other recvbuf function because it may reduce the number of copy operations by at least one. 
+
+Implements \hyperlink{classVsnetSocket_a329fcd755206e5bda56c689ee911e35a}{Vsnet\+Socket}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+socketudp.\+h\item 
+networking/lowlevel/vsnet\+\_\+socketudp.\+cpp\end{DoxyCompactItemize}

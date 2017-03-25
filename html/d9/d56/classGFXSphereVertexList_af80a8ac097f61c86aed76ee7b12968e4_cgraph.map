@@ -1,0 +1,4 @@
+<map id="GFXSphereVertexList::BeginDrawState" name="GFXSphereVertexList::BeginDrawState">
+<area shape="rect" id="node2" href="$d9/de6/classGFXVertexList.html#adf3bac4d8b6c7c2941d046007a0bdaf5" title="Specifies array pointers and loads the draw state of a given vlist for mass drawing. " alt="" coords="203,5,383,47"/>
+<area shape="rect" id="node3" href="$d9/de6/classGFXVertexList.html#a3b255f67295ad39da053bfac48af19ac" title="Draws a single copy of the mass&#45;loaded vlist. " alt="" coords="431,13,577,39"/>
+</map>

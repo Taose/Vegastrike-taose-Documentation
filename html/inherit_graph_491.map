@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$dc/dd3/structVsnetDownload_1_1Adapter_1_1Base.html" title="VsnetDownload::Adapter\l::Base" alt="" coords="5,267,172,308"/>
+<area shape="rect" id="node2" href="$d2/dac/structVsnetDownload_1_1Adapter_1_1Download.html" title="VsnetDownload::Adapter\l::Download" alt="" coords="227,5,393,47"/>
+<area shape="rect" id="node3" href="$db/dae/structVsnetDownload_1_1Adapter_1_1DownloadError.html" title="VsnetDownload::Adapter\l::DownloadError" alt="" coords="227,71,393,112"/>
+<area shape="rect" id="node4" href="$d9/da3/structVsnetDownload_1_1Adapter_1_1DownloadFirstFragment.html" title="VsnetDownload::Adapter\l::DownloadFirstFragment" alt="" coords="225,136,395,177"/>
+<area shape="rect" id="node5" href="$de/db2/structVsnetDownload_1_1Adapter_1_1DownloadFragment.html" title="VsnetDownload::Adapter\l::DownloadFragment" alt="" coords="227,201,393,243"/>
+<area shape="rect" id="node6" href="$d7/dfc/structVsnetDownload_1_1Adapter_1_1DownloadLastFragment.html" title="VsnetDownload::Adapter\l::DownloadLastFragment" alt="" coords="226,267,394,308"/>
+<area shape="rect" id="node7" href="$dd/d51/structVsnetDownload_1_1Adapter_1_1DownloadRequest.html" title="VsnetDownload::Adapter\l::DownloadRequest" alt="" coords="227,332,393,373"/>
+<area shape="rect" id="node8" href="$dd/d48/structVsnetDownload_1_1Adapter_1_1ResolveRequest.html" title="VsnetDownload::Adapter\l::ResolveRequest" alt="" coords="227,397,393,439"/>
+<area shape="rect" id="node9" href="$da/dcb/structVsnetDownload_1_1Adapter_1_1ResolveResponse.html" title="VsnetDownload::Adapter\l::ResolveResponse" alt="" coords="227,463,393,504"/>
+<area shape="rect" id="node10" href="$d0/dbb/structVsnetDownload_1_1Adapter_1_1UnexpectedSubcommand.html" title="VsnetDownload::Adapter\l::UnexpectedSubcommand" alt="" coords="220,528,400,569"/>
+</map>

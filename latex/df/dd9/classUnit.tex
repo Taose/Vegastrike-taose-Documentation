@@ -1,0 +1,1660 @@
+\hypertarget{classUnit}{}\section{Unit Class Reference}
+\label{classUnit}\index{Unit@{Unit}}
+
+
+{\ttfamily \#include $<$unit\+\_\+generic.\+h$>$}
+
+
+
+Inheritance diagram for Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d58/classUnit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dc8/classUnit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classUnit_1_1Computer}{Computer}
+\item 
+class \hyperlink{classUnit_1_1graphic__options}{graphic\+\_\+options}
+\item 
+class \hyperlink{classUnit_1_1Limits}{Limits}
+\item 
+struct \hyperlink{structUnit_1_1UnitJump}{Unit\+Jump}
+\item 
+struct \hyperlink{structUnit_1_1XML}{X\+ML}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries D\+A\+M\+A\+G\+ES} \{ \\*
+{\bfseries N\+O\+\_\+\+D\+A\+M\+A\+GE} =0x00, 
+{\bfseries S\+H\+I\+E\+L\+D\+\_\+\+D\+A\+M\+A\+G\+ED} =0x01, 
+{\bfseries C\+O\+M\+P\+U\+T\+E\+R\+\_\+\+D\+A\+M\+A\+G\+ED} =0x02, 
+{\bfseries M\+O\+U\+N\+T\+\_\+\+D\+A\+M\+A\+G\+ED} =0x04, 
+\\*
+{\bfseries C\+A\+R\+G\+O\+F\+U\+E\+L\+\_\+\+D\+A\+M\+A\+G\+ED} =0x08, 
+{\bfseries J\+U\+M\+P\+\_\+\+D\+A\+M\+A\+G\+ED} =0x10, 
+{\bfseries C\+L\+O\+A\+K\+\_\+\+D\+A\+M\+A\+G\+ED} =0x20, 
+{\bfseries L\+I\+M\+I\+T\+S\+\_\+\+D\+A\+M\+A\+G\+ED} =0x40, 
+\\*
+{\bfseries A\+R\+M\+O\+R\+\_\+\+D\+A\+M\+A\+G\+ED} =0x80
+ \}\hypertarget{classUnit_af077d5012869274f25284a9de7321f04}{}\label{classUnit_af077d5012869274f25284a9de7321f04}
+
+\item 
+enum {\bfseries schedulepriorityenum} \{ {\bfseries schedule\+Default}, 
+{\bfseries schedule\+A\+Field}, 
+{\bfseries schedule\+Roid}
+ \}\hypertarget{classUnit_a7da68702f245c1ad6081c15436109c9d}{}\label{classUnit_a7da68702f245c1ad6081c15436109c9d}
+
+\item 
+enum {\bfseries C\+O\+L\+L\+I\+D\+E\+L\+O\+C\+A\+T\+I\+O\+N\+T\+Y\+P\+ES} \{ {\bfseries U\+N\+I\+T\+\_\+\+O\+N\+LY} =0, 
+{\bfseries U\+N\+I\+T\+\_\+\+B\+O\+LT} =1, 
+{\bfseries N\+U\+M\+\_\+\+C\+O\+L\+L\+I\+D\+E\+\_\+\+M\+A\+PS} =2
+ \}\hypertarget{classUnit_a11b40339c0d2679c4284228e9053cd49}{}\label{classUnit_a11b40339c0d2679c4284228e9053cd49}
+
+\item 
+enum {\bfseries D\+O\+C\+K\+E\+N\+UM} \{ {\bfseries N\+O\+T\+\_\+\+D\+O\+C\+K\+ED} =0x0, 
+{\bfseries D\+O\+C\+K\+E\+D\+\_\+\+I\+N\+S\+I\+DE} =0x1, 
+{\bfseries D\+O\+C\+K\+ED} =0x2, 
+{\bfseries D\+O\+C\+K\+I\+N\+G\+\_\+\+U\+N\+I\+TS} =0x4
+ \}\hypertarget{classUnit_a59e351abed6d8d4e4a31485e124e909d}{}\label{classUnit_a59e351abed6d8d4e4a31485e124e909d}
+
+\item 
+enum {\bfseries tractor\+How} \{ {\bfseries tractor\+Immune} =0, 
+{\bfseries tractor\+Push} =1, 
+{\bfseries tractor\+In} =2, 
+{\bfseries tractor\+Both} =3
+ \}\hypertarget{classUnit_aabda6c3af76d8389df05475c21714095}{}\label{classUnit_aabda6c3af76d8389df05475c21714095}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Unit} (bool kill)\hypertarget{classUnit_a68d3ababf869e1193f79769271aab237}{}\label{classUnit_a68d3ababf869e1193f79769271aab237}
+
+\item 
+void {\bfseries Kill} ()\hypertarget{classUnit_aa814fc5af8e029ffe97cd141e50bb08d}{}\label{classUnit_aa814fc5af8e029ffe97cd141e50bb08d}
+
+\item 
+bool {\bfseries Killed} ()\hypertarget{classUnit_a992b1175663968d64355551e111fa8f0}{}\label{classUnit_a992b1175663968d64355551e111fa8f0}
+
+\item 
+void {\bfseries Ref} ()\hypertarget{classUnit_a3231bf3f133744e0bb820804f5223451}{}\label{classUnit_a3231bf3f133744e0bb820804f5223451}
+
+\item 
+void {\bfseries Un\+Ref} ()\hypertarget{classUnit_a2d46a93ca4d6f78000ade6bea0bf02f8}{}\label{classUnit_a2d46a93ca4d6f78000ade6bea0bf02f8}
+
+\item 
+\hyperlink{classUnit_a5d2d1ebc882945cae3e81d2a7d44aacc}{Unit} (int dummy)
+\item 
+\hyperlink{classUnit_ac4a53fe36d9f4f2106f25a26f79e4898}{Unit} (std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$ \&meshes, bool Subunit, int faction)
+\item 
+\hyperlink{classUnit_a01d9c8985fdb16b02765a7374c5e8201}{Unit} (const char $\ast$filename, bool Sub\+Unit, int faction, std\+::string customized\+Unit=std\+::string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$flightgroup=N\+U\+LL, int fg\+\_\+subnumber=0, std\+::string $\ast$netxml=N\+U\+LL)
+\item 
+void {\bfseries Init} ()\hypertarget{classUnit_a3c7e50ae002e43acb867ddae032ac333}{}\label{classUnit_a3c7e50ae002e43acb867ddae032ac333}
+
+\item 
+void {\bfseries Init} (const char $\ast$filename, bool Sub\+Unit, int faction, std\+::string customized\+Unit=std\+::string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$flightgroup=N\+U\+LL, int fg\+\_\+subnumber=0, std\+::string $\ast$netxml=N\+U\+LL)\hypertarget{classUnit_a3ecef29e4ea305bbeab352cbdf339cd5}{}\label{classUnit_a3ecef29e4ea305bbeab352cbdf339cd5}
+
+\item 
+void {\bfseries Load\+Row} (class \hyperlink{classCSVRow}{C\+S\+V\+Row} \&row, std\+::string unit\+Mod, std\+::string $\ast$netxml=N\+U\+LL)\hypertarget{classUnit_a2bdb66a74267593708f1f75a373ee2bb}{}\label{classUnit_a2bdb66a74267593708f1f75a373ee2bb}
+
+\item 
+void {\bfseries Set\+Network\+Mode} (bool mode=true)\hypertarget{classUnit_ad55d6aad44da50a288aace3f44dd69d4}{}\label{classUnit_ad55d6aad44da50a288aace3f44dd69d4}
+
+\item 
+Obj\+Serial {\bfseries Get\+Serial} () const \hypertarget{classUnit_aa598b327a6667d3c3cb1abddec5c6ca7}{}\label{classUnit_aa598b327a6667d3c3cb1abddec5c6ca7}
+
+\item 
+void {\bfseries Set\+Serial} (Obj\+Serial)\hypertarget{classUnit_ac5310c4a7d5f3309ec6d601c79702754}{}\label{classUnit_ac5310c4a7d5f3309ec6d601c79702754}
+
+\item 
+void {\bfseries Backup\+State} ()\hypertarget{classUnit_a036ede2a4b5ced8acb9e6ca39aa1140f}{}\label{classUnit_a036ede2a4b5ced8acb9e6ca39aa1140f}
+
+\item 
+bool \hyperlink{classUnit_aec19392b9fba96570b5e8fe8918bcfb4}{Upgrade\+Sub\+Units\+With\+Factory} (const \hyperlink{classUnit}{Unit} $\ast$up, int subunitoffset, bool touchme, bool downgrade, int \&numave, double \&percentage, \hyperlink{classUnit}{Unit} $\ast$($\ast$createupgradesubunit)(std\+::string s, int faction))
+\item 
+virtual bool {\bfseries Upgrade\+Sub\+Units} (const \hyperlink{classUnit}{Unit} $\ast$up, int subunitoffset, bool touchme, bool downgrade, int \&numave, double \&percentage)\hypertarget{classUnit_ab9cc4fa114596ef9ffe67fb0f92ef016}{}\label{classUnit_ab9cc4fa114596ef9ffe67fb0f92ef016}
+
+\item 
+bool \hyperlink{classUnit_a0856ef106b785e733a077f3be09376da}{Upgrade\+Mounts} (const \hyperlink{classUnit}{Unit} $\ast$up, int subunitoffset, bool touchme, bool downgrade, int \&numave, const \hyperlink{classUnit}{Unit} $\ast$templ, double \&percentage)
+\item 
+\hyperlink{classUnitCollection_1_1UnitIterator}{un\+\_\+iter} \hyperlink{classUnit_a68211f28b547231db2e2cf8de2be323d}{get\+Sub\+Units} ()
+\item 
+\hyperlink{classUnitCollection_1_1ConstIterator}{un\+\_\+kiter} {\bfseries view\+Sub\+Units} () const \hypertarget{classUnit_a75d3780440c7e967bcbb6e577b62b1f4}{}\label{classUnit_a75d3780440c7e967bcbb6e577b62b1f4}
+
+\item 
+bool {\bfseries is\+Sub\+Unit} () const \hypertarget{classUnit_a24771cc2268d2f9c44484c46940cbeda}{}\label{classUnit_a24771cc2268d2f9c44484c46940cbeda}
+
+\item 
+void {\bfseries set\+Face\+Camera} ()\hypertarget{classUnit_a763f0467bebd4537ec3826c90626a1ec}{}\label{classUnit_a763f0467bebd4537ec3826c90626a1ec}
+
+\item 
+bool {\bfseries Up\+And\+Down\+Grade} (const \hyperlink{classUnit}{Unit} $\ast$up, const \hyperlink{classUnit}{Unit} $\ast$templ, int mountoffset, int subunitoffset, bool touchme, bool downgrade, int additive, bool forcetransaction, double \&percentage, const \hyperlink{classUnit}{Unit} $\ast$downgrade\+\_\+min, bool force\+\_\+change\+\_\+on\+\_\+nothing, bool gen\+\_\+downgrade\+\_\+list)\hypertarget{classUnit_a3e1f34f0d01c62a9044bea9146af0c3e}{}\label{classUnit_a3e1f34f0d01c62a9044bea9146af0c3e}
+
+\item 
+void {\bfseries Import\+Part\+List} (const std\+::string \&category, float price, float pricedev, float quantity, float quantdev)\hypertarget{classUnit_a4866ae1c5ee0e5fa1c1d510694a3d15f}{}\label{classUnit_a4866ae1c5ee0e5fa1c1d510694a3d15f}
+
+\item 
+int {\bfseries Get\+Num\+Mounts} () const \hypertarget{classUnit_a433d1f418cd6cd3a9b09b6da3ae2b975}{}\label{classUnit_a433d1f418cd6cd3a9b09b6da3ae2b975}
+
+\item 
+void {\bfseries Clear\+Mounts} ()\hypertarget{classUnit_ae2b82d9e89aef582b8a25a6d6c63eaca}{}\label{classUnit_ae2b82d9e89aef582b8a25a6d6c63eaca}
+
+\item 
+virtual void {\bfseries Upgrade\+Interface} (\hyperlink{classUnit}{Unit} $\ast$base)\hypertarget{classUnit_a6b398ef7db52101c4b61be50f1b80d61}{}\label{classUnit_a6b398ef7db52101c4b61be50f1b80d61}
+
+\item 
+bool {\bfseries can\+Upgrade} (const \hyperlink{classUnit}{Unit} $\ast$upgrador, int mountoffset, int subunitoffset, int additive, bool force, double \&percentage, const \hyperlink{classUnit}{Unit} $\ast$templ=N\+U\+LL, bool force\+\_\+change\+\_\+on\+\_\+nothing=false, bool gen\+\_\+downgrade\+\_\+list=true)\hypertarget{classUnit_abab7ff5e88ec58d00a6ab967168b4360}{}\label{classUnit_abab7ff5e88ec58d00a6ab967168b4360}
+
+\item 
+bool {\bfseries Upgrade} (const \hyperlink{classUnit}{Unit} $\ast$upgrador, int mountoffset, int subunitoffset, int additive, bool force, double \&percentage, const \hyperlink{classUnit}{Unit} $\ast$templ=N\+U\+LL, bool force\+\_\+change\+\_\+on\+\_\+nothing=false, bool gen\+\_\+downgrade\+\_\+list=true)\hypertarget{classUnit_a5e6782f6c94a859c42b3519366f96c41}{}\label{classUnit_a5e6782f6c94a859c42b3519366f96c41}
+
+\item 
+int {\bfseries Repair\+Cost} ()\hypertarget{classUnit_a5d51f0e608bef616708f78f09b21990e}{}\label{classUnit_a5d51f0e608bef616708f78f09b21990e}
+
+\item 
+int {\bfseries Repair\+Upgrade} ()\hypertarget{classUnit_acbb6720c727c3a02a7c4404497ad4350}{}\label{classUnit_acbb6720c727c3a02a7c4404497ad4350}
+
+\item 
+bool {\bfseries Repair\+Upgrade\+Cargo} (\hyperlink{classCargo}{Cargo} $\ast$item, \hyperlink{classUnit}{Unit} $\ast$base\+Unit, float $\ast$credits)\hypertarget{classUnit_a6814a98be1d0c5f85d7438ead5ee2798}{}\label{classUnit_a6814a98be1d0c5f85d7438ead5ee2798}
+
+\item 
+Vector {\bfseries Mount\+Percent\+Operational} (int whichmount)\hypertarget{classUnit_abce8ebeb9dbcaaab141bde54a31ea81a}{}\label{classUnit_abce8ebeb9dbcaaab141bde54a31ea81a}
+
+\item 
+bool {\bfseries Reduce\+To\+Template} ()\hypertarget{classUnit_a52f00a84d1e0042f00431411e419cf7a}{}\label{classUnit_a52f00a84d1e0042f00431411e419cf7a}
+
+\item 
+virtual double {\bfseries Upgrade} (const std\+::string \&file, int mountoffset, int subunitoffset, bool force, bool loop\+\_\+through\+\_\+mounts)\hypertarget{classUnit_a8c4464e245e19747b41a8ed103ee215d}{}\label{classUnit_a8c4464e245e19747b41a8ed103ee215d}
+
+\item 
+bool {\bfseries can\+Downgrade} (const \hyperlink{classUnit}{Unit} $\ast$downgradeor, int mountoffset, int subunitoffset, double \&percentage, const \hyperlink{classUnit}{Unit} $\ast$downgradelimit, bool gen\+\_\+downgrade\+\_\+list=true)\hypertarget{classUnit_a1c4518bb2d559f6ecdb595c34247d659}{}\label{classUnit_a1c4518bb2d559f6ecdb595c34247d659}
+
+\item 
+bool {\bfseries Downgrade} (const \hyperlink{classUnit}{Unit} $\ast$downgradeor, int mountoffset, int subunitoffset, double \&percentage, const \hyperlink{classUnit}{Unit} $\ast$downgradelimit, bool gen\+\_\+downgrade\+\_\+list=true)\hypertarget{classUnit_afc5995c9763adf2a9909eb1eee580351}{}\label{classUnit_afc5995c9763adf2a9909eb1eee580351}
+
+\item 
+unsigned {\bfseries attack\+Preference} () const \hypertarget{classUnit_ab9b5697b8962a2588a62c1ca1dcf2382}{}\label{classUnit_ab9b5697b8962a2588a62c1ca1dcf2382}
+
+\item 
+void {\bfseries attack\+Preference} (unsigned char)\hypertarget{classUnit_a53a9bdb6835eb2b1fde3e9b80165d27d}{}\label{classUnit_a53a9bdb6835eb2b1fde3e9b80165d27d}
+
+\item 
+unsigned {\bfseries unit\+Role} () const \hypertarget{classUnit_ae8ee972f7bbac710eef0264120bc11e4}{}\label{classUnit_ae8ee972f7bbac710eef0264120bc11e4}
+
+\item 
+void {\bfseries unit\+Role} (unsigned char)\hypertarget{classUnit_a412603691b6e5bdd66893d46b4bcf024}{}\label{classUnit_a412603691b6e5bdd66893d46b4bcf024}
+
+\item 
+void {\bfseries set\+Combat\+Role} (const std\+::string \&s)\hypertarget{classUnit_a3a7a7d4346c801cffd605216e56477e1}{}\label{classUnit_a3a7a7d4346c801cffd605216e56477e1}
+
+\item 
+const std\+::string \& {\bfseries get\+Combat\+Role} () const \hypertarget{classUnit_a14e0ee777327696a61daa6f85097c6ed}{}\label{classUnit_a14e0ee777327696a61daa6f85097c6ed}
+
+\item 
+const std\+::string \& {\bfseries get\+Unit\+Role} () const \hypertarget{classUnit_a87b7540db9f281bc0f050ded428b100c}{}\label{classUnit_a87b7540db9f281bc0f050ded428b100c}
+
+\item 
+void {\bfseries set\+Unit\+Role} (const std\+::string \&s)\hypertarget{classUnit_a45fb5e1d097eee1a1b6fb241669a9a6d}{}\label{classUnit_a45fb5e1d097eee1a1b6fb241669a9a6d}
+
+\item 
+const std\+::string \& {\bfseries get\+Attack\+Preference} () const \hypertarget{classUnit_ab766e48db8482ef23d56b4d17b1f3426}{}\label{classUnit_ab766e48db8482ef23d56b4d17b1f3426}
+
+\item 
+void {\bfseries set\+Attack\+Preference} (const std\+::string \&s)\hypertarget{classUnit_af1437b0e8ed4c84baae25b5f84f71a69}{}\label{classUnit_af1437b0e8ed4c84baae25b5f84f71a69}
+
+\item 
+void {\bfseries Damage\+Rand\+Sys} (float dam, const Vector \&vec, float randum=1, float degrees=1)\hypertarget{classUnit_afb7a9739b799e74c560ff14e336f6be9}{}\label{classUnit_afb7a9739b799e74c560ff14e336f6be9}
+
+\item 
+void {\bfseries Set\+Nebula} (\hyperlink{classNebula}{Nebula} $\ast$)\hypertarget{classUnit_ae73867cf5625da73392341861c02847f}{}\label{classUnit_ae73867cf5625da73392341861c02847f}
+
+\item 
+\hyperlink{classNebula}{Nebula} $\ast$ {\bfseries Get\+Nebula} () const \hypertarget{classUnit_ab486c4800579d2b9f388f36cc45dafc8}{}\label{classUnit_ab486c4800579d2b9f388f36cc45dafc8}
+
+\item 
+const std\+::string \& {\bfseries get\+Cockpit} () const \hypertarget{classUnit_afbcc3439d85a00a8616fc9a994f0e430}{}\label{classUnit_afbcc3439d85a00a8616fc9a994f0e430}
+
+\item 
+class \hyperlink{classCockpit}{Cockpit} $\ast$ {\bfseries Get\+Velocity\+Difficulty\+Mult} (float \&) const \hypertarget{classUnit_a505bbd406a122a8043e54eae8ddf0ab1}{}\label{classUnit_a505bbd406a122a8043e54eae8ddf0ab1}
+
+\item 
+void {\bfseries Remove\+From\+System} ()\hypertarget{classUnit_a8f56180a59c3e720ea661c4af7d9585b}{}\label{classUnit_a8f56180a59c3e720ea661c4af7d9585b}
+
+\item 
+void {\bfseries Request\+Physics} ()\hypertarget{classUnit_a9861103139cd5f18742ceac78c7fff06}{}\label{classUnit_a9861103139cd5f18742ceac78c7fff06}
+
+\item 
+bool {\bfseries In\+Correct\+Star\+System} (\hyperlink{classStarSystem}{Star\+System} $\ast$)\hypertarget{classUnit_a088823a435a97e66c171d4c5175eae16}{}\label{classUnit_a088823a435a97e66c171d4c5175eae16}
+
+\item 
+virtual int {\bfseries nummesh} () const \hypertarget{classUnit_a7b066ce17e649780bc6804dc307f074a}{}\label{classUnit_a7b066ce17e649780bc6804dc307f074a}
+
+\item 
+virtual void {\bfseries Split} (int level)\hypertarget{classUnit_a86969393669a8ba45ae28211222bfb3b}{}\label{classUnit_a86969393669a8ba45ae28211222bfb3b}
+
+\item 
+virtual void {\bfseries add\+Halo} (const char $\ast$filename, const Q\+Vector \&loc, const Vector \&size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col, std\+::string halo\+\_\+type, float activation)\hypertarget{classUnit_a2db5870e581dd0f6f762c78888abfbbd}{}\label{classUnit_a2db5870e581dd0f6f762c78888abfbbd}
+
+\item 
+std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$ {\bfseries Steal\+Meshes} ()\hypertarget{classUnit_a17b6cb21f170e5f752fa6f5b98232162}{}\label{classUnit_a17b6cb21f170e5f752fa6f5b98232162}
+
+\item 
+virtual bool {\bfseries Explode} (bool draw, float timeit)\hypertarget{classUnit_ab6575087839d746fb13b2ab46ff48c66}{}\label{classUnit_ab6575087839d746fb13b2ab46ff48c66}
+
+\item 
+void {\bfseries Destroy} ()\hypertarget{classUnit_a7ff138900be4b55a5cc5a39844f218a1}{}\label{classUnit_a7ff138900be4b55a5cc5a39844f218a1}
+
+\item 
+virtual void {\bfseries Draw} (const \hyperlink{structTransformation}{Transformation} \&quat=identity\+\_\+transformation, const \hyperlink{classMatrix}{Matrix} \&m=identity\+\_\+matrix)\hypertarget{classUnit_aaabd3667b707fb9c5e11bd8c03c663f6}{}\label{classUnit_aaabd3667b707fb9c5e11bd8c03c663f6}
+
+\item 
+virtual void {\bfseries Draw\+Now} (const \hyperlink{classMatrix}{Matrix} \&m=identity\+\_\+matrix, float lod=1000000000)\hypertarget{classUnit_ac152befb9343068c5b855b5d4fce5622}{}\label{classUnit_ac152befb9343068c5b855b5d4fce5622}
+
+\item 
+virtual void {\bfseries Update\+Hud\+Matrix} (int whichcam)\hypertarget{classUnit_af79ccb1caae4d2d289e9c7d8cf5c894e}{}\label{classUnit_af79ccb1caae4d2d289e9c7d8cf5c894e}
+
+\item 
+virtual \hyperlink{classVSSprite}{V\+S\+Sprite} $\ast$ {\bfseries get\+Hud\+Image} () const \hypertarget{classUnit_afb9c85129b61849fe8935d1fec06e7b3}{}\label{classUnit_afb9c85129b61849fe8935d1fec06e7b3}
+
+\item 
+virtual void {\bfseries apply\+Technique\+Overrides} (const std\+::map$<$ std\+::string, std\+::string $>$ \&overrides)\hypertarget{classUnit_abfe3d9a945404bb7c65a40f30728fa4f}{}\label{classUnit_abfe3d9a945404bb7c65a40f30728fa4f}
+
+\item 
+const std\+::vector$<$ std\+::string $>$ \& {\bfseries Get\+Destinations} () const \hypertarget{classUnit_a88843e20ca344097543557c18a10a22c}{}\label{classUnit_a88843e20ca344097543557c18a10a22c}
+
+\item 
+void {\bfseries Add\+Destination} (const std\+::string \&)\hypertarget{classUnit_a2cd633b2a771545ffac093af3bd4da4c}{}\label{classUnit_a2cd633b2a771545ffac093af3bd4da4c}
+
+\item 
+void {\bfseries Switch\+Combat\+Flight\+Mode} ()\hypertarget{classUnit_a92a8c8d22ff2dc065489b396db9aea8e}{}\label{classUnit_a92a8c8d22ff2dc065489b396db9aea8e}
+
+\item 
+bool {\bfseries Combat\+Mode} ()\hypertarget{classUnit_a83e52b26f1bc3346f90512c7697c97e8}{}\label{classUnit_a83e52b26f1bc3346f90512c7697c97e8}
+
+\item 
+virtual bool {\bfseries Transfer\+Unit\+To\+System} (\hyperlink{classStarSystem}{Star\+System} $\ast$New\+System)\hypertarget{classUnit_a331a5c17b6093004e2bb514d76989fe1}{}\label{classUnit_a331a5c17b6093004e2bb514d76989fe1}
+
+\item 
+virtual bool {\bfseries Transfer\+Unit\+To\+System} (unsigned int which\+Jump\+Queue, class \hyperlink{classStarSystem}{Star\+System} $\ast$\&previously\+Active\+Star\+System, bool Do\+Sight\+And\+Sound)\hypertarget{classUnit_a83ca46a6843d2936267489c2bb89352a}{}\label{classUnit_a83ca46a6843d2936267489c2bb89352a}
+
+\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries get\+Star\+System} ()\hypertarget{classUnit_ab476993be14c803867014d10a99c801f}{}\label{classUnit_ab476993be14c803867014d10a99c801f}
+
+\item 
+const \hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries get\+Star\+System} () const \hypertarget{classUnit_ac1874e12bad92a64f6fa8d4905218d23}{}\label{classUnit_ac1874e12bad92a64f6fa8d4905218d23}
+
+\item 
+const \hyperlink{structUnit_1_1UnitJump}{Unit\+Jump} \& {\bfseries Get\+Jump\+Status} () const \hypertarget{classUnit_aa6cb069304d77f4614fa77cbc42fc70a}{}\label{classUnit_aa6cb069304d77f4614fa77cbc42fc70a}
+
+\item 
+float {\bfseries Course\+Deviation} (const Vector \&Original\+Course, const Vector \&Final\+Course) const \hypertarget{classUnit_ac7c39ef6234abbce813b0718fbe66bd4}{}\label{classUnit_ac7c39ef6234abbce813b0718fbe66bd4}
+
+\item 
+\hyperlink{classUnit_1_1Computer}{Computer} \& {\bfseries Get\+Computer\+Data} ()\hypertarget{classUnit_ae2952d62ec7684bcc25bcc1b5bb12c7b}{}\label{classUnit_ae2952d62ec7684bcc25bcc1b5bb12c7b}
+
+\item 
+const \hyperlink{classUnit_1_1Computer}{Computer} \& {\bfseries View\+Computer\+Data} () const \hypertarget{classUnit_abde33ad56dc58213710435279c558d39}{}\label{classUnit_abde33ad56dc58213710435279c558d39}
+
+\item 
+void {\bfseries Activate\+Jump\+Drive} (int destination=0)\hypertarget{classUnit_a60260ac6aadcfcd60900694fa498ac84}{}\label{classUnit_a60260ac6aadcfcd60900694fa498ac84}
+
+\item 
+void {\bfseries Deactivate\+Jump\+Drive} ()\hypertarget{classUnit_a7d8842c225213e42f30557a5728e9480}{}\label{classUnit_a7d8842c225213e42f30557a5728e9480}
+
+\item 
+void \hyperlink{classUnit_ac9f334be84ef29709a7b4abf2080915c}{begin\+Element} (const std\+::string \&name, const \hyperlink{classXMLSupport_1_1AttributeList}{X\+M\+L\+Support\+::\+Attribute\+List} \&attributes)
+\item 
+void {\bfseries end\+Element} (const std\+::string \&name)\hypertarget{classUnit_adb9b597ec10df5776b31a657e81b9141}{}\label{classUnit_adb9b597ec10df5776b31a657e81b9141}
+
+\item 
+void {\bfseries Write\+Unit} (const char $\ast$modificationname=\char`\"{}\char`\"{})\hypertarget{classUnit_a08b67c748953996d0b366cd388720599}{}\label{classUnit_a08b67c748953996d0b366cd388720599}
+
+\item 
+std\+::string {\bfseries Write\+Unit\+String} ()\hypertarget{classUnit_ae98c894c44d77696d4c0a94ff86f8b52}{}\label{classUnit_ae98c894c44d77696d4c0a94ff86f8b52}
+
+\item 
+void {\bfseries Load\+X\+ML} (const char $\ast$filename, const char $\ast$unit\+Modifications=\char`\"{}\char`\"{}, std\+::string $\ast$xmlbuffer=N\+U\+LL)\hypertarget{classUnit_a7523a82e2272a2889b82485b5d432dd1}{}\label{classUnit_a7523a82e2272a2889b82485b5d432dd1}
+
+\item 
+void {\bfseries Load\+X\+ML} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} \&f, const char $\ast$unit\+Modifications=\char`\"{}\char`\"{}, std\+::string $\ast$xmlbuffer=N\+U\+LL)\hypertarget{classUnit_a1a1cd8465b1d10ccaeefd5a54eedc2de}{}\label{classUnit_a1a1cd8465b1d10ccaeefd5a54eedc2de}
+
+\item 
+bool {\bfseries Auto\+Pilot\+To\+Error\+Message} (\hyperlink{classUnit}{Unit} $\ast$un, bool automaticenergyrealloc, std\+::string \&failuremessage, int recursive\+\_\+level=2)\hypertarget{classUnit_ab087bed64bd93e302360cee620241033}{}\label{classUnit_ab087bed64bd93e302360cee620241033}
+
+\item 
+bool {\bfseries Auto\+Pilot\+To} (\hyperlink{classUnit}{Unit} $\ast$un, bool automaticenergyrealloc)\hypertarget{classUnit_a2b1ccccedbc77043e6f47914d703f6e9}{}\label{classUnit_a2b1ccccedbc77043e6f47914d703f6e9}
+
+\item 
+Vector {\bfseries Local\+Coordinates} (\hyperlink{classUnit}{Unit} $\ast$un) const \hypertarget{classUnit_a434a213ab0d3b61cfe127f14053da90a}{}\label{classUnit_a434a213ab0d3b61cfe127f14053da90a}
+
+\item 
+float {\bfseries Cloak\+Visible} () const \hypertarget{classUnit_a27109fc918f61131eed6452c2de56d94}{}\label{classUnit_a27109fc918f61131eed6452c2de56d94}
+
+\item 
+virtual void {\bfseries Cloak} (bool cloak)\hypertarget{classUnit_ab27901cab93c4f397a2022b376f268bc}{}\label{classUnit_ab27901cab93c4f397a2022b376f268bc}
+
+\item 
+void {\bfseries Kill} (bool erase\+From\+Save=true, bool quitting=false)\hypertarget{classUnit_ac33578510975627ff394a867db078bbb}{}\label{classUnit_ac33578510975627ff394a867db078bbb}
+
+\item 
+bool {\bfseries Killed} () const \hypertarget{classUnit_a13ac78a1736cd3f9b0c144e870d3d69e}{}\label{classUnit_a13ac78a1736cd3f9b0c144e870d3d69e}
+
+\item 
+bool {\bfseries Is\+Exploding} () const \hypertarget{classUnit_aa6a57936e62b3673a917361fd006dd09}{}\label{classUnit_aa6a57936e62b3673a917361fd006dd09}
+
+\item 
+float {\bfseries Exploding\+Progress} () const \hypertarget{classUnit_ac6558f82a09504e8915bc153f96a0aa2}{}\label{classUnit_ac6558f82a09504e8915bc153f96a0aa2}
+
+\item 
+float {\bfseries Afterburn\+Data} () const \hypertarget{classUnit_a24918d3c77a6ccd5399da4e3110bdd9f}{}\label{classUnit_a24918d3c77a6ccd5399da4e3110bdd9f}
+
+\item 
+void {\bfseries Set\+After\+Burn} (float aft)\hypertarget{classUnit_a5428463506290f502d6f4b5955489d5c}{}\label{classUnit_a5428463506290f502d6f4b5955489d5c}
+
+\item 
+float {\bfseries Fuel\+Data} () const \hypertarget{classUnit_ad0d6be31de414e9aed1a4a2ee18aaf3a}{}\label{classUnit_ad0d6be31de414e9aed1a4a2ee18aaf3a}
+
+\item 
+float {\bfseries Warp\+Cap\+Data} () const \hypertarget{classUnit_a07b0fe4672fb2d9d3cc9d48f4b7def7f}{}\label{classUnit_a07b0fe4672fb2d9d3cc9d48f4b7def7f}
+
+\item 
+void {\bfseries Set\+Fuel} (float f)\hypertarget{classUnit_aa8b13fb4b0a7a28d5d68e361b2ddeee2}{}\label{classUnit_aa8b13fb4b0a7a28d5d68e361b2ddeee2}
+
+\item 
+float {\bfseries Energy\+Recharge\+Data} () const \hypertarget{classUnit_a59b1a3b732fafcd6c8cbf5234099bf38}{}\label{classUnit_a59b1a3b732fafcd6c8cbf5234099bf38}
+
+\item 
+void {\bfseries Set\+Energy\+Recharge} (float enrech)\hypertarget{classUnit_a9196c2f6f435a9ec1d825f6e4f0adb16}{}\label{classUnit_a9196c2f6f435a9ec1d825f6e4f0adb16}
+
+\item 
+void {\bfseries Set\+Max\+Energy} (float maxen)\hypertarget{classUnit_a90c92d57b527e7311691e89dd78bff47}{}\label{classUnit_a90c92d57b527e7311691e89dd78bff47}
+
+\item 
+float {\bfseries Max\+Energy\+Data} () const \hypertarget{classUnit_abadd834f072133e592655cdeec88d323}{}\label{classUnit_abadd834f072133e592655cdeec88d323}
+
+\item 
+float {\bfseries Shield\+Recharge\+Data} () const \hypertarget{classUnit_a6bf58f4e898d9d634c9d007ef1581b2b}{}\label{classUnit_a6bf58f4e898d9d634c9d007ef1581b2b}
+
+\item 
+float {\bfseries Energy\+Data} () const \hypertarget{classUnit_a8cf1e92756859f243fa5fe396a0e6653}{}\label{classUnit_a8cf1e92756859f243fa5fe396a0e6653}
+
+\item 
+float {\bfseries Warp\+Energy\+Data} () const \hypertarget{classUnit_afcfd2dd588a5d482fbbbc72a7d59726f}{}\label{classUnit_afcfd2dd588a5d482fbbbc72a7d59726f}
+
+\item 
+float {\bfseries Get\+Warp\+Energy} () const \hypertarget{classUnit_a3d4cf13ff6acc4a77b2ede3d672c304a}{}\label{classUnit_a3d4cf13ff6acc4a77b2ede3d672c304a}
+
+\item 
+void {\bfseries Decrease\+Warp\+Energy} (bool insystem, float time=1.\+0f)\hypertarget{classUnit_aec052b334985b77fc235a38d4e5c7eda}{}\label{classUnit_aec052b334985b77fc235a38d4e5c7eda}
+
+\item 
+void {\bfseries Increase\+Warp\+Energy} (bool insystem, float time=1.\+0f)\hypertarget{classUnit_a1059319ec3e3f2f3f6328ca09207865b}{}\label{classUnit_a1059319ec3e3f2f3f6328ca09207865b}
+
+\item 
+bool {\bfseries Refill\+Warp\+Energy} ()\hypertarget{classUnit_a8043ae84629f6172dc3c2113ea02c1ea}{}\label{classUnit_a8043ae84629f6172dc3c2113ea02c1ea}
+
+\item 
+float {\bfseries r\+Size} () const \hypertarget{classUnit_a7d09318b824f72c0a814b1c2ff80561e}{}\label{classUnit_a7d09318b824f72c0a814b1c2ff80561e}
+
+\item 
+Q\+Vector {\bfseries Position} () const \hypertarget{classUnit_a0201d2ac56d5f9eb5d4ee377499f033e}{}\label{classUnit_a0201d2ac56d5f9eb5d4ee377499f033e}
+
+\item 
+const \hyperlink{classMatrix}{Matrix} \& {\bfseries Get\+Transformation} () const \hypertarget{classUnit_a0cd1fe5a6a1767631902fc30b8039f63}{}\label{classUnit_a0cd1fe5a6a1767631902fc30b8039f63}
+
+\item 
+Q\+Vector {\bfseries Local\+Position} () const \hypertarget{classUnit_a50df85e4527294773f6fbbf02e1d1141}{}\label{classUnit_a50df85e4527294773f6fbbf02e1d1141}
+
+\item 
+void {\bfseries Set\+Position} (const Q\+Vector \&pos)\hypertarget{classUnit_a3e1aa799a3fcbe6de004fb2ac89207c2}{}\label{classUnit_a3e1aa799a3fcbe6de004fb2ac89207c2}
+
+\item 
+void \hyperlink{classUnit_a6264138d8e1510a8feeef566e97e6299}{Set\+Cur\+Position} (const Q\+Vector \&pos)\hypertarget{classUnit_a6264138d8e1510a8feeef566e97e6299}{}\label{classUnit_a6264138d8e1510a8feeef566e97e6299}
+
+\begin{DoxyCompactList}\small\item\em Sets the cumulative transformation matrix\textquotesingle{}s position...for setting up to be out in the middle of nowhere. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Pos\+And\+Cum\+Pos} (const Q\+Vector \&pos)\hypertarget{classUnit_a014f41b36598df3e31da2bca1ba9722e}{}\label{classUnit_a014f41b36598df3e31da2bca1ba9722e}
+
+\item 
+void {\bfseries Set\+Visible} (bool isvis)\hypertarget{classUnit_ae0c7f6e9cc6986d33f28dbe40cb74d64}{}\label{classUnit_ae0c7f6e9cc6986d33f28dbe40cb74d64}
+
+\item 
+void {\bfseries Set\+All\+Visible} (bool isvis)\hypertarget{classUnit_a628388e5e6bbcdab31e12f524700305f}{}\label{classUnit_a628388e5e6bbcdab31e12f524700305f}
+
+\item 
+void {\bfseries Set\+Glow\+Visible} (bool isvis)\hypertarget{classUnit_a49c9728bca91ecffd60b12321265526b}{}\label{classUnit_a49c9728bca91ecffd60b12321265526b}
+
+\item 
+void {\bfseries Rotate} (const Vector \&axis)\hypertarget{classUnit_adedf9974cf8dd6ecb645f8b36eb7ec1a}{}\label{classUnit_adedf9974cf8dd6ecb645f8b36eb7ec1a}
+
+\item 
+void \hyperlink{classUnit_a255f7adad1ce1ad8a29799e278e66cad}{Fire\+Engines} (const Vector \&Direction, float Fuel\+Speed, float F\+Mass)
+\item 
+void {\bfseries Apply\+Force} (const Vector \&Vforce)\hypertarget{classUnit_a8c809ec0970e286bc5a34d6e595940a2}{}\label{classUnit_a8c809ec0970e286bc5a34d6e595940a2}
+
+\item 
+void {\bfseries Apply\+Local\+Force} (const Vector \&Vforce)\hypertarget{classUnit_a2de2e994afdfb82425154dd21b98d4c3}{}\label{classUnit_a2de2e994afdfb82425154dd21b98d4c3}
+
+\item 
+void {\bfseries Accelerate} (const Vector \&Vforce)\hypertarget{classUnit_ad6070597b67a9e33dab8130a3d3f6b5f}{}\label{classUnit_ad6070597b67a9e33dab8130a3d3f6b5f}
+
+\item 
+void {\bfseries Apply\+Torque} (const Vector \&Vforce, const Q\+Vector \&Location)\hypertarget{classUnit_ab8769eb2924d3ec79ac4768ac02dc79a}{}\label{classUnit_ab8769eb2924d3ec79ac4768ac02dc79a}
+
+\item 
+void {\bfseries Apply\+Local\+Torque} (const Vector \&Vforce, const Vector \&Location)\hypertarget{classUnit_afbc755bbe7b990ca5a6e35deb5d9a548}{}\label{classUnit_afbc755bbe7b990ca5a6e35deb5d9a548}
+
+\item 
+void {\bfseries Apply\+Balanced\+Local\+Torque} (const Vector \&Vforce, const Vector \&Location)\hypertarget{classUnit_a9045d99a80b14cdbcc0341a3c48673e2}{}\label{classUnit_a9045d99a80b14cdbcc0341a3c48673e2}
+
+\item 
+void {\bfseries Apply\+Local\+Torque} (const Vector \&torque)\hypertarget{classUnit_abcdd828662bec22a553416bc2cbf0e37}{}\label{classUnit_abcdd828662bec22a553416bc2cbf0e37}
+
+\item 
+float {\bfseries Apply\+Local\+Damage} (const Vector \&pnt, const Vector \&normal, float amt, \hyperlink{classUnit}{Unit} $\ast$affected\+Sub\+Unit, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&, float phasedamage=0)\hypertarget{classUnit_a0283d60ec06daf6dcfd583140e453cbd}{}\label{classUnit_a0283d60ec06daf6dcfd583140e453cbd}
+
+\item 
+void {\bfseries Apply\+Net\+Damage} (Vector \&pnt, Vector \&normal, float amt, float ppercentage, float spercentage, \hyperlink{structGFXColor}{G\+F\+X\+Color} \&color)\hypertarget{classUnit_ab98bf26804823c8011eeaf567a1f9a7a}{}\label{classUnit_ab98bf26804823c8011eeaf567a1f9a7a}
+
+\item 
+void {\bfseries Apply\+Damage} (const Vector \&pnt, const Vector \&normal, float amt, \hyperlink{classUnit}{Unit} $\ast$affected\+Sub\+Unit, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&, void $\ast$owner\+Do\+Not\+Dereference, float phasedamage=0)\hypertarget{classUnit_a09f948e3648834b67fed8fdebb96735e}{}\label{classUnit_a09f948e3648834b67fed8fdebb96735e}
+
+\item 
+void {\bfseries Light\+Shields} (const Vector \&pnt, const Vector \&normal, float amt, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&color)\hypertarget{classUnit_ad024641a5d0944ac6b6c9472f26965d6}{}\label{classUnit_ad024641a5d0944ac6b6c9472f26965d6}
+
+\item 
+float {\bfseries Deal\+Damage\+To\+Hull\+Return\+Armor} (const Vector \&pnt, float Damage, float $\ast$\&targ)\hypertarget{classUnit_a2ead1519dbf5806e4d413ed567cb0f05}{}\label{classUnit_a2ead1519dbf5806e4d413ed567cb0f05}
+
+\item 
+virtual void {\bfseries Armor\+Damage\+Sound} (const Vector \&pnt)\hypertarget{classUnit_a01238b92c3d4318e8e529679c6f5cc44}{}\label{classUnit_a01238b92c3d4318e8e529679c6f5cc44}
+
+\item 
+virtual void {\bfseries Hull\+Damage\+Sound} (const Vector \&pnt)\hypertarget{classUnit_aaf2d2eaf62dd423ebaf389e7a9f3d4c7}{}\label{classUnit_aaf2d2eaf62dd423ebaf389e7a9f3d4c7}
+
+\item 
+float {\bfseries Deal\+Damage\+To\+Hull} (const Vector \&pnt, float Damage)\hypertarget{classUnit_abe3aab0ac5c4d9da922d754322ac6fc0}{}\label{classUnit_abe3aab0ac5c4d9da922d754322ac6fc0}
+
+\item 
+Vector {\bfseries Clamp\+Thrust} (const Vector \&thrust, bool afterburn)\hypertarget{classUnit_a8ac5b68f080ebeafc4f41b86869dc951}{}\label{classUnit_a8ac5b68f080ebeafc4f41b86869dc951}
+
+\item 
+Vector {\bfseries Max\+Thrust} (const Vector \&thrust)\hypertarget{classUnit_a8362b3ed87b61c4d19ee022478660894}{}\label{classUnit_a8362b3ed87b61c4d19ee022478660894}
+
+\item 
+virtual void {\bfseries Thrust} (const Vector \&amt, bool afterburn=false)\hypertarget{classUnit_ab2d5ee1ad870b46b36769501d8fd894b}{}\label{classUnit_ab2d5ee1ad870b46b36769501d8fd894b}
+
+\item 
+void {\bfseries Lateral\+Thrust} (float amt)\hypertarget{classUnit_a2490f28845172c33d229ae03eefcf009}{}\label{classUnit_a2490f28845172c33d229ae03eefcf009}
+
+\item 
+void {\bfseries Vertical\+Thrust} (float amt)\hypertarget{classUnit_a283e3687734cc04a0424d6fd1f01c1ae}{}\label{classUnit_a283e3687734cc04a0424d6fd1f01c1ae}
+
+\item 
+void {\bfseries Longitudinal\+Thrust} (float amt)\hypertarget{classUnit_a48f715c3bba0db72bc48d8b1869b2cba}{}\label{classUnit_a48f715c3bba0db72bc48d8b1869b2cba}
+
+\item 
+Vector {\bfseries Clamp\+Velocity} (const Vector \&velocity, const bool afterburn)\hypertarget{classUnit_a5549b36c03bbd6bbba7fdf57ac2f8b4d}{}\label{classUnit_a5549b36c03bbd6bbba7fdf57ac2f8b4d}
+
+\item 
+Vector {\bfseries Clamp\+Ang\+Vel} (const Vector \&vel)\hypertarget{classUnit_a79e3d3a4b213e117205e24ae0f2b6142}{}\label{classUnit_a79e3d3a4b213e117205e24ae0f2b6142}
+
+\item 
+Vector {\bfseries Clamp\+Torque} (const Vector \&torque)\hypertarget{classUnit_a11c36ec7c746292bf042097cd7ad0b54}{}\label{classUnit_a11c36ec7c746292bf042097cd7ad0b54}
+
+\item 
+Vector {\bfseries Max\+Torque} (const Vector \&torque)\hypertarget{classUnit_a49ca8dfe7ad1c52bbda0eda54d579147}{}\label{classUnit_a49ca8dfe7ad1c52bbda0eda54d579147}
+
+\item 
+void {\bfseries Yaw\+Torque} (float amt)\hypertarget{classUnit_a39bd9329f3be5725dec1e65f04dcd473}{}\label{classUnit_a39bd9329f3be5725dec1e65f04dcd473}
+
+\item 
+void {\bfseries Pitch\+Torque} (float amt)\hypertarget{classUnit_a3e68d7ff7c9b5a5a2eadf128efb0a14e}{}\label{classUnit_a3e68d7ff7c9b5a5a2eadf128efb0a14e}
+
+\item 
+void {\bfseries Roll\+Torque} (float amt)\hypertarget{classUnit_a03a42b3c45fea07abf3e56c7d6ff6073}{}\label{classUnit_a03a42b3c45fea07abf3e56c7d6ff6073}
+
+\item 
+void {\bfseries Repair} ()\hypertarget{classUnit_a777d175ebabf284021bbaa5a87afb0c8}{}\label{classUnit_a777d175ebabf284021bbaa5a87afb0c8}
+
+\item 
+void {\bfseries Update\+Physics} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{classMatrix}{Matrix} \&transmat, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc, \hyperlink{classUnit}{Unit} $\ast$superunit)\hypertarget{classUnit_a43ad2303a141b9596c7da90c5e055620}{}\label{classUnit_a43ad2303a141b9596c7da90c5e055620}
+
+\item 
+virtual void {\bfseries Update\+Physics2} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{structTransformation}{Transformation} \&old\+\_\+physical\+\_\+state, const Vector \&accel, float difficulty, const \hyperlink{classMatrix}{Matrix} \&transmat, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc=N\+U\+LL)\hypertarget{classUnit_a64220941e32ea28a7e3d061991887b2d}{}\label{classUnit_a64220941e32ea28a7e3d061991887b2d}
+
+\item 
+virtual void {\bfseries Update\+Subunit\+Physics} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{classMatrix}{Matrix} \&transmat, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc, \hyperlink{classUnit}{Unit} $\ast$superunit)\hypertarget{classUnit_a7b0cfafa08733e8ee83d0fd4e5167f78}{}\label{classUnit_a7b0cfafa08733e8ee83d0fd4e5167f78}
+
+\item 
+virtual void {\bfseries Update\+Subunit\+Physics} (\hyperlink{classUnit}{Unit} $\ast$subunit, const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{classMatrix}{Matrix} \&transmat, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc, \hyperlink{classUnit}{Unit} $\ast$superunit)\hypertarget{classUnit_a2871c7b9fa88f40e03f8fde75683d940}{}\label{classUnit_a2871c7b9fa88f40e03f8fde75683d940}
+
+\item 
+void {\bfseries Add\+Velocity} (float difficulty)\hypertarget{classUnit_af51538046336a29cf470ba8b2ac246ac}{}\label{classUnit_af51538046336a29cf470ba8b2ac246ac}
+
+\item 
+virtual Vector {\bfseries Resolve\+Forces} (const \hyperlink{structTransformation}{Transformation} \&, const \hyperlink{classMatrix}{Matrix} \&)\hypertarget{classUnit_abed3d290ef42c76be193a441e4ccf7bd}{}\label{classUnit_abed3d290ef42c76be193a441e4ccf7bd}
+
+\item 
+void {\bfseries Set\+Orientation} (Q\+Vector q, Q\+Vector r)\hypertarget{classUnit_ae2196ab751ce3cf5bf7f20846f2e3d08}{}\label{classUnit_ae2196ab751ce3cf5bf7f20846f2e3d08}
+
+\item 
+void {\bfseries Set\+Orientation} (\hyperlink{structQuaternion}{Quaternion} Q)\hypertarget{classUnit_a09b6a966bbdbbe805e2c7feaeaf8a263}{}\label{classUnit_a09b6a966bbdbbe805e2c7feaeaf8a263}
+
+\item 
+void {\bfseries Set\+Orientation} (Q\+Vector p, Q\+Vector q, Q\+Vector r)\hypertarget{classUnit_a60c5f413eb81f4654a9afe12df4cb675}{}\label{classUnit_a60c5f413eb81f4654a9afe12df4cb675}
+
+\item 
+void {\bfseries Get\+Orientation} (Vector \&p, Vector \&q, Vector \&r) const \hypertarget{classUnit_a88e34c4db780b316f0dd4fa1102a76b8}{}\label{classUnit_a88e34c4db780b316f0dd4fa1102a76b8}
+
+\item 
+Vector {\bfseries Get\+Net\+Acceleration} ()\hypertarget{classUnit_abaabcaf4618c47854bcaf82bbcc8a412}{}\label{classUnit_abaabcaf4618c47854bcaf82bbcc8a412}
+
+\item 
+Vector {\bfseries Get\+Acceleration} () const \hypertarget{classUnit_a1fa1529b1570e6e7ab188f718fd3f546}{}\label{classUnit_a1fa1529b1570e6e7ab188f718fd3f546}
+
+\item 
+float {\bfseries Get\+Max\+Acceleration\+In\+Direction\+Of} (const Vector \&ref, bool afterburn) const \hypertarget{classUnit_a1d6634e153a583507e463b9a007c2228}{}\label{classUnit_a1d6634e153a583507e463b9a007c2228}
+
+\item 
+Vector {\bfseries Up\+Coordinate\+Level} (const Vector \&v) const \hypertarget{classUnit_a60a7cf9969b1841c4f8c81b696644b5a}{}\label{classUnit_a60a7cf9969b1841c4f8c81b696644b5a}
+
+\item 
+Vector {\bfseries Down\+Coordinate\+Level} (const Vector \&v) const \hypertarget{classUnit_aa436e33644e7b0ec8f546eefd56f1c01}{}\label{classUnit_aa436e33644e7b0ec8f546eefd56f1c01}
+
+\item 
+Vector {\bfseries To\+Local\+Coordinates} (const Vector \&v) const \hypertarget{classUnit_adeabdf7e1e04ea339ec39e4e2ca69090}{}\label{classUnit_adeabdf7e1e04ea339ec39e4e2ca69090}
+
+\item 
+Vector {\bfseries To\+World\+Coordinates} (const Vector \&v) const \hypertarget{classUnit_ae1b5895ffed4a7e8c5560bfe6ad1c77d}{}\label{classUnit_ae1b5895ffed4a7e8c5560bfe6ad1c77d}
+
+\item 
+const Vector \& {\bfseries Get\+Angular\+Velocity} () const \hypertarget{classUnit_aa6b2daec6cfe6638fa59daeeabe4ffbb}{}\label{classUnit_aa6b2daec6cfe6638fa59daeeabe4ffbb}
+
+\item 
+const Vector \& {\bfseries Get\+Velocity} () const \hypertarget{classUnit_ac7c101afab53be3fe4e944e2a265f1c4}{}\label{classUnit_ac7c101afab53be3fe4e944e2a265f1c4}
+
+\item 
+Vector {\bfseries Get\+Warp\+Velocity} () const \hypertarget{classUnit_adcd7831c02f887a898513b675c84c573}{}\label{classUnit_adcd7831c02f887a898513b675c84c573}
+
+\item 
+void {\bfseries Set\+Velocity} (const Vector \&)\hypertarget{classUnit_af9bf791af157f131b9861c106eb75434}{}\label{classUnit_af9bf791af157f131b9861c106eb75434}
+
+\item 
+void {\bfseries Set\+Angular\+Velocity} (const Vector \&)\hypertarget{classUnit_aebe09575113121347ba77dc6c8f1b323}{}\label{classUnit_aebe09575113121347ba77dc6c8f1b323}
+
+\item 
+float {\bfseries Get\+Moment} () const \hypertarget{classUnit_a82086ff6136a6d8b10cc9ac4b8b9fdf0}{}\label{classUnit_a82086ff6136a6d8b10cc9ac4b8b9fdf0}
+
+\item 
+float {\bfseries Get\+Mass} () const \hypertarget{classUnit_a9c875cadc8fdea33b895a94fb61b81c5}{}\label{classUnit_a9c875cadc8fdea33b895a94fb61b81c5}
+
+\item 
+float {\bfseries Get\+Elasticity} ()\hypertarget{classUnit_aa29367541d8800a845ce91f5edca89ff}{}\label{classUnit_aa29367541d8800a845ce91f5edca89ff}
+
+\item 
+const \hyperlink{classUnit_1_1Limits}{Limits} \& {\bfseries Limits} () const \hypertarget{classUnit_aada40d51b7d142bfa95f87dfb72625a9}{}\label{classUnit_aada40d51b7d142bfa95f87dfb72625a9}
+
+\item 
+void {\bfseries Set\+Resolve\+Forces} (bool)\hypertarget{classUnit_a4244dc359471354a75726a31563c8e63}{}\label{classUnit_a4244dc359471354a75726a31563c8e63}
+
+\item 
+void {\bfseries set\+Average\+Gun\+Speed} ()\hypertarget{classUnit_a7c0bdccc14f27fd54c810151a7f590f7}{}\label{classUnit_a7c0bdccc14f27fd54c810151a7f590f7}
+
+\item 
+int {\bfseries Lock\+Missile} () const \hypertarget{classUnit_ad8d5e53ac674bdc6ccae4a2cd2ef5ff8}{}\label{classUnit_ad8d5e53ac674bdc6ccae4a2cd2ef5ff8}
+
+\item 
+void {\bfseries Lock\+Target} (bool myboo)\hypertarget{classUnit_af711890dc331dfee9391eadf8283f240}{}\label{classUnit_af711890dc331dfee9391eadf8283f240}
+
+\item 
+bool {\bfseries Target\+Locked} () const \hypertarget{classUnit_ac0713a64170fa2b4ca235cc2fbd9e828}{}\label{classUnit_ac0713a64170fa2b4ca235cc2fbd9e828}
+
+\item 
+float {\bfseries Tracking\+Guns} (bool \&missile\+Lock)\hypertarget{classUnit_a626708cdcedbf9a31278576aea3ad044}{}\label{classUnit_a626708cdcedbf9a31278576aea3ad044}
+
+\item 
+void {\bfseries Toggle\+Weapon} (bool \hyperlink{classMissile}{Missile}, bool forward=true)\hypertarget{classUnit_a15280dbc97ee7488651e2ad681ea93e4}{}\label{classUnit_a15280dbc97ee7488651e2ad681ea93e4}
+
+\item 
+void {\bfseries Select\+All\+Weapon} (bool \hyperlink{classMissile}{Missile})\hypertarget{classUnit_af6fcb4d2d626282df9c06dddd0d24366}{}\label{classUnit_af6fcb4d2d626282df9c06dddd0d24366}
+
+\item 
+void {\bfseries get\+Average\+Gun\+Speed} (float \&speed, float \&grange, float \&mrange) const \hypertarget{classUnit_a0c9c06685ea3e8f872409cd26e4df5d3}{}\label{classUnit_a0c9c06685ea3e8f872409cd26e4df5d3}
+
+\item 
+Q\+Vector {\bfseries Position\+I\+T\+TS} (const Q\+Vector \&firingposit, Vector firingvelocity, float gunspeed, bool smooth\+\_\+itts) const \hypertarget{classUnit_a01dce04e3f1a9d893568fe895770d8fa}{}\label{classUnit_a01dce04e3f1a9d893568fe895770d8fa}
+
+\item 
+float {\bfseries F\+Shield\+Data} () const \hypertarget{classUnit_a149b10e23ede55524841c1a5c52c6c66}{}\label{classUnit_a149b10e23ede55524841c1a5c52c6c66}
+
+\item 
+float {\bfseries R\+Shield\+Data} () const \hypertarget{classUnit_a9e7a65ed1d0f9782d8b34187c069f03f}{}\label{classUnit_a9e7a65ed1d0f9782d8b34187c069f03f}
+
+\item 
+float {\bfseries L\+Shield\+Data} () const \hypertarget{classUnit_a9f47aa9362c871ca1029f40c29059884}{}\label{classUnit_a9f47aa9362c871ca1029f40c29059884}
+
+\item 
+float {\bfseries B\+Shield\+Data} () const \hypertarget{classUnit_addc8945c00a3d338e5367a20dc7a7e84}{}\label{classUnit_addc8945c00a3d338e5367a20dc7a7e84}
+
+\item 
+void {\bfseries Armor\+Data} (float armor\mbox{[}8\mbox{]}) const \hypertarget{classUnit_ac9a1d874d006e5e140c1f493430ea392}{}\label{classUnit_ac9a1d874d006e5e140c1f493430ea392}
+
+\item 
+float {\bfseries Get\+Hull} () const \hypertarget{classUnit_ae45ca0e974803a070734e99881f860e1}{}\label{classUnit_ae45ca0e974803a070734e99881f860e1}
+
+\item 
+float {\bfseries Get\+Hull\+Percent} () const \hypertarget{classUnit_ae3cb8c09fd683139013daf308d167c29}{}\label{classUnit_ae3cb8c09fd683139013daf308d167c29}
+
+\item 
+void {\bfseries Fire} (unsigned int bitmask, bool beams\+\_\+target\+\_\+owner=false)\hypertarget{classUnit_ae803e2ec14a1da69584d1b25ccbf41bf}{}\label{classUnit_ae803e2ec14a1da69584d1b25ccbf41bf}
+
+\item 
+void {\bfseries Un\+Fire} ()\hypertarget{classUnit_a4f9922c15cad4ceaed349d7f78386691}{}\label{classUnit_a4f9922c15cad4ceaed349d7f78386691}
+
+\item 
+void {\bfseries leach} (float Xshield\+Percent, float Yrecharge\+Percent, float Zenergy\+Percent)\hypertarget{classUnit_a9d5d1ec2d82c09b436c6071b81899a7d}{}\label{classUnit_a9d5d1ec2d82c09b436c6071b81899a7d}
+
+\item 
+bool {\bfseries In\+Range} (\hyperlink{classUnit}{Unit} $\ast$target, bool cone=true, bool cap=true) const \hypertarget{classUnit_ae1575e0418e2efafb82b52a40054b039}{}\label{classUnit_ae1575e0418e2efafb82b52a40054b039}
+
+\item 
+bool {\bfseries In\+Range} (\hyperlink{classUnit}{Unit} $\ast$target, double \&mm, bool cone, bool cap, bool lock) const \hypertarget{classUnit_ac5838cd5a2f8cb75fe567662afcbe899}{}\label{classUnit_ac5838cd5a2f8cb75fe567662afcbe899}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries Target} ()\hypertarget{classUnit_a7716836bf2d5b411a380e64ae47b8523}{}\label{classUnit_a7716836bf2d5b411a380e64ae47b8523}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries Velocity\+Reference} ()\hypertarget{classUnit_aca84fd72d674597d57c82a50035d31e9}{}\label{classUnit_aca84fd72d674597d57c82a50035d31e9}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries Threat} ()\hypertarget{classUnit_a63be532632c7f513ca2d74a41ee18498}{}\label{classUnit_a63be532632c7f513ca2d74a41ee18498}
+
+\item 
+void {\bfseries Velocity\+Reference} (\hyperlink{classUnit}{Unit} $\ast$targ)\hypertarget{classUnit_ad06dffadc235ca125e32af477b0a5e54}{}\label{classUnit_ad06dffadc235ca125e32af477b0a5e54}
+
+\item 
+void {\bfseries Target\+Turret} (\hyperlink{classUnit}{Unit} $\ast$targ)\hypertarget{classUnit_a0821361af528c13ad875289aec584599}{}\label{classUnit_a0821361af528c13ad875289aec584599}
+
+\item 
+void {\bfseries Threaten} (\hyperlink{classUnit}{Unit} $\ast$targ, float danger)\hypertarget{classUnit_a790cbe6ad8231dfc848b898a113e755c}{}\label{classUnit_a790cbe6ad8231dfc848b898a113e755c}
+
+\item 
+void {\bfseries Reset\+Threat\+Level} ()\hypertarget{classUnit_ae3b1150e80b1674111a178e32de97875}{}\label{classUnit_ae3b1150e80b1674111a178e32de97875}
+
+\item 
+float {\bfseries cos\+Angle\+To} (\hyperlink{classUnit}{Unit} $\ast$target, float \&distance, float speed=0.\+001, float range=0.\+001, bool turnmargin=true) const \hypertarget{classUnit_aa61636e497f31e6c894e9de66770736c}{}\label{classUnit_aa61636e497f31e6c894e9de66770736c}
+
+\item 
+float {\bfseries cos\+Angle\+From\+Mount\+To} (\hyperlink{classUnit}{Unit} $\ast$target, float \&distance) const \hypertarget{classUnit_aef949e5686d8ef63fc72b8f5a1de41b7}{}\label{classUnit_aef949e5686d8ef63fc72b8f5a1de41b7}
+
+\item 
+float {\bfseries compute\+Locking\+Percent} ()\hypertarget{classUnit_a1afdd820d7d0e0e9425e98fe9eff9c1c}{}\label{classUnit_a1afdd820d7d0e0e9425e98fe9eff9c1c}
+
+\item 
+void {\bfseries Select} ()\hypertarget{classUnit_adc2a2780e32799686a92c585e30511d5}{}\label{classUnit_adc2a2780e32799686a92c585e30511d5}
+
+\item 
+void {\bfseries Deselect} ()\hypertarget{classUnit_a99931142bd1a041df9d126b2cf5ec117}{}\label{classUnit_a99931142bd1a041df9d126b2cf5ec117}
+
+\item 
+void {\bfseries Target} (\hyperlink{classUnit}{Unit} $\ast$targ)\hypertarget{classUnit_a26227e9e343e338a52557bccfac1aa76}{}\label{classUnit_a26227e9e343e338a52557bccfac1aa76}
+
+\item 
+void {\bfseries set\+Target\+Fg} (std\+::string primary, std\+::string secondary=std\+::string(), std\+::string tertiary=std\+::string())\hypertarget{classUnit_a3322179da0140714fd2a74ad23eb88fb}{}\label{classUnit_a3322179da0140714fd2a74ad23eb88fb}
+
+\item 
+void {\bfseries Re\+Target\+Fg} (int which\+\_\+target=0)\hypertarget{classUnit_a702fc35310108e9e60dad93e3ca0849e}{}\label{classUnit_a702fc35310108e9e60dad93e3ca0849e}
+
+\item 
+bool {\bfseries Can\+Add\+Cargo} (const \hyperlink{classCargo}{Cargo} \&carg) const \hypertarget{classUnit_aaddc23b04acd39c45fd49b0285c57d6a}{}\label{classUnit_aaddc23b04acd39c45fd49b0285c57d6a}
+
+\item 
+void {\bfseries Add\+Cargo} (const \hyperlink{classCargo}{Cargo} \&carg, bool sort=true)\hypertarget{classUnit_a56180845d063c953c1154ed758b8233b}{}\label{classUnit_a56180845d063c953c1154ed758b8233b}
+
+\item 
+int {\bfseries Remove\+Cargo} (unsigned int i, int quantity, bool erase\+Zero=true)\hypertarget{classUnit_afe6412516303e099f50e455ab93d4038}{}\label{classUnit_afe6412516303e099f50e455ab93d4038}
+
+\item 
+float {\bfseries Price\+Cargo} (const std\+::string \&s)\hypertarget{classUnit_aada662ff7a48ef6e66f99d8c09dde9bd}{}\label{classUnit_aada662ff7a48ef6e66f99d8c09dde9bd}
+
+\item 
+\hyperlink{classCargo}{Cargo} \& {\bfseries Get\+Cargo} (unsigned int i)\hypertarget{classUnit_a0d6289231e5e8fa2dad268f27632a997}{}\label{classUnit_a0d6289231e5e8fa2dad268f27632a997}
+
+\item 
+const \hyperlink{classCargo}{Cargo} \& {\bfseries Get\+Cargo} (unsigned int i) const \hypertarget{classUnit_ac2df17f3f05e9c00ebb64decb072a916}{}\label{classUnit_ac2df17f3f05e9c00ebb64decb072a916}
+
+\item 
+void {\bfseries Get\+Sorted\+Cargo\+Cat} (const std\+::string \&category, size\+\_\+t \&catbegin, size\+\_\+t \&catend)\hypertarget{classUnit_a111bdccc6aa295c95fad4f81de868657}{}\label{classUnit_a111bdccc6aa295c95fad4f81de868657}
+
+\item 
+\hyperlink{classCargo}{Cargo} $\ast$ {\bfseries Get\+Cargo} (const std\+::string \&s, unsigned int \&i)\hypertarget{classUnit_ab151cda72613f69f33aaef39cb78d08c}{}\label{classUnit_ab151cda72613f69f33aaef39cb78d08c}
+
+\item 
+const \hyperlink{classCargo}{Cargo} $\ast$ {\bfseries Get\+Cargo} (const std\+::string \&s, unsigned int \&i) const \hypertarget{classUnit_a160150b628414e7ca48bc0aac441403a}{}\label{classUnit_a160150b628414e7ca48bc0aac441403a}
+
+\item 
+unsigned int {\bfseries num\+Cargo} () const \hypertarget{classUnit_a92dd143b11b1784de3442a037c2d22f3}{}\label{classUnit_a92dd143b11b1784de3442a037c2d22f3}
+
+\item 
+std\+::string \hyperlink{classUnit_a0a0dbb25c02ab3e89fe8f0c818a26513}{Get\+Manifest} (unsigned int i, \hyperlink{classUnit}{Unit} $\ast$scanning\+Unit, const Vector \&original\+\_\+velocity) const 
+\item 
+bool {\bfseries Sell\+Cargo} (unsigned int i, int quantity, float \&creds, \hyperlink{classCargo}{Cargo} \&carg, \hyperlink{classUnit}{Unit} $\ast$buyer)\hypertarget{classUnit_aad68e14a7bbca99ced66c612e48e11e6}{}\label{classUnit_aad68e14a7bbca99ced66c612e48e11e6}
+
+\item 
+bool {\bfseries Sell\+Cargo} (const std\+::string \&s, int quantity, float \&creds, \hyperlink{classCargo}{Cargo} \&carg, \hyperlink{classUnit}{Unit} $\ast$buyer)\hypertarget{classUnit_aec236f237f964217212ad30af674d7b9}{}\label{classUnit_aec236f237f964217212ad30af674d7b9}
+
+\item 
+bool {\bfseries Buy\+Cargo} (const \hyperlink{classCargo}{Cargo} \&carg, float \&creds)\hypertarget{classUnit_af00a3fd80f6f7d9c81c7d1fe5a768480}{}\label{classUnit_af00a3fd80f6f7d9c81c7d1fe5a768480}
+
+\item 
+bool {\bfseries Buy\+Cargo} (unsigned int i, unsigned int quantity, \hyperlink{classUnit}{Unit} $\ast$buyer, float \&creds)\hypertarget{classUnit_a5b7a27ba82a5343930da5b1732693b10}{}\label{classUnit_a5b7a27ba82a5343930da5b1732693b10}
+
+\item 
+bool {\bfseries Buy\+Cargo} (const std\+::string \&cargo, unsigned int quantity, \hyperlink{classUnit}{Unit} $\ast$buyer, float \&creds)\hypertarget{classUnit_aa24dd9b62a6eda3b1cd480475d9c5ddc}{}\label{classUnit_aa24dd9b62a6eda3b1cd480475d9c5ddc}
+
+\item 
+void {\bfseries Eject\+Cargo} (unsigned int index)\hypertarget{classUnit_a4193f63f04a7f827766ef285ebee688e}{}\label{classUnit_a4193f63f04a7f827766ef285ebee688e}
+
+\item 
+float {\bfseries get\+Empty\+Cargo\+Volume} (void) const \hypertarget{classUnit_ae9e050db18767b5e3d7f92022ee832a7}{}\label{classUnit_ae9e050db18767b5e3d7f92022ee832a7}
+
+\item 
+float {\bfseries get\+Cargo\+Volume} (void) const \hypertarget{classUnit_aee55ac6095415558ad6418f665270548}{}\label{classUnit_aee55ac6095415558ad6418f665270548}
+
+\item 
+float {\bfseries get\+Empty\+Upgrade\+Volume} (void) const \hypertarget{classUnit_a04ac19c5d60c4087e4ead22135da2e32}{}\label{classUnit_a04ac19c5d60c4087e4ead22135da2e32}
+
+\item 
+float {\bfseries get\+Upgrade\+Volume} (void) const \hypertarget{classUnit_ad216c815e031cafa03eb59a0747d14f2}{}\label{classUnit_ad216c815e031cafa03eb59a0747d14f2}
+
+\item 
+float {\bfseries get\+Hidden\+Cargo\+Volume} (void) const \hypertarget{classUnit_a35ae8f83ec2a2183a906eaecffd4b218}{}\label{classUnit_a35ae8f83ec2a2183a906eaecffd4b218}
+
+\item 
+class \hyperlink{classcsOPCODECollider}{cs\+O\+P\+C\+O\+D\+E\+Collider} $\ast$ {\bfseries get\+Collide\+Tree} (const Vector \&scale=Vector(1, 1, 1), const std\+::vector$<$ struct \hyperlink{structmesh__polygon}{mesh\+\_\+polygon} $>$ $\ast$=N\+U\+LL)\hypertarget{classUnit_affe092473f87417112b360867202fa70}{}\label{classUnit_affe092473f87417112b360867202fa70}
+
+\item 
+\hyperlink{classOrder}{Order} $\ast$ {\bfseries get\+A\+I\+State} () const \hypertarget{classUnit_a827a069fd6990de3abef7978bd91b8aa}{}\label{classUnit_a827a069fd6990de3abef7978bd91b8aa}
+
+\item 
+void {\bfseries Prime\+Orders} ()\hypertarget{classUnit_a4ddf77420f249633e111adc852e652ab}{}\label{classUnit_a4ddf77420f249633e111adc852e652ab}
+
+\item 
+void {\bfseries Prime\+Orders\+Launched} ()\hypertarget{classUnit_a34b86317503a92d5387b249957d1b115}{}\label{classUnit_a34b86317503a92d5387b249957d1b115}
+
+\item 
+void {\bfseries Prime\+Orders} (\hyperlink{classOrder}{Order} $\ast$new\+AI)\hypertarget{classUnit_a3b393860e88d0ee6b0fc62fb3420849b}{}\label{classUnit_a3b393860e88d0ee6b0fc62fb3420849b}
+
+\item 
+void {\bfseries Set\+AI} (\hyperlink{classOrder}{Order} $\ast$new\+AI)\hypertarget{classUnit_a4f56070963733c3794a22972a852ed52}{}\label{classUnit_a4f56070963733c3794a22972a852ed52}
+
+\item 
+void {\bfseries Enqueue\+AI} (\hyperlink{classOrder}{Order} $\ast$new\+AI)\hypertarget{classUnit_ad3bdb1564a97d49439169fba06eaf63f}{}\label{classUnit_ad3bdb1564a97d49439169fba06eaf63f}
+
+\item 
+void {\bfseries Enqueue\+A\+I\+First} (\hyperlink{classOrder}{Order} $\ast$new\+AI)\hypertarget{classUnit_a010b8c78bc21044cbe711a4623fde57e}{}\label{classUnit_a010b8c78bc21044cbe711a4623fde57e}
+
+\item 
+void {\bfseries Load\+A\+I\+Script} (const std\+::string \&aiscript)\hypertarget{classUnit_aa9dfc447b39389bbc0e1b6f98ae2f9b1}{}\label{classUnit_aa9dfc447b39389bbc0e1b6f98ae2f9b1}
+
+\item 
+bool {\bfseries Load\+Last\+Python\+A\+I\+Script} ()\hypertarget{classUnit_a2dc15d346ec3fc4424b1f14d9e20775a}{}\label{classUnit_a2dc15d346ec3fc4424b1f14d9e20775a}
+
+\item 
+bool {\bfseries Enqueue\+Last\+Python\+A\+I\+Script} ()\hypertarget{classUnit_afda5612f43c8abe25ff981e7b9f231f7}{}\label{classUnit_afda5612f43c8abe25ff981e7b9f231f7}
+
+\item 
+double {\bfseries get\+Min\+Dis} (const Q\+Vector \&pnt)\hypertarget{classUnit_a2b7aaba17ce4347f1cb9e713a1eadaeb}{}\label{classUnit_a2b7aaba17ce4347f1cb9e713a1eadaeb}
+
+\item 
+void {\bfseries Set\+Turret\+AI} ()\hypertarget{classUnit_a7648ce8fcd0f0af15127ef97171a62df}{}\label{classUnit_a7648ce8fcd0f0af15127ef97171a62df}
+
+\item 
+void {\bfseries Disable\+Turret\+AI} ()\hypertarget{classUnit_a40cad9562c932e002f1b133680fec49d}{}\label{classUnit_a40cad9562c932e002f1b133680fec49d}
+
+\item 
+std\+::string {\bfseries get\+Full\+A\+I\+Description} ()\hypertarget{classUnit_a3ac4d129eb967b5913d1b2f0ba31201c}{}\label{classUnit_a3ac4d129eb967b5913d1b2f0ba31201c}
+
+\item 
+void {\bfseries erase\+Order\+Type} (unsigned int type)\hypertarget{classUnit_acf0818d22d64c1d09d8e603e6e55e6bf}{}\label{classUnit_acf0818d22d64c1d09d8e603e6e55e6bf}
+
+\item 
+void {\bfseries Execute\+AI} ()\hypertarget{classUnit_a2d294aa5ba38aad1f7c0d23d253d019c}{}\label{classUnit_a2d294aa5ba38aad1f7c0d23d253d019c}
+
+\item 
+void {\bfseries Set\+Collision\+Parent} (\hyperlink{classUnit}{Unit} $\ast$name)\hypertarget{classUnit_ae9b1c96a5ea24b0d0b37837e185224bc}{}\label{classUnit_ae9b1c96a5ea24b0d0b37837e185224bc}
+
+\item 
+void {\bfseries Set\+Owner} (\hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classUnit_a32cd99fb5363e9064b4f73757edd8c0a}{}\label{classUnit_a32cd99fb5363e9064b4f73757edd8c0a}
+
+\item 
+void {\bfseries Set\+Recursive\+Owner} (\hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classUnit_a1ed3a6bb69ffd1c67bfabdb385d0cea5}{}\label{classUnit_a1ed3a6bb69ffd1c67bfabdb385d0cea5}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries ray\+Collide} (const Q\+Vector \&st, const Q\+Vector \&end, Vector \&normal, float \&distance)\hypertarget{classUnit_acf1996e1d8a20c69884fb2a5894acecb}{}\label{classUnit_acf1996e1d8a20c69884fb2a5894acecb}
+
+\item 
+void {\bfseries calculate\+\_\+extent} (bool update\+\_\+collide\+\_\+queue)\hypertarget{classUnit_ac7d13a538a0e97da9ec3c8e6926fdbcd}{}\label{classUnit_ac7d13a538a0e97da9ec3c8e6926fdbcd}
+
+\item 
+bool {\bfseries Inside} (const Q\+Vector \&position, const float radius, Vector \&normal, float \&dist)\hypertarget{classUnit_a30cc84a796e23fb5b35604edaa029533}{}\label{classUnit_a30cc84a796e23fb5b35604edaa029533}
+
+\item 
+void {\bfseries Update\+Collide\+Queue} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss, \hyperlink{classCollidable}{Collide\+Map\+::iterator} hint\mbox{[}N\+U\+M\+\_\+\+C\+O\+L\+L\+I\+D\+E\+\_\+\+M\+A\+PS\mbox{]})\hypertarget{classUnit_a086271b6d4278f38a10c532a89952f9d}{}\label{classUnit_a086271b6d4278f38a10c532a89952f9d}
+
+\item 
+bool {\bfseries query\+Sphere} (const Q\+Vector \&pnt, float err) const \hypertarget{classUnit_a42f36e079132afd36eef45649deffb7b}{}\label{classUnit_a42f36e079132afd36eef45649deffb7b}
+
+\item 
+float {\bfseries query\+Sphere} (const Q\+Vector \&start, const Q\+Vector \&end, float my\+\_\+unit\+\_\+radius=0) const \hypertarget{classUnit_ab894fb92623a22ecc97a237e05419c72}{}\label{classUnit_ab894fb92623a22ecc97a237e05419c72}
+
+\item 
+float {\bfseries query\+Sphere\+No\+Recurse} (const Q\+Vector \&start, const Q\+Vector \&end, float my\+\_\+unit\+\_\+radius=0) const \hypertarget{classUnit_a16c6866b0beaca03cbdb8468a6469eff}{}\label{classUnit_a16c6866b0beaca03cbdb8468a6469eff}
+
+\item 
+float {\bfseries query\+Sphere\+Click\+List} (const Q\+Vector \&st, const Q\+Vector \&dir, float err) const \hypertarget{classUnit_a980436f43187fb76be5202ac37269fe4}{}\label{classUnit_a980436f43187fb76be5202ac37269fe4}
+
+\item 
+bool {\bfseries query\+Frustum} (double frustum\mbox{[}6\mbox{]}\mbox{[}4\mbox{]}) const \hypertarget{classUnit_a264aeb5e196471213b877f15d1cd227e}{}\label{classUnit_a264aeb5e196471213b877f15d1cd227e}
+
+\item 
+virtual bool \hyperlink{classUnit_a882081de69e4014803be5e955ce5e1e3}{query\+Sphere\+Click\+List} (int, int, float err, \hyperlink{classCamera}{Camera} $\ast$active\+Cam)
+\item 
+bool {\bfseries Inside\+Collide\+Tree} (\hyperlink{classUnit}{Unit} $\ast$smaller, Q\+Vector \&bigpos, Vector \&big\+Normal, Q\+Vector \&smallpos, Vector \&small\+Normal, bool bigasteroid=false, bool smallasteroid=false)\hypertarget{classUnit_a7b2a2ad957fe038882ac566046f309a8}{}\label{classUnit_a7b2a2ad957fe038882ac566046f309a8}
+
+\item 
+virtual void {\bfseries react\+To\+Collision} (\hyperlink{classUnit}{Unit} $\ast$smaller, const Q\+Vector \&biglocation, const Vector \&bignormal, const Q\+Vector \&smalllocation, const Vector \&smallnormal, float dist)\hypertarget{classUnit_aaab2bcb98efc394d990d88cd096ed387}{}\label{classUnit_aaab2bcb98efc394d990d88cd096ed387}
+
+\item 
+bool {\bfseries jump\+React\+To\+Collision} (\hyperlink{classUnit}{Unit} $\ast$smaller)\hypertarget{classUnit_ad81cbd5c9fde47f04c9ae6c46fa1293f}{}\label{classUnit_ad81cbd5c9fde47f04c9ae6c46fa1293f}
+
+\item 
+bool {\bfseries Collide} (\hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classUnit_a995b1fe6016dfeaf7735b5e965b372ad}{}\label{classUnit_a995b1fe6016dfeaf7735b5e965b372ad}
+
+\item 
+void {\bfseries Collide\+All} ()\hypertarget{classUnit_a7175055062ae1c05e0471ba427801cc8}{}\label{classUnit_a7175055062ae1c05e0471ba427801cc8}
+
+\item 
+int {\bfseries Can\+Dock\+With\+Me} (\hyperlink{classUnit}{Unit} $\ast$dockingunit, bool forcedock=false)\hypertarget{classUnit_a74617863fcc20cee3aac7ebcb28c6cbd}{}\label{classUnit_a74617863fcc20cee3aac7ebcb28c6cbd}
+
+\item 
+int {\bfseries Force\+Dock} (\hyperlink{classUnit}{Unit} $\ast$utdw, unsigned int whichdockport)\hypertarget{classUnit_a5517327ce33dc44ee8fcc9100f26dc3d}{}\label{classUnit_a5517327ce33dc44ee8fcc9100f26dc3d}
+
+\item 
+void \hyperlink{classUnit_ae8ce3e78a9b112377c7051f8cf731342}{Perform\+Docking\+Operations} ()
+\item 
+void {\bfseries Free\+Docking\+Port} (unsigned int whichport)\hypertarget{classUnit_af42e99a5e8fb6198c94fa87f66671819}{}\label{classUnit_af42e99a5e8fb6198c94fa87f66671819}
+
+\item 
+const std\+::vector$<$ struct \hyperlink{structDockingPorts}{Docking\+Ports} $>$ \& {\bfseries Docking\+Port\+Locations} () const \hypertarget{classUnit_a5b9ebe6ffbe7e165e8c8f5b086505ebd}{}\label{classUnit_a5b9ebe6ffbe7e165e8c8f5b086505ebd}
+
+\item 
+char {\bfseries Docked\+Or\+Docking} () const \hypertarget{classUnit_a55ec729326cdb93a0af9cafd1a154148}{}\label{classUnit_a55ec729326cdb93a0af9cafd1a154148}
+
+\item 
+bool {\bfseries Is\+Cleared} (const \hyperlink{classUnit}{Unit} $\ast$dockignunit) const \hypertarget{classUnit_af32eeb4ef4aa7790b3aa0b34cee9a6fb}{}\label{classUnit_af32eeb4ef4aa7790b3aa0b34cee9a6fb}
+
+\item 
+bool {\bfseries is\+Docked} (const \hyperlink{classUnit}{Unit} $\ast$docking\+Unit) const \hypertarget{classUnit_a62d7951f0e5acdd8ba85269a211c893f}{}\label{classUnit_a62d7951f0e5acdd8ba85269a211c893f}
+
+\item 
+bool {\bfseries Un\+Dock} (\hyperlink{classUnit}{Unit} $\ast$unit\+To\+Dock\+With)\hypertarget{classUnit_aec177e1eec43a5a2db18ef1bee6eaf3d}{}\label{classUnit_aec177e1eec43a5a2db18ef1bee6eaf3d}
+
+\item 
+bool {\bfseries Request\+Clearance} (\hyperlink{classUnit}{Unit} $\ast$dockingunit)\hypertarget{classUnit_a5e03d4fb4c1b321e746a7508c01d3037}{}\label{classUnit_a5e03d4fb4c1b321e746a7508c01d3037}
+
+\item 
+bool {\bfseries End\+Request\+Clearance} (\hyperlink{classUnit}{Unit} $\ast$dockingunit)\hypertarget{classUnit_a99aae69b8891c4079005805f68564b3d}{}\label{classUnit_a99aae69b8891c4079005805f68564b3d}
+
+\item 
+bool {\bfseries has\+Pending\+Clearance\+Requests} () const \hypertarget{classUnit_a22eff865a95533ab9e3d2b5d6e03c241}{}\label{classUnit_a22eff865a95533ab9e3d2b5d6e03c241}
+
+\item 
+int {\bfseries Dock} (\hyperlink{classUnit}{Unit} $\ast$unit\+To\+Dock\+With)\hypertarget{classUnit_aa84b73e74f2443418307fb7d6c011ec5}{}\label{classUnit_aa84b73e74f2443418307fb7d6c011ec5}
+
+\item 
+void {\bfseries Restore\+Godliness} ()\hypertarget{classUnit_a1c7e0464dc64302378ad6cdcac19adfa}{}\label{classUnit_a1c7e0464dc64302378ad6cdcac19adfa}
+
+\item 
+void {\bfseries Set\+Fg} (\hyperlink{classFlightgroup}{Flightgroup} $\ast$fg, int fg\+\_\+snumber)\hypertarget{classUnit_a0902e78b0eff79d527c4e205e602b145}{}\label{classUnit_a0902e78b0eff79d527c4e205e602b145}
+
+\item 
+void {\bfseries Set\+Faction} (int faction)\hypertarget{classUnit_a4faabee1bf47541d0cb1b984ff9a2251}{}\label{classUnit_a4faabee1bf47541d0cb1b984ff9a2251}
+
+\item 
+\hyperlink{classFlightgroup}{Flightgroup} $\ast$ {\bfseries get\+Flightgroup} () const \hypertarget{classUnit_ad9be7e5f1502b58a2a9677245c786a14}{}\label{classUnit_ad9be7e5f1502b58a2a9677245c786a14}
+
+\item 
+int {\bfseries get\+Fg\+Subnumber} () const \hypertarget{classUnit_a26711c8d8d2e372d5bb6cd02e099bc49}{}\label{classUnit_a26711c8d8d2e372d5bb6cd02e099bc49}
+
+\item 
+const std\+::string {\bfseries get\+Fg\+ID} ()\hypertarget{classUnit_adcf663cdfa47945703a96de8ae8a6bba}{}\label{classUnit_adcf663cdfa47945703a96de8ae8a6bba}
+
+\item 
+std\+::vector$<$ class \hyperlink{classCargoColor}{Cargo\+Color} $>$ \& {\bfseries Filter\+Downgrade\+List} (std\+::vector$<$ class \hyperlink{classCargoColor}{Cargo\+Color} $>$ \&mylist, bool downgrade=true)\hypertarget{classUnit_abb191f45e1b7628d65ecb83bf8f10a84}{}\label{classUnit_abb191f45e1b7628d65ecb83bf8f10a84}
+
+\item 
+std\+::vector$<$ class \hyperlink{classCargoColor}{Cargo\+Color} $>$ \& {\bfseries Filter\+Upgrade\+List} (std\+::vector$<$ class \hyperlink{classCargoColor}{Cargo\+Color} $>$ \&mylist)\hypertarget{classUnit_acdaf1af0aff675c5ec67cd04039c7ec6}{}\label{classUnit_acdaf1af0aff675c5ec67cd04039c7ec6}
+
+\item 
+bool {\bfseries Is\+Base} () const \hypertarget{classUnit_a9d46c33b6b84f6ed2f8c8f3ea926b9f5}{}\label{classUnit_a9d46c33b6b84f6ed2f8c8f3ea926b9f5}
+
+\item 
+bool {\bfseries is\+Tractorable} (enum tractor\+How how=tractor\+Both) const \hypertarget{classUnit_a509c5b9eaa4f8f8e24ac6e24076b442a}{}\label{classUnit_a509c5b9eaa4f8f8e24ac6e24076b442a}
+
+\item 
+void {\bfseries set\+Tractorability} (enum tractor\+How how)\hypertarget{classUnit_ae53431b2f8cba99609994daf8d49b2e7}{}\label{classUnit_ae53431b2f8cba99609994daf8d49b2e7}
+
+\item 
+enum tractor\+How {\bfseries get\+Tractorability} () const \hypertarget{classUnit_af42dfa2ac4a18a34e6e14699d2e80228}{}\label{classUnit_af42dfa2ac4a18a34e6e14699d2e80228}
+
+\item 
+void {\bfseries set\+Fullname} (std\+::string name)\hypertarget{classUnit_ac413c791b4014d16c45d3f640c7cf501}{}\label{classUnit_ac413c791b4014d16c45d3f640c7cf501}
+
+\item 
+const string \& {\bfseries get\+Fullname} () const \hypertarget{classUnit_a314e0ef3b1af37b5d00be7178c769c1b}{}\label{classUnit_a314e0ef3b1af37b5d00be7178c769c1b}
+
+\item 
+const string \& {\bfseries get\+Filename} () const \hypertarget{classUnit_a1732a44abb3469c248ee8efb5598feb1}{}\label{classUnit_a1732a44abb3469c248ee8efb5598feb1}
+
+\item 
+virtual enum clsptr {\bfseries is\+Unit} () const \hypertarget{classUnit_af19d807f19215e15b117029b5aa240ce}{}\label{classUnit_af19d807f19215e15b117029b5aa240ce}
+
+\item 
+void {\bfseries Ref} ()\hypertarget{classUnit_a3231bf3f133744e0bb820804f5223451}{}\label{classUnit_a3231bf3f133744e0bb820804f5223451}
+
+\item 
+void {\bfseries Un\+Ref} ()\hypertarget{classUnit_a2d46a93ca4d6f78000ade6bea0bf02f8}{}\label{classUnit_a2d46a93ca4d6f78000ade6bea0bf02f8}
+
+\item 
+\hyperlink{structUnitImages}{Unit\+Images}$<$ void $>$ \& {\bfseries Get\+Image\+Information} ()\hypertarget{classUnit_a703c0866b1e2a734eb5bf117a91f7edc}{}\label{classUnit_a703c0866b1e2a734eb5bf117a91f7edc}
+
+\item 
+bool {\bfseries is\+Star\+Ship} () const \hypertarget{classUnit_af9472134841ac4f77e86b06775e4b64f}{}\label{classUnit_af9472134841ac4f77e86b06775e4b64f}
+
+\item 
+bool {\bfseries is\+Planet} () const \hypertarget{classUnit_a974ed47031d8a0104fbdcac761d9bf96}{}\label{classUnit_a974ed47031d8a0104fbdcac761d9bf96}
+
+\item 
+bool {\bfseries is\+Jumppoint} () const \hypertarget{classUnit_a32416ed15a2b4355a8344962ef01f3a4}{}\label{classUnit_a32416ed15a2b4355a8344962ef01f3a4}
+
+\item 
+bool {\bfseries is\+Enemy} (const \hyperlink{classUnit}{Unit} $\ast$other) const \hypertarget{classUnit_ad575a5edf34aa1f7ce08af8efc7d000b}{}\label{classUnit_ad575a5edf34aa1f7ce08af8efc7d000b}
+
+\item 
+bool {\bfseries is\+Friend} (const \hyperlink{classUnit}{Unit} $\ast$other) const \hypertarget{classUnit_af863ba38b831f0d2c1d54b7776ae38db}{}\label{classUnit_af863ba38b831f0d2c1d54b7776ae38db}
+
+\item 
+bool {\bfseries is\+Neutral} (const \hyperlink{classUnit}{Unit} $\ast$other) const \hypertarget{classUnit_a868c0657af56e917dcf338fcbc70811a}{}\label{classUnit_a868c0657af56e917dcf338fcbc70811a}
+
+\item 
+float {\bfseries get\+Relation} (const \hyperlink{classUnit}{Unit} $\ast$other) const \hypertarget{classUnit_afdcbc8da1e8dda74d68d0f3046ad892f}{}\label{classUnit_afdcbc8da1e8dda74d68d0f3046ad892f}
+
+\item 
+void {\bfseries Turret\+F\+AW} ()\hypertarget{classUnit_a086b7da100f0fe20e35b47b80d05ac69}{}\label{classUnit_a086b7da100f0fe20e35b47b80d05ac69}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classUnit_af7dc49d6e2d3d0e91ea042c5ee0543b8}{Process\+Delete\+Queue} ()
+\item 
+static void {\bfseries begin\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{classUnit_ae62bd54c1521b16847a1daa3989ac5f7}{}\label{classUnit_ae62bd54c1521b16847a1daa3989ac5f7}
+
+\item 
+static void {\bfseries end\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name)\hypertarget{classUnit_aa0aaecaff7d8b780da3a1891e7a3caf5}{}\label{classUnit_aa0aaecaff7d8b780da3a1891e7a3caf5}
+
+\item 
+static \hyperlink{classUnit}{Unit} $\ast$ {\bfseries make\+Master\+Part\+List} ()\hypertarget{classUnit_afaa68c0d71f482ec0ec61c9c12151ac9}{}\label{classUnit_afaa68c0d71f482ec0ec61c9c12151ac9}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries killed}\hypertarget{classUnit_ac5b6095884475ec876a678b491e56e34}{}\label{classUnit_ac5b6095884475ec876a678b491e56e34}
+
+\item 
+bool {\bfseries zapped}\hypertarget{classUnit_abb3954a0f0f19c519ebb1b50708251b4}{}\label{classUnit_abb3954a0f0f19c519ebb1b50708251b4}
+
+\item 
+int {\bfseries ucref}\hypertarget{classUnit_a400e98ee8beb7cdf85881035558b821d}{}\label{classUnit_a400e98ee8beb7cdf85881035558b821d}
+
+\item 
+\hyperlink{structUnitSounds}{Unit\+Sounds} $\ast$ {\bfseries sound}\hypertarget{classUnit_aff72abfb4dd49b8368797e45a706e381}{}\label{classUnit_aff72abfb4dd49b8368797e45a706e381}
+
+\item 
+String\+Pool\+::\+Reference {\bfseries name}\hypertarget{classUnit_a165dcef46b24f348f11d69c8257f89fa}{}\label{classUnit_a165dcef46b24f348f11d69c8257f89fa}
+
+\item 
+String\+Pool\+::\+Reference {\bfseries filename}\hypertarget{classUnit_a0b1263495fcb0a4d9b7076f184766303}{}\label{classUnit_a0b1263495fcb0a4d9b7076f184766303}
+
+\item 
+\hyperlink{classClientState}{Client\+State} {\bfseries old\+\_\+state}\hypertarget{classUnit_ab183d2e259a81bc1f6a9e4b986b493ce}{}\label{classUnit_ab183d2e259a81bc1f6a9e4b986b493ce}
+
+\item 
+unsigned short {\bfseries damages}\hypertarget{classUnit_a8932cbcafb4b0625c45cfb48351df62c}{}\label{classUnit_a8932cbcafb4b0625c45cfb48351df62c}
+
+\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} {\bfseries Sub\+Units}\hypertarget{classUnit_a0a3afb2d1c9732c6bac02ef6017d8879}{}\label{classUnit_a0a3afb2d1c9732c6bac02ef6017d8879}
+
+\item 
+std\+::vector$<$ \hyperlink{classMount}{Mount} $>$ {\bfseries mounts}\hypertarget{classUnit_a341bb9a9c62f117eca2fde3371e6f152}{}\label{classUnit_a341bb9a9c62f117eca2fde3371e6f152}
+
+\item 
+float {\bfseries gunspeed}\hypertarget{classUnit_a43f45d571cef8f25b1f9d6ccd93f1223}{}\label{classUnit_a43f45d571cef8f25b1f9d6ccd93f1223}
+
+\item 
+float {\bfseries gunrange}\hypertarget{classUnit_ad0e0702e61346fd30373baf96ac4b722}{}\label{classUnit_ad0e0702e61346fd30373baf96ac4b722}
+
+\item 
+float {\bfseries missilerange}\hypertarget{classUnit_a7aace45f42b1f9a1afda5fdcd37e4470}{}\label{classUnit_a7aace45f42b1f9a1afda5fdcd37e4470}
+
+\item 
+bool {\bfseries inertialmode}\hypertarget{classUnit_a5416abd192e4e9909f449fd4a866539a}{}\label{classUnit_a5416abd192e4e9909f449fd4a866539a}
+
+\item 
+char {\bfseries turretstatus}\hypertarget{classUnit_a757fcef8d2ddbf6d4184b133529fe668}{}\label{classUnit_a757fcef8d2ddbf6d4184b133529fe668}
+
+\item 
+bool {\bfseries autopilotactive}\hypertarget{classUnit_ae28916b165d9035edb06527ed76fe07e}{}\label{classUnit_ae28916b165d9035edb06527ed76fe07e}
+
+\item 
+class \hyperlink{classUnit_1_1graphic__options}{Unit\+::graphic\+\_\+options} {\bfseries graphic\+Options}\hypertarget{classUnit_a4a8c39c7edfa27d1ab7b38e3b282ba5a}{}\label{classUnit_a4a8c39c7edfa27d1ab7b38e3b282ba5a}
+
+\item 
+std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$ {\bfseries meshdata}\hypertarget{classUnit_ac17cd3c77909d1eb911e53c07fe83a79}{}\label{classUnit_ac17cd3c77909d1eb911e53c07fe83a79}
+
+\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries active\+Star\+System}\hypertarget{classUnit_a817e0c8cd6ab05ba05e61ecf527e1605}{}\label{classUnit_a817e0c8cd6ab05ba05e61ecf527e1605}
+
+\item 
+class \hyperlink{classUnit_1_1Computer}{Unit\+::\+Computer} {\bfseries computer}\hypertarget{classUnit_ae95bd950f1c3b354f86cfb0dede01fe9}{}\label{classUnit_ae95bd950f1c3b354f86cfb0dede01fe9}
+
+\item 
+struct \hyperlink{structUnit_1_1UnitJump}{Unit\+::\+Unit\+Jump} {\bfseries jump}\hypertarget{classUnit_aa068bf1e95cb8837ab2f5e0658f1f99e}{}\label{classUnit_aa068bf1e95cb8837ab2f5e0658f1f99e}
+
+\item 
+\hyperlink{classPilot}{Pilot} $\ast$ {\bfseries pilot}\hypertarget{classUnit_a05f9a688f7e0a5db2f98cace33c90553}{}\label{classUnit_a05f9a688f7e0a5db2f98cace33c90553}
+
+\item 
+bool {\bfseries selected}\hypertarget{classUnit_a392344ee0fb543ca0f9e9ef364f2597d}{}\label{classUnit_a392344ee0fb543ca0f9e9ef364f2597d}
+
+\item 
+\hyperlink{structUnit_1_1XML}{X\+ML} $\ast$ {\bfseries xml}\hypertarget{classUnit_a2dbcffa4460264a26fce5deb017b9480}{}\label{classUnit_a2dbcffa4460264a26fce5deb017b9480}
+
+\item 
+void $\ast$ {\bfseries owner}\hypertarget{classUnit_a79a19b21ad55b6856ed8504fb350b13d}{}\label{classUnit_a79a19b21ad55b6856ed8504fb350b13d}
+
+\item 
+unsigned int {\bfseries sim\+\_\+atom\+\_\+multiplier}\hypertarget{classUnit_a97dfc5bd1f2afd63bfef6423f0d71097}{}\label{classUnit_a97dfc5bd1f2afd63bfef6423f0d71097}
+
+\item 
+unsigned int {\bfseries predicted\+\_\+priority}\hypertarget{classUnit_a4e6c9bbc3c52833b8c3b246b11438b72}{}\label{classUnit_a4e6c9bbc3c52833b8c3b246b11438b72}
+
+\item 
+\hyperlink{structTransformation}{Transformation} {\bfseries prev\+\_\+physical\+\_\+state}\hypertarget{classUnit_ac9debacd3f87a7d18e0afc5f55e83c47}{}\label{classUnit_ac9debacd3f87a7d18e0afc5f55e83c47}
+
+\item 
+\hyperlink{structTransformation}{Transformation} {\bfseries curr\+\_\+physical\+\_\+state}\hypertarget{classUnit_ae4dbc4d247f0f722ca86d69116879d1d}{}\label{classUnit_ae4dbc4d247f0f722ca86d69116879d1d}
+
+\item 
+unsigned int {\bfseries cur\+\_\+sim\+\_\+queue\+\_\+slot}\hypertarget{classUnit_adae3e39dd762bb6f9a5eb4323d6680b3}{}\label{classUnit_adae3e39dd762bb6f9a5eb4323d6680b3}
+
+\item 
+unsigned int {\bfseries last\+\_\+processed\+\_\+sqs}\hypertarget{classUnit_ae2a7a015e87fa5a6e3abdfa424e5ec81}{}\label{classUnit_ae2a7a015e87fa5a6e3abdfa424e5ec81}
+
+\item 
+bool {\bfseries do\+\_\+subunit\+\_\+scheduling}\hypertarget{classUnit_a59b014aea0bc6811a281155ec68d9d60}{}\label{classUnit_a59b014aea0bc6811a281155ec68d9d60}
+
+\item 
+enum Unit\+::schedulepriorityenum {\bfseries schedule\+\_\+priority}\hypertarget{classUnit_abb3a59f23968ee14e7758d28f6a539d2}{}\label{classUnit_abb3a59f23968ee14e7758d28f6a539d2}
+
+\item 
+\hyperlink{classMatrix}{Matrix} {\bfseries cumulative\+\_\+transformation\+\_\+matrix}\hypertarget{classUnit_ab5da54559fbf718c7d5f082e0ef87b6e}{}\label{classUnit_ab5da54559fbf718c7d5f082e0ef87b6e}
+
+\item 
+\hyperlink{structTransformation}{Transformation} {\bfseries cumulative\+\_\+transformation}\hypertarget{classUnit_aad4a20244f77e17cf99587b08f29a0a3}{}\label{classUnit_aad4a20244f77e17cf99587b08f29a0a3}
+
+\item 
+Vector {\bfseries cumulative\+\_\+velocity}\hypertarget{classUnit_a59bfdc93caf168329cbee802aebdbcb8}{}\label{classUnit_a59bfdc93caf168329cbee802aebdbcb8}
+
+\item 
+Vector {\bfseries Net\+Force}\hypertarget{classUnit_a944d0559064bb1c62c27a68744cc14d9}{}\label{classUnit_a944d0559064bb1c62c27a68744cc14d9}
+
+\item 
+Vector {\bfseries Net\+Local\+Force}\hypertarget{classUnit_a777afae39316fcd515cff52723c03de6}{}\label{classUnit_a777afae39316fcd515cff52723c03de6}
+
+\item 
+Vector {\bfseries Net\+Torque}\hypertarget{classUnit_a1b540019e3cfd163de602c53441709e9}{}\label{classUnit_a1b540019e3cfd163de602c53441709e9}
+
+\item 
+Vector {\bfseries Net\+Local\+Torque}\hypertarget{classUnit_a05e956cbd5573320dac84879e3a8d761}{}\label{classUnit_a05e956cbd5573320dac84879e3a8d761}
+
+\item 
+Vector {\bfseries Angular\+Velocity}\hypertarget{classUnit_afc30c05d297c988f6c84b0674079a93e}{}\label{classUnit_afc30c05d297c988f6c84b0674079a93e}
+
+\item 
+Vector {\bfseries Velocity}\hypertarget{classUnit_a1e59f902950b0d34f06084bcb5e4ac10}{}\label{classUnit_a1e59f902950b0d34f06084bcb5e4ac10}
+
+\item 
+\hyperlink{structUnitImages}{Unit\+Images}$<$ void $>$ $\ast$ {\bfseries p\+Image}\hypertarget{classUnit_a6d169f174197680d69096924225a2eba}{}\label{classUnit_a6d169f174197680d69096924225a2eba}
+
+\item 
+float {\bfseries spec\+Interdiction}\hypertarget{classUnit_ab1439b572146944ab5ad2a434e02d188}{}\label{classUnit_ab1439b572146944ab5ad2a434e02d188}
+
+\item 
+float {\bfseries Mass}\hypertarget{classUnit_aaa88b26a3a3f2e40d6d4bf1839d2a0ec}{}\label{classUnit_aaa88b26a3a3f2e40d6d4bf1839d2a0ec}
+
+\item 
+float {\bfseries Heat\+Sink}\hypertarget{classUnit_a944831d91adeed2dbc9ef168174774ed}{}\label{classUnit_a944831d91adeed2dbc9ef168174774ed}
+
+\item 
+class \hyperlink{classUnit_1_1Limits}{Unit\+::\+Limits} {\bfseries limits}\hypertarget{classUnit_aa710bad1af57f89c8e960fd0888c778e}{}\label{classUnit_aa710bad1af57f89c8e960fd0888c778e}
+
+\item 
+int {\bfseries cloaking}\hypertarget{classUnit_aaca3bc64643bc8bd334f26bbbcf5ef60}{}\label{classUnit_aaca3bc64643bc8bd334f26bbbcf5ef60}
+
+\item 
+int {\bfseries cloakmin}\hypertarget{classUnit_a450351bafd8f0accaaffc84737759780}{}\label{classUnit_a450351bafd8f0accaaffc84737759780}
+
+\item 
+float {\bfseries radial\+\_\+size}\hypertarget{classUnit_a01a38d7a9a17bffa8573a018fed9d8ef}{}\label{classUnit_a01a38d7a9a17bffa8573a018fed9d8ef}
+
+\item 
+Vector {\bfseries corner\+\_\+min}\hypertarget{classUnit_a9027f89e29393f133537c3f8de345647}{}\label{classUnit_a9027f89e29393f133537c3f8de345647}
+
+\item 
+Vector {\bfseries corner\+\_\+max}\hypertarget{classUnit_a23ad32e3236e8d8c330b438a47426354}{}\label{classUnit_a23ad32e3236e8d8c330b438a47426354}
+
+\item 
+bool {\bfseries resolveforces}\hypertarget{classUnit_a131a253990f0d7b915cb6947d0c24edd}{}\label{classUnit_a131a253990f0d7b915cb6947d0c24edd}
+
+\item 
+\hyperlink{structArmor}{Armor} {\bfseries armor}\hypertarget{classUnit_a4dac26b62b319688cc88bcb25276cffe}{}\label{classUnit_a4dac26b62b319688cc88bcb25276cffe}
+
+\item 
+\hyperlink{structShield}{Shield} {\bfseries shield}\hypertarget{classUnit_a30cbcc171969edea2416f6e865c6c420}{}\label{classUnit_a30cbcc171969edea2416f6e865c6c420}
+
+\item 
+float {\bfseries hull}\hypertarget{classUnit_a022c3d608d4eb4f6aafaabd7388c3b17}{}\label{classUnit_a022c3d608d4eb4f6aafaabd7388c3b17}
+
+\item 
+float {\bfseries energy}\hypertarget{classUnit_a541f4549f8bf62f291e21fbfc7ae18bc}{}\label{classUnit_a541f4549f8bf62f291e21fbfc7ae18bc}
+
+\item 
+\hyperlink{classOrder}{Order} $\ast$ {\bfseries aistate}\hypertarget{classUnit_ac45347999456e586e578a9b3938c8bd8}{}\label{classUnit_ac45347999456e586e578a9b3938c8bd8}
+
+\item 
+\hyperlink{classCollidable}{Collide\+Map\+::iterator} {\bfseries location} \mbox{[}2\mbox{]}\hypertarget{classUnit_a2f39953246a6aa793d8a08d591e36a20}{}\label{classUnit_a2f39953246a6aa793d8a08d591e36a20}
+
+\item 
+struct \hyperlink{structcollideTrees}{collide\+Trees} $\ast$ {\bfseries col\+Trees}\hypertarget{classUnit_ae659c5e8bbed800ffdf77a7422c26517}{}\label{classUnit_ae659c5e8bbed800ffdf77a7422c26517}
+
+\item 
+unsigned char {\bfseries docked}\hypertarget{classUnit_aeb5858e28f00e25967ec669eaa063e1a}{}\label{classUnit_aeb5858e28f00e25967ec669eaa063e1a}
+
+\item 
+int {\bfseries faction}\hypertarget{classUnit_a9e865df25b016fec2fe80df6b59eccbb}{}\label{classUnit_a9e865df25b016fec2fe80df6b59eccbb}
+
+\item 
+\hyperlink{classMeshAnimation}{Mesh\+Animation} $\ast$ {\bfseries p\+Mesh\+Animation}\hypertarget{classUnit_a6a1f8943768c9fb1604f5eb206fe9adb}{}\label{classUnit_a6a1f8943768c9fb1604f5eb206fe9adb}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries I\+N\+V\+IS} \{ {\bfseries D\+E\+F\+A\+U\+L\+T\+V\+IS} =0x0, 
+{\bfseries I\+N\+V\+I\+S\+G\+L\+OW} =0x1, 
+{\bfseries I\+N\+V\+I\+S\+U\+N\+IT} =0x2, 
+{\bfseries I\+N\+V\+I\+S\+C\+A\+M\+E\+RA} =0x4
+ \}\hypertarget{classUnit_ac94626965649a3c2c698cca02a376c9a}{}\label{classUnit_ac94626965649a3c2c698cca02a376c9a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Unit} (const \hyperlink{classUnit}{Unit} \&)\hypertarget{classUnit_ae7351c99c228ee3bad29e47a8716aa22}{}\label{classUnit_ae7351c99c228ee3bad29e47a8716aa22}
+
+\item 
+\hyperlink{classUnit}{Unit} \& {\bfseries operator=} (const \hyperlink{classUnit}{Unit} \&)\hypertarget{classUnit_a995197dc4e9397d7df9b53766c8d6874}{}\label{classUnit_a995197dc4e9397d7df9b53766c8d6874}
+
+\item 
+virtual float {\bfseries Explosion\+Radius} ()\hypertarget{classUnit_ab9842d4ca561d695d1a843a968664c8b}{}\label{classUnit_ab9842d4ca561d695d1a843a968664c8b}
+
+\item 
+void \hyperlink{classUnit_abc0044c1104ac923e6750fd56fc1ae40}{Activate\+Guns} (const \hyperlink{structweapon__info}{weapon\+\_\+info} $\ast$, bool \hyperlink{classMissile}{Missile})\hypertarget{classUnit_abc0044c1104ac923e6750fd56fc1ae40}{}\label{classUnit_abc0044c1104ac923e6750fd56fc1ae40}
+
+\begin{DoxyCompactList}\small\item\em cycles through the loop twice turning on all matching to ms weapons of size or after size \end{DoxyCompactList}\item 
+float {\bfseries Max\+Shield\+Val} () const \hypertarget{classUnit_abe536ba1fd66db0bda6fd12ba5969e2b}{}\label{classUnit_abe536ba1fd66db0bda6fd12ba5969e2b}
+
+\item 
+void {\bfseries Regen\+Shields} ()\hypertarget{classUnit_a877cb0708d4feca257cd10b5566fdfa1}{}\label{classUnit_a877cb0708d4feca257cd10b5566fdfa1}
+
+\item 
+virtual float {\bfseries Deal\+Damage\+To\+Shield} (const Vector \&pnt, float \&Damage)\hypertarget{classUnit_aa6185b41d261cf9d72e4b49ef3ec436f}{}\label{classUnit_aa6185b41d261cf9d72e4b49ef3ec436f}
+
+\item 
+bool {\bfseries Shield\+Up} (const Vector \&) const \hypertarget{classUnit_a69304c4967dd1d2e076e3077e21f4194}{}\label{classUnit_a69304c4967dd1d2e076e3077e21f4194}
+
+\item 
+void {\bfseries Sort\+Cargo} ()\hypertarget{classUnit_a01a5755fb77b31e93a64a4a0769fdadf}{}\label{classUnit_a01a5755fb77b31e93a64a4a0769fdadf}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string {\bfseries mass\+Serializer} (const struct \hyperlink{structXMLType}{X\+M\+L\+Type} \&input, void $\ast$mythis)\hypertarget{classUnit_a31a729638e1c962161c5339362b531c2}{}\label{classUnit_a31a729638e1c962161c5339362b531c2}
+
+\item 
+static std\+::string {\bfseries cargo\+Serializer} (const struct \hyperlink{structXMLType}{X\+M\+L\+Type} \&input, void $\ast$mythis)\hypertarget{classUnit_ad1cee624f53490b9f1e4922823030b29}{}\label{classUnit_ad1cee624f53490b9f1e4922823030b29}
+
+\item 
+static std\+::string {\bfseries mount\+Serializer} (const struct \hyperlink{structXMLType}{X\+M\+L\+Type} \&input, void $\ast$mythis)\hypertarget{classUnit_a548a4afb74c9928ac7054839ee3312d7}{}\label{classUnit_a548a4afb74c9928ac7054839ee3312d7}
+
+\item 
+static std\+::string {\bfseries shield\+Serializer} (const struct \hyperlink{structXMLType}{X\+M\+L\+Type} \&input, void $\ast$mythis)\hypertarget{classUnit_a56ff0deb7d50cb97e5fd87443ee6f624}{}\label{classUnit_a56ff0deb7d50cb97e5fd87443ee6f624}
+
+\item 
+static std\+::string {\bfseries subunit\+Serializer} (const struct \hyperlink{structXMLType}{X\+M\+L\+Type} \&input, void $\ast$mythis)\hypertarget{classUnit_aa14672d021391e790108a3e3990d358f}{}\label{classUnit_aa14672d021391e790108a3e3990d358f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String\+Pool\+::\+Reference {\bfseries csv\+Row}\hypertarget{classUnit_a218bacb444a56023a5b16638f60ee276}{}\label{classUnit_a218bacb444a56023a5b16638f60ee276}
+
+\item 
+bool {\bfseries networked}\hypertarget{classUnit_a7a6c70328a9f8225f99e64174e8e9004}{}\label{classUnit_a7a6c70328a9f8225f99e64174e8e9004}
+
+\item 
+Obj\+Serial {\bfseries serial}\hypertarget{classUnit_aa27bdf08dbbd810d30b2da6b89273ab0}{}\label{classUnit_aa27bdf08dbbd810d30b2da6b89273ab0}
+
+\item 
+Vector {\bfseries net\+\_\+accel}\hypertarget{classUnit_a69c87892e640a054dbb89dbdadab6275}{}\label{classUnit_a69c87892e640a054dbb89dbdadab6275}
+
+\item 
+unsigned char {\bfseries attack\+\_\+preference}\hypertarget{classUnit_adc8decca28eb50cfecad24709d9a1cf1}{}\label{classUnit_adc8decca28eb50cfecad24709d9a1cf1}
+
+\item 
+unsigned char {\bfseries unit\+\_\+role}\hypertarget{classUnit_ab1cec5b1c17fc3cb963194a288797ba9}{}\label{classUnit_ab1cec5b1c17fc3cb963194a288797ba9}
+
+\item 
+\hyperlink{classNebula}{Nebula} $\ast$ {\bfseries nebula}\hypertarget{classUnit_af3cc739ece7b97c7a436af9e8a095f1f}{}\label{classUnit_af3cc739ece7b97c7a436af9e8a095f1f}
+
+\item 
+float {\bfseries shieldtight}\hypertarget{classUnit_acd47ce32eb7286d283f2231f8630888d}{}\label{classUnit_acd47ce32eb7286d283f2231f8630888d}
+
+\item 
+float {\bfseries fuel}\hypertarget{classUnit_ae7c82da7d0047b27244d243b99a222e8}{}\label{classUnit_ae7c82da7d0047b27244d243b99a222e8}
+
+\item 
+float {\bfseries afterburnenergy}\hypertarget{classUnit_adefcfe4bde909e13fbb13226ce2d7993}{}\label{classUnit_adefcfe4bde909e13fbb13226ce2d7993}
+
+\item 
+int {\bfseries afterburntype}\hypertarget{classUnit_ab9b0355453f311d8fa0a76d8b952bdec}{}\label{classUnit_ab9b0355453f311d8fa0a76d8b952bdec}
+
+\item 
+float {\bfseries Momentofinertia}\hypertarget{classUnit_ac62bba1c93df51c45a4a04716b657296}{}\label{classUnit_ac62bba1c93df51c45a4a04716b657296}
+
+\item 
+Vector {\bfseries Saved\+Accel}\hypertarget{classUnit_ab5d01eb6f3046651071bb305d2cd818f}{}\label{classUnit_ab5d01eb6f3046651071bb305d2cd818f}
+
+\item 
+unsigned char {\bfseries invisible}\hypertarget{classUnit_a4594d664b9bf9dcd0d1fe864ca4bdc2b}{}\label{classUnit_a4594d664b9bf9dcd0d1fe864ca4bdc2b}
+
+\item 
+float {\bfseries maxhull}\hypertarget{classUnit_a5a1ecd7661f365188f7c4b3f24da100d}{}\label{classUnit_a5a1ecd7661f365188f7c4b3f24da100d}
+
+\item 
+float {\bfseries recharge}\hypertarget{classUnit_a8063b9b017dc6441211a6abc4ca23f4b}{}\label{classUnit_a8063b9b017dc6441211a6abc4ca23f4b}
+
+\item 
+float {\bfseries maxenergy}\hypertarget{classUnit_afa0639ce36fe344007da81a196e4799b}{}\label{classUnit_afa0639ce36fe344007da81a196e4799b}
+
+\item 
+float {\bfseries maxwarpenergy}\hypertarget{classUnit_a68f0004b07fe902722fa34953fb973a7}{}\label{classUnit_a68f0004b07fe902722fa34953fb973a7}
+
+\item 
+float {\bfseries warpenergy}\hypertarget{classUnit_a16b64da8cd305518e2fc7184680558af}{}\label{classUnit_a16b64da8cd305518e2fc7184680558af}
+
+\item 
+String\+Pool\+::\+Reference {\bfseries target\+\_\+fgid} \mbox{[}3\mbox{]}\hypertarget{classUnit_a0f206351d7bc24d6af6ac37f3d8bfd73}{}\label{classUnit_a0f206351d7bc24d6af6ac37f3d8bfd73}
+
+\item 
+\hyperlink{classFlightgroup}{Flightgroup} $\ast$ {\bfseries flightgroup}\hypertarget{classUnit_a5eebce03e9f641f1150b4e08f09176c2}{}\label{classUnit_a5eebce03e9f641f1150b4e08f09176c2}
+
+\item 
+int {\bfseries flightgroup\+\_\+subnumber}\hypertarget{classUnit_a88829d2efbd0a225327d1076a68d34e3}{}\label{classUnit_a88829d2efbd0a225327d1076a68d34e3}
+
+\item 
+std\+::string {\bfseries fullname}\hypertarget{classUnit_ad8847af8e59f7f0d3a784bff0dfc31ff}{}\label{classUnit_ad8847af8e59f7f0d3a784bff0dfc31ff}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classUnit_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classUnit_a187c66d2d867f6265d3b0c99ffc34838}
+
+\item 
+class {\bfseries Mount}\hypertarget{classUnit_ad7398fe04639b5b8dfaaeec1e96c1f03}{}\label{classUnit_ad7398fe04639b5b8dfaaeec1e96c1f03}
+
+\item 
+class {\bfseries Planetary\+Orbit}\hypertarget{classUnit_aa0e5d74fa4ec6dca72b358c4c600203f}{}\label{classUnit_aa0e5d74fa4ec6dca72b358c4c600203f}
+
+\item 
+class {\bfseries Continuous\+Terrain}\hypertarget{classUnit_a5b92b63e03113475a68418ec9e148ae2}{}\label{classUnit_a5b92b63e03113475a68418ec9e148ae2}
+
+\item 
+class {\bfseries V\+DU}\hypertarget{classUnit_aa2f32fe030f967fef2bb0cda923e6800}{}\label{classUnit_aa2f32fe030f967fef2bb0cda923e6800}
+
+\item 
+class {\bfseries Upgrading\+Info}\hypertarget{classUnit_ac368d8099fdc114b4adacd740d02f55b}{}\label{classUnit_ac368d8099fdc114b4adacd740d02f55b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classUnit}{Unit} contains any physical object that may collide with something And may be physically affected by forces. Units are assumed to have various damage and explode when they are dead. Units may have any number of weapons which, themselves may be units the aistate indicates how the unit will behave in the upcoming phys frame 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Unit@{Unit}!Unit@{Unit}}
+\index{Unit@{Unit}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{Unit(int dummy)}{Unit(int dummy)}}]{\setlength{\rightskip}{0pt plus 5cm}Unit\+::\+Unit (
+\begin{DoxyParamCaption}
+\item[{int}]{dummy}
+\end{DoxyParamCaption}
+)}\hypertarget{classUnit_a5d2d1ebc882945cae3e81d2a7d44aacc}{}\label{classUnit_a5d2d1ebc882945cae3e81d2a7d44aacc}
+Default constructor. This is just to figure out where default constructors are used. The useless argument will be removed again later. \index{Unit@{Unit}!Unit@{Unit}}
+\index{Unit@{Unit}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{Unit(std\+::vector$<$ Mesh $\ast$ $>$ \&meshes, bool Subunit, int faction)}{Unit(std::vector< Mesh * > &meshes, bool Subunit, int faction)}}]{\setlength{\rightskip}{0pt plus 5cm}Unit\+::\+Unit (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Mesh} $\ast$ $>$ \&}]{meshes, }
+\item[{bool}]{Subunit, }
+\item[{int}]{faction}
+\end{DoxyParamCaption}
+)}\hypertarget{classUnit_ac4a53fe36d9f4f2106f25a26f79e4898}{}\label{classUnit_ac4a53fe36d9f4f2106f25a26f79e4898}
+Constructor that creates aa mesh with meshes as submeshes (number of them) as either as subunit with faction faction \index{Unit@{Unit}!Unit@{Unit}}
+\index{Unit@{Unit}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{Unit(const char $\ast$filename, bool Sub\+Unit, int faction, std\+::string customized\+Unit=std\+::string(""""), Flightgroup $\ast$flightgroup=\+N\+U\+L\+L, int fg\+\_\+subnumber=0, std\+::string $\ast$netxml=\+N\+U\+L\+L)}{Unit(const char *filename, bool SubUnit, int faction, std::string customizedUnit=std::string(""), Flightgroup *flightgroup=NULL, int fg_subnumber=0, std::string *netxml=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}Unit\+::\+Unit (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{bool}]{Sub\+Unit, }
+\item[{int}]{faction, }
+\item[{std\+::string}]{customized\+Unit = {\ttfamily std\+:\+:string(~~~~~~~~~~~~~~~~\char`\"{}\char`\"{}~)}, }
+\item[{{\bf Flightgroup} $\ast$}]{flightgroup = {\ttfamily NULL}, }
+\item[{int}]{fg\+\_\+subnumber = {\ttfamily 0}, }
+\item[{std\+::string $\ast$}]{netxml = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\hypertarget{classUnit_a01d9c8985fdb16b02765a7374c5e8201}{}\label{classUnit_a01d9c8985fdb16b02765a7374c5e8201}
+Constructor that creates a mesh from an \hyperlink{structUnit_1_1XML}{X\+ML} file If it is a customized\+Unit, it will check in that directory in the home dir for the unit. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_a01d9c8985fdb16b02765a7374c5e8201_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Unit@{Unit}!begin\+Element@{begin\+Element}}
+\index{begin\+Element@{begin\+Element}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{begin\+Element(const std\+::string \&name, const X\+M\+L\+Support\+::\+Attribute\+List \&attributes)}{beginElement(const std::string &name, const XMLSupport::AttributeList &attributes)}}]{\setlength{\rightskip}{0pt plus 5cm}void Unit\+::begin\+Element (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const {\bf X\+M\+L\+Support\+::\+Attribute\+List} \&}]{attributes}
+\end{DoxyParamCaption}
+)}\hypertarget{classUnit_ac9f334be84ef29709a7b4abf2080915c}{}\label{classUnit_ac9f334be84ef29709a7b4abf2080915c}
+handling taken care of above; 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_ac9f334be84ef29709a7b4abf2080915c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Unit@{Unit}!Fire\+Engines@{Fire\+Engines}}
+\index{Fire\+Engines@{Fire\+Engines}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{Fire\+Engines(const Vector \&\+Direction, float Fuel\+Speed, float F\+Mass)}{FireEngines(const Vector &Direction, float FuelSpeed, float FMass)}}]{\setlength{\rightskip}{0pt plus 5cm}void Unit\+::\+Fire\+Engines (
+\begin{DoxyParamCaption}
+\item[{const Vector \&}]{Direction, }
+\item[{float}]{Fuel\+Speed, }
+\item[{float}]{F\+Mass}
+\end{DoxyParamCaption}
+)}\hypertarget{classUnit_a255f7adad1ce1ad8a29799e278e66cad}{}\label{classUnit_a255f7adad1ce1ad8a29799e278e66cad}
+Fire engine takes a unit vector for direction and how fast the fuel speed and mass coming out are 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_a255f7adad1ce1ad8a29799e278e66cad_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Unit@{Unit}!Get\+Manifest@{Get\+Manifest}}
+\index{Get\+Manifest@{Get\+Manifest}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{Get\+Manifest(unsigned int i, Unit $\ast$scanning\+Unit, const Vector \&original\+\_\+velocity) const }{GetManifest(unsigned int i, Unit *scanningUnit, const Vector &original_velocity) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Unit\+::\+Get\+Manifest (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i, }
+\item[{{\bf Unit} $\ast$}]{scanning\+Unit, }
+\item[{const Vector \&}]{original\+\_\+velocity}
+\end{DoxyParamCaption}
+) const}\hypertarget{classUnit_a0a0dbb25c02ab3e89fe8f0c818a26513}{}\label{classUnit_a0a0dbb25c02ab3e89fe8f0c818a26513}
+F\+I\+X\+ME somehow mangle string 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_a0a0dbb25c02ab3e89fe8f0c818a26513_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Unit@{Unit}!get\+Sub\+Units@{get\+Sub\+Units}}
+\index{get\+Sub\+Units@{get\+Sub\+Units}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{get\+Sub\+Units()}{getSubUnits()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf un\+\_\+iter} Unit\+::get\+Sub\+Units (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classUnit_a68211f28b547231db2e2cf8de2be323d}{}\label{classUnit_a68211f28b547231db2e2cf8de2be323d}
+Contains information about a particular \hyperlink{classMount}{Mount} on a unit. And the weapons it has, where it is, where it\textquotesingle{}s aimed, The ammo and the weapon type. As well as the possible weapons it may fit Warning\+: type has a string inside... cannot be memcpy\textquotesingle{}d 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_a68211f28b547231db2e2cf8de2be323d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_a68211f28b547231db2e2cf8de2be323d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Unit@{Unit}!Perform\+Docking\+Operations@{Perform\+Docking\+Operations}}
+\index{Perform\+Docking\+Operations@{Perform\+Docking\+Operations}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{Perform\+Docking\+Operations()}{PerformDockingOperations()}}]{\setlength{\rightskip}{0pt plus 5cm}void Unit\+::\+Perform\+Docking\+Operations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classUnit_ae8ce3e78a9b112377c7051f8cf731342}{}\label{classUnit_ae8ce3e78a9b112377c7051f8cf731342}
+C\+H\+O\+O\+SE N\+EW M\+I\+S\+S\+I\+ON
+
+force him in a box...err where he is 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_ae8ce3e78a9b112377c7051f8cf731342_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Unit@{Unit}!Process\+Delete\+Queue@{Process\+Delete\+Queue}}
+\index{Process\+Delete\+Queue@{Process\+Delete\+Queue}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{Process\+Delete\+Queue()}{ProcessDeleteQueue()}}]{\setlength{\rightskip}{0pt plus 5cm}void Unit\+::\+Process\+Delete\+Queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classUnit_af7dc49d6e2d3d0e91ea042c5ee0543b8}{}\label{classUnit_af7dc49d6e2d3d0e91ea042c5ee0543b8}
+might modify unitdeletequeue 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_af7dc49d6e2d3d0e91ea042c5ee0543b8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_af7dc49d6e2d3d0e91ea042c5ee0543b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Unit@{Unit}!query\+Sphere\+Click\+List@{query\+Sphere\+Click\+List}}
+\index{query\+Sphere\+Click\+List@{query\+Sphere\+Click\+List}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{query\+Sphere\+Click\+List(int, int, float err, Camera $\ast$active\+Cam)}{querySphereClickList(int, int, float err, Camera *activeCam)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Unit\+::query\+Sphere\+Click\+List (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int}]{, }
+\item[{float}]{err, }
+\item[{{\bf Camera} $\ast$}]{active\+Cam}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classUnit_a882081de69e4014803be5e955ce5e1e3}{}\label{classUnit_a882081de69e4014803be5e955ce5e1e3}
+Queries the bounding sphere with a duo of mouse coordinates that project to the center of a ship and compare with a sphere...pretty fast queries the sphere for weapons (world space point) Only in \hyperlink{classUnit}{Unit} class 
+
+Reimplemented in \hyperlink{classGameUnit_ac19d313642f33c5173a7622b2ea297d5}{Game\+Unit$<$ Enhancement $>$}, \hyperlink{classGameUnit_ac19d313642f33c5173a7622b2ea297d5}{Game\+Unit$<$ Asteroid $>$}, \hyperlink{classGameUnit_ac19d313642f33c5173a7622b2ea297d5}{Game\+Unit$<$ Unit $>$}, \hyperlink{classGameUnit_ac19d313642f33c5173a7622b2ea297d5}{Game\+Unit$<$ Missile $>$}, \hyperlink{classGameUnit_ac19d313642f33c5173a7622b2ea297d5}{Game\+Unit$<$ Building $>$}, and \hyperlink{classGameUnit_ac19d313642f33c5173a7622b2ea297d5}{Game\+Unit$<$ Nebula $>$}.
+
+\index{Unit@{Unit}!Upgrade\+Mounts@{Upgrade\+Mounts}}
+\index{Upgrade\+Mounts@{Upgrade\+Mounts}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{Upgrade\+Mounts(const Unit $\ast$up, int subunitoffset, bool touchme, bool downgrade, int \&numave, const Unit $\ast$templ, double \&percentage)}{UpgradeMounts(const Unit *up, int subunitoffset, bool touchme, bool downgrade, int &numave, const Unit *templ, double &percentage)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Unit\+::\+Upgrade\+Mounts (
+\begin{DoxyParamCaption}
+\item[{const {\bf Unit} $\ast$}]{up, }
+\item[{int}]{subunitoffset, }
+\item[{bool}]{touchme, }
+\item[{bool}]{downgrade, }
+\item[{int \&}]{numave, }
+\item[{const {\bf Unit} $\ast$}]{templ, }
+\item[{double \&}]{percentage}
+\end{DoxyParamCaption}
+)}\hypertarget{classUnit_a0856ef106b785e733a077f3be09376da}{}\label{classUnit_a0856ef106b785e733a077f3be09376da}
+go through all guns
+
+search for right mount to remove starting from j. this is the right name
+
+calculate scrap value (if damaged)
+
+deactivate weapon
+
+deactivate weapon
+
+go through all guns 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_a0856ef106b785e733a077f3be09376da_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Unit@{Unit}!Upgrade\+Sub\+Units\+With\+Factory@{Upgrade\+Sub\+Units\+With\+Factory}}
+\index{Upgrade\+Sub\+Units\+With\+Factory@{Upgrade\+Sub\+Units\+With\+Factory}!Unit@{Unit}}
+\subsubsection[{\texorpdfstring{Upgrade\+Sub\+Units\+With\+Factory(const Unit $\ast$up, int subunitoffset, bool touchme, bool downgrade, int \&numave, double \&percentage, Unit $\ast$($\ast$createupgradesubunit)(std\+::string s, int faction))}{UpgradeSubUnitsWithFactory(const Unit *up, int subunitoffset, bool touchme, bool downgrade, int &numave, double &percentage, Unit *(*createupgradesubunit)(std::string s, int faction))}}]{\setlength{\rightskip}{0pt plus 5cm}bool Unit\+::\+Upgrade\+Sub\+Units\+With\+Factory (
+\begin{DoxyParamCaption}
+\item[{const {\bf Unit} $\ast$}]{up, }
+\item[{int}]{subunitoffset, }
+\item[{bool}]{touchme, }
+\item[{bool}]{downgrade, }
+\item[{int \&}]{numave, }
+\item[{double \&}]{percentage, }
+\item[{{\bf Unit} $\ast$($\ast$)(std\+::string s, int faction)}]{createupgradesubunit}
+\end{DoxyParamCaption}
+)}\hypertarget{classUnit_aec19392b9fba96570b5e8fe8918bcfb4}{}\label{classUnit_aec19392b9fba96570b5e8fe8918bcfb4}
+set the turrets to the offset 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_aec19392b9fba96570b5e8fe8918bcfb4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd9/classUnit_aec19392b9fba96570b5e8fe8918bcfb4_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/testcollection/unit.\+h\item 
+cmd/unit\+\_\+generic.\+h\item 
+cmd/unit\+\_\+collide.\+cpp\item 
+cmd/unit\+\_\+csv.\+cpp\item 
+cmd/unit\+\_\+generic.\+cpp\item 
+cmd/unit\+\_\+xml.\+cpp\item 
+gfx/cockpit\+\_\+generic.\+cpp\end{DoxyCompactItemize}

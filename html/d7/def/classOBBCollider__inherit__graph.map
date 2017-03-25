@@ -1,0 +1,5 @@
+<map id="OBBCollider" name="OBBCollider">
+<area shape="rect" id="node4" href="$d8/d02/classHybridOBBCollider.html" title="{HybridOBBCollider\n|# mTouchedBoxes\l|+ HybridOBBCollider()\l+ ~HybridOBBCollider()\l+ Collide()\l}" alt="" coords="29,1217,189,1324"/>
+<area shape="rect" id="node2" href="$d8/dbd/classVolumeCollider.html" title="{VolumeCollider\n|# mTouchedPrimitives\l# mCenterCoeff\l# mExtentsCoeff\l# mNbVolumeBVTests\l# mNbVolumePrimTests\l|+ VolumeCollider()\l+ ~VolumeCollider()\l+ GetNbTouchedPrimitives()\l+ GetTouchedPrimitives()\l+ GetNbVolumeBVTests()\l+ GetNbVolumePrimTests()\l+ override()\l# _Dump()\l# _Dump()\l# _Dump()\l# _Dump()\l# override()\l# IsCacheValid()\l}" alt="" coords="15,351,203,663"/>
+<area shape="rect" id="node3" href="$d0/d62/classCollider.html" title="{Collider\n|# mFlags\l# mCurrentModel\l# mIMesh\l|+ Collider()\l+ ~Collider()\l+ GetContactStatus()\l+ FirstContactEnabled()\l+ TemporalCoherenceEnabled()\l+ ContactFound()\l+ TemporalHit()\l+ SkipPrimitiveTests()\l+ SetFirstContact()\l+ SetTemporalCoherence()\l+ SetPrimitiveTests()\l+ ValidateSettings()\l# Setup()\l# InitQuery()\l}" alt="" coords="5,5,212,303"/>
+</map>

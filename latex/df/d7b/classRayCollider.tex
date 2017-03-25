@@ -1,0 +1,441 @@
+\hypertarget{classRayCollider}{}\section{Ray\+Collider Class Reference}
+\label{classRayCollider}\index{Ray\+Collider@{Ray\+Collider}}
+
+
+Inheritance diagram for Ray\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d9e/classRayCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ray\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/d95/classRayCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classRayCollider_a164bc0ce6313621e1bcc5a57381defc0}{Collide} (const \hyperlink{classRay}{Ray} \&world\+\_\+ray, const \hyperlink{classModel}{Model} \&model, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$world=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$cache=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool {\bfseries Collide} (const \hyperlink{classRay}{Ray} \&world\+\_\+ray, const \hyperlink{classAABBTree}{A\+A\+B\+B\+Tree} $\ast$tree, \hyperlink{classContainer}{Container} \&box\+\_\+indices)\hypertarget{classRayCollider_a3d7b11c7f23bdf96e2743da044088f7a}{}\label{classRayCollider_a3d7b11c7f23bdf96e2743da044088f7a}
+
+\item 
+inline\+\_\+ void \hyperlink{classRayCollider_a3e7df472a1409ff0a854db0d3a6eb347}{Set\+Closest\+Hit} (bool flag)
+\item 
+inline\+\_\+ void \hyperlink{classRayCollider_aae6196376967424c56110a19fe5db63b}{Set\+Culling} (bool flag)
+\item 
+inline\+\_\+ void \hyperlink{classRayCollider_ae93396f70d0a8012ae2206696aff5a4f}{Set\+Max\+Dist} (float max\+\_\+dist=\hyperlink{IceTypes_8h_afb31aa2d196755fb259d43a03c18c9d7}{M\+A\+X\+\_\+\+F\+L\+O\+AT})
+\item 
+inline\+\_\+ void \hyperlink{classRayCollider_a57dbc5fb043e9c464818ae51aac6fc3f}{Set\+Destination} (\hyperlink{classCollisionFaces}{Collision\+Faces} $\ast$cf)
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classRayCollider_aa7d0778c50c38bcff2b3ec2609bded4e}{Get\+Nb\+Ray\+B\+V\+Tests} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classRayCollider_a07c8f44f464114df4b6d1451628eb2f6}{Get\+Nb\+Ray\+Prim\+Tests} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classRayCollider_a485f89f654be18944f5d4f3e04bda9b1}{Get\+Nb\+Intersections} () const 
+\item 
+\hyperlink{classRayCollider_aa30546070db2e08247d6a265bfbb0fe6}{override} (\hyperlink{classCollider}{Collider}) const char $\ast$\hyperlink{classCollider_a225d4861b2184336433894174c6e3e2d}{Validate\+Settings}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries \+\_\+\+Segment\+Stab} (const \hyperlink{classAABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)\hypertarget{classRayCollider_a28bde613a20d7ea5e5c35cf15dca8fe2}{}\label{classRayCollider_a28bde613a20d7ea5e5c35cf15dca8fe2}
+
+\item 
+void {\bfseries \+\_\+\+Segment\+Stab} (const \hyperlink{classAABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)\hypertarget{classRayCollider_a23f794feebb071e7452aaa9dde4a3ca0}{}\label{classRayCollider_a23f794feebb071e7452aaa9dde4a3ca0}
+
+\item 
+void {\bfseries \+\_\+\+Segment\+Stab} (const \hyperlink{classAABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)\hypertarget{classRayCollider_a698d20424736b8815d73c3d6484a4cb4}{}\label{classRayCollider_a698d20424736b8815d73c3d6484a4cb4}
+
+\item 
+void {\bfseries \+\_\+\+Segment\+Stab} (const \hyperlink{classAABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)\hypertarget{classRayCollider_a7443465674a4cbe25624334505225ddd}{}\label{classRayCollider_a7443465674a4cbe25624334505225ddd}
+
+\item 
+void {\bfseries \+\_\+\+Segment\+Stab} (const \hyperlink{classAABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$node, \hyperlink{classContainer}{Container} \&box\+\_\+indices)\hypertarget{classRayCollider_a5bba90be44ff9c54ee9fc8ee6f66166d}{}\label{classRayCollider_a5bba90be44ff9c54ee9fc8ee6f66166d}
+
+\item 
+void {\bfseries \+\_\+\+Ray\+Stab} (const \hyperlink{classAABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)\hypertarget{classRayCollider_a94e3758f40ce3b19ce649c8a2c85f3ad}{}\label{classRayCollider_a94e3758f40ce3b19ce649c8a2c85f3ad}
+
+\item 
+void {\bfseries \+\_\+\+Ray\+Stab} (const \hyperlink{classAABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)\hypertarget{classRayCollider_adeb4a3ed0e9e7fc7f1e0253dcd84b24c}{}\label{classRayCollider_adeb4a3ed0e9e7fc7f1e0253dcd84b24c}
+
+\item 
+void {\bfseries \+\_\+\+Ray\+Stab} (const \hyperlink{classAABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)\hypertarget{classRayCollider_a2835165217934080ee7d539d504f99ff}{}\label{classRayCollider_a2835165217934080ee7d539d504f99ff}
+
+\item 
+void {\bfseries \+\_\+\+Ray\+Stab} (const \hyperlink{classAABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)\hypertarget{classRayCollider_a9c024f82fff85b1cdbfaab39db03ace7}{}\label{classRayCollider_a9c024f82fff85b1cdbfaab39db03ace7}
+
+\item 
+void {\bfseries \+\_\+\+Ray\+Stab} (const \hyperlink{classAABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$node, \hyperlink{classContainer}{Container} \&box\+\_\+indices)\hypertarget{classRayCollider_a25a46381bd2d1c242dffb7c49a4d4bd6}{}\label{classRayCollider_a25a46381bd2d1c242dffb7c49a4d4bd6}
+
+\item 
+inline\+\_\+ bool \hyperlink{classRayCollider_ac3ea85191402851be16d0980c1d1159d}{Ray\+A\+A\+B\+B\+Overlap} (const \hyperlink{classPoint}{Point} \&center, const \hyperlink{classPoint}{Point} \&extents)
+\item 
+inline\+\_\+ bool \hyperlink{classRayCollider_a8afba23f4d4e0702503e1d4af5a0b26a}{Segment\+A\+A\+B\+B\+Overlap} (const \hyperlink{classPoint}{Point} \&center, const \hyperlink{classPoint}{Point} \&extents)
+\item 
+inline\+\_\+ bool \hyperlink{classRayCollider_a3aa7adacec4cb7fd8c3559663ab62b2a}{Ray\+Tri\+Overlap} (const \hyperlink{classPoint}{Point} \&vert0, const \hyperlink{classPoint}{Point} \&vert1, const \hyperlink{classPoint}{Point} \&vert2)
+\item 
+bool {\bfseries Init\+Query} (const \hyperlink{classRay}{Ray} \&world\+\_\+ray, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$world=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$face\+\_\+id=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})\hypertarget{classRayCollider_a4a4564d6b6243209c278566a768c49ec}{}\label{classRayCollider_a4a4564d6b6243209c278566a768c49ec}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classRayCollider_ab44f7b48c975f798b56a9e84e4425de8}{m\+Origin}\hypertarget{classRayCollider_ab44f7b48c975f798b56a9e84e4425de8}{}\label{classRayCollider_ab44f7b48c975f798b56a9e84e4425de8}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRay}{Ray} origin. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classRayCollider_acac798e5eff61cc97cdafef8b7bbd0cb}{m\+Dir}\hypertarget{classRayCollider_acac798e5eff61cc97cdafef8b7bbd0cb}{}\label{classRayCollider_acac798e5eff61cc97cdafef8b7bbd0cb}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRay}{Ray} direction (normalized) \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classRayCollider_a97728249e8b3ac23a24cdbd7ea39bffc}{m\+F\+Dir}\hypertarget{classRayCollider_a97728249e8b3ac23a24cdbd7ea39bffc}{}\label{classRayCollider_a97728249e8b3ac23a24cdbd7ea39bffc}
+
+\begin{DoxyCompactList}\small\item\em fabsf(m\+Dir) \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} {\bfseries m\+Data}\hypertarget{classRayCollider_aa2a3fb80e3f0338b06bea232ab0dddc1}{}\label{classRayCollider_aa2a3fb80e3f0338b06bea232ab0dddc1}
+
+\item 
+\hyperlink{classPoint}{Point} {\bfseries m\+Data2}\hypertarget{classRayCollider_a592bb73af25c6f7e3d0c4b246815399a}{}\label{classRayCollider_a592bb73af25c6f7e3d0c4b246815399a}
+
+\item 
+\hyperlink{classCollisionFace}{Collision\+Face} \hyperlink{classRayCollider_a05c5cf08892d4c2701bee3fdf1752cf6}{m\+Stabbed\+Face}\hypertarget{classRayCollider_a05c5cf08892d4c2701bee3fdf1752cf6}{}\label{classRayCollider_a05c5cf08892d4c2701bee3fdf1752cf6}
+
+\begin{DoxyCompactList}\small\item\em Current stabbed face. \end{DoxyCompactList}\item 
+\hyperlink{classCollisionFaces}{Collision\+Faces} $\ast$ \hyperlink{classRayCollider_a68dafb92fef3feecdcb35a76636267ae}{m\+Stabbed\+Faces}\hypertarget{classRayCollider_a68dafb92fef3feecdcb35a76636267ae}{}\label{classRayCollider_a68dafb92fef3feecdcb35a76636267ae}
+
+\begin{DoxyCompactList}\small\item\em List of stabbed faces. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classRayCollider_ac8757c57c0b44b4283c71c180a7bde0d}{m\+Nb\+Ray\+B\+V\+Tests}\hypertarget{classRayCollider_ac8757c57c0b44b4283c71c180a7bde0d}{}\label{classRayCollider_ac8757c57c0b44b4283c71c180a7bde0d}
+
+\begin{DoxyCompactList}\small\item\em Number of Ray-\/\+BV tests. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classRayCollider_a477e24ce495f093f6be13cbdcfea32e5}{m\+Nb\+Ray\+Prim\+Tests}\hypertarget{classRayCollider_a477e24ce495f093f6be13cbdcfea32e5}{}\label{classRayCollider_a477e24ce495f093f6be13cbdcfea32e5}
+
+\begin{DoxyCompactList}\small\item\em Number of Ray-\/\+Primitive tests. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classRayCollider_af3b176c138d0f89d361c9ba2923fb628}{m\+Nb\+Intersections}\hypertarget{classRayCollider_af3b176c138d0f89d361c9ba2923fb628}{}\label{classRayCollider_af3b176c138d0f89d361c9ba2923fb628}
+
+\begin{DoxyCompactList}\small\item\em Number of valid intersections. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} {\bfseries m\+Center\+Coeff}\hypertarget{classRayCollider_aba9581f2ffa61db3d27dd0ee38ace0de}{}\label{classRayCollider_aba9581f2ffa61db3d27dd0ee38ace0de}
+
+\item 
+\hyperlink{classPoint}{Point} {\bfseries m\+Extents\+Coeff}\hypertarget{classRayCollider_a594e28c207c3d44afe1e74082b441e5e}{}\label{classRayCollider_a594e28c207c3d44afe1e74082b441e5e}
+
+\item 
+float \hyperlink{classRayCollider_af0f4cfc9ab14b208303ec85277e43807}{m\+Max\+Dist}\hypertarget{classRayCollider_af0f4cfc9ab14b208303ec85277e43807}{}\label{classRayCollider_af0f4cfc9ab14b208303ec85277e43807}
+
+\begin{DoxyCompactList}\small\item\em Valid segment on the ray. \end{DoxyCompactList}\item 
+bool \hyperlink{classRayCollider_aa0e1878d54b7a7c16cea3a7a595bc297}{m\+Closest\+Hit}\hypertarget{classRayCollider_aa0e1878d54b7a7c16cea3a7a595bc297}{}\label{classRayCollider_aa0e1878d54b7a7c16cea3a7a595bc297}
+
+\begin{DoxyCompactList}\small\item\em Report closest hit only. \end{DoxyCompactList}\item 
+bool \hyperlink{classRayCollider_a04d9bf75a61aaa0c325f25141577b9e1}{m\+Culling}\hypertarget{classRayCollider_a04d9bf75a61aaa0c325f25141577b9e1}{}\label{classRayCollider_a04d9bf75a61aaa0c325f25141577b9e1}
+
+\begin{DoxyCompactList}\small\item\em Stab culled faces or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains a ray-\/vs-\/tree collider. This class performs a stabbing query on an \hyperlink{classAABB}{A\+A\+BB} tree, i.\+e. does a ray-\/mesh collision.
+
+H\+I\+G\+H\+ER D\+I\+S\+T\+A\+N\+CE B\+O\+U\+ND\+: \begin{DoxyVerb}If P0 and P1 are two 3D points, let's define:
+- d = distance between P0 and P1
+- Origin    = P0
+- Direction = (P1 - P0) / d = normalized direction vector
+- A parameter t such as a point P on the line (P0,P1) is P = Origin + t * Direction
+- t = 0  -->  P = P0
+- t = d  -->  P = P1
+
+Then we can define a general "ray" as:
+
+    struct Ray
+    {
+        Point   Origin;
+        Point   Direction;
+    };
+
+But it actually maps three different things:
+- a segment,   when 0 <= t <= d
+- a half-line, when 0 <= t < +infinity, or -infinity < t <= d
+- a line,      when -infinity < t < +infinity
+
+In Opcode, we support segment queries, which yield half-line queries by setting d = +infinity.
+We don't support line-queries. If you need them, shift the origin along the ray by an appropriate margin.
+
+In short, the lower bound is always 0, and you can setup the higher bound "d" with RayCollider::SetMaxDist().
+
+Query   |segment            |half-line      |line
+--------|-------------------|---------------|----------------
+Usages  |-shadow feelers    |-raytracing    |-
+        |-sweep tests       |-in/out tests  |
+\end{DoxyVerb}
+
+
+F\+I\+R\+ST C\+O\+N\+T\+A\+CT\+: \begin{DoxyVerb}- You can setup "first contact" mode or "all contacts" mode with RayCollider::SetFirstContact().
+- In "first contact" mode we return as soon as the ray hits one face. If can be useful e.g. for shadow feelers, where
+you want to know whether the path to the light is free or not (a boolean answer is enough).
+- In "all contacts" mode we return all faces hit by the ray.
+\end{DoxyVerb}
+
+
+T\+E\+M\+P\+O\+R\+AL C\+O\+H\+E\+R\+E\+N\+CE\+: \begin{DoxyVerb}- You can enable or disable temporal coherence with RayCollider::SetTemporalCoherence().
+- It currently only works in "first contact" mode.
+- If temporal coherence is enabled, the previously hit triangle is cached during the first query. Then, next queries
+start by colliding the ray against the cached triangle. If they still collide, we return immediately.
+\end{DoxyVerb}
+
+
+C\+L\+O\+S\+E\+ST H\+IT\+: \begin{DoxyVerb}- You can enable or disable "closest hit" with RayCollider::SetClosestHit().
+- It currently only works in "all contacts" mode.
+- If closest hit is enabled, faces are sorted by distance on-the-fly and the closest one only is reported.
+\end{DoxyVerb}
+
+
+B\+A\+C\+K\+F\+A\+CE C\+U\+L\+L\+I\+NG\+: \begin{DoxyVerb}- You can enable or disable backface culling with RayCollider::SetCulling().
+- If culling is enabled, ray will not hit back faces (only front faces).
+\end{DoxyVerb}
+
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+June, 2, 2001 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Ray\+Collider@{Ray\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(const Ray \&world\+\_\+ray, const Model \&model, const Matrix4x4 $\ast$world=null, udword $\ast$cache=null)}{Collide(const Ray &world_ray, const Model &model, const Matrix4x4 *world=null, udword *cache=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Ray\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{world\+\_\+ray, }
+\item[{const {\bf Model} \&}]{model, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world = {\ttfamily {\bf null}}, }
+\item[{{\bf udword} $\ast$}]{cache = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classRayCollider_a164bc0ce6313621e1bcc5a57381defc0}{}\label{classRayCollider_a164bc0ce6313621e1bcc5a57381defc0}
+Generic stabbing query for generic O\+P\+C\+O\+DE models. After the call, access the results\+:
+\begin{DoxyItemize}
+\item with \hyperlink{classCollider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()}
+\item in the user-\/provided destination array
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em world\+\_\+ray} & \mbox{[}in\mbox{]} stabbing ray in world space \\
+\hline
+{\em model} & \mbox{[}in\mbox{]} Opcode model to collide with \\
+\hline
+{\em world} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+{\em cache} & \mbox{[}in\mbox{]} a possibly cached face index, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Ray\+Collider@{Ray\+Collider}!Get\+Nb\+Intersections@{Get\+Nb\+Intersections}}
+\index{Get\+Nb\+Intersections@{Get\+Nb\+Intersections}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Intersections() const }{GetNbIntersections() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Ray\+Collider\+::\+Get\+Nb\+Intersections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRayCollider_a485f89f654be18944f5d4f3e04bda9b1}{}\label{classRayCollider_a485f89f654be18944f5d4f3e04bda9b1}
+Stats\+: gets the number of intersection found after a collision query. Can be used for in/out tests. \begin{DoxySeeAlso}{See also}
+\hyperlink{classRayCollider_aa7d0778c50c38bcff2b3ec2609bded4e}{Get\+Nb\+Ray\+B\+V\+Tests()} 
+
+\hyperlink{classRayCollider_a07c8f44f464114df4b6d1451628eb2f6}{Get\+Nb\+Ray\+Prim\+Tests()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of valid intersections during last query 
+\end{DoxyReturn}
+\index{Ray\+Collider@{Ray\+Collider}!Get\+Nb\+Ray\+B\+V\+Tests@{Get\+Nb\+Ray\+B\+V\+Tests}}
+\index{Get\+Nb\+Ray\+B\+V\+Tests@{Get\+Nb\+Ray\+B\+V\+Tests}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Ray\+B\+V\+Tests() const }{GetNbRayBVTests() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Ray\+Collider\+::\+Get\+Nb\+Ray\+B\+V\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRayCollider_aa7d0778c50c38bcff2b3ec2609bded4e}{}\label{classRayCollider_aa7d0778c50c38bcff2b3ec2609bded4e}
+Stats\+: gets the number of Ray-\/\+BV overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{classRayCollider_a07c8f44f464114df4b6d1451628eb2f6}{Get\+Nb\+Ray\+Prim\+Tests()} 
+
+\hyperlink{classRayCollider_a485f89f654be18944f5d4f3e04bda9b1}{Get\+Nb\+Intersections()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of Ray-\/\+BV tests performed during last query 
+\end{DoxyReturn}
+\index{Ray\+Collider@{Ray\+Collider}!Get\+Nb\+Ray\+Prim\+Tests@{Get\+Nb\+Ray\+Prim\+Tests}}
+\index{Get\+Nb\+Ray\+Prim\+Tests@{Get\+Nb\+Ray\+Prim\+Tests}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Ray\+Prim\+Tests() const }{GetNbRayPrimTests() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Ray\+Collider\+::\+Get\+Nb\+Ray\+Prim\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRayCollider_a07c8f44f464114df4b6d1451628eb2f6}{}\label{classRayCollider_a07c8f44f464114df4b6d1451628eb2f6}
+Stats\+: gets the number of Ray-\/\+Triangle overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{classRayCollider_aa7d0778c50c38bcff2b3ec2609bded4e}{Get\+Nb\+Ray\+B\+V\+Tests()} 
+
+\hyperlink{classRayCollider_a485f89f654be18944f5d4f3e04bda9b1}{Get\+Nb\+Intersections()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of Ray-\/\+Triangle tests performed during last query 
+\end{DoxyReturn}
+\index{Ray\+Collider@{Ray\+Collider}!override@{override}}
+\index{override@{override}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{override(\+Collider) const char $\ast$\+Validate\+Settings()}{override(Collider) const char *ValidateSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}Ray\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classRayCollider_aa30546070db2e08247d6a265bfbb0fe6}{}\label{classRayCollider_aa30546070db2e08247d6a265bfbb0fe6}
+Validates current settings. You should call this method after all the settings and callbacks have been defined for a collider. \begin{DoxyReturn}{Returns}
+null if everything is ok, else a string describing the problem 
+\end{DoxyReturn}
+\index{Ray\+Collider@{Ray\+Collider}!Ray\+A\+A\+B\+B\+Overlap@{Ray\+A\+A\+B\+B\+Overlap}}
+\index{Ray\+A\+A\+B\+B\+Overlap@{Ray\+A\+A\+B\+B\+Overlap}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Ray\+A\+A\+B\+B\+Overlap(const Point \&center, const Point \&extents)}{RayAABBOverlap(const Point &center, const Point &extents)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool Ray\+Collider\+::\+Ray\+A\+A\+B\+B\+Overlap (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{center, }
+\item[{const {\bf Point} \&}]{extents}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classRayCollider_ac3ea85191402851be16d0980c1d1159d}{}\label{classRayCollider_ac3ea85191402851be16d0980c1d1159d}
+Computes a ray-\/\+A\+A\+BB overlap test using the separating axis theorem. \hyperlink{classRay}{Ray} is cached within the class. 
+\begin{DoxyParams}{Parameters}
+{\em center} & \mbox{[}in\mbox{]} \hyperlink{classAABB}{A\+A\+BB} center \\
+\hline
+{\em extents} & \mbox{[}in\mbox{]} \hyperlink{classAABB}{A\+A\+BB} extents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on overlap 
+\end{DoxyReturn}
+\index{Ray\+Collider@{Ray\+Collider}!Ray\+Tri\+Overlap@{Ray\+Tri\+Overlap}}
+\index{Ray\+Tri\+Overlap@{Ray\+Tri\+Overlap}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Ray\+Tri\+Overlap(const Point \&vert0, const Point \&vert1, const Point \&vert2)}{RayTriOverlap(const Point &vert0, const Point &vert1, const Point &vert2)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool Ray\+Collider\+::\+Ray\+Tri\+Overlap (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{vert0, }
+\item[{const {\bf Point} \&}]{vert1, }
+\item[{const {\bf Point} \&}]{vert2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classRayCollider_a3aa7adacec4cb7fd8c3559663ab62b2a}{}\label{classRayCollider_a3aa7adacec4cb7fd8c3559663ab62b2a}
+Computes a ray-\/triangle intersection test. Original code from Tomas Möller\textquotesingle{}s \char`\"{}\+Fast Minimum Storage Ray-\/\+Triangle Intersection\char`\"{}. It\textquotesingle{}s been optimized a bit with integer code, and modified to return a non-\/intersection if distance from ray origin to triangle is negative.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vert0} & \mbox{[}in\mbox{]} triangle vertex \\
+\hline
+{\em vert1} & \mbox{[}in\mbox{]} triangle vertex \\
+\hline
+{\em vert2} & \mbox{[}in\mbox{]} triangle vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on overlap. m\+Stabbed\+Face is filled with relevant info. 
+\end{DoxyReturn}
+\index{Ray\+Collider@{Ray\+Collider}!Segment\+A\+A\+B\+B\+Overlap@{Segment\+A\+A\+B\+B\+Overlap}}
+\index{Segment\+A\+A\+B\+B\+Overlap@{Segment\+A\+A\+B\+B\+Overlap}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Segment\+A\+A\+B\+B\+Overlap(const Point \&center, const Point \&extents)}{SegmentAABBOverlap(const Point &center, const Point &extents)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool Ray\+Collider\+::\+Segment\+A\+A\+B\+B\+Overlap (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{center, }
+\item[{const {\bf Point} \&}]{extents}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classRayCollider_a8afba23f4d4e0702503e1d4af5a0b26a}{}\label{classRayCollider_a8afba23f4d4e0702503e1d4af5a0b26a}
+Computes a segment-\/\+A\+A\+BB overlap test using the separating axis theorem. \hyperlink{classSegment}{Segment} is cached within the class. 
+\begin{DoxyParams}{Parameters}
+{\em center} & \mbox{[}in\mbox{]} \hyperlink{classAABB}{A\+A\+BB} center \\
+\hline
+{\em extents} & \mbox{[}in\mbox{]} \hyperlink{classAABB}{A\+A\+BB} extents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on overlap 
+\end{DoxyReturn}
+\index{Ray\+Collider@{Ray\+Collider}!Set\+Closest\+Hit@{Set\+Closest\+Hit}}
+\index{Set\+Closest\+Hit@{Set\+Closest\+Hit}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Set\+Closest\+Hit(bool flag)}{SetClosestHit(bool flag)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Ray\+Collider\+::\+Set\+Closest\+Hit (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRayCollider_a3e7df472a1409ff0a854db0d3a6eb347}{}\label{classRayCollider_a3e7df472a1409ff0a854db0d3a6eb347}
+Settings\+: enable or disable \char`\"{}closest hit\char`\"{} mode. 
+\begin{DoxyParams}{Parameters}
+{\em flag} & \mbox{[}in\mbox{]} true to report closest hit only \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classRayCollider_aae6196376967424c56110a19fe5db63b}{Set\+Culling(bool flag)} 
+
+\hyperlink{classRayCollider_ae93396f70d0a8012ae2206696aff5a4f}{Set\+Max\+Dist(float max\+\_\+dist)} 
+
+Set\+Destination(\+Stabbed\+Faces$\ast$ sf) 
+\end{DoxySeeAlso}
+\index{Ray\+Collider@{Ray\+Collider}!Set\+Culling@{Set\+Culling}}
+\index{Set\+Culling@{Set\+Culling}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Set\+Culling(bool flag)}{SetCulling(bool flag)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Ray\+Collider\+::\+Set\+Culling (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRayCollider_aae6196376967424c56110a19fe5db63b}{}\label{classRayCollider_aae6196376967424c56110a19fe5db63b}
+Settings\+: enable or disable backface culling. 
+\begin{DoxyParams}{Parameters}
+{\em flag} & \mbox{[}in\mbox{]} true to enable backface culling \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classRayCollider_a3e7df472a1409ff0a854db0d3a6eb347}{Set\+Closest\+Hit(bool flag)} 
+
+\hyperlink{classRayCollider_ae93396f70d0a8012ae2206696aff5a4f}{Set\+Max\+Dist(float max\+\_\+dist)} 
+
+Set\+Destination(\+Stabbed\+Faces$\ast$ sf) 
+\end{DoxySeeAlso}
+\index{Ray\+Collider@{Ray\+Collider}!Set\+Destination@{Set\+Destination}}
+\index{Set\+Destination@{Set\+Destination}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Set\+Destination(\+Collision\+Faces $\ast$cf)}{SetDestination(CollisionFaces *cf)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Ray\+Collider\+::\+Set\+Destination (
+\begin{DoxyParamCaption}
+\item[{{\bf Collision\+Faces} $\ast$}]{cf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRayCollider_a57dbc5fb043e9c464818ae51aac6fc3f}{}\label{classRayCollider_a57dbc5fb043e9c464818ae51aac6fc3f}
+Settings\+: sets the destination array for stabbed faces. 
+\begin{DoxyParams}{Parameters}
+{\em cf} & \mbox{[}in\mbox{]} destination array, filled during queries \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classRayCollider_a3e7df472a1409ff0a854db0d3a6eb347}{Set\+Closest\+Hit(bool flag)} 
+
+\hyperlink{classRayCollider_aae6196376967424c56110a19fe5db63b}{Set\+Culling(bool flag)} 
+
+\hyperlink{classRayCollider_ae93396f70d0a8012ae2206696aff5a4f}{Set\+Max\+Dist(float max\+\_\+dist)} 
+\end{DoxySeeAlso}
+\index{Ray\+Collider@{Ray\+Collider}!Set\+Max\+Dist@{Set\+Max\+Dist}}
+\index{Set\+Max\+Dist@{Set\+Max\+Dist}!Ray\+Collider@{Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Set\+Max\+Dist(float max\+\_\+dist=\+M\+A\+X\+\_\+\+F\+L\+O\+A\+T)}{SetMaxDist(float max_dist=MAX_FLOAT)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Ray\+Collider\+::\+Set\+Max\+Dist (
+\begin{DoxyParamCaption}
+\item[{float}]{max\+\_\+dist = {\ttfamily {\bf M\+A\+X\+\_\+\+F\+L\+O\+AT}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRayCollider_ae93396f70d0a8012ae2206696aff5a4f}{}\label{classRayCollider_ae93396f70d0a8012ae2206696aff5a4f}
+Settings\+: sets the higher distance bound. 
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+dist} & \mbox{[}in\mbox{]} higher distance bound. Default = maximal value, for ray queries (else segment) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classRayCollider_a3e7df472a1409ff0a854db0d3a6eb347}{Set\+Closest\+Hit(bool flag)} 
+
+\hyperlink{classRayCollider_aae6196376967424c56110a19fe5db63b}{Set\+Culling(bool flag)} 
+
+Set\+Destination(\+Stabbed\+Faces$\ast$ sf) 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__RayCollider_8h}{O\+P\+C\+\_\+\+Ray\+Collider.\+h}\item 
+cmd/collide2/O\+P\+C\+\_\+\+Ray\+A\+A\+B\+B\+Overlap.\+h\item 
+cmd/collide2/O\+P\+C\+\_\+\+Ray\+Tri\+Overlap.\+h\end{DoxyCompactItemize}

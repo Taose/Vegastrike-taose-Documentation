@@ -1,0 +1,88 @@
+\hypertarget{classXMLDOM_1_1VSFileXMLSerializer}{}\section{X\+M\+L\+D\+OM\+:\+:V\+S\+File\+X\+M\+L\+Serializer Class Reference}
+\label{classXMLDOM_1_1VSFileXMLSerializer}\index{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer}}
+
+
+Inheritance diagram for X\+M\+L\+D\+OM\+:\+:V\+S\+File\+X\+M\+L\+Serializer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{dc/d53/classXMLDOM_1_1VSFileXMLSerializer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for X\+M\+L\+D\+OM\+:\+:V\+S\+File\+X\+M\+L\+Serializer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{d4/d62/classXMLDOM_1_1VSFileXMLSerializer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries import\+X\+ML} (const std\+::string \&path, V\+S\+File\+System\+::\+V\+S\+File\+Type file\+Type)\hypertarget{classXMLDOM_1_1VSFileXMLSerializer_a24f4b3abfd8b7cc8e612e84080a4ed7e}{}\label{classXMLDOM_1_1VSFileXMLSerializer_a24f4b3abfd8b7cc8e612e84080a4ed7e}
+
+\item 
+virtual bool \hyperlink{classXMLDOM_1_1VSFileXMLSerializer_a4a7c1df7485259ae594ed8e18137c664}{import\+X\+ML} (const std\+::string \&path)
+\item 
+virtual bool \hyperlink{classXMLDOM_1_1VSFileXMLSerializer_a918a86641b065f9d3a3ff7115c1ed942}{export\+X\+ML} (std\+::ostream \&stream)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer}!export\+X\+ML@{export\+X\+ML}}
+\index{export\+X\+ML@{export\+X\+ML}!X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer}}
+\subsubsection[{\texorpdfstring{export\+X\+M\+L(std\+::ostream \&stream)}{exportXML(std::ostream &stream)}}]{\setlength{\rightskip}{0pt plus 5cm}bool X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer\+::export\+X\+ML (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classXMLDOM_1_1VSFileXMLSerializer_a918a86641b065f9d3a3ff7115c1ed942}{}\label{classXMLDOM_1_1VSFileXMLSerializer_a918a86641b065f9d3a3ff7115c1ed942}
+Write the document to the specified stream. \begin{DoxyRemark}{Remarks}
+You must pass... hence... a document in the constructor. That... or you\textquotesingle{}re just going to write the current document. Pick your choice. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{classXMLDOM_1_1XMLSerializer_a195e26f4d238914c24b8e59347562fd3}{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}.
+
+\index{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer}!import\+X\+ML@{import\+X\+ML}}
+\index{import\+X\+ML@{import\+X\+ML}!X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer}}
+\subsubsection[{\texorpdfstring{import\+X\+M\+L(const std\+::string \&path)}{importXML(const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}bool X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer\+::import\+X\+ML (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classXMLDOM_1_1VSFileXMLSerializer_a4a7c1df7485259ae594ed8e18137c664}{}\label{classXMLDOM_1_1VSFileXMLSerializer_a4a7c1df7485259ae594ed8e18137c664}
+Parse the specified file \begin{DoxyRemark}{Remarks}
+You can mix it with other kinds of parsing -\/ the result is rather interesting\+: concatenation of data. Calls the \hyperlink{classXMLDOM_1_1XMLSerializer_abea28fce905d61d5b89c987f01808335}{parse(const void$\ast$,unsigned int)} implementation. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{}
+Override, for instance, to retrieve data in special ways (like from special resource providers). 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Returns false on error. 
+\end{DoxyParagraph}
+
+
+Reimplemented from \hyperlink{classXMLDOM_1_1XMLSerializer_a2224aae579bed3aa406471e9f560c81b}{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/dfa/classXMLDOM_1_1VSFileXMLSerializer_a4a7c1df7485259ae594ed8e18137c664_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+V\+S\+File\+X\+M\+L\+Serializer.\+h\item 
+V\+S\+File\+X\+M\+L\+Serializer.\+cpp\end{DoxyCompactItemize}

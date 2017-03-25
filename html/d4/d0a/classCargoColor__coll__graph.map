@@ -1,0 +1,5 @@
+<map id="CargoColor" name="CargoColor">
+<area shape="rect" id="node2" href="$da/d24/classCargo.html" title="{Cargo\n|+ quantity\l+ price\l+ mass\l+ volume\l+ mission\l+ installed\l+ functionality\l+ maxfunctionality\l|+ Cargo()\l+ Cargo()\l+ Cargo()\l+ GetFunctionality()\l+ GetMaxFunctionality()\l+ SetFunctionality()\l+ SetMaxFunctionality()\l+ SetMissionFlag()\l+ SetPrice()\l+ SetMass()\land 17 more...\l}" alt="" coords="15,336,177,663"/>
+<area shape="rect" id="node3" href="$d6/dad/classSharedPool_1_1Reference.html" title="{SharedPool\&lt; T, Refcounter\lTraits \&gt;::Reference\n||+ Reference()\l+ Reference()\l+ Reference()\l+ Reference()\l+ Reference()\l+ ~Reference()\l+ get()\l+ set()\l+ operator const T &amp;()\l+ operator=()\land 7 more...\l}" alt="" coords="5,5,187,244"/>
+<area shape="rect" id="node4" href="$d2/d7d/structGFXColor.html" title="{GFXColor\n|+ r\l+ g\l+ b\l+ a\l|+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ netswap()\l+ clamp()\l}" alt="" coords="202,402,302,597"/>
+</map>

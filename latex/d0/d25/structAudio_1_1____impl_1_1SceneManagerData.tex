@@ -1,0 +1,85 @@
+\hypertarget{structAudio_1_1____impl_1_1SceneManagerData}{}\section{Audio\+:\+:\+\_\+\+\_\+impl\+:\+:Scene\+Manager\+Data Struct Reference}
+\label{structAudio_1_1____impl_1_1SceneManagerData}\index{Audio\+::\+\_\+\+\_\+impl\+::\+Scene\+Manager\+Data@{Audio\+::\+\_\+\+\_\+impl\+::\+Scene\+Manager\+Data}}
+
+
+Collaboration diagram for Audio\+:\+:\+\_\+\+\_\+impl\+:\+:Scene\+Manager\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{d6/d13/structAudio_1_1____impl_1_1SceneManagerData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef}{Source\+Ref}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, Shared\+Ptr$<$ \hyperlink{classAudio_1_1Scene}{Scene} $>$ $>$ {\bfseries Scene\+Map}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_ace6ff562b5b7888015872fc6b16c7e45}{}\label{structAudio_1_1____impl_1_1SceneManagerData_ace6ff562b5b7888015872fc6b16c7e45}
+
+\item 
+typedef std\+::set$<$ \hyperlink{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef}{Source\+Ref} $>$ {\bfseries Source\+Ref\+Set}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_aef11366c05840e522f495b28411665a7}{}\label{structAudio_1_1____impl_1_1SceneManagerData_aef11366c05840e522f495b28411665a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Scene\+Map {\bfseries active\+Scenes}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a8f58a9a1b43efed043ee5c3348d33964}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a8f58a9a1b43efed043ee5c3348d33964}
+
+\item 
+Scene\+Map {\bfseries inactive\+Scenes}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_ac42c9243d3708ef86c60243bdf928c8d}{}\label{structAudio_1_1____impl_1_1SceneManagerData_ac42c9243d3708ef86c60243bdf928c8d}
+
+\item 
+Source\+Ref\+Set {\bfseries active\+Sources}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a3537e707d54bb6371ea8534f31e02dde}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a3537e707d54bb6371ea8534f31e02dde}
+
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1Renderer}{Renderer} $>$ {\bfseries renderer}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_aef9f5e08ade06eea0349601ad2a8f04b}{}\label{structAudio_1_1____impl_1_1SceneManagerData_aef9f5e08ade06eea0349601ad2a8f04b}
+
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1Listener}{Listener} $>$ {\bfseries root\+Listener}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_afc144d4460f1e7c4000130adb458039c}{}\label{structAudio_1_1____impl_1_1SceneManagerData_afc144d4460f1e7c4000130adb458039c}
+
+\item 
+unsigned int {\bfseries max\+Sources}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a7b57d2a258ad5ac25069d7a6c9534b15}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a7b57d2a258ad5ac25069d7a6c9534b15}
+
+\item 
+float {\bfseries min\+Gain}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a163e2b5515dad3f963e7019ec6de0155}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a163e2b5515dad3f963e7019ec6de0155}
+
+\item 
+double {\bfseries max\+Distance}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a72341c90f665cf8e14ad133fb338f865}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a72341c90f665cf8e14ad133fb338f865}
+
+\item 
+Timestamp {\bfseries last\+Position\+Update\+Time}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a2ffa56c8c983e0c0afe28ccc5c09aaa1}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a2ffa56c8c983e0c0afe28ccc5c09aaa1}
+
+\item 
+Timestamp {\bfseries last\+Attribute\+Update\+Time}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a02a137cf4680b067f47bfe105cf3e8d6}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a02a137cf4680b067f47bfe105cf3e8d6}
+
+\item 
+Timestamp {\bfseries last\+Listener\+Update\+Time}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a98b0dfff9042d0aed22a469385ad13b4}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a98b0dfff9042d0aed22a469385ad13b4}
+
+\item 
+Timestamp {\bfseries last\+Listener\+Att\+Update\+Time}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a81b8cca37beec1bb9058dbcc0af1c1bb}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a81b8cca37beec1bb9058dbcc0af1c1bb}
+
+\item 
+Timestamp {\bfseries last\+Activation\+Time}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_ad820c2ac98756219879c27eeca416399}{}\label{structAudio_1_1____impl_1_1SceneManagerData_ad820c2ac98756219879c27eeca416399}
+
+\item 
+Duration {\bfseries position\+Update\+Frequency}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_aabab48ef62393d0d48473eb5d59af524}{}\label{structAudio_1_1____impl_1_1SceneManagerData_aabab48ef62393d0d48473eb5d59af524}
+
+\item 
+Duration {\bfseries attribute\+Update\+Frequency}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a0c0b29c53c022c66a39c2dbbb18c5abb}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a0c0b29c53c022c66a39c2dbbb18c5abb}
+
+\item 
+Duration {\bfseries listener\+Update\+Frequency}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a4c35b0a5d10a600da8238f4da7e11bd6}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a4c35b0a5d10a600da8238f4da7e11bd6}
+
+\item 
+Duration {\bfseries activation\+Frequency}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_a2b36d7ddb8b62fe4cbf161fd71ad48c5}{}\label{structAudio_1_1____impl_1_1SceneManagerData_a2b36d7ddb8b62fe4cbf161fd71ad48c5}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/Scene\+Manager.\+cpp\end{DoxyCompactItemize}

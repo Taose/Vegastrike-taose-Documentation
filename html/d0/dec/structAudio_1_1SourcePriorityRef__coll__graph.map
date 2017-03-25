@@ -1,0 +1,4 @@
+<map id="Audio::SourcePriorityRef" name="Audio::SourcePriorityRef">
+<area shape="rect" id="node2" href="$db/dde/classAudio_1_1SimpleScene.html" title="{Audio::SimpleScene\n||+ SimpleScene()\l+ ~SimpleScene()\l+ add()\l+ remove()\l+ getListener()\l+ notifySourcePlaying()\l+ getActiveSources()\l+ getActiveSourcesEnd()\l# attach()\l# detach()\l}" alt="" coords="68,205,236,415"/>
+<area shape="rect" id="node3" href="$de/d6b/classAudio_1_1Scene.html" title="{Audio::Scene\n||+ ~Scene()\l+ getName()\l+ add()\l+ remove()\l+ getListener()\l# Scene()\l}" alt="" coords="5,5,112,156"/>
+</map>

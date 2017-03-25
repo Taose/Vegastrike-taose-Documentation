@@ -1,0 +1,4 @@
+<map id="VsnetUDPSocket" name="VsnetUDPSocket">
+<area shape="rect" id="node2" href="$de/dd1/classVsnetSocket.html" title="{VsnetSocket\n|# _remote_ip\l# _local_ip\l|+ VsnetSocket()\l+ ~VsnetSocket()\l+ isTcp()\l+ optPayloadSize()\l+ queueLen()\l+ eq()\l+ lt()\l+ sameAddress()\l+ sendbuf()\l+ recvbuf()\l+ dump()\l+ getRemoteAddress()\l+ setRemoteAddress()\l+ getLocalAddress()\l+ setLocalAddress()\l}" alt="" coords="5,307,160,604"/>
+<area shape="rect" id="node3" href="$d1/d38/classVsnetSocketBase.html" title="{VsnetSocketBase\n|# _fd\l# _set\l|+ VsnetSocketBase()\l+ ~VsnetSocketBase()\l+ valid()\l+ get_fd()\l+ close_fd()\l+ get_socktype()\l+ set_block()\l+ set_nonblock()\l+ get_nonblock()\l+ isActive()\land 9 more...\l# child_disconnect()\l}" alt="" coords="5,5,160,259"/>
+</map>

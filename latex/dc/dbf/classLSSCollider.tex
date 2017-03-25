@@ -1,0 +1,142 @@
+\hypertarget{classLSSCollider}{}\section{L\+S\+S\+Collider Class Reference}
+\label{classLSSCollider}\index{L\+S\+S\+Collider@{L\+S\+S\+Collider}}
+
+
+Inheritance diagram for L\+S\+S\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/d11/classLSSCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for L\+S\+S\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d83/classLSSCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classLSSCollider_a4c4ff9f48a8b7b2b01b71beea04ee261}{Collide} (\hyperlink{structLSSCache}{L\+S\+S\+Cache} \&cache, const \hyperlink{classLSS}{L\+SS} \&lss, const \hyperlink{classModel}{Model} \&model, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$worldl=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool {\bfseries Collide} (\hyperlink{structLSSCache}{L\+S\+S\+Cache} \&cache, const \hyperlink{classLSS}{L\+SS} \&lss, const \hyperlink{classAABBTree}{A\+A\+B\+B\+Tree} $\ast$tree)\hypertarget{classLSSCollider_a3e68e9b2ecdbed62116fec0b3ec8d4cd}{}\label{classLSSCollider_a3e68e9b2ecdbed62116fec0b3ec8d4cd}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries \+\_\+\+Collide} (const \hyperlink{classAABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)\hypertarget{classLSSCollider_a74b9eb6e39c8b4859acf2d3ca081c0d4}{}\label{classLSSCollider_a74b9eb6e39c8b4859acf2d3ca081c0d4}
+
+\item 
+void {\bfseries \+\_\+\+Collide} (const \hyperlink{classAABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)\hypertarget{classLSSCollider_a9792bff52aa3bf2649985effc4d9ad70}{}\label{classLSSCollider_a9792bff52aa3bf2649985effc4d9ad70}
+
+\item 
+void {\bfseries \+\_\+\+Collide} (const \hyperlink{classAABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)\hypertarget{classLSSCollider_ad825f62a1d2526c2e99a2af5914fa0a8}{}\label{classLSSCollider_ad825f62a1d2526c2e99a2af5914fa0a8}
+
+\item 
+void {\bfseries \+\_\+\+Collide} (const \hyperlink{classAABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)\hypertarget{classLSSCollider_abf5c28e72380d3c823f3dbbb235bd14d}{}\label{classLSSCollider_abf5c28e72380d3c823f3dbbb235bd14d}
+
+\item 
+void {\bfseries \+\_\+\+Collide} (const \hyperlink{classAABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$node)\hypertarget{classLSSCollider_a9f2c81b73391ff1cc32c0ee4c4bc7aca}{}\label{classLSSCollider_a9f2c81b73391ff1cc32c0ee4c4bc7aca}
+
+\item 
+void {\bfseries \+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classAABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)\hypertarget{classLSSCollider_a1bf5401f4728c864a6b147d72b29dcc7}{}\label{classLSSCollider_a1bf5401f4728c864a6b147d72b29dcc7}
+
+\item 
+void {\bfseries \+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classAABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)\hypertarget{classLSSCollider_ab262f0ff938684510baddd1974867e90}{}\label{classLSSCollider_ab262f0ff938684510baddd1974867e90}
+
+\item 
+void {\bfseries \+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classAABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)\hypertarget{classLSSCollider_a8bb347360fc20fe78652713c039da096}{}\label{classLSSCollider_a8bb347360fc20fe78652713c039da096}
+
+\item 
+void {\bfseries \+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classAABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)\hypertarget{classLSSCollider_a056188eaa9ebd253545261b848c85178}{}\label{classLSSCollider_a056188eaa9ebd253545261b848c85178}
+
+\item 
+inline\+\_\+ bool {\bfseries L\+S\+S\+Contains\+Box} (const \hyperlink{classPoint}{Point} \&bc, const \hyperlink{classPoint}{Point} \&be)\hypertarget{classLSSCollider_aa94af15eb2e56b0ab8c9bfdcfb3f8a8f}{}\label{classLSSCollider_aa94af15eb2e56b0ab8c9bfdcfb3f8a8f}
+
+\item 
+inline\+\_\+ bool {\bfseries L\+S\+S\+A\+A\+B\+B\+Overlap} (const \hyperlink{classPoint}{Point} \&center, const \hyperlink{classPoint}{Point} \&extents)\hypertarget{classLSSCollider_a5d103a8f316d1475fa03e58521cbb067}{}\label{classLSSCollider_a5d103a8f316d1475fa03e58521cbb067}
+
+\item 
+inline\+\_\+ bool {\bfseries L\+S\+S\+Tri\+Overlap} (const \hyperlink{classPoint}{Point} \&vert0, const \hyperlink{classPoint}{Point} \&vert1, const \hyperlink{classPoint}{Point} \&vert2)\hypertarget{classLSSCollider_a8a3b29bd4e15f8932797a5906c152da7}{}\label{classLSSCollider_a8a3b29bd4e15f8932797a5906c152da7}
+
+\item 
+bool {\bfseries Init\+Query} (\hyperlink{structLSSCache}{L\+S\+S\+Cache} \&cache, const \hyperlink{classLSS}{L\+SS} \&lss, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$worldl=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})\hypertarget{classLSSCollider_ae4fbd3111a8d0b680b8c6a3cfa0e4884}{}\label{classLSSCollider_ae4fbd3111a8d0b680b8c6a3cfa0e4884}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSegment}{Segment} \hyperlink{classLSSCollider_a644a06ae278436a8a540c4f49f13c73f}{m\+Seg}\hypertarget{classLSSCollider_a644a06ae278436a8a540c4f49f13c73f}{}\label{classLSSCollider_a644a06ae278436a8a540c4f49f13c73f}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSegment}{Segment}. \end{DoxyCompactList}\item 
+float \hyperlink{classLSSCollider_a84f3909ea162922bc5778122b719831d}{m\+Radius2}\hypertarget{classLSSCollider_a84f3909ea162922bc5778122b719831d}{}\label{classLSSCollider_a84f3909ea162922bc5778122b719831d}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLSS}{L\+SS} radius squared. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains a lss-\/vs-\/tree collider.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+December, 28, 2002 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{L\+S\+S\+Collider@{L\+S\+S\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!L\+S\+S\+Collider@{L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(\+L\+S\+S\+Cache \&cache, const L\+S\+S \&lss, const Model \&model, const Matrix4x4 $\ast$worldl=null, const Matrix4x4 $\ast$worldm=null)}{Collide(LSSCache &cache, const LSS &lss, const Model &model, const Matrix4x4 *worldl=null, const Matrix4x4 *worldm=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool L\+S\+S\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+S\+S\+Cache} \&}]{cache, }
+\item[{const {\bf L\+SS} \&}]{lss, }
+\item[{const {\bf Model} \&}]{model, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldl = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classLSSCollider_a4c4ff9f48a8b7b2b01b71beea04ee261}{}\label{classLSSCollider_a4c4ff9f48a8b7b2b01b71beea04ee261}
+Generic collision query for generic O\+P\+C\+O\+DE models. After the call, access the results\+:
+\begin{DoxyItemize}
+\item with \hyperlink{classCollider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()}
+\item with \hyperlink{classVolumeCollider_a274b51032b2c2e4394b1cc9308fa8d71}{Get\+Nb\+Touched\+Primitives()}
+\item with \hyperlink{classVolumeCollider_afca0d34cb9f4aa27537a4bfd03fe40d9}{Get\+Touched\+Primitives()}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} an lss cache \\
+\hline
+{\em lss} & \mbox{[}in\mbox{]} collision lss in local space \\
+\hline
+{\em model} & \mbox{[}in\mbox{]} Opcode model to collide with \\
+\hline
+{\em worldl} & \mbox{[}in\mbox{]} lss world matrix, or null \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__LSSCollider_8h}{O\+P\+C\+\_\+\+L\+S\+S\+Collider.\+h}\item 
+cmd/collide2/O\+P\+C\+\_\+\+L\+S\+S\+A\+A\+B\+B\+Overlap.\+h\item 
+cmd/collide2/O\+P\+C\+\_\+\+L\+S\+S\+Tri\+Overlap.\+h\end{DoxyCompactItemize}

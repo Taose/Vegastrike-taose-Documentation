@@ -1,0 +1,4 @@
+<map id="AnimatedTexture" name="AnimatedTexture">
+<area shape="rect" id="node4" href="$d0/d5d/classAnimation.html" title="{Animation\n||+ Animation()\l+ Animation()\l+ Animation()\l+ ~Animation()\l+ Draw()\l+ SetFaceCam()\l+ SetInterpolate()\l+ CalculateOrientation()\l+ DrawNow()\l+ DrawNoTransform()\land 6 more...\l+ ProcessDrawQueue()\l+ ProcessDrawQueue()\l+ NeedsProcessDrawQueue()\l+ ProcessFarDrawQueue()\l+ NeedsProcessFarDrawQueue()\l}" alt="" coords="5,1071,221,1368"/>
+<area shape="rect" id="node2" href="$d6/d97/classTexture.html" title="{Texture\n|+ texfilename\l+ ismipmapped\l+ data\l+ name\l+ stage\l+ mintcoord\l+ maxtcoord\l+ original\l+ bound\l+ boundSizeX\land 6 more...\l|+ FileNotFound()\l+ checkold()\l+ modold()\l+ setold()\l+ checkbad()\l+ setbad()\l+ InitTexture()\l+ Bind()\l+ Texture()\l+ Texture()\land 30 more...\l+ Exists()\l+ Exists()\l# Bind()\l# UnBind()\l# Transfer()\l}" alt="" coords="53,131,173,575"/>
+</map>

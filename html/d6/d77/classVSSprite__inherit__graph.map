@@ -1,0 +1,4 @@
+<map id="VSSprite" name="VSSprite">
+<area shape="rect" id="node2" href="$db/df0/classGauge.html" title="{Gauge\n||+ Gauge()\l+ Draw()\l+ SetSize()\l+ GetSize()\l}" alt="" coords="5,329,95,450"/>
+<area shape="rect" id="node3" href="$d0/dd9/classVDU.html" title="{VDU\n|+ scrolloffset\l|+ ReceivedTargetData()\l+ staticable()\l+ getMode()\l+ VDU()\l+ Draw()\l+ SwitchMode()\l+ SetViewingStyle()\l+ Scroll()\l+ SetCommAnimation()\l+ GetCommunicating()\l+ CheckCommAnimation()\l}" alt="" coords="119,277,296,501"/>
+</map>

@@ -1,0 +1,94 @@
+\hypertarget{classVDU}{}\section{V\+DU Class Reference}
+\label{classVDU}\index{V\+DU@{V\+DU}}
+
+
+Inheritance diagram for V\+DU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{d7/d6b/classVDU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for V\+DU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{d7/d5e/classVDU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classVDU_a14796b7dcf1bee936e197532d15ee4e6}{V\+D\+U\+\_\+\+M\+O\+DE} \{ \\*
+{\bfseries T\+A\+R\+G\+ET} =0x1, 
+{\bfseries N\+AV} =0x2, 
+{\bfseries O\+B\+J\+E\+C\+T\+I\+V\+ES} =0x4, 
+{\bfseries C\+O\+MM} =0x8, 
+\\*
+{\bfseries W\+E\+A\+P\+ON} =0x10, 
+{\bfseries D\+A\+M\+A\+GE} =0x20, 
+{\bfseries S\+H\+I\+E\+LD} =0x40, 
+{\bfseries M\+A\+N\+I\+F\+E\+ST} =0x80, 
+\\*
+{\bfseries T\+A\+R\+G\+E\+T\+M\+A\+N\+I\+F\+E\+ST} =0x100, 
+{\bfseries V\+I\+EW} =0x200, 
+{\bfseries M\+SG} =0x400, 
+{\bfseries S\+C\+A\+N\+N\+I\+NG} =0x800, 
+\\*
+{\bfseries N\+E\+T\+W\+O\+RK} =0x1000, 
+{\bfseries W\+E\+B\+C\+AM} =0x2000
+ \}\hypertarget{classVDU_a14796b7dcf1bee936e197532d15ee4e6}{}\label{classVDU_a14796b7dcf1bee936e197532d15ee4e6}
+\begin{DoxyCompactList}\small\item\em Alert! To add a mode must change const array on the bottom. V\+I\+EW must remain L\+A\+ST. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Received\+Target\+Data} ()\hypertarget{classVDU_afa284de2e86bd248cbb29dda9fd17048}{}\label{classVDU_afa284de2e86bd248cbb29dda9fd17048}
+
+\item 
+bool {\bfseries staticable} () const \hypertarget{classVDU_a631936585850b782c4de1bf585be85ca}{}\label{classVDU_a631936585850b782c4de1bf585be85ca}
+
+\item 
+unsigned int {\bfseries get\+Mode} () const \hypertarget{classVDU_aad75ce7b4211b1159d9c7335fcd18b36}{}\label{classVDU_aad75ce7b4211b1159d9c7335fcd18b36}
+
+\item 
+{\bfseries V\+DU} (const char $\ast$file, \hyperlink{classTextPlane}{Text\+Plane} $\ast$textp, unsigned short modes, short rows, short cols, float $\ast$Max\+Armor, float $\ast$maxhull)\hypertarget{classVDU_a4969b9b597f28fb3bc599a0f84e4c03b}{}\label{classVDU_a4969b9b597f28fb3bc599a0f84e4c03b}
+
+\item 
+void \hyperlink{classVDU_ad9d5aa1c33cbacdb693a6ef5794644f1}{Draw} (\hyperlink{classGameCockpit}{Game\+Cockpit} $\ast$parentcp, \hyperlink{classUnit}{Unit} $\ast$parent, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classVDU_ad9d5aa1c33cbacdb693a6ef5794644f1}{}\label{classVDU_ad9d5aa1c33cbacdb693a6ef5794644f1}
+
+\begin{DoxyCompactList}\small\item\em Draws the entire \hyperlink{classVDU}{V\+DU}, all data, etc. \end{DoxyCompactList}\item 
+void \hyperlink{classVDU_af16602681296493a3b42a3c2c407a866}{Switch\+Mode} (\hyperlink{classUnit}{Unit} $\ast$parent)\hypertarget{classVDU_af16602681296493a3b42a3c2c407a866}{}\label{classVDU_af16602681296493a3b42a3c2c407a866}
+
+\begin{DoxyCompactList}\small\item\em Changes the mode of the current \hyperlink{classVDU}{V\+DU} to another legal mode. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Viewing\+Style} (V\+I\+E\+W\+S\+T\+Y\+LE vm)\hypertarget{classVDU_a217aa82873c65cc04d47474618f33c00}{}\label{classVDU_a217aa82873c65cc04d47474618f33c00}
+
+\item 
+void {\bfseries Scroll} (int howmuch)\hypertarget{classVDU_af66a07f86e74f0a5c4cd86a5682842a6}{}\label{classVDU_af66a07f86e74f0a5c4cd86a5682842a6}
+
+\item 
+bool {\bfseries Set\+Comm\+Animation} (\hyperlink{classAnimation}{Animation} $\ast$ani, \hyperlink{classUnit}{Unit} $\ast$unit, bool force)\hypertarget{classVDU_a23239667f51d805c7287b889734a0095}{}\label{classVDU_a23239667f51d805c7287b889734a0095}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries Get\+Communicating} ()\hypertarget{classVDU_a6798a2c4acf0a1d9272424d40632f2b2}{}\label{classVDU_a6798a2c4acf0a1d9272424d40632f2b2}
+
+\item 
+bool {\bfseries Check\+Comm\+Animation} (\hyperlink{classUnit}{Unit} $\ast$un) const \hypertarget{classVDU_a6fd92036179da62e7caa259a2c1751cf}{}\label{classVDU_a6fd92036179da62e7caa259a2c1751cf}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries scrolloffset}\hypertarget{classVDU_ae6ab123402157526e29ce293fe8d0538}{}\label{classVDU_ae6ab123402157526e29ce293fe8d0538}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/vdu.\+h\item 
+gfx/vdu.\+cpp\end{DoxyCompactItemize}

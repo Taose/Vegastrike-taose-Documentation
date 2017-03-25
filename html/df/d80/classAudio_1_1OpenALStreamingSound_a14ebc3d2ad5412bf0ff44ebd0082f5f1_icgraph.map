@@ -1,0 +1,4 @@
+<map id="Audio::OpenALStreamingSound::readAndFlip" name="Audio::OpenALStreamingSound::readAndFlip">
+<area shape="rect" id="node2" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#aee3a50bc65b04822fa8470a8f7c0bfc0" title="Audio::OpenALRenderableStreaming\lSource::queueALBuffers" alt="" coords="260,5,495,47"/>
+<area shape="rect" id="node3" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#a09174b0d9f46c5c02d5ed62c5dee2b35" title="Audio::OpenALRenderableStreaming\lSource::getALSource" alt="" coords="543,5,777,47"/>
+</map>

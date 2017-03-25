@@ -1,0 +1,274 @@
+\hypertarget{OPC__OptimizedTree_8h}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Optimized\+Tree.h File Reference}
+\label{OPC__OptimizedTree_8h}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{cmd/collide2/\+O\+P\+C\+\_\+\+Optimized\+Tree.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dea/OPC__OptimizedTree_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAABBCollisionNode}{A\+A\+B\+B\+Collision\+Node}
+\item 
+class \hyperlink{classAABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node}
+\item 
+class \hyperlink{classAABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node}
+\item 
+class \hyperlink{classAABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node}
+\item 
+class \hyperlink{classAABBOptimizedTree}{A\+A\+B\+B\+Optimized\+Tree}
+\item 
+class \hyperlink{classAABBCollisionTree}{A\+A\+B\+B\+Collision\+Tree}
+\item 
+class \hyperlink{classAABBNoLeafTree}{A\+A\+B\+B\+No\+Leaf\+Tree}
+\item 
+class \hyperlink{classAABBQuantizedTree}{A\+A\+B\+B\+Quantized\+Tree}
+\item 
+class \hyperlink{classAABBQuantizedNoLeafTree}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Tree}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{OPC__OptimizedTree_8h_a97d7d7b190f18109e6fbe02dbb2655dc}{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE}(base\+\_\+class,  volume)
+\begin{DoxyCompactList}\small\item\em Common interface for a node of an implicit tree. \end{DoxyCompactList}\item 
+\#define \hyperlink{OPC__OptimizedTree_8h_a36a47d51c238b7cdb3028f886defc2ba}{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE}(base\+\_\+class,  volume)
+\begin{DoxyCompactList}\small\item\em Common interface for a node of a no-\/leaf tree. \end{DoxyCompactList}\item 
+\#define \hyperlink{OPC__OptimizedTree_8h_a482628da5bd0e8dae1c1c2dd41d97c9d}{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE}(base\+\_\+class,  node)
+\begin{DoxyCompactList}\small\item\em Common interface for a collision tree. \end{DoxyCompactList}\item 
+\#define {\bfseries \+\_\+\+\_\+\+O\+P\+C\+\_\+\+O\+P\+T\+I\+M\+I\+Z\+E\+D\+T\+R\+E\+E\+\_\+\+H\+\_\+\+\_\+}\hypertarget{Opcode_8h_a3484845c0fd788d9324be4e94525db06}{}\label{Opcode_8h_a3484845c0fd788d9324be4e94525db06}
+
+\item 
+\#define {\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE}(base\+\_\+class,  volume)
+\item 
+\#define {\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE}(base\+\_\+class,  volume)
+\item 
+\#define {\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE}(base\+\_\+class,  node)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef bool($\ast$ {\bfseries Generic\+Walking\+Callback}) (const void $\ast$current, void $\ast$user\+\_\+data)\hypertarget{OPC__OptimizedTree_8h_aef209b23c82a581b63afd83ecb3e908b}{}\label{OPC__OptimizedTree_8h_aef209b23c82a581b63afd83ecb3e908b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for optimized trees.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE}!O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}}
+\subsubsection[{\texorpdfstring{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE}{IMPLEMENT_COLLISION_TREE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE(
+\begin{DoxyParamCaption}
+\item[{}]{base\+\_\+class, }
+\item[{}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__OptimizedTree_8h_a482628da5bd0e8dae1c1c2dd41d97c9d}{}\label{OPC__OptimizedTree_8h_a482628da5bd0e8dae1c1c2dd41d97c9d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                                                                                     
+      \(\backslash\)
+        \textcolor{comment}{/* Constructor / Destructor */}                                                                              
+      \(\backslash\)
+                                                    base\_class();                                                   
+      \(\backslash\)
+        virtual                                     ~base\_class();                                                  
+      \(\backslash\)
+        \textcolor{comment}{/* Builds from a standard tree */}                                                                           
+      \(\backslash\)
+        override(\hyperlink{classAABBOptimizedTree}{AABBOptimizedTree})    bool            Build(
+      \hyperlink{classAABBTree}{AABBTree}* tree);                                            \(\backslash\)
+        \textcolor{comment}{/* Refits the tree */}                                                                                       
+      \(\backslash\)
+        override(\hyperlink{classAABBOptimizedTree}{AABBOptimizedTree})    \textcolor{keywordtype}{bool}            Refit(const 
+      \hyperlink{classMeshInterface}{MeshInterface}* mesh\_interface);                        \(\backslash\)
+        \textcolor{comment}{/* Walks the tree */}                                                                                        
+      \(\backslash\)
+        override(\hyperlink{classAABBOptimizedTree}{AABBOptimizedTree})    \textcolor{keywordtype}{bool}            Walk(GenericWalkingCallback 
+      callback, \textcolor{keywordtype}{void}* user\_data) const;   \(\backslash\)
+        \textcolor{comment}{/* Data access */}                                                                                           
+      \(\backslash\)
+        inline\_                     const node*     GetNodes()\textcolor{keyword}{      const   }\{ \textcolor{keywordflow}{return} mNodes;                    
+      \}    \(\backslash\)
+        \textcolor{comment}{/* Stats */}                                                                                                 
+      \(\backslash\)
+        override(\hyperlink{classAABBOptimizedTree}{AABBOptimizedTree})    \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword}            GetUsedBytes()\textcolor{keyword}{  const   }\{ \textcolor{keywordflow}{
+      return} mNbNodes*\textcolor{keyword}{sizeof}(node);     \}   \(\backslash\)
+        private:                                                                                                    
+      \(\backslash\)
+                                    node*           mNodes;
+\end{DoxyCode}
+
+
+Common interface for a collision tree. 
+
+\index{O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE}!O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}}
+\subsubsection[{\texorpdfstring{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE}{IMPLEMENT_COLLISION_TREE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+T\+R\+EE(
+\begin{DoxyParamCaption}
+\item[{}]{base\+\_\+class, }
+\item[{}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_a482628da5bd0e8dae1c1c2dd41d97c9d}{}\label{Opcode_8h_a482628da5bd0e8dae1c1c2dd41d97c9d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                                                                                     
+      \(\backslash\)
+        \textcolor{comment}{/* Constructor / Destructor */}                                                                              
+      \(\backslash\)
+                                                    base\_class();                                                   
+      \(\backslash\)
+        virtual                                     ~base\_class();                                                  
+      \(\backslash\)
+        \textcolor{comment}{/* Builds from a standard tree */}                                                                           
+      \(\backslash\)
+        override(\hyperlink{classAABBOptimizedTree}{AABBOptimizedTree})    bool            Build(
+      \hyperlink{classAABBTree}{AABBTree}* tree);                                            \(\backslash\)
+        \textcolor{comment}{/* Refits the tree */}                                                                                       
+      \(\backslash\)
+        override(\hyperlink{classAABBOptimizedTree}{AABBOptimizedTree})    \textcolor{keywordtype}{bool}            Refit(const 
+      \hyperlink{classMeshInterface}{MeshInterface}* mesh\_interface);                        \(\backslash\)
+        \textcolor{comment}{/* Walks the tree */}                                                                                        
+      \(\backslash\)
+        override(\hyperlink{classAABBOptimizedTree}{AABBOptimizedTree})    \textcolor{keywordtype}{bool}            Walk(GenericWalkingCallback 
+      callback, \textcolor{keywordtype}{void}* user\_data) const;   \(\backslash\)
+        \textcolor{comment}{/* Data access */}                                                                                           
+      \(\backslash\)
+        inline\_                     const node*     GetNodes()\textcolor{keyword}{      const   }\{ \textcolor{keywordflow}{return} mNodes;                    
+      \}    \(\backslash\)
+        \textcolor{comment}{/* Stats */}                                                                                                 
+      \(\backslash\)
+        override(\hyperlink{classAABBOptimizedTree}{AABBOptimizedTree})    \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword}            GetUsedBytes()\textcolor{keyword}{  const   }\{ \textcolor{keywordflow}{
+      return} mNbNodes*\textcolor{keyword}{sizeof}(node);     \}   \(\backslash\)
+        private:                                                                                                    
+      \(\backslash\)
+                                    node*           mNodes;
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE}!O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}}
+\subsubsection[{\texorpdfstring{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE}{IMPLEMENT_IMPLICIT_NODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE(
+\begin{DoxyParamCaption}
+\item[{}]{base\+\_\+class, }
+\item[{}]{volume}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_a97d7d7b190f18109e6fbe02dbb2655dc}{}\label{Opcode_8h_a97d7d7b190f18109e6fbe02dbb2655dc}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                         \(\backslash\)
+        \textcolor{comment}{/* Constructor / Destructor */}                              \(\backslash\)
+        inline\_ base\_class() : mData(0) \{\}                          \(\backslash\)
+        inline\_ ~base\_class() \{\}                                \(\backslash\)
+        \textcolor{comment}{/* Leaf test */}                                     \(\backslash\)
+        inline\_ \textcolor{keywordtype}{bool} IsLeaf()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} mData&1; \}                     \(\backslash\)
+        \textcolor{comment}{/* Data access */}                                   \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class* GetPos()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (base\_class*)mData;       \}   \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class* GetNeg()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} ((base\_class*)mData)+1;   \}   \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetPrimitive()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword})(mData>>1);        \}       \(\backslash\)
+        \textcolor{comment}{/* Stats */}                                     \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetNodeSize()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \hyperlink{IceMemoryMacros_8h_a3a81c4bd09b5d408b74a993d749de241}{SIZEOFOBJECT};         \}   \(\backslash\)
+                                                    \(\backslash\)
+        volume mAABB;                                       \(\backslash\)
+        uintptr\_t mData;
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE}!O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}}
+\subsubsection[{\texorpdfstring{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE}{IMPLEMENT_IMPLICIT_NODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+N\+O\+DE(
+\begin{DoxyParamCaption}
+\item[{}]{base\+\_\+class, }
+\item[{}]{volume}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__OptimizedTree_8h_a97d7d7b190f18109e6fbe02dbb2655dc}{}\label{OPC__OptimizedTree_8h_a97d7d7b190f18109e6fbe02dbb2655dc}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                         \(\backslash\)
+        \textcolor{comment}{/* Constructor / Destructor */}                              \(\backslash\)
+        inline\_ base\_class() : mData(0) \{\}                          \(\backslash\)
+        inline\_ ~base\_class() \{\}                                \(\backslash\)
+        \textcolor{comment}{/* Leaf test */}                                     \(\backslash\)
+        inline\_ \textcolor{keywordtype}{bool} IsLeaf()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} mData&1; \}                     \(\backslash\)
+        \textcolor{comment}{/* Data access */}                                   \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class* GetPos()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (base\_class*)mData;       \}   \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class* GetNeg()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} ((base\_class*)mData)+1;   \}   \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetPrimitive()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword})(mData>>1);        \}       \(\backslash\)
+        \textcolor{comment}{/* Stats */}                                     \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetNodeSize()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \hyperlink{IceMemoryMacros_8h_a3a81c4bd09b5d408b74a993d749de241}{SIZEOFOBJECT};         \}   \(\backslash\)
+                                                    \(\backslash\)
+        volume mAABB;                                       \(\backslash\)
+        uintptr\_t mData;
+\end{DoxyCode}
+
+
+Common interface for a node of an implicit tree. 
+
+\index{O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE}!O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}}
+\subsubsection[{\texorpdfstring{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE}{IMPLEMENT_NOLEAF_NODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE(
+\begin{DoxyParamCaption}
+\item[{}]{base\+\_\+class, }
+\item[{}]{volume}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_a36a47d51c238b7cdb3028f886defc2ba}{}\label{Opcode_8h_a36a47d51c238b7cdb3028f886defc2ba}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                         \(\backslash\)
+        \textcolor{comment}{/* Constructor / Destructor */}                              \(\backslash\)
+        inline\_ base\_class() : mPosData(0), mNegData(0) \{\}                  \(\backslash\)
+        inline\_ ~base\_class() \{\}                                \(\backslash\)
+        \textcolor{comment}{/* Leaf tests */}                                    \(\backslash\)
+        inline\_ \textcolor{keywordtype}{bool} HasPosLeaf()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} mPosData&1;            \}       \(\backslash\)
+        inline\_ \textcolor{keywordtype}{bool} HasNegLeaf()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} mNegData&1;            \}       \(\backslash\)
+        \textcolor{comment}{/* Data access */}                                   \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class* GetPos()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (base\_class*)mPosData;    \}   \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class* GetNeg()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (base\_class*)mNegData;    \}   \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetPosPrimitive()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword})(mPosData>>1);  \}           \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetNegPrimitive()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword})(mNegData>>1);  \}           \(\backslash\)
+        \textcolor{comment}{/* Stats */}                                     \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetNodeSize()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \hyperlink{IceMemoryMacros_8h_a3a81c4bd09b5d408b74a993d749de241}{SIZEOFOBJECT};         \}   \(\backslash\)
+                                                    \(\backslash\)
+        volume mAABB;                                       \(\backslash\)
+        uintptr\_t mPosData;                                 \(\backslash\)
+        uintptr\_t mNegData;
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE}!O\+P\+C\+\_\+\+Optimized\+Tree.\+h@{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}}
+\subsubsection[{\texorpdfstring{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE}{IMPLEMENT_NOLEAF_NODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+\_\+\+N\+O\+DE(
+\begin{DoxyParamCaption}
+\item[{}]{base\+\_\+class, }
+\item[{}]{volume}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__OptimizedTree_8h_a36a47d51c238b7cdb3028f886defc2ba}{}\label{OPC__OptimizedTree_8h_a36a47d51c238b7cdb3028f886defc2ba}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{public}:                                         \(\backslash\)
+        \textcolor{comment}{/* Constructor / Destructor */}                              \(\backslash\)
+        inline\_ base\_class() : mPosData(0), mNegData(0) \{\}                  \(\backslash\)
+        inline\_ ~base\_class() \{\}                                \(\backslash\)
+        \textcolor{comment}{/* Leaf tests */}                                    \(\backslash\)
+        inline\_ \textcolor{keywordtype}{bool} HasPosLeaf()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} mPosData&1;            \}       \(\backslash\)
+        inline\_ \textcolor{keywordtype}{bool} HasNegLeaf()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} mNegData&1;            \}       \(\backslash\)
+        \textcolor{comment}{/* Data access */}                                   \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class* GetPos()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (base\_class*)mPosData;    \}   \(\backslash\)
+        inline\_ \textcolor{keyword}{const} base\_class* GetNeg()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (base\_class*)mNegData;    \}   \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetPosPrimitive()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword})(mPosData>>1);  \}           \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetNegPrimitive()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword})(mNegData>>1);  \}           \(\backslash\)
+        \textcolor{comment}{/* Stats */}                                     \(\backslash\)
+        inline\_ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} GetNodeSize()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \hyperlink{IceMemoryMacros_8h_a3a81c4bd09b5d408b74a993d749de241}{SIZEOFOBJECT};         \}   \(\backslash\)
+                                                    \(\backslash\)
+        volume mAABB;                                       \(\backslash\)
+        uintptr\_t mPosData;                                 \(\backslash\)
+        uintptr\_t mNegData;
+\end{DoxyCode}
+
+
+Common interface for a node of a no-\/leaf tree. 
+

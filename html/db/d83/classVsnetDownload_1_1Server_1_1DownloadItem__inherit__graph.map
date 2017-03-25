@@ -1,0 +1,4 @@
+<map id="VsnetDownload::Server::DownloadItem" name="VsnetDownload::Server::DownloadItem">
+<area shape="rect" id="node2" href="$dc/dc6/classVsnetDownload_1_1Server_1_1DownloadItemBuf.html" title="{VsnetDownload::Server\l::DownloadItemBuf\n||+ DownloadItemBuf()\l+ ~DownloadItemBuf()\l+ offset()\l+ remainingSize()\l+ copyFromFile()\l}" alt="" coords="5,255,165,406"/>
+<area shape="rect" id="node3" href="$d7/d1d/classVsnetDownload_1_1Server_1_1DownloadItemFile.html" title="{VsnetDownload::Server\l::DownloadItemFile\n||+ DownloadItemFile()\l+ DownloadItemFile()\l+ ~DownloadItemFile()\l+ offset()\l+ remainingSize()\l+ copyFromFile()\l}" alt="" coords="189,248,349,413"/>
+</map>

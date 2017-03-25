@@ -1,0 +1,8 @@
+<map id="Audio::OpenALSimpleSound::loadImpl" name="Audio::OpenALSimpleSound::loadImpl">
+<area shape="rect" id="node2" href="$d6/d0a/classAudio_1_1SoundBuffer.html#a330ca69d99d6e39d83a419bc7d580b57" title="Audio::SoundBuffer\l::reserve" alt="" coords="240,5,375,47"/>
+<area shape="rect" id="node3" href="$d6/d0a/classAudio_1_1SoundBuffer.html#a30de6438a4df9edfa9deb6f211cbc2d1" title="Audio::SoundBuffer\l::optimize" alt="" coords="240,71,375,112"/>
+<area shape="rect" id="node4" href="$d6/d0a/classAudio_1_1SoundBuffer.html#a88a1a46b15593999f0a288ba691fac54" title="Audio::SoundBuffer\l::getUsedBytes" alt="" coords="240,136,375,177"/>
+<area shape="rect" id="node5" href="$d6/d0a/classAudio_1_1SoundBuffer.html#acef90321df3cb0dbe97259b3f9cd6d2c" title="Audio::SoundBuffer\l::getBuffer" alt="" coords="240,201,375,243"/>
+<area shape="rect" id="node6" href="$d6/d0a/classAudio_1_1SoundBuffer.html#a03ebbf6341feeb181b83c9a8283301d8" title="Audio::SoundBuffer\l::setUsedBytes" alt="" coords="240,267,375,308"/>
+<area shape="rect" id="node7" href="$d6/d0a/classAudio_1_1SoundBuffer.html#ac79d65c98187412b6c9bd727a14385fb" title="Audio::SoundBuffer\l::swap" alt="" coords="240,332,375,373"/>
+</map>

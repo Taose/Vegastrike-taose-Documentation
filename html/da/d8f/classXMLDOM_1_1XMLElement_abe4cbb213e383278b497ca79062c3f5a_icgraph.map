@@ -1,0 +1,24 @@
+<map id="XMLDOM::XMLElement::clear" name="XMLDOM::XMLElement::clear">
+<area shape="rect" id="node2" href="$da/d8f/classXMLDOM_1_1XMLElement.html#a6f2525c1773adb68912a274c076d0ff6" title="XMLDOM::XMLElement\l::XMLElement" alt="" coords="222,130,385,171"/>
+<area shape="rect" id="node3" href="$da/d8f/classXMLDOM_1_1XMLElement.html#a6341f47796d6516478d239c5733ec995" title="XMLDOM::XMLElement\l::setType" alt="" coords="222,195,385,237"/>
+<area shape="rect" id="node21" href="$da/d8f/classXMLDOM_1_1XMLElement.html#af501dcc46e59d0d9aec560cd92d11d66" title="XMLDOM::XMLElement\l::removeChildByName" alt="" coords="222,261,385,302"/>
+<area shape="rect" id="node23" href="$da/db8/classXMLDOM_1_1XMLDocument.html#a3101fae4eab3b7f414f462073a62a059" title="XMLDOM::XMLDocument\l::clear" alt="" coords="216,326,391,367"/>
+<area shape="rect" id="node4" href="$da/d8f/classXMLDOM_1_1XMLElement.html#ac6abb91539f92aacb495162199a8c610" title="XMLDOM::XMLElement\l::type" alt="" coords="445,195,607,237"/>
+<area shape="rect" id="node5" href="$d0/de7/classTechnique.html#a6ec998ae20fed03ff4ade4f9f7b00aa1" title="Technique::Technique" alt="" coords="667,111,818,137"/>
+<area shape="rect" id="node17" href="$da/d8f/classXMLDOM_1_1XMLElement.html#a233ff65ad65b92fee2f145d2ba059c3a" title="XMLDOM::XMLElement\l::contents" alt="" coords="661,237,824,278"/>
+<area shape="rect" id="node18" href="$d2/ddd/classXMLDOM_1_1XMLSerializer.html#a2224aae579bed3aa406471e9f560c81b" title="XMLDOM::XMLSerializer\l::importXML" alt="" coords="881,218,1050,259"/>
+<area shape="rect" id="node20" href="$da/d8f/classXMLDOM_1_1XMLElement.html#a599cf001586620a89628d63b342378e2" title="XMLDOM::XMLElement\l::appendContents" alt="" coords="661,326,824,367"/>
+<area shape="rect" id="node6" href="$d0/de7/classTechnique.html#a0e3aa18e00f5c00377000abf9f557d8e" title="Technique::getTechnique" alt="" coords="881,81,1049,108"/>
+<area shape="rect" id="node16" href="$df/df2/classTechnique_1_1Pass.html#aeecc48e84e7eb74a3fd8db142e6e391e" title="Technique::Pass::getShader\lParam" alt="" coords="872,133,1059,174"/>
+<area shape="rect" id="node7" href="$d9/d5e/classMesh.html#aa35dc50ae01f25282d7a58e24972f80f" title="Will draw all undrawn meshes of this type. " alt="" coords="1107,56,1285,83"/>
+<area shape="rect" id="node15" href="$d0/de7/classTechnique.html#a0ad1df3b45f3bb1af6b8f1a45ee4f303" title="Technique::isCompiled" alt="" coords="1119,107,1273,133"/>
+<area shape="rect" id="node8" href="$d9/d5e/classMesh.html#ae4029861af0ac80167bf22b2ddc8ee81" title="Draws lod pixels wide, mesh at Transformation NOW. If centered, then will center on camera and disabl..." alt="" coords="1377,5,1497,32"/>
+<area shape="rect" id="node9" href="$d9/d5e/classMesh.html#ab00de322e0cefefc7d4948f54d853736" title="Will draw all undrawn meshes in total If pushSpclFX, the last series of meshes will be drawn with oth..." alt="" coords="1333,56,1541,83"/>
+<area shape="rect" id="node14" href="$d5/dc6/classSphereMesh.html#ac2189ac6e54ba796fb7072b490dd4184" title="Will draw all undrawn far meshes beyond the range of zbuffer (better be convex). " alt="" coords="1341,107,1533,133"/>
+<area shape="rect" id="node10" href="$de/d19/classGameUnit.html#a3737ac418f41325367169998f7131202" title="Sets the camera to be within this unit. " alt="" coords="1589,5,1780,32"/>
+<area shape="rect" id="node11" href="$dd/d50/classGameCockpit.html#a558479694454a63b1ec53f2df316e1ae" title="Draws Cockpit then restores viewport. " alt="" coords="1614,56,1755,83"/>
+<area shape="rect" id="node12" href="$d5/d38/classGameStarSystem.html#a22a64a77861767b3503b7c6b5ab0b786" title="GameStarSystem::Draw" alt="" coords="1602,107,1767,133"/>
+<area shape="rect" id="node13" href="$d5/d38/classGameStarSystem.html#a08724f59ce670c81fd5c43aef06401c1" title="activates the light map texture " alt="" coords="1828,107,2027,133"/>
+<area shape="rect" id="node19" href="$da/d8f/classXMLDOM_1_1XMLElement.html#a25d23e71643b55728f910604b43beed0" title="XMLDOM::XMLElement\l::getDocument" alt="" coords="884,295,1047,337"/>
+<area shape="rect" id="node22" href="$da/db8/classXMLDOM_1_1XMLDocument.html#afc5d54ab623bafee4c186c9c87f6c485" title="XMLDOM::XMLDocument\l::removeElementByName" alt="" coords="439,261,613,302"/>
+</map>

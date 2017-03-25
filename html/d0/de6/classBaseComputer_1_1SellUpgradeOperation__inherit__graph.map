@@ -1,0 +1,4 @@
+<map id="BaseComputer::SellUpgradeOperation" name="BaseComputer::SellUpgradeOperation">
+<area shape="rect" id="node2" href="$da/d3e/classBaseComputer_1_1UpgradeOperation.html" title="{BaseComputer::UpgradeOperation\n|# m_parent\l# m_newPart\l# m_part\l# m_selectedMount\l# m_selectedTurret\l# m_selectedItem\l|# UpgradeOperation()\l# ~UpgradeOperation()\l# commonInit()\l# finish()\l# endInit()\l# gotSelectedMount()\l# gotSelectedTurret()\l# updateUI()\l# checkTransaction()\l# concludeTransaction()\l# selectMount()\l# showTurretPicker()\l# modalDialogResult()\l}" alt="" coords="5,131,228,457"/>
+<area shape="rect" id="node3" href="$d3/d12/classModalDialogCallback.html" title="{ModalDialogCallback\n||+ modalDialogResult()\l}" alt="" coords="41,5,193,83"/>
+</map>

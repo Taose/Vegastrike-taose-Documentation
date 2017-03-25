@@ -1,0 +1,58 @@
+\hypertarget{classAABBNoLeafNode}{}\section{A\+A\+B\+B\+No\+Leaf\+Node Class Reference}
+\label{classAABBNoLeafNode}\index{A\+A\+B\+B\+No\+Leaf\+Node@{A\+A\+B\+B\+No\+Leaf\+Node}}
+
+
+Collaboration diagram for A\+A\+B\+B\+No\+Leaf\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{d9/d2a/classAABBNoLeafNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAABBNoLeafNode_a72bbc7c9d7839051c0e0ffb808f57d2d}{\+\_\+\+Build\+No\+Leaf\+Tree} (\hyperlink{classOpcode_1_1AABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$linear, const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} box\+\_\+id, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&current\+\_\+id, const \hyperlink{classOpcode_1_1AABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$current\+\_\+node)
+\end{DoxyCompactItemize}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{A\+A\+B\+B\+No\+Leaf\+Node@{A\+A\+B\+B\+No\+Leaf\+Node}!\+\_\+\+Build\+No\+Leaf\+Tree@{\+\_\+\+Build\+No\+Leaf\+Tree}}
+\index{\+\_\+\+Build\+No\+Leaf\+Tree@{\+\_\+\+Build\+No\+Leaf\+Tree}!A\+A\+B\+B\+No\+Leaf\+Node@{A\+A\+B\+B\+No\+Leaf\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Build\+No\+Leaf\+Tree(\+A\+A\+B\+B\+No\+Leaf\+Node $\ast$linear, const udword box\+\_\+id, udword \&current\+\_\+id, const A\+A\+B\+B\+Tree\+Node $\ast$current\+\_\+node)}{_BuildNoLeafTree(AABBNoLeafNode *linear, const udword box_id, udword &current_id, const AABBTreeNode *current_node)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+Build\+No\+Leaf\+Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{linear, }
+\item[{const {\bf udword}}]{box\+\_\+id, }
+\item[{{\bf udword} \&}]{current\+\_\+id, }
+\item[{const {\bf A\+A\+B\+B\+Tree\+Node} $\ast$}]{current\+\_\+node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\hypertarget{classAABBNoLeafNode_a72bbc7c9d7839051c0e0ffb808f57d2d}{}\label{classAABBNoLeafNode_a72bbc7c9d7839051c0e0ffb808f57d2d}
+Builds a \char`\"{}no-\/leaf\char`\"{} tree from a standard one. This is a tree whose leaf nodes have been removed.
+
+Layout for no-\/leaf trees\+:
+
+Node\+:
+\begin{DoxyItemize}
+\item box
+\item P pointer =$>$ a node (L\+SB=0) or a primitive (L\+SB=1)
+\item N pointer =$>$ a node (L\+SB=0) or a primitive (L\+SB=1)
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear} & \mbox{[}in\mbox{]} base address of destination nodes \\
+\hline
+{\em box\+\_\+id} & \mbox{[}in\mbox{]} index of destination node \\
+\hline
+{\em current\+\_\+id} & \mbox{[}in\mbox{]} current running index \\
+\hline
+{\em current\+\_\+node} & \mbox{[}in\mbox{]} current node from input tree \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__OptimizedTree_8h}{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}\item 
+cmd/collide2/\hyperlink{OPC__OptimizedTree_8cpp}{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}\end{DoxyCompactItemize}

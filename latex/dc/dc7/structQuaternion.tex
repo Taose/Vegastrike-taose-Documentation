@@ -1,0 +1,63 @@
+\hypertarget{structQuaternion}{}\section{Quaternion Struct Reference}
+\label{structQuaternion}\index{Quaternion@{Quaternion}}
+
+
+Collaboration diagram for Quaternion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{dd/d27/structQuaternion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Quaternion} (float s, Vector v)\hypertarget{structQuaternion_a1e1a0acfb7da7e28532808455d25b0f5}{}\label{structQuaternion_a1e1a0acfb7da7e28532808455d25b0f5}
+
+\item 
+\hyperlink{structQuaternion}{Quaternion} {\bfseries Conjugate} () const \hypertarget{structQuaternion_a0ee64800ff331f0a7d2572c86f98b83b}{}\label{structQuaternion_a0ee64800ff331f0a7d2572c86f98b83b}
+
+\item 
+void {\bfseries netswap} ()\hypertarget{structQuaternion_ab238e9312256e390269518cb19bb022b}{}\label{structQuaternion_ab238e9312256e390269518cb19bb022b}
+
+\item 
+float {\bfseries Magnitude} () const \hypertarget{structQuaternion_a591cb51388ad1322110d6783ee677781}{}\label{structQuaternion_a591cb51388ad1322110d6783ee677781}
+
+\item 
+\hyperlink{structQuaternion}{Quaternion} {\bfseries operator$\ast$} (const \hyperlink{structQuaternion}{Quaternion} \&rval) const \hypertarget{structQuaternion_af41a5efb5f0ed41c04f3ce28a775c26d}{}\label{structQuaternion_af41a5efb5f0ed41c04f3ce28a775c26d}
+
+\item 
+\hyperlink{structQuaternion}{Quaternion} \& {\bfseries operator$\ast$=} (const \hyperlink{structQuaternion}{Quaternion} \&rval)\hypertarget{structQuaternion_a52963ed93e321e8f58eea0c3c6f0b863}{}\label{structQuaternion_a52963ed93e321e8f58eea0c3c6f0b863}
+
+\item 
+\hyperlink{structQuaternion}{Quaternion} \& {\bfseries Normalize} ()\hypertarget{structQuaternion_a893efdfae58f3667a4b82318f034af9e}{}\label{structQuaternion_a893efdfae58f3667a4b82318f034af9e}
+
+\item 
+void {\bfseries to\+\_\+matrix} (\hyperlink{classMatrix}{Matrix} \&mat) const \hypertarget{structQuaternion_a574050df51f8756478b7b672acc7fe66}{}\label{structQuaternion_a574050df51f8756478b7b672acc7fe66}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structQuaternion}{Quaternion} {\bfseries from\+\_\+vectors} (const Vector \&v1, const Vector \&v2, const Vector \&v3)\hypertarget{structQuaternion_a8fd5a5719606e30324dbe360e22f2b20}{}\label{structQuaternion_a8fd5a5719606e30324dbe360e22f2b20}
+
+\item 
+static \hyperlink{structQuaternion}{Quaternion} {\bfseries from\+\_\+axis\+\_\+angle} (const Vector \&axis, float angle)\hypertarget{structQuaternion_a16c26a93febc1527b67b29903071267d}{}\label{structQuaternion_a16c26a93febc1527b67b29903071267d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries s}\hypertarget{structQuaternion_afb7882818f7cff361b0596da0401074a}{}\label{structQuaternion_afb7882818f7cff361b0596da0401074a}
+
+\item 
+Vector {\bfseries v}\hypertarget{structQuaternion_ac536472483eb40090249d341758ac1ea}{}\label{structQuaternion_ac536472483eb40090249d341758ac1ea}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/quaternion.\+h\item 
+gfx/quaternion.\+cpp\end{DoxyCompactItemize}

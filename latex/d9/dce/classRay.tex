@@ -1,0 +1,58 @@
+\hypertarget{classRay}{}\section{Ray Class Reference}
+\label{classRay}\index{Ray@{Ray}}
+
+
+Collaboration diagram for Ray\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{db/d2b/classRay__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classRay_aad41f50d3c33b8d43d5d6bb364d7b44f}{Ray} ()\hypertarget{classRay_aad41f50d3c33b8d43d5d6bb364d7b44f}{}\label{classRay_aad41f50d3c33b8d43d5d6bb364d7b44f}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classRay_ad54775e1b3e5497684e90f6fa4c77d1b}{Ray} (const \hyperlink{classPoint}{Point} \&orig, const \hyperlink{classPoint}{Point} \&dir)\hypertarget{classRay_ad54775e1b3e5497684e90f6fa4c77d1b}{}\label{classRay_ad54775e1b3e5497684e90f6fa4c77d1b}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classRay_a057ae4c83faa2d07daca87d80f368485}{Ray} (const \hyperlink{classRay}{Ray} \&ray)\hypertarget{classRay_a057ae4c83faa2d07daca87d80f368485}{}\label{classRay_a057ae4c83faa2d07daca87d80f368485}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classRay_a1cdd7df15786c6c537839053c4b9407c}{$\sim$\+Ray} ()\hypertarget{classRay_a1cdd7df15786c6c537839053c4b9407c}{}\label{classRay_a1cdd7df15786c6c537839053c4b9407c}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+float {\bfseries Square\+Distance} (const \hyperlink{classPoint}{Point} \&point, float $\ast$t=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const \hypertarget{classRay_af768696653b687f4ec0d23f5973fba39}{}\label{classRay_af768696653b687f4ec0d23f5973fba39}
+
+\item 
+inline\+\_\+ float {\bfseries Distance} (const \hyperlink{classPoint}{Point} \&point, float $\ast$t=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const \hypertarget{classRay_af5e5523d4880544f197cb08bcde3e96e}{}\label{classRay_af5e5523d4880544f197cb08bcde3e96e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classRay_a9744c280ecde5650fd67a3c000444b28}{m\+Orig}\hypertarget{classRay_a9744c280ecde5650fd67a3c000444b28}{}\label{classRay_a9744c280ecde5650fd67a3c000444b28}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRay}{Ray} origin. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classRay_aecb4e4aab5531c3f2e193c0f9293f5fc}{m\+Dir}\hypertarget{classRay_aecb4e4aab5531c3f2e193c0f9293f5fc}{}\label{classRay_aecb4e4aab5531c3f2e193c0f9293f5fc}
+
+\begin{DoxyCompactList}\small\item\em Normalized direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classRay}{Ray} class. A ray is a half-\/line P(t) = m\+Orig + m\+Dir $\ast$ t, with 0 $<$= t $<$= +infinity
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IceRay_8h}{Ice\+Ray.\+h}\end{DoxyCompactItemize}

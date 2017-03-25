@@ -1,0 +1,252 @@
+\hypertarget{classOpcode_1_1OBB}{}\section{Opcode\+:\+:O\+BB Class Reference}
+\label{classOpcode_1_1OBB}\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+
+
+Collaboration diagram for Opcode\+:\+:O\+BB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{dd/de2/classOpcode_1_1OBB__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1OBB_aa6498dcfeb252d454210f8063f1ae853}{O\+BB} ()\hypertarget{classOpcode_1_1OBB_aa6498dcfeb252d454210f8063f1ae853}{}\label{classOpcode_1_1OBB_aa6498dcfeb252d454210f8063f1ae853}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1OBB_a3a26b516bec8ab5e937c9675de50fa9c}{O\+BB} (const \hyperlink{classOpcode_1_1Point}{Point} \&center, const \hyperlink{classOpcode_1_1Point}{Point} \&extents, const \hyperlink{classOpcode_1_1Matrix3x3}{Matrix3x3} \&rot)\hypertarget{classOpcode_1_1OBB_a3a26b516bec8ab5e937c9675de50fa9c}{}\label{classOpcode_1_1OBB_a3a26b516bec8ab5e937c9675de50fa9c}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1OBB_a5dc8bcfae8042513a0674ee7ef1a206d}{$\sim$\+O\+BB} ()\hypertarget{classOpcode_1_1OBB_a5dc8bcfae8042513a0674ee7ef1a206d}{}\label{classOpcode_1_1OBB_a5dc8bcfae8042513a0674ee7ef1a206d}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classOpcode_1_1OBB_a437016469139ccf36929fe17bf2b08e1}{Set\+Empty} ()
+\item 
+bool \hyperlink{classOpcode_1_1OBB_a509e791cfa67b4e168e33dc5db3674b8}{Contains\+Point} (const \hyperlink{classOpcode_1_1Point}{Point} \&p) const 
+\item 
+void \hyperlink{classOpcode_1_1OBB_a86084565116d26baebe3ac3b7945000f}{Create} (const \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} \&aabb, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} \&mat)
+\item 
+inline\+\_\+ void \hyperlink{classOpcode_1_1OBB_adb1dae689647e60917533bd51022a2f1}{Rotate} (const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} \&mtx, \hyperlink{classOpcode_1_1OBB}{O\+BB} \&obb) const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classOpcode_1_1OBB_a342b15da7833d9242e4dd34e477a105d}{Is\+Valid} () const 
+\item 
+bool \hyperlink{classOpcode_1_1OBB_a4edd7fb37a2ecd2334bcdcace3cdcd08}{Compute\+Planes} (\hyperlink{classOpcode_1_1Plane}{Plane} $\ast$planes) const 
+\item 
+bool \hyperlink{classOpcode_1_1OBB_ad9b5da33320f558b258c58726bcf4aed}{Compute\+Points} (\hyperlink{classOpcode_1_1Point}{Point} $\ast$pts) const 
+\item 
+bool \hyperlink{classOpcode_1_1OBB_ac89ab861cbbfc1eb9a830d3dc6894d91}{Compute\+Vertex\+Normals} (\hyperlink{classOpcode_1_1Point}{Point} $\ast$pts) const 
+\item 
+const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{classOpcode_1_1OBB_a3cb304bdb9371054780c97d29f695686}{Get\+Edges} () const 
+\item 
+const \hyperlink{classOpcode_1_1Point}{Point} $\ast$ \hyperlink{classOpcode_1_1OBB_a71d63f343a1482d1f2227e2077c90192}{Get\+Local\+Edge\+Normals} () const 
+\item 
+void \hyperlink{classOpcode_1_1OBB_a6e8844c4d4b064a2cfbd142589af22a2}{Compute\+World\+Edge\+Normal} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} edge\+\_\+index, \hyperlink{classOpcode_1_1Point}{Point} \&world\+\_\+normal) const 
+\item 
+void \hyperlink{classOpcode_1_1OBB_ad94c92759c88eead1a8eab29896f6b6e}{Compute\+L\+SS} (\hyperlink{classOpcode_1_1LSS}{L\+SS} \&lss) const 
+\item 
+bool \hyperlink{classOpcode_1_1OBB_a8ba54f8335a9b5a4d18a98a0a0024dd7}{Is\+Inside} (const \hyperlink{classOpcode_1_1OBB}{O\+BB} \&box) const 
+\item 
+inline\+\_\+ const \hyperlink{classOpcode_1_1Point}{Point} \& {\bfseries Get\+Center} () const \hypertarget{classOpcode_1_1OBB_a4ac3fa3c5de4b708b657a233d1e4df93}{}\label{classOpcode_1_1OBB_a4ac3fa3c5de4b708b657a233d1e4df93}
+
+\item 
+inline\+\_\+ const \hyperlink{classOpcode_1_1Point}{Point} \& {\bfseries Get\+Extents} () const \hypertarget{classOpcode_1_1OBB_a55cc8082c560f0f4683eca73eb9444a6}{}\label{classOpcode_1_1OBB_a55cc8082c560f0f4683eca73eb9444a6}
+
+\item 
+inline\+\_\+ const \hyperlink{classOpcode_1_1Matrix3x3}{Matrix3x3} \& {\bfseries Get\+Rot} () const \hypertarget{classOpcode_1_1OBB_ad784a3621ce12b733aede2e47cb9fb4c}{}\label{classOpcode_1_1OBB_ad784a3621ce12b733aede2e47cb9fb4c}
+
+\item 
+inline\+\_\+ void {\bfseries Get\+Rotated\+Extents} (\hyperlink{classOpcode_1_1Matrix3x3}{Matrix3x3} \&extents) const \hypertarget{classOpcode_1_1OBB_a6615ba2ebeab2169dfa133da13f6168b}{}\label{classOpcode_1_1OBB_a6615ba2ebeab2169dfa133da13f6168b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1Point}{Point} \hyperlink{classOpcode_1_1OBB_a1c02f33b9ed8a40a4d7719be6f61cd70}{m\+Center}\hypertarget{classOpcode_1_1OBB_a1c02f33b9ed8a40a4d7719be6f61cd70}{}\label{classOpcode_1_1OBB_a1c02f33b9ed8a40a4d7719be6f61cd70}
+
+\begin{DoxyCompactList}\small\item\em B for \hyperlink{classBox}{Box}. \end{DoxyCompactList}\item 
+\hyperlink{classOpcode_1_1Point}{Point} \hyperlink{classOpcode_1_1OBB_a1fcf8fa51bae6f02c80fad6b1e080957}{m\+Extents}\hypertarget{classOpcode_1_1OBB_a1fcf8fa51bae6f02c80fad6b1e080957}{}\label{classOpcode_1_1OBB_a1fcf8fa51bae6f02c80fad6b1e080957}
+
+\begin{DoxyCompactList}\small\item\em B for Bounding. \end{DoxyCompactList}\item 
+\hyperlink{classOpcode_1_1Matrix3x3}{Matrix3x3} \hyperlink{classOpcode_1_1OBB_a680d147b76005b769a5b0039a42d664b}{m\+Rot}\hypertarget{classOpcode_1_1OBB_a680d147b76005b769a5b0039a42d664b}{}\label{classOpcode_1_1OBB_a680d147b76005b769a5b0039a42d664b}
+
+\begin{DoxyCompactList}\small\item\em O for Oriented. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Compute\+L\+SS@{Compute\+L\+SS}}
+\index{Compute\+L\+SS@{Compute\+L\+SS}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Compute\+L\+S\+S(\+L\+S\+S \&lss) const }{ComputeLSS(LSS &lss) const }}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+::\+Compute\+L\+SS (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+SS} \&}]{lss}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1OBB_ad94c92759c88eead1a8eab29896f6b6e}{}\label{classOpcode_1_1OBB_ad94c92759c88eead1a8eab29896f6b6e}
+Computes an \hyperlink{classOpcode_1_1LSS}{L\+SS} surrounding the \hyperlink{classOpcode_1_1OBB}{O\+BB}. 
+\begin{DoxyParams}{Parameters}
+{\em lss} & \mbox{[}out\mbox{]} the \hyperlink{classOpcode_1_1LSS}{L\+SS} \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Compute\+Planes@{Compute\+Planes}}
+\index{Compute\+Planes@{Compute\+Planes}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Compute\+Planes(\+Plane $\ast$planes) const }{ComputePlanes(Plane *planes) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+::\+Compute\+Planes (
+\begin{DoxyParamCaption}
+\item[{{\bf Plane} $\ast$}]{planes}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1OBB_a4edd7fb37a2ecd2334bcdcace3cdcd08}{}\label{classOpcode_1_1OBB_a4edd7fb37a2ecd2334bcdcace3cdcd08}
+Computes the obb planes. 
+\begin{DoxyParams}{Parameters}
+{\em planes} & \mbox{[}out\mbox{]} 6 box planes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Compute\+Points@{Compute\+Points}}
+\index{Compute\+Points@{Compute\+Points}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Compute\+Points(\+Point $\ast$pts) const }{ComputePoints(Point *pts) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+::\+Compute\+Points (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{pts}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1OBB_ad9b5da33320f558b258c58726bcf4aed}{}\label{classOpcode_1_1OBB_ad9b5da33320f558b258c58726bcf4aed}
+Computes the obb points. 
+\begin{DoxyParams}{Parameters}
+{\em pts} & \mbox{[}out\mbox{]} 8 box points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Compute\+Vertex\+Normals@{Compute\+Vertex\+Normals}}
+\index{Compute\+Vertex\+Normals@{Compute\+Vertex\+Normals}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Compute\+Vertex\+Normals(\+Point $\ast$pts) const }{ComputeVertexNormals(Point *pts) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+::\+Compute\+Vertex\+Normals (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{pts}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1OBB_ac89ab861cbbfc1eb9a830d3dc6894d91}{}\label{classOpcode_1_1OBB_ac89ab861cbbfc1eb9a830d3dc6894d91}
+Computes vertex normals. 
+\begin{DoxyParams}{Parameters}
+{\em pts} & \mbox{[}out\mbox{]} 8 box points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Compute\+World\+Edge\+Normal@{Compute\+World\+Edge\+Normal}}
+\index{Compute\+World\+Edge\+Normal@{Compute\+World\+Edge\+Normal}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Compute\+World\+Edge\+Normal(udword edge\+\_\+index, Point \&world\+\_\+normal) const }{ComputeWorldEdgeNormal(udword edge_index, Point &world_normal) const }}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+::\+Compute\+World\+Edge\+Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{edge\+\_\+index, }
+\item[{{\bf Point} \&}]{world\+\_\+normal}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1OBB_a6e8844c4d4b064a2cfbd142589af22a2}{}\label{classOpcode_1_1OBB_a6e8844c4d4b064a2cfbd142589af22a2}
+Returns world edge normal 
+\begin{DoxyParams}{Parameters}
+{\em edge\+\_\+index} & \mbox{[}in\mbox{]} 0 $<$= edge index $<$ 12 \\
+\hline
+{\em world\+\_\+normal} & \mbox{[}out\mbox{]} edge normal in world space \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Contains\+Point@{Contains\+Point}}
+\index{Contains\+Point@{Contains\+Point}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Contains\+Point(const Point \&p) const }{ContainsPoint(const Point &p) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+::\+Contains\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{p}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1OBB_a509e791cfa67b4e168e33dc5db3674b8}{}\label{classOpcode_1_1OBB_a509e791cfa67b4e168e33dc5db3674b8}
+Tests if a point is contained within the \hyperlink{classOpcode_1_1OBB}{O\+BB}. 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{[}in\mbox{]} the world point to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if inside the \hyperlink{classOpcode_1_1OBB}{O\+BB} 
+\end{DoxyReturn}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Create@{Create}}
+\index{Create@{Create}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Create(const A\+A\+B\+B \&aabb, const Matrix4x4 \&mat)}{Create(const AABB &aabb, const Matrix4x4 &mat)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+B\+B\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+BB} \&}]{aabb, }
+\item[{const {\bf Matrix4x4} \&}]{mat}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1OBB_a86084565116d26baebe3ac3b7945000f}{}\label{classOpcode_1_1OBB_a86084565116d26baebe3ac3b7945000f}
+Builds an \hyperlink{classOpcode_1_1OBB}{O\+BB} from an \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} and a world transform. 
+\begin{DoxyParams}{Parameters}
+{\em aabb} & \mbox{[}in\mbox{]} the aabb \\
+\hline
+{\em mat} & \mbox{[}in\mbox{]} the world transform \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Get\+Edges@{Get\+Edges}}
+\index{Get\+Edges@{Get\+Edges}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Get\+Edges() const }{GetEdges() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf udword} $\ast$ O\+B\+B\+::\+Get\+Edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1OBB_a3cb304bdb9371054780c97d29f695686}{}\label{classOpcode_1_1OBB_a3cb304bdb9371054780c97d29f695686}
+Returns edges. \begin{DoxyReturn}{Returns}
+24 indices (12 edges) indexing the list returned by \hyperlink{classOpcode_1_1OBB_ad9b5da33320f558b258c58726bcf4aed}{Compute\+Points()} 
+\end{DoxyReturn}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Get\+Local\+Edge\+Normals@{Get\+Local\+Edge\+Normals}}
+\index{Get\+Local\+Edge\+Normals@{Get\+Local\+Edge\+Normals}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Get\+Local\+Edge\+Normals() const }{GetLocalEdgeNormals() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Point} $\ast$ O\+B\+B\+::\+Get\+Local\+Edge\+Normals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1OBB_a71d63f343a1482d1f2227e2077c90192}{}\label{classOpcode_1_1OBB_a71d63f343a1482d1f2227e2077c90192}
+Returns local edge normals. \begin{DoxyReturn}{Returns}
+edge normals in local space 
+\end{DoxyReturn}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Is\+Inside@{Is\+Inside}}
+\index{Is\+Inside@{Is\+Inside}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Is\+Inside(const O\+B\+B \&box) const }{IsInside(const OBB &box) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+B\+B\+::\+Is\+Inside (
+\begin{DoxyParamCaption}
+\item[{const {\bf O\+BB} \&}]{box}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1OBB_a8ba54f8335a9b5a4d18a98a0a0024dd7}{}\label{classOpcode_1_1OBB_a8ba54f8335a9b5a4d18a98a0a0024dd7}
+Checks the \hyperlink{classOpcode_1_1OBB}{O\+BB} is inside another \hyperlink{classOpcode_1_1OBB}{O\+BB}. 
+\begin{DoxyParams}{Parameters}
+{\em box} & \mbox{[}in\mbox{]} the other \hyperlink{classOpcode_1_1OBB}{O\+BB} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if we\textquotesingle{}re inside the other box 
+\end{DoxyReturn}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Is\+Valid() const }{IsValid() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Opcode\+::\+O\+B\+B\+::\+Is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1OBB_a342b15da7833d9242e4dd34e477a105d}{}\label{classOpcode_1_1OBB_a342b15da7833d9242e4dd34e477a105d}
+Checks the \hyperlink{classOpcode_1_1OBB}{O\+BB} is valid. \begin{DoxyReturn}{Returns}
+true if the box is valid 
+\end{DoxyReturn}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Rotate(const Matrix4x4 \&mtx, O\+B\+B \&obb) const }{Rotate(const Matrix4x4 &mtx, OBB &obb) const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Opcode\+::\+O\+B\+B\+::\+Rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4x4} \&}]{mtx, }
+\item[{{\bf O\+BB} \&}]{obb}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1OBB_adb1dae689647e60917533bd51022a2f1}{}\label{classOpcode_1_1OBB_adb1dae689647e60917533bd51022a2f1}
+Recomputes the \hyperlink{classOpcode_1_1OBB}{O\+BB} after an arbitrary transform by a 4x4 matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mtx} & \mbox{[}in\mbox{]} the transform matrix \\
+\hline
+{\em obb} & \mbox{[}out\mbox{]} the transformed \hyperlink{classOpcode_1_1OBB}{O\+BB} \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}!Set\+Empty@{Set\+Empty}}
+\index{Set\+Empty@{Set\+Empty}!Opcode\+::\+O\+BB@{Opcode\+::\+O\+BB}}
+\subsubsection[{\texorpdfstring{Set\+Empty()}{SetEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}void Opcode\+::\+O\+B\+B\+::\+Set\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1OBB_a437016469139ccf36929fe17bf2b08e1}{}\label{classOpcode_1_1OBB_a437016469139ccf36929fe17bf2b08e1}
+Setups an empty \hyperlink{classOpcode_1_1OBB}{O\+BB}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\+Ice/\hyperlink{IceOBB_8cpp}{Ice\+O\+B\+B.\+cpp}\end{DoxyCompactItemize}

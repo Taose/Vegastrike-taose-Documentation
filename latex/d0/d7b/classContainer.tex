@@ -1,0 +1,399 @@
+\hypertarget{classContainer}{}\section{Container Class Reference}
+\label{classContainer}\index{Container@{Container}}
+
+
+Inheritance diagram for Container\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d71/classContainer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Container\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{d3/d25/classContainer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classContainer_a1b0c5515d6863c1bc98cc93b65952f42}{Container} ()
+\item 
+\hyperlink{classContainer_a38b2b6815b1dbcb61c255aa4b0c6549d}{Container} (const \hyperlink{classContainer}{Container} \&object)
+\item 
+\hyperlink{classContainer_a357a6c570a212995f29e0c161d0bdedd}{Container} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} size, float growth\+\_\+factor)
+\item 
+\hyperlink{classContainer_ae9f5d07bfc3defda274aa06091c19f56}{$\sim$\+Container} ()
+\item 
+inline\+\_\+ \hyperlink{classContainer}{Container} \& \hyperlink{classContainer_ab02175b19abdd65e70e2ac36c4d098ab}{Add} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} entry)
+\item 
+inline\+\_\+ \hyperlink{classContainer}{Container} \& {\bfseries Add} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$entries, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)\hypertarget{classContainer_a8efe7e32963cd5708b2ff5ec44218b09}{}\label{classContainer_a8efe7e32963cd5708b2ff5ec44218b09}
+
+\item 
+inline\+\_\+ \hyperlink{classContainer}{Container} \& \hyperlink{classContainer_a405dd927b0f31f5d4b1307c6f17cd044}{Add} (float entry)
+\item 
+inline\+\_\+ \hyperlink{classContainer}{Container} \& {\bfseries Add} (const float $\ast$entries, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)\hypertarget{classContainer_a73c097e99165dc065ef121fd42017424}{}\label{classContainer_a73c097e99165dc065ef121fd42017424}
+
+\item 
+inline\+\_\+ \hyperlink{classContainer}{Container} \& \hyperlink{classContainer_a8c6620607260e093f00238b12d2aac5a}{Add\+Unique} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} entry)\hypertarget{classContainer_a8c6620607260e093f00238b12d2aac5a}{}\label{classContainer_a8c6620607260e093f00238b12d2aac5a}
+
+\begin{DoxyCompactList}\small\item\em Add unique \mbox{[}slow\mbox{]}. \end{DoxyCompactList}\item 
+\hyperlink{classContainer}{Container} \& \hyperlink{classContainer_a4d668ec7d3cbeef642906943e053d7fe}{Empty} ()
+\item 
+inline\+\_\+ void \hyperlink{classContainer_a6544f7c7bbc942fe6d3dde661d39214b}{Reset} ()
+\item 
+inline\+\_\+ void {\bfseries Force\+Size} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} size)\hypertarget{classContainer_a6e513df7e95aa3c2345baacbab50978e}{}\label{classContainer_a6e513df7e95aa3c2345baacbab50978e}
+
+\item 
+bool \hyperlink{classContainer_a5556de324fa97f6dbed8f8b85cf4f6e3}{Set\+Size} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)
+\item 
+bool \hyperlink{classContainer_a5a91b8f53d736b761aa75f8f2df3f78a}{Refit} ()
+\item 
+bool \hyperlink{classContainer_ab81b5847d0ca21c32b3db0d3b460d7ee}{Contains} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} entry, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$location=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const 
+\item 
+bool \hyperlink{classContainer_af26b7fe0482696af03c7b14b94619995}{Delete} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} entry)
+\item 
+bool \hyperlink{classContainer_a57191aecc817cf1c87d40beeff33c975}{Delete\+Keeping\+Order} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} entry)
+\item 
+inline\+\_\+ void \hyperlink{classContainer_abfc2182a69a695b274efc258e5816aff}{Delete\+Last\+Entry} ()\hypertarget{classContainer_abfc2182a69a695b274efc258e5816aff}{}\label{classContainer_abfc2182a69a695b274efc258e5816aff}
+
+\begin{DoxyCompactList}\small\item\em Deletes the very last entry. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classContainer_a2b617daa7417d0aac0646bbf7cc12c1c}{Delete\+Index} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} index)\hypertarget{classContainer_a2b617daa7417d0aac0646bbf7cc12c1c}{}\label{classContainer_a2b617daa7417d0aac0646bbf7cc12c1c}
+
+\begin{DoxyCompactList}\small\item\em Deletes the entry whose index is given. \end{DoxyCompactList}\item 
+\hyperlink{classContainer}{Container} \& \hyperlink{classContainer_aba8a86ac1c2a2886e5288ad37140c3d7}{Find\+Next} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&entry, Find\+Mode find\+\_\+mode=F\+I\+N\+D\+\_\+\+C\+L\+A\+MP)
+\item 
+\hyperlink{classContainer}{Container} \& \hyperlink{classContainer_a81363f8e9b925fe4d736fd3f3ab5c879}{Find\+Prev} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&entry, Find\+Mode find\+\_\+mode=F\+I\+N\+D\+\_\+\+C\+L\+A\+MP)
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classContainer_af970efd22b612ec421c0b3e44a484631}{Get\+Nb\+Entries} () const \hypertarget{classContainer_af970efd22b612ec421c0b3e44a484631}{}\label{classContainer_af970efd22b612ec421c0b3e44a484631}
+
+\begin{DoxyCompactList}\small\item\em Returns the current number of entries. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classContainer_a1cf43c7ba75d50806837359a35233a5d}{Get\+Entry} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} i) const \hypertarget{classContainer_a1cf43c7ba75d50806837359a35233a5d}{}\label{classContainer_a1cf43c7ba75d50806837359a35233a5d}
+
+\begin{DoxyCompactList}\small\item\em Returns ith entry. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{classContainer_a1f1684b828d5eca692962de4f2fa7e63}{Get\+Entries} () const \hypertarget{classContainer_a1f1684b828d5eca692962de4f2fa7e63}{}\label{classContainer_a1f1684b828d5eca692962de4f2fa7e63}
+
+\begin{DoxyCompactList}\small\item\em Returns the list of entries. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+First} () const \hypertarget{classContainer_af6a9dce121bf062e798893a8cd4d0cf0}{}\label{classContainer_af6a9dce121bf062e798893a8cd4d0cf0}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Last} () const \hypertarget{classContainer_a5e46c20fe6bb336b97ff5bffbbae2a35}{}\label{classContainer_a5e46c20fe6bb336b97ff5bffbbae2a35}
+
+\item 
+inline\+\_\+ float \hyperlink{classContainer_a3e128b9acd4c435a88580cb9b8c1c4c9}{Get\+Growth\+Factor} () const \hypertarget{classContainer_a3e128b9acd4c435a88580cb9b8c1c4c9}{}\label{classContainer_a3e128b9acd4c435a88580cb9b8c1c4c9}
+
+\begin{DoxyCompactList}\small\item\em Returns the growth factor. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classContainer_a510c453e97761b99bc8e0f6ae98cac63}{Set\+Growth\+Factor} (float growth)\hypertarget{classContainer_a510c453e97761b99bc8e0f6ae98cac63}{}\label{classContainer_a510c453e97761b99bc8e0f6ae98cac63}
+
+\begin{DoxyCompactList}\small\item\em Sets the growth factor. \end{DoxyCompactList}\item 
+inline\+\_\+ bool \hyperlink{classContainer_ab4f4c688a934dfe321cf0404a788e76c}{Is\+Full} () const \hypertarget{classContainer_ab4f4c688a934dfe321cf0404a788e76c}{}\label{classContainer_ab4f4c688a934dfe321cf0404a788e76c}
+
+\begin{DoxyCompactList}\small\item\em Checks the container is full. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classContainer_abc697b9791b85a99aeb31f7a8cf1946f}{Is\+Not\+Empty} () const \hypertarget{classContainer_abc697b9791b85a99aeb31f7a8cf1946f}{}\label{classContainer_abc697b9791b85a99aeb31f7a8cf1946f}
+
+\begin{DoxyCompactList}\small\item\em Checks the container is empty. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classContainer_a78a4444fc422f4863cdad29f79f4e558}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} i) const \hypertarget{classContainer_a78a4444fc422f4863cdad29f79f4e558}{}\label{classContainer_a78a4444fc422f4863cdad29f79f4e558}
+
+\begin{DoxyCompactList}\small\item\em Read-\/access as an array. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \& \hyperlink{classContainer_a8f2ac06a6c0d40eea078c108219d3cfd}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} i)\hypertarget{classContainer_a8f2ac06a6c0d40eea078c108219d3cfd}{}\label{classContainer_a8f2ac06a6c0d40eea078c108219d3cfd}
+
+\begin{DoxyCompactList}\small\item\em Write-\/access as an array. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classContainer_a5c3d8b367f025e179ae73aadcc620c51}{Get\+Used\+Ram} () const 
+\item 
+void \hyperlink{classContainer_a15a48bab360df6824d861cf3695112da}{operator=} (const \hyperlink{classContainer}{Container} \&object)\hypertarget{classContainer_a15a48bab360df6824d861cf3695112da}{}\label{classContainer_a15a48bab360df6824d861cf3695112da}
+
+\begin{DoxyCompactList}\small\item\em Operator for \char`\"{}\+Container A = Container B\char`\"{}. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Nb\+Containers} () const \hypertarget{classContainer_a8611d4190442ec255f7c486a2d05d8ad}{}\label{classContainer_a8611d4190442ec255f7c486a2d05d8ad}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Total\+Bytes} () const \hypertarget{classContainer_a225b40ce711aebc7063a93b295475d91}{}\label{classContainer_a225b40ce711aebc7063a93b295475d91}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains a list of 32-\/bits values. Use this class when you need to store an unknown number of values. The list is automatically resized and can contains 32-\/bits entities (dwords or floats)
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08.\+15.\+98 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Container@{Container}!Container@{Container}}
+\index{Container@{Container}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Container()}{Container()}}]{\setlength{\rightskip}{0pt plus 5cm}Container\+::\+Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_a1b0c5515d6863c1bc98cc93b65952f42}{}\label{classContainer_a1b0c5515d6863c1bc98cc93b65952f42}
+Constructor. No entries allocated there. \index{Container@{Container}!Container@{Container}}
+\index{Container@{Container}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Container(const Container \&object)}{Container(const Container &object)}}]{\setlength{\rightskip}{0pt plus 5cm}Container\+::\+Container (
+\begin{DoxyParamCaption}
+\item[{const {\bf Container} \&}]{object}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_a38b2b6815b1dbcb61c255aa4b0c6549d}{}\label{classContainer_a38b2b6815b1dbcb61c255aa4b0c6549d}
+Copy constructor. \index{Container@{Container}!Container@{Container}}
+\index{Container@{Container}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Container(udword size, float growth\+\_\+factor)}{Container(udword size, float growth_factor)}}]{\setlength{\rightskip}{0pt plus 5cm}Container\+::\+Container (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{size, }
+\item[{float}]{growth\+\_\+factor}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_a357a6c570a212995f29e0c161d0bdedd}{}\label{classContainer_a357a6c570a212995f29e0c161d0bdedd}
+Constructor. Also allocates a given number of entries. \index{Container@{Container}!````~Container@{$\sim$\+Container}}
+\index{````~Container@{$\sim$\+Container}!Container@{Container}}
+\subsubsection[{\texorpdfstring{$\sim$\+Container()}{~Container()}}]{\setlength{\rightskip}{0pt plus 5cm}Container\+::$\sim$\+Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_ae9f5d07bfc3defda274aa06091c19f56}{}\label{classContainer_ae9f5d07bfc3defda274aa06091c19f56}
+Destructor. Frees everything and leaves. 
+
+\subsection{Member Function Documentation}
+\index{Container@{Container}!Add@{Add}}
+\index{Add@{Add}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Add(udword entry)}{Add(udword entry)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf Container}\& Container\+::\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classContainer_ab02175b19abdd65e70e2ac36c4d098ab}{}\label{classContainer_ab02175b19abdd65e70e2ac36c4d098ab}
+A O(1) method to add a value in the container. The container is automatically resized if needed. The method is inline, not the resize. The call overhead happens on resizes only, which is not a problem since the resizing operation costs a lot more than the call overhead...
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & \mbox{[}in\mbox{]} a udword to store in the container \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classContainer_a405dd927b0f31f5d4b1307c6f17cd044}{Add(float entry)} 
+
+\hyperlink{classContainer_a4d668ec7d3cbeef642906943e053d7fe}{Empty()} 
+
+Contains(udword entry) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Self-\/\+Reference 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d0/d7b/classContainer_ab02175b19abdd65e70e2ac36c4d098ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Container@{Container}!Add@{Add}}
+\index{Add@{Add}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Add(float entry)}{Add(float entry)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf Container}\& Container\+::\+Add (
+\begin{DoxyParamCaption}
+\item[{float}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classContainer_a405dd927b0f31f5d4b1307c6f17cd044}{}\label{classContainer_a405dd927b0f31f5d4b1307c6f17cd044}
+A O(1) method to add a value in the container. The container is automatically resized if needed. The method is inline, not the resize. The call overhead happens on resizes only, which is not a problem since the resizing operation costs a lot more than the call overhead...
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & \mbox{[}in\mbox{]} a float to store in the container \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classContainer_ab02175b19abdd65e70e2ac36c4d098ab}{Add(udword entry)} 
+
+\hyperlink{classContainer_a4d668ec7d3cbeef642906943e053d7fe}{Empty()} 
+
+Contains(udword entry) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Self-\/\+Reference 
+\end{DoxyReturn}
+\index{Container@{Container}!Contains@{Contains}}
+\index{Contains@{Contains}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Contains(udword entry, udword $\ast$location=null) const }{Contains(udword entry, udword *location=null) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Container\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{entry, }
+\item[{{\bf udword} $\ast$}]{location = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classContainer_ab81b5847d0ca21c32b3db0d3b460d7ee}{}\label{classContainer_ab81b5847d0ca21c32b3db0d3b460d7ee}
+Checks whether the container already contains a given value. 
+\begin{DoxyParams}{Parameters}
+{\em entry} & \mbox{[}in\mbox{]} the value to look for in the container \\
+\hline
+{\em location} & \mbox{[}out\mbox{]} a possible pointer to store the entry location \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classContainer_ab02175b19abdd65e70e2ac36c4d098ab}{Add(udword entry)} 
+
+\hyperlink{classContainer_a405dd927b0f31f5d4b1307c6f17cd044}{Add(float entry)} 
+
+\hyperlink{classContainer_a4d668ec7d3cbeef642906943e053d7fe}{Empty()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+true if the value has been found in the container, else false. 
+\end{DoxyReturn}
+\index{Container@{Container}!Delete@{Delete}}
+\index{Delete@{Delete}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Delete(udword entry)}{Delete(udword entry)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Container\+::\+Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{entry}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_af26b7fe0482696af03c7b14b94619995}{}\label{classContainer_af26b7fe0482696af03c7b14b94619995}
+Deletes an entry. If the container contains such an entry, it\textquotesingle{}s removed. 
+\begin{DoxyParams}{Parameters}
+{\em entry} & \mbox{[}in\mbox{]} the value to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the value has been found in the container, else false. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+This method is arbitrary slow (O(n)) and should be used carefully. Insertion order is not preserved. 
+\end{DoxyWarning}
+\index{Container@{Container}!Delete\+Keeping\+Order@{Delete\+Keeping\+Order}}
+\index{Delete\+Keeping\+Order@{Delete\+Keeping\+Order}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Delete\+Keeping\+Order(udword entry)}{DeleteKeepingOrder(udword entry)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Container\+::\+Delete\+Keeping\+Order (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{entry}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_a57191aecc817cf1c87d40beeff33c975}{}\label{classContainer_a57191aecc817cf1c87d40beeff33c975}
+Deletes an entry, preserving the insertion order. If the container contains such an entry, it\textquotesingle{}s removed. 
+\begin{DoxyParams}{Parameters}
+{\em entry} & \mbox{[}in\mbox{]} the value to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the value has been found in the container, else false. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+This method is arbitrary slow (O(n)) and should be used carefully. 
+\end{DoxyWarning}
+\index{Container@{Container}!Empty@{Empty}}
+\index{Empty@{Empty}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Empty()}{Empty()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Container} \& Container\+::\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_a4d668ec7d3cbeef642906943e053d7fe}{}\label{classContainer_a4d668ec7d3cbeef642906943e053d7fe}
+Clears the container. All stored values are deleted, and it frees used ram. \begin{DoxySeeAlso}{See also}
+\hyperlink{classContainer_a6544f7c7bbc942fe6d3dde661d39214b}{Reset()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Self-\/\+Reference 
+\end{DoxyReturn}
+\index{Container@{Container}!Find\+Next@{Find\+Next}}
+\index{Find\+Next@{Find\+Next}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Find\+Next(udword \&entry, Find\+Mode find\+\_\+mode=\+F\+I\+N\+D\+\_\+\+C\+L\+A\+M\+P)}{FindNext(udword &entry, FindMode find_mode=FIND_CLAMP)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Container} \& Container\+::\+Find\+Next (
+\begin{DoxyParamCaption}
+\item[{{\bf udword} \&}]{entry, }
+\item[{Find\+Mode}]{find\+\_\+mode = {\ttfamily FIND\+\_\+CLAMP}}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_aba8a86ac1c2a2886e5288ad37140c3d7}{}\label{classContainer_aba8a86ac1c2a2886e5288ad37140c3d7}
+Gets the next entry, starting from input one. 
+\begin{DoxyParams}{Parameters}
+{\em entry} & \mbox{[}in/out\mbox{]} On input, the entry to look for. On output, the next entry \\
+\hline
+{\em find\+\_\+mode} & \mbox{[}in\mbox{]} wrap/clamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Self-\/\+Reference 
+\end{DoxyReturn}
+\index{Container@{Container}!Find\+Prev@{Find\+Prev}}
+\index{Find\+Prev@{Find\+Prev}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Find\+Prev(udword \&entry, Find\+Mode find\+\_\+mode=\+F\+I\+N\+D\+\_\+\+C\+L\+A\+M\+P)}{FindPrev(udword &entry, FindMode find_mode=FIND_CLAMP)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Container} \& Container\+::\+Find\+Prev (
+\begin{DoxyParamCaption}
+\item[{{\bf udword} \&}]{entry, }
+\item[{Find\+Mode}]{find\+\_\+mode = {\ttfamily FIND\+\_\+CLAMP}}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_a81363f8e9b925fe4d736fd3f3ab5c879}{}\label{classContainer_a81363f8e9b925fe4d736fd3f3ab5c879}
+Gets the previous entry, starting from input one. 
+\begin{DoxyParams}{Parameters}
+{\em entry} & \mbox{[}in/out\mbox{]} On input, the entry to look for. On output, the previous entry \\
+\hline
+{\em find\+\_\+mode} & \mbox{[}in\mbox{]} wrap/clamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Self-\/\+Reference 
+\end{DoxyReturn}
+\index{Container@{Container}!Get\+Used\+Ram@{Get\+Used\+Ram}}
+\index{Get\+Used\+Ram@{Get\+Used\+Ram}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Get\+Used\+Ram() const }{GetUsedRam() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} Container\+::\+Get\+Used\+Ram (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classContainer_a5c3d8b367f025e179ae73aadcc620c51}{}\label{classContainer_a5c3d8b367f025e179ae73aadcc620c51}
+Gets the ram used by the container. \begin{DoxyReturn}{Returns}
+the ram used in bytes. 
+\end{DoxyReturn}
+\index{Container@{Container}!Refit@{Refit}}
+\index{Refit@{Refit}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Refit()}{Refit()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Container\+::\+Refit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_a5a91b8f53d736b761aa75f8f2df3f78a}{}\label{classContainer_a5a91b8f53d736b761aa75f8f2df3f78a}
+Refits the container and get rid of unused bytes. \begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Container@{Container}!Reset@{Reset}}
+\index{Reset@{Reset}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Reset()}{Reset()}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Container\+::\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classContainer_a6544f7c7bbc942fe6d3dde661d39214b}{}\label{classContainer_a6544f7c7bbc942fe6d3dde661d39214b}
+Resets the container. Stored values are discarded but the buffer is kept so that further calls don\textquotesingle{}t need resizing again. That\textquotesingle{}s a kind of temporal coherence. \begin{DoxySeeAlso}{See also}
+\hyperlink{classContainer_a4d668ec7d3cbeef642906943e053d7fe}{Empty()} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{d0/d7b/classContainer_a6544f7c7bbc942fe6d3dde661d39214b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Container@{Container}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!Container@{Container}}
+\subsubsection[{\texorpdfstring{Set\+Size(udword nb)}{SetSize(udword nb)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Container\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{nb}
+\end{DoxyParamCaption}
+)}\hypertarget{classContainer_a5556de324fa97f6dbed8f8b85cf4f6e3}{}\label{classContainer_a5556de324fa97f6dbed8f8b85cf4f6e3}
+Sets the initial size of the container. If it already contains something, it\textquotesingle{}s discarded. 
+\begin{DoxyParams}{Parameters}
+{\em nb} & \mbox{[}in\mbox{]} Number of entries \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IceContainer_8h}{Ice\+Container.\+h}\item 
+cmd/collide2/\+Ice/\hyperlink{IceContainer_8cpp}{Ice\+Container.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{classCommunicationMessage}{}\section{Communication\+Message Class Reference}
+\label{classCommunicationMessage}\index{Communication\+Message@{Communication\+Message}}
+
+
+Collaboration diagram for Communication\+Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d1e/classCommunicationMessage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Communication\+Message} (\hyperlink{classUnit}{Unit} $\ast$send, \hyperlink{classUnit}{Unit} $\ast$recv, std\+::vector$<$ class \hyperlink{classAnimation}{Animation} $\ast$ $>$ $\ast$ani, unsigned char sex)\hypertarget{classCommunicationMessage_a19377df4495b104bf27516462988a81f}{}\label{classCommunicationMessage_a19377df4495b104bf27516462988a81f}
+
+\item 
+{\bfseries Communication\+Message} (\hyperlink{classUnit}{Unit} $\ast$send, \hyperlink{classUnit}{Unit} $\ast$recv, int curstate, std\+::vector$<$ class \hyperlink{classAnimation}{Animation} $\ast$ $>$ $\ast$ani, unsigned char sex)\hypertarget{classCommunicationMessage_a0afaddb94380d42de2aba2602ecabd8c}{}\label{classCommunicationMessage_a0afaddb94380d42de2aba2602ecabd8c}
+
+\item 
+{\bfseries Communication\+Message} (\hyperlink{classUnit}{Unit} $\ast$send, \hyperlink{classUnit}{Unit} $\ast$recv, int prevvstate, int curstate, std\+::vector$<$ class \hyperlink{classAnimation}{Animation} $\ast$ $>$ $\ast$ani, unsigned char sex)\hypertarget{classCommunicationMessage_aee71de049dc669c6c425c39ba419e4f1}{}\label{classCommunicationMessage_aee71de049dc669c6c425c39ba419e4f1}
+
+\item 
+{\bfseries Communication\+Message} (\hyperlink{classUnit}{Unit} $\ast$send, \hyperlink{classUnit}{Unit} $\ast$recv, const \hyperlink{classCommunicationMessage}{Communication\+Message} \&prevsvtate, int curstate, std\+::vector$<$ class \hyperlink{classAnimation}{Animation} $\ast$ $>$ $\ast$ani, unsigned char sex)\hypertarget{classCommunicationMessage_a56e127c09f5a24e8ca999a426746bf38}{}\label{classCommunicationMessage_a56e127c09f5a24e8ca999a426746bf38}
+
+\item 
+void {\bfseries Set\+Current\+State} (int message, std\+::vector$<$ class \hyperlink{classAnimation}{Animation} $\ast$ $>$ $\ast$ani, unsigned char sex)\hypertarget{classCommunicationMessage_a1fdfe36707cec53a6c9ead95803b6658}{}\label{classCommunicationMessage_a1fdfe36707cec53a6c9ead95803b6658}
+
+\item 
+\hyperlink{structFSM_1_1Node}{F\+S\+M\+::\+Node} $\ast$ {\bfseries get\+Current\+State} () const \hypertarget{classCommunicationMessage_ae9a92e1aa492ad43fa403ef86d602e04}{}\label{classCommunicationMessage_ae9a92e1aa492ad43fa403ef86d602e04}
+
+\item 
+const vector$<$ \hyperlink{structFSM_1_1Node}{F\+S\+M\+::\+Node} $>$ \& {\bfseries Get\+Possible\+State} () const \hypertarget{classCommunicationMessage_a40398bc299a38c82b061e52dba41c5c7}{}\label{classCommunicationMessage_a40398bc299a38c82b061e52dba41c5c7}
+
+\item 
+float {\bfseries get\+Delta\+Relation} () const \hypertarget{classCommunicationMessage_aa37ce0a31d89fa251e0d50b34d2f543d}{}\label{classCommunicationMessage_aa37ce0a31d89fa251e0d50b34d2f543d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFSM}{F\+SM} $\ast$ {\bfseries fsm}\hypertarget{classCommunicationMessage_ac255eed86b15fa129e4c68eec3be900b}{}\label{classCommunicationMessage_ac255eed86b15fa129e4c68eec3be900b}
+
+\item 
+class \hyperlink{classAnimation}{Animation} $\ast$ {\bfseries ani}\hypertarget{classCommunicationMessage_a98ce22cc3f80a67c44a9f0bcf58ef661}{}\label{classCommunicationMessage_a98ce22cc3f80a67c44a9f0bcf58ef661}
+
+\item 
+unsigned char {\bfseries sex}\hypertarget{classCommunicationMessage_a8748c20dcc4027f0369a1fe2b7eb31fe}{}\label{classCommunicationMessage_a8748c20dcc4027f0369a1fe2b7eb31fe}
+
+\item 
+int {\bfseries prevstate}\hypertarget{classCommunicationMessage_a8e0683c1d5164263f4414ac55e44ea32}{}\label{classCommunicationMessage_a8e0683c1d5164263f4414ac55e44ea32}
+
+\item 
+int {\bfseries curstate}\hypertarget{classCommunicationMessage_af435ec0bc8296b3cfb1bb37cce91a5f6}{}\label{classCommunicationMessage_af435ec0bc8296b3cfb1bb37cce91a5f6}
+
+\item 
+int {\bfseries edgenum}\hypertarget{classCommunicationMessage_a459612f94c76cd11bd03f93a937f523e}{}\label{classCommunicationMessage_a459612f94c76cd11bd03f93a937f523e}
+
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries sender}\hypertarget{classCommunicationMessage_a8d6b50a6cbfd9722a1306f21de503fe9}{}\label{classCommunicationMessage_a8d6b50a6cbfd9722a1306f21de503fe9}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/communication.\+h\item 
+cmd/ai/communication.\+cpp\end{DoxyCompactItemize}

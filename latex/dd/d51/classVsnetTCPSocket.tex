@@ -1,0 +1,219 @@
+\hypertarget{classVsnetTCPSocket}{}\section{Vsnet\+T\+C\+P\+Socket Class Reference}
+\label{classVsnetTCPSocket}\index{Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}}
+
+
+Inheritance diagram for Vsnet\+T\+C\+P\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/db2/classVsnetTCPSocket__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Vsnet\+T\+C\+P\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d91/classVsnetTCPSocket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structVsnetTCPSocket_1_1Blob}{Blob}
+\item 
+struct \hyperlink{structVsnetTCPSocket_1_1Header}{Header}
+\item 
+class \hyperlink{classVsnetTCPSocket_1_1SqQueues}{Sq\+Queues}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \hyperlink{classPacket}{Packet} $>$ {\bfseries Packet\+Ptr}\hypertarget{classVsnetTCPSocket_a0675de8ef365ec9824a113f0be24d33e}{}\label{classVsnetTCPSocket_a0675de8ef365ec9824a113f0be24d33e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Vsnet\+T\+C\+P\+Socket} (int sock, const \hyperlink{structAddressIP}{Address\+IP} \&remote\+\_\+ip, \hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{classVsnetTCPSocket_a88c005d769650795cbcfed4b0e51eeae}{}\label{classVsnetTCPSocket_a88c005d769650795cbcfed4b0e51eeae}
+
+\item 
+virtual bool {\bfseries is\+Tcp} () const \hypertarget{classVsnetTCPSocket_aee136e93b688d938d1cb61f09a00802b}{}\label{classVsnetTCPSocket_aee136e93b688d938d1cb61f09a00802b}
+
+\item 
+virtual int {\bfseries opt\+Payload\+Size} () const \hypertarget{classVsnetTCPSocket_aeac9b2c2d9d3281dbd5814aecec804f1}{}\label{classVsnetTCPSocket_aeac9b2c2d9d3281dbd5814aecec804f1}
+
+\item 
+virtual int {\bfseries queue\+Len} (int pri)\hypertarget{classVsnetTCPSocket_ad20c822966a46ee7a111f766745a5b55}{}\label{classVsnetTCPSocket_ad20c822966a46ee7a111f766745a5b55}
+
+\item 
+virtual int \hyperlink{classVsnetTCPSocket_a7a123977fd7c62b152d3f95f950d6c69}{sendbuf} (\hyperlink{classPacket}{Packet} $\ast$packet, const \hyperlink{structAddressIP}{Address\+IP} $\ast$to, int pcktflags)
+\item 
+virtual int \hyperlink{classVsnetTCPSocket_a9dd7c50ffe1d6b53cb10a1ac5d35a544}{recvbuf} (\hyperlink{classPacket}{Packet} $\ast$p, \hyperlink{structAddressIP}{Address\+IP} $\ast$ipadr)
+\item 
+virtual void {\bfseries dump} (std\+::ostream \&ostr) const \hypertarget{classVsnetTCPSocket_a2f89fa7d6c7bff2a6c829bb19ceec7c1}{}\label{classVsnetTCPSocket_a2f89fa7d6c7bff2a6c829bb19ceec7c1}
+
+\item 
+virtual bool {\bfseries is\+Active} ()\hypertarget{classVsnetTCPSocket_a02bd2bab8bea7617def4af71950bf5fd}{}\label{classVsnetTCPSocket_a02bd2bab8bea7617def4af71950bf5fd}
+
+\item 
+virtual bool {\bfseries lower\+\_\+selected} (int datalen=-\/1)\hypertarget{classVsnetTCPSocket_ae5ad04b31bdd349f5f869846e312aece}{}\label{classVsnetTCPSocket_ae5ad04b31bdd349f5f869846e312aece}
+
+\item 
+virtual bool {\bfseries need\+\_\+test\+\_\+writable} ()\hypertarget{classVsnetTCPSocket_aebf20c102f4e25313dd2f35cfc8efbca}{}\label{classVsnetTCPSocket_aebf20c102f4e25313dd2f35cfc8efbca}
+
+\item 
+virtual int {\bfseries get\+\_\+write\+\_\+fd} () const \hypertarget{classVsnetTCPSocket_abc51aa3ff42496826fcbafce07c20ed9}{}\label{classVsnetTCPSocket_abc51aa3ff42496826fcbafce07c20ed9}
+
+\item 
+virtual int {\bfseries lower\+\_\+sendbuf} ()\hypertarget{classVsnetTCPSocket_a9bfdfbc3629bab6fdc97df7581438ecf}{}\label{classVsnetTCPSocket_a9bfdfbc3629bab6fdc97df7581438ecf}
+
+\item 
+virtual void \hyperlink{classVsnetTCPSocket_a402b9a9cf439bfb0bcde7a94b9436dd7}{lower\+\_\+clean\+\_\+sendbuf} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::queue$<$ Packet\+Ptr $>$ \hyperlink{classVsnetTCPSocket_ad37e20c520afe909bb64e9c6dab46392}{Sq\+Queue}
+\item 
+typedef std\+::queue$<$ \hyperlink{classPacketMem}{Packet\+Mem} $>$ {\bfseries Sq\+QueueP}\hypertarget{classVsnetTCPSocket_a4771ac3a9864b42b841fc2f804b79d44}{}\label{classVsnetTCPSocket_a4771ac3a9864b42b841fc2f804b79d44}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries child\+\_\+disconnect} (const char $\ast$s)\hypertarget{classVsnetTCPSocket_aa6965be8d78c871252020ba6b49d3ae8}{}\label{classVsnetTCPSocket_aa6965be8d78c871252020ba6b49d3ae8}
+
+\item 
+void \hyperlink{classVsnetTCPSocket_a4371db1339cfc53e1d7d22ef9e000587}{inc\+\_\+pending} ()
+\item 
+void {\bfseries dec\+\_\+pending} ()\hypertarget{classVsnetTCPSocket_ab9bd951ebf385d29c5afd9fc23b83dc9}{}\label{classVsnetTCPSocket_ab9bd951ebf385d29c5afd9fc23b83dc9}
+
+\item 
+void {\bfseries inner\+\_\+complete\+\_\+a\+\_\+packet} (\hyperlink{structVsnetTCPSocket_1_1Blob}{Blob} $\ast$b)\hypertarget{classVsnetTCPSocket_a936ba89c07c3c220dce6b646916371f2}{}\label{classVsnetTCPSocket_a936ba89c07c3c220dce6b646916371f2}
+
+\item 
+void {\bfseries private\+\_\+nothread\+\_\+conditional\+\_\+write} ()\hypertarget{classVsnetTCPSocket_ad08fecb101786bd92830572253ef3374}{}\label{classVsnetTCPSocket_ad08fecb101786bd92830572253ef3374}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structVsnetTCPSocket_1_1Blob}{Blob} $\ast$ \hyperlink{classVsnetTCPSocket_a977f743b1588c500ed5cd84a9914e485}{\+\_\+incomplete\+\_\+packet}
+\item 
+std\+::queue$<$ Packet\+Ptr $>$ \hyperlink{classVsnetTCPSocket_a1e2685f42647e00d3dbfdd2db35f082c}{\+\_\+cpq}\hypertarget{classVsnetTCPSocket_a1e2685f42647e00d3dbfdd2db35f082c}{}\label{classVsnetTCPSocket_a1e2685f42647e00d3dbfdd2db35f082c}
+
+\begin{DoxyCompactList}\small\item\em cpq = completed packet queue \end{DoxyCompactList}\item 
+\hyperlink{classVSMutex}{V\+S\+Mutex} {\bfseries \+\_\+cpq\+\_\+mx}\hypertarget{classVsnetTCPSocket_a0d938d65a6eebd09a46bcaadc4aeedf3}{}\label{classVsnetTCPSocket_a0d938d65a6eebd09a46bcaadc4aeedf3}
+
+\item 
+int \hyperlink{classVsnetTCPSocket_a698fa2d1de57dac543513891b3dfe034}{\+\_\+incomplete\+\_\+header}
+\item 
+\hyperlink{structVsnetTCPSocket_1_1Header}{Header} {\bfseries \+\_\+header}\hypertarget{classVsnetTCPSocket_af227f64a823924e82350c8eec6713c8d}{}\label{classVsnetTCPSocket_af227f64a823924e82350c8eec6713c8d}
+
+\item 
+bool \hyperlink{classVsnetTCPSocket_a2c8d5ffc121ac5e7d6fdffad7e4ddacd}{\+\_\+connection\+\_\+closed}
+\item 
+\hyperlink{classVsnetTCPSocket_1_1SqQueues}{Sq\+Queues} {\bfseries \+\_\+sq}\hypertarget{classVsnetTCPSocket_adacd2848865882477348d3f787d66952}{}\label{classVsnetTCPSocket_adacd2848865882477348d3f787d66952}
+
+\item 
+Sq\+QueueP {\bfseries \+\_\+sq\+\_\+current}\hypertarget{classVsnetTCPSocket_a0980ca1fef9c3c321eb5b6d5b725849a}{}\label{classVsnetTCPSocket_a0980ca1fef9c3c321eb5b6d5b725849a}
+
+\item 
+size\+\_\+t {\bfseries \+\_\+sq\+\_\+off}\hypertarget{classVsnetTCPSocket_a6fc6c7f2d10858b7da9aa69e4b848fbc}{}\label{classVsnetTCPSocket_a6fc6c7f2d10858b7da9aa69e4b848fbc}
+
+\item 
+\hyperlink{classVSMutex}{V\+S\+Mutex} {\bfseries \+\_\+sq\+\_\+mx}\hypertarget{classVsnetTCPSocket_a30a95d6c42a46f8a67878f265abb4ca6}{}\label{classVsnetTCPSocket_a30a95d6c42a46f8a67878f265abb4ca6}
+
+\item 
+int {\bfseries \+\_\+sq\+\_\+fd}\hypertarget{classVsnetTCPSocket_a857c5850332afe75124571fe7cdf7caf}{}\label{classVsnetTCPSocket_a857c5850332afe75124571fe7cdf7caf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}!Sq\+Queue@{Sq\+Queue}}
+\index{Sq\+Queue@{Sq\+Queue}!Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}}
+\subsubsection[{\texorpdfstring{Sq\+Queue}{SqQueue}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::queue$<$ Packet\+Ptr $>$ {\bf Vsnet\+T\+C\+P\+Socket\+::\+Sq\+Queue}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classVsnetTCPSocket_ad37e20c520afe909bb64e9c6dab46392}{}\label{classVsnetTCPSocket_ad37e20c520afe909bb64e9c6dab46392}
+T\+CP may refuse to send all bytes at once, hence we have to queue packets for sending. In addition, we use the same thread for sending and receiving, thus it would be advantageous to use asynchronous sending. For both, we need a send queue. \+\_\+sq is the a of priority queues. \+\_\+sq\+\_\+current is the queue (with up to two entries) for sending the current packet, which consists of the packet length and the packet payload. \+\_\+sq.\+off is the number of bytes that have already been sent from \hyperlink{classPacketMem}{Packet\+Mem} \+\_\+sq\+\_\+current.\+front(). \+\_\+sq\+\_\+mx protects the queues. 
+
+\subsection{Member Function Documentation}
+\index{Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}!inc\+\_\+pending@{inc\+\_\+pending}}
+\index{inc\+\_\+pending@{inc\+\_\+pending}!Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}}
+\subsubsection[{\texorpdfstring{inc\+\_\+pending()}{inc_pending()}}]{\setlength{\rightskip}{0pt plus 5cm}void Vsnet\+T\+C\+P\+Socket\+::inc\+\_\+pending (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classVsnetTCPSocket_a4371db1339cfc53e1d7d22ef9e000587}{}\label{classVsnetTCPSocket_a4371db1339cfc53e1d7d22ef9e000587}
+The number of pending packets reported to the set. \index{Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}!lower\+\_\+clean\+\_\+sendbuf@{lower\+\_\+clean\+\_\+sendbuf}}
+\index{lower\+\_\+clean\+\_\+sendbuf@{lower\+\_\+clean\+\_\+sendbuf}!Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}}
+\subsubsection[{\texorpdfstring{lower\+\_\+clean\+\_\+sendbuf()}{lower_clean_sendbuf()}}]{\setlength{\rightskip}{0pt plus 5cm}void Vsnet\+T\+C\+P\+Socket\+::lower\+\_\+clean\+\_\+sendbuf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classVsnetTCPSocket_a402b9a9cf439bfb0bcde7a94b9436dd7}{}\label{classVsnetTCPSocket_a402b9a9cf439bfb0bcde7a94b9436dd7}
+Called when we noticed that the primary file descriptor is closed but data remains in the send queue. 
+
+Reimplemented from \hyperlink{classVsnetSocketBase_a0f72c451d0fb66744af779637382b0b2}{Vsnet\+Socket\+Base}.
+
+\index{Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}!recvbuf@{recvbuf}}
+\index{recvbuf@{recvbuf}!Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}}
+\subsubsection[{\texorpdfstring{recvbuf(\+Packet $\ast$p, Address\+I\+P $\ast$ipadr)}{recvbuf(Packet *p, AddressIP *ipadr)}}]{\setlength{\rightskip}{0pt plus 5cm}int Vsnet\+T\+C\+P\+Socket\+::recvbuf (
+\begin{DoxyParamCaption}
+\item[{{\bf Packet} $\ast$}]{p, }
+\item[{{\bf Address\+IP} $\ast$}]{from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classVsnetTCPSocket_a9dd7c50ffe1d6b53cb10a1ac5d35a544}{}\label{classVsnetTCPSocket_a9dd7c50ffe1d6b53cb10a1ac5d35a544}
+This function copies or moves data into the given \hyperlink{classPacketMem}{Packet\+Mem} variable. It is preferred over the other recvbuf function because it may reduce the number of copy operations by at least one. 
+
+Implements \hyperlink{classVsnetSocket_a329fcd755206e5bda56c689ee911e35a}{Vsnet\+Socket}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{dd/d51/classVsnetTCPSocket_a9dd7c50ffe1d6b53cb10a1ac5d35a544_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}!sendbuf@{sendbuf}}
+\index{sendbuf@{sendbuf}!Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}}
+\subsubsection[{\texorpdfstring{sendbuf(\+Packet $\ast$packet, const Address\+I\+P $\ast$to, int pcktflags)}{sendbuf(Packet *packet, const AddressIP *to, int pcktflags)}}]{\setlength{\rightskip}{0pt plus 5cm}int Vsnet\+T\+C\+P\+Socket\+::sendbuf (
+\begin{DoxyParamCaption}
+\item[{{\bf Packet} $\ast$}]{packet, }
+\item[{const {\bf Address\+IP} $\ast$}]{to, }
+\item[{int}]{pcktflags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classVsnetTCPSocket_a7a123977fd7c62b152d3f95f950d6c69}{}\label{classVsnetTCPSocket_a7a123977fd7c62b152d3f95f950d6c69}
+
+\begin{DoxyItemize}
+\item Use a priority queue instead of a standard queue. 
+\end{DoxyItemize}
+
+Implements \hyperlink{classVsnetSocket}{Vsnet\+Socket}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}!\+\_\+connection\+\_\+closed@{\+\_\+connection\+\_\+closed}}
+\index{\+\_\+connection\+\_\+closed@{\+\_\+connection\+\_\+closed}!Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}}
+\subsubsection[{\texorpdfstring{\+\_\+connection\+\_\+closed}{_connection_closed}}]{\setlength{\rightskip}{0pt plus 5cm}bool Vsnet\+T\+C\+P\+Socket\+::\+\_\+connection\+\_\+closed\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classVsnetTCPSocket_a2c8d5ffc121ac5e7d6fdffad7e4ddacd}{}\label{classVsnetTCPSocket_a2c8d5ffc121ac5e7d6fdffad7e4ddacd}
+Closed connections are noticed in is\+Active but evaluated by the application after recvbuf. So, we remember the situation here until the application notices it. \index{Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}!\+\_\+incomplete\+\_\+header@{\+\_\+incomplete\+\_\+header}}
+\index{\+\_\+incomplete\+\_\+header@{\+\_\+incomplete\+\_\+header}!Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}}
+\subsubsection[{\texorpdfstring{\+\_\+incomplete\+\_\+header}{_incomplete_header}}]{\setlength{\rightskip}{0pt plus 5cm}int Vsnet\+T\+C\+P\+Socket\+::\+\_\+incomplete\+\_\+header\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classVsnetTCPSocket_a698fa2d1de57dac543513891b3dfe034}{}\label{classVsnetTCPSocket_a698fa2d1de57dac543513891b3dfe034}
+We send sizeof(\+Header) bytes as a packet length indicator. Unfortunately, even these sizeof(\+Header) bytes may be split by T\+CP. These two variables are needed for collecting the sizeof(\+Header) bytes. Note\+: for the obvious reason that this happens rarely, the collection code can not be considered tested. \index{Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}!\+\_\+incomplete\+\_\+packet@{\+\_\+incomplete\+\_\+packet}}
+\index{\+\_\+incomplete\+\_\+packet@{\+\_\+incomplete\+\_\+packet}!Vsnet\+T\+C\+P\+Socket@{Vsnet\+T\+C\+P\+Socket}}
+\subsubsection[{\texorpdfstring{\+\_\+incomplete\+\_\+packet}{_incomplete_packet}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Blob}$\ast$ Vsnet\+T\+C\+P\+Socket\+::\+\_\+incomplete\+\_\+packet\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classVsnetTCPSocket_a977f743b1588c500ed5cd84a9914e485}{}\label{classVsnetTCPSocket_a977f743b1588c500ed5cd84a9914e485}
+if we have received part of a T\+CP packet but not the complete packet, the expected length and received number of bytes are stored in \+\_\+incomplete\+\_\+packet. If several packets have been received at once, but the application processes them one at a time, the received, unprocessed packets are stored in the list. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+sockettcp.\+h\item 
+networking/lowlevel/vsnet\+\_\+sockettcp.\+cpp\end{DoxyCompactItemize}

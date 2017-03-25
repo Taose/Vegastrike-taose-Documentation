@@ -1,0 +1,8 @@
+<map id="CriteriaParent" name="CriteriaParent">
+<area shape="rect" id="node3" href="$d3/d4a/classCriteriaBinaryOperator.html" title="{CriteriaBinaryOperator\n|# m_left\l# m_right\l|+ unhook()\l+ unhook()\l+ getChildren()\l+ clone()\l+ CriteriaBinaryOperator()\l+ ~CriteriaBinaryOperator()\l+ replaceChild()\l}" alt="" coords="54,476,233,656"/>
+<area shape="rect" id="node6" href="$db/d4a/classCriteriaNot.html" title="{CriteriaNot\n|# m_child\l|+ isDestination()\l+ getDescription()\l+ getText()\l+ unhook()\l+ unhook()\l+ getChildren()\l+ clone()\l+ CriteriaNot()\l+ ~CriteriaNot()\l+ replaceChild()\l}" alt="" coords="257,461,384,671"/>
+<area shape="rect" id="node7" href="$d9/d6a/classCriteriaRoot.html" title="{CriteriaRoot\n|# m_child\l|+ isDestination()\l+ getDescription()\l+ getText()\l+ unhook()\l+ unhook()\l+ getChildren()\l+ getChild()\l+ setChild()\l+ clone()\l+ CriteriaRoot()\l+ ~CriteriaRoot()\l+ replaceChild()\l}" alt="" coords="408,447,535,685"/>
+<area shape="rect" id="node2" href="$df/d68/classCriteriaNode.html" title="{CriteriaNode\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ unhook()\l+ getChildren()\l+ clone()\l+ CriteriaNode()\l+ ~CriteriaNode()\l+ setParent()\l+ getParent()\l}" alt="" coords="257,5,384,215"/>
+<area shape="rect" id="node4" href="$d4/df5/classCriteriaAnd.html" title="{CriteriaAnd\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ clone()\l+ CriteriaAnd()\l+ ~CriteriaAnd()\l}" alt="" coords="5,733,132,884"/>
+<area shape="rect" id="node5" href="$da/de8/classCriteriaOr.html" title="{CriteriaOr\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ clone()\l+ CriteriaOr()\l+ ~CriteriaOr()\l}" alt="" coords="156,733,283,884"/>
+</map>

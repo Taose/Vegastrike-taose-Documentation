@@ -1,0 +1,209 @@
+\hypertarget{classquadsquare}{}\section{quadsquare Class Reference}
+\label{classquadsquare}\index{quadsquare@{quadsquare}}
+
+
+{\ttfamily \#include $<$quadsquare.\+h$>$}
+
+
+
+Collaboration diagram for quadsquare\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{d6/d62/classquadsquare__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries quadsquare} (\hyperlink{structquadcornerdata}{quadcornerdata} $\ast$pcd)\hypertarget{classquadsquare_a97df4c071e8427eba615fb52aad0ea4c}{}\label{classquadsquare_a97df4c071e8427eba615fb52aad0ea4c}
+
+\item 
+void \hyperlink{classquadsquare_a3f1cb2797e963833c7290acfe9b103f9}{Add\+Height\+Map} (const \hyperlink{structquadcornerdata}{quadcornerdata} \&cd, const \hyperlink{structHeightMapInfo}{Height\+Map\+Info} \&hm)\hypertarget{classquadsquare_a3f1cb2797e963833c7290acfe9b103f9}{}\label{classquadsquare_a3f1cb2797e963833c7290acfe9b103f9}
+
+\begin{DoxyCompactList}\small\item\em Createsa lookup table for the terrain texture. \end{DoxyCompactList}\item 
+void {\bfseries Add\+Height\+Map\+Aux} (const \hyperlink{structquadcornerdata}{quadcornerdata} \&cd, const \hyperlink{structHeightMapInfo}{Height\+Map\+Info} \&hm)\hypertarget{classquadsquare_a4cfb15573c1f2659f403b06ba11f584e}{}\label{classquadsquare_a4cfb15573c1f2659f403b06ba11f584e}
+
+\item 
+void {\bfseries Static\+Cull\+Data} (const \hyperlink{structquadcornerdata}{quadcornerdata} \&cd, float Threshold\+Detail)\hypertarget{classquadsquare_ae86fcf6236f031a2448d50fe8ca08393}{}\label{classquadsquare_ae86fcf6236f031a2448d50fe8ca08393}
+
+\item 
+float \hyperlink{classquadsquare_aa193d3026addcd349eb5d51e2d050697}{Recompute\+Error\+And\+Lighting} (const \hyperlink{structquadcornerdata}{quadcornerdata} \&cd)
+\item 
+int {\bfseries Count\+Nodes} () const \hypertarget{classquadsquare_a2639c7b1df79007040d3f23cf2b1a05f}{}\label{classquadsquare_a2639c7b1df79007040d3f23cf2b1a05f}
+
+\item 
+void \hyperlink{classquadsquare_a8621dc9333761267c05ae5ecc3eb4a05}{Update} (const \hyperlink{structquadcornerdata}{quadcornerdata} \&cd, const Vector \&Viewer\+Location, float Detail, unsigned short numstages, unsigned short whichstage, updateparity $\ast$whichordertoupdate)
+\begin{DoxyCompactList}\small\item\em Make sure to translate into Quadtree Space. \end{DoxyCompactList}\item 
+int \hyperlink{classquadsquare_aac424c2948d0ce3a53f0927bcba3b644}{Render} (const \hyperlink{structquadcornerdata}{quadcornerdata} \&cd, const Vector \&camera)
+\item 
+float \hyperlink{classquadsquare_aa466f2c5e442a3c6d61207f64684e3a7}{Get\+Height} (const \hyperlink{structquadcornerdata}{quadcornerdata} \&cd, float x, float z, Vector \&normal)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Vector {\bfseries Make\+Lightness} (float xslope, float zslope, const Vector \&loc)\hypertarget{classquadsquare_a3be523357e5fb8029a4853b5f2fbdc64}{}\label{classquadsquare_a3be523357e5fb8029a4853b5f2fbdc64}
+
+\item 
+static void {\bfseries Set\+Current\+Terrain} (unsigned int $\ast$Vertex\+Allocated, unsigned int $\ast$Vertex\+Count, \hyperlink{classGFXVertexList}{G\+F\+X\+Vertex\+List} $\ast$vertices, std\+::vector$<$ unsigned int $>$ $\ast$unusedvertices, \hyperlink{classIdentityTransform}{Identity\+Transform} $\ast$transform, std\+::vector$<$ \hyperlink{structTerrainTexture}{Terrain\+Texture} $>$ $\ast$texturelist, const Vector \&Normal\+Scale, \hyperlink{classquadsquare}{quadsquare} $\ast$neighbor\mbox{[}4\mbox{]})\hypertarget{classquadsquare_a3ed4a46dd58d0c6af6f5e9401084b8c4}{}\label{classquadsquare_a3ed4a46dd58d0c6af6f5e9401084b8c4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classquadsquare}{quadsquare} $\ast$ {\bfseries Child} \mbox{[}4\mbox{]}\hypertarget{classquadsquare_a8e9f96b14da5c426b5d82430afcaaedb}{}\label{classquadsquare_a8e9f96b14da5c426b5d82430afcaaedb}
+
+\item 
+\hyperlink{structVertInfo}{Vert\+Info} {\bfseries Vertex} \mbox{[}5\mbox{]}\hypertarget{classquadsquare_aecba585af64a61a783c1706841022c03}{}\label{classquadsquare_aecba585af64a61a783c1706841022c03}
+
+\item 
+unsigned short {\bfseries Error} \mbox{[}6\mbox{]}\hypertarget{classquadsquare_a1bed113f30118602cb1c5c13481a5394}{}\label{classquadsquare_a1bed113f30118602cb1c5c13481a5394}
+
+\item 
+unsigned short {\bfseries MinY}\hypertarget{classquadsquare_a1ae1cacb91e1fdb92a17302e8eda435b}{}\label{classquadsquare_a1ae1cacb91e1fdb92a17302e8eda435b}
+
+\item 
+unsigned short {\bfseries MaxY}\hypertarget{classquadsquare_a60ea8adb198e8f436a0e8ce525ceafef}{}\label{classquadsquare_a60ea8adb198e8f436a0e8ce525ceafef}
+
+\item 
+unsigned char {\bfseries Enabled\+Flags}\hypertarget{classquadsquare_adcbef2612298f66a58e8404e7e3c1582}{}\label{classquadsquare_adcbef2612298f66a58e8404e7e3c1582}
+
+\item 
+unsigned char {\bfseries Sub\+Enabled\+Count} \mbox{[}2\mbox{]}\hypertarget{classquadsquare_ae2cfacf6df6226fbd5bc9d9fc4a93660}{}\label{classquadsquare_ae2cfacf6df6226fbd5bc9d9fc4a93660}
+
+\item 
+bool {\bfseries Static}\hypertarget{classquadsquare_abb0bc934bacc84e852952ff55a8a1beb}{}\label{classquadsquare_abb0bc934bacc84e852952ff55a8a1beb}
+
+\item 
+bool {\bfseries Dirty}\hypertarget{classquadsquare_a50eb46cac8309a57867b8badb632410b}{}\label{classquadsquare_a50eb46cac8309a57867b8badb632410b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node in the quad tree holds its own relevant vertex data (middle and either even or odd 4 sets of data (corners or diagonals Keeps track of its errors and children as well 
+
+\subsection{Member Function Documentation}
+\index{quadsquare@{quadsquare}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!quadsquare@{quadsquare}}
+\subsubsection[{\texorpdfstring{Get\+Height(const quadcornerdata \&cd, float x, float z, Vector \&normal)}{GetHeight(const quadcornerdata &cd, float x, float z, Vector &normal)}}]{\setlength{\rightskip}{0pt plus 5cm}float quadsquare\+::\+Get\+Height (
+\begin{DoxyParamCaption}
+\item[{const {\bf quadcornerdata} \&}]{cd, }
+\item[{float}]{x, }
+\item[{float}]{z, }
+\item[{Vector \&}]{normal}
+\end{DoxyParamCaption}
+)}\hypertarget{classquadsquare_aa466f2c5e442a3c6d61207f64684e3a7}{}\label{classquadsquare_aa466f2c5e442a3c6d61207f64684e3a7}
+Returns the height of the heightfield at the specified x,z coordinates. Can be used for collision detection iz = 1; 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{d6/dad/classquadsquare_aa466f2c5e442a3c6d61207f64684e3a7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{d6/dad/classquadsquare_aa466f2c5e442a3c6d61207f64684e3a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{quadsquare@{quadsquare}!Recompute\+Error\+And\+Lighting@{Recompute\+Error\+And\+Lighting}}
+\index{Recompute\+Error\+And\+Lighting@{Recompute\+Error\+And\+Lighting}!quadsquare@{quadsquare}}
+\subsubsection[{\texorpdfstring{Recompute\+Error\+And\+Lighting(const quadcornerdata \&cd)}{RecomputeErrorAndLighting(const quadcornerdata &cd)}}]{\setlength{\rightskip}{0pt plus 5cm}float quadsquare\+::\+Recompute\+Error\+And\+Lighting (
+\begin{DoxyParamCaption}
+\item[{const {\bf quadcornerdata} \&}]{cd}
+\end{DoxyParamCaption}
+)}\hypertarget{classquadsquare_aa193d3026addcd349eb5d51e2d050697}{}\label{classquadsquare_aa193d3026addcd349eb5d51e2d050697}
+Recomputes the error values for this tree. Returns the max error. Also updates MinY \& MaxY. Also computes quick \& dirty vertex lighting for the demo. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dad/classquadsquare_aa193d3026addcd349eb5d51e2d050697_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dad/classquadsquare_aa193d3026addcd349eb5d51e2d050697_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{quadsquare@{quadsquare}!Render@{Render}}
+\index{Render@{Render}!quadsquare@{quadsquare}}
+\subsubsection[{\texorpdfstring{Render(const quadcornerdata \&cd, const Vector \&camera)}{Render(const quadcornerdata &cd, const Vector &camera)}}]{\setlength{\rightskip}{0pt plus 5cm}int quadsquare\+::\+Render (
+\begin{DoxyParamCaption}
+\item[{const {\bf quadcornerdata} \&}]{cd, }
+\item[{const Vector \&}]{camvec}
+\end{DoxyParamCaption}
+)}\hypertarget{classquadsquare_aac424c2948d0ce3a53f0927bcba3b644}{}\label{classquadsquare_aac424c2948d0ce3a53f0927bcba3b644}
+Draws the heightfield represented by this tree Returns teh number of triangles rendered (not including multipass 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dad/classquadsquare_aac424c2948d0ce3a53f0927bcba3b644_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{quadsquare@{quadsquare}!Update@{Update}}
+\index{Update@{Update}!quadsquare@{quadsquare}}
+\subsubsection[{\texorpdfstring{Update(const quadcornerdata \&cd, const Vector \&\+Viewer\+Location, float Detail, unsigned short numstages, unsigned short whichstage, updateparity $\ast$whichordertoupdate)}{Update(const quadcornerdata &cd, const Vector &ViewerLocation, float Detail, unsigned short numstages, unsigned short whichstage, updateparity *whichordertoupdate)}}]{\setlength{\rightskip}{0pt plus 5cm}void quadsquare\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{const {\bf quadcornerdata} \&}]{cd, }
+\item[{const Vector \&}]{Viewer\+Location, }
+\item[{float}]{Detail, }
+\item[{unsigned short}]{numstages, }
+\item[{unsigned short}]{whichstage, }
+\item[{updateparity $\ast$}]{par}
+\end{DoxyParamCaption}
+)}\hypertarget{classquadsquare_a8621dc9333761267c05ae5ecc3eb4a05}{}\label{classquadsquare_a8621dc9333761267c05ae5ecc3eb4a05}
+
+
+Make sure to translate into Quadtree Space. 
+
+Refresh the vertex enabled states in the tree, according to the location of the viewer. May force creation or deletion of qsquares in areas which need to be interpolated. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/dad/classquadsquare_a8621dc9333761267c05ae5ecc3eb4a05_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/quadsquare.\+h\item 
+gfx/quadsquare.\+cpp\item 
+gfx/quadsquare\+\_\+cull.\+cpp\item 
+gfx/quadsquare\+\_\+render.\+cpp\item 
+gfx/quadsquare\+\_\+update.\+cpp\end{DoxyCompactItemize}

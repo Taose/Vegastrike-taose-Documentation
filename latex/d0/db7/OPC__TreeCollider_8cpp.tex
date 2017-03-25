@@ -1,0 +1,74 @@
+\hypertarget{OPC__TreeCollider_8cpp}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Tree\+Collider.cpp File Reference}
+\label{OPC__TreeCollider_8cpp}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Tree\+Collider.\+cpp@{cmd/collide2/\+O\+P\+C\+\_\+\+Tree\+Collider.\+cpp}}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Box\+Box\+Overlap.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Tri\+Box\+Overlap.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Tri\+Tri\+Overlap.\+h\char`\"{}}\\*
+Include dependency graph for O\+P\+C\+\_\+\+Tree\+Collider.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/df5/OPC__TreeCollider_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}
+\item 
+\#define \hyperlink{OPC__TreeCollider_8cpp_a392f32ada6356cc85b13ed224de07c4d}{A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+C\+O\+DE}\hypertarget{OPC__TreeCollider_8cpp_a392f32ada6356cc85b13ed224de07c4d}{}\label{OPC__TreeCollider_8cpp_a392f32ada6356cc85b13ed224de07c4d}
+
+\begin{DoxyCompactList}\small\item\em Alternative descent rules. \end{DoxyCompactList}\item 
+\#define \hyperlink{OPC__TreeCollider_8cpp_ac906447c53a23d37c528f1401a713918}{F\+E\+T\+C\+H\+\_\+\+L\+E\+AF}(prim\+\_\+index,  imesh,  rot,  trans)
+\begin{DoxyCompactList}\small\item\em Request triangle vertices from the app and transform them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for a tree collider.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{O\+P\+C\+\_\+\+Tree\+Collider.\+cpp@{O\+P\+C\+\_\+\+Tree\+Collider.\+cpp}!F\+E\+T\+C\+H\+\_\+\+L\+E\+AF@{F\+E\+T\+C\+H\+\_\+\+L\+E\+AF}}
+\index{F\+E\+T\+C\+H\+\_\+\+L\+E\+AF@{F\+E\+T\+C\+H\+\_\+\+L\+E\+AF}!O\+P\+C\+\_\+\+Tree\+Collider.\+cpp@{O\+P\+C\+\_\+\+Tree\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{F\+E\+T\+C\+H\+\_\+\+L\+E\+AF}{FETCH_LEAF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+E\+T\+C\+H\+\_\+\+L\+E\+AF(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{imesh, }
+\item[{}]{rot, }
+\item[{}]{trans}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__TreeCollider_8cpp_ac906447c53a23d37c528f1401a713918}{}\label{OPC__TreeCollider_8cpp_ac906447c53a23d37c528f1401a713918}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+mLeafIndex = prim\_index;                                    \(\backslash\)
+    \textcolor{comment}{/* Request vertices from the app */}                         \(\backslash\)
+    VertexPointers VP;  imesh->GetTriangle(VP, prim\_index);     \(\backslash\)
+    \textcolor{comment}{/* Transform them in a common space */}                      \hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{\(\backslash\)}
+\hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{    TransformPoint}(mLeafVerts[0], *VP.Vertex[0], rot, trans);    
+      \hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{\(\backslash\)}
+\hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{    TransformPoint}(mLeafVerts[1], *VP.Vertex[1], rot, trans);    
+      \hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{\(\backslash\)}
+\hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{    TransformPoint}(mLeafVerts[2], *VP.Vertex[2], rot, trans);
+\end{DoxyCode}
+
+
+Request triangle vertices from the app and transform them. 
+
+\index{O\+P\+C\+\_\+\+Tree\+Collider.\+cpp@{O\+P\+C\+\_\+\+Tree\+Collider.\+cpp}!U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE@{U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}}
+\index{U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE@{U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}!O\+P\+C\+\_\+\+Tree\+Collider.\+cpp@{O\+P\+C\+\_\+\+Tree\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}{UPDATE_CACHE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}\hypertarget{OPC__TreeCollider_8cpp_a55ef118ec7db46f0d2609d78e4648168}{}\label{OPC__TreeCollider_8cpp_a55ef118ec7db46f0d2609d78e4648168}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(cache && GetContactStatus())         \(\backslash\)
+    \{                                       \(\backslash\)
+        cache->id0 = mPairs.GetEntry(0);    \(\backslash\)
+        cache->id1 = mPairs.GetEntry(1);    \(\backslash\)
+    \}
+\end{DoxyCode}

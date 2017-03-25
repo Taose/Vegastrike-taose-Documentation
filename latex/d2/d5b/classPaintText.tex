@@ -1,0 +1,162 @@
+\hypertarget{classPaintText}{}\section{Paint\+Text Class Reference}
+\label{classPaintText}\index{Paint\+Text@{Paint\+Text}}
+
+
+Collaboration diagram for Paint\+Text\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d5a/classPaintText__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structPaintText_1_1LayoutState}{Layout\+State}
+\item 
+struct \hyperlink{structPaintText_1_1TextFragment}{Text\+Fragment}
+\item 
+struct \hyperlink{structPaintText_1_1TextLine}{Text\+Line}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Width\+Exceeded} \{ {\bfseries F\+U\+L\+L\+\_\+\+W\+I\+D\+TH}, 
+{\bfseries E\+L\+L\+I\+P\+S\+IS}, 
+{\bfseries M\+U\+L\+T\+I\+\_\+\+L\+I\+NE}
+ \}\hypertarget{classPaintText_ab2b65117f8f2b89bdd14cb72874807e2}{}\label{classPaintText_ab2b65117f8f2b89bdd14cb72874807e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries set\+Rect} (const \hyperlink{classRect}{Rect} \&r)\hypertarget{classPaintText_ad8a663e299066b06126a9a4272543e5d}{}\label{classPaintText_ad8a663e299066b06126a9a4272543e5d}
+
+\item 
+virtual \hyperlink{classRect}{Rect} {\bfseries rect} (void) const \hypertarget{classPaintText_a3cd2c895e03bda4d84f5e45ad7cfbef3}{}\label{classPaintText_a3cd2c895e03bda4d84f5e45ad7cfbef3}
+
+\item 
+virtual void {\bfseries set\+Text} (const std\+::string \&text)\hypertarget{classPaintText_af22999075d0ca3f0c799795c6cf31f64}{}\label{classPaintText_af22999075d0ca3f0c799795c6cf31f64}
+
+\item 
+virtual const std\+::string \& {\bfseries text} (void) const \hypertarget{classPaintText_abe437268bd7e4512156828d77c77b4d7}{}\label{classPaintText_abe437268bd7e4512156828d77c77b4d7}
+
+\item 
+virtual void {\bfseries set\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classPaintText_a1a7c470b1e9d010e786dd3a4fb28ee61}{}\label{classPaintText_a1a7c470b1e9d010e786dd3a4fb28ee61}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries color} (void) const \hypertarget{classPaintText_a69eb098471f19b002d92426e8d782c62}{}\label{classPaintText_a69eb098471f19b002d92426e8d782c62}
+
+\item 
+virtual void {\bfseries set\+Font} (const \hyperlink{classFont}{Font} \&f)\hypertarget{classPaintText_a55ae41f1dddcb6f0f56a85a7cdd49144}{}\label{classPaintText_a55ae41f1dddcb6f0f56a85a7cdd49144}
+
+\item 
+virtual \hyperlink{classFont}{Font} {\bfseries font} (void) const \hypertarget{classPaintText_ab246ec35ae3498d1bda036b993ab30ab}{}\label{classPaintText_ab246ec35ae3498d1bda036b993ab30ab}
+
+\item 
+virtual void {\bfseries set\+Justification} (Justification j)\hypertarget{classPaintText_a748c143857c2dd5f254b86d412489b88}{}\label{classPaintText_a748c143857c2dd5f254b86d412489b88}
+
+\item 
+virtual Justification {\bfseries justification} (void) const \hypertarget{classPaintText_a3070d4ce70a015b1d885785a4ad739e6}{}\label{classPaintText_a3070d4ce70a015b1d885785a4ad739e6}
+
+\item 
+virtual void {\bfseries set\+Width\+Exceeded} (Width\+Exceeded w)\hypertarget{classPaintText_a3a402ec0896b658e22393dd690d194e4}{}\label{classPaintText_a3a402ec0896b658e22393dd690d194e4}
+
+\item 
+virtual Width\+Exceeded {\bfseries width\+Exceeded} (void) const \hypertarget{classPaintText_a5ab0eaa1446caa7b5a89c1113f141a94}{}\label{classPaintText_a5ab0eaa1446caa7b5a89c1113f141a94}
+
+\item 
+virtual int {\bfseries line\+Count} (void) const \hypertarget{classPaintText_a124aa4fd5ad68348a29293e168b01c8f}{}\label{classPaintText_a124aa4fd5ad68348a29293e168b01c8f}
+
+\item 
+virtual int {\bfseries visible\+Line\+Count\+Starting\+With} (int line\+Number, float vert\+Interval) const \hypertarget{classPaintText_af6832609bbd63b945e8406a10db86845}{}\label{classPaintText_af6832609bbd63b945e8406a10db86845}
+
+\item 
+virtual int {\bfseries layout\+Version} (void) const \hypertarget{classPaintText_ac79796f1cb7916b0be0c8742f5636149}{}\label{classPaintText_ac79796f1cb7916b0be0c8742f5636149}
+
+\item 
+virtual void {\bfseries draw\+Lines} (size\+\_\+t start, size\+\_\+t count=E\+N\+D\+\_\+\+L\+I\+NE) const \hypertarget{classPaintText_af513bfd50616e5a3575cf17cca5e3b51}{}\label{classPaintText_af513bfd50616e5a3575cf17cca5e3b51}
+
+\item 
+void {\bfseries draw} (void) const \hypertarget{classPaintText_a01540edb4b17155810e76bfef4a5957b}{}\label{classPaintText_a01540edb4b17155810e76bfef4a5957b}
+
+\item 
+{\bfseries Paint\+Text} (const \hyperlink{classRect}{Rect} \&rect, const std\+::string \&text, const \hyperlink{classFont}{Font} \&font, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&color, Justification just=R\+I\+G\+H\+T\+\_\+\+J\+U\+S\+T\+I\+FY, Width\+Exceeded w=E\+L\+L\+I\+P\+S\+IS)\hypertarget{classPaintText_aec282dbd99bd2982e54b95e6495dab96}{}\label{classPaintText_aec282dbd99bd2982e54b95e6495dab96}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t {\bfseries E\+N\+D\+\_\+\+L\+I\+NE} = 1000000\hypertarget{classPaintText_a964dcc52c68737ea3dcd1679b22c470c}{}\label{classPaintText_a964dcc52c68737ea3dcd1679b22c470c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries calc\+Layout} (void)\hypertarget{classPaintText_a6c1113750bcdd3976f1f5e793457f404}{}\label{classPaintText_a6c1113750bcdd3976f1f5e793457f404}
+
+\item 
+void {\bfseries calc\+Layout\+If\+Needed} (void) const \hypertarget{classPaintText_a4ffa10f37aa50214eec3b3d52e0484fc}{}\label{classPaintText_a4ffa10f37aa50214eec3b3d52e0484fc}
+
+\item 
+float {\bfseries line\+Inset} (const \hyperlink{structPaintText_1_1TextLine}{Text\+Line} \&line)\hypertarget{classPaintText_afb09f8848a28fc295abc9a8c6cee521d}{}\label{classPaintText_afb09f8848a28fc295abc9a8c6cee521d}
+
+\item 
+void {\bfseries add\+Fragment} (\hyperlink{structPaintText_1_1TextLine}{Text\+Line} \&line, const std\+::string\+::size\+\_\+type end\+Pos, std\+::string\+::size\+\_\+type \&start\+Pos, double \&width)\hypertarget{classPaintText_a38366a4302b6564b83a40ad22f61b2ad}{}\label{classPaintText_a38366a4302b6564b83a40ad22f61b2ad}
+
+\item 
+void {\bfseries parse\+Format} (std\+::string\+::size\+\_\+type start\+Pos, std\+::string\+::size\+\_\+type $\ast$result\+Pos, bool $\ast$end\+Line)\hypertarget{classPaintText_a203fcbc2243fafdc08fabd257977c748}{}\label{classPaintText_a203fcbc2243fafdc08fabd257977c748}
+
+\item 
+void {\bfseries parse\+Fragments\+With\+Char\+Break} (\hyperlink{structPaintText_1_1TextLine}{Text\+Line} \&line, std\+::string\+::size\+\_\+type start\+Pos, std\+::string\+::size\+\_\+type end\+Pos, float max\+Width, bool ellipsis, std\+::string\+::size\+\_\+type $\ast$result\+Pos)\hypertarget{classPaintText_aede4a97295bf5d25b1f4c323f5dc2b43}{}\label{classPaintText_aede4a97295bf5d25b1f4c323f5dc2b43}
+
+\item 
+void {\bfseries parse\+Fragments\+With\+Word\+Break} (\hyperlink{structPaintText_1_1TextLine}{Text\+Line} \&line, std\+::string\+::size\+\_\+type start\+Pos, float max\+Width, std\+::string\+::size\+\_\+type $\ast$result\+Pos)\hypertarget{classPaintText_a8b9426c849fbb81941d4d33e9e65dfa7}{}\label{classPaintText_a8b9426c849fbb81941d4d33e9e65dfa7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRect}{Rect} {\bfseries m\+\_\+rect}\hypertarget{classPaintText_aeeeb9cfe0234c3e87f83178254444996}{}\label{classPaintText_aeeeb9cfe0234c3e87f83178254444996}
+
+\item 
+std\+::string {\bfseries m\+\_\+text}\hypertarget{classPaintText_af06ec05c247afcc2d25d92044ed69cd4}{}\label{classPaintText_af06ec05c247afcc2d25d92044ed69cd4}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+color}\hypertarget{classPaintText_a7a08efed5eacf73d585a89af456e4ec3}{}\label{classPaintText_a7a08efed5eacf73d585a89af456e4ec3}
+
+\item 
+\hyperlink{classFont}{Font} {\bfseries m\+\_\+font}\hypertarget{classPaintText_a5280934c15dde564328863770767f440}{}\label{classPaintText_a5280934c15dde564328863770767f440}
+
+\item 
+Justification {\bfseries m\+\_\+justification}\hypertarget{classPaintText_ad818a792579ef1d26048880634631e57}{}\label{classPaintText_ad818a792579ef1d26048880634631e57}
+
+\item 
+Width\+Exceeded {\bfseries m\+\_\+width\+Exceeded}\hypertarget{classPaintText_aa1a9906efeb18593b7c2233b2a757ce1}{}\label{classPaintText_aa1a9906efeb18593b7c2233b2a757ce1}
+
+\item 
+bool {\bfseries m\+\_\+need\+Layout}\hypertarget{classPaintText_a282db679f0887592704fc2d37cd3bc3b}{}\label{classPaintText_a282db679f0887592704fc2d37cd3bc3b}
+
+\item 
+int {\bfseries m\+\_\+layout\+Version}\hypertarget{classPaintText_ad77329d91d00fe7f77e6346e43d7fb61}{}\label{classPaintText_ad77329d91d00fe7f77e6346e43d7fb61}
+
+\item 
+vector$<$ \hyperlink{structPaintText_1_1TextLine}{Text\+Line} $>$ {\bfseries m\+\_\+lines}\hypertarget{classPaintText_a9d86badb38e4950197703a89ae3a5145}{}\label{classPaintText_a9d86badb38e4950197703a89ae3a5145}
+
+\item 
+double {\bfseries m\+\_\+vertical\+Scaling}\hypertarget{classPaintText_a1a3a04223a72e47e04d48479ac9cebc3}{}\label{classPaintText_a1a3a04223a72e47e04d48479ac9cebc3}
+
+\item 
+double {\bfseries m\+\_\+horizontal\+Scaling}\hypertarget{classPaintText_af6ea0cb3c96c217b37a567a241c9c1f1}{}\label{classPaintText_af6ea0cb3c96c217b37a567a241c9c1f1}
+
+\item 
+\hyperlink{structPaintText_1_1LayoutState}{Layout\+State} {\bfseries m\+\_\+layout}\hypertarget{classPaintText_ae790afb0e41bdc4e72e69c0c1534bca7}{}\label{classPaintText_ae790afb0e41bdc4e72e69c0c1534bca7}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/painttext.\+h\item 
+gui/painttext.\+cpp\end{DoxyCompactItemize}

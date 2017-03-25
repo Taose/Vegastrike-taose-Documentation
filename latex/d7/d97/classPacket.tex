@@ -1,0 +1,93 @@
+\hypertarget{classPacket}{}\section{Packet Class Reference}
+\label{classPacket}\index{Packet@{Packet}}
+
+
+Collaboration diagram for Packet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{dc/ddd/classPacket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Packet} (const void $\ast$buffer, size\+\_\+t sz)\hypertarget{classPacket_a9f6f8c9a41852789465856d80c0ea1cc}{}\label{classPacket_a9f6f8c9a41852789465856d80c0ea1cc}
+
+\item 
+{\bfseries Packet} (\hyperlink{classPacketMem}{Packet\+Mem} \&buffer)\hypertarget{classPacket_a6b08ac749e334d7a24a564893e4b3178}{}\label{classPacket_a6b08ac749e334d7a24a564893e4b3178}
+
+\item 
+{\bfseries Packet} (const \hyperlink{classPacket}{Packet} \&a)\hypertarget{classPacket_a9e872c4ed10360f95f8fcb207a4d489b}{}\label{classPacket_a9e872c4ed10360f95f8fcb207a4d489b}
+
+\item 
+\hyperlink{classPacket}{Packet} \& {\bfseries operator=} (const \hyperlink{classPacket}{Packet} \&a)\hypertarget{classPacket_aff48623b5c0e77344950cf3be94cacdb}{}\label{classPacket_aff48623b5c0e77344950cf3be94cacdb}
+
+\item 
+void {\bfseries copyfrom} (const \hyperlink{classPacket}{Packet} \&a)\hypertarget{classPacket_aa20fc46a950c7f140833bd68b81e894d}{}\label{classPacket_aa20fc46a950c7f140833bd68b81e894d}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{classPacket}{Packet} \&p) const \hypertarget{classPacket_ae114a312ed97d8b672e87df9edd95f3d}{}\label{classPacket_ae114a312ed97d8b672e87df9edd95f3d}
+
+\item 
+int \hyperlink{classPacket_af36b619bcf2157f0d5e7d6401ae898c6}{send} (Cmd cmd, Obj\+Serial nserial, const char $\ast$buf, unsigned int length, int flags, const \hyperlink{structAddressIP}{Address\+IP} $\ast$dst, const \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&sock, const char $\ast$caller\+\_\+file, int caller\+\_\+line)\hypertarget{classPacket_af36b619bcf2157f0d5e7d6401ae898c6}{}\label{classPacket_af36b619bcf2157f0d5e7d6401ae898c6}
+
+\begin{DoxyCompactList}\small\item\em flags is a bitwise OR of P\+C\+K\+T\+F\+L\+A\+GS \end{DoxyCompactList}\item 
+void \hyperlink{classPacket_a1379beadfc6affe47a3d481ca58ba77b}{bc\+\_\+create} (Cmd cmd, Obj\+Serial nserial, const char $\ast$buf, unsigned int length, int flags, const char $\ast$caller\+\_\+file, int caller\+\_\+line)\hypertarget{classPacket_a1379beadfc6affe47a3d481ca58ba77b}{}\label{classPacket_a1379beadfc6affe47a3d481ca58ba77b}
+
+\begin{DoxyCompactList}\small\item\em flags is a bitwise OR of P\+C\+K\+T\+F\+L\+A\+GS \end{DoxyCompactList}\item 
+int {\bfseries bc\+\_\+send} (const \hyperlink{structAddressIP}{Address\+IP} \&dst, const \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&sock)\hypertarget{classPacket_a928ae2b7c074dbc19e4a719816186a56}{}\label{classPacket_a928ae2b7c074dbc19e4a719816186a56}
+
+\item 
+void {\bfseries display} (const char $\ast$file, int line)\hypertarget{classPacket_a50eaf808a345e4507d53f86b3592ad7d}{}\label{classPacket_a50eaf808a345e4507d53f86b3592ad7d}
+
+\item 
+void {\bfseries display\+Hex} ()\hypertarget{classPacket_aee21e28d165e5b6264cc87a1bdc64579}{}\label{classPacket_aee21e28d165e5b6264cc87a1bdc64579}
+
+\item 
+unsigned int {\bfseries get\+Data\+Length} () const \hypertarget{classPacket_a0f157750cbc8912d126e1096474a4f4c}{}\label{classPacket_a0f157750cbc8912d126e1096474a4f4c}
+
+\item 
+Obj\+Serial {\bfseries get\+Serial} () const \hypertarget{classPacket_a3e96e76927c248688b1cb25f9a974d34}{}\label{classPacket_a3e96e76927c248688b1cb25f9a974d34}
+
+\item 
+unsigned int {\bfseries get\+Timestamp} () const \hypertarget{classPacket_aed42c51631f7a786c6bb04d960757761}{}\label{classPacket_aed42c51631f7a786c6bb04d960757761}
+
+\item 
+Cmd {\bfseries get\+Command} () const \hypertarget{classPacket_a522dd7890cef9246ce570ca4e92b0f46}{}\label{classPacket_a522dd7890cef9246ce570ca4e92b0f46}
+
+\item 
+unsigned short {\bfseries get\+Flags} () const \hypertarget{classPacket_abce53f7fe9d999af89577eaf05e2db1b}{}\label{classPacket_abce53f7fe9d999af89577eaf05e2db1b}
+
+\item 
+void {\bfseries set\+Flag} (enum P\+C\+K\+T\+F\+L\+A\+GS fl)\hypertarget{classPacket_abc36f84df785503add60e1017735d3ed}{}\label{classPacket_abc36f84df785503add60e1017735d3ed}
+
+\item 
+void {\bfseries set\+Flags} (unsigned short fl)\hypertarget{classPacket_ac5b63b3d30cad3ac8f38c546f76013a0}{}\label{classPacket_ac5b63b3d30cad3ac8f38c546f76013a0}
+
+\item 
+const char $\ast$ {\bfseries get\+Data} () const \hypertarget{classPacket_a30b63097dfd9bbc288fa29cf30c7026a}{}\label{classPacket_a30b63097dfd9bbc288fa29cf30c7026a}
+
+\item 
+const char $\ast$ {\bfseries get\+Send\+Buffer} () const \hypertarget{classPacket_a909f7d6c72493eb472068ea332366412}{}\label{classPacket_a909f7d6c72493eb472068ea332366412}
+
+\item 
+int {\bfseries get\+Send\+Buffer\+Length} () const \hypertarget{classPacket_a0b941889db462f2139de8667abe6f59b}{}\label{classPacket_a0b941889db462f2139de8667abe6f59b}
+
+\item 
+void {\bfseries reset} ()\hypertarget{classPacket_a8d50098721348e9bc526740f402da445}{}\label{classPacket_a8d50098721348e9bc526740f402da445}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned short {\bfseries get\+Header\+Length} ()\hypertarget{classPacket_a97f5ad54362c9e66e9c4e33e99c64773}{}\label{classPacket_a97f5ad54362c9e66e9c4e33e99c64773}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/packet.\+h\item 
+networking/lowlevel/packet.\+cpp\end{DoxyCompactItemize}

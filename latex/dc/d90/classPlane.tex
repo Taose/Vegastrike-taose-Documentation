@@ -1,0 +1,94 @@
+\hypertarget{classPlane}{}\section{Plane Class Reference}
+\label{classPlane}\index{Plane@{Plane}}
+
+
+Collaboration diagram for Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{df/dbb/classPlane__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classPlane_abcc405319cab7568a33e6e1df69f144b}{Plane} ()\hypertarget{classPlane_abcc405319cab7568a33e6e1df69f144b}{}\label{classPlane_abcc405319cab7568a33e6e1df69f144b}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classPlane_a017c62e05e26489aa7ffd72212f41a57}{Plane} (float nx, float ny, float nz, float \hyperlink{classPlane_a61fc789fce8fbe72914f5397f1bbed44}{d})\hypertarget{classPlane_a017c62e05e26489aa7ffd72212f41a57}{}\label{classPlane_a017c62e05e26489aa7ffd72212f41a57}
+
+\begin{DoxyCompactList}\small\item\em Constructor from a normal and a distance. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classPlane_a9190b680a24a52f01c23411087f8d7f4}{Plane} (const \hyperlink{classPoint}{Point} \&p, const \hyperlink{classPoint}{Point} \&\hyperlink{classPlane_af400cfb3367fc032b4223a587d605035}{n})\hypertarget{classPlane_a9190b680a24a52f01c23411087f8d7f4}{}\label{classPlane_a9190b680a24a52f01c23411087f8d7f4}
+
+\begin{DoxyCompactList}\small\item\em Constructor from a point on the plane and a normal. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classPlane_ae7fe972b936a126a3ed2d5e4da0fbca2}{Plane} (const \hyperlink{classPoint}{Point} \&p0, const \hyperlink{classPoint}{Point} \&p1, const \hyperlink{classPoint}{Point} \&p2)\hypertarget{classPlane_ae7fe972b936a126a3ed2d5e4da0fbca2}{}\label{classPlane_ae7fe972b936a126a3ed2d5e4da0fbca2}
+
+\begin{DoxyCompactList}\small\item\em Constructor from three points. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classPlane_a9fee52646102f41f9067b422ce6cec21}{Plane} (const \hyperlink{classPoint}{Point} \&\+\_\+n, float \+\_\+d)\hypertarget{classPlane_a9fee52646102f41f9067b422ce6cec21}{}\label{classPlane_a9fee52646102f41f9067b422ce6cec21}
+
+\begin{DoxyCompactList}\small\item\em Constructor from a normal and a distance. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classPlane_a58f64da1c7e9b12d93e6a4e75d3be901}{Plane} (const \hyperlink{classPlane}{Plane} \&plane)\hypertarget{classPlane_a58f64da1c7e9b12d93e6a4e75d3be901}{}\label{classPlane_a58f64da1c7e9b12d93e6a4e75d3be901}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classPlane_a380cb359aa32967b8e678b9f0610ec88}{$\sim$\+Plane} ()\hypertarget{classPlane_a380cb359aa32967b8e678b9f0610ec88}{}\label{classPlane_a380cb359aa32967b8e678b9f0610ec88}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classPlane}{Plane} \& {\bfseries Zero} ()\hypertarget{classPlane_aed029c8093a95e0f9e982bc7759b4ba6}{}\label{classPlane_aed029c8093a95e0f9e982bc7759b4ba6}
+
+\item 
+inline\+\_\+ \hyperlink{classPlane}{Plane} \& {\bfseries Set} (float nx, float ny, float nz, float \+\_\+d)\hypertarget{classPlane_ae96be08f62e6814f2c48791e6ad3cf30}{}\label{classPlane_ae96be08f62e6814f2c48791e6ad3cf30}
+
+\item 
+inline\+\_\+ \hyperlink{classPlane}{Plane} \& {\bfseries Set} (const \hyperlink{classPoint}{Point} \&p, const \hyperlink{classPoint}{Point} \&\+\_\+n)\hypertarget{classPlane_a075dc73d74d819f323bcc14bab370204}{}\label{classPlane_a075dc73d74d819f323bcc14bab370204}
+
+\item 
+\hyperlink{classPlane}{Plane} \& {\bfseries Set} (const \hyperlink{classPoint}{Point} \&p0, const \hyperlink{classPoint}{Point} \&p1, const \hyperlink{classPoint}{Point} \&p2)\hypertarget{classPlane_ae03ca3929e0a8fe1b756878c75729dde}{}\label{classPlane_ae03ca3929e0a8fe1b756878c75729dde}
+
+\item 
+inline\+\_\+ float {\bfseries Distance} (const \hyperlink{classPoint}{Point} \&p) const \hypertarget{classPlane_a8c9d643fb2860cd29c98473f429d0e02}{}\label{classPlane_a8c9d643fb2860cd29c98473f429d0e02}
+
+\item 
+inline\+\_\+ bool {\bfseries Belongs} (const \hyperlink{classPoint}{Point} \&p) const \hypertarget{classPlane_aeaa0a198a1a512310608958a63d7b105}{}\label{classPlane_aeaa0a198a1a512310608958a63d7b105}
+
+\item 
+inline\+\_\+ void {\bfseries Normalize} ()\hypertarget{classPlane_a9cf8ba6c1d6abb3f1d045d3ad992118a}{}\label{classPlane_a9cf8ba6c1d6abb3f1d045d3ad992118a}
+
+\item 
+inline\+\_\+ {\bfseries operator Point} () const \hypertarget{classPlane_af3990735befb0f7baea5e4eef6a08bf6}{}\label{classPlane_af3990735befb0f7baea5e4eef6a08bf6}
+
+\item 
+inline\+\_\+ {\bfseries operator H\+Point} () const \hypertarget{classPlane_ae539171c0c9f44f35570d8c555ca41b5}{}\label{classPlane_ae539171c0c9f44f35570d8c555ca41b5}
+
+\item 
+inline\+\_\+ \hyperlink{classPlane}{Plane} {\bfseries operator$\ast$} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&m) const \hypertarget{classPlane_a4dd7d7d75595a796172c4fd126e97074}{}\label{classPlane_a4dd7d7d75595a796172c4fd126e97074}
+
+\item 
+inline\+\_\+ \hyperlink{classPlane}{Plane} \& {\bfseries operator$\ast$=} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&m)\hypertarget{classPlane_a25050a542461594859a0b368a80e0af3}{}\label{classPlane_a25050a542461594859a0b368a80e0af3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classPlane_af400cfb3367fc032b4223a587d605035}{n}\hypertarget{classPlane_af400cfb3367fc032b4223a587d605035}{}\label{classPlane_af400cfb3367fc032b4223a587d605035}
+
+\begin{DoxyCompactList}\small\item\em The normal to the plane. \end{DoxyCompactList}\item 
+float \hyperlink{classPlane_a61fc789fce8fbe72914f5397f1bbed44}{d}\hypertarget{classPlane_a61fc789fce8fbe72914f5397f1bbed44}{}\label{classPlane_a61fc789fce8fbe72914f5397f1bbed44}
+
+\begin{DoxyCompactList}\small\item\em The distance from the origin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classPlane}{Plane} class.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IcePlane_8h}{Ice\+Plane.\+h}\end{DoxyCompactItemize}

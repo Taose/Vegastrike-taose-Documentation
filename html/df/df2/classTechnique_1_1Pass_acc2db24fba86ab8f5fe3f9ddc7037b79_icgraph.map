@@ -1,0 +1,14 @@
+<map id="Technique::Pass::getNumTextureUnits" name="Technique::Pass::getNumTextureUnits">
+<area shape="rect" id="node2" href="$d9/d5e/classMesh.html#aa35dc50ae01f25282d7a58e24972f80f" title="Will draw all undrawn meshes of this type. " alt="" coords="705,56,884,83"/>
+<area shape="rect" id="node10" href="$d0/de7/classTechnique.html#a6ec998ae20fed03ff4ade4f9f7b00aa1" title="Technique::Technique" alt="" coords="272,107,423,133"/>
+<area shape="rect" id="node3" href="$d9/d5e/classMesh.html#ae4029861af0ac80167bf22b2ddc8ee81" title="Draws lod pixels wide, mesh at Transformation NOW. If centered, then will center on camera and disabl..." alt="" coords="976,5,1096,32"/>
+<area shape="rect" id="node4" href="$d9/d5e/classMesh.html#ab00de322e0cefefc7d4948f54d853736" title="Will draw all undrawn meshes in total If pushSpclFX, the last series of meshes will be drawn with oth..." alt="" coords="932,56,1140,83"/>
+<area shape="rect" id="node9" href="$d5/dc6/classSphereMesh.html#ac2189ac6e54ba796fb7072b490dd4184" title="Will draw all undrawn far meshes beyond the range of zbuffer (better be convex). " alt="" coords="940,107,1132,133"/>
+<area shape="rect" id="node5" href="$de/d19/classGameUnit.html#a3737ac418f41325367169998f7131202" title="Sets the camera to be within this unit. " alt="" coords="1188,5,1379,32"/>
+<area shape="rect" id="node6" href="$dd/d50/classGameCockpit.html#a558479694454a63b1ec53f2df316e1ae" title="Draws Cockpit then restores viewport. " alt="" coords="1213,56,1354,83"/>
+<area shape="rect" id="node7" href="$d5/d38/classGameStarSystem.html#a22a64a77861767b3503b7c6b5ab0b786" title="GameStarSystem::Draw" alt="" coords="1201,107,1366,133"/>
+<area shape="rect" id="node8" href="$d5/d38/classGameStarSystem.html#a08724f59ce670c81fd5c43aef06401c1" title="activates the light map texture " alt="" coords="1427,107,1625,133"/>
+<area shape="rect" id="node11" href="$d0/de7/classTechnique.html#a0e3aa18e00f5c00377000abf9f557d8e" title="Technique::getTechnique" alt="" coords="480,107,648,133"/>
+<area shape="rect" id="node13" href="$df/df2/classTechnique_1_1Pass.html#aeecc48e84e7eb74a3fd8db142e6e391e" title="Technique::Pass::getShader\lParam" alt="" coords="471,158,657,199"/>
+<area shape="rect" id="node12" href="$d0/de7/classTechnique.html#a0ad1df3b45f3bb1af6b8f1a45ee4f303" title="Technique::isCompiled" alt="" coords="717,107,872,133"/>
+</map>

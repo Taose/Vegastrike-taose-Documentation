@@ -1,0 +1,73 @@
+\hypertarget{classCSVTable}{}\section{C\+S\+V\+Table Class Reference}
+\label{classCSVTable}\index{C\+S\+V\+Table@{C\+S\+V\+Table}}
+
+
+Collaboration diagram for C\+S\+V\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{db/d01/classCSVTable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries optimizer\+\_\+enum} \{ {\bfseries optimizer\+\_\+undefined} =0x7fffffff
+ \}\hypertarget{classCSVTable_a489feda9ec30a72f913047a9fc61dac0}{}\label{classCSVTable_a489feda9ec30a72f913047a9fc61dac0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+S\+V\+Table} (std\+::string name, std\+::string saveroot)\hypertarget{classCSVTable_ad1c690add30b68ea2022d2f89b9d4520}{}\label{classCSVTable_ad1c690add30b68ea2022d2f89b9d4520}
+
+\item 
+{\bfseries C\+S\+V\+Table} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} \&f, std\+::string saveroot)\hypertarget{classCSVTable_a435af710fd6b74cbf118a9a9b97abd00}{}\label{classCSVTable_a435af710fd6b74cbf118a9a9b97abd00}
+
+\item 
+bool {\bfseries Row\+Exists} (std\+::string name, unsigned int \&where)\hypertarget{classCSVTable_a63d9a4d59cec92b262ab2259fe003a8d}{}\label{classCSVTable_a63d9a4d59cec92b262ab2259fe003a8d}
+
+\item 
+bool {\bfseries Column\+Exists} (std\+::string name, unsigned int \&where)\hypertarget{classCSVTable_a3412e97aa17da155aa5f7d2eeb20f913}{}\label{classCSVTable_a3412e97aa17da155aa5f7d2eeb20f913}
+
+\item 
+void {\bfseries Setup\+Optimizer} (std\+::vector$<$ std\+::string $>$keys, unsigned int type)\hypertarget{classCSVTable_af78f8e456ed312500a7dd179a9ae891f}{}\label{classCSVTable_af78f8e456ed312500a7dd179a9ae891f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries rootdir}\hypertarget{classCSVTable_a3c455681adcb5ca6aacda48ab4b9e722}{}\label{classCSVTable_a3c455681adcb5ca6aacda48ab4b9e722}
+
+\item 
+vs\+U\+Map$<$ std\+::string, int $>$ {\bfseries columns}\hypertarget{classCSVTable_a80b11b55d41b6b87cd39741c1f905132}{}\label{classCSVTable_a80b11b55d41b6b87cd39741c1f905132}
+
+\item 
+vs\+U\+Map$<$ std\+::string, int $>$ {\bfseries rows}\hypertarget{classCSVTable_a1aeb093c68bac10e2ce035f08cb454c5}{}\label{classCSVTable_a1aeb093c68bac10e2ce035f08cb454c5}
+
+\item 
+std\+::vector$<$ std\+::string $>$ {\bfseries key}\hypertarget{classCSVTable_ac2dbe9738c37434907d5f48b0bd69cf0}{}\label{classCSVTable_ac2dbe9738c37434907d5f48b0bd69cf0}
+
+\item 
+std\+::vector$<$ std\+::string $>$ {\bfseries table}\hypertarget{classCSVTable_af7bb9a2805ecbfa3f8e5ea64cebc7fca}{}\label{classCSVTable_af7bb9a2805ecbfa3f8e5ea64cebc7fca}
+
+\item 
+bool {\bfseries optimizer\+\_\+setup}\hypertarget{classCSVTable_aee41a97bee04a6f9f8e66e1088878a2d}{}\label{classCSVTable_aee41a97bee04a6f9f8e66e1088878a2d}
+
+\item 
+unsigned int {\bfseries optimizer\+\_\+type}\hypertarget{classCSVTable_adab94bd294edc7407708db12dc7aed15}{}\label{classCSVTable_adab94bd294edc7407708db12dc7aed15}
+
+\item 
+std\+::vector$<$ std\+::string $>$ {\bfseries optimizer\+\_\+keys}\hypertarget{classCSVTable_a87e4917e91fbbe24461bf5834d1b0398}{}\label{classCSVTable_a87e4917e91fbbe24461bf5834d1b0398}
+
+\item 
+std\+::vector$<$ unsigned int $>$ {\bfseries optimizer\+\_\+indexes}\hypertarget{classCSVTable_a4c892eeb3a1391a7d7180c8095b3c210}{}\label{classCSVTable_a4c892eeb3a1391a7d7180c8095b3c210}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/csv.\+h\item 
+cmd/csv.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,231 @@
+\hypertarget{classAudio_1_1OpenALRenderableSource}{}\section{Audio\+:\+:Open\+A\+L\+Renderable\+Source Class Reference}
+\label{classAudio_1_1OpenALRenderableSource}\index{Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}}
+
+
+{\ttfamily \#include $<$Open\+A\+L\+Renderable\+Source.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Open\+A\+L\+Renderable\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/dc1/classAudio_1_1OpenALRenderableSource__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Open\+A\+L\+Renderable\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/db7/classAudio_1_1OpenALRenderableSource__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Open\+A\+L\+Renderable\+Source} (\hyperlink{classAudio_1_1Source}{Source} $\ast$source)\hypertarget{classAudio_1_1OpenALRenderableSource_a87ef1f7f97bce98cf54c10ae6a86b351}{}\label{classAudio_1_1OpenALRenderableSource_a87ef1f7f97bce98cf54c10ae6a86b351}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderableSource_af49fc3aa84d6dad21d75b7fa4bf4fbe1}{start\+Playing\+Impl} (Timestamp start)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderableSource_aa2a89f65052507e51b1e71ec0dd21f12}{stop\+Playing\+Impl} ()  throw (\+Exception)
+\item 
+virtual bool \hyperlink{classAudio_1_1OpenALRenderableSource_ac80fe22a62943e49e6b25f8bc3bea7bd}{is\+Playing\+Impl} () const   throw (\+Exception)
+\item 
+virtual Timestamp \hyperlink{classAudio_1_1OpenALRenderableSource_aec860f7d058437a16626772e732a8459}{get\+Playing\+Time\+Impl} () const   throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderableSource_a57503ddb02ef56fac0ca9830246aae31}{update\+Impl} (int flags, const \hyperlink{classAudio_1_1Listener}{Listener} \&scene\+Listener)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderableSource_a5bd1d11d3aeb82b34304b7e952957be6}{seek\+Impl} (Timestamp time)  throw (\+Exception)
+\item 
+A\+Luint \hyperlink{classAudio_1_1OpenALRenderableSource_a531f21334659ceb3325ec8de98e319b9}{get\+A\+L\+Source} () const 
+\item 
+void \hyperlink{classAudio_1_1OpenALRenderableSource_ae1beb034a59b0ecea0fd7d0c8665aa7c}{attach\+A\+L\+Buffers} ()  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Open\+AL Renderable \hyperlink{classAudio_1_1Source}{Source} class
+
+\begin{DoxyRemark}{Remarks}
+This class implements the \hyperlink{classAudio_1_1RenderableSource}{Renderable\+Source} interface for the Open\+AL renderer. 
+\end{DoxyRemark}
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}!attach\+A\+L\+Buffers@{attach\+A\+L\+Buffers}}
+\index{attach\+A\+L\+Buffers@{attach\+A\+L\+Buffers}!Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}}
+\subsubsection[{\texorpdfstring{attach\+A\+L\+Buffers()}{attachALBuffers()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderable\+Source\+::attach\+A\+L\+Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1OpenALRenderableSource_ae1beb034a59b0ecea0fd7d0c8665aa7c}{}\label{classAudio_1_1OpenALRenderableSource_ae1beb034a59b0ecea0fd7d0c8665aa7c}
+Attach AL buffers from the source\textquotesingle{}s AL sound, if not attached already. \begin{DoxyNote}{Note}
+It will fail with an assertion if the attached sound isn\textquotesingle{}t an Open\+AL sound. 
+\end{DoxyNote}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dc7/classAudio_1_1OpenALRenderableSource_ae1beb034a59b0ecea0fd7d0c8665aa7c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}!get\+A\+L\+Source@{get\+A\+L\+Source}}
+\index{get\+A\+L\+Source@{get\+A\+L\+Source}!Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}}
+\subsubsection[{\texorpdfstring{get\+A\+L\+Source() const }{getALSource() const }}]{\setlength{\rightskip}{0pt plus 5cm}A\+Luint Audio\+::\+Open\+A\+L\+Renderable\+Source\+::get\+A\+L\+Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classAudio_1_1OpenALRenderableSource_a531f21334659ceb3325ec8de98e319b9}{}\label{classAudio_1_1OpenALRenderableSource_a531f21334659ceb3325ec8de98e319b9}
+Derived classes may use the underlying AL source handle to set additional attributes 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dc7/classAudio_1_1OpenALRenderableSource_a531f21334659ceb3325ec8de98e319b9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dc7/classAudio_1_1OpenALRenderableSource_a531f21334659ceb3325ec8de98e319b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}!get\+Playing\+Time\+Impl@{get\+Playing\+Time\+Impl}}
+\index{get\+Playing\+Time\+Impl@{get\+Playing\+Time\+Impl}!Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}}
+\subsubsection[{\texorpdfstring{get\+Playing\+Time\+Impl() const }{getPlayingTimeImpl() const }}]{\setlength{\rightskip}{0pt plus 5cm}Timestamp Audio\+::\+Open\+A\+L\+Renderable\+Source\+::get\+Playing\+Time\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderableSource_aec860f7d058437a16626772e732a8459}{}\label{classAudio_1_1OpenALRenderableSource_aec860f7d058437a16626772e732a8459}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1RenderableSource_acb999fb13ca1a83bac59525d4c655b42}{Renderable\+Source\+::get\+Playing\+Time\+Impl}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1RenderableSource_acb999fb13ca1a83bac59525d4c655b42}{Audio\+::\+Renderable\+Source}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}!is\+Playing\+Impl@{is\+Playing\+Impl}}
+\index{is\+Playing\+Impl@{is\+Playing\+Impl}!Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}}
+\subsubsection[{\texorpdfstring{is\+Playing\+Impl() const }{isPlayingImpl() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Open\+A\+L\+Renderable\+Source\+::is\+Playing\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderableSource_ac80fe22a62943e49e6b25f8bc3bea7bd}{}\label{classAudio_1_1OpenALRenderableSource_ac80fe22a62943e49e6b25f8bc3bea7bd}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1RenderableSource_a0af32dc609d41e3c31c3d08a9285c816}{Renderable\+Source\+::is\+Playing\+Impl}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1RenderableSource_a0af32dc609d41e3c31c3d08a9285c816}{Audio\+::\+Renderable\+Source}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dc7/classAudio_1_1OpenALRenderableSource_ac80fe22a62943e49e6b25f8bc3bea7bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}!seek\+Impl@{seek\+Impl}}
+\index{seek\+Impl@{seek\+Impl}!Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}}
+\subsubsection[{\texorpdfstring{seek\+Impl(\+Timestamp time)}{seekImpl(Timestamp time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderable\+Source\+::seek\+Impl (
+\begin{DoxyParamCaption}
+\item[{Timestamp}]{time}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderableSource_a5bd1d11d3aeb82b34304b7e952957be6}{}\label{classAudio_1_1OpenALRenderableSource_a5bd1d11d3aeb82b34304b7e952957be6}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1RenderableSource_a6d56fd56f28410afa6a50cadc7014967}{Renderable\+Source\+::seek\+Impl}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1RenderableSource_a6d56fd56f28410afa6a50cadc7014967}{Audio\+::\+Renderable\+Source}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}!start\+Playing\+Impl@{start\+Playing\+Impl}}
+\index{start\+Playing\+Impl@{start\+Playing\+Impl}!Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}}
+\subsubsection[{\texorpdfstring{start\+Playing\+Impl(\+Timestamp start)}{startPlayingImpl(Timestamp start)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderable\+Source\+::start\+Playing\+Impl (
+\begin{DoxyParamCaption}
+\item[{Timestamp}]{start}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderableSource_af49fc3aa84d6dad21d75b7fa4bf4fbe1}{}\label{classAudio_1_1OpenALRenderableSource_af49fc3aa84d6dad21d75b7fa4bf4fbe1}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1RenderableSource_a1d510d2a0326d059328471fe2b0536c2}{Renderable\+Source\+::start\+Playing\+Impl}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1RenderableSource_a1d510d2a0326d059328471fe2b0536c2}{Audio\+::\+Renderable\+Source}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}!stop\+Playing\+Impl@{stop\+Playing\+Impl}}
+\index{stop\+Playing\+Impl@{stop\+Playing\+Impl}!Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}}
+\subsubsection[{\texorpdfstring{stop\+Playing\+Impl()}{stopPlayingImpl()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderable\+Source\+::stop\+Playing\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderableSource_aa2a89f65052507e51b1e71ec0dd21f12}{}\label{classAudio_1_1OpenALRenderableSource_aa2a89f65052507e51b1e71ec0dd21f12}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1RenderableSource_ad0d0717ad12f0aded322f2317f1c42af}{Renderable\+Source\+::stop\+Playing\+Impl}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1RenderableSource_ad0d0717ad12f0aded322f2317f1c42af}{Audio\+::\+Renderable\+Source}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}!update\+Impl@{update\+Impl}}
+\index{update\+Impl@{update\+Impl}!Audio\+::\+Open\+A\+L\+Renderable\+Source@{Audio\+::\+Open\+A\+L\+Renderable\+Source}}
+\subsubsection[{\texorpdfstring{update\+Impl(int flags, const Listener \&scene\+Listener)}{updateImpl(int flags, const Listener &sceneListener)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderable\+Source\+::update\+Impl (
+\begin{DoxyParamCaption}
+\item[{int}]{flags, }
+\item[{const {\bf Listener} \&}]{scene\+Listener}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderableSource_a57503ddb02ef56fac0ca9830246aae31}{}\label{classAudio_1_1OpenALRenderableSource_a57503ddb02ef56fac0ca9830246aae31}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1RenderableSource_ab13a51dbcd65af4fcdb69dd9da296ca7}{Renderable\+Source\+::update\+Impl}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1RenderableSource_ab13a51dbcd65af4fcdb69dd9da296ca7}{Audio\+::\+Renderable\+Source}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dc7/classAudio_1_1OpenALRenderableSource_a57503ddb02ef56fac0ca9830246aae31_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Renderable\+Source.\+h\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Renderable\+Source.\+cpp\end{DoxyCompactItemize}

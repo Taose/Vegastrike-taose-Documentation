@@ -1,0 +1,380 @@
+\hypertarget{classFireKeyboard}{}\section{Fire\+Keyboard Class Reference}
+\label{classFireKeyboard}\index{Fire\+Keyboard@{Fire\+Keyboard}}
+
+
+Inheritance diagram for Fire\+Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d8d/classFireKeyboard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fire\+Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d02/classFireKeyboard__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classFireKeyboard_ab5fbb465ea0db4b996b5aa851cae383b}{Set\+Parent} (\hyperlink{classUnit}{Unit} $\ast$parent1)\hypertarget{classFireKeyboard_ab5fbb465ea0db4b996b5aa851cae383b}{}\label{classFireKeyboard_ab5fbb465ea0db4b996b5aa851cae383b}
+
+\begin{DoxyCompactList}\small\item\em Sets the parent of this \hyperlink{classUnit}{Unit}. Any virtual functions must call this one. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classFireKeyboard_a86c7bba2cd1fd67c7113480a868a1d11}{Process\+Comm\+Message} (class \hyperlink{classCommunicationMessage}{Communication\+Message} \&c)\hypertarget{classFireKeyboard_a86c7bba2cd1fd67c7113480a868a1d11}{}\label{classFireKeyboard_a86c7bba2cd1fd67c7113480a868a1d11}
+
+\begin{DoxyCompactList}\small\item\em processes a single message...generally called by the Messages() func \end{DoxyCompactList}\item 
+{\bfseries Fire\+Keyboard} (unsigned int whichjoystick, unsigned int whichplayer)\hypertarget{classFireKeyboard_a302cde707c87104a89e027b273e01b55}{}\label{classFireKeyboard_a302cde707c87104a89e027b273e01b55}
+
+\item 
+virtual void \hyperlink{classFireKeyboard_a383506e379691f1c8116a9cd89f5aaaf}{Execute} ()\hypertarget{classFireKeyboard_a383506e379691f1c8116a9cd89f5aaaf}{}\label{classFireKeyboard_a383506e379691f1c8116a9cd89f5aaaf}
+
+\begin{DoxyCompactList}\small\item\em The function that gets called and executes all queued suborders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Set\+Shields\+Off} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a1de26895e9da4dbedbb1a8affb0f45e7}{}\label{classFireKeyboard_a1de26895e9da4dbedbb1a8affb0f45e7}
+
+\item 
+static void {\bfseries Set\+Shields\+One\+Third} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a0f0dab52d8cc4b98a0a26f2ce1c14e52}{}\label{classFireKeyboard_a0f0dab52d8cc4b98a0a26f2ce1c14e52}
+
+\item 
+static void {\bfseries Set\+Shields\+Two\+Third} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ad76b430eb29b98fa4a88a9e007d0647f}{}\label{classFireKeyboard_ad76b430eb29b98fa4a88a9e007d0647f}
+
+\item 
+static void {\bfseries Toggle\+Glow} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ab93a3e7fcacb7971234f0224981d383f}{}\label{classFireKeyboard_ab93a3e7fcacb7971234f0224981d383f}
+
+\item 
+static void {\bfseries Toggle\+Warp\+Drive} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a48b0cb1c0a487f5dbd38140767c7afed}{}\label{classFireKeyboard_a48b0cb1c0a487f5dbd38140767c7afed}
+
+\item 
+static void {\bfseries Toggle\+Autotracking} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a5935493a6ca126db1f471e30d6dc381d}{}\label{classFireKeyboard_a5935493a6ca126db1f471e30d6dc381d}
+
+\item 
+static void {\bfseries Toggle\+Animation} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a5355fbb34cc4d72b3843fbdea38f6982}{}\label{classFireKeyboard_a5355fbb34cc4d72b3843fbdea38f6982}
+
+\item 
+static void {\bfseries Press\+Comm1\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ae214e9ed0f1fd43e2b1fdb874ae2f673}{}\label{classFireKeyboard_ae214e9ed0f1fd43e2b1fdb874ae2f673}
+
+\item 
+static void {\bfseries Press\+Comm2\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a22c2b29f0c9c3937db8f1988f6aa5826}{}\label{classFireKeyboard_a22c2b29f0c9c3937db8f1988f6aa5826}
+
+\item 
+static void {\bfseries Press\+Comm3\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a867c2dc15e3318483e5a5a68b1734943}{}\label{classFireKeyboard_a867c2dc15e3318483e5a5a68b1734943}
+
+\item 
+static void {\bfseries Press\+Comm4\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_aea5c918fd67b03524164d913fb2b905a}{}\label{classFireKeyboard_aea5c918fd67b03524164d913fb2b905a}
+
+\item 
+static void {\bfseries Press\+Comm5\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a64f864388f3dad2c8442a21ca1974c3e}{}\label{classFireKeyboard_a64f864388f3dad2c8442a21ca1974c3e}
+
+\item 
+static void {\bfseries Press\+Comm6\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a5d62f9ae71e99fa26b02f942f40be31e}{}\label{classFireKeyboard_a5d62f9ae71e99fa26b02f942f40be31e}
+
+\item 
+static void {\bfseries Press\+Comm7\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a3909aa89fe2dad2d358409e8182ecb60}{}\label{classFireKeyboard_a3909aa89fe2dad2d358409e8182ecb60}
+
+\item 
+static void {\bfseries Press\+Comm8\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a68e1f9bd5b09df02ab81970dceaaf7ee}{}\label{classFireKeyboard_a68e1f9bd5b09df02ab81970dceaaf7ee}
+
+\item 
+static void {\bfseries Press\+Comm9\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_aebfae0c0375323fad8ebb9da17bdad5c}{}\label{classFireKeyboard_aebfae0c0375323fad8ebb9da17bdad5c}
+
+\item 
+static void {\bfseries Press\+Comm10\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a65d6423662568cf7f5734b51e2053939}{}\label{classFireKeyboard_a65d6423662568cf7f5734b51e2053939}
+
+\item 
+static void {\bfseries Save\+Target1\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_af458e85fe3e262506f9a80bd349af5ac}{}\label{classFireKeyboard_af458e85fe3e262506f9a80bd349af5ac}
+
+\item 
+static void {\bfseries Save\+Target2\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a783bca6e88df52b382c6bcb89835b9d7}{}\label{classFireKeyboard_a783bca6e88df52b382c6bcb89835b9d7}
+
+\item 
+static void {\bfseries Save\+Target3\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a0152e5876856c5861f7dd6464e6aa2b1}{}\label{classFireKeyboard_a0152e5876856c5861f7dd6464e6aa2b1}
+
+\item 
+static void {\bfseries Save\+Target4\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a4a150da27db1f4a7bd3bb33a3b29ccf5}{}\label{classFireKeyboard_a4a150da27db1f4a7bd3bb33a3b29ccf5}
+
+\item 
+static void {\bfseries Save\+Target5\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a667d959afb31e6c34a17fac651de7568}{}\label{classFireKeyboard_a667d959afb31e6c34a17fac651de7568}
+
+\item 
+static void {\bfseries Save\+Target6\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a8fc38fd002666d37dfe7eda5b54a5d0c}{}\label{classFireKeyboard_a8fc38fd002666d37dfe7eda5b54a5d0c}
+
+\item 
+static void {\bfseries Save\+Target7\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_afe565d60878d1ba628418b8f4652d843}{}\label{classFireKeyboard_afe565d60878d1ba628418b8f4652d843}
+
+\item 
+static void {\bfseries Save\+Target8\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_abef242c08d7ed43265a3a485942a234a}{}\label{classFireKeyboard_abef242c08d7ed43265a3a485942a234a}
+
+\item 
+static void {\bfseries Save\+Target9\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a141ee959a90713faf3eb1d0bd413b0ae}{}\label{classFireKeyboard_a141ee959a90713faf3eb1d0bd413b0ae}
+
+\item 
+static void {\bfseries Save\+Target10\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a88b5935a663c3bb3a42f1da341d4f647}{}\label{classFireKeyboard_a88b5935a663c3bb3a42f1da341d4f647}
+
+\item 
+static void {\bfseries Restore\+Target1\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a54a1cf442667b066f5c47c1659f71516}{}\label{classFireKeyboard_a54a1cf442667b066f5c47c1659f71516}
+
+\item 
+static void {\bfseries Restore\+Target2\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ad6dc400ce83c84732cb1fb4336506ce0}{}\label{classFireKeyboard_ad6dc400ce83c84732cb1fb4336506ce0}
+
+\item 
+static void {\bfseries Restore\+Target3\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a0f660c5c95eaeb601d7fe2b1b727ce76}{}\label{classFireKeyboard_a0f660c5c95eaeb601d7fe2b1b727ce76}
+
+\item 
+static void {\bfseries Restore\+Target4\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a2f77e4d54bcaed85fd1c63a1b2cd6762}{}\label{classFireKeyboard_a2f77e4d54bcaed85fd1c63a1b2cd6762}
+
+\item 
+static void {\bfseries Restore\+Target5\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a6ef34de294fb63ae2f6ff6308f8f36e5}{}\label{classFireKeyboard_a6ef34de294fb63ae2f6ff6308f8f36e5}
+
+\item 
+static void {\bfseries Restore\+Target6\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a7f4acc91d04f0af73309a5cb15131e99}{}\label{classFireKeyboard_a7f4acc91d04f0af73309a5cb15131e99}
+
+\item 
+static void {\bfseries Restore\+Target7\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a436181a0786f88413c10b0b0700a3b8e}{}\label{classFireKeyboard_a436181a0786f88413c10b0b0700a3b8e}
+
+\item 
+static void {\bfseries Restore\+Target8\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_acd5972886340b24a0065a49a52c78c25}{}\label{classFireKeyboard_acd5972886340b24a0065a49a52c78c25}
+
+\item 
+static void {\bfseries Restore\+Target9\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a4735aa28f304360d980df4d07c0da170}{}\label{classFireKeyboard_a4735aa28f304360d980df4d07c0da170}
+
+\item 
+static void {\bfseries Restore\+Target10\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a1951c2b6734f828c55ef55e65a2ad889}{}\label{classFireKeyboard_a1951c2b6734f828c55ef55e65a2ad889}
+
+\item 
+static void {\bfseries Request\+Clearence\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a8d403a6a2a1e7666f2c432bce8e01f3c}{}\label{classFireKeyboard_a8d403a6a2a1e7666f2c432bce8e01f3c}
+
+\item 
+static void {\bfseries Un\+Dock\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a2b7f21b1c6f8258425c2394dbab45c34}{}\label{classFireKeyboard_a2b7f21b1c6f8258425c2394dbab45c34}
+
+\item 
+static void {\bfseries Eject\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a03e10062b6e09cbbee3f2bcae25f972f}{}\label{classFireKeyboard_a03e10062b6e09cbbee3f2bcae25f972f}
+
+\item 
+static void {\bfseries Eject\+Dock\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ae993dddb285abc00f57b39dc2fc48212}{}\label{classFireKeyboard_ae993dddb285abc00f57b39dc2fc48212}
+
+\item 
+static void {\bfseries Eject\+Cargo\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_af7b33f7aff60a65be246fc56c54a40e9}{}\label{classFireKeyboard_af7b33f7aff60a65be246fc56c54a40e9}
+
+\item 
+static void {\bfseries Eject\+Non\+Mission\+Cargo\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a88b414f8c5a9b4b658de442f505c62dd}{}\label{classFireKeyboard_a88b414f8c5a9b4b658de442f505c62dd}
+
+\item 
+static void {\bfseries Dock\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_af292ea28016a5e1606c53fed484cd09f}{}\label{classFireKeyboard_af292ea28016a5e1606c53fed484cd09f}
+
+\item 
+static void {\bfseries Fire\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ab62eba427e628f6837bf433f7d63de63}{}\label{classFireKeyboard_ab62eba427e628f6837bf433f7d63de63}
+
+\item 
+static void {\bfseries Missile\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ac8823c6aabba6885dec2ead7476e64e1}{}\label{classFireKeyboard_ac8823c6aabba6885dec2ead7476e64e1}
+
+\item 
+static void {\bfseries Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a7b22f08e14659c61d85ff876379d22f6}{}\label{classFireKeyboard_a7b22f08e14659c61d85ff876379d22f6}
+
+\item 
+static void {\bfseries Mission\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a185b5d65f6104f30a07357443cdccd14}{}\label{classFireKeyboard_a185b5d65f6104f30a07357443cdccd14}
+
+\item 
+static void {\bfseries Reverse\+Mission\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_ac659327566c1b686ae1543ea70d2d2bf}{}\label{classFireKeyboard_ac659327566c1b686ae1543ea70d2d2bf}
+
+\item 
+static void {\bfseries Missile\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a4bb75d2e412be4941fbd9ae86dc644ac}{}\label{classFireKeyboard_a4bb75d2e412be4941fbd9ae86dc644ac}
+
+\item 
+static void {\bfseries Incoming\+Missile\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a346c2d51e3a0a21ca820e29954b9fc3d}{}\label{classFireKeyboard_a346c2d51e3a0a21ca820e29954b9fc3d}
+
+\item 
+static void {\bfseries Reverse\+Missile\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a2cf077a2fbceedac314ee89633344bef}{}\label{classFireKeyboard_a2cf077a2fbceedac314ee89633344bef}
+
+\item 
+static void {\bfseries Reverse\+Incoming\+Missile\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a09dc27ac1715b40354b4d75876f7bd15}{}\label{classFireKeyboard_a09dc27ac1715b40354b4d75876f7bd15}
+
+\item 
+static void {\bfseries Pick\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a5eb47d738199a56e9f429ff63d5fb535}{}\label{classFireKeyboard_a5eb47d738199a56e9f429ff63d5fb535}
+
+\item 
+static void {\bfseries Nearest\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a3999d2a693ddc67a62748789adb175ba}{}\label{classFireKeyboard_a3999d2a693ddc67a62748789adb175ba}
+
+\item 
+static void {\bfseries Sub\+Unit\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_afb13505c8f4cae1f80c3c92c7b10e4db}{}\label{classFireKeyboard_afb13505c8f4cae1f80c3c92c7b10e4db}
+
+\item 
+static void {\bfseries Threat\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a99008d15472f4ae7305d22e91bf5c963}{}\label{classFireKeyboard_a99008d15472f4ae7305d22e91bf5c963}
+
+\item 
+static void {\bfseries Unit\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_aa4c8af462c5939fe81656becda7d26ff}{}\label{classFireKeyboard_aa4c8af462c5939fe81656becda7d26ff}
+
+\item 
+static void {\bfseries Sig\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a4338e19389c58acfa8e08004197dc0dd}{}\label{classFireKeyboard_a4338e19389c58acfa8e08004197dc0dd}
+
+\item 
+static void {\bfseries Reverse\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a0b30a30ff50fefc0c4d31be2c0d92bb7}{}\label{classFireKeyboard_a0b30a30ff50fefc0c4d31be2c0d92bb7}
+
+\item 
+static void {\bfseries Reverse\+Pick\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a3b68d8886323c2ff7e1ab9dccf215f86}{}\label{classFireKeyboard_a3b68d8886323c2ff7e1ab9dccf215f86}
+
+\item 
+static void {\bfseries Reverse\+Nearest\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a6a7c94feb2d9a0adffd33baf36472ddb}{}\label{classFireKeyboard_a6a7c94feb2d9a0adffd33baf36472ddb}
+
+\item 
+static void {\bfseries Reverse\+Threat\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a17821603743ee1a9b9715abb16b3f482}{}\label{classFireKeyboard_a17821603743ee1a9b9715abb16b3f482}
+
+\item 
+static void {\bfseries Reverse\+Unit\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a2afbd2d0f6155976164aee03c51b3eb7}{}\label{classFireKeyboard_a2afbd2d0f6155976164aee03c51b3eb7}
+
+\item 
+static void {\bfseries Reverse\+Sig\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a5022b5667699d92e66876814984fdbfc}{}\label{classFireKeyboard_a5022b5667699d92e66876814984fdbfc}
+
+\item 
+static void {\bfseries Nearest\+Target\+Turret\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a6ca0411b74103ed55fea7ab35433203e}{}\label{classFireKeyboard_a6ca0411b74103ed55fea7ab35433203e}
+
+\item 
+static void {\bfseries Threat\+Target\+Turret\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ad3cc1ab59495d1aed2276674fcaaaaea}{}\label{classFireKeyboard_ad3cc1ab59495d1aed2276674fcaaaaea}
+
+\item 
+static void {\bfseries Target\+Turret\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_af1fe84e7e5007a1ecf568b09f3057bb4}{}\label{classFireKeyboard_af1fe84e7e5007a1ecf568b09f3057bb4}
+
+\item 
+static void {\bfseries Pick\+Target\+Turret\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a7abb07b7051fcbb393039da0d58265a7}{}\label{classFireKeyboard_a7abb07b7051fcbb393039da0d58265a7}
+
+\item 
+static void {\bfseries J\+Fire\+Key} (K\+B\+S\+T\+A\+TE, float, float, int)\hypertarget{classFireKeyboard_a9c2ec503434abffd31e9e4c614c1ee2d}{}\label{classFireKeyboard_a9c2ec503434abffd31e9e4c614c1ee2d}
+
+\item 
+static void {\bfseries J\+Missile\+Key} (K\+B\+S\+T\+A\+TE, float, float, int)\hypertarget{classFireKeyboard_a0190a15cd41fc425dbc247aeb3d76e73}{}\label{classFireKeyboard_a0190a15cd41fc425dbc247aeb3d76e73}
+
+\item 
+static void {\bfseries J\+Target\+Key} (K\+B\+S\+T\+A\+TE, float, float, int)\hypertarget{classFireKeyboard_aa07b6803a880d1618a71fe035df99c3c}{}\label{classFireKeyboard_aa07b6803a880d1618a71fe035df99c3c}
+
+\item 
+static void {\bfseries Weap\+Sel\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ad4e2802235499aa501cb6b906ff5ad01}{}\label{classFireKeyboard_ad4e2802235499aa501cb6b906ff5ad01}
+
+\item 
+static void {\bfseries Mis\+Sel\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ad2f513620c23d2a7721e89ebbbacb86f}{}\label{classFireKeyboard_ad2f513620c23d2a7721e89ebbbacb86f}
+
+\item 
+static void {\bfseries Reverse\+Weap\+Sel\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_af94ab4aeab0f94d497dbf71770371f4d}{}\label{classFireKeyboard_af94ab4aeab0f94d497dbf71770371f4d}
+
+\item 
+static void {\bfseries Reverse\+Mis\+Sel\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a5a00ba4481e93cfc422688108636aa16}{}\label{classFireKeyboard_a5a00ba4481e93cfc422688108636aa16}
+
+\item 
+static void {\bfseries Cloak\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a2f84cba6adbf889d663bead67cdc12ab}{}\label{classFireKeyboard_a2f84cba6adbf889d663bead67cdc12ab}
+
+\item 
+static void {\bfseries Lock\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a23cd8230fb5c89b4b26f7777999913cc}{}\label{classFireKeyboard_a23cd8230fb5c89b4b26f7777999913cc}
+
+\item 
+static void {\bfseries E\+C\+M\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a922cc298f681c04e43a93319f7a5f02c}{}\label{classFireKeyboard_a922cc298f681c04e43a93319f7a5f02c}
+
+\item 
+static void {\bfseries Help\+Me\+Out} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_abbdd581775c9d488b4de10e75c67ae8c}{}\label{classFireKeyboard_abbdd581775c9d488b4de10e75c67ae8c}
+
+\item 
+static void {\bfseries Help\+Me\+Out\+Faction} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a5ed9387ccf70af75abfb6f9f2e73e101}{}\label{classFireKeyboard_a5ed9387ccf70af75abfb6f9f2e73e101}
+
+\item 
+static void {\bfseries Enslave\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a6809cc3ab7669d27014c597f41382691}{}\label{classFireKeyboard_a6809cc3ab7669d27014c597f41382691}
+
+\item 
+static void {\bfseries Free\+Slave\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_ad22c9d5ea95c27c3a302d0dd2fb0c9b4}{}\label{classFireKeyboard_ad22c9d5ea95c27c3a302d0dd2fb0c9b4}
+
+\item 
+static void {\bfseries Help\+Me\+Out\+Crit} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a707200cc5aaf58d89a73977aa169be4e}{}\label{classFireKeyboard_a707200cc5aaf58d89a73977aa169be4e}
+
+\item 
+static void {\bfseries Join\+Fg} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a980d859e111e79c990f579cdcfc206d5}{}\label{classFireKeyboard_a980d859e111e79c990f579cdcfc206d5}
+
+\item 
+static void {\bfseries Break\+Formation} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a34c06ddd49d67347981d6671c436bcb7}{}\label{classFireKeyboard_a34c06ddd49d67347981d6671c436bcb7}
+
+\item 
+static void {\bfseries Form\+Up} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a57045776afc9e70fe78ed0ebceab0665}{}\label{classFireKeyboard_a57045776afc9e70fe78ed0ebceab0665}
+
+\item 
+static void {\bfseries Dock\+With\+Me} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a7ff7b6429113684c091b319ed53f5cc6}{}\label{classFireKeyboard_a7ff7b6429113684c091b319ed53f5cc6}
+
+\item 
+static void {\bfseries Defend\+Target} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a022ea5ca6719ce0c9bf645fa6f64f2f2}{}\label{classFireKeyboard_a022ea5ca6719ce0c9bf645fa6f64f2f2}
+
+\item 
+static void {\bfseries Dock\+Target} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a9322071129fa78935af8869111c92105}{}\label{classFireKeyboard_a9322071129fa78935af8869111c92105}
+
+\item 
+static void {\bfseries Hold\+Position} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_ad61700102c1316d092ebe5623d710e0f}{}\label{classFireKeyboard_ad61700102c1316d092ebe5623d710e0f}
+
+\item 
+static void {\bfseries Attack\+Target} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_acd0b2d622082942709eb15d915e9a03d}{}\label{classFireKeyboard_acd0b2d622082942709eb15d915e9a03d}
+
+\item 
+static void {\bfseries Turret\+A\+I\+On} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a1b0bcc108a756a129a25f22c757fbfa5}{}\label{classFireKeyboard_a1b0bcc108a756a129a25f22c757fbfa5}
+
+\item 
+static void {\bfseries Turret\+A\+I\+Off} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a57c31a2be56ee298de0565a14e420221}{}\label{classFireKeyboard_a57c31a2be56ee298de0565a14e420221}
+
+\item 
+static void {\bfseries Turret\+Fire\+At\+Will} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a175a94a07e4b9ed32e40dc9932eedd9f}{}\label{classFireKeyboard_a175a94a07e4b9ed32e40dc9932eedd9f}
+
+\item 
+static void {\bfseries Nearest\+Hostile\+Target\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_ac4f0b9d04aaeed799d351c1904e2f6e6}{}\label{classFireKeyboard_ac4f0b9d04aaeed799d351c1904e2f6e6}
+
+\item 
+static void {\bfseries Nearest\+Dangerous\+Hostile\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a9d31418ea860bb2b35921bfa5a9f79ca}{}\label{classFireKeyboard_a9d31418ea860bb2b35921bfa5a9f79ca}
+
+\item 
+static void {\bfseries Nearest\+Friendly\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_a792af2d909b63054a483a508c78a3362}{}\label{classFireKeyboard_a792af2d909b63054a483a508c78a3362}
+
+\item 
+static void {\bfseries Nearest\+Base\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_ab47169d0e1dd1343ec17065494019812}{}\label{classFireKeyboard_ab47169d0e1dd1343ec17065494019812}
+
+\item 
+static void {\bfseries Nearest\+Planet\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_ab7a842ff6a3278d06071c0ff6ce59d22}{}\label{classFireKeyboard_ab7a842ff6a3278d06071c0ff6ce59d22}
+
+\item 
+static void {\bfseries Nearest\+Jump\+Key} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classFireKeyboard_adbade7f9a2c02762e93358169f32c007}{}\label{classFireKeyboard_adbade7f9a2c02762e93358169f32c007}
+
+\item 
+static void {\bfseries Toggle\+Pause} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classFireKeyboard_a143e5a0b30f6fe61e64b786b0bc015f5}{}\label{classFireKeyboard_a143e5a0b30f6fe61e64b786b0bc015f5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structFIREKEYBOARDTYPE}{F\+I\+R\+E\+K\+E\+Y\+B\+O\+A\+R\+D\+T\+Y\+PE} \& {\bfseries f} ()\hypertarget{classFireKeyboard_ae73da382d675d107e2c218aa967a78ef}{}\label{classFireKeyboard_ae73da382d675d107e2c218aa967a78ef}
+
+\item 
+struct \hyperlink{structFIREKEYBOARDTYPE}{F\+I\+R\+E\+K\+E\+Y\+B\+O\+A\+R\+D\+T\+Y\+PE} \& {\bfseries j} ()\hypertarget{classFireKeyboard_add508ba51e8196587bac3e6451ecbad4}{}\label{classFireKeyboard_add508ba51e8196587bac3e6451ecbad4}
+
+\item 
+unsigned int {\bfseries Do\+Speech\+And\+Ani} (\hyperlink{classUnit}{Unit} $\ast$un, \hyperlink{classUnit}{Unit} $\ast$\hyperlink{classOrder_a57548b2476945f89ac22fafa4cb5863b}{parent}, class \hyperlink{classCommunicationMessage}{Communication\+Message} \&c)\hypertarget{classFireKeyboard_aeab1f841bf6914e8ba84be3448fb222d}{}\label{classFireKeyboard_aeab1f841bf6914e8ba84be3448fb222d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bfseries saved\+Targets} \mbox{[}N\+U\+M\+S\+A\+V\+E\+D\+T\+A\+R\+G\+E\+TS\mbox{]}\hypertarget{classFireKeyboard_a44a14e6f90e5769d5d66c442c3f7f020}{}\label{classFireKeyboard_a44a14e6f90e5769d5d66c442c3f7f020}
+
+\item 
+float {\bfseries distance}\hypertarget{classFireKeyboard_a5b314633e785747882d31442f1321ee2}{}\label{classFireKeyboard_a5b314633e785747882d31442f1321ee2}
+
+\item 
+unsigned int {\bfseries whichplayer}\hypertarget{classFireKeyboard_a9aae8f6c25b1e54cb50ad0b248e7b94c}{}\label{classFireKeyboard_a9aae8f6c25b1e54cb50ad0b248e7b94c}
+
+\item 
+unsigned int {\bfseries whichjoystick}\hypertarget{classFireKeyboard_acbee5d1ae4f427d6b07db6ba1ea4b9f3}{}\label{classFireKeyboard_acbee5d1ae4f427d6b07db6ba1ea4b9f3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/firekeyboard.\+h\item 
+cmd/ai/firekeyboard.\+cpp\end{DoxyCompactItemize}

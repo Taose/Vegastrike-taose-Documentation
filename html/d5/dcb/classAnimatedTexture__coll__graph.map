@@ -1,0 +1,4 @@
+<map id="AnimatedTexture" name="AnimatedTexture">
+<area shape="rect" id="node2" href="$d6/d97/classTexture.html" title="{Texture\n|+ ismipmapped\l+ data\l+ name\l+ stage\l+ mintcoord\l+ maxtcoord\l+ bound\l+ boundSizeX\l+ boundSizeY\l+ boundMode\l+ refcount\l+ texture_target\l+ image_target\l+ address_mode\l|+ FileNotFound()\l+ checkold()\l+ modold()\l+ setold()\l+ checkbad()\l+ setbad()\l+ InitTexture()\l+ Bind()\l+ Texture()\l+ Texture()\land 30 more...\l+ Exists()\l+ Exists()\l# Bind()\l# UnBind()\l# Transfer()\l}" alt="" coords="91,307,211,795"/>
+<area shape="rect" id="node4" href="$d6/dad/classSharedPool_1_1Reference.html" title="{SharedPool\&lt; T, Refcounter\lTraits \&gt;::Reference\n||+ Reference()\l+ Reference()\l+ Reference()\l+ Reference()\l+ Reference()\l+ ~Reference()\l+ get()\l+ set()\l+ operator const T &amp;()\l+ operator=()\land 7 more...\l}" alt="" coords="149,5,330,244"/>
+</map>

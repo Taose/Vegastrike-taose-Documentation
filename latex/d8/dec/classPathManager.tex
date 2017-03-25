@@ -1,0 +1,81 @@
+\hypertarget{classPathManager}{}\section{Path\+Manager Class Reference}
+\label{classPathManager}\index{Path\+Manager@{Path\+Manager}}
+
+
+Collaboration diagram for Path\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{d3/d0c/classPathManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Update\+Type} \{ {\bfseries A\+LL}, 
+{\bfseries C\+U\+R\+R\+E\+NT}, 
+{\bfseries T\+A\+R\+G\+ET}
+ \}\hypertarget{classPathManager_a1605980621158f09cafff8d7c3228455}{}\label{classPathManager_a1605980621158f09cafff8d7c3228455}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries add\+Path} ()\hypertarget{classPathManager_ab3597d5812ae5ea9b07d1ff190c88fe2}{}\label{classPathManager_ab3597d5812ae5ea9b07d1ff190c88fe2}
+
+\item 
+bool {\bfseries remove\+Path} (\hyperlink{classNavPath}{Nav\+Path} $\ast$path)\hypertarget{classPathManager_a76d661475da569ebf62fe782dadf4b95}{}\label{classPathManager_a76d661475da569ebf62fe782dadf4b95}
+
+\item 
+void {\bfseries show\+All} ()\hypertarget{classPathManager_a0c6ef973c278f250a39a626f7d123e45}{}\label{classPathManager_a0c6ef973c278f250a39a626f7d123e45}
+
+\item 
+void {\bfseries show\+None} ()\hypertarget{classPathManager_a4f1c5403f28aa39b0efe50e173f44b06}{}\label{classPathManager_a4f1c5403f28aa39b0efe50e173f44b06}
+
+\item 
+bool {\bfseries update\+Specific\+Path} (\hyperlink{classNavPath}{Nav\+Path} $\ast$path)\hypertarget{classPathManager_a075485253cb431811d2ce8738bba0994}{}\label{classPathManager_a075485253cb431811d2ce8738bba0994}
+
+\item 
+void {\bfseries update\+Paths} (Update\+Type type=A\+LL)\hypertarget{classPathManager_a3bb9aa252d68bf6bef6da0787b74b05a}{}\label{classPathManager_a3bb9aa252d68bf6bef6da0787b74b05a}
+
+\item 
+void {\bfseries update\+Dependants} (\hyperlink{classNavPath}{Nav\+Path} $\ast$parent)\hypertarget{classPathManager_a8ad544c9c22d4ff7261d97a066caa480}{}\label{classPathManager_a8ad544c9c22d4ff7261d97a066caa480}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries D\+FS} ()\hypertarget{classPathManager_a70e9ccbb490cf4d3cabd831a38f6ff73}{}\label{classPathManager_a70e9ccbb490cf4d3cabd831a38f6ff73}
+
+\item 
+void {\bfseries dfs\+Visit} (\hyperlink{classNavPath}{Nav\+Path} $\ast$path)\hypertarget{classPathManager_a97080380aff80f8c28be19dc92fa44ca}{}\label{classPathManager_a97080380aff80f8c28be19dc92fa44ca}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classNavPath}{Nav\+Path} $\ast$ $>$ {\bfseries paths}\hypertarget{classPathManager_ac5170a08cac3a91487208aea3b402593}{}\label{classPathManager_ac5170a08cac3a91487208aea3b402593}
+
+\item 
+std\+::list$<$ \hyperlink{classNavPath}{Nav\+Path} $\ast$ $>$ {\bfseries topo\+Order}\hypertarget{classPathManager_adf3c5a6ff2712e5d8e36655ea16b10c9}{}\label{classPathManager_adf3c5a6ff2712e5d8e36655ea16b10c9}
+
+\item 
+unsigned {\bfseries topo\+Time}\hypertarget{classPathManager_a2074deda73ee4fe8f0e2ff39260a753f}{}\label{classPathManager_a2074deda73ee4fe8f0e2ff39260a753f}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Nav\+Path}\hypertarget{classPathManager_ad52bb5f8c5442d6b93c1d3150be08380}{}\label{classPathManager_ad52bb5f8c5442d6b93c1d3150be08380}
+
+\item 
+class {\bfseries Nav\+Computer}\hypertarget{classPathManager_a1e201bac6febf7e8408c0fe9f486bf2a}{}\label{classPathManager_a1e201bac6febf7e8408c0fe9f486bf2a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/nav/navpath.\+h\item 
+gfx/nav/navpath.\+cpp\end{DoxyCompactItemize}

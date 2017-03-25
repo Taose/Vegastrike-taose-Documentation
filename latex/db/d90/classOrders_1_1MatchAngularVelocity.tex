@@ -1,0 +1,63 @@
+\hypertarget{classOrders_1_1MatchAngularVelocity}{}\section{Orders\+:\+:Match\+Angular\+Velocity Class Reference}
+\label{classOrders_1_1MatchAngularVelocity}\index{Orders\+::\+Match\+Angular\+Velocity@{Orders\+::\+Match\+Angular\+Velocity}}
+
+
+{\ttfamily \#include $<$flybywire.\+h$>$}
+
+
+
+Inheritance diagram for Orders\+:\+:Match\+Angular\+Velocity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dfe/classOrders_1_1MatchAngularVelocity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Orders\+:\+:Match\+Angular\+Velocity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/da8/classOrders_1_1MatchAngularVelocity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Match\+Angular\+Velocity} (const Vector \&desired, bool Local, bool fini=true)\hypertarget{classOrders_1_1MatchAngularVelocity_a52e6c60fe28dd16f5f3873b485c6b5bb}{}\label{classOrders_1_1MatchAngularVelocity_a52e6c60fe28dd16f5f3873b485c6b5bb}
+
+\item 
+void \hyperlink{classOrders_1_1MatchAngularVelocity_a323fc3701dac9728779b46244bbc3826}{Execute} ()\hypertarget{classOrders_1_1MatchAngularVelocity_a323fc3701dac9728779b46244bbc3826}{}\label{classOrders_1_1MatchAngularVelocity_a323fc3701dac9728779b46244bbc3826}
+
+\begin{DoxyCompactList}\small\item\em The function that gets called and executes all queued suborders. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Desired\+Angular\+Velocity} (const Vector \&desired, bool Local)\hypertarget{classOrders_1_1MatchAngularVelocity_ab71cba3ee80175afaaef57700b24b508}{}\label{classOrders_1_1MatchAngularVelocity_ab71cba3ee80175afaaef57700b24b508}
+
+\item 
+virtual std\+::string {\bfseries get\+Order\+Description} ()\hypertarget{classOrders_1_1MatchAngularVelocity_ae64356e5ad21ddf67b208156cbfb414c}{}\label{classOrders_1_1MatchAngularVelocity_ae64356e5ad21ddf67b208156cbfb414c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector \hyperlink{classOrders_1_1MatchAngularVelocity_a5d02656b4268e37b882e6129a7364d64}{desired\+\_\+ang\+\_\+velocity}\hypertarget{classOrders_1_1MatchAngularVelocity_a5d02656b4268e37b882e6129a7364d64}{}\label{classOrders_1_1MatchAngularVelocity_a5d02656b4268e37b882e6129a7364d64}
+
+\begin{DoxyCompactList}\small\item\em werld space or local space (pitch = 1 on the x axis) \end{DoxyCompactList}\item 
+bool \hyperlink{classOrders_1_1MatchAngularVelocity_a129ae09c75a4a253c3b3efcefc3d81e7}{Local\+Ang}\hypertarget{classOrders_1_1MatchAngularVelocity_a129ae09c75a4a253c3b3efcefc3d81e7}{}\label{classOrders_1_1MatchAngularVelocity_a129ae09c75a4a253c3b3efcefc3d81e7}
+
+\begin{DoxyCompactList}\small\item\em specified in Local or World coordinates \end{DoxyCompactList}\item 
+bool \hyperlink{classOrders_1_1MatchAngularVelocity_a40c8a1464cbe25a66eaa3a800e85461a}{willfinish}\hypertarget{classOrders_1_1MatchAngularVelocity_a40c8a1464cbe25a66eaa3a800e85461a}{}\label{classOrders_1_1MatchAngularVelocity_a40c8a1464cbe25a66eaa3a800e85461a}
+
+\begin{DoxyCompactList}\small\item\em Whether this script should terminate upon reaching desired angular velocity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class attempts to match given turning velocity through firing minimum ammt of thrusters 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/flybywire.\+h\item 
+cmd/ai/flybywire.\+cpp\end{DoxyCompactItemize}

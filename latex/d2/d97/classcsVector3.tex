@@ -1,0 +1,258 @@
+\hypertarget{classcsVector3}{}\section{cs\+Vector3 Class Reference}
+\label{classcsVector3}\index{cs\+Vector3@{cs\+Vector3}}
+
+
+{\ttfamily \#include $<$opvector3.\+h$>$}
+
+
+
+Collaboration diagram for cs\+Vector3\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{de/da9/classcsVector3__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsVector3_a27d80c7e6bcdaee093012aa843492ca6}{cs\+Vector3} ()
+\item 
+\hyperlink{classcsVector3_a0267a154da795520aa74c4861ab36d77}{cs\+Vector3} (float m)
+\item 
+\hyperlink{classcsVector3_a5c187c254a4d44d364670ff9e57b59a5}{cs\+Vector3} (float ix, float iy, float iz=0)\hypertarget{classcsVector3_a5c187c254a4d44d364670ff9e57b59a5}{}\label{classcsVector3_a5c187c254a4d44d364670ff9e57b59a5}
+
+\begin{DoxyCompactList}\small\item\em Make a new vector and initialize with the given values. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3_a83e55d80b89992b33983461997aaf3f0}{cs\+Vector3} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsVector3_a83e55d80b89992b33983461997aaf3f0}{}\label{classcsVector3_a83e55d80b89992b33983461997aaf3f0}
+
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+{\bfseries cs\+Vector3} (const Vector v)\hypertarget{classcsVector3_a101337ee894cace1bf624a249afd1c72}{}\label{classcsVector3_a101337ee894cace1bf624a249afd1c72}
+
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a75181b739e17421a621bfc557684368c}{operator+} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v2) const 
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_af6366d1a3e08a496563ff72305d22f4c}{operator-\/} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v2) const \hypertarget{classcsVector3_af6366d1a3e08a496563ff72305d22f4c}{}\label{classcsVector3_af6366d1a3e08a496563ff72305d22f4c}
+
+\begin{DoxyCompactList}\small\item\em Subtract two vectors. \end{DoxyCompactList}\item 
+void \hyperlink{classcsVector3_a6da3afcc16d51f5cbb122786530abfc8}{Cross} (const \hyperlink{classcsVector3}{cs\+Vector3} \&px, const \hyperlink{classcsVector3}{cs\+Vector3} \&py)\hypertarget{classcsVector3_a6da3afcc16d51f5cbb122786530abfc8}{}\label{classcsVector3_a6da3afcc16d51f5cbb122786530abfc8}
+
+\begin{DoxyCompactList}\small\item\em Take cross product of two vectors and put result in this vector. \end{DoxyCompactList}\item 
+void {\bfseries Cross} (const \hyperlink{classOpcode_1_1Point}{Opcode\+::\+Point} \&px, const \hyperlink{classOpcode_1_1Point}{Opcode\+::\+Point} \&py)\hypertarget{classcsVector3_ac34b4515d13a0843ca798c64d7bef750}{}\label{classcsVector3_ac34b4515d13a0843ca798c64d7bef750}
+
+\item 
+float \hyperlink{classcsVector3_a0a0d701e92a23d0eb90e56bb3b17cf16}{operator\mbox{[}$\,$\mbox{]}} (int n) const \hypertarget{classcsVector3_a0a0d701e92a23d0eb90e56bb3b17cf16}{}\label{classcsVector3_a0a0d701e92a23d0eb90e56bb3b17cf16}
+
+\begin{DoxyCompactList}\small\item\em Returns n-\/th component of the vector. \end{DoxyCompactList}\item 
+float \& \hyperlink{classcsVector3_af3d7eeb816f1cfb47319af2ccd73654f}{operator\mbox{[}$\,$\mbox{]}} (int n)\hypertarget{classcsVector3_af3d7eeb816f1cfb47319af2ccd73654f}{}\label{classcsVector3_af3d7eeb816f1cfb47319af2ccd73654f}
+
+\begin{DoxyCompactList}\small\item\em Returns n-\/th component of the vector. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsVector3_a4af056573151e79dcad7b24d459de7eb}{operator+=} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsVector3_a4af056573151e79dcad7b24d459de7eb}{}\label{classcsVector3_a4af056573151e79dcad7b24d459de7eb}
+
+\begin{DoxyCompactList}\small\item\em Add another vector to this vector. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsVector3_a0677b4ef702018e0186600a1027ef101}{operator-\/=} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsVector3_a0677b4ef702018e0186600a1027ef101}{}\label{classcsVector3_a0677b4ef702018e0186600a1027ef101}
+
+\begin{DoxyCompactList}\small\item\em Subtract another vector from this vector. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsVector3_abf4b44ab5968f7869dbd6ad7be4358cd}{operator$\ast$=} (float f)\hypertarget{classcsVector3_abf4b44ab5968f7869dbd6ad7be4358cd}{}\label{classcsVector3_abf4b44ab5968f7869dbd6ad7be4358cd}
+
+\begin{DoxyCompactList}\small\item\em Multiply this vector by a scalar. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsVector3_a49f06c8a62f0f119e9d37aed324dc2b0}{operator/=} (float f)\hypertarget{classcsVector3_a49f06c8a62f0f119e9d37aed324dc2b0}{}\label{classcsVector3_a49f06c8a62f0f119e9d37aed324dc2b0}
+
+\begin{DoxyCompactList}\small\item\em Divide this vector by a scalar. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a9d7480756a79154054ecc07de0b5ec0a}{operator+} () const \hypertarget{classcsVector3_a9d7480756a79154054ecc07de0b5ec0a}{}\label{classcsVector3_a9d7480756a79154054ecc07de0b5ec0a}
+
+\begin{DoxyCompactList}\small\item\em Unary + operator. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a7eff302cef5eab01d17025acc9d94a9d}{operator-\/} () const \hypertarget{classcsVector3_a7eff302cef5eab01d17025acc9d94a9d}{}\label{classcsVector3_a7eff302cef5eab01d17025acc9d94a9d}
+
+\begin{DoxyCompactList}\small\item\em Unary -\/ operator. \end{DoxyCompactList}\item 
+void \hyperlink{classcsVector3_a2d705cdca75eafea8df1400583509e88}{Set} (float sx, float sy, float sz)\hypertarget{classcsVector3_a2d705cdca75eafea8df1400583509e88}{}\label{classcsVector3_a2d705cdca75eafea8df1400583509e88}
+
+\begin{DoxyCompactList}\small\item\em Set the value of this vector. \end{DoxyCompactList}\item 
+void \hyperlink{classcsVector3_a9601245e9d3b7ab95759c5eb3a0c3347}{Set} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsVector3_a9601245e9d3b7ab95759c5eb3a0c3347}{}\label{classcsVector3_a9601245e9d3b7ab95759c5eb3a0c3347}
+
+\begin{DoxyCompactList}\small\item\em Set the value of this vector. \end{DoxyCompactList}\item 
+float \hyperlink{classcsVector3_a42b1546a61c4fd76ec17c50592fcad1e}{Norm} () const \hypertarget{classcsVector3_a42b1546a61c4fd76ec17c50592fcad1e}{}\label{classcsVector3_a42b1546a61c4fd76ec17c50592fcad1e}
+
+\begin{DoxyCompactList}\small\item\em Returns the norm of this vector. \end{DoxyCompactList}\item 
+float \hyperlink{classcsVector3_a4f8fb0ed2df4d38898bbcda746c47552}{Squared\+Norm} () const \hypertarget{classcsVector3_a4f8fb0ed2df4d38898bbcda746c47552}{}\label{classcsVector3_a4f8fb0ed2df4d38898bbcda746c47552}
+
+\begin{DoxyCompactList}\small\item\em Return the squared norm (magnitude) of this vector. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_adfe6a123b665375450d78bf47eee2b77}{Unit} () const 
+\item 
+void \hyperlink{classcsVector3_a59c1a6333abbb77268b7e661b3be36b5}{Normalize} ()\hypertarget{classcsVector3_a59c1a6333abbb77268b7e661b3be36b5}{}\label{classcsVector3_a59c1a6333abbb77268b7e661b3be36b5}
+
+\begin{DoxyCompactList}\small\item\em Scale this vector to length = 1.\+0;. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsVector3_af990b4b98a7e26f25dc3765feef5e08d}{Is\+Zero} () const \hypertarget{classcsVector3_af990b4b98a7e26f25dc3765feef5e08d}{}\label{classcsVector3_af990b4b98a7e26f25dc3765feef5e08d}
+
+\begin{DoxyCompactList}\small\item\em Query if the vector is zero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \hyperlink{classcsVector3_a710f2bd2de6b6e842774632e1654050e}{Norm} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsVector3_a710f2bd2de6b6e842774632e1654050e}{}\label{classcsVector3_a710f2bd2de6b6e842774632e1654050e}
+
+\begin{DoxyCompactList}\small\item\em Returns the norm (magnitude) of a vector. \end{DoxyCompactList}\item 
+static \hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_af438a4e42d69985e693dcbaf78cc9940}{Unit} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsVector3_af438a4e42d69985e693dcbaf78cc9940}{}\label{classcsVector3_af438a4e42d69985e693dcbaf78cc9940}
+
+\begin{DoxyCompactList}\small\item\em Normalizes a vector to a unit vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classcsVector3_a823fdba459ff91e8a5e6834ded7c815f}{x}\hypertarget{classcsVector3_a823fdba459ff91e8a5e6834ded7c815f}{}\label{classcsVector3_a823fdba459ff91e8a5e6834ded7c815f}
+
+\begin{DoxyCompactList}\small\item\em The X component of the vector. \end{DoxyCompactList}\item 
+float \hyperlink{classcsVector3_ae0a74264b61eb5d61da63b3c101af719}{y}\hypertarget{classcsVector3_ae0a74264b61eb5d61da63b3c101af719}{}\label{classcsVector3_ae0a74264b61eb5d61da63b3c101af719}
+
+\begin{DoxyCompactList}\small\item\em The Y component of the vector. \end{DoxyCompactList}\item 
+float \hyperlink{classcsVector3_a3f761bd195c7ccec59ea863a87a1ad05}{z}\hypertarget{classcsVector3_a3f761bd195c7ccec59ea863a87a1ad05}{}\label{classcsVector3_a3f761bd195c7ccec59ea863a87a1ad05}
+
+\begin{DoxyCompactList}\small\item\em The Z component of the vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classcsVector3_a6b29c838ff34389fd676dd9a43fa1dea}{operator$\ast$} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v1, const \hyperlink{classcsVector3}{cs\+Vector3} \&v2)
+\begin{DoxyCompactList}\small\item\em Subtract two vectors of differing type, cast to double. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a9cf0725e53867457381292b60987f4c0}{operator\%} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v1, const \hyperlink{classcsVector3}{cs\+Vector3} \&v2)\hypertarget{classcsVector3_a9cf0725e53867457381292b60987f4c0}{}\label{classcsVector3_a9cf0725e53867457381292b60987f4c0}
+
+\begin{DoxyCompactList}\small\item\em Take the cross product of two vectors. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a30480a5e6806462c14a4f7b1f5a140e0}{operator$\ast$} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, float f)\hypertarget{classcsVector3_a30480a5e6806462c14a4f7b1f5a140e0}{}\label{classcsVector3_a30480a5e6806462c14a4f7b1f5a140e0}
+
+\begin{DoxyCompactList}\small\item\em Multiply a vector and a scalar. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a296fecdbf1967232b32a117087c3f145}{operator$\ast$} (float f, const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsVector3_a296fecdbf1967232b32a117087c3f145}{}\label{classcsVector3_a296fecdbf1967232b32a117087c3f145}
+
+\begin{DoxyCompactList}\small\item\em Multiply a vector and a scalar. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a4f17ab6a2d111192460718ba7cfcd690}{operator$\ast$} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, int f)\hypertarget{classcsVector3_a4f17ab6a2d111192460718ba7cfcd690}{}\label{classcsVector3_a4f17ab6a2d111192460718ba7cfcd690}
+
+\begin{DoxyCompactList}\small\item\em Multiply a vector and a scalar int. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a34a0f8189f67eb601ba8a3862a31f493}{operator$\ast$} (int f, const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsVector3_a34a0f8189f67eb601ba8a3862a31f493}{}\label{classcsVector3_a34a0f8189f67eb601ba8a3862a31f493}
+
+\begin{DoxyCompactList}\small\item\em Multiply a vector and a scalar int. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a052b2559d5d577132492d1213bac4ce0}{operator/} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, float f)\hypertarget{classcsVector3_a052b2559d5d577132492d1213bac4ce0}{}\label{classcsVector3_a052b2559d5d577132492d1213bac4ce0}
+
+\begin{DoxyCompactList}\small\item\em Divide a vector by a scalar. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a7d8f52709a5520e2b9fa71ae9bdcc7fa}{operator/} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, int f)\hypertarget{classcsVector3_a7d8f52709a5520e2b9fa71ae9bdcc7fa}{}\label{classcsVector3_a7d8f52709a5520e2b9fa71ae9bdcc7fa}
+
+\begin{DoxyCompactList}\small\item\em Divide a vector by a scalar int. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsVector3_a66e0e8c5f4adc5dc97d9101ed7d087b8}{operator==} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v1, const \hyperlink{classcsVector3}{cs\+Vector3} \&v2)\hypertarget{classcsVector3_a66e0e8c5f4adc5dc97d9101ed7d087b8}{}\label{classcsVector3_a66e0e8c5f4adc5dc97d9101ed7d087b8}
+
+\begin{DoxyCompactList}\small\item\em Check if two vectors are equal. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsVector3_a14effb8e6e631957c158846343cc362e}{operator!=} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v1, const \hyperlink{classcsVector3}{cs\+Vector3} \&v2)\hypertarget{classcsVector3_a14effb8e6e631957c158846343cc362e}{}\label{classcsVector3_a14effb8e6e631957c158846343cc362e}
+
+\begin{DoxyCompactList}\small\item\em Check if two vectors are not equal. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a457aa88a73812661db71dac5aa422799}{operator$>$$>$} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v1, const \hyperlink{classcsVector3}{cs\+Vector3} \&v2)\hypertarget{classcsVector3_a457aa88a73812661db71dac5aa422799}{}\label{classcsVector3_a457aa88a73812661db71dac5aa422799}
+
+\begin{DoxyCompactList}\small\item\em Project one vector onto another. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsVector3_a5a6e8a9dd6eb45cf808d1f11e85e8a05}{operator$<$$<$} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v1, const \hyperlink{classcsVector3}{cs\+Vector3} \&v2)\hypertarget{classcsVector3_a5a6e8a9dd6eb45cf808d1f11e85e8a05}{}\label{classcsVector3_a5a6e8a9dd6eb45cf808d1f11e85e8a05}
+
+\begin{DoxyCompactList}\small\item\em Project one vector onto another. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsVector3_a6e1bbeabb9f0f71d3a0816111006c897}{operator$<$} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, float f)\hypertarget{classcsVector3_a6e1bbeabb9f0f71d3a0816111006c897}{}\label{classcsVector3_a6e1bbeabb9f0f71d3a0816111006c897}
+
+\begin{DoxyCompactList}\small\item\em Test if each component of a vector is less than a small epsilon value. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsVector3_ab810d5c75c97a7119cc48f9efb4cfa19}{operator$>$} (float f, const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsVector3_ab810d5c75c97a7119cc48f9efb4cfa19}{}\label{classcsVector3_ab810d5c75c97a7119cc48f9efb4cfa19}
+
+\begin{DoxyCompactList}\small\item\em Test if each component of a vector is less than a small epsilon value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 3D vector. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{cs\+Vector3@{cs\+Vector3}!cs\+Vector3@{cs\+Vector3}}
+\index{cs\+Vector3@{cs\+Vector3}!cs\+Vector3@{cs\+Vector3}}
+\subsubsection[{\texorpdfstring{cs\+Vector3()}{csVector3()}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Vector3\+::cs\+Vector3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsVector3_a27d80c7e6bcdaee093012aa843492ca6}{}\label{classcsVector3_a27d80c7e6bcdaee093012aa843492ca6}
+Make a new vector. The vector is not initialized. This makes the code slightly faster as \hyperlink{classcsVector3}{cs\+Vector3} objects are used a lot. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{d2/d97/classcsVector3_a27d80c7e6bcdaee093012aa843492ca6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Vector3@{cs\+Vector3}!cs\+Vector3@{cs\+Vector3}}
+\index{cs\+Vector3@{cs\+Vector3}!cs\+Vector3@{cs\+Vector3}}
+\subsubsection[{\texorpdfstring{cs\+Vector3(float m)}{csVector3(float m)}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Vector3\+::cs\+Vector3 (
+\begin{DoxyParamCaption}
+\item[{float}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsVector3_a0267a154da795520aa74c4861ab36d77}{}\label{classcsVector3_a0267a154da795520aa74c4861ab36d77}
+Make a new initialized vector. Creates a new vector and initializes it to m$\ast$$<$1,1,1$>$. To create a vector initialized to the zero vector, use \hyperlink{classcsVector3}{cs\+Vector3(0)} 
+
+\subsection{Member Function Documentation}
+\index{cs\+Vector3@{cs\+Vector3}!operator+@{operator+}}
+\index{operator+@{operator+}!cs\+Vector3@{cs\+Vector3}}
+\subsubsection[{\texorpdfstring{operator+(const cs\+Vector3 \&v2) const }{operator+(const csVector3 &v2) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} cs\+Vector3\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v2}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsVector3_a75181b739e17421a621bfc557684368c}{}\label{classcsVector3_a75181b739e17421a621bfc557684368c}
+Conversion from double precision vector to single. Add two vectors. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{d2/d97/classcsVector3_a75181b739e17421a621bfc557684368c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Vector3@{cs\+Vector3}!Unit@{Unit}}
+\index{Unit@{Unit}!cs\+Vector3@{cs\+Vector3}}
+\subsubsection[{\texorpdfstring{Unit() const }{Unit() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} cs\+Vector3\+::\+Unit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsVector3_adfe6a123b665375450d78bf47eee2b77}{}\label{classcsVector3_adfe6a123b665375450d78bf47eee2b77}
+Returns the unit vector in the direction of this vector. Attempting to normalize a zero-\/vector will result in a divide by zero error. This is as it should be... fix the calling code. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{d2/d97/classcsVector3_adfe6a123b665375450d78bf47eee2b77_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{d2/d97/classcsVector3_adfe6a123b665375450d78bf47eee2b77_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{cs\+Vector3@{cs\+Vector3}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!cs\+Vector3@{cs\+Vector3}}
+\subsubsection[{\texorpdfstring{operator$\ast$}{operator*}}]{\setlength{\rightskip}{0pt plus 5cm}float operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v1, }
+\item[{const {\bf cs\+Vector3} \&}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classcsVector3_a6b29c838ff34389fd676dd9a43fa1dea}{}\label{classcsVector3_a6b29c838ff34389fd676dd9a43fa1dea}
+
+
+Subtract two vectors of differing type, cast to double. 
+
+Subtract two vectors of differing type, cast to double. Take the dot product of two vectors. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/csgeom2/opvector3.\+h\item 
+cmd/collide2/csgeom2/opvector3.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,132 @@
+\hypertarget{classNetServer}{}\section{Net\+Server Class Reference}
+\label{classNetServer}\index{Net\+Server@{Net\+Server}}
+
+
+{\ttfamily \#include $<$netserver.\+h$>$}
+
+
+
+Collaboration diagram for Net\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{dd/d6e/classNetServer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries start} (int argc, char $\ast$$\ast$argv)\hypertarget{classNetServer_aee9eb56b19a071d78e6c2a1ec2e3d8e1}{}\label{classNetServer_aee9eb56b19a071d78e6c2a1ec2e3d8e1}
+
+\item 
+void {\bfseries save} ()\hypertarget{classNetServer_a842548b6e1b57b7d67b1345eff098a3c}{}\label{classNetServer_a842548b6e1b57b7d67b1345eff098a3c}
+
+\item 
+void {\bfseries broadcast} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, Obj\+Serial serial, unsigned short zone, Cmd command, bool is\+Tcp)\hypertarget{classNetServer_a2b22e7150100d83f61d56405aefb91c7}{}\label{classNetServer_a2b22e7150100d83f61d56405aefb91c7}
+
+\item 
+void {\bfseries broadcast\+Unit} (\hyperlink{classUnit}{Unit} $\ast$un, unsigned short zone)\hypertarget{classNetServer_ae4617ac1961bb0ba10c510c53da711f6}{}\label{classNetServer_ae4617ac1961bb0ba10c510c53da711f6}
+
+\item 
+void {\bfseries send\+New\+Unit\+Queue} ()\hypertarget{classNetServer_aca38f088430e71d1ba1c31751a3e11ec}{}\label{classNetServer_aca38f088430e71d1ba1c31751a3e11ec}
+
+\item 
+void {\bfseries Broadcast\+Cargo\+Upgrade} (Obj\+Serial sender, Obj\+Serial buyer, Obj\+Serial seller, const std\+::string \&cargo, float price, float mass, float volume, bool mission, unsigned int quantity, int mount\+Offset, int subunit\+Offset, unsigned short zone)\hypertarget{classNetServer_a5f1d92cd0d8fc0ae33d2f4797c855ec8}{}\label{classNetServer_a5f1d92cd0d8fc0ae33d2f4797c855ec8}
+
+\item 
+void {\bfseries Broadcast\+Target} (Obj\+Serial serial, Obj\+Serial oldtarg, Obj\+Serial target, unsigned short zone)\hypertarget{classNetServer_a954ea457f78da4e469073c596eab9798}{}\label{classNetServer_a954ea457f78da4e469073c596eab9798}
+
+\item 
+void {\bfseries Broadcast\+Unfire} (Obj\+Serial serial, const vector$<$ int $>$ \&weapon\+\_\+indicies, unsigned short zone)\hypertarget{classNetServer_a705fb4e8121cc8bc5087242e5aabd146}{}\label{classNetServer_a705fb4e8121cc8bc5087242e5aabd146}
+
+\item 
+void {\bfseries Broadcast\+Fire} (Obj\+Serial serial, const vector$<$ int $>$ \&weapon\+\_\+indicies, Obj\+Serial missile\+\_\+serial, float energy, unsigned short zone)\hypertarget{classNetServer_a3d213b89f66aee2fa7c0b939412e5ff0}{}\label{classNetServer_a3d213b89f66aee2fa7c0b939412e5ff0}
+
+\item 
+bool {\bfseries save\+Account} (int cpnum)\hypertarget{classNetServer_abb0e3fb15b773d5770fd986002597f44}{}\label{classNetServer_abb0e3fb15b773d5770fd986002597f44}
+
+\item 
+void {\bfseries send\+Custom} (int cp, const string \&cmd, const string \&args, const string \&id)\hypertarget{classNetServer_a65a4912fd344576217e72987c9f26693}{}\label{classNetServer_a65a4912fd344576217e72987c9f26693}
+
+\item 
+void {\bfseries send\+Damages} (Obj\+Serial serial, unsigned short zone, float hull, const \hyperlink{structShield}{Shield} \&shields, const \hyperlink{structArmor}{Armor} \&armor, float ppercentage, float spercentage, float amt, Vector \&pnt, Vector \&normal, \hyperlink{structGFXColor}{G\+F\+X\+Color} \&color)\hypertarget{classNetServer_a1ca1acc1d5722af390df9798c05e43c4}{}\label{classNetServer_a1ca1acc1d5722af390df9798c05e43c4}
+
+\item 
+void {\bfseries send\+Kill} (Obj\+Serial serial, unsigned short zone)\hypertarget{classNetServer_a4516e11671e5f793cdf9aa87c6d93c41}{}\label{classNetServer_a4516e11671e5f793cdf9aa87c6d93c41}
+
+\item 
+void {\bfseries send\+Jump} (\hyperlink{classUnit}{Unit} $\ast$src, \hyperlink{classUnit}{Unit} $\ast$jumppoint, const string \&destination)\hypertarget{classNetServer_a2b05a28fc2eae7b6794d17d8d31c6e9f}{}\label{classNetServer_a2b05a28fc2eae7b6794d17d8d31c6e9f}
+
+\item 
+void {\bfseries send\+Jump\+Final} (Client\+Ptr clt, const string \&server, unsigned short port)\hypertarget{classNetServer_a0e46893008393c8ec1f2acf5b18b4fef}{}\label{classNetServer_a0e46893008393c8ec1f2acf5b18b4fef}
+
+\item 
+void {\bfseries send\+Force\+Position} (Client\+Ptr clt)\hypertarget{classNetServer_ac8118d11e5502bad4deacae0feb7adec}{}\label{classNetServer_ac8118d11e5502bad4deacae0feb7adec}
+
+\item 
+void {\bfseries invalidate\+Snapshot} ()\hypertarget{classNetServer_afce30512c3356d17a1ebe3b143beb38d}{}\label{classNetServer_afce30512c3356d17a1ebe3b143beb38d}
+
+\item 
+void {\bfseries send\+Dock\+Authorize} (Obj\+Serial serial, Obj\+Serial utdwserial, int docknum, unsigned short zone)\hypertarget{classNetServer_aa60f9265ed8ef866661febdc6cd16e6b}{}\label{classNetServer_aa60f9265ed8ef866661febdc6cd16e6b}
+
+\item 
+void {\bfseries send\+Dock\+Deny} (Obj\+Serial serial, unsigned short zone)\hypertarget{classNetServer_a0ffaba942ad71aa4b3c4bb9b1004e02c}{}\label{classNetServer_a0ffaba942ad71aa4b3c4bb9b1004e02c}
+
+\item 
+void {\bfseries send\+Un\+Dock} (Obj\+Serial serial, Obj\+Serial utdwserial, unsigned short zone)\hypertarget{classNetServer_ab6616c72c08d3bebdfb1ddbbff9c791a}{}\label{classNetServer_ab6616c72c08d3bebdfb1ddbbff9c791a}
+
+\item 
+void {\bfseries send\+Credits} (Obj\+Serial serial, float creds)\hypertarget{classNetServer_a8dd4f612096cbd28e102b1fabbb916ea}{}\label{classNetServer_a8dd4f612096cbd28e102b1fabbb916ea}
+
+\item 
+void {\bfseries add\+Unit\+Cargo\+Snapshot} (const \hyperlink{classUnit}{Unit} $\ast$un, \hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf)\hypertarget{classNetServer_a306501bf1fe1965a37ce1c8c64a03d39}{}\label{classNetServer_a306501bf1fe1965a37ce1c8c64a03d39}
+
+\item 
+void {\bfseries send\+Cargo\+Snapshot} (Obj\+Serial serial, const \hyperlink{classUnitCollection}{Unit\+Collection} \&unitlist)\hypertarget{classNetServer_ab3e318ffdbc70cf629a792537dd22fe9}{}\label{classNetServer_ab3e318ffdbc70cf629a792537dd22fe9}
+
+\item 
+void {\bfseries send\+Message} (const string \&from, const string \&to, const string \&message, float delay)\hypertarget{classNetServer_a5112ee2452821f9dbd1ceae715290310}{}\label{classNetServer_a5112ee2452821f9dbd1ceae715290310}
+
+\item 
+void {\bfseries send\+Communication} (\hyperlink{classUnit}{Unit} $\ast$from, \hyperlink{classUnit}{Unit} $\ast$to, const class \hyperlink{classCommunicationMessage}{Communication\+Message} $\ast$c)\hypertarget{classNetServer_a209b19d2ffe21a5ced642b2d4a37c66c}{}\label{classNetServer_a209b19d2ffe21a5ced642b2d4a37c66c}
+
+\item 
+void {\bfseries send\+Save\+Data} (int cp, unsigned short packet\+Type, int pos, const string $\ast$key, \hyperlink{classMission}{Mission} $\ast$miss, const string $\ast$str\+Value, const float $\ast$float\+Value)\hypertarget{classNetServer_ab10c9e11bf008ecd80e8bce9d1c81c6f}{}\label{classNetServer_ab10c9e11bf008ecd80e8bce9d1c81c6f}
+
+\item 
+void {\bfseries send\+Mission} (int cp, unsigned short packet\+Type, string mission, int pos)\hypertarget{classNetServer_a038cefd35694c26d4056198a7d86d4a9}{}\label{classNetServer_a038cefd35694c26d4056198a7d86d4a9}
+
+\item 
+void {\bfseries add\+System} (string \&sysname, string \&system)\hypertarget{classNetServer_abeefd290d2f417a0c46a211e547a7143}{}\label{classNetServer_abeefd290d2f417a0c46a211e547a7143}
+
+\item 
+void {\bfseries close\+All\+Sockets} ()\hypertarget{classNetServer_a04af589f4c654fd17569e676b4d17762}{}\label{classNetServer_a04af589f4c654fd17569e676b4d17762}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZoneMgr}{Zone\+Mgr} $\ast$ {\bfseries zonemgr}\hypertarget{classNetServer_a4b2ac4a951b6174796e05ad99b800e02}{}\label{classNetServer_a4b2ac4a951b6174796e05ad99b800e02}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Zone\+Mgr}\hypertarget{classNetServer_ae0e24ddfa25f21ca918d843acdb8d513}{}\label{classNetServer_ae0e24ddfa25f21ca918d843acdb8d513}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class Netserver \+: runs the \char`\"{}game server\char`\"{} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/netserver.\+h\item 
+networking/netserver.\+cpp\item 
+networking/netserver\+\_\+acct.\+cpp\item 
+networking/netserver\+\_\+clients.\+cpp\item 
+networking/netserver\+\_\+devices.\+cpp\item 
+networking/netserver\+\_\+login.\+cpp\item 
+networking/netserver\+\_\+net.\+cpp\end{DoxyCompactItemize}

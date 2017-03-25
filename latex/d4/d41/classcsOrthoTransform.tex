@@ -1,0 +1,122 @@
+\hypertarget{classcsOrthoTransform}{}\section{cs\+Ortho\+Transform Class Reference}
+\label{classcsOrthoTransform}\index{cs\+Ortho\+Transform@{cs\+Ortho\+Transform}}
+
+
+{\ttfamily \#include $<$optransfrm.\+h$>$}
+
+
+
+Inheritance diagram for cs\+Ortho\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/daf/classcsOrthoTransform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cs\+Ortho\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/db6/classcsOrthoTransform__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsOrthoTransform_a21956bd7babb5be7864b4b0c8da3c3bc}{cs\+Ortho\+Transform} ()
+\item 
+\hyperlink{classcsOrthoTransform_add19421188e21e7e33303d70a5658edb}{cs\+Ortho\+Transform} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&o2t, const \hyperlink{classcsVector3}{cs\+Vector3} \&pos)
+\item 
+\hyperlink{classcsOrthoTransform_a6c4d9be981e5487d02baa4015fd2d748}{cs\+Ortho\+Transform} (const \hyperlink{classcsTransform}{cs\+Transform} \&t)
+\item 
+virtual void \hyperlink{classcsOrthoTransform_a2c075ede84fdeddac05480eb5a39b85d}{Set\+O2T} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&m)
+\item 
+virtual void \hyperlink{classcsOrthoTransform_a851a3ee657be77e99ba8b926f837eeed}{Set\+T2O} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&m)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class which defines a reversible transformation from one coordinate system to another by maintaining an inverse transformation matrix. This is a variant which only works on orthonormal transformations (like the camera transformation) and is consequently much more optimal. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{cs\+Ortho\+Transform@{cs\+Ortho\+Transform}!cs\+Ortho\+Transform@{cs\+Ortho\+Transform}}
+\index{cs\+Ortho\+Transform@{cs\+Ortho\+Transform}!cs\+Ortho\+Transform@{cs\+Ortho\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Ortho\+Transform()}{csOrthoTransform()}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Ortho\+Transform\+::cs\+Ortho\+Transform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsOrthoTransform_a21956bd7babb5be7864b4b0c8da3c3bc}{}\label{classcsOrthoTransform_a21956bd7babb5be7864b4b0c8da3c3bc}
+Initialize with the identity transformation. \index{cs\+Ortho\+Transform@{cs\+Ortho\+Transform}!cs\+Ortho\+Transform@{cs\+Ortho\+Transform}}
+\index{cs\+Ortho\+Transform@{cs\+Ortho\+Transform}!cs\+Ortho\+Transform@{cs\+Ortho\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Ortho\+Transform(const cs\+Matrix3 \&o2t, const cs\+Vector3 \&pos)}{csOrthoTransform(const csMatrix3 &o2t, const csVector3 &pos)}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Ortho\+Transform\+::cs\+Ortho\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{o2t, }
+\item[{const {\bf cs\+Vector3} \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsOrthoTransform_add19421188e21e7e33303d70a5658edb}{}\label{classcsOrthoTransform_add19421188e21e7e33303d70a5658edb}
+Initialize with the given transformation. \index{cs\+Ortho\+Transform@{cs\+Ortho\+Transform}!cs\+Ortho\+Transform@{cs\+Ortho\+Transform}}
+\index{cs\+Ortho\+Transform@{cs\+Ortho\+Transform}!cs\+Ortho\+Transform@{cs\+Ortho\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Ortho\+Transform(const cs\+Transform \&t)}{csOrthoTransform(const csTransform &t)}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Ortho\+Transform\+::cs\+Ortho\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Transform} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsOrthoTransform_a6c4d9be981e5487d02baa4015fd2d748}{}\label{classcsOrthoTransform_a6c4d9be981e5487d02baa4015fd2d748}
+Initialize with the given transformation. 
+
+\subsection{Member Function Documentation}
+\index{cs\+Ortho\+Transform@{cs\+Ortho\+Transform}!Set\+O2T@{Set\+O2T}}
+\index{Set\+O2T@{Set\+O2T}!cs\+Ortho\+Transform@{cs\+Ortho\+Transform}}
+\subsubsection[{\texorpdfstring{Set\+O2\+T(const cs\+Matrix3 \&m)}{SetO2T(const csMatrix3 &m)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void cs\+Ortho\+Transform\+::\+Set\+O2T (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classcsOrthoTransform_a2c075ede84fdeddac05480eb5a39b85d}{}\label{classcsOrthoTransform_a2c075ede84fdeddac05480eb5a39b85d}
+Set \textquotesingle{}other\textquotesingle{} to \textquotesingle{}this\textquotesingle{} transformation matrix. 
+
+Reimplemented from \hyperlink{classcsReversibleTransform_a7adc3d305ab65cd54d4360d5fcf8c0f1}{cs\+Reversible\+Transform}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d41/classcsOrthoTransform_a2c075ede84fdeddac05480eb5a39b85d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Ortho\+Transform@{cs\+Ortho\+Transform}!Set\+T2O@{Set\+T2O}}
+\index{Set\+T2O@{Set\+T2O}!cs\+Ortho\+Transform@{cs\+Ortho\+Transform}}
+\subsubsection[{\texorpdfstring{Set\+T2\+O(const cs\+Matrix3 \&m)}{SetT2O(const csMatrix3 &m)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void cs\+Ortho\+Transform\+::\+Set\+T2O (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classcsOrthoTransform_a851a3ee657be77e99ba8b926f837eeed}{}\label{classcsOrthoTransform_a851a3ee657be77e99ba8b926f837eeed}
+Set \textquotesingle{}this\textquotesingle{} to \textquotesingle{}other\textquotesingle{} transformation matrix. 
+
+Reimplemented from \hyperlink{classcsReversibleTransform_aa0ae7c7834a8104fa463f9501734337c}{cs\+Reversible\+Transform}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d41/classcsOrthoTransform_a851a3ee657be77e99ba8b926f837eeed_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/csgeom2/optransfrm.\+h\end{DoxyCompactItemize}

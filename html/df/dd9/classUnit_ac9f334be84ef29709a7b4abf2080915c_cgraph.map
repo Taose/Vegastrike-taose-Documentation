@@ -1,0 +1,4 @@
+<map id="Unit::beginElement" name="Unit::beginElement">
+<area shape="rect" id="node2" href="$d9/d5e/classMesh.html#a84d2ab29e6396ba87c49813145ab2bc2" title="Gets all polygons in this mesh for collision computation. " alt="" coords="187,29,303,56"/>
+<area shape="rect" id="node3" href="$d9/de6/classGFXVertexList.html#a59a08674ffc8cad57e0961b05110333e" title="returns a packed vertex list with number of polys and number of tries to passed in arguments..." alt="" coords="351,29,521,56"/>
+</map>

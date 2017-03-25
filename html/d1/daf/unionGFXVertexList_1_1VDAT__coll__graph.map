@@ -1,0 +1,4 @@
+<map id="GFXVertexList::VDAT" name="GFXVertexList::VDAT">
+<area shape="rect" id="node2" href="$d6/d21/structGFXVertex.html" title="Vertex, Normal, Texture, and (deprecated) Environment Mapping T2F_N3F_V3F format. ..." alt="" coords="5,5,149,435"/>
+<area shape="rect" id="node3" href="$d2/dd1/structGFXColorVertex.html" title="This vertex is used for the interleaved array argument for color based arrays T2F_C4F_N3F_V3F. " alt="" coords="173,20,317,420"/>
+</map>

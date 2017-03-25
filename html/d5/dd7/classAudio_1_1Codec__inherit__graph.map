@@ -1,0 +1,4 @@
+<map id="Audio::Codec" name="Audio::Codec">
+<area shape="rect" id="node2" href="$d5/d17/classAudio_1_1FFCodec.html" title="{Audio::FFCodec\n||+ FFCodec()\l+ ~FFCodec()\l+ canHandle()\l+ open()\l}" alt="" coords="5,211,123,333"/>
+<area shape="rect" id="node3" href="$d7/d4f/classAudio_1_1OggCodec.html" title="{Audio::OggCodec\n||+ OggCodec()\l+ ~OggCodec()\l+ getExtensions()\l+ canHandle()\l+ open()\l}" alt="" coords="147,204,272,340"/>
+</map>

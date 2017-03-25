@@ -1,0 +1,97 @@
+\hypertarget{structShield}{}\section{Shield Struct Reference}
+\label{structShield}\index{Shield@{Shield}}
+
+
+Shielding Struct holding values of current shields.  
+
+
+
+
+{\ttfamily \#include $<$unit\+\_\+armorshield.\+h$>$}
+
+
+
+Collaboration diagram for Shield\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{d9/d65/structShield__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structShield_a212b4c950825f5d124101f72d96fb7b4}{recharge}\hypertarget{structShield_a212b4c950825f5d124101f72d96fb7b4}{}\label{structShield_a212b4c950825f5d124101f72d96fb7b4}
+
+\begin{DoxyCompactList}\small\item\em How much the shield recharges per second. \end{DoxyCompactList}\item 
+float {\bfseries efficiency}\hypertarget{structShield_aa21bfd77a0dad80a00cda7cab913099b}{}\label{structShield_aa21bfd77a0dad80a00cda7cab913099b}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>float {\bfseries front}\\
+\>\>float {\bfseries back}\\
+\>\>float {\bfseries padding} \mbox{[}6\mbox{]}\\
+\>\>float {\bfseries frontmax}\\
+\>\>float {\bfseries backmax}\\
+\>\} \hyperlink{structShield_a4a69c963a18e6968ca40ca5eb8503561}{shield2fb}\\
+\>\>\>{\em if shield is 2 big, 2 floats make this shield up, and 2 floats for max \{front,back,frontmax,backmax\} }\\
+\>struct \{\\
+\>\>float {\bfseries front}\\
+\>\>float {\bfseries back}\\
+\>\>float {\bfseries right}\\
+\>\>float {\bfseries left}\\
+\>\>float {\bfseries padding} \mbox{[}4\mbox{]}\\
+\>\>float {\bfseries frontmax}\\
+\>\>float {\bfseries backmax}\\
+\>\>float {\bfseries rightmax}\\
+\>\>float {\bfseries leftmax}\\
+\>\} \hyperlink{structShield_a65159b025a5e6b5ff99b39c1a9ce6e2c}{shield4fbrl}\\
+\>\>\>{\em If the shield if 4 big, 4 floats make the shield up, and 4 keep track of max recharge value. }\\
+\>struct \{\\
+\>\>float {\bfseries frontrighttop}\\
+\>\>float {\bfseries backrighttop}\\
+\>\>float {\bfseries frontlefttop}\\
+\>\>float {\bfseries backlefttop}\\
+\>\>float {\bfseries frontrightbottom}\\
+\>\>float {\bfseries backrightbottom}\\
+\>\>float {\bfseries frontleftbottom}\\
+\>\>float {\bfseries backleftbottom}\\
+\>\>float {\bfseries frontrighttopmax}\\
+\>\>float {\bfseries backrighttopmax}\\
+\>\>float {\bfseries frontlefttopmax}\\
+\>\>float {\bfseries backlefttopmax}\\
+\>\>float {\bfseries frontrightbottommax}\\
+\>\>float {\bfseries backrightbottommax}\\
+\>\>float {\bfseries frontleftbottommax}\\
+\>\>float {\bfseries backleftbottommax}\\
+\>\} \hyperlink{structShield_ade18336231e55e0a0cd6b85f29cc8271}{shield8}\\
+\>\>\>{\em If the shield is 8 sided, 16 floats make it up. }\\
+\>struct \{\\
+\>\>float {\bfseries cur} \mbox{[}MAX\_SHIELD\_NUMBER\mbox{]}\\
+\>\>float {\bfseries max} \mbox{[}MAX\_SHIELD\_NUMBER\mbox{]}\\
+\>\} {\bfseries shield}\\
+\}; \hypertarget{structShield_ade95d213b77231a3d9b47076e4158107}{}\label{structShield_ade95d213b77231a3d9b47076e4158107}
+\\
+
+\end{tabbing}\item 
+\hyperlink{structShieldFacing}{Shield\+Facing} {\bfseries range} \mbox{[}M\+A\+X\+\_\+\+S\+H\+I\+E\+L\+D\+\_\+\+N\+U\+M\+B\+ER\mbox{]}\hypertarget{structShield_ab5ed3311a6ddcb821bb44588be3a3195}{}\label{structShield_ab5ed3311a6ddcb821bb44588be3a3195}
+
+\item 
+signed char \hyperlink{structShield_a244d5c67eafb55a8409d436d51b26760}{number}\hypertarget{structShield_a244d5c67eafb55a8409d436d51b26760}{}\label{structShield_a244d5c67eafb55a8409d436d51b26760}
+
+\begin{DoxyCompactList}\small\item\em the number of shields in the current shielding struct \end{DoxyCompactList}\item 
+char \hyperlink{structShield_af8e0daf8b4a71852253e4b0c8c6c042e}{leak}\hypertarget{structShield_af8e0daf8b4a71852253e4b0c8c6c042e}{}\label{structShield_af8e0daf8b4a71852253e4b0c8c6c042e}
+
+\begin{DoxyCompactList}\small\item\em What percentage leaks (divide by 100\%) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Shielding Struct holding values of current shields. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/unit\+\_\+armorshield.\+h\end{DoxyCompactItemize}

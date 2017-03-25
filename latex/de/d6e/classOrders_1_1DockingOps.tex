@@ -1,0 +1,62 @@
+\hypertarget{classOrders_1_1DockingOps}{}\section{Orders\+:\+:Docking\+Ops Class Reference}
+\label{classOrders_1_1DockingOps}\index{Orders\+::\+Docking\+Ops@{Orders\+::\+Docking\+Ops}}
+
+
+Inheritance diagram for Orders\+:\+:Docking\+Ops\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/dfa/classOrders_1_1DockingOps__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Orders\+:\+:Docking\+Ops\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d54/classOrders_1_1DockingOps__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Vector {\bfseries Movement} (\hyperlink{classUnit}{Unit} $\ast$utdw)\hypertarget{classOrders_1_1DockingOps_a172b851c51f5d09c00823c6a32300956}{}\label{classOrders_1_1DockingOps_a172b851c51f5d09c00823c6a32300956}
+
+\item 
+{\bfseries Docking\+Ops} (\hyperlink{classUnit}{Unit} $\ast$unit\+To\+Dock\+With, \hyperlink{classOrder}{Order} $\ast$oldstate, bool physically\+Dock, bool keeptrying)\hypertarget{classOrders_1_1DockingOps_a342ab326114f62ab8797672c457d2173}{}\label{classOrders_1_1DockingOps_a342ab326114f62ab8797672c457d2173}
+
+\item 
+virtual void \hyperlink{classOrders_1_1DockingOps_a4b192de706e5ee7d251efdb7630ebc86}{Set\+Parent} (\hyperlink{classUnit}{Unit} $\ast$par)\hypertarget{classOrders_1_1DockingOps_a4b192de706e5ee7d251efdb7630ebc86}{}\label{classOrders_1_1DockingOps_a4b192de706e5ee7d251efdb7630ebc86}
+
+\begin{DoxyCompactList}\small\item\em Sets the parent of this \hyperlink{classUnit}{Unit}. Any virtual functions must call this one. \end{DoxyCompactList}\item 
+void \hyperlink{classOrders_1_1DockingOps_a3c520293b417dbf2d9b97f685cb59f93}{Execute} ()\hypertarget{classOrders_1_1DockingOps_a3c520293b417dbf2d9b97f685cb59f93}{}\label{classOrders_1_1DockingOps_a3c520293b417dbf2d9b97f685cb59f93}
+
+\begin{DoxyCompactList}\small\item\em The function that gets called and executes all queued suborders. \end{DoxyCompactList}\item 
+bool {\bfseries Request\+Clearence} (\hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1DockingOps_a2cb0c040e51f21653e0ede836ce2cd72}{}\label{classOrders_1_1DockingOps_a2cb0c040e51f21653e0ede836ce2cd72}
+
+\item 
+bool {\bfseries Dock\+To\+Target} (\hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1DockingOps_a02d8c94db38d907473e07b295c6d587a}{}\label{classOrders_1_1DockingOps_a02d8c94db38d907473e07b295c6d587a}
+
+\item 
+bool {\bfseries Perform\+Docking\+Operations} (\hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1DockingOps_af3710294c032309ff0ec569d8ddf3d16}{}\label{classOrders_1_1DockingOps_af3710294c032309ff0ec569d8ddf3d16}
+
+\item 
+bool {\bfseries Undock} (\hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1DockingOps_a3e8953638805366c80624d71e481208a}{}\label{classOrders_1_1DockingOps_a3e8953638805366c80624d71e481208a}
+
+\item 
+virtual void \hyperlink{classOrders_1_1DockingOps_a8100dff0d09ee8e706b16b60c2477304}{Destroy} ()\hypertarget{classOrders_1_1DockingOps_a8100dff0d09ee8e706b16b60c2477304}{}\label{classOrders_1_1DockingOps_a8100dff0d09ee8e706b16b60c2477304}
+
+\begin{DoxyCompactList}\small\item\em The virutal function that unrefs all memory then calls Destruct () which takes care of unreffing this or calling delete on this. \end{DoxyCompactList}\item 
+void {\bfseries Restore\+Old\+AI} ()\hypertarget{classOrders_1_1DockingOps_a9b3e56121f535c1b94409a57243b08be}{}\label{classOrders_1_1DockingOps_a9b3e56121f535c1b94409a57243b08be}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/docking.\+h\item 
+cmd/ai/docking.\+cpp\end{DoxyCompactItemize}

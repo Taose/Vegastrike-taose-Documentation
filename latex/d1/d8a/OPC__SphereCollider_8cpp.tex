@@ -1,0 +1,90 @@
+\hypertarget{OPC__SphereCollider_8cpp}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Sphere\+Collider.cpp File Reference}
+\label{OPC__SphereCollider_8cpp}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp@{cmd/collide2/\+O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp}}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Sphere\+A\+A\+B\+B\+Overlap.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Sphere\+Tri\+Overlap.\+h\char`\"{}}\\*
+Include dependency graph for O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d62/OPC__SphereCollider_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}(prim\+\_\+index,  flag)
+\item 
+\#define \hyperlink{OPC__SphereCollider_8cpp_a3a4cf18d98241fd8271e4849f5f07a73}{S\+P\+H\+E\+R\+E\+\_\+\+P\+R\+IM}(prim\+\_\+index,  flag)
+\begin{DoxyCompactList}\small\item\em Sphere-\/triangle overlap test. \end{DoxyCompactList}\item 
+\#define {\bfseries T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+P\+H\+E\+RE}(center,  extents)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for a sphere collider.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June, 2, 2001 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp@{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp}!S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}}
+\index{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}!O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp@{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}{SET_CONTACT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__SphereCollider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}{}\label{OPC__SphereCollider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Set contact status */}                                            \(\backslash\)
+    mFlags |= flag;                                                     \(\backslash\)
+    mTouchedPrimitives->Add(prim\_index);
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp@{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp}!S\+P\+H\+E\+R\+E\+\_\+\+P\+R\+IM@{S\+P\+H\+E\+R\+E\+\_\+\+P\+R\+IM}}
+\index{S\+P\+H\+E\+R\+E\+\_\+\+P\+R\+IM@{S\+P\+H\+E\+R\+E\+\_\+\+P\+R\+IM}!O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp@{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+P\+H\+E\+R\+E\+\_\+\+P\+R\+IM}{SPHERE_PRIM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+H\+E\+R\+E\+\_\+\+P\+R\+IM(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__SphereCollider_8cpp_a3a4cf18d98241fd8271e4849f5f07a73}{}\label{OPC__SphereCollider_8cpp_a3a4cf18d98241fd8271e4849f5f07a73}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Request vertices from the app */}                                 \(\backslash\)
+    VertexPointers VP;  mIMesh->GetTriangle(VP, prim\_index);            \(\backslash\)
+                                                                        \(\backslash\)
+    \textcolor{comment}{/* Perform sphere-tri overlap test */}                               \(\backslash\)
+    if(SphereTriOverlap(*VP.Vertex[0], *VP.Vertex[1], *VP.Vertex[2]))   \(\backslash\)
+    \{                                                                   \(\backslash\)
+        SET\_CONTACT(prim\_index, flag)                                   \(\backslash\)
+    \}
+\end{DoxyCode}
+
+
+Sphere-\/triangle overlap test. 
+
+\index{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp@{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp}!T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+P\+H\+E\+RE@{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+P\+H\+E\+RE}}
+\index{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+P\+H\+E\+RE@{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+P\+H\+E\+RE}!O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp@{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+P\+H\+E\+RE}{TEST_BOX_IN_SPHERE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+P\+H\+E\+RE(
+\begin{DoxyParamCaption}
+\item[{}]{center, }
+\item[{}]{extents}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__SphereCollider_8cpp_abef4ecbb91eeb0fdc1099567f9b2429f}{}\label{OPC__SphereCollider_8cpp_abef4ecbb91eeb0fdc1099567f9b2429f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(SphereContainsBox(center, extents))  \(\backslash\)
+    \{                                       \(\backslash\)
+        \textcolor{comment}{/* Set contact status */}            \(\backslash\)
+        mFlags |= \hyperlink{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca53e8ef89e9c1f26e6f7a8c6ced5a8089}{OPC\_CONTACT};               \(\backslash\)
+        \_Dump(node);                        \(\backslash\)
+        return;                             \(\backslash\)
+    \}
+\end{DoxyCode}

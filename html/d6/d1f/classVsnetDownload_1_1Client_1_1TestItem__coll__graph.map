@@ -1,0 +1,5 @@
+<map id="VsnetDownload::Client::TestItem" name="VsnetDownload::Client::TestItem">
+<area shape="rect" id="node2" href="$df/d3a/classVsnetDownload_1_1Client_1_1Item.html" title="{VsnetDownload::Client\l::Item\n||+ Item()\l+ ~Item()\l+ state()\l+ error()\l+ changeState()\l+ changeState()\l+ setFileType()\l+ getFileType()\l+ setSize()\l+ append()\l+ getFilename()\l+ getSock()\l+ get_fd()\l# childSetSize()\l# childAppend()\l# protected_replace_notifier()\l}" alt="" coords="5,189,196,501"/>
+<area shape="rect" id="node4" href="$d1/dc5/classVsnetDownload_1_1Client_1_1NotifyMe.html" title="{VsnetDownload::Client\l::NotifyMe\n||+ NotifyMe()\l+ ~NotifyMe()\l+ notify()\l+ setTotalBytes()\l+ addBytes()\l+ done()\l+ ok()\l+ total()\l+ offset()\l}" alt="" coords="220,241,376,450"/>
+<area shape="rect" id="node5" href="$db/d76/classVsnetDownload_1_1Client_1_1Notify.html" title="{VsnetDownload::Client\l::Notify\n||+ notify()\l+ setTotalBytes()\l+ addBytes()\l}" alt="" coords="220,5,376,127"/>
+</map>

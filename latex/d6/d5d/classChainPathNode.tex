@@ -1,0 +1,76 @@
+\hypertarget{classChainPathNode}{}\section{Chain\+Path\+Node Class Reference}
+\label{classChainPathNode}\index{Chain\+Path\+Node@{Chain\+Path\+Node}}
+
+
+Inheritance diagram for Chain\+Path\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d3/d64/classChainPathNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Chain\+Path\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d0/dcf/classChainPathNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Part\+Type} \{ {\bfseries S\+O\+U\+R\+CE}, 
+{\bfseries D\+E\+S\+T\+I\+N\+A\+T\+I\+ON}, 
+{\bfseries A\+L\+L\+\_\+\+P\+O\+I\+N\+TS}
+ \}\hypertarget{classChainPathNode_add81b3fc52e9012a66a5fd39505294ed}{}\label{classChainPathNode_add81b3fc52e9012a66a5fd39505294ed}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+Absolute} () const \hypertarget{classChainPathNode_a6121fdb1bed5cb13abd3dfbb4b36d9c2}{}\label{classChainPathNode_a6121fdb1bed5cb13abd3dfbb4b36d9c2}
+
+\item 
+bool {\bfseries is\+Sourceable} () const \hypertarget{classChainPathNode_aaf00c15e8d2058bb3580e0ad33d33ae6}{}\label{classChainPathNode_aaf00c15e8d2058bb3580e0ad33d33ae6}
+
+\item 
+std\+::string {\bfseries get\+Description} () const \hypertarget{classChainPathNode_afa682ac581e02d20cae1e74e8ec3a6de}{}\label{classChainPathNode_afa682ac581e02d20cae1e74e8ec3a6de}
+
+\item 
+\hyperlink{classNavPath}{Nav\+Path} $\ast$ {\bfseries get\+Required\+Path} ()\hypertarget{classChainPathNode_a8871216caebf21b9c6e2f25fe02bdae3}{}\label{classChainPathNode_a8871216caebf21b9c6e2f25fe02bdae3}
+
+\item 
+std\+::deque$<$ unsigned $>$ {\bfseries init\+Search\+Queue} () const \hypertarget{classChainPathNode_a38edf5973e60c7da59a5704a182f2ca0}{}\label{classChainPathNode_a38edf5973e60c7da59a5704a182f2ca0}
+
+\item 
+bool {\bfseries is\+Destination} (unsigned index) const \hypertarget{classChainPathNode_ad31edf6977ed8cc07ed73d0976070028}{}\label{classChainPathNode_ad31edf6977ed8cc07ed73d0976070028}
+
+\item 
+void {\bfseries set\+Supplier\+Path} (\hyperlink{classNavPath}{Nav\+Path} $\ast$supplier)\hypertarget{classChainPathNode_a99354429a2845014fc19a27c2889a21e}{}\label{classChainPathNode_a99354429a2845014fc19a27c2889a21e}
+
+\item 
+\hyperlink{classNavPath}{Nav\+Path} $\ast$ {\bfseries get\+Supplier\+Path} ()\hypertarget{classChainPathNode_a604c33fc6d7262b08393292f7c385f80}{}\label{classChainPathNode_a604c33fc6d7262b08393292f7c385f80}
+
+\item 
+void {\bfseries set\+Part\+Type} (Part\+Type part)\hypertarget{classChainPathNode_ac0940fb1aa9608e315c84b7ccf9ddfea}{}\label{classChainPathNode_ac0940fb1aa9608e315c84b7ccf9ddfea}
+
+\item 
+Part\+Type {\bfseries get\+Part\+Type} ()\hypertarget{classChainPathNode_aa3cbfcb2f7e9ee58e584d0d31efb920d}{}\label{classChainPathNode_aa3cbfcb2f7e9ee58e584d0d31efb920d}
+
+\item 
+\hyperlink{classPathNode}{Path\+Node} $\ast$ {\bfseries clone} () const \hypertarget{classChainPathNode_afd515aaee54cac05451c1273436321e1}{}\label{classChainPathNode_afd515aaee54cac05451c1273436321e1}
+
+\item 
+{\bfseries Chain\+Path\+Node} (\hyperlink{classNavPath}{Nav\+Path} $\ast$supplier, Part\+Type part)\hypertarget{classChainPathNode_a8fcd6918f3fbbafba8c513e7efe7a654}{}\label{classChainPathNode_a8fcd6918f3fbbafba8c513e7efe7a654}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/nav/navpath.\+h\item 
+gfx/nav/navpath.\+cpp\end{DoxyCompactItemize}

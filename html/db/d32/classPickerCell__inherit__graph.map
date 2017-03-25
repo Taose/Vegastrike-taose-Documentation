@@ -1,0 +1,4 @@
+<map id="PickerCell" name="PickerCell">
+<area shape="rect" id="node2" href="$d5/d54/classSimplePickerCell.html" title="{SimplePickerCell\n|# m_text\l# m_id\l# m_textColor\l# m_tag\l# m_children\l|+ text()\l+ id()\l+ textColor()\l+ children()\l+ tag()\l+ setTextColor()\l+ addChild()\l+ createEmptyChildList()\l+ SimplePickerCell()\l+ ~SimplePickerCell()\l+ operator=()\l+ SimplePickerCell()\l}" alt="" coords="5,248,172,545"/>
+<area shape="rect" id="node3" href="$d3/d1d/classValuedPickerCell.html" title="{ValuedPickerCell\&lt; T \&gt;\n|# m_value\l|+ ValuedPickerCell()\l+ ~ValuedPickerCell()\l+ value()\l+ ValuedPickerCell()\l}" alt="" coords="11,593,166,715"/>
+</map>

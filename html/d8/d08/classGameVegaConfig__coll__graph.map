@@ -1,0 +1,6 @@
+<map id="GameVegaConfig" name="GameVegaConfig">
+<area shape="rect" id="node2" href="$d7/d84/classVegaConfig.html" title="{VegaConfig\n|+ axis_axis\l+ axis_joy\l+ axis_inverse\l+ hatswitch\l+ hatswitch_margin\l+ hatswitch_axis\l+ hatswitch_joystick\l# hs_value_index\l|+ VegaConfig()\l+ ~VegaConfig()\l+ getColor()\l+ getColor()\l+ gethColor()\l+ getColor()\l+ getVariable()\l+ getVariable()\l+ findSection()\l+ findEntry()\l+ setVariable()\l+ setVariable()\l+ setVariable()\l+ Variables()\l+ bindKeys()\l# getVariable()\l# checkConfig()\l# doVariables()\l# checkSection()\l# checkVar()\l# doSection()\l# doVar()\l# doColors()\l# checkColor()\l# doBindings()\l# checkBind()\l# doAxis()\l# checkHatswitch()\l}" alt="" coords="219,543,362,1119"/>
+<area shape="rect" id="node3" href="$da/d26/classconfigNode.html" title="{configNode\n||}" alt="" coords="107,373,195,451"/>
+<area shape="rect" id="node4" href="$da/df5/classeasyDomNode.html" title="{easyDomNode\n||+ easyDomNode()\l+ set()\l+ printNode()\l+ addChild()\l+ Name()\l+ set_attribute()\l+ attr_value()\l}" alt="" coords="41,145,170,311"/>
+<area shape="rect" id="node6" href="$d5/dbd/classvColor.html" title="{vColor\n|+ r\l+ g\l+ b\l+ a\l|}" alt="" coords="201,167,261,289"/>
+</map>

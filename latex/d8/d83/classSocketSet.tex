@@ -1,0 +1,88 @@
+\hypertarget{classSocketSet}{}\section{Socket\+Set Class Reference}
+\label{classSocketSet}\index{Socket\+Set@{Socket\+Set}}
+
+
+Inheritance diagram for Socket\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{dd/d73/classSocketSet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Socket\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{da/dfa/classSocketSet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Socket\+Set} (bool blockmainthread=false)\hypertarget{classSocketSet_aef9f5b1026c5e521fb1f8c97b242da92}{}\label{classSocketSet_aef9f5b1026c5e521fb1f8c97b242da92}
+
+\item 
+bool {\bfseries add\+Download\+Manager} (boost\+::shared\+\_\+ptr$<$ \hyperlink{classVsnetDownload_1_1Client_1_1Manager}{Vsnet\+Download\+::\+Client\+::\+Manager} $>$mgr)\hypertarget{classSocketSet_a02c4926c36794e1b4574d22c31b5f839}{}\label{classSocketSet_a02c4926c36794e1b4574d22c31b5f839}
+
+\item 
+bool {\bfseries add\+Download\+Manager} (boost\+::shared\+\_\+ptr$<$ \hyperlink{classVsnetDownload_1_1Server_1_1Manager}{Vsnet\+Download\+::\+Server\+::\+Manager} $>$mgr)\hypertarget{classSocketSet_a7649a6a98bec752aaeaa5da146a12733}{}\label{classSocketSet_a7649a6a98bec752aaeaa5da146a12733}
+
+\item 
+void \hyperlink{classSocketSet_a85738f60b18c86b7e95195c45789750b}{set} (\hyperlink{classVsnetSocketBase}{Vsnet\+Socket\+Base} $\ast$s)
+\item 
+void \hyperlink{classSocketSet_a1b306ed68692b9d930fe0cf6c02aad86}{unset} (\hyperlink{classVsnetSocketBase}{Vsnet\+Socket\+Base} $\ast$s)\hypertarget{classSocketSet_a1b306ed68692b9d930fe0cf6c02aad86}{}\label{classSocketSet_a1b306ed68692b9d930fe0cf6c02aad86}
+
+\begin{DoxyCompactList}\small\item\em The upper thread takes a socket out of the \+\_\+autoset. \end{DoxyCompactList}\item 
+int \hyperlink{classSocketSet_abf83c4b75b0e84566bbcfcbd072d057e}{wait} (timeval $\ast$tv=N\+U\+LL)\hypertarget{classSocketSet_abf83c4b75b0e84566bbcfcbd072d057e}{}\label{classSocketSet_abf83c4b75b0e84566bbcfcbd072d057e}
+
+\begin{DoxyCompactList}\small\item\em The upper thread waits for something to arrive on the socket. \end{DoxyCompactList}\item 
+void {\bfseries add\+\_\+pending} (int fd)\hypertarget{classSocketSet_a6049f694d8aa396adab1c383b40a46c6}{}\label{classSocketSet_a6049f694d8aa396adab1c383b40a46c6}
+
+\item 
+void {\bfseries rem\+\_\+pending} (int fd)\hypertarget{classSocketSet_a72bca79d7618b9e7a64c9acfd984fb76}{}\label{classSocketSet_a72bca79d7618b9e7a64c9acfd984fb76}
+
+\item 
+void \hyperlink{classSocketSet_a0562636aa4d8aa5a014533fc84a30b24}{waste\+\_\+time} (long sec, long usec)
+\begin{DoxyCompactList}\small\item\em unthreaded case \end{DoxyCompactList}\item 
+virtual void {\bfseries run} ()\hypertarget{classSocketSet_abdc2250eb1909b16e2535adc426f966a}{}\label{classSocketSet_abdc2250eb1909b16e2535adc426f966a}
+
+\item 
+void {\bfseries wakeup} ()\hypertarget{classSocketSet_a9873838f3f1b54e70066dcdf1018fd45}{}\label{classSocketSet_a9873838f3f1b54e70066dcdf1018fd45}
+
+\item 
+void \hyperlink{classSocketSet_a4bc6f9ad4c52553de53a0cc352091d1e}{predestroy} ()\hypertarget{classSocketSet_a4bc6f9ad4c52553de53a0cc352091d1e}{}\label{classSocketSet_a4bc6f9ad4c52553de53a0cc352091d1e}
+
+\begin{DoxyCompactList}\small\item\em only call predestroy if you know the whole set will be destructed soonish--clears the autoset \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Socket\+Set@{Socket\+Set}!set@{set}}
+\index{set@{set}!Socket\+Set@{Socket\+Set}}
+\subsubsection[{\texorpdfstring{set(\+Vsnet\+Socket\+Base $\ast$s)}{set(VsnetSocketBase *s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Socket\+Set\+::set (
+\begin{DoxyParamCaption}
+\item[{{\bf Vsnet\+Socket\+Base} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classSocketSet_a85738f60b18c86b7e95195c45789750b}{}\label{classSocketSet_a85738f60b18c86b7e95195c45789750b}
+Once a socket is registered using this function, set\+Read is automatically called for it before each select \index{Socket\+Set@{Socket\+Set}!waste\+\_\+time@{waste\+\_\+time}}
+\index{waste\+\_\+time@{waste\+\_\+time}!Socket\+Set@{Socket\+Set}}
+\subsubsection[{\texorpdfstring{waste\+\_\+time(long sec, long usec)}{waste_time(long sec, long usec)}}]{\setlength{\rightskip}{0pt plus 5cm}void Socket\+Set\+::waste\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{long}]{sec, }
+\item[{long}]{usec}
+\end{DoxyParamCaption}
+)}\hypertarget{classSocketSet_a0562636aa4d8aa5a014533fc84a30b24}{}\label{classSocketSet_a0562636aa4d8aa5a014533fc84a30b24}
+
+
+unthreaded case 
+
+Use this function liberally in you code. If you don\textquotesingle{}t have a network thread, it will check select and return. If you have a place in your code where you want to wait anyway, replace your waiting function with a call to this function. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+socketset.\+h\item 
+networking/lowlevel/vsnet\+\_\+socketset.\+cpp\end{DoxyCompactItemize}

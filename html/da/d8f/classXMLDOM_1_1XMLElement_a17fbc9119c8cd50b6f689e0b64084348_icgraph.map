@@ -1,0 +1,20 @@
+<map id="XMLDOM::XMLElement::numChildren" name="XMLDOM::XMLElement::numChildren">
+<area shape="rect" id="node2" href="$da/d8f/classXMLDOM_1_1XMLElement.html#a233ff65ad65b92fee2f145d2ba059c3a" title="XMLDOM::XMLElement\l::contents" alt="" coords="637,57,800,99"/>
+<area shape="rect" id="node3" href="$d2/ddd/classXMLDOM_1_1XMLSerializer.html#a2224aae579bed3aa406471e9f560c81b" title="XMLDOM::XMLSerializer\l::importXML" alt="" coords="857,57,1026,99"/>
+<area shape="rect" id="node5" href="$da/d8f/classXMLDOM_1_1XMLElement.html#a599cf001586620a89628d63b342378e2" title="XMLDOM::XMLElement\l::appendContents" alt="" coords="637,199,800,240"/>
+<area shape="rect" id="node6" href="$da/d8f/classXMLDOM_1_1XMLElement.html#a6341f47796d6516478d239c5733ec995" title="XMLDOM::XMLElement\l::setType" alt="" coords="216,116,379,157"/>
+<area shape="rect" id="node4" href="$da/d8f/classXMLDOM_1_1XMLElement.html#a25d23e71643b55728f910604b43beed0" title="XMLDOM::XMLElement\l::getDocument" alt="" coords="860,145,1023,187"/>
+<area shape="rect" id="node7" href="$da/d8f/classXMLDOM_1_1XMLElement.html#ac6abb91539f92aacb495162199a8c610" title="XMLDOM::XMLElement\l::type" alt="" coords="427,116,589,157"/>
+<area shape="rect" id="node8" href="$d0/de7/classTechnique.html#a6ec998ae20fed03ff4ade4f9f7b00aa1" title="Technique::Technique" alt="" coords="643,265,794,291"/>
+<area shape="rect" id="node9" href="$d0/de7/classTechnique.html#a0e3aa18e00f5c00377000abf9f557d8e" title="Technique::getTechnique" alt="" coords="857,235,1025,262"/>
+<area shape="rect" id="node19" href="$df/df2/classTechnique_1_1Pass.html#aeecc48e84e7eb74a3fd8db142e6e391e" title="Technique::Pass::getShader\lParam" alt="" coords="848,287,1035,328"/>
+<area shape="rect" id="node10" href="$d9/d5e/classMesh.html#aa35dc50ae01f25282d7a58e24972f80f" title="Will draw all undrawn meshes of this type. " alt="" coords="1083,210,1261,237"/>
+<area shape="rect" id="node18" href="$d0/de7/classTechnique.html#a0ad1df3b45f3bb1af6b8f1a45ee4f303" title="Technique::isCompiled" alt="" coords="1095,261,1249,287"/>
+<area shape="rect" id="node11" href="$d9/d5e/classMesh.html#ae4029861af0ac80167bf22b2ddc8ee81" title="Draws lod pixels wide, mesh at Transformation NOW. If centered, then will center on camera and disabl..." alt="" coords="1353,159,1473,186"/>
+<area shape="rect" id="node12" href="$d9/d5e/classMesh.html#ab00de322e0cefefc7d4948f54d853736" title="Will draw all undrawn meshes in total If pushSpclFX, the last series of meshes will be drawn with oth..." alt="" coords="1309,210,1517,237"/>
+<area shape="rect" id="node17" href="$d5/dc6/classSphereMesh.html#ac2189ac6e54ba796fb7072b490dd4184" title="Will draw all undrawn far meshes beyond the range of zbuffer (better be convex). " alt="" coords="1317,261,1509,287"/>
+<area shape="rect" id="node13" href="$de/d19/classGameUnit.html#a3737ac418f41325367169998f7131202" title="Sets the camera to be within this unit. " alt="" coords="1565,159,1756,186"/>
+<area shape="rect" id="node14" href="$dd/d50/classGameCockpit.html#a558479694454a63b1ec53f2df316e1ae" title="Draws Cockpit then restores viewport. " alt="" coords="1590,210,1731,237"/>
+<area shape="rect" id="node15" href="$d5/d38/classGameStarSystem.html#a22a64a77861767b3503b7c6b5ab0b786" title="GameStarSystem::Draw" alt="" coords="1578,261,1743,287"/>
+<area shape="rect" id="node16" href="$d5/d38/classGameStarSystem.html#a08724f59ce670c81fd5c43aef06401c1" title="activates the light map texture " alt="" coords="1804,261,2003,287"/>
+</map>

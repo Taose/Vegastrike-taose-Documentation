@@ -1,0 +1,72 @@
+\hypertarget{classBeam}{}\section{Beam Class Reference}
+\label{classBeam}\index{Beam@{Beam}}
+
+
+Collaboration diagram for Beam\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{d6/d54/classBeam__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Listen\+To\+Owner} (bool listen)\hypertarget{classBeam_a185ae23ad9f8f7e38436670e24500f83}{}\label{classBeam_a185ae23ad9f8f7e38436670e24500f83}
+
+\item 
+{\bfseries Beam} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{structweapon__info}{weapon\+\_\+info} \&clne, void $\ast$own, \hyperlink{classUnit}{Unit} $\ast$firer, int sound)\hypertarget{classBeam_a134201794f977941d454408e9223869e}{}\label{classBeam_a134201794f977941d454408e9223869e}
+
+\item 
+void {\bfseries Init} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{structweapon__info}{weapon\+\_\+info} \&clne, void $\ast$own, \hyperlink{classUnit}{Unit} $\ast$firer)\hypertarget{classBeam_a24a19ca4b4295a7dcdbec5b706dc7817}{}\label{classBeam_a24a19ca4b4295a7dcdbec5b706dc7817}
+
+\item 
+void {\bfseries Remove\+From\+System} (bool eradicate)\hypertarget{classBeam_abfcfde6cd518afafc4ec5bb823b33d70}{}\label{classBeam_abfcfde6cd518afafc4ec5bb823b33d70}
+
+\item 
+float {\bfseries refire\+Time} ()\hypertarget{classBeam_a9dd4ef3f8649bc256bec7f863c732b33}{}\label{classBeam_a9dd4ef3f8649bc256bec7f863c732b33}
+
+\item 
+Q\+Vector {\bfseries Get\+Position} () const \hypertarget{classBeam_a594d27784228c4618084db18c10de41d}{}\label{classBeam_a594d27784228c4618084db18c10de41d}
+
+\item 
+void {\bfseries Set\+Position} (const Q\+Vector \&)\hypertarget{classBeam_ab448d0bfc9caac901b0d930d87a5985c}{}\label{classBeam_ab448d0bfc9caac901b0d930d87a5985c}
+
+\item 
+void {\bfseries Set\+Orientation} (const Vector \&p, const Vector \&q, const Vector \&r)\hypertarget{classBeam_ae25ef88d1538c08b559a1f441bd1f0c6}{}\label{classBeam_ae25ef88d1538c08b559a1f441bd1f0c6}
+
+\item 
+void {\bfseries Update\+Physics} (const \hyperlink{structTransformation}{Transformation} \&, const \hyperlink{classMatrix}{Matrix} \&, class \hyperlink{classUnit}{Unit} $\ast$target, float trackingcone, \hyperlink{classUnit}{Unit} $\ast$target\+To\+Collide\+With, float Heat\+Sink, \hyperlink{classUnit}{Unit} $\ast$firer, \hyperlink{classUnit}{Unit} $\ast$superunit)\hypertarget{classBeam_a2e701af39de96784f641834697dc1480}{}\label{classBeam_a2e701af39de96784f641834697dc1480}
+
+\item 
+void {\bfseries Draw} (const \hyperlink{structTransformation}{Transformation} \&, const \hyperlink{classMatrix}{Matrix} \&, class \hyperlink{classUnit}{Unit} $\ast$target, float trackingcone)\hypertarget{classBeam_ac075193cc965b18b3016205783b6d769}{}\label{classBeam_ac075193cc965b18b3016205783b6d769}
+
+\item 
+void {\bfseries Destabilize} ()\hypertarget{classBeam_ad145ccb64ba2989c2f3e74a046ff0fcc}{}\label{classBeam_ad145ccb64ba2989c2f3e74a046ff0fcc}
+
+\item 
+bool {\bfseries Dissolved} ()\hypertarget{classBeam_ac8c280bf812a76a6e615a4842c59305e}{}\label{classBeam_ac8c280bf812a76a6e615a4842c59305e}
+
+\item 
+bool {\bfseries Ready} ()\hypertarget{classBeam_aeae724d0ed2e5947161e376d767a379f}{}\label{classBeam_aeae724d0ed2e5947161e376d767a379f}
+
+\item 
+bool {\bfseries Collide} (class \hyperlink{classUnit}{Unit} $\ast$target, \hyperlink{classUnit}{Unit} $\ast$firer, \hyperlink{classUnit}{Unit} $\ast$superunit)\hypertarget{classBeam_a2ea05d5e1dc66e21de07be3ca38850ab}{}\label{classBeam_a2ea05d5e1dc66e21de07be3ca38850ab}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Process\+Draw\+Queue} ()\hypertarget{classBeam_ad9e12b24aa9a83b684d340f314a06fe1}{}\label{classBeam_ad9e12b24aa9a83b684d340f314a06fe1}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/beam.\+h\item 
+cmd/beam.\+cpp\item 
+cmd/beam\+\_\+generic.\+cpp\item 
+cmd/beam\+\_\+server.\+cpp\item 
+cmd/collide.\+cpp\end{DoxyCompactItemize}

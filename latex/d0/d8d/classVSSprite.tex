@@ -1,0 +1,131 @@
+\hypertarget{classVSSprite}{}\section{V\+S\+Sprite Class Reference}
+\label{classVSSprite}\index{V\+S\+Sprite@{V\+S\+Sprite}}
+
+
+Inheritance diagram for V\+S\+Sprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{d6/d77/classVSSprite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for V\+S\+Sprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{da/d3d/classVSSprite__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries V\+S\+Sprite} (const char $\ast$file, enum F\+I\+L\+T\+ER texturefilter=B\+I\+L\+I\+N\+E\+AR, G\+F\+X\+B\+O\+OL force=G\+F\+X\+F\+A\+L\+SE)\hypertarget{classVSSprite_a52af76266fd28fb523d24db7ee26349c}{}\label{classVSSprite_a52af76266fd28fb523d24db7ee26349c}
+
+\item 
+{\bfseries V\+S\+Sprite} (\hyperlink{classTexture}{Texture} $\ast$surface, float xcenter, float ycenter, float width, float height, float s=0.f, float t=0.f, bool is\+Animation=false)\hypertarget{classVSSprite_a99464729e5f5189cc3a1f2aab58364a3}{}\label{classVSSprite_a99464729e5f5189cc3a1f2aab58364a3}
+
+\item 
+{\bfseries V\+S\+Sprite} (const \hyperlink{classVSSprite}{V\+S\+Sprite} \&source)\hypertarget{classVSSprite_a32eeec96e6136e96d2c83491bed287e1}{}\label{classVSSprite_a32eeec96e6136e96d2c83491bed287e1}
+
+\item 
+bool {\bfseries Load\+Success} () const \hypertarget{classVSSprite_aca82a99261ffb505faa983d07409e3fc}{}\label{classVSSprite_aca82a99261ffb505faa983d07409e3fc}
+
+\item 
+void {\bfseries Draw} ()\hypertarget{classVSSprite_a4b12c738d5ff8982d612edaf315ab072}{}\label{classVSSprite_a4b12c738d5ff8982d612edaf315ab072}
+
+\item 
+void \hyperlink{classVSSprite_a4cdf17d722cb0e526e559bc3e15ea6e7}{Draw\+Here} (Vector \&ll, Vector \&lr, Vector \&ur, Vector \&ul)
+\item 
+void {\bfseries Rotate} (const float \&rad)\hypertarget{classVSSprite_a4d0783845d898900d7d18f264bf48686}{}\label{classVSSprite_a4d0783845d898900d7d18f264bf48686}
+
+\item 
+void {\bfseries Set\+Rotation} (const float \&rot)\hypertarget{classVSSprite_af73820325c8a676de082ef0a245d1bd4}{}\label{classVSSprite_af73820325c8a676de082ef0a245d1bd4}
+
+\item 
+void {\bfseries Get\+Rotation} (float \&rot)\hypertarget{classVSSprite_a4631ff7d0f8b64b8885fdb9a71d084a8}{}\label{classVSSprite_a4631ff7d0f8b64b8885fdb9a71d084a8}
+
+\item 
+void {\bfseries Read\+Texture} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} $\ast$f)\hypertarget{classVSSprite_a23dc5684f6f5b5c435cb6d843afc4835}{}\label{classVSSprite_a23dc5684f6f5b5c435cb6d843afc4835}
+
+\item 
+void {\bfseries Get\+ST} (float \&s, float \&t)\hypertarget{classVSSprite_a29726268a29514ed94d48fa240befdec}{}\label{classVSSprite_a29726268a29514ed94d48fa240befdec}
+
+\item 
+void {\bfseries Set\+ST} (const float s, const float t)\hypertarget{classVSSprite_aef2e1c0978db3fae94a506e2964fc97e}{}\label{classVSSprite_aef2e1c0978db3fae94a506e2964fc97e}
+
+\item 
+void {\bfseries Set\+Time} (double newtime)\hypertarget{classVSSprite_ace02a254fb69b2f170721df95f3ebeb5}{}\label{classVSSprite_ace02a254fb69b2f170721df95f3ebeb5}
+
+\item 
+void {\bfseries Set\+Position} (const float \&x1, const float \&y1)\hypertarget{classVSSprite_af463e8237377ef9cab8424c51888fd7b}{}\label{classVSSprite_af463e8237377ef9cab8424c51888fd7b}
+
+\item 
+void {\bfseries Get\+Position} (float \&x1, float \&y1)\hypertarget{classVSSprite_a9f005a2b2f67393bb117ddb8f4c89a00}{}\label{classVSSprite_a9f005a2b2f67393bb117ddb8f4c89a00}
+
+\item 
+void {\bfseries Set\+Size} (float s1, float s2)\hypertarget{classVSSprite_aa3237dbd9f90ec5283b51716939079e3}{}\label{classVSSprite_aa3237dbd9f90ec5283b51716939079e3}
+
+\item 
+void {\bfseries Get\+Size} (float \&x1, float \&y1)\hypertarget{classVSSprite_ad93eed0cebc3765cf819cf3d5a7fc0be}{}\label{classVSSprite_ad93eed0cebc3765cf819cf3d5a7fc0be}
+
+\item 
+void {\bfseries Set\+Time\+Source} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Audio\+::\+Source} $>$ source)\hypertarget{classVSSprite_a20408330cede15456de837b7abdb2fab}{}\label{classVSSprite_a20408330cede15456de837b7abdb2fab}
+
+\item 
+void {\bfseries Clear\+Time\+Source} ()\hypertarget{classVSSprite_ad7329b9eafdd3b36469f9f91428f5ab7}{}\label{classVSSprite_ad7329b9eafdd3b36469f9f91428f5ab7}
+
+\item 
+bool {\bfseries Done} () const \hypertarget{classVSSprite_a972268f3fc06e7c048de75a447655aee}{}\label{classVSSprite_a972268f3fc06e7c048de75a447655aee}
+
+\item 
+void {\bfseries Reset} ()\hypertarget{classVSSprite_aa0494b16b908811ffb646ba5d11ad583}{}\label{classVSSprite_aa0494b16b908811ffb646ba5d11ad583}
+
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Audio\+::\+Source} $>$ {\bfseries Get\+Time\+Source} () const \hypertarget{classVSSprite_af1f9eb8c29513ffa1f97087c4fef3349}{}\label{classVSSprite_af1f9eb8c29513ffa1f97087c4fef3349}
+
+\item 
+\hyperlink{classTexture}{Texture} $\ast$ {\bfseries get\+Texture} ()\hypertarget{classVSSprite_a8a8f701c6d19d7b246e12f095e066442}{}\label{classVSSprite_a8a8f701c6d19d7b246e12f095e066442}
+
+\item 
+const \hyperlink{classTexture}{Texture} $\ast$ {\bfseries get\+Texture} () const \hypertarget{classVSSprite_a2df332c60f65c1dda711f1c0b7582b40}{}\label{classVSSprite_a2df332c60f65c1dda711f1c0b7582b40}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{V\+S\+Sprite@{V\+S\+Sprite}!Draw\+Here@{Draw\+Here}}
+\index{Draw\+Here@{Draw\+Here}!V\+S\+Sprite@{V\+S\+Sprite}}
+\subsubsection[{\texorpdfstring{Draw\+Here(\+Vector \&ll, Vector \&lr, Vector \&ur, Vector \&ul)}{DrawHere(Vector &ll, Vector &lr, Vector &ur, Vector &ul)}}]{\setlength{\rightskip}{0pt plus 5cm}void V\+S\+Sprite\+::\+Draw\+Here (
+\begin{DoxyParamCaption}
+\item[{Vector \&}]{ll, }
+\item[{Vector \&}]{lr, }
+\item[{Vector \&}]{ur, }
+\item[{Vector \&}]{ul}
+\end{DoxyParamCaption}
+)}\hypertarget{classVSSprite_a4cdf17d722cb0e526e559bc3e15ea6e7}{}\label{classVSSprite_a4cdf17d722cb0e526e559bc3e15ea6e7}
+Draw at specified coordinates given by 4 endpoints.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ll} & lower-\/left corner \\
+\hline
+{\em lr} & lower-\/right corner \\
+\hline
+{\em ur} & upper-\/right corner \\
+\hline
+{\em ul} & upper-\/left corner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Disregards sprite position but not maxs/maxt coordinates. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/sprite.\+h\item 
+gfx/sprite.\+cpp\end{DoxyCompactItemize}

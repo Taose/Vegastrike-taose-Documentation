@@ -1,0 +1,96 @@
+\hypertarget{classVsnetHTTPSocket}{}\section{Vsnet\+H\+T\+T\+P\+Socket Class Reference}
+\label{classVsnetHTTPSocket}\index{Vsnet\+H\+T\+T\+P\+Socket@{Vsnet\+H\+T\+T\+P\+Socket}}
+
+
+Inheritance diagram for Vsnet\+H\+T\+T\+P\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d4/d30/classVsnetHTTPSocket__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Vsnet\+H\+T\+T\+P\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/d94/classVsnetHTTPSocket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Vsnet\+H\+T\+T\+P\+Socket} (const \hyperlink{structAddressIP}{Address\+IP} \&remote\+\_\+ip, const std\+::string \&host, const std\+::string \&path, \hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{classVsnetHTTPSocket_ac7d98171f205876460a867e7f6cc9bbc}{}\label{classVsnetHTTPSocket_ac7d98171f205876460a867e7f6cc9bbc}
+
+\item 
+{\bfseries Vsnet\+H\+T\+T\+P\+Socket} (const std\+::string \&url, \hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{classVsnetHTTPSocket_a5e4bd95a90bd9077ad9ca804ab73ba73}{}\label{classVsnetHTTPSocket_a5e4bd95a90bd9077ad9ca804ab73ba73}
+
+\item 
+virtual bool {\bfseries lower\+\_\+selected} (int datalen=-\/1)\hypertarget{classVsnetHTTPSocket_ad47cffbd3a498692ac5292534ebddb29}{}\label{classVsnetHTTPSocket_ad47cffbd3a498692ac5292534ebddb29}
+
+\item 
+virtual int {\bfseries lower\+\_\+sendbuf} ()\hypertarget{classVsnetHTTPSocket_abf94aa058a1531dda5fcdd3467e85784}{}\label{classVsnetHTTPSocket_abf94aa058a1531dda5fcdd3467e85784}
+
+\item 
+virtual void \hyperlink{classVsnetHTTPSocket_a3303afe2d40b785929bf6b5bdeb1a42d}{lower\+\_\+clean\+\_\+sendbuf} ()
+\item 
+bool {\bfseries sendstr} (const std\+::string \&data)\hypertarget{classVsnetHTTPSocket_a8f94edffa7b33dff574cea00e1ba845f}{}\label{classVsnetHTTPSocket_a8f94edffa7b33dff574cea00e1ba845f}
+
+\item 
+bool {\bfseries recvstr} (std\+::string \&data)\hypertarget{classVsnetHTTPSocket_aec59aa2652c5c0c323f954fcff102a24}{}\label{classVsnetHTTPSocket_aec59aa2652c5c0c323f954fcff102a24}
+
+\item 
+virtual bool {\bfseries need\+\_\+test\+\_\+writable} ()\hypertarget{classVsnetHTTPSocket_a9b0f3d9be2ffc21a95d4f57878ab71f7}{}\label{classVsnetHTTPSocket_a9b0f3d9be2ffc21a95d4f57878ab71f7}
+
+\item 
+virtual bool {\bfseries write\+\_\+on\+\_\+negative} ()\hypertarget{classVsnetHTTPSocket_a52f1a00244cf50fa9f0cc91707805b21}{}\label{classVsnetHTTPSocket_a52f1a00244cf50fa9f0cc91707805b21}
+
+\item 
+virtual int {\bfseries opt\+Payload\+Size} () const \hypertarget{classVsnetHTTPSocket_a0a8e97f69202b2e367f9f4bece10e3b5}{}\label{classVsnetHTTPSocket_a0a8e97f69202b2e367f9f4bece10e3b5}
+
+\item 
+virtual bool {\bfseries is\+Active} ()\hypertarget{classVsnetHTTPSocket_a62118ca0477a3440bed7044e7eb4b172}{}\label{classVsnetHTTPSocket_a62118ca0477a3440bed7044e7eb4b172}
+
+\item 
+void {\bfseries resend\+Data} ()\hypertarget{classVsnetHTTPSocket_ac4f1907ed766574c761f91ad388fa753}{}\label{classVsnetHTTPSocket_ac4f1907ed766574c761f91ad388fa753}
+
+\item 
+void {\bfseries reopen\+Connection} ()\hypertarget{classVsnetHTTPSocket_acc289670559e6ee1a68fee6ccbb56953}{}\label{classVsnetHTTPSocket_acc289670559e6ee1a68fee6ccbb56953}
+
+\item 
+virtual bool {\bfseries is\+Ready\+To\+Send} (fd\+\_\+set $\ast$)\hypertarget{classVsnetHTTPSocket_a1f2070739c68f09abe80a70a4a836474}{}\label{classVsnetHTTPSocket_a1f2070739c68f09abe80a70a4a836474}
+
+\item 
+virtual void {\bfseries dump} (std\+::ostream \&ostr) const \hypertarget{classVsnetHTTPSocket_a9b77c8a5a2ec9c9faf72af47fd652114}{}\label{classVsnetHTTPSocket_a9b77c8a5a2ec9c9faf72af47fd652114}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&ostr, const \hyperlink{classVsnetHTTPSocket}{Vsnet\+H\+T\+T\+P\+Socket} \&s)\hypertarget{classVsnetHTTPSocket_ac33c2e1cdff14606ecfc130c98479111}{}\label{classVsnetHTTPSocket_ac33c2e1cdff14606ecfc130c98479111}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Vsnet\+H\+T\+T\+P\+Socket@{Vsnet\+H\+T\+T\+P\+Socket}!lower\+\_\+clean\+\_\+sendbuf@{lower\+\_\+clean\+\_\+sendbuf}}
+\index{lower\+\_\+clean\+\_\+sendbuf@{lower\+\_\+clean\+\_\+sendbuf}!Vsnet\+H\+T\+T\+P\+Socket@{Vsnet\+H\+T\+T\+P\+Socket}}
+\subsubsection[{\texorpdfstring{lower\+\_\+clean\+\_\+sendbuf()}{lower_clean_sendbuf()}}]{\setlength{\rightskip}{0pt plus 5cm}void Vsnet\+H\+T\+T\+P\+Socket\+::lower\+\_\+clean\+\_\+sendbuf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classVsnetHTTPSocket_a3303afe2d40b785929bf6b5bdeb1a42d}{}\label{classVsnetHTTPSocket_a3303afe2d40b785929bf6b5bdeb1a42d}
+Called when we noticed that the primary file descriptor is closed but data remains in the send queue. 
+
+Reimplemented from \hyperlink{classVsnetSocketBase_a0f72c451d0fb66744af779637382b0b2}{Vsnet\+Socket\+Base}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+sockethttp.\+h\item 
+networking/lowlevel/vsnet\+\_\+sockethttp.\+cpp\end{DoxyCompactItemize}

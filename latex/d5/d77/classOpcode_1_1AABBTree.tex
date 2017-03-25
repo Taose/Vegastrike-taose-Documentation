@@ -1,0 +1,162 @@
+\hypertarget{classOpcode_1_1AABBTree}{}\section{Opcode\+:\+:A\+A\+B\+B\+Tree Class Reference}
+\label{classOpcode_1_1AABBTree}\index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+
+
+Inheritance diagram for Opcode\+:\+:A\+A\+B\+B\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{df/d98/classOpcode_1_1AABBTree__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Opcode\+:\+:A\+A\+B\+B\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{de/d20/classOpcode_1_1AABBTree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1AABBTree_ad5b760ccbc90b5cfa5ba2b08231a00e4}{A\+A\+B\+B\+Tree} ()
+\item 
+\hyperlink{classOpcode_1_1AABBTree_a093aa9a3837c574f8779f36ce882332a}{$\sim$\+A\+A\+B\+B\+Tree} ()
+\item 
+bool \hyperlink{classOpcode_1_1AABBTree_a4cc7addadfb139b13288d09b7fe5f3ad}{Build} (\hyperlink{classOpcode_1_1AABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\item 
+void \hyperlink{classOpcode_1_1AABBTree_a5afb9bb2637b341242003ba2df1378f9}{Release} ()
+\item 
+inline\+\_\+ const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{classOpcode_1_1AABBTree_ab63e5f0004e0679d38c5bcd35970a0c7}{Get\+Indices} () const \hypertarget{classOpcode_1_1AABBTree_ab63e5f0004e0679d38c5bcd35970a0c7}{}\label{classOpcode_1_1AABBTree_ab63e5f0004e0679d38c5bcd35970a0c7}
+
+\begin{DoxyCompactList}\small\item\em Catch the indices. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1AABBTree_a87ca01c4eac53b7b21cb20fddd9aa268}{Get\+Nb\+Nodes} () const \hypertarget{classOpcode_1_1AABBTree_a87ca01c4eac53b7b21cb20fddd9aa268}{}\label{classOpcode_1_1AABBTree_a87ca01c4eac53b7b21cb20fddd9aa268}
+
+\begin{DoxyCompactList}\small\item\em Catch the number of nodes. \end{DoxyCompactList}\item 
+bool \hyperlink{classOpcode_1_1AABBTree_af03ae8eaa80a889ef6c715a0c9313c7a}{Is\+Complete} () const 
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1AABBTree_a0f9b2f254109393c75dad19f1d63cc3c}{Compute\+Depth} () const 
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1AABBTree_a2d646d050c93b9600c74a27259d39882}{Get\+Used\+Bytes} () const 
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1AABBTree_a992607fb1f96ca3e378f0b465e49785b}{Walk} (\hyperlink{OPC__AABBTree_8h_a4064dc9ce0892a5ebe07b5c8ec13568a}{Walking\+Callback} callback, void $\ast$user\+\_\+data) const 
+\item 
+bool \hyperlink{classOpcode_1_1AABBTree_a833fbf09b1989a73f852dfaf30e33546}{Refit} (\hyperlink{classOpcode_1_1AABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\item 
+bool \hyperlink{classOpcode_1_1AABBTree_a78b55dd9239d8ec9505f79b0601a8b1c}{Refit2} (\hyperlink{classOpcode_1_1AABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}}
+\index{A\+A\+B\+B\+Tree@{A\+A\+B\+B\+Tree}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{A\+A\+B\+B\+Tree()}{AABBTree()}}]{\setlength{\rightskip}{0pt plus 5cm}A\+A\+B\+B\+Tree\+::\+A\+A\+B\+B\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1AABBTree_ad5b760ccbc90b5cfa5ba2b08231a00e4}{}\label{classOpcode_1_1AABBTree_ad5b760ccbc90b5cfa5ba2b08231a00e4}
+Constructor. \index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!````~A\+A\+B\+B\+Tree@{$\sim$\+A\+A\+B\+B\+Tree}}
+\index{````~A\+A\+B\+B\+Tree@{$\sim$\+A\+A\+B\+B\+Tree}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{$\sim$\+A\+A\+B\+B\+Tree()}{~AABBTree()}}]{\setlength{\rightskip}{0pt plus 5cm}A\+A\+B\+B\+Tree\+::$\sim$\+A\+A\+B\+B\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1AABBTree_a093aa9a3837c574f8779f36ce882332a}{}\label{classOpcode_1_1AABBTree_a093aa9a3837c574f8779f36ce882332a}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!Build@{Build}}
+\index{Build@{Build}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{Build(\+A\+A\+B\+B\+Tree\+Builder $\ast$builder)}{Build(AABBTreeBuilder *builder)}}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+::\+Build (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1AABBTree_a4cc7addadfb139b13288d09b7fe5f3ad}{}\label{classOpcode_1_1AABBTree_a4cc7addadfb139b13288d09b7fe5f3ad}
+Builds a generic \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} tree from a tree builder. 
+\begin{DoxyParams}{Parameters}
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!Compute\+Depth@{Compute\+Depth}}
+\index{Compute\+Depth@{Compute\+Depth}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{Compute\+Depth() const }{ComputeDepth() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} A\+A\+B\+B\+Tree\+::\+Compute\+Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1AABBTree_a0f9b2f254109393c75dad19f1d63cc3c}{}\label{classOpcode_1_1AABBTree_a0f9b2f254109393c75dad19f1d63cc3c}
+Computes the depth of the tree. A well-\/balanced tree should have a log(n) depth. A degenerate tree O(n) depth. \begin{DoxyReturn}{Returns}
+depth of the tree 
+\end{DoxyReturn}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!Get\+Used\+Bytes@{Get\+Used\+Bytes}}
+\index{Get\+Used\+Bytes@{Get\+Used\+Bytes}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{Get\+Used\+Bytes() const }{GetUsedBytes() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} A\+A\+B\+B\+Tree\+::\+Get\+Used\+Bytes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1AABBTree_a2d646d050c93b9600c74a27259d39882}{}\label{classOpcode_1_1AABBTree_a2d646d050c93b9600c74a27259d39882}
+Computes the number of bytes used by the tree. \begin{DoxyReturn}{Returns}
+number of bytes used 
+\end{DoxyReturn}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!Is\+Complete@{Is\+Complete}}
+\index{Is\+Complete@{Is\+Complete}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{Is\+Complete() const }{IsComplete() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+::\+Is\+Complete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1AABBTree_af03ae8eaa80a889ef6c715a0c9313c7a}{}\label{classOpcode_1_1AABBTree_af03ae8eaa80a889ef6c715a0c9313c7a}
+Checks the tree is a complete tree or not. A complete tree is made of 2$\ast$\+N-\/1 nodes, where N is the number of primitives in the tree. \begin{DoxyReturn}{Returns}
+true for complete trees 
+\end{DoxyReturn}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!Refit@{Refit}}
+\index{Refit@{Refit}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{Refit(\+A\+A\+B\+B\+Tree\+Builder $\ast$builder)}{Refit(AABBTreeBuilder *builder)}}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+::\+Refit (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1AABBTree_a833fbf09b1989a73f852dfaf30e33546}{}\label{classOpcode_1_1AABBTree_a833fbf09b1989a73f852dfaf30e33546}
+Refits the tree in a top-\/down way. 
+\begin{DoxyParams}{Parameters}
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!Refit2@{Refit2}}
+\index{Refit2@{Refit2}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{Refit2(\+A\+A\+B\+B\+Tree\+Builder $\ast$builder)}{Refit2(AABBTreeBuilder *builder)}}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+::\+Refit2 (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1AABBTree_a78b55dd9239d8ec9505f79b0601a8b1c}{}\label{classOpcode_1_1AABBTree_a78b55dd9239d8ec9505f79b0601a8b1c}
+Refits the tree in a bottom-\/up way. 
+\begin{DoxyParams}{Parameters}
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!Release@{Release}}
+\index{Release@{Release}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{Release()}{Release()}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+::\+Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1AABBTree_a5afb9bb2637b341242003ba2df1378f9}{}\label{classOpcode_1_1AABBTree_a5afb9bb2637b341242003ba2df1378f9}
+Releases the tree. \index{Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}!Walk@{Walk}}
+\index{Walk@{Walk}!Opcode\+::\+A\+A\+B\+B\+Tree@{Opcode\+::\+A\+A\+B\+B\+Tree}}
+\subsubsection[{\texorpdfstring{Walk(\+Walking\+Callback callback, void $\ast$user\+\_\+data) const }{Walk(WalkingCallback callback, void *user_data) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} A\+A\+B\+B\+Tree\+::\+Walk (
+\begin{DoxyParamCaption}
+\item[{{\bf Walking\+Callback}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1AABBTree_a992607fb1f96ca3e378f0b465e49785b}{}\label{classOpcode_1_1AABBTree_a992607fb1f96ca3e378f0b465e49785b}
+Walks the tree, calling the user back for each node. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\hyperlink{OPC__AABBTree_8cpp}{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+cpp}\end{DoxyCompactItemize}

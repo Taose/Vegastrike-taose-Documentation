@@ -1,0 +1,6 @@
+<map id="AABBTreeOfTrianglesBuilder" name="AABBTreeOfTrianglesBuilder">
+<area shape="rect" id="node2" href="$d6/d3a/classAABBTreeBuilder.html" title="{AABBTreeBuilder\n|+ mNbPrimitives\l+ mNodeBase\l|+ AABBTreeBuilder()\l+ ~AABBTreeBuilder()\l+ ComputeGlobalBox()\l+ GetSplittingValue()\l+ GetSplittingValue()\l+ ValidateSubdivision()\l+ SetCount()\l+ IncreaseCount()\l+ GetCount()\l+ SetNbInvalidSplits()\l+ IncreaseNbInvalidSplits()\l+ GetNbInvalidSplits()\l}" alt="" coords="5,160,185,413"/>
+<area shape="rect" id="node3" href="$de/d52/structBuildSettings.html" title="Simple wrapper around build&#45;related settings [Opcode 1.3]. " alt="" coords="36,5,155,97"/>
+<area shape="rect" id="node4" href="$d2/d1a/classAABB.html" title="{AABB\n|+ AABB_COMMON_METHODS\l|+ AABB()\l+ ~AABB()\l+ SetMinMax()\l+ SetCenterExtents()\l+ SetEmpty()\l+ SetPoint()\l+ GetSize()\l+ Extend()\l+ GetMin()\l+ GetMax()\land 19 more...\l}" alt="" coords="210,175,423,399"/>
+<area shape="rect" id="node5" href="$d7/d48/classMeshInterface.html" title="{MeshInterface\n||+ MeshInterface()\l+ ~MeshInterface()\l+ GetNbTriangles()\l+ GetNbVertices()\l+ SetNbTriangles()\l+ SetNbVertices()\l+ SetPointers()\l+ GetTris()\l+ GetVerts()\l+ GetTriangle()\l+ RemapClient()\l+ IsValid()\l+ CheckTopology()\l}" alt="" coords="447,160,581,413"/>
+</map>

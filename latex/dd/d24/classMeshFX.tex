@@ -1,0 +1,59 @@
+\hypertarget{classMeshFX}{}\section{Mesh\+FX Class Reference}
+\label{classMeshFX}\index{Mesh\+FX@{Mesh\+FX}}
+
+
+{\ttfamily \#include $<$mesh.\+h$>$}
+
+
+
+Inheritance diagram for Mesh\+FX\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{da/dc6/classMeshFX__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mesh\+FX\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{d6/d09/classMeshFX__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMeshFX_ac30f7d36d47e48a75b7c3aecf3429897}{Mesh\+FX} (const float \hyperlink{classMeshFX_a9b23656f04e276cc9cb03018d2238f78}{T\+TL}, const float \hyperlink{classMeshFX_ac1d051b39f8f4a3ae09484c75bf69a3c}{delta}, const bool enabled, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&\hyperlink{classGFXLight_a334e846aa90e15b6bf371f6fed258134}{vect}, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&diffuse=\hyperlink{structGFXColor}{G\+F\+X\+Color}(0, 0, 0, 1), const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&specular=\hyperlink{structGFXColor}{G\+F\+X\+Color}(0, 0, 0, 1), const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&ambient=\hyperlink{structGFXColor}{G\+F\+X\+Color}(0, 0, 0, 1), const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&attenuate=\hyperlink{structGFXColor}{G\+F\+X\+Color}(1, 0, 0))\hypertarget{classMeshFX_ac30f7d36d47e48a75b7c3aecf3429897}{}\label{classMeshFX_ac30f7d36d47e48a75b7c3aecf3429897}
+
+\begin{DoxyCompactList}\small\item\em Makes a mesh\+FX given T\+TL and delta values. \end{DoxyCompactList}\item 
+void \hyperlink{classMeshFX_a68327b32b6d5f8c11d62421d5a233fc6}{Merge\+Lights} (const \hyperlink{classMeshFX}{Mesh\+FX} \&other)\hypertarget{classMeshFX_a68327b32b6d5f8c11d62421d5a233fc6}{}\label{classMeshFX_a68327b32b6d5f8c11d62421d5a233fc6}
+
+\begin{DoxyCompactList}\small\item\em Merges two \hyperlink{classMeshFX}{Mesh\+FX} in a given way to seamlessly blend multiple hits on a shield. \end{DoxyCompactList}\item 
+bool \hyperlink{classMeshFX_aa6e0a1af71105744f1541a6358f256ef}{Update} (float ttime)\hypertarget{classMeshFX_aa6e0a1af71105744f1541a6358f256ef}{}\label{classMeshFX_aa6e0a1af71105744f1541a6358f256ef}
+
+\begin{DoxyCompactList}\small\item\em updates the growth and death of the FX. Returns false if dead \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classMeshFX_ac1d051b39f8f4a3ae09484c75bf69a3c}{delta}\hypertarget{classMeshFX_ac1d051b39f8f4a3ae09484c75bf69a3c}{}\label{classMeshFX_ac1d051b39f8f4a3ae09484c75bf69a3c}
+
+\begin{DoxyCompactList}\small\item\em The ammt of change that such mesh\+FX objects attenuation get. \end{DoxyCompactList}\item 
+float \hyperlink{classMeshFX_a9b23656f04e276cc9cb03018d2238f78}{T\+TL}\hypertarget{classMeshFX_a9b23656f04e276cc9cb03018d2238f78}{}\label{classMeshFX_a9b23656f04e276cc9cb03018d2238f78}
+
+\begin{DoxyCompactList}\small\item\em The Time to live of the current light effect. \end{DoxyCompactList}\item 
+float \hyperlink{classMeshFX_af38dc6cf5d395f501f28000da1f122e5}{T\+TD}\hypertarget{classMeshFX_af38dc6cf5d395f501f28000da1f122e5}{}\label{classMeshFX_af38dc6cf5d395f501f28000da1f122e5}
+
+\begin{DoxyCompactList}\small\item\em After it has achieved its time to live max it has to slowly fade out and die. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classMesh}{Mesh} FX stores various lights that light up shield or hull for damage They may be merged and they grow and shring based on their T\+TL and T\+TD and delta values They must be updated every frame or every physics frame if not drawn (pass in time 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/mesh.\+h\item 
+gfx/mesh\+\_\+fx.\+cpp\end{DoxyCompactItemize}

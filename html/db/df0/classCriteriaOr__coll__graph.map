@@ -1,0 +1,5 @@
+<map id="CriteriaOr" name="CriteriaOr">
+<area shape="rect" id="node2" href="$d3/d4a/classCriteriaBinaryOperator.html" title="{CriteriaBinaryOperator\n||+ unhook()\l+ unhook()\l+ getChildren()\l+ clone()\l+ CriteriaBinaryOperator()\l+ ~CriteriaBinaryOperator()\l+ replaceChild()\l}" alt="" coords="5,449,184,615"/>
+<area shape="rect" id="node3" href="$d6/da7/classCriteriaParent.html" title="{CriteriaParent\n||+ unhook()\l+ clone()\l+ CriteriaParent()\l+ ~CriteriaParent()\l+ replaceChild()\l}" alt="" coords="129,264,260,400"/>
+<area shape="rect" id="node4" href="$df/d68/classCriteriaNode.html" title="{CriteriaNode\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ unhook()\l+ getChildren()\l+ clone()\l+ CriteriaNode()\l+ ~CriteriaNode()\l+ setParent()\l+ getParent()\l}" alt="" coords="31,5,158,215"/>
+</map>

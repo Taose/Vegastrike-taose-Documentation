@@ -1,0 +1,93 @@
+\hypertarget{IceRevisitedRadix_8cpp}{}\section{cmd/collide2/\+Ice/\+Ice\+Revisited\+Radix.cpp File Reference}
+\label{IceRevisitedRadix_8cpp}\index{cmd/collide2/\+Ice/\+Ice\+Revisited\+Radix.\+cpp@{cmd/collide2/\+Ice/\+Ice\+Revisited\+Radix.\+cpp}}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+Include dependency graph for Ice\+Revisited\+Radix.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d24/IceRevisitedRadix_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+N\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+R\+A\+N\+KS}~m\+Current\+Size$\vert$=0x80000000\hypertarget{IceRevisitedRadix_8cpp_aa734333e2144a3bb8a5ca034f45c4dac}{}\label{IceRevisitedRadix_8cpp_aa734333e2144a3bb8a5ca034f45c4dac}
+
+\item 
+\#define {\bfseries V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+R\+A\+N\+KS}~m\+Current\+Size\&=0x7fffffff\hypertarget{IceRevisitedRadix_8cpp_aae779d4a070430deb803d6d95f85cf87}{}\label{IceRevisitedRadix_8cpp_aae779d4a070430deb803d6d95f85cf87}
+
+\item 
+\#define {\bfseries C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+I\+ZE}~(m\+Current\+Size\&0x7fffffff)\hypertarget{IceRevisitedRadix_8cpp_a56acf26c5d0658554d4bc384dee13411}{}\label{IceRevisitedRadix_8cpp_a56acf26c5d0658554d4bc384dee13411}
+
+\item 
+\#define {\bfseries I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+A\+N\+KS}~(m\+Current\+Size\&0x80000000)\hypertarget{IceRevisitedRadix_8cpp_a20887d5670b9f18761f9f1a9bd2c7ce4}{}\label{IceRevisitedRadix_8cpp_a20887d5670b9f18761f9f1a9bd2c7ce4}
+
+\item 
+\#define {\bfseries C\+H\+E\+C\+K\+\_\+\+R\+E\+S\+I\+ZE}(n)
+\item 
+\#define {\bfseries C\+R\+E\+A\+T\+E\+\_\+\+H\+I\+S\+T\+O\+G\+R\+A\+MS}(type,  buffer)\hypertarget{IceRevisitedRadix_8cpp_aa72dbc1e782ee47573e3ada7e1660fb3}{}\label{IceRevisitedRadix_8cpp_aa72dbc1e782ee47573e3ada7e1660fb3}
+
+\item 
+\#define {\bfseries C\+H\+E\+C\+K\+\_\+\+P\+A\+S\+S\+\_\+\+V\+A\+L\+I\+D\+I\+TY}(pass)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains source code from the article \char`\"{}\+Radix Sort Revisited\char`\"{}.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{Ice\+Revisited\+Radix.\+cpp@{Ice\+Revisited\+Radix.\+cpp}!C\+H\+E\+C\+K\+\_\+\+P\+A\+S\+S\+\_\+\+V\+A\+L\+I\+D\+I\+TY@{C\+H\+E\+C\+K\+\_\+\+P\+A\+S\+S\+\_\+\+V\+A\+L\+I\+D\+I\+TY}}
+\index{C\+H\+E\+C\+K\+\_\+\+P\+A\+S\+S\+\_\+\+V\+A\+L\+I\+D\+I\+TY@{C\+H\+E\+C\+K\+\_\+\+P\+A\+S\+S\+\_\+\+V\+A\+L\+I\+D\+I\+TY}!Ice\+Revisited\+Radix.\+cpp@{Ice\+Revisited\+Radix.\+cpp}}
+\subsubsection[{\texorpdfstring{C\+H\+E\+C\+K\+\_\+\+P\+A\+S\+S\+\_\+\+V\+A\+L\+I\+D\+I\+TY}{CHECK_PASS_VALIDITY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+H\+E\+C\+K\+\_\+\+P\+A\+S\+S\+\_\+\+V\+A\+L\+I\+D\+I\+TY(
+\begin{DoxyParamCaption}
+\item[{}]{pass}
+\end{DoxyParamCaption}
+)}\hypertarget{IceRevisitedRadix_8cpp_aa8fda222103fb4dfb5364e6ea1c366da}{}\label{IceRevisitedRadix_8cpp_aa8fda222103fb4dfb5364e6ea1c366da}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Shortcut to current counters */}                                                      
+      \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{\(\backslash\)}
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{    udword}* CurCount = &mHistogram[pass<<8];                                             \(\backslash\)
+                                                                                            \(\backslash\)
+    \textcolor{comment}{/* Reset flag. The sorting pass is supposed to be performed. (default) */}               \(\backslash\)
+    bool PerformPass = \textcolor{keyword}{true};                                                                \(\backslash\)
+                                                                                            \(\backslash\)
+    \textcolor{comment}{/* Check pass validity */}                                                               \(\backslash\)
+                                                                                            \(\backslash\)
+    \textcolor{comment}{/* If all values have the same byte, sorting is useless. */}                             \(\backslash\)
+    \textcolor{comment}{/* It may happen when sorting bytes or words instead of dwords. */}                      \(\backslash\)
+    \textcolor{comment}{/* This routine actually sorts words faster than dwords, and bytes */}                   \(\backslash\)
+    \textcolor{comment}{/* faster than words. Standard running time (O(4*n))is reduced to O(2*n) */}             \(\backslash\)
+    \textcolor{comment}{/* for words and O(n) for bytes. Running time for floats depends on actual values... */} \(\backslash\)
+                                                                                            \(\backslash\)
+    \textcolor{comment}{/* Get first byte */}                                                                    
+      \hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{\(\backslash\)}
+\hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{    ubyte} UniqueVal = *(((\hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{ubyte}*)input)+pass);                                               \(\backslash\)
+                                                                                            \(\backslash\)
+    \textcolor{comment}{/* Check that byte's counter */}                                                         \(\backslash\)
+    if(CurCount[UniqueVal]==nb) PerformPass=false;
+\end{DoxyCode}
+\index{Ice\+Revisited\+Radix.\+cpp@{Ice\+Revisited\+Radix.\+cpp}!C\+H\+E\+C\+K\+\_\+\+R\+E\+S\+I\+ZE@{C\+H\+E\+C\+K\+\_\+\+R\+E\+S\+I\+ZE}}
+\index{C\+H\+E\+C\+K\+\_\+\+R\+E\+S\+I\+ZE@{C\+H\+E\+C\+K\+\_\+\+R\+E\+S\+I\+ZE}!Ice\+Revisited\+Radix.\+cpp@{Ice\+Revisited\+Radix.\+cpp}}
+\subsubsection[{\texorpdfstring{C\+H\+E\+C\+K\+\_\+\+R\+E\+S\+I\+ZE}{CHECK_RESIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+H\+E\+C\+K\+\_\+\+R\+E\+S\+I\+ZE(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{IceRevisitedRadix_8cpp_a054fe59f109f6fa7f6da7f87e8e054d7}{}\label{IceRevisitedRadix_8cpp_a054fe59f109f6fa7f6da7f87e8e054d7}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(n!=mPreviousSize)                                                                    \(\backslash\)
+    \{                                                                                       \(\backslash\)
+                if(n>mCurrentSize)  Resize(n);                                              \(\backslash\)
+        else                        ResetRanks();                                           \(\backslash\)
+        mPreviousSize = n;                                                                  \(\backslash\)
+    \}
+\end{DoxyCode}

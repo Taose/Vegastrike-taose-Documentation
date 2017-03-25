@@ -1,0 +1,99 @@
+\hypertarget{classAABBOptimizedTree}{}\section{A\+A\+B\+B\+Optimized\+Tree Class Reference}
+\label{classAABBOptimizedTree}\index{A\+A\+B\+B\+Optimized\+Tree@{A\+A\+B\+B\+Optimized\+Tree}}
+
+
+Inheritance diagram for A\+A\+B\+B\+Optimized\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d8a/classAABBOptimizedTree__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+A\+B\+B\+Optimized\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{dc/d9e/classAABBOptimizedTree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classAABBOptimizedTree_acbe22cc880be2a05232bd84efb029e37}{Build} (\hyperlink{classAABBTree}{A\+A\+B\+B\+Tree} $\ast$tree)=0
+\item 
+virtual bool \hyperlink{classAABBOptimizedTree_a306eaa4c045e8549937df133dfe94e12}{Refit} (const \hyperlink{classMeshInterface}{Mesh\+Interface} $\ast$mesh\+\_\+interface)=0
+\item 
+virtual bool \hyperlink{classAABBOptimizedTree_addc2788f0391992e359ee76cf87923de}{Walk} (Generic\+Walking\+Callback callback, void $\ast$user\+\_\+data) const =0
+\item 
+virtual \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Used\+Bytes} () const =0\hypertarget{classAABBOptimizedTree_a167d786413b470a0a5970c95a78feaf5}{}\label{classAABBOptimizedTree_a167d786413b470a0a5970c95a78feaf5}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Nb\+Nodes} () const \hypertarget{classAABBOptimizedTree_a0b37c6e0b222dd0f2b776b81cdc43c93}{}\label{classAABBOptimizedTree_a0b37c6e0b222dd0f2b776b81cdc43c93}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries m\+Nb\+Nodes}\hypertarget{classAABBOptimizedTree_a808983c59c9aa9fb9efefec356bdf13d}{}\label{classAABBOptimizedTree_a808983c59c9aa9fb9efefec356bdf13d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{A\+A\+B\+B\+Optimized\+Tree@{A\+A\+B\+B\+Optimized\+Tree}!Build@{Build}}
+\index{Build@{Build}!A\+A\+B\+B\+Optimized\+Tree@{A\+A\+B\+B\+Optimized\+Tree}}
+\subsubsection[{\texorpdfstring{Build(\+A\+A\+B\+B\+Tree $\ast$tree)=0}{Build(AABBTree *tree)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool A\+A\+B\+B\+Optimized\+Tree\+::\+Build (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree} $\ast$}]{tree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAABBOptimizedTree_acbe22cc880be2a05232bd84efb029e37}{}\label{classAABBOptimizedTree_acbe22cc880be2a05232bd84efb029e37}
+Builds the collision tree from a generic \hyperlink{classAABB}{A\+A\+BB} tree. 
+\begin{DoxyParams}{Parameters}
+{\em tree} & \mbox{[}in\mbox{]} generic \hyperlink{classAABB}{A\+A\+BB} tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{A\+A\+B\+B\+Optimized\+Tree@{A\+A\+B\+B\+Optimized\+Tree}!Refit@{Refit}}
+\index{Refit@{Refit}!A\+A\+B\+B\+Optimized\+Tree@{A\+A\+B\+B\+Optimized\+Tree}}
+\subsubsection[{\texorpdfstring{Refit(const Mesh\+Interface $\ast$mesh\+\_\+interface)=0}{Refit(const MeshInterface *mesh_interface)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool A\+A\+B\+B\+Optimized\+Tree\+::\+Refit (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mesh\+Interface} $\ast$}]{mesh\+\_\+interface}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAABBOptimizedTree_a306eaa4c045e8549937df133dfe94e12}{}\label{classAABBOptimizedTree_a306eaa4c045e8549937df133dfe94e12}
+Refits the collision tree after vertices have been modified. 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+\_\+interface} & \mbox{[}in\mbox{]} mesh interface for current model \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{A\+A\+B\+B\+Optimized\+Tree@{A\+A\+B\+B\+Optimized\+Tree}!Walk@{Walk}}
+\index{Walk@{Walk}!A\+A\+B\+B\+Optimized\+Tree@{A\+A\+B\+B\+Optimized\+Tree}}
+\subsubsection[{\texorpdfstring{Walk(\+Generic\+Walking\+Callback callback, void $\ast$user\+\_\+data) const =0}{Walk(GenericWalkingCallback callback, void *user_data) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool A\+A\+B\+B\+Optimized\+Tree\+::\+Walk (
+\begin{DoxyParamCaption}
+\item[{Generic\+Walking\+Callback}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAABBOptimizedTree_addc2788f0391992e359ee76cf87923de}{}\label{classAABBOptimizedTree_addc2788f0391992e359ee76cf87923de}
+Walks the tree and call the user back for each node. 
+\begin{DoxyParams}{Parameters}
+{\em callback} & \mbox{[}in\mbox{]} walking callback \\
+\hline
+{\em user\+\_\+data} & \mbox{[}in\mbox{]} callback\textquotesingle{}s user data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__OptimizedTree_8h}{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}\end{DoxyCompactItemize}

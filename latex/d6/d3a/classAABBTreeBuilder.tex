@@ -1,0 +1,185 @@
+\hypertarget{classAABBTreeBuilder}{}\section{A\+A\+B\+B\+Tree\+Builder Class Reference}
+\label{classAABBTreeBuilder}\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+
+
+Inheritance diagram for A\+A\+B\+B\+Tree\+Builder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/de1/classAABBTreeBuilder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+A\+B\+B\+Tree\+Builder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{de/d7d/classAABBTreeBuilder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAABBTreeBuilder_a892c7e33c261342a6eee3f41e8f4f014}{A\+A\+B\+B\+Tree\+Builder} ()\hypertarget{classAABBTreeBuilder_a892c7e33c261342a6eee3f41e8f4f014}{}\label{classAABBTreeBuilder_a892c7e33c261342a6eee3f41e8f4f014}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classAABBTreeBuilder_a0ad3a7a7585ea8f917a4c9d807bab481}{$\sim$\+A\+A\+B\+B\+Tree\+Builder} ()\hypertarget{classAABBTreeBuilder_a0ad3a7a7585ea8f917a4c9d807bab481}{}\label{classAABBTreeBuilder_a0ad3a7a7585ea8f917a4c9d807bab481}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classAABBTreeBuilder_adde85a9974ea5dc2c74fd851e11abf75}{Compute\+Global\+Box} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$primitives, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+prims, \hyperlink{classAABB}{A\+A\+BB} \&global\+\_\+box) const =0
+\item 
+virtual float \hyperlink{classAABBTreeBuilder_acf08d2d4275763e25585aa240e641be1}{Get\+Splitting\+Value} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} index, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const =0
+\item 
+virtual float \hyperlink{classAABBTreeBuilder_ad22a318124c28d38de4a1a3a940d43c7}{Get\+Splitting\+Value} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword}, const \hyperlink{classAABB}{A\+A\+BB} \&global\+\_\+box, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const 
+\item 
+virtual \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classAABBTreeBuilder_ae04410f2d64c81d1cad6d5e7e4152858}{Validate\+Subdivision} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+prims, const \hyperlink{classAABB}{A\+A\+BB} \&)
+\item 
+inline\+\_\+ void {\bfseries Set\+Count} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)\hypertarget{classAABBTreeBuilder_a47983eff336e89e78e452a8683a5e4d7}{}\label{classAABBTreeBuilder_a47983eff336e89e78e452a8683a5e4d7}
+
+\item 
+inline\+\_\+ void {\bfseries Increase\+Count} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)\hypertarget{classAABBTreeBuilder_ae9a3c783c6f9c386c78d98474780cbdd}{}\label{classAABBTreeBuilder_ae9a3c783c6f9c386c78d98474780cbdd}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Count} () const \hypertarget{classAABBTreeBuilder_a491ed2f10111692ca0816c56561f20d8}{}\label{classAABBTreeBuilder_a491ed2f10111692ca0816c56561f20d8}
+
+\item 
+inline\+\_\+ void {\bfseries Set\+Nb\+Invalid\+Splits} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)\hypertarget{classAABBTreeBuilder_a2cec3a6a39e79e13b8cd152f0ef75351}{}\label{classAABBTreeBuilder_a2cec3a6a39e79e13b8cd152f0ef75351}
+
+\item 
+inline\+\_\+ void {\bfseries Increase\+Nb\+Invalid\+Splits} ()\hypertarget{classAABBTreeBuilder_adc8ad321e70d4fe79a98259ee40dab75}{}\label{classAABBTreeBuilder_adc8ad321e70d4fe79a98259ee40dab75}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Nb\+Invalid\+Splits} () const \hypertarget{classAABBTreeBuilder_ad61e2640272e6c0ca2f73892f4ec82ee}{}\label{classAABBTreeBuilder_ad61e2640272e6c0ca2f73892f4ec82ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structBuildSettings}{Build\+Settings} \hyperlink{classAABBTreeBuilder_a608e2b63c531582147797a44f797faab}{m\+Settings}\hypertarget{classAABBTreeBuilder_a608e2b63c531582147797a44f797faab}{}\label{classAABBTreeBuilder_a608e2b63c531582147797a44f797faab}
+
+\begin{DoxyCompactList}\small\item\em Splitting rules \& split limit \mbox{[}Opcode 1.\+3\mbox{]}. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classAABBTreeBuilder_a25a042f34509d0c94cbd2e825ed9eaca}{m\+Nb\+Primitives}\hypertarget{classAABBTreeBuilder_a25a042f34509d0c94cbd2e825ed9eaca}{}\label{classAABBTreeBuilder_a25a042f34509d0c94cbd2e825ed9eaca}
+
+\begin{DoxyCompactList}\small\item\em Total number of primitives. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classAABBTreeBuilder_a8f081024d14f27c49b6734d849f878a4}{m\+Node\+Base}\hypertarget{classAABBTreeBuilder_a8f081024d14f27c49b6734d849f878a4}{}\label{classAABBTreeBuilder_a8f081024d14f27c49b6734d849f878a4}
+
+\begin{DoxyCompactList}\small\item\em Address of node pool \mbox{[}Opcode 1.\+3\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}!Compute\+Global\+Box@{Compute\+Global\+Box}}
+\index{Compute\+Global\+Box@{Compute\+Global\+Box}!A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+\subsubsection[{\texorpdfstring{Compute\+Global\+Box(const udword $\ast$primitives, udword nb\+\_\+prims, A\+A\+B\+B \&global\+\_\+box) const =0}{ComputeGlobalBox(const udword *primitives, udword nb_prims, AABB &global_box) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool A\+A\+B\+B\+Tree\+Builder\+::\+Compute\+Global\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf udword} $\ast$}]{primitives, }
+\item[{{\bf udword}}]{nb\+\_\+prims, }
+\item[{{\bf A\+A\+BB} \&}]{global\+\_\+box}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAABBTreeBuilder_adde85a9974ea5dc2c74fd851e11abf75}{}\label{classAABBTreeBuilder_adde85a9974ea5dc2c74fd851e11abf75}
+Computes the \hyperlink{classAABB}{A\+A\+BB} of a set of primitives. 
+\begin{DoxyParams}{Parameters}
+{\em primitives} & \mbox{[}in\mbox{]} list of indices of primitives \\
+\hline
+{\em nb\+\_\+prims} & \mbox{[}in\mbox{]} number of indices \\
+\hline
+{\em global\+\_\+box} & \mbox{[}out\mbox{]} global \hyperlink{classAABB}{A\+A\+BB} enclosing the set of input primitives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d3a/classAABBTreeBuilder_adde85a9974ea5dc2c74fd851e11abf75_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}!Get\+Splitting\+Value@{Get\+Splitting\+Value}}
+\index{Get\+Splitting\+Value@{Get\+Splitting\+Value}!A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+\subsubsection[{\texorpdfstring{Get\+Splitting\+Value(udword index, udword axis) const =0}{GetSplittingValue(udword index, udword axis) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual float A\+A\+B\+B\+Tree\+Builder\+::\+Get\+Splitting\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{index, }
+\item[{{\bf udword}}]{axis}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAABBTreeBuilder_acf08d2d4275763e25585aa240e641be1}{}\label{classAABBTreeBuilder_acf08d2d4275763e25585aa240e641be1}
+Computes the splitting value along a given axis for a given primitive. 
+\begin{DoxyParams}{Parameters}
+{\em index} & \mbox{[}in\mbox{]} index of the primitive to split \\
+\hline
+{\em axis} & \mbox{[}in\mbox{]} axis index (0,1,2) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+splitting value 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d3a/classAABBTreeBuilder_acf08d2d4275763e25585aa240e641be1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}!Get\+Splitting\+Value@{Get\+Splitting\+Value}}
+\index{Get\+Splitting\+Value@{Get\+Splitting\+Value}!A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+\subsubsection[{\texorpdfstring{Get\+Splitting\+Value(const udword $\ast$, udword, const A\+A\+B\+B \&global\+\_\+box, udword axis) const }{GetSplittingValue(const udword *, udword, const AABB &global_box, udword axis) const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual float A\+A\+B\+B\+Tree\+Builder\+::\+Get\+Splitting\+Value (
+\begin{DoxyParamCaption}
+\item[{const {\bf udword} $\ast$}]{, }
+\item[{{\bf udword}}]{, }
+\item[{const {\bf A\+A\+BB} \&}]{global\+\_\+box, }
+\item[{{\bf udword}}]{axis}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAABBTreeBuilder_ad22a318124c28d38de4a1a3a940d43c7}{}\label{classAABBTreeBuilder_ad22a318124c28d38de4a1a3a940d43c7}
+Computes the splitting value along a given axis for a given node. 
+\begin{DoxyParams}{Parameters}
+{\em primitives} & \mbox{[}in\mbox{]} list of indices of primitives \\
+\hline
+{\em nb\+\_\+prims} & \mbox{[}in\mbox{]} number of indices \\
+\hline
+{\em global\+\_\+box} & \mbox{[}in\mbox{]} global \hyperlink{classAABB}{A\+A\+BB} enclosing the set of input primitives \\
+\hline
+{\em axis} & \mbox{[}in\mbox{]} axis index (0,1,2) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+splitting value 
+\end{DoxyReturn}
+\index{A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}!Validate\+Subdivision@{Validate\+Subdivision}}
+\index{Validate\+Subdivision@{Validate\+Subdivision}!A\+A\+B\+B\+Tree\+Builder@{A\+A\+B\+B\+Tree\+Builder}}
+\subsubsection[{\texorpdfstring{Validate\+Subdivision(const udword $\ast$, udword nb\+\_\+prims, const A\+A\+B\+B \&)}{ValidateSubdivision(const udword *, udword nb_prims, const AABB &)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf B\+O\+OL} A\+A\+B\+B\+Tree\+Builder\+::\+Validate\+Subdivision (
+\begin{DoxyParamCaption}
+\item[{const {\bf udword} $\ast$}]{, }
+\item[{{\bf udword}}]{nb\+\_\+prims, }
+\item[{const {\bf A\+A\+BB} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAABBTreeBuilder_ae04410f2d64c81d1cad6d5e7e4152858}{}\label{classAABBTreeBuilder_ae04410f2d64c81d1cad6d5e7e4152858}
+Validates node subdivision. This is called each time a node is considered for subdivision, during tree building. 
+\begin{DoxyParams}{Parameters}
+{\em primitives} & \mbox{[}in\mbox{]} list of indices of primitives \\
+\hline
+{\em nb\+\_\+prims} & \mbox{[}in\mbox{]} number of indices \\
+\hline
+{\em global\+\_\+box} & \mbox{[}in\mbox{]} global \hyperlink{classAABB}{A\+A\+BB} enclosing the set of input primitives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the node should be subdivised 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__TreeBuilders_8h}{O\+P\+C\+\_\+\+Tree\+Builders.\+h}\end{DoxyCompactItemize}

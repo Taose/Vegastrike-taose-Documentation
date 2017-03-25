@@ -1,0 +1,141 @@
+\hypertarget{group__ByteSwapFunctions}{}\section{Byte Swapping Functions}
+\label{group__ByteSwapFunctions}\index{Byte Swapping Functions@{Byte Swapping Functions}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} \hyperlink{group__ByteSwapFunctions_ga401e0af0e8d08dba16164b5c8c9b3afd}{P\+O\+S\+H\+\_\+\+Swap\+U16} (\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} u)
+\item 
+\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} \hyperlink{group__ByteSwapFunctions_ga0b4aa282339ed3629dd4517deb777387}{P\+O\+S\+H\+\_\+\+Swap\+S16} (\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} u)
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} \hyperlink{group__ByteSwapFunctions_ga97f53ca21ec6feab173b13693f714b27}{P\+O\+S\+H\+\_\+\+Swap\+U32} (\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} u)
+\item 
+\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} \hyperlink{group__ByteSwapFunctions_ga489b591bc4db4d2682be5f69cc5acb24}{P\+O\+S\+H\+\_\+\+Swap\+S32} (\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} u)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions perform byte swapping of 16 and 32-\/bit values. The 64-\/bit versions of these functions are documented under Sixty\+Four\+Bit 
+
+\subsection{Function Documentation}
+\index{Byte Swapping Functions@{Byte Swapping Functions}!P\+O\+S\+H\+\_\+\+Swap\+S16@{P\+O\+S\+H\+\_\+\+Swap\+S16}}
+\index{P\+O\+S\+H\+\_\+\+Swap\+S16@{P\+O\+S\+H\+\_\+\+Swap\+S16}!Byte Swapping Functions@{Byte Swapping Functions}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Swap\+S16(posh\+\_\+s16\+\_\+t u)}{POSH_SwapS16(posh_s16_t u)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf posh\+\_\+s16\+\_\+t} P\+O\+S\+H\+\_\+\+Swap\+S16 (
+\begin{DoxyParamCaption}
+\item[{{\bf posh\+\_\+s16\+\_\+t}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ByteSwapFunctions_ga0b4aa282339ed3629dd4517deb777387}{}\label{group__ByteSwapFunctions_ga0b4aa282339ed3629dd4517deb777387}
+Byte swaps a 16-\/bit signed value
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\mbox{[}in\mbox{]}} & signed 16-\/bit input value to swap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte swapped version of v 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+This just calls back to the unsigned version, since byte swapping is independent of sign. However, we still provide this function to avoid signed/unsigned mismatch compiler warnings. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{d0/d0f/group__ByteSwapFunctions_ga0b4aa282339ed3629dd4517deb777387_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Byte Swapping Functions@{Byte Swapping Functions}!P\+O\+S\+H\+\_\+\+Swap\+S32@{P\+O\+S\+H\+\_\+\+Swap\+S32}}
+\index{P\+O\+S\+H\+\_\+\+Swap\+S32@{P\+O\+S\+H\+\_\+\+Swap\+S32}!Byte Swapping Functions@{Byte Swapping Functions}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Swap\+S32(posh\+\_\+s32\+\_\+t u)}{POSH_SwapS32(posh_s32_t u)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf posh\+\_\+s32\+\_\+t} P\+O\+S\+H\+\_\+\+Swap\+S32 (
+\begin{DoxyParamCaption}
+\item[{{\bf posh\+\_\+s32\+\_\+t}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ByteSwapFunctions_ga489b591bc4db4d2682be5f69cc5acb24}{}\label{group__ByteSwapFunctions_ga489b591bc4db4d2682be5f69cc5acb24}
+Byte swaps a 32-\/bit signed value
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\mbox{[}in\mbox{]}} & signed 32-\/bit input value to swap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte swapped version of v 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+This just calls back to the unsigned version, since byte swapping is independent of sign. However, we still provide this function to avoid signed/unsigned mismatch compiler warnings. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{d0/d0f/group__ByteSwapFunctions_ga489b591bc4db4d2682be5f69cc5acb24_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Byte Swapping Functions@{Byte Swapping Functions}!P\+O\+S\+H\+\_\+\+Swap\+U16@{P\+O\+S\+H\+\_\+\+Swap\+U16}}
+\index{P\+O\+S\+H\+\_\+\+Swap\+U16@{P\+O\+S\+H\+\_\+\+Swap\+U16}!Byte Swapping Functions@{Byte Swapping Functions}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Swap\+U16(posh\+\_\+u16\+\_\+t u)}{POSH_SwapU16(posh_u16_t u)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf posh\+\_\+u16\+\_\+t} P\+O\+S\+H\+\_\+\+Swap\+U16 (
+\begin{DoxyParamCaption}
+\item[{{\bf posh\+\_\+u16\+\_\+t}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ByteSwapFunctions_ga401e0af0e8d08dba16164b5c8c9b3afd}{}\label{group__ByteSwapFunctions_ga401e0af0e8d08dba16164b5c8c9b3afd}
+Byte swaps a 16-\/bit unsigned value
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\mbox{[}in\mbox{]}} & unsigned 16-\/bit input value to swap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte swapped version of v 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{d0/d0f/group__ByteSwapFunctions_ga401e0af0e8d08dba16164b5c8c9b3afd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Byte Swapping Functions@{Byte Swapping Functions}!P\+O\+S\+H\+\_\+\+Swap\+U32@{P\+O\+S\+H\+\_\+\+Swap\+U32}}
+\index{P\+O\+S\+H\+\_\+\+Swap\+U32@{P\+O\+S\+H\+\_\+\+Swap\+U32}!Byte Swapping Functions@{Byte Swapping Functions}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Swap\+U32(posh\+\_\+u32\+\_\+t u)}{POSH_SwapU32(posh_u32_t u)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf posh\+\_\+u32\+\_\+t} P\+O\+S\+H\+\_\+\+Swap\+U32 (
+\begin{DoxyParamCaption}
+\item[{{\bf posh\+\_\+u32\+\_\+t}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ByteSwapFunctions_ga97f53ca21ec6feab173b13693f714b27}{}\label{group__ByteSwapFunctions_ga97f53ca21ec6feab173b13693f714b27}
+Byte swaps a 32-\/bit unsigned value
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\mbox{[}in\mbox{]}} & unsigned 32-\/bit input value to swap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte swapped version of v 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d0f/group__ByteSwapFunctions_ga97f53ca21ec6feab173b13693f714b27_icgraph}
+\end{center}
+\end{figure}
+
+

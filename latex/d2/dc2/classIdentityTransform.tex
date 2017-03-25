@@ -1,0 +1,55 @@
+\hypertarget{classIdentityTransform}{}\section{Identity\+Transform Class Reference}
+\label{classIdentityTransform}\index{Identity\+Transform@{Identity\+Transform}}
+
+
+{\ttfamily \#include $<$nonlinear\+\_\+transform.\+h$>$}
+
+
+
+Inheritance diagram for Identity\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{d1/df3/classIdentityTransform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Identity\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{d0/d2e/classIdentityTransform__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Q\+Vector \hyperlink{classIdentityTransform_a21de8ca99762c2321fa2c7b4ba8f09ef}{Transform} (const Q\+Vector \&v) const \hypertarget{classIdentityTransform_a21de8ca99762c2321fa2c7b4ba8f09ef}{}\label{classIdentityTransform_a21de8ca99762c2321fa2c7b4ba8f09ef}
+
+\begin{DoxyCompactList}\small\item\em Transforms in a possibly nonlinear way the point to some new space. \end{DoxyCompactList}\item 
+virtual Q\+Vector \hyperlink{classIdentityTransform_a3df83988de181c9be40799c29bf3fa62}{Transform\+Normal} (const Q\+Vector \&v, const Q\+Vector \&n) const \hypertarget{classIdentityTransform_a3df83988de181c9be40799c29bf3fa62}{}\label{classIdentityTransform_a3df83988de181c9be40799c29bf3fa62}
+
+\begin{DoxyCompactList}\small\item\em transforms a direction to some new space \end{DoxyCompactList}\item 
+virtual Q\+Vector \hyperlink{classIdentityTransform_a1d1a66296f878befe288eb4705d832fa}{Inv\+Transform} (const Q\+Vector \&v) const \hypertarget{classIdentityTransform_a1d1a66296f878befe288eb4705d832fa}{}\label{classIdentityTransform_a1d1a66296f878befe288eb4705d832fa}
+
+\begin{DoxyCompactList}\small\item\em Transforms in reverse the vector into quadsquare space. \end{DoxyCompactList}\item 
+virtual C\+L\+I\+P\+S\+T\+A\+TE \hyperlink{classIdentityTransform_a7f89e70a26e0b6d28450d4ce9eeaa47f}{Box\+In\+Frustum} (Vector \&min, Vector \&max, const Vector \&campos) const \hypertarget{classIdentityTransform_a7f89e70a26e0b6d28450d4ce9eeaa47f}{}\label{classIdentityTransform_a7f89e70a26e0b6d28450d4ce9eeaa47f}
+
+\begin{DoxyCompactList}\small\item\em Transforms a min and a max vector and figures out what is bigger. \end{DoxyCompactList}\item 
+float {\bfseries TransformS} (float x, float scale) const \hypertarget{classIdentityTransform_a3e6ee0010a1d649ea0faba077582fa55}{}\label{classIdentityTransform_a3e6ee0010a1d649ea0faba077582fa55}
+
+\item 
+float {\bfseries TransformT} (float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float scale) const \hypertarget{classIdentityTransform_ab473c2f60a64238a9d69a45ec53b1869}{}\label{classIdentityTransform_ab473c2f60a64238a9d69a45ec53b1869}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+We could make it virtual and ahve a sphere-\/map or cube-\/map version of this 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gfx/nonlinear\+\_\+transform.\+h\end{DoxyCompactItemize}

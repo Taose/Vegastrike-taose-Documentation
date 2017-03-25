@@ -1,0 +1,6 @@
+<map id="UpgradeOperationMountDialog" name="UpgradeOperationMountDialog">
+<area shape="rect" id="node2" href="$d1/dab/classListQuestionDialog.html" title="{ListQuestionDialog\n||+ initControls()\l+ processWindowCommand()\l+ getPicker()\l# CreateControlsForListWindow()\l}" alt="" coords="5,675,221,796"/>
+<area shape="rect" id="node3" href="$d2/d2f/classQuestionDialog.html" title="{QuestionDialog\n|# m_deleteWindow\l|+ initControls()\l+ init()\l+ run()\l+ QuestionDialog()\l+ ~QuestionDialog()\l}" alt="" coords="44,491,183,627"/>
+<area shape="rect" id="node4" href="$d4/d09/classModalDialog.html" title="{ModalDialog\n|# m_callbackId\l# m_callback\l# m_result\l|+ setCallback()\l+ init()\l+ run()\l+ processWindowCommand()\l+ modalFinished()\l+ ModalDialog()\l+ ~ModalDialog()\l}" alt="" coords="16,248,211,443"/>
+<area shape="rect" id="node5" href="$d4/d72/classWindowController.html" title="{WindowController\n|# m_window\l# m_deleteOnWindowClose\l|+ init()\l+ run()\l+ draw()\l+ window()\l+ setWindow()\l+ processWindowCommand()\l+ WindowController()\l+ ~WindowController()\l}" alt="" coords="16,5,211,200"/>
+</map>

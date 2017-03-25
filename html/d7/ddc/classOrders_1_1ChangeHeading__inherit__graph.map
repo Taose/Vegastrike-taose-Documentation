@@ -1,0 +1,11 @@
+<map id="Orders::ChangeHeading" name="Orders::ChangeHeading">
+<area shape="rect" id="node3" href="$d1/df2/classOrders_1_1AutoLongHaul.html" title="{Orders::AutoLongHaul\n||+ AutoLongHaul()\l+ Execute()\l+ SetParent()\l+ getOrderDescription()\l+ ~AutoLongHaul()\l}" alt="" coords="5,623,164,759"/>
+<area shape="rect" id="node4" href="$d7/def/classOrders_1_1FaceDirection.html" title="{Orders::FaceDirection\n||+ FaceDirection()\l+ SetParent()\l+ Execute()\l+ getOrderDescription()\l+ ~FaceDirection()\l}" alt="" coords="188,623,347,759"/>
+<area shape="rect" id="node5" href="$df/d43/classOrders_1_1FaceTarget.html" title="{Orders::FaceTarget\n||+ FaceTarget()\l+ Execute()\l+ getOrderDescription()\l+ ~FaceTarget()\l}" alt="" coords="371,630,529,751"/>
+<area shape="rect" id="node6" href="$d2/d49/classOrders_1_1FaceTargetITTS.html" title="{Orders::FaceTargetITTS\n||+ FaceTargetITTS()\l+ Execute()\l+ getOrderDescription()\l+ ~FaceTargetITTS()\l}" alt="" coords="553,630,717,751"/>
+<area shape="rect" id="node2" href="$d5/d6b/classOrder.html" title="{Order\n|# parent\l# type\l# subtype\l# done\l# group\l# targetlocation\l# suborders\l# messagequeue\l# actionstring\l|+ ChooseTarget()\l+ PursueTarget()\l+ ClearMessages()\l+ Order()\l+ Order()\l+ Destroy()\l+ Execute()\l+ queryType()\l+ queryAny()\l+ eraseType()\land 24 more...\l# ~Order()\l# Destructor()\l}" alt="" coords="291,5,425,376"/>
+<area shape="rect" id="node7" href="$d3/d25/classOrders_1_1FacePerpendicular.html" title="{Orders::FacePerpendicular\n||+ SetParent()\l+ FacePerpendicular()\l+ Execute()\l}" alt="" coords="276,807,453,913"/>
+<area shape="rect" id="node8" href="$dd/db2/classOrders_1_1LoopAround.html" title="{Orders::LoopAround\n||+ SetParent()\l+ LoopAround()\l+ Execute()\l}" alt="" coords="478,807,617,913"/>
+<area shape="rect" id="node9" href="$dc/dc5/classOrders_1_1LoopAroundAgro.html" title="{Orders::LoopAroundAgro\n||+ LoopAroundAgro()\l+ Execute()\l}" alt="" coords="641,814,806,906"/>
+<area shape="rect" id="node10" href="$d8/d4d/classOrders_1_1TurretAI.html" title="{Orders::TurretAI\n||+ TurretAI()\l+ Execute()\l+ getAverageGunSpeed()\l}" alt="" coords="831,807,1000,913"/>
+</map>

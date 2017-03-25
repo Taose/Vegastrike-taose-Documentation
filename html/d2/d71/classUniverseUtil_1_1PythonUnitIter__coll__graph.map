@@ -1,0 +1,4 @@
+<map id="UniverseUtil::PythonUnitIter" name="UniverseUtil::PythonUnitIter">
+<area shape="rect" id="node2" href="$dd/d36/classUnitCollection_1_1UnitIterator.html" title="{un_iter\n|# it\l|+ UnitIterator()\l+ UnitIterator()\l+ UnitIterator()\l+ ~UnitIterator()\l+ isDone()\l+ notDone()\l+ remove()\l+ moveBefore()\l+ preinsert()\l+ postinsert()\land 23 more...\l}" alt="" coords="41,321,156,545"/>
+<area shape="rect" id="node3" href="$db/d87/classUnitCollection.html" title="{UnitCollection\n||+ UnitCollection()\l+ UnitCollection()\l+ ~UnitCollection()\l+ createIterator()\l+ fastIterator()\l+ constIterator()\l+ constFastIterator()\l+ insert_unique()\l+ empty()\l+ prepend()\land 32 more...\l+ FreeUnusedNodes()\l+ PushUnusedNode()\l}" alt="" coords="23,5,174,259"/>
+</map>

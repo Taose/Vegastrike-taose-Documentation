@@ -1,0 +1,4 @@
+<map id="PaintText::TextFragment" name="PaintText::TextFragment">
+<area shape="rect" id="node2" href="$d4/d42/classFont.html" title="{Font\n|# m_size\l# m_strokeWeight\l# m_needMetrics\l# m_strokeWidth\l# m_extraCharWidth\l# m_spaceCharFixup\l# m_verticalScaling\l# m_horizontalScaling\l|+ size()\l+ setSize()\l+ strokeWeight()\l+ setStrokeWeight()\l+ drawChar()\l+ charWidth()\l+ stringWidth()\l+ verticalScaling()\l+ horizontalScaling()\l+ Font()\l+ strokeWidth()\l+ operator==()\l+ operator!=()\l# calcMetrics()\l# calcMetricsIfNeeded()\l}" alt="" coords="5,5,167,391"/>
+<area shape="rect" id="node3" href="$d2/d7d/structGFXColor.html" title="{GFXColor\n|+ r\l+ g\l+ b\l+ a\l|+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ netswap()\l+ clamp()\l}" alt="" coords="191,101,291,295"/>
+</map>

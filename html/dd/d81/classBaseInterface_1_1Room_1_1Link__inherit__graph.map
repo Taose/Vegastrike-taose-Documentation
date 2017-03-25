@@ -1,0 +1,8 @@
+<map id="BaseInterface::Room::Link" name="BaseInterface::Room::Link">
+<area shape="rect" id="node2" href="$de/da8/classBaseInterface_1_1Room_1_1Comp.html" title="{BaseInterface::Room\l::Comp\n|+ modes\l|+ Click()\l+ ~Comp()\l+ Comp()\l}" alt="" coords="5,402,152,523"/>
+<area shape="rect" id="node3" href="$dc/d86/classBaseInterface_1_1Room_1_1Eject.html" title="{BaseInterface::Room\l::Eject\n||+ Click()\l+ ~Eject()\l+ Eject()\l}" alt="" coords="176,402,323,523"/>
+<area shape="rect" id="node4" href="$d6/dc5/classBaseInterface_1_1Room_1_1Goto.html" title="{BaseInterface::Room\l::Goto\n|+ index\l|+ Click()\l+ ~Goto()\l+ Goto()\l}" alt="" coords="347,402,493,523"/>
+<area shape="rect" id="node5" href="$d2/d52/classBaseInterface_1_1Room_1_1Launch.html" title="{BaseInterface::Room\l::Launch\n||+ Click()\l+ ~Launch()\l+ Launch()\l}" alt="" coords="517,402,664,523"/>
+<area shape="rect" id="node6" href="$d2/d9a/classBaseInterface_1_1Room_1_1Python.html" title="{BaseInterface::Room\l::Python\n||+ Python()\l+ ~Python()\l}" alt="" coords="688,409,835,516"/>
+<area shape="rect" id="node7" href="$de/d3a/classBaseInterface_1_1Room_1_1Talk.html" title="{BaseInterface::Room\l::Talk\n|+ say\l+ soundfiles\l+ index\l+ curroom\l|+ Click()\l+ Talk()\l+ ~Talk()\l}" alt="" coords="859,380,1005,545"/>
+</map>

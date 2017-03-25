@@ -1,0 +1,482 @@
+\hypertarget{classOpcode_1_1IndexedTriangle}{}\section{Opcode\+:\+:Indexed\+Triangle Class Reference}
+\label{classOpcode_1_1IndexedTriangle}\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+
+
+Collaboration diagram for Opcode\+:\+:Indexed\+Triangle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{d0/d63/classOpcode_1_1IndexedTriangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1IndexedTriangle_a80123e71b80a1eaffbe79952824a5c7c}{Indexed\+Triangle} ()\hypertarget{classOpcode_1_1IndexedTriangle_a80123e71b80a1eaffbe79952824a5c7c}{}\label{classOpcode_1_1IndexedTriangle_a80123e71b80a1eaffbe79952824a5c7c}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1IndexedTriangle_abe14ea4ac803aa569be75d02ca7d795a}{Indexed\+Triangle} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r1, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r2)\hypertarget{classOpcode_1_1IndexedTriangle_abe14ea4ac803aa569be75d02ca7d795a}{}\label{classOpcode_1_1IndexedTriangle_abe14ea4ac803aa569be75d02ca7d795a}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1IndexedTriangle_a4e15c7702173080750233b108c9ae12e}{Indexed\+Triangle} (const \hyperlink{classOpcode_1_1IndexedTriangle}{Indexed\+Triangle} \&triangle)\hypertarget{classOpcode_1_1IndexedTriangle_a4e15c7702173080750233b108c9ae12e}{}\label{classOpcode_1_1IndexedTriangle_a4e15c7702173080750233b108c9ae12e}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1IndexedTriangle_aa7ee31ae752cb42cb9dbfa7868f6bd04}{$\sim$\+Indexed\+Triangle} ()\hypertarget{classOpcode_1_1IndexedTriangle_aa7ee31ae752cb42cb9dbfa7868f6bd04}{}\label{classOpcode_1_1IndexedTriangle_aa7ee31ae752cb42cb9dbfa7868f6bd04}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classOpcode_1_1IndexedTriangle_a1f62befd6484bee954f067d5738c38a5}{Flip} ()
+\item 
+float \hyperlink{classOpcode_1_1IndexedTriangle_a726d46253ceaef9e3724d195374c1050}{Area} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts) const 
+\item 
+float \hyperlink{classOpcode_1_1IndexedTriangle_ab089bb99995ef572f42401d65868104f}{Perimeter} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts) const 
+\item 
+float \hyperlink{classOpcode_1_1IndexedTriangle_aa6fc9a36d7d895f5b23de439d7474e94}{Compacity} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts) const 
+\item 
+void \hyperlink{classOpcode_1_1IndexedTriangle_aec07600ca093248c4e49d02b3f2f7a36}{Normal} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts, \hyperlink{classOpcode_1_1Point}{Point} \&normal) const 
+\item 
+void \hyperlink{classOpcode_1_1IndexedTriangle_a6077f4cb876cdbbef181d4501d5b28f7}{Denormalized\+Normal} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts, \hyperlink{classOpcode_1_1Point}{Point} \&normal) const 
+\item 
+void \hyperlink{classOpcode_1_1IndexedTriangle_a773a19dac0e1b35913f94b8ec08f638d}{Center} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts, \hyperlink{classOpcode_1_1Point}{Point} \&center) const 
+\item 
+void \hyperlink{classOpcode_1_1IndexedTriangle_a307ff86b3dcb63701e4805ced9a21730}{Centered\+Normal} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts, \hyperlink{classOpcode_1_1Point}{Point} \&normal) const 
+\item 
+void \hyperlink{classOpcode_1_1IndexedTriangle_ad2fc2080a0d1ead335836991822eeca2}{Random\+Point} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts, \hyperlink{classOpcode_1_1Point}{Point} \&random) const 
+\item 
+bool \hyperlink{classOpcode_1_1IndexedTriangle_a6fc8b09c9cc16ce1e7c0b3fd825ddbf2}{Is\+Visible} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts, const \hyperlink{classOpcode_1_1Point}{Point} \&source) const 
+\item 
+bool \hyperlink{classOpcode_1_1IndexedTriangle_acac72a5c7e3a7e7963a9e9bc4ed2a3e8}{Backface\+Culling} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts, const \hyperlink{classOpcode_1_1Point}{Point} \&source) const 
+\item 
+float \hyperlink{classOpcode_1_1IndexedTriangle_a4df6adef9fba2d9426e13f03a12b0ea1}{Compute\+Occlusion\+Potential} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts, const \hyperlink{classOpcode_1_1Point}{Point} \&view) const 
+\item 
+bool \hyperlink{classOpcode_1_1IndexedTriangle_af5a5f522cb0b97eb27fc5bb62e6fc4e7}{Replace\+Vertex} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} oldref, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} newref)
+\item 
+bool \hyperlink{classOpcode_1_1IndexedTriangle_a5ddd2c34c037481e0ba2b36b39e3f9ac}{Is\+Degenerate} () const 
+\item 
+bool \hyperlink{classOpcode_1_1IndexedTriangle_a5044242b46d49fd7b728f96b8d945e10}{Has\+Vertex} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} ref) const 
+\item 
+bool \hyperlink{classOpcode_1_1IndexedTriangle_a3698519a215745600e9a40ce49eca410}{Has\+Vertex} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} ref, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$index) const 
+\item 
+\hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{ubyte} \hyperlink{classOpcode_1_1IndexedTriangle_aa8fc0c2b6623832647fa880e98de23b7}{Find\+Edge} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} vref0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} vref1) const 
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1IndexedTriangle_a0c7351a54375f0a939bc3707c28508c8}{Opposite\+Vertex} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} vref0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} vref1) const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Opposite\+Vertex} (\hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{ubyte} edgenb) const \hypertarget{classOpcode_1_1IndexedTriangle_ac0e5e0429aea095fe83cd162b125e029}{}\label{classOpcode_1_1IndexedTriangle_ac0e5e0429aea095fe83cd162b125e029}
+
+\item 
+void \hyperlink{classOpcode_1_1IndexedTriangle_a8aa9652bf4799555773d2ecdf3da3291}{Get\+V\+Refs} (\hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{ubyte} edgenb, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&vref0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&vref1, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&vref2) const 
+\item 
+float \hyperlink{classOpcode_1_1IndexedTriangle_a6b2352d5b214898c58f5c5bca7a360ec}{Min\+Edge\+Length} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts) const 
+\item 
+float \hyperlink{classOpcode_1_1IndexedTriangle_abad2f26ec2a8cee0c2753d094e87fb9c}{Max\+Edge\+Length} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts) const 
+\item 
+void \hyperlink{classOpcode_1_1IndexedTriangle_a4acfb3e8e81f5b8d7b59365d8d0d1897}{Compute\+Point} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts, float u, float v, \hyperlink{classOpcode_1_1Point}{Point} \&pt, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$nearvtx=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const 
+\item 
+float \hyperlink{classOpcode_1_1IndexedTriangle_a876ee32ea917ca66141fe867a29ecbb4}{Angle} (const \hyperlink{classOpcode_1_1IndexedTriangle}{Indexed\+Triangle} \&tri, const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts) const 
+\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1Plane}{Plane} {\bfseries Plane\+Equation} (const \hyperlink{classOpcode_1_1Point}{Point} $\ast$verts) const \hypertarget{classOpcode_1_1IndexedTriangle_a7d2d53f0f0d9abefacd86c565adfc153}{}\label{classOpcode_1_1IndexedTriangle_a7d2d53f0f0d9abefacd86c565adfc153}
+
+\item 
+bool \hyperlink{classOpcode_1_1IndexedTriangle_a15b576c437f90be4d6b9e015006deb75}{Equal} (const \hyperlink{classOpcode_1_1IndexedTriangle}{Indexed\+Triangle} \&tri) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1IndexedTriangle_a783082e89cfdb575022958e3c1083676}{m\+V\+Ref} \mbox{[}3\mbox{]}\hypertarget{classOpcode_1_1IndexedTriangle_a783082e89cfdb575022958e3c1083676}{}\label{classOpcode_1_1IndexedTriangle_a783082e89cfdb575022958e3c1083676}
+
+\begin{DoxyCompactList}\small\item\em Vertex-\/references. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Angle@{Angle}}
+\index{Angle@{Angle}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Angle(const Indexed\+Triangle \&tri, const Point $\ast$verts) const }{Angle(const IndexedTriangle &tri, const Point *verts) const }}]{\setlength{\rightskip}{0pt plus 5cm}float Indexed\+Triangle\+::\+Angle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Indexed\+Triangle} \&}]{tri, }
+\item[{const {\bf Point} $\ast$}]{verts}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a876ee32ea917ca66141fe867a29ecbb4}{}\label{classOpcode_1_1IndexedTriangle_a876ee32ea917ca66141fe867a29ecbb4}
+Computes the angle between two triangles. 
+\begin{DoxyParams}{Parameters}
+{\em tri} & \mbox{[}in\mbox{]} the other triangle \\
+\hline
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the angle in radians 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Area@{Area}}
+\index{Area@{Area}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Area(const Point $\ast$verts) const }{Area(const Point *verts) const }}]{\setlength{\rightskip}{0pt plus 5cm}float Indexed\+Triangle\+::\+Area (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a726d46253ceaef9e3724d195374c1050}{}\label{classOpcode_1_1IndexedTriangle_a726d46253ceaef9e3724d195374c1050}
+Computes the triangle area. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the area 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Backface\+Culling@{Backface\+Culling}}
+\index{Backface\+Culling@{Backface\+Culling}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Backface\+Culling(const Point $\ast$verts, const Point \&source) const }{BackfaceCulling(const Point *verts, const Point &source) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Indexed\+Triangle\+::\+Backface\+Culling (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts, }
+\item[{const {\bf Point} \&}]{source}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_acac72a5c7e3a7e7963a9e9bc4ed2a3e8}{}\label{classOpcode_1_1IndexedTriangle_acac72a5c7e3a7e7963a9e9bc4ed2a3e8}
+Computes backface culling. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+{\em source} & \mbox{[}in\mbox{]} source point (in local space) from which culling must be computed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the triangle is visible from the source point 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Center@{Center}}
+\index{Center@{Center}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Center(const Point $\ast$verts, Point \&center) const }{Center(const Point *verts, Point &center) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Indexed\+Triangle\+::\+Center (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts, }
+\item[{{\bf Point} \&}]{center}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a773a19dac0e1b35913f94b8ec08f638d}{}\label{classOpcode_1_1IndexedTriangle_a773a19dac0e1b35913f94b8ec08f638d}
+Computes the triangle center. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+{\em center} & \mbox{[}out\mbox{]} the computed center \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Centered\+Normal@{Centered\+Normal}}
+\index{Centered\+Normal@{Centered\+Normal}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Centered\+Normal(const Point $\ast$verts, Point \&normal) const }{CenteredNormal(const Point *verts, Point &normal) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Indexed\+Triangle\+::\+Centered\+Normal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts, }
+\item[{{\bf Point} \&}]{normal}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a307ff86b3dcb63701e4805ced9a21730}{}\label{classOpcode_1_1IndexedTriangle_a307ff86b3dcb63701e4805ced9a21730}
+Computes the centered normal 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+{\em normal} & \mbox{[}out\mbox{]} the computed centered normal \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Compacity@{Compacity}}
+\index{Compacity@{Compacity}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Compacity(const Point $\ast$verts) const }{Compacity(const Point *verts) const }}]{\setlength{\rightskip}{0pt plus 5cm}float Indexed\+Triangle\+::\+Compacity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_aa6fc9a36d7d895f5b23de439d7474e94}{}\label{classOpcode_1_1IndexedTriangle_aa6fc9a36d7d895f5b23de439d7474e94}
+Computes the triangle compacity. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the compacity 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Compute\+Occlusion\+Potential@{Compute\+Occlusion\+Potential}}
+\index{Compute\+Occlusion\+Potential@{Compute\+Occlusion\+Potential}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Compute\+Occlusion\+Potential(const Point $\ast$verts, const Point \&view) const }{ComputeOcclusionPotential(const Point *verts, const Point &view) const }}]{\setlength{\rightskip}{0pt plus 5cm}float Indexed\+Triangle\+::\+Compute\+Occlusion\+Potential (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts, }
+\item[{const {\bf Point} \&}]{view}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a4df6adef9fba2d9426e13f03a12b0ea1}{}\label{classOpcode_1_1IndexedTriangle_a4df6adef9fba2d9426e13f03a12b0ea1}
+Computes the occlusion potential of the triangle. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+{\em source} & \mbox{[}in\mbox{]} source point (in local space) from which occlusion potential must be computed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the occlusion potential 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Compute\+Point@{Compute\+Point}}
+\index{Compute\+Point@{Compute\+Point}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Compute\+Point(const Point $\ast$verts, float u, float v, Point \&pt, udword $\ast$nearvtx=null) const }{ComputePoint(const Point *verts, float u, float v, Point &pt, udword *nearvtx=null) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Indexed\+Triangle\+::\+Compute\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts, }
+\item[{float}]{u, }
+\item[{float}]{v, }
+\item[{{\bf Point} \&}]{pt, }
+\item[{{\bf udword} $\ast$}]{nearvtx = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a4acfb3e8e81f5b8d7b59365d8d0d1897}{}\label{classOpcode_1_1IndexedTriangle_a4acfb3e8e81f5b8d7b59365d8d0d1897}
+Computes a point on the triangle according to the stabbing information. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+{\em u,v} & \mbox{[}in\mbox{]} point\textquotesingle{}s barycentric coordinates \\
+\hline
+{\em pt} & \mbox{[}out\mbox{]} point on triangle \\
+\hline
+{\em nearvtx} & \mbox{[}out\mbox{]} index of nearest vertex \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Denormalized\+Normal@{Denormalized\+Normal}}
+\index{Denormalized\+Normal@{Denormalized\+Normal}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Denormalized\+Normal(const Point $\ast$verts, Point \&normal) const }{DenormalizedNormal(const Point *verts, Point &normal) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Indexed\+Triangle\+::\+Denormalized\+Normal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts, }
+\item[{{\bf Point} \&}]{normal}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a6077f4cb876cdbbef181d4501d5b28f7}{}\label{classOpcode_1_1IndexedTriangle_a6077f4cb876cdbbef181d4501d5b28f7}
+Computes the triangle denormalized normal. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+{\em normal} & \mbox{[}out\mbox{]} the computed normal \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Equal@{Equal}}
+\index{Equal@{Equal}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Equal(const Indexed\+Triangle \&tri) const }{Equal(const IndexedTriangle &tri) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Indexed\+Triangle\+::\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Indexed\+Triangle} \&}]{tri}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a15b576c437f90be4d6b9e015006deb75}{}\label{classOpcode_1_1IndexedTriangle_a15b576c437f90be4d6b9e015006deb75}
+Checks a triangle is the same as another one. 
+\begin{DoxyParams}{Parameters}
+{\em tri} & \mbox{[}in\mbox{]} the other triangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if same triangle 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Find\+Edge@{Find\+Edge}}
+\index{Find\+Edge@{Find\+Edge}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Find\+Edge(udword vref0, udword vref1) const }{FindEdge(udword vref0, udword vref1) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ubyte} Indexed\+Triangle\+::\+Find\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{vref0, }
+\item[{{\bf udword}}]{vref1}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_aa8fc0c2b6623832647fa880e98de23b7}{}\label{classOpcode_1_1IndexedTriangle_aa8fc0c2b6623832647fa880e98de23b7}
+Finds an edge in a tri, given two vertex references. 
+\begin{DoxyParams}{Parameters}
+{\em vref0} & \mbox{[}in\mbox{]} the edge\textquotesingle{}s first vertex reference \\
+\hline
+{\em vref1} & \mbox{[}in\mbox{]} the edge\textquotesingle{}s second vertex reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the edge number between 0 and 2, or 0xff if input refs are wrong. 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Flip@{Flip}}
+\index{Flip@{Flip}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Flip()}{Flip()}}]{\setlength{\rightskip}{0pt plus 5cm}void Indexed\+Triangle\+::\+Flip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1IndexedTriangle_a1f62befd6484bee954f067d5738c38a5}{}\label{classOpcode_1_1IndexedTriangle_a1f62befd6484bee954f067d5738c38a5}
+Flips the winding order. \index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Get\+V\+Refs@{Get\+V\+Refs}}
+\index{Get\+V\+Refs@{Get\+V\+Refs}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Get\+V\+Refs(ubyte edgenb, udword \&vref0, udword \&vref1, udword \&vref2) const }{GetVRefs(ubyte edgenb, udword &vref0, udword &vref1, udword &vref2) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Indexed\+Triangle\+::\+Get\+V\+Refs (
+\begin{DoxyParamCaption}
+\item[{{\bf ubyte}}]{edgenb, }
+\item[{{\bf udword} \&}]{vref0, }
+\item[{{\bf udword} \&}]{vref1, }
+\item[{{\bf udword} \&}]{vref2}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a8aa9652bf4799555773d2ecdf3da3291}{}\label{classOpcode_1_1IndexedTriangle_a8aa9652bf4799555773d2ecdf3da3291}
+Gets the three sorted vertex references according to an edge number. edgenb = 0 =$>$ edge 0-\/1, returns references 0, 1, 2 edgenb = 1 =$>$ edge 0-\/2, returns references 0, 2, 1 edgenb = 2 =$>$ edge 1-\/2, returns references 1, 2, 0
+
+
+\begin{DoxyParams}{Parameters}
+{\em edgenb} & \mbox{[}in\mbox{]} the edge number, 0, 1 or 2 \\
+\hline
+{\em vref0} & \mbox{[}out\mbox{]} the returned first vertex reference \\
+\hline
+{\em vref1} & \mbox{[}out\mbox{]} the returned second vertex reference \\
+\hline
+{\em vref2} & \mbox{[}out\mbox{]} the returned third vertex reference \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Has\+Vertex@{Has\+Vertex}}
+\index{Has\+Vertex@{Has\+Vertex}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Has\+Vertex(udword ref) const }{HasVertex(udword ref) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Indexed\+Triangle\+::\+Has\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{ref}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a5044242b46d49fd7b728f96b8d945e10}{}\label{classOpcode_1_1IndexedTriangle_a5044242b46d49fd7b728f96b8d945e10}
+Checks whether the input vertex reference belongs to the triangle or not. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & \mbox{[}in\mbox{]} the vertex reference to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the triangle contains the vertex reference 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Has\+Vertex@{Has\+Vertex}}
+\index{Has\+Vertex@{Has\+Vertex}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Has\+Vertex(udword ref, udword $\ast$index) const }{HasVertex(udword ref, udword *index) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Indexed\+Triangle\+::\+Has\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{ref, }
+\item[{{\bf udword} $\ast$}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a3698519a215745600e9a40ce49eca410}{}\label{classOpcode_1_1IndexedTriangle_a3698519a215745600e9a40ce49eca410}
+Checks whether the input vertex reference belongs to the triangle or not. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & \mbox{[}in\mbox{]} the vertex reference to look for \\
+\hline
+{\em index} & \mbox{[}out\mbox{]} the corresponding index in the triangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the triangle contains the vertex reference 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Is\+Degenerate@{Is\+Degenerate}}
+\index{Is\+Degenerate@{Is\+Degenerate}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Is\+Degenerate() const }{IsDegenerate() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Indexed\+Triangle\+::\+Is\+Degenerate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a5ddd2c34c037481e0ba2b36b39e3f9ac}{}\label{classOpcode_1_1IndexedTriangle_a5ddd2c34c037481e0ba2b36b39e3f9ac}
+Checks whether the triangle is degenerate or not. A degenerate triangle has two common vertex references. This is a zero-\/area triangle. \begin{DoxyReturn}{Returns}
+true if the triangle is degenerate 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Is\+Visible@{Is\+Visible}}
+\index{Is\+Visible@{Is\+Visible}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Is\+Visible(const Point $\ast$verts, const Point \&source) const }{IsVisible(const Point *verts, const Point &source) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Indexed\+Triangle\+::\+Is\+Visible (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts, }
+\item[{const {\bf Point} \&}]{source}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a6fc8b09c9cc16ce1e7c0b3fd825ddbf2}{}\label{classOpcode_1_1IndexedTriangle_a6fc8b09c9cc16ce1e7c0b3fd825ddbf2}
+Computes backface culling. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+{\em source} & \mbox{[}in\mbox{]} source point (in local space) from which culling must be computed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the triangle is visible from the source point 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Max\+Edge\+Length@{Max\+Edge\+Length}}
+\index{Max\+Edge\+Length@{Max\+Edge\+Length}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Max\+Edge\+Length(const Point $\ast$verts) const }{MaxEdgeLength(const Point *verts) const }}]{\setlength{\rightskip}{0pt plus 5cm}float Indexed\+Triangle\+::\+Max\+Edge\+Length (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_abad2f26ec2a8cee0c2753d094e87fb9c}{}\label{classOpcode_1_1IndexedTriangle_abad2f26ec2a8cee0c2753d094e87fb9c}
+Computes the triangle\textquotesingle{}s largest edge length. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the largest edge length 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Min\+Edge\+Length@{Min\+Edge\+Length}}
+\index{Min\+Edge\+Length@{Min\+Edge\+Length}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Min\+Edge\+Length(const Point $\ast$verts) const }{MinEdgeLength(const Point *verts) const }}]{\setlength{\rightskip}{0pt plus 5cm}float Indexed\+Triangle\+::\+Min\+Edge\+Length (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a6b2352d5b214898c58f5c5bca7a360ec}{}\label{classOpcode_1_1IndexedTriangle_a6b2352d5b214898c58f5c5bca7a360ec}
+Computes the triangle\textquotesingle{}s smallest edge length. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the smallest edge length 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Normal@{Normal}}
+\index{Normal@{Normal}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Normal(const Point $\ast$verts, Point \&normal) const }{Normal(const Point *verts, Point &normal) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Indexed\+Triangle\+::\+Normal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts, }
+\item[{{\bf Point} \&}]{normal}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_aec07600ca093248c4e49d02b3f2f7a36}{}\label{classOpcode_1_1IndexedTriangle_aec07600ca093248c4e49d02b3f2f7a36}
+Computes the triangle normal. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+{\em normal} & \mbox{[}out\mbox{]} the computed normal \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Opposite\+Vertex@{Opposite\+Vertex}}
+\index{Opposite\+Vertex@{Opposite\+Vertex}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Opposite\+Vertex(udword vref0, udword vref1) const }{OppositeVertex(udword vref0, udword vref1) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} Indexed\+Triangle\+::\+Opposite\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{vref0, }
+\item[{{\bf udword}}]{vref1}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_a0c7351a54375f0a939bc3707c28508c8}{}\label{classOpcode_1_1IndexedTriangle_a0c7351a54375f0a939bc3707c28508c8}
+Gets the last reference given the first two. 
+\begin{DoxyParams}{Parameters}
+{\em vref0} & \mbox{[}in\mbox{]} the first vertex reference \\
+\hline
+{\em vref1} & \mbox{[}in\mbox{]} the second vertex reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the last reference, or I\+N\+V\+A\+L\+I\+D\+\_\+\+ID if input refs are wrong. 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Perimeter@{Perimeter}}
+\index{Perimeter@{Perimeter}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Perimeter(const Point $\ast$verts) const }{Perimeter(const Point *verts) const }}]{\setlength{\rightskip}{0pt plus 5cm}float Indexed\+Triangle\+::\+Perimeter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_ab089bb99995ef572f42401d65868104f}{}\label{classOpcode_1_1IndexedTriangle_ab089bb99995ef572f42401d65868104f}
+Computes the triangle perimeter. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the perimeter 
+\end{DoxyReturn}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Random\+Point@{Random\+Point}}
+\index{Random\+Point@{Random\+Point}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Random\+Point(const Point $\ast$verts, Point \&random) const }{RandomPoint(const Point *verts, Point &random) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Indexed\+Triangle\+::\+Random\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} $\ast$}]{verts, }
+\item[{{\bf Point} \&}]{random}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1IndexedTriangle_ad2fc2080a0d1ead335836991822eeca2}{}\label{classOpcode_1_1IndexedTriangle_ad2fc2080a0d1ead335836991822eeca2}
+Computes a random point within the triangle. 
+\begin{DoxyParams}{Parameters}
+{\em verts} & \mbox{[}in\mbox{]} the list of indexed vertices \\
+\hline
+{\em normal} & \mbox{[}out\mbox{]} the computed centered normal \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}!Replace\+Vertex@{Replace\+Vertex}}
+\index{Replace\+Vertex@{Replace\+Vertex}!Opcode\+::\+Indexed\+Triangle@{Opcode\+::\+Indexed\+Triangle}}
+\subsubsection[{\texorpdfstring{Replace\+Vertex(udword oldref, udword newref)}{ReplaceVertex(udword oldref, udword newref)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Indexed\+Triangle\+::\+Replace\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{oldref, }
+\item[{{\bf udword}}]{newref}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1IndexedTriangle_af5a5f522cb0b97eb27fc5bb62e6fc4e7}{}\label{classOpcode_1_1IndexedTriangle_af5a5f522cb0b97eb27fc5bb62e6fc4e7}
+Replaces a vertex reference with another one. 
+\begin{DoxyParams}{Parameters}
+{\em oldref} & \mbox{[}in\mbox{]} the vertex reference to replace \\
+\hline
+{\em newref} & \mbox{[}in\mbox{]} the new vertex reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success, else false if the input vertex reference doesn\textquotesingle{}t belong to the triangle 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\+Ice/\hyperlink{IceIndexedTriangle_8cpp}{Ice\+Indexed\+Triangle.\+cpp}\end{DoxyCompactItemize}

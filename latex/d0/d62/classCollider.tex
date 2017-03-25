@@ -1,0 +1,224 @@
+\hypertarget{classCollider}{}\section{Collider Class Reference}
+\label{classCollider}\index{Collider@{Collider}}
+
+
+Inheritance diagram for Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/da1/classCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d15/classCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classCollider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classCollider_af57d7a211c40826fa86e6623dfc387a0}{First\+Contact\+Enabled} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classCollider_a94d86f6bd160dfbd02bd83e227f22047}{Temporal\+Coherence\+Enabled} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classCollider_a447787bced889e4a5843177f74f7e019}{Contact\+Found} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classCollider_a987693a9088b196d17a3af31190ed040}{Temporal\+Hit} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classCollider_a206226280dfadc656a7ead72542a9025}{Skip\+Primitive\+Tests} () const 
+\item 
+inline\+\_\+ void \hyperlink{classCollider_a106bfa35e6d203dfdb27a291b9fab01a}{Set\+First\+Contact} (bool flag)
+\item 
+inline\+\_\+ void \hyperlink{classCollider_a66fdf6157bf0159578723f3ed66f6e3f}{Set\+Temporal\+Coherence} (bool flag)
+\item 
+inline\+\_\+ void \hyperlink{classCollider_ad1c058ee059dc67a363dcad107742c07}{Set\+Primitive\+Tests} (bool flag)
+\item 
+virtual const char $\ast$ \hyperlink{classCollider_a225d4861b2184336433894174c6e3e2d}{Validate\+Settings} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classCollider_a1ff2fb91de2e8a6d613ef97a8ed7f780}{Setup} (const \hyperlink{classBaseModel}{Base\+Model} $\ast$model)
+\item 
+virtual inline\+\_\+ void \hyperlink{classCollider_a4ad7ed0314483cf47898290f4ac69081}{Init\+Query} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classCollider_addb58ecc6bcc487ffadc95261aef5a9c}{m\+Flags}\hypertarget{classCollider_addb58ecc6bcc487ffadc95261aef5a9c}{}\label{classCollider_addb58ecc6bcc487ffadc95261aef5a9c}
+
+\begin{DoxyCompactList}\small\item\em Bit flags. \end{DoxyCompactList}\item 
+const \hyperlink{classBaseModel}{Base\+Model} $\ast$ \hyperlink{classCollider_a805dbb0b279950de2cd8b186f670629c}{m\+Current\+Model}\hypertarget{classCollider_a805dbb0b279950de2cd8b186f670629c}{}\label{classCollider_a805dbb0b279950de2cd8b186f670629c}
+
+\begin{DoxyCompactList}\small\item\em Current model for collision query (owner of touched faces) \end{DoxyCompactList}\item 
+const \hyperlink{classMeshInterface}{Mesh\+Interface} $\ast$ \hyperlink{classCollider_a813d9df8888b7e8932871af4b75e34f9}{m\+I\+Mesh}\hypertarget{classCollider_a813d9df8888b7e8932871af4b75e34f9}{}\label{classCollider_a813d9df8888b7e8932871af4b75e34f9}
+
+\begin{DoxyCompactList}\small\item\em User-\/defined mesh interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the abstract class for colliders.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+June, 2, 2001 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Collider@{Collider}!Contact\+Found@{Contact\+Found}}
+\index{Contact\+Found@{Contact\+Found}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Contact\+Found() const }{ContactFound() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Collider\+::\+Contact\+Found (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollider_a447787bced889e4a5843177f74f7e019}{}\label{classCollider_a447787bced889e4a5843177f74f7e019}
+Checks a first contact has already been found. \begin{DoxyReturn}{Returns}
+true if a first contact has been found and we can stop a query 
+\end{DoxyReturn}
+\index{Collider@{Collider}!First\+Contact\+Enabled@{First\+Contact\+Enabled}}
+\index{First\+Contact\+Enabled@{First\+Contact\+Enabled}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{First\+Contact\+Enabled() const }{FirstContactEnabled() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Collider\+::\+First\+Contact\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollider_af57d7a211c40826fa86e6623dfc387a0}{}\label{classCollider_af57d7a211c40826fa86e6623dfc387a0}
+Gets the \char`\"{}first contact\char`\"{} mode. \begin{DoxyReturn}{Returns}
+true if \char`\"{}first contact\char`\"{} mode is on 
+\end{DoxyReturn}
+\index{Collider@{Collider}!Get\+Contact\+Status@{Get\+Contact\+Status}}
+\index{Get\+Contact\+Status@{Get\+Contact\+Status}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Get\+Contact\+Status() const }{GetContactStatus() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Collider\+::\+Get\+Contact\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollider_a64a73882d4f167a6175658f014868f66}{}\label{classCollider_a64a73882d4f167a6175658f014868f66}
+Gets the last collision status after a collision query. \begin{DoxyReturn}{Returns}
+true if a collision occured 
+\end{DoxyReturn}
+\index{Collider@{Collider}!Init\+Query@{Init\+Query}}
+\index{Init\+Query@{Init\+Query}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Init\+Query()}{InitQuery()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual inline\+\_\+ void Collider\+::\+Init\+Query (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classCollider_a4ad7ed0314483cf47898290f4ac69081}{}\label{classCollider_a4ad7ed0314483cf47898290f4ac69081}
+Initializes a query \index{Collider@{Collider}!Set\+First\+Contact@{Set\+First\+Contact}}
+\index{Set\+First\+Contact@{Set\+First\+Contact}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Set\+First\+Contact(bool flag)}{SetFirstContact(bool flag)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Collider\+::\+Set\+First\+Contact (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollider_a106bfa35e6d203dfdb27a291b9fab01a}{}\label{classCollider_a106bfa35e6d203dfdb27a291b9fab01a}
+Reports all contacts (false) or first contact only (true) 
+\begin{DoxyParams}{Parameters}
+{\em flag} & \mbox{[}in\mbox{]} true for first contact, false for all contacts \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classCollider_a66fdf6157bf0159578723f3ed66f6e3f}{Set\+Temporal\+Coherence(bool flag)} 
+
+\hyperlink{classCollider_a225d4861b2184336433894174c6e3e2d}{Validate\+Settings()} 
+\end{DoxySeeAlso}
+\index{Collider@{Collider}!Set\+Primitive\+Tests@{Set\+Primitive\+Tests}}
+\index{Set\+Primitive\+Tests@{Set\+Primitive\+Tests}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Set\+Primitive\+Tests(bool flag)}{SetPrimitiveTests(bool flag)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Collider\+::\+Set\+Primitive\+Tests (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollider_ad1c058ee059dc67a363dcad107742c07}{}\label{classCollider_ad1c058ee059dc67a363dcad107742c07}
+Enable/disable primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em flag} & \mbox{[}in\mbox{]} true to enable primitive tests, false to discard them \\
+\hline
+\end{DoxyParams}
+\index{Collider@{Collider}!Set\+Temporal\+Coherence@{Set\+Temporal\+Coherence}}
+\index{Set\+Temporal\+Coherence@{Set\+Temporal\+Coherence}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Set\+Temporal\+Coherence(bool flag)}{SetTemporalCoherence(bool flag)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Collider\+::\+Set\+Temporal\+Coherence (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollider_a66fdf6157bf0159578723f3ed66f6e3f}{}\label{classCollider_a66fdf6157bf0159578723f3ed66f6e3f}
+Enable/disable temporal coherence. 
+\begin{DoxyParams}{Parameters}
+{\em flag} & \mbox{[}in\mbox{]} true to enable temporal coherence, false to discard it \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classCollider_a106bfa35e6d203dfdb27a291b9fab01a}{Set\+First\+Contact(bool flag)} 
+
+\hyperlink{classCollider_a225d4861b2184336433894174c6e3e2d}{Validate\+Settings()} 
+\end{DoxySeeAlso}
+\index{Collider@{Collider}!Setup@{Setup}}
+\index{Setup@{Setup}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Setup(const Base\+Model $\ast$model)}{Setup(const BaseModel *model)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Collider\+::\+Setup (
+\begin{DoxyParamCaption}
+\item[{const {\bf Base\+Model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classCollider_a1ff2fb91de2e8a6d613ef97a8ed7f780}{}\label{classCollider_a1ff2fb91de2e8a6d613ef97a8ed7f780}
+Setups current collision model 
+\begin{DoxyParams}{Parameters}
+{\em model} & \mbox{[}in\mbox{]} current collision model \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if success 
+\end{DoxyReturn}
+\index{Collider@{Collider}!Skip\+Primitive\+Tests@{Skip\+Primitive\+Tests}}
+\index{Skip\+Primitive\+Tests@{Skip\+Primitive\+Tests}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Skip\+Primitive\+Tests() const }{SkipPrimitiveTests() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Collider\+::\+Skip\+Primitive\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollider_a206226280dfadc656a7ead72542a9025}{}\label{classCollider_a206226280dfadc656a7ead72542a9025}
+Checks primitive tests are enabled; \begin{DoxyReturn}{Returns}
+true if primitive tests must be skipped 
+\end{DoxyReturn}
+\index{Collider@{Collider}!Temporal\+Coherence\+Enabled@{Temporal\+Coherence\+Enabled}}
+\index{Temporal\+Coherence\+Enabled@{Temporal\+Coherence\+Enabled}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Temporal\+Coherence\+Enabled() const }{TemporalCoherenceEnabled() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Collider\+::\+Temporal\+Coherence\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollider_a94d86f6bd160dfbd02bd83e227f22047}{}\label{classCollider_a94d86f6bd160dfbd02bd83e227f22047}
+Gets the temporal coherence mode. \begin{DoxyReturn}{Returns}
+true if temporal coherence is on 
+\end{DoxyReturn}
+\index{Collider@{Collider}!Temporal\+Hit@{Temporal\+Hit}}
+\index{Temporal\+Hit@{Temporal\+Hit}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Temporal\+Hit() const }{TemporalHit() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Collider\+::\+Temporal\+Hit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollider_a987693a9088b196d17a3af31190ed040}{}\label{classCollider_a987693a9088b196d17a3af31190ed040}
+Checks there\textquotesingle{}s been an early exit due to temporal coherence; \begin{DoxyReturn}{Returns}
+true if a temporal hit has occured 
+\end{DoxyReturn}
+\index{Collider@{Collider}!Validate\+Settings@{Validate\+Settings}}
+\index{Validate\+Settings@{Validate\+Settings}!Collider@{Collider}}
+\subsubsection[{\texorpdfstring{Validate\+Settings()=0}{ValidateSettings()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Collider\+::\+Validate\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classCollider_a225d4861b2184336433894174c6e3e2d}{}\label{classCollider_a225d4861b2184336433894174c6e3e2d}
+Validates current settings. You should call this method after all the settings / callbacks have been defined for a collider. \begin{DoxyReturn}{Returns}
+null if everything is ok, else a string describing the problem 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__Collider_8h}{O\+P\+C\+\_\+\+Collider.\+h}\end{DoxyCompactItemize}

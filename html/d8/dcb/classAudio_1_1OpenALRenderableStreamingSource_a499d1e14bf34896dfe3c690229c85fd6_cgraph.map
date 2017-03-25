@@ -1,0 +1,30 @@
+<map id="Audio::OpenALRenderableStreamingSource::shouldBePlaying" name="Audio::OpenALRenderableStreamingSource::shouldBePlaying">
+<area shape="rect" id="node2" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#ae36b0a35ef74abeeab14cf7fcf6229d9" title="Audio::OpenALRenderableStreaming\lSource::startPlayingImpl" alt="" coords="288,243,523,284"/>
+<area shape="rect" id="node16" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#ae8c70071bf8c602c52cfbada6ebefd10" title="Audio::OpenALRenderableStreaming\lSource::stopPlayingImpl" alt="" coords="288,493,523,535"/>
+<area shape="rect" id="node17" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#aac8b7fe4f344431d68725a4d723a4f4b" title="Audio::OpenALRenderableStreaming\lSource::isPlayingImpl" alt="" coords="288,308,523,349"/>
+<area shape="rect" id="node18" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#ac887a3ca11f25abd42fa07086516d461" title="Audio::OpenALRenderableStreaming\lSource::getPlayingTimeImpl" alt="" coords="288,177,523,219"/>
+<area shape="rect" id="node19" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#ac484b12b9e263efb396efbb40ea8bf77" title="Audio::OpenALRenderableStreaming\lSource::updateImpl" alt="" coords="288,428,523,469"/>
+<area shape="rect" id="node29" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#ad41ca876f277720b983309dc51cd17c5" title="Audio::OpenALRenderableStreaming\lSource::seekImpl" alt="" coords="288,100,523,141"/>
+<area shape="rect" id="node3" href="$df/dc7/classAudio_1_1OpenALRenderableSource.html#ac80fe22a62943e49e6b25f8bc3bea7bd" title="Audio::OpenALRenderableSource\l::isPlayingImpl" alt="" coords="571,319,788,360"/>
+<area shape="rect" id="node4" href="$d0/de7/classAudio_1_1RenderableSource.html#a3639436dd734341cc3a34c341d2b7347" title="Audio::RenderableSource\l::getSource" alt="" coords="594,188,765,229"/>
+<area shape="rect" id="node5" href="$d0/de7/classAudio_1_1RenderableSource.html#a8a4cf54ee6297af0efe912cf7fa741a8" title="Audio::RenderableSource\l::seek" alt="" coords="859,5,1030,47"/>
+<area shape="rect" id="node13" href="$df/d04/classAudio_1_1Source.html#ad429e1b3013169bad7583dcc88f38ec9" title="Audio::Source::getSound" alt="" coords="596,86,763,113"/>
+<area shape="rect" id="node14" href="$df/dc7/classAudio_1_1OpenALRenderableSource.html#a531f21334659ceb3325ec8de98e319b9" title="Audio::OpenALRenderableSource\l::getALSource" alt="" coords="571,253,788,295"/>
+<area shape="rect" id="node6" href="$d0/de7/classAudio_1_1RenderableSource.html#a6d56fd56f28410afa6a50cadc7014967" title="Audio::RenderableSource\l::seekImpl" alt="" coords="1101,68,1272,109"/>
+<area shape="rect" id="node7" href="$d0/de7/classAudio_1_1RenderableSource.html#af3c5d37ca005ca87ce4ef123651d039b" title="Audio::RenderableSource\l::update" alt="" coords="859,384,1030,425"/>
+<area shape="rect" id="node8" href="$d0/de7/classAudio_1_1RenderableSource.html#ab13a51dbcd65af4fcdb69dd9da296ca7" title="Audio::RenderableSource\l::updateImpl" alt="" coords="1101,413,1272,455"/>
+<area shape="rect" id="node9" href="$d0/de7/classAudio_1_1RenderableSource.html#a1d510d2a0326d059328471fe2b0536c2" title="Audio::RenderableSource\l::startPlayingImpl" alt="" coords="859,71,1030,112"/>
+<area shape="rect" id="node10" href="$d0/de7/classAudio_1_1RenderableSource.html#ad0d0717ad12f0aded322f2317f1c42af" title="Audio::RenderableSource\l::stopPlayingImpl" alt="" coords="859,188,1030,229"/>
+<area shape="rect" id="node11" href="$d0/de7/classAudio_1_1RenderableSource.html#a0af32dc609d41e3c31c3d08a9285c816" title="Audio::RenderableSource\l::isPlayingImpl" alt="" coords="859,253,1030,295"/>
+<area shape="rect" id="node12" href="$d0/de7/classAudio_1_1RenderableSource.html#acb999fb13ca1a83bac59525d4c655b42" title="Audio::RenderableSource\l::getPlayingTimeImpl" alt="" coords="859,319,1030,360"/>
+<area shape="rect" id="node15" href="$df/dc7/classAudio_1_1OpenALRenderableSource.html#ae1beb034a59b0ecea0fd7d0c8665aa7c" title="Audio::OpenALRenderableSource\l::attachALBuffers" alt="" coords="836,501,1053,543"/>
+<area shape="rect" id="node20" href="$df/d04/classAudio_1_1Source.html#a62b43d5edb723e8297f5ad4878271175" title="Audio::Source::isAttenuated" alt="" coords="587,385,772,411"/>
+<area shape="rect" id="node21" href="$df/d04/classAudio_1_1Source.html#a028c3f64f311a04ca08c7c09c38fe168" title="Audio::Source::getRadius" alt="" coords="594,435,765,462"/>
+<area shape="rect" id="node22" href="$df/d04/classAudio_1_1Source.html#a6143b8a9b5e9e14dd0ef7e3c9280cd8f" title="Audio::Source::getAngleRange" alt="" coords="579,486,780,513"/>
+<area shape="rect" id="node23" href="$df/d04/classAudio_1_1Source.html#a56cfa694bccbfac0a7adc232750ae3fe" title="Audio::Source::isRelative" alt="" coords="594,537,765,563"/>
+<area shape="rect" id="node24" href="$df/d04/classAudio_1_1Source.html#aeafbb7052aea35fbfdbba9f81a4ebb2c" title="Audio::Source::isLooping" alt="" coords="596,587,763,614"/>
+<area shape="rect" id="node25" href="$df/d04/classAudio_1_1Source.html#adeaed3a4bbaaf6d60dd09e372d8e21e6" title="Audio::Source::getGain" alt="" coords="601,638,758,665"/>
+<area shape="rect" id="node26" href="$df/d04/classAudio_1_1Source.html#ada024d8c7c5e4c5927efda2963fe81c4" title="Audio::Source::getPosition" alt="" coords="591,689,768,715"/>
+<area shape="rect" id="node27" href="$df/d04/classAudio_1_1Source.html#afa2dc0a120dcdd989562ebb2b0782a4c" title="Audio::Source::getVelocity" alt="" coords="591,739,768,766"/>
+<area shape="rect" id="node28" href="$df/d04/classAudio_1_1Source.html#ab302e1c0c516ec4b153018dbed37f0ac" title="Audio::Source::getDirection" alt="" coords="588,790,771,817"/>
+</map>

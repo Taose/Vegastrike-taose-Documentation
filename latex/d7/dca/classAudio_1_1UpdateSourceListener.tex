@@ -1,0 +1,130 @@
+\hypertarget{classAudio_1_1UpdateSourceListener}{}\section{Audio\+:\+:Update\+Source\+Listener Class Reference}
+\label{classAudio_1_1UpdateSourceListener}\index{Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}}
+
+
+{\ttfamily \#include $<$Source\+Listener.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Update\+Source\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d3f/classAudio_1_1UpdateSourceListener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Update\+Source\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{d2/d0b/classAudio_1_1UpdateSourceListener__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAudio_1_1UpdateSourceListener_a0af524621247aad7bfab2039ab340a65}{on\+Pre\+Attach} (\hyperlink{classAudio_1_1Source}{Source} \&source, bool detach)
+\item 
+virtual void \hyperlink{classAudio_1_1UpdateSourceListener_ae4309512c3c5a7fd12c7ffc766215176}{on\+Post\+Attach} (\hyperlink{classAudio_1_1Source}{Source} \&source, bool detach)
+\item 
+virtual void \hyperlink{classAudio_1_1UpdateSourceListener_abe24b81e2c34fa6a2fc6faeed3ac61b2}{on\+Pre\+Play} (\hyperlink{classAudio_1_1Source}{Source} \&source, bool stop)
+\item 
+virtual void \hyperlink{classAudio_1_1UpdateSourceListener_a070f47d70e1a134490e81e841411cdef}{on\+Post\+Play} (\hyperlink{classAudio_1_1Source}{Source} \&source, bool stop)
+\item 
+virtual void \hyperlink{classAudio_1_1UpdateSourceListener_a0c345fe8a7fa374527ba4efc0f3d9742}{on\+End\+Of\+Stream} (\hyperlink{classAudio_1_1Source}{Source} \&source)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1Source}{Source} update event listener abstract class
+
+\begin{DoxyRemark}{Remarks}
+This is the interface clients must implement to be able to receive update notifications from audio sources. This class only accepts updates (by default, it can be overriden, but you should not -\/ use \hyperlink{classAudio_1_1SourceListener}{Source\+Listener} instead). 
+\end{DoxyRemark}
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}!on\+End\+Of\+Stream@{on\+End\+Of\+Stream}}
+\index{on\+End\+Of\+Stream@{on\+End\+Of\+Stream}!Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+End\+Of\+Stream(\+Source \&source)}{onEndOfStream(Source &source)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Update\+Source\+Listener\+::on\+End\+Of\+Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1UpdateSourceListener_a0c345fe8a7fa374527ba4efc0f3d9742}{}\label{classAudio_1_1UpdateSourceListener_a0c345fe8a7fa374527ba4efc0f3d9742}
+No-\/op implementation to apease the compiler. \begin{DoxyRemark}{Remarks}
+This will never be called since play events will be disabled by the constructor. 
+\end{DoxyRemark}
+
+
+Implements \hyperlink{classAudio_1_1SourceListener_a539fe71a1a4fa846801ce3a1821524ba}{Audio\+::\+Source\+Listener}.
+
+\index{Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}!on\+Post\+Attach@{on\+Post\+Attach}}
+\index{on\+Post\+Attach@{on\+Post\+Attach}!Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Post\+Attach(\+Source \&source, bool detach)}{onPostAttach(Source &source, bool detach)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Update\+Source\+Listener\+::on\+Post\+Attach (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source, }
+\item[{bool}]{detach}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1UpdateSourceListener_ae4309512c3c5a7fd12c7ffc766215176}{}\label{classAudio_1_1UpdateSourceListener_ae4309512c3c5a7fd12c7ffc766215176}
+No-\/op implementation to apease the compiler. \begin{DoxyRemark}{Remarks}
+This will never be called since attach events will be disabled by the constructor. 
+\end{DoxyRemark}
+
+
+Implements \hyperlink{classAudio_1_1SourceListener_abb3c327881e989b24ca87c36b2a769b6}{Audio\+::\+Source\+Listener}.
+
+\index{Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}!on\+Post\+Play@{on\+Post\+Play}}
+\index{on\+Post\+Play@{on\+Post\+Play}!Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Post\+Play(\+Source \&source, bool stop)}{onPostPlay(Source &source, bool stop)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Update\+Source\+Listener\+::on\+Post\+Play (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source, }
+\item[{bool}]{stop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1UpdateSourceListener_a070f47d70e1a134490e81e841411cdef}{}\label{classAudio_1_1UpdateSourceListener_a070f47d70e1a134490e81e841411cdef}
+No-\/op implementation to apease the compiler. \begin{DoxyRemark}{Remarks}
+This will never be called since play events will be disabled by the constructor. 
+\end{DoxyRemark}
+
+
+Implements \hyperlink{classAudio_1_1SourceListener_a3ec4cc743ec0a92a8448b12e562a6529}{Audio\+::\+Source\+Listener}.
+
+\index{Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}!on\+Pre\+Attach@{on\+Pre\+Attach}}
+\index{on\+Pre\+Attach@{on\+Pre\+Attach}!Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Pre\+Attach(\+Source \&source, bool detach)}{onPreAttach(Source &source, bool detach)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Update\+Source\+Listener\+::on\+Pre\+Attach (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source, }
+\item[{bool}]{detach}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1UpdateSourceListener_a0af524621247aad7bfab2039ab340a65}{}\label{classAudio_1_1UpdateSourceListener_a0af524621247aad7bfab2039ab340a65}
+No-\/op implementation to apease the compiler. \begin{DoxyRemark}{Remarks}
+This will never be called since attach events will be disabled by the constructor. 
+\end{DoxyRemark}
+
+
+Implements \hyperlink{classAudio_1_1SourceListener_a94d0898f9f31e755696e14c9ffdcf408}{Audio\+::\+Source\+Listener}.
+
+\index{Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}!on\+Pre\+Play@{on\+Pre\+Play}}
+\index{on\+Pre\+Play@{on\+Pre\+Play}!Audio\+::\+Update\+Source\+Listener@{Audio\+::\+Update\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Pre\+Play(\+Source \&source, bool stop)}{onPrePlay(Source &source, bool stop)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Update\+Source\+Listener\+::on\+Pre\+Play (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source, }
+\item[{bool}]{stop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1UpdateSourceListener_abe24b81e2c34fa6a2fc6faeed3ac61b2}{}\label{classAudio_1_1UpdateSourceListener_abe24b81e2c34fa6a2fc6faeed3ac61b2}
+No-\/op implementation to apease the compiler. \begin{DoxyRemark}{Remarks}
+This will never be called since play events will be disabled by the constructor. 
+\end{DoxyRemark}
+
+
+Implements \hyperlink{classAudio_1_1SourceListener_a926f5330f826c550a22cb9ef1abb0264}{Audio\+::\+Source\+Listener}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/Source\+Listener.\+h\end{DoxyCompactItemize}

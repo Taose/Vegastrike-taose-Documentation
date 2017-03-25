@@ -1,0 +1,75 @@
+\hypertarget{classBolt}{}\section{Bolt Class Reference}
+\label{classBolt}\index{Bolt@{Bolt}}
+
+
+Collaboration diagram for Bolt\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{d1/dd1/classBolt__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Collide} (\hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classBolt_a7a4c15e452ed78369badcf0b806ece5d}{}\label{classBolt_a7a4c15e452ed78369badcf0b806ece5d}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{classBolt}{Bolt} \&b) const \hypertarget{classBolt_a8597b8a16f7de47e83eed61931c4f9da}{}\label{classBolt_a8597b8a16f7de47e83eed61931c4f9da}
+
+\item 
+{\bfseries Bolt} (const \hyperlink{structweapon__info}{weapon\+\_\+info} $\ast$type, const \hyperlink{classMatrix}{Matrix} \&orientationpos, const Vector \&Ship\+Speed, void $\ast$owner, \hyperlink{classCollidable}{Collide\+Map\+::iterator} hint)\hypertarget{classBolt_a7f02e3eabd6c5f0426d3d18cf509d873}{}\label{classBolt_a7f02e3eabd6c5f0426d3d18cf509d873}
+
+\item 
+void {\bfseries Destroy} (unsigned int index)\hypertarget{classBolt_a3055e88bafe429b0a9af1cf1fe1164e8}{}\label{classBolt_a3055e88bafe429b0a9af1cf1fe1164e8}
+
+\item 
+bool {\bfseries Update} (\hyperlink{unionCollidable_1_1CollideRef}{Collidable\+::\+Collide\+Ref} index)\hypertarget{classBolt_aa7e688f1ef4621df1c66fde43c253841}{}\label{classBolt_aa7e688f1ef4621df1c66fde43c253841}
+
+\item 
+bool {\bfseries Collide} (\hyperlink{unionCollidable_1_1CollideRef}{Collidable\+::\+Collide\+Ref} index)\hypertarget{classBolt_ae3006858a90917c9ca3a1ae62ef7235b}{}\label{classBolt_ae3006858a90917c9ca3a1ae62ef7235b}
+
+\item 
+void {\bfseries noop} () const \hypertarget{classBolt_a2e4cd3f23945cebdfc4f1c79b0b2adc3}{}\label{classBolt_a2e4cd3f23945cebdfc4f1c79b0b2adc3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Add\+Texture} (\hyperlink{classbolt__draw}{bolt\+\_\+draw} $\ast$q, std\+::string filename)\hypertarget{classBolt_a9989b71c21699d8057d09f675763c5ab}{}\label{classBolt_a9989b71c21699d8057d09f675763c5ab}
+
+\item 
+static int {\bfseries Add\+Animation} (\hyperlink{classbolt__draw}{bolt\+\_\+draw} $\ast$q, std\+::string filename, Q\+Vector cur\+\_\+position)\hypertarget{classBolt_a3eb7da35648398efa275ed74e5b05f32}{}\label{classBolt_a3eb7da35648398efa275ed74e5b05f32}
+
+\item 
+static bool {\bfseries Collide\+Anon} (\hyperlink{unionCollidable_1_1CollideRef}{Collidable\+::\+Collide\+Ref} bolt\+\_\+name, \hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classBolt_ae893020d24dc20c0dbc632d790f7555e}{}\label{classBolt_ae893020d24dc20c0dbc632d790f7555e}
+
+\item 
+static \hyperlink{classBolt}{Bolt} $\ast$ {\bfseries Bolt\+From\+Index} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss, \hyperlink{unionCollidable_1_1CollideRef}{Collidable\+::\+Collide\+Ref} bolt\+\_\+name)\hypertarget{classBolt_a746e41a09b517a45bafb810eab56880c}{}\label{classBolt_a746e41a09b517a45bafb810eab56880c}
+
+\item 
+static \hyperlink{unionCollidable_1_1CollideRef}{Collidable\+::\+Collide\+Ref} {\bfseries Bolt\+Index} (int index, int decal, bool is\+Ball)\hypertarget{classBolt_acbf9de87ef4342a032dfe1149cbf8f8f}{}\label{classBolt_acbf9de87ef4342a032dfe1149cbf8f8f}
+
+\item 
+static void {\bfseries Draw} ()\hypertarget{classBolt_ae0d0a972930d96aca0dab1c1f5e89953}{}\label{classBolt_ae0d0a972930d96aca0dab1c1f5e89953}
+
+\item 
+static void {\bfseries Update\+Physics} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classBolt_a03aa4759ec2aea4c7c72511e2ebd5fc1}{}\label{classBolt_a03aa4759ec2aea4c7c72511e2ebd5fc1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCollidable}{Collide\+Map\+::iterator} {\bfseries location}\hypertarget{classBolt_af494d7935d5d49a2158e86495beba801}{}\label{classBolt_af494d7935d5d49a2158e86495beba801}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/bolt.\+h\item 
+cmd/bolt.\+cpp\item 
+cmd/bolt\+\_\+generic.\+cpp\item 
+cmd/bolt\+\_\+server.\+cpp\item 
+cmd/collide.\+cpp\end{DoxyCompactItemize}

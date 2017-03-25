@@ -1,0 +1,6 @@
+<map id="quadsquare::RecomputeErrorAndLighting" name="quadsquare::RecomputeErrorAndLighting">
+<area shape="rect" id="node2" href="$d9/de6/classGFXVertexList.html#ab795d3c64cc6b281edc46008fe193fa5" title="Returns the array of vertices to be mutated. " alt="" coords="245,5,435,32"/>
+<area shape="rect" id="node3" href="$d9/de6/classGFXVertexList.html#a811ff18855d2b128e973ed72c263f0f1" title="Ends mutation and refreshes display list. " alt="" coords="251,56,429,83"/>
+<area shape="rect" id="node4" href="$d9/de6/classGFXVertexList.html#a5887f1abe7988692a2df354816b6e06a" title="Propagates modifications to the display list. " alt="" coords="483,56,709,83"/>
+<area shape="rect" id="node5" href="$d9/de6/classGFXVertexList.html#adab1c9a190a15884b699aef9d5fc22ea" title="Looks up the index in the appropriate short, char or int array. " alt="" coords="757,56,927,83"/>
+</map>

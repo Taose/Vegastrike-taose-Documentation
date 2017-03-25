@@ -1,0 +1,8 @@
+<map id="mmoc" name="mmoc">
+<area shape="rect" id="node2" href="$d9/d07/classcommandI.html" title="{commandI\n|+ console\l+ immortal\l|+ ~commandI()\l+ commandI()\l+ getmenumode()\l+ help()\l+ addCommand()\l+ remCommand()\l+ remCommand()\l+ dummy()\l+ prompt()\l+ pcommands()\land 10 more...\l+ keypress()\l}" alt="" coords="18,787,142,1040"/>
+<area shape="rect" id="node3" href="$df/d6e/classRText.html" title="{RText\n||+ RText()\l+ ~RText()\l+ getcurcommand()\l+ text_width()\l+ draw_text()\l+ renderconsole()\l+ conline()\l+ conoutf()\l+ conoutf()\l+ saycommand()\l+ ConsoleKeyboardI()\l+ conoutn()\l}" alt="" coords="5,484,155,723"/>
+<area shape="rect" id="node4" href="$dd/de7/classFunctor.html" title="{Functor\&lt; mmoc \&gt;\n||+ Call()\l+ nullify()\l+ Functor()\l+ Functor()\l+ Functor()\l+ Functor()\l+ Functor()\l+ Functor()\l+ Functor()\l+ Functor()\l+ Functor()\l+ Functor()\l+ Functor()\l+ Functor()\l+ ~Functor()\l}" alt="" coords="166,772,293,1055"/>
+<area shape="rect" id="node5" href="$da/de3/classTFunctor.html" title="{TFunctor\n||+ ~TFunctor()\l+ Call()\l}" alt="" coords="179,557,282,649"/>
+<area shape="rect" id="node6" href="$d0/ddf/classAttributes.html" title="{Attributes\n|+ hidden\l+ webbcmd\l+ immcmd\l+ type\l|+ Attributes()\l}" alt="" coords="181,300,280,421"/>
+<area shape="rect" id="node7" href="$d1/ddb/classAttributes_1_1returnType.html" title="{Attributes::returnType\n||+ returnType()\l+ returnType()\l}" alt="" coords="157,145,305,237"/>
+</map>

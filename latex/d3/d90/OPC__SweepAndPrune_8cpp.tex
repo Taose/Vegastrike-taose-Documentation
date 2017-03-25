@@ -1,0 +1,59 @@
+\hypertarget{OPC__SweepAndPrune_8cpp}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Sweep\+And\+Prune.cpp File Reference}
+\label{OPC__SweepAndPrune_8cpp}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+cpp@{cmd/collide2/\+O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+cpp}}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+Include dependency graph for O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dda/OPC__SweepAndPrune_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpcode_1_1SAP__Element}{Opcode\+::\+S\+A\+P\+\_\+\+Element}
+\item 
+class \hyperlink{classOpcode_1_1SAP__Box}{Opcode\+::\+S\+A\+P\+\_\+\+Box}
+\item 
+class \hyperlink{classOpcode_1_1SAP__EndPoint}{Opcode\+::\+S\+A\+P\+\_\+\+End\+Point}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ void {\bfseries Sort} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&id0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&id1)\hypertarget{OPC__SweepAndPrune_8cpp_a9bc0860ff3db63c3ad572ce7c6b1d7fb}{}\label{OPC__SweepAndPrune_8cpp_a9bc0860ff3db63c3ad572ce7c6b1d7fb}
+
+\item 
+inline\+\_\+ void \hyperlink{OPC__SweepAndPrune_8cpp_ad7f6fbc4077ddeb479a683ecd7383c1d}{Remap} (\hyperlink{classOpcode_1_1SAP__Element}{S\+A\+P\+\_\+\+Element} $\ast$\&element, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} delta)
+\item 
+inline\+\_\+ bool {\bfseries Intersect} (const \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} \&a, const \hyperlink{classOpcode_1_1SAP__Box}{S\+A\+P\+\_\+\+Box} \&b)\hypertarget{OPC__SweepAndPrune_8cpp_a6f60371c7188e1ac4d1cf2d55477c53e}{}\label{OPC__SweepAndPrune_8cpp_a6f60371c7188e1ac4d1cf2d55477c53e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains an implementation of the sweep-\/and-\/prune algorithm (moved from Z-\/\+Collide)
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January, 29, 2000 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+cpp@{O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+cpp}!Remap@{Remap}}
+\index{Remap@{Remap}!O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+cpp@{O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+cpp}}
+\subsubsection[{\texorpdfstring{Remap(\+S\+A\+P\+\_\+\+Element $\ast$\&element, udword delta)}{Remap(SAP_Element *&element, udword delta)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Remap (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+A\+P\+\_\+\+Element} $\ast$\&}]{element, }
+\item[{{\bf udword}}]{delta}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__SweepAndPrune_8cpp_ad7f6fbc4077ddeb479a683ecd7383c1d}{}\label{OPC__SweepAndPrune_8cpp_ad7f6fbc4077ddeb479a683ecd7383c1d}
+Remaps a pointer when pool gets resized. 
+\begin{DoxyParams}{Parameters}
+{\em element} & \mbox{[}in/out\mbox{]} remapped element \\
+\hline
+{\em delta} & \mbox{[}in\mbox{]} offset in bytes \\
+\hline
+\end{DoxyParams}

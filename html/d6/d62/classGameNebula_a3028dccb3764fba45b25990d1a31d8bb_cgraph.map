@@ -1,0 +1,5 @@
+<map id="GameNebula::UpdatePhysics2" name="GameNebula::UpdatePhysics2">
+<area shape="rect" id="node2" href="$de/d19/classGameUnit.html#af229f9e649c3dcf2f7a94082e070cc2b" title="returns true if jump possible even if not taken " alt="" coords="257,5,442,32"/>
+<area shape="rect" id="node3" href="$dc/dce/classUniverse.html#ab8fbc57c0ea2c21172e5e21945884a0a" title="returns active star system " alt="" coords="256,56,443,83"/>
+<area shape="rect" id="node4" href="$dc/dce/classUniverse.html#a04a32ac804354ce7074bd8db0efe5386" title="Wrapper function for Star System. " alt="" coords="263,107,435,133"/>
+</map>

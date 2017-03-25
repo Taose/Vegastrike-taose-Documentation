@@ -1,0 +1,116 @@
+\hypertarget{classNebula}{}\section{Nebula Class Reference}
+\label{classNebula}\index{Nebula@{Nebula}}
+
+
+Inheritance diagram for Nebula\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d76/classNebula__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Nebula\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d3c/classNebula__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Init\+Nebula} (const char $\ast$unitfile, bool SubU, int faction, \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg, int fg\+\_\+snumber)\hypertarget{classNebula_abc9fa19a3c36af8d5b7066a19d2ee643}{}\label{classNebula_abc9fa19a3c36af8d5b7066a19d2ee643}
+
+\item 
+float {\bfseries get\+Fade} ()\hypertarget{classNebula_ad37380b1b9049d0a5789df07dd83e59a}{}\label{classNebula_ad37380b1b9049d0a5789df07dd83e59a}
+
+\item 
+virtual void {\bfseries Put\+Inside\+Cam} (int)\hypertarget{classNebula_a10a5ebffab68993132525960672d3b1d}{}\label{classNebula_a10a5ebffab68993132525960672d3b1d}
+
+\item 
+virtual enum clsptr {\bfseries is\+Unit} () const \hypertarget{classNebula_a212b80b5fa81b62df85f550459499000}{}\label{classNebula_a212b80b5fa81b62df85f550459499000}
+
+\item 
+virtual void {\bfseries react\+To\+Collision} (\hyperlink{classUnit}{Unit} $\ast$smaller, const Q\+Vector \&biglocation, const Vector \&bignormal, const Q\+Vector \&smalllocation, const Vector \&smallnormal, float dist)\hypertarget{classNebula_aaca2be40f62004818dc6dacf7c68ee95}{}\label{classNebula_aaca2be40f62004818dc6dacf7c68ee95}
+
+\item 
+virtual void {\bfseries Update\+Physics2} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{structTransformation}{Transformation} \&old\+\_\+physical\+\_\+state, const Vector \&accel, float difficulty, const \hyperlink{classMatrix}{Matrix} \&transmat, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc=N\+U\+LL)\hypertarget{classNebula_aa3936dfe264d7afcdb3750939cac3352}{}\label{classNebula_aa3936dfe264d7afcdb3750939cac3352}
+
+\item 
+virtual void {\bfseries Set\+Fog\+State} ()\hypertarget{classNebula_a32c1c0b84d34f7130c9bb79ab6c36d07}{}\label{classNebula_a32c1c0b84d34f7130c9bb79ab6c36d07}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Load\+X\+ML} (const char $\ast$filename)\hypertarget{classNebula_a76562d35dbf793b9fe83d178b7f27960}{}\label{classNebula_a76562d35dbf793b9fe83d178b7f27960}
+
+\item 
+void {\bfseries begin\+Elem} (const std\+::string \&, const \hyperlink{classXMLSupport_1_1AttributeList}{Attribute\+List} \&)\hypertarget{classNebula_ab0ae0e68c84f219512814357c3b845c3}{}\label{classNebula_ab0ae0e68c84f219512814357c3b845c3}
+
+\item 
+\hyperlink{classNebula_a9fca2337ae93fbdc2005492af11a68f4}{Nebula} (const char $\ast$unitfile, bool SubU, int faction, \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL, int fg\+\_\+snumber=0)\hypertarget{classNebula_a9fca2337ae93fbdc2005492af11a68f4}{}\label{classNebula_a9fca2337ae93fbdc2005492af11a68f4}
+
+\begin{DoxyCompactList}\small\item\em constructor only to be called by \hyperlink{classUnitFactory}{Unit\+Factory} \end{DoxyCompactList}\item 
+{\bfseries Nebula} (std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$m, bool b, int i)\hypertarget{classNebula_ac6e682650aa2c2da119038e496249713}{}\label{classNebula_ac6e682650aa2c2da119038e496249713}
+
+\item 
+\hyperlink{classNebula_a4dfed5ca820798359340d6b4686b01ff}{Nebula} ()\hypertarget{classNebula_a4dfed5ca820798359340d6b4686b01ff}{}\label{classNebula_a4dfed5ca820798359340d6b4686b01ff}
+
+\begin{DoxyCompactList}\small\item\em default constructor forbidden \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries begin\+Element} (void $\ast$Userdata, const X\+M\+L\+\_\+\+Char $\ast$name, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{classNebula_a31336e100794a9d42ebd7120a1c8b3fa}{}\label{classNebula_a31336e100794a9d42ebd7120a1c8b3fa}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector {\bfseries color}\hypertarget{classNebula_a7b9933d103740ff9a5f5ccb587ff8bb7}{}\label{classNebula_a7b9933d103740ff9a5f5ccb587ff8bb7}
+
+\item 
+float {\bfseries Density}\hypertarget{classNebula_a65a694ecbd29a3d301b60ee90d693e55}{}\label{classNebula_a65a694ecbd29a3d301b60ee90d693e55}
+
+\item 
+float {\bfseries fognear}\hypertarget{classNebula_af826e90d2824b0609830a0f59bea4c34}{}\label{classNebula_af826e90d2824b0609830a0f59bea4c34}
+
+\item 
+float {\bfseries fogfar}\hypertarget{classNebula_a46fd435d45c344813d7ce37075083bfd}{}\label{classNebula_a46fd435d45c344813d7ce37075083bfd}
+
+\item 
+int {\bfseries index}\hypertarget{classNebula_a283a2807eb16099ac5b091f7c49dde97}{}\label{classNebula_a283a2807eb16099ac5b091f7c49dde97}
+
+\item 
+float {\bfseries explosiontime}\hypertarget{classNebula_a5e22ccf7ba5120bf784a926d1a0aa9b5}{}\label{classNebula_a5e22ccf7ba5120bf784a926d1a0aa9b5}
+
+\item 
+enum F\+O\+G\+M\+O\+DE {\bfseries fogmode}\hypertarget{classNebula_a67eedda020d65911c90facb692684d20}{}\label{classNebula_a67eedda020d65911c90facb692684d20}
+
+\item 
+bool {\bfseries fogme}\hypertarget{classNebula_a53e6f3a59a15066ef14283818dde2731}{}\label{classNebula_a53e6f3a59a15066ef14283818dde2731}
+
+\item 
+float {\bfseries lastfadein}\hypertarget{classNebula_a4905591d8ff7704492c0f0e9295dafd2}{}\label{classNebula_a4905591d8ff7704492c0f0e9295dafd2}
+
+\item 
+float {\bfseries fadeinvalue}\hypertarget{classNebula_a0fb03508878845a2a7104c098fc35335}{}\label{classNebula_a0fb03508878845a2a7104c098fc35335}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classNebula_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classNebula_a187c66d2d867f6265d3b0c99ffc34838}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/nebula\+\_\+generic.\+h\item 
+cmd/nebula\+\_\+generic.\+cpp\end{DoxyCompactItemize}

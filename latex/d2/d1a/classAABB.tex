@@ -1,0 +1,267 @@
+\hypertarget{classAABB}{}\section{A\+A\+BB Class Reference}
+\label{classAABB}\index{A\+A\+BB@{A\+A\+BB}}
+
+
+Collaboration diagram for A\+A\+BB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{d6/d68/classAABB__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classAABB_ad318cad1a1e40ecb7560f953d439527c}{A\+A\+BB} ()\hypertarget{classAABB_ad318cad1a1e40ecb7560f953d439527c}{}\label{classAABB_ad318cad1a1e40ecb7560f953d439527c}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classAABB_a013e16f21145d12bd19b384b31055fb2}{$\sim$\+A\+A\+BB} ()\hypertarget{classAABB_a013e16f21145d12bd19b384b31055fb2}{}\label{classAABB_a013e16f21145d12bd19b384b31055fb2}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classAABB_aefd07f1b846deede5a40294e0128357d}{Set\+Min\+Max} (const \hyperlink{classPoint}{Point} \&min, const \hyperlink{classPoint}{Point} \&max)
+\item 
+void \hyperlink{classAABB_a926e591a06add61aaf40f4660bd52438}{Set\+Center\+Extents} (const \hyperlink{classPoint}{Point} \&c, const \hyperlink{classPoint}{Point} \&e)
+\item 
+void \hyperlink{classAABB_acbb23abc7e661b2388c17fca54cc80ed}{Set\+Empty} ()
+\item 
+void \hyperlink{classAABB_a5fa5fe0ce941e8c991775be34337acad}{Set\+Point} (const \hyperlink{classPoint}{Point} \&pt)
+\item 
+float \hyperlink{classAABB_ad40b364b3fd436764dd297336a902040}{Get\+Size} () const 
+\item 
+void \hyperlink{classAABB_af1ec90a9de45e8ee2a0f3589404f2981}{Extend} (const \hyperlink{classPoint}{Point} \&p)
+\item 
+inline\+\_\+ void \hyperlink{classAABB_ac8cb1707616aba70f650bb017476531e}{Get\+Min} (\hyperlink{classPoint}{Point} \&min) const \hypertarget{classAABB_ac8cb1707616aba70f650bb017476531e}{}\label{classAABB_ac8cb1707616aba70f650bb017476531e}
+
+\begin{DoxyCompactList}\small\item\em Get min point of the box. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classAABB_ae332b8f1debc4985c7e2f0aac6ed761b}{Get\+Max} (\hyperlink{classPoint}{Point} \&max) const \hypertarget{classAABB_ae332b8f1debc4985c7e2f0aac6ed761b}{}\label{classAABB_ae332b8f1debc4985c7e2f0aac6ed761b}
+
+\begin{DoxyCompactList}\small\item\em Get max point of the box. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{classAABB_ae0adf093a00a40712aa1d07cade6e48b}{Get\+Min} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const \hypertarget{classAABB_ae0adf093a00a40712aa1d07cade6e48b}{}\label{classAABB_ae0adf093a00a40712aa1d07cade6e48b}
+
+\begin{DoxyCompactList}\small\item\em Get component of the box\textquotesingle{}s min point along a given axis. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{classAABB_a36fdeb0316837b4a39b1a98b02dbbdcb}{Get\+Max} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const \hypertarget{classAABB_a36fdeb0316837b4a39b1a98b02dbbdcb}{}\label{classAABB_a36fdeb0316837b4a39b1a98b02dbbdcb}
+
+\begin{DoxyCompactList}\small\item\em Get component of the box\textquotesingle{}s max point along a given axis. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classAABB_a96ae6fa137afbc679cef52948a4d365a}{Get\+Center} (\hyperlink{classPoint}{Point} \&center) const \hypertarget{classAABB_a96ae6fa137afbc679cef52948a4d365a}{}\label{classAABB_a96ae6fa137afbc679cef52948a4d365a}
+
+\begin{DoxyCompactList}\small\item\em Get box center. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classAABB_ae10e5bc6ce234bb65595196f0c7670cd}{Get\+Extents} (\hyperlink{classPoint}{Point} \&extents) const \hypertarget{classAABB_ae10e5bc6ce234bb65595196f0c7670cd}{}\label{classAABB_ae10e5bc6ce234bb65595196f0c7670cd}
+
+\begin{DoxyCompactList}\small\item\em Get box extents. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{classAABB_aebbb26fe0c3d93c062d698e9c5b5a74e}{Get\+Center} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const \hypertarget{classAABB_aebbb26fe0c3d93c062d698e9c5b5a74e}{}\label{classAABB_aebbb26fe0c3d93c062d698e9c5b5a74e}
+
+\begin{DoxyCompactList}\small\item\em Get component of the box\textquotesingle{}s center along a given axis. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{classAABB_aea26078bba53d349784874129f57c43a}{Get\+Extents} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const \hypertarget{classAABB_aea26078bba53d349784874129f57c43a}{}\label{classAABB_aea26078bba53d349784874129f57c43a}
+
+\begin{DoxyCompactList}\small\item\em Get component of the box\textquotesingle{}s extents along a given axis. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classAABB_a6d67e251acd758927015377cf984b5f8}{Get\+Diagonal} (\hyperlink{classPoint}{Point} \&diagonal) const \hypertarget{classAABB_a6d67e251acd758927015377cf984b5f8}{}\label{classAABB_a6d67e251acd758927015377cf984b5f8}
+
+\begin{DoxyCompactList}\small\item\em Get box diagonal. \end{DoxyCompactList}\item 
+inline\+\_\+ float {\bfseries Get\+Width} () const \hypertarget{classAABB_ad7e334a58884b34d931593627b80f439}{}\label{classAABB_ad7e334a58884b34d931593627b80f439}
+
+\item 
+inline\+\_\+ float {\bfseries Get\+Height} () const \hypertarget{classAABB_a94ec6a1ad6ccdb538be061ea6c63c664}{}\label{classAABB_a94ec6a1ad6ccdb538be061ea6c63c664}
+
+\item 
+inline\+\_\+ float {\bfseries Get\+Depth} () const \hypertarget{classAABB_a3ad1814f5600a0a73bcb36148c9afb20}{}\label{classAABB_a3ad1814f5600a0a73bcb36148c9afb20}
+
+\item 
+inline\+\_\+ float \hyperlink{classAABB_a2c888a7387ffd8fbc4144f5d63892be6}{Get\+Volume} () const \hypertarget{classAABB_a2c888a7387ffd8fbc4144f5d63892be6}{}\label{classAABB_a2c888a7387ffd8fbc4144f5d63892be6}
+
+\begin{DoxyCompactList}\small\item\em Volume. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classAABB_a4e1faf2a1bc32174c468dd49ac5452b3}{Intersect} (const \hyperlink{classAABB}{A\+A\+BB} \&a) const 
+\item 
+inline\+\_\+ bool \hyperlink{classAABB_a277bc0c18b7561ebee24739ecad805b5}{Gomez\+Intersect} (const \hyperlink{classAABB}{A\+A\+BB} \&a)
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classAABB_a18b9b090a4a5cbdbd7c809347df2ff03}{Intersect} (const \hyperlink{classAABB}{A\+A\+BB} \&a, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const 
+\item 
+inline\+\_\+ void \hyperlink{classAABB_ad4f1de1a5d1a4ff71bcc8a47f7e8ca11}{Rotate} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&mtx, \hyperlink{classAABB}{A\+A\+BB} \&aabb) const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classAABB_aef83f74a817f5ad98693b40c16548f4c}{Is\+Valid} () const 
+\item 
+inline\+\_\+ \hyperlink{classAABB}{A\+A\+BB} \& \hyperlink{classAABB_a7af8c6a1926fa0914d4ccc563399affb}{operator$\ast$=} (float s)\hypertarget{classAABB_a7af8c6a1926fa0914d4ccc563399affb}{}\label{classAABB_a7af8c6a1926fa0914d4ccc563399affb}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classAABB}{A\+A\+BB} $\ast$= float. Scales the extents, keeps same center. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classAABB}{A\+A\+BB} \& \hyperlink{classAABB_a10378a1b9a6540384a6112128cdd5972}{operator/=} (float s)\hypertarget{classAABB_a10378a1b9a6540384a6112128cdd5972}{}\label{classAABB_a10378a1b9a6540384a6112128cdd5972}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classAABB}{A\+A\+BB} /= float. Scales the extents, keeps same center. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classAABB}{A\+A\+BB} \& \hyperlink{classAABB_a1aa2bcb5279bd03fc4b9e074e1249fec}{operator+=} (const \hyperlink{classPoint}{Point} \&trans)\hypertarget{classAABB_a1aa2bcb5279bd03fc4b9e074e1249fec}{}\label{classAABB_a1aa2bcb5279bd03fc4b9e074e1249fec}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classAABB}{A\+A\+BB} += \hyperlink{classPoint}{Point}. Translates the box. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAABB_a27373818e3e3da2d9b1681917916da81}{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}\hypertarget{classAABB_a27373818e3e3da2d9b1681917916da81}{}\label{classAABB_a27373818e3e3da2d9b1681917916da81}
+
+\begin{DoxyCompactList}\small\item\em Type-\/independent methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAABB}{A\+A\+BB} class.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\index{A\+A\+BB@{A\+A\+BB}!Extend@{Extend}}
+\index{Extend@{Extend}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Extend(const Point \&p)}{Extend(const Point &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+::\+Extend (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_af1ec90a9de45e8ee2a0f3589404f2981}{}\label{classAABB_af1ec90a9de45e8ee2a0f3589404f2981}
+Extends the \hyperlink{classAABB}{A\+A\+BB}. 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{[}in\mbox{]} the next point \\
+\hline
+\end{DoxyParams}
+\index{A\+A\+BB@{A\+A\+BB}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Get\+Size() const }{GetSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}float A\+A\+B\+B\+::\+Get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_ad40b364b3fd436764dd297336a902040}{}\label{classAABB_ad40b364b3fd436764dd297336a902040}
+Gets the size of the \hyperlink{classAABB}{A\+A\+BB}. The size is defined as the longest extent. \begin{DoxyReturn}{Returns}
+the size of the \hyperlink{classAABB}{A\+A\+BB} 
+\end{DoxyReturn}
+\index{A\+A\+BB@{A\+A\+BB}!Gomez\+Intersect@{Gomez\+Intersect}}
+\index{Gomez\+Intersect@{Gomez\+Intersect}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Gomez\+Intersect(const A\+A\+B\+B \&a)}{GomezIntersect(const AABB &a)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool A\+A\+B\+B\+::\+Gomez\+Intersect (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+BB} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_a277bc0c18b7561ebee24739ecad805b5}{}\label{classAABB_a277bc0c18b7561ebee24739ecad805b5}
+The standard intersection method from Gamasutra. Just here to check its speed against the one above. 
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{[}in\mbox{]} the other \hyperlink{classAABB}{A\+A\+BB} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on intersection 
+\end{DoxyReturn}
+\index{A\+A\+BB@{A\+A\+BB}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Intersect(const A\+A\+B\+B \&a) const }{Intersect(const AABB &a) const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} A\+A\+B\+B\+::\+Intersect (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+BB} \&}]{a}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_a4e1faf2a1bc32174c468dd49ac5452b3}{}\label{classAABB_a4e1faf2a1bc32174c468dd49ac5452b3}
+Computes the intersection between two A\+A\+B\+Bs. 
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{[}in\mbox{]} the other \hyperlink{classAABB}{A\+A\+BB} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on intersection 
+\end{DoxyReturn}
+\index{A\+A\+BB@{A\+A\+BB}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Intersect(const A\+A\+B\+B \&a, udword axis) const }{Intersect(const AABB &a, udword axis) const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} A\+A\+B\+B\+::\+Intersect (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+BB} \&}]{a, }
+\item[{{\bf udword}}]{axis}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_a18b9b090a4a5cbdbd7c809347df2ff03}{}\label{classAABB_a18b9b090a4a5cbdbd7c809347df2ff03}
+Computes the 1\+D-\/intersection between two A\+A\+B\+Bs, on a given axis. 
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{[}in\mbox{]} the other \hyperlink{classAABB}{A\+A\+BB} \\
+\hline
+{\em axis} & \mbox{[}in\mbox{]} the axis (0, 1, 2) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on intersection 
+\end{DoxyReturn}
+\index{A\+A\+BB@{A\+A\+BB}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Is\+Valid() const }{IsValid() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} A\+A\+B\+B\+::\+Is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_aef83f74a817f5ad98693b40c16548f4c}{}\label{classAABB_aef83f74a817f5ad98693b40c16548f4c}
+Checks the \hyperlink{classAABB}{A\+A\+BB} is valid. \begin{DoxyReturn}{Returns}
+true if the box is valid 
+\end{DoxyReturn}
+\index{A\+A\+BB@{A\+A\+BB}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Rotate(const Matrix4x4 \&mtx, A\+A\+B\+B \&aabb) const }{Rotate(const Matrix4x4 &mtx, AABB &aabb) const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void A\+A\+B\+B\+::\+Rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix4x4} \&}]{mtx, }
+\item[{{\bf A\+A\+BB} \&}]{aabb}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_ad4f1de1a5d1a4ff71bcc8a47f7e8ca11}{}\label{classAABB_ad4f1de1a5d1a4ff71bcc8a47f7e8ca11}
+Recomputes the \hyperlink{classAABB}{A\+A\+BB} after an arbitrary transform by a 4x4 matrix. 
+\begin{DoxyParams}{Parameters}
+{\em mtx} & \mbox{[}in\mbox{]} the transform matrix \\
+\hline
+{\em aabb} & \mbox{[}out\mbox{]} the transformed \hyperlink{classAABB}{A\+A\+BB} \mbox{[}can be $\ast$this\mbox{]} \\
+\hline
+\end{DoxyParams}
+\index{A\+A\+BB@{A\+A\+BB}!Set\+Center\+Extents@{Set\+Center\+Extents}}
+\index{Set\+Center\+Extents@{Set\+Center\+Extents}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Set\+Center\+Extents(const Point \&c, const Point \&e)}{SetCenterExtents(const Point &c, const Point &e)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+::\+Set\+Center\+Extents (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{c, }
+\item[{const {\bf Point} \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_a926e591a06add61aaf40f4660bd52438}{}\label{classAABB_a926e591a06add61aaf40f4660bd52438}
+Setups an \hyperlink{classAABB}{A\+A\+BB} from center \& extents vectors. 
+\begin{DoxyParams}{Parameters}
+{\em c} & \mbox{[}in\mbox{]} the center point \\
+\hline
+{\em e} & \mbox{[}in\mbox{]} the extents vector \\
+\hline
+\end{DoxyParams}
+\index{A\+A\+BB@{A\+A\+BB}!Set\+Empty@{Set\+Empty}}
+\index{Set\+Empty@{Set\+Empty}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Set\+Empty()}{SetEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+::\+Set\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_acbb23abc7e661b2388c17fca54cc80ed}{}\label{classAABB_acbb23abc7e661b2388c17fca54cc80ed}
+Setups an empty \hyperlink{classAABB}{A\+A\+BB}. \index{A\+A\+BB@{A\+A\+BB}!Set\+Min\+Max@{Set\+Min\+Max}}
+\index{Set\+Min\+Max@{Set\+Min\+Max}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Set\+Min\+Max(const Point \&min, const Point \&max)}{SetMinMax(const Point &min, const Point &max)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+::\+Set\+Min\+Max (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{min, }
+\item[{const {\bf Point} \&}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_aefd07f1b846deede5a40294e0128357d}{}\label{classAABB_aefd07f1b846deede5a40294e0128357d}
+Setups an \hyperlink{classAABB}{A\+A\+BB} from min \& max vectors. 
+\begin{DoxyParams}{Parameters}
+{\em min} & \mbox{[}in\mbox{]} the min point \\
+\hline
+{\em max} & \mbox{[}in\mbox{]} the max point \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d2/d1a/classAABB_aefd07f1b846deede5a40294e0128357d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{A\+A\+BB@{A\+A\+BB}!Set\+Point@{Set\+Point}}
+\index{Set\+Point@{Set\+Point}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Set\+Point(const Point \&pt)}{SetPoint(const Point &pt)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+::\+Set\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAABB_a5fa5fe0ce941e8c991775be34337acad}{}\label{classAABB_a5fa5fe0ce941e8c991775be34337acad}
+Setups a point \hyperlink{classAABB}{A\+A\+BB}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IceAABB_8h}{Ice\+A\+A\+B\+B.\+h}\end{DoxyCompactItemize}

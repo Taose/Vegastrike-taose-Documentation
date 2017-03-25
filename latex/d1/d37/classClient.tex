@@ -1,0 +1,148 @@
+\hypertarget{classClient}{}\section{Client Class Reference}
+\label{classClient}\index{Client@{Client}}
+
+
+Collaboration diagram for Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dc1/classClient__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Loginstate} \{ \\*
+{\bfseries C\+O\+N\+N\+E\+C\+T\+ED}, 
+{\bfseries W\+A\+I\+T\+L\+I\+S\+T\+ED}, 
+{\bfseries L\+O\+G\+G\+E\+D\+IN}, 
+{\bfseries S\+A\+V\+E\+D\+G\+A\+ME}, 
+\\*
+{\bfseries I\+N\+G\+A\+ME}
+ \}\hypertarget{classClient_a8876aed2bb4cc003b3fb8e5f8dd4e8a0}{}\label{classClient_a8876aed2bb4cc003b3fb8e5f8dd4e8a0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Client} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&s)\hypertarget{classClient_acd7d5b6eec101992240ff0c8d47c4188}{}\label{classClient_acd7d5b6eec101992240ff0c8d47c4188}
+
+\item 
+void {\bfseries set\+Latest\+Timestamp} (unsigned int ts)\hypertarget{classClient_abbffaaffa2faeb0b15fe03716b4b803d}{}\label{classClient_abbffaaffa2faeb0b15fe03716b4b803d}
+
+\item 
+void {\bfseries set\+U\+DP} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} $\ast$udp\+Sock, \hyperlink{structAddressIP}{Address\+IP} \&cltudpadr)\hypertarget{classClient_a205f767e9f56159def2e174a053d4537}{}\label{classClient_a205f767e9f56159def2e174a053d4537}
+
+\item 
+void {\bfseries set\+T\+CP} ()\hypertarget{classClient_af51bfccefa83244291f5f9c170424da2}{}\label{classClient_af51bfccefa83244291f5f9c170424da2}
+
+\item 
+void {\bfseries clear\+Latest\+Timestamp} ()\hypertarget{classClient_a0e67944489a846ea54ceae0aa72654d7}{}\label{classClient_a0e67944489a846ea54ceae0aa72654d7}
+
+\item 
+unsigned int {\bfseries get\+Latest\+Timestamp} () const \hypertarget{classClient_a90aa7f8c5b14cb2dc6eae6ea40115932}{}\label{classClient_a90aa7f8c5b14cb2dc6eae6ea40115932}
+
+\item 
+double {\bfseries get\+Deltatime} () const \hypertarget{classClient_a2528d321ac32c5e05f7771e13accf2bb}{}\label{classClient_a2528d321ac32c5e05f7771e13accf2bb}
+
+\item 
+double {\bfseries get\+Next\+Deltatime} () const \hypertarget{classClient_a8496201e21857d6135ffdd427a76a179}{}\label{classClient_a8496201e21857d6135ffdd427a76a179}
+
+\item 
+void {\bfseries version\+Buf} (\hyperlink{classNetBuffer}{Net\+Buffer} \&buf) const \hypertarget{classClient_ad736d712b801daa8b9380748ece4aec7}{}\label{classClient_ad736d712b801daa8b9380748ece4aec7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries game\+\_\+unit}\hypertarget{classClient_a9415ddb7a0ec7db547890ec1563955b2}{}\label{classClient_a9415ddb7a0ec7db547890ec1563955b2}
+
+\item 
+\hyperlink{structAddressIP}{Address\+IP} {\bfseries cltadr}\hypertarget{classClient_a71d805dada88ba03c9c1c6198782543d}{}\label{classClient_a71d805dada88ba03c9c1c6198782543d}
+
+\item 
+\hyperlink{structAddressIP}{Address\+IP} {\bfseries cltudpadr}\hypertarget{classClient_a424fabfe5260da6f6f95994447917cbc}{}\label{classClient_a424fabfe5260da6f6f95994447917cbc}
+
+\item 
+\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} $\ast$ {\bfseries lossy\+\_\+socket}\hypertarget{classClient_ac473e56ac67d10d325c7885829cd0db2}{}\label{classClient_ac473e56ac67d10d325c7885829cd0db2}
+
+\item 
+\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} {\bfseries tcp\+\_\+sock}\hypertarget{classClient_aab9afcd91974d2c61130a1a0e33c7437}{}\label{classClient_aab9afcd91974d2c61130a1a0e33c7437}
+
+\item 
+double {\bfseries old\+\_\+timeout}\hypertarget{classClient_a02db058653e4067709f0cdb9749d605f}{}\label{classClient_a02db058653e4067709f0cdb9749d605f}
+
+\item 
+double {\bfseries latest\+\_\+timeout}\hypertarget{classClient_a5bd0bc0ee62c6641fba76819d9765fdf}{}\label{classClient_a5bd0bc0ee62c6641fba76819d9765fdf}
+
+\item 
+double {\bfseries elapsed\+\_\+since\+\_\+packet}\hypertarget{classClient_a1d86766bfb1abc2d1bdeac5d2802944e}{}\label{classClient_a1d86766bfb1abc2d1bdeac5d2802944e}
+
+\item 
+string {\bfseries callsign}\hypertarget{classClient_a46451f0d7aff4fb30e51be4307136e4b}{}\label{classClient_a46451f0d7aff4fb30e51be4307136e4b}
+
+\item 
+string {\bfseries name}\hypertarget{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}{}\label{classClient_a456e36f9972a8bf3ecdb5f0e70b3bd5d}
+
+\item 
+string {\bfseries passwd}\hypertarget{classClient_af1ef64e639b2353dc31280ebf2b6c41b}{}\label{classClient_af1ef64e639b2353dc31280ebf2b6c41b}
+
+\item 
+string {\bfseries server\+\_\+ip}\hypertarget{classClient_a4e6dcf1b7f5422f0abdb9ad2b02768e2}{}\label{classClient_a4e6dcf1b7f5422f0abdb9ad2b02768e2}
+
+\item 
+unsigned short {\bfseries server\+\_\+port}\hypertarget{classClient_a3f8f8195195695bb141ffa2160515d73}{}\label{classClient_a3f8f8195195695bb141ffa2160515d73}
+
+\item 
+bool {\bfseries ingame}\hypertarget{classClient_a6d89462c509b05d42898f3b23a8026d0}{}\label{classClient_a6d89462c509b05d42898f3b23a8026d0}
+
+\item 
+int {\bfseries loginstate}\hypertarget{classClient_ae922135453d9b65a84358d91b2599783}{}\label{classClient_ae922135453d9b65a84358d91b2599783}
+
+\item 
+char {\bfseries webcam}\hypertarget{classClient_ade668473d950843391ed049280b7d677}{}\label{classClient_ade668473d950843391ed049280b7d677}
+
+\item 
+char {\bfseries portaudio}\hypertarget{classClient_ad1a30574feeeb9a22edef0d00b3fa843}{}\label{classClient_ad1a30574feeeb9a22edef0d00b3fa843}
+
+\item 
+char {\bfseries secured}\hypertarget{classClient_a7ac8548e1bef39474265e7b4a94cb75b}{}\label{classClient_a7ac8548e1bef39474265e7b4a94cb75b}
+
+\item 
+char {\bfseries jumpok}\hypertarget{classClient_a96049940c7408fa5c0c5658fdcba5725}{}\label{classClient_a96049940c7408fa5c0c5658fdcba5725}
+
+\item 
+string {\bfseries jumpfile}\hypertarget{classClient_a1eb05f190f930035726733cb7952888b}{}\label{classClient_a1eb05f190f930035726733cb7952888b}
+
+\item 
+Obj\+Serial {\bfseries netversion}\hypertarget{classClient_a8f88d2c836bc651b8ae8c682459a042f}{}\label{classClient_a8f88d2c836bc651b8ae8c682459a042f}
+
+\item 
+vector$<$ string $>$ {\bfseries savegame}\hypertarget{classClient_abb09eeb6859419a59d8b385d1f057677}{}\label{classClient_abb09eeb6859419a59d8b385d1f057677}
+
+\item 
+float {\bfseries comm\+\_\+freq}\hypertarget{classClient_a4098c372388382054cc59d66508b23a6}{}\label{classClient_a4098c372388382054cc59d66508b23a6}
+
+\item 
+\hyperlink{classClientState}{Client\+State} {\bfseries last\+\_\+packet}\hypertarget{classClient_aa7e640392046d207d5239872fd11de4c}{}\label{classClient_aa7e640392046d207d5239872fd11de4c}
+
+\item 
+string {\bfseries \+\_\+disconnect\+Reason}\hypertarget{classClient_ae1990fa00d6522bb3ec6f604c3376c30}{}\label{classClient_ae1990fa00d6522bb3ec6f604c3376c30}
+
+\item 
+\hyperlink{classPrediction}{Prediction} $\ast$ {\bfseries prediction}\hypertarget{classClient_a584915659c6c484055aa83392a6eccbb}{}\label{classClient_a584915659c6c484055aa83392a6eccbb}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&ostr, const \hyperlink{classClient}{Client} \&c)\hypertarget{classClient_a76d223a46be2da06b0ef590a04163c52}{}\label{classClient_a76d223a46be2da06b0ef590a04163c52}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/client.\+h\item 
+networking/client.\+cpp\end{DoxyCompactItemize}

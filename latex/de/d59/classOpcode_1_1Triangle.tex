@@ -1,0 +1,191 @@
+\hypertarget{classOpcode_1_1Triangle}{}\section{Opcode\+:\+:Triangle Class Reference}
+\label{classOpcode_1_1Triangle}\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+
+
+Collaboration diagram for Opcode\+:\+:Triangle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{d0/d04/classOpcode_1_1Triangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1Triangle_aa1c54e92402df7eaffd6a085cfb77abc}{Triangle} ()\hypertarget{classOpcode_1_1Triangle_aa1c54e92402df7eaffd6a085cfb77abc}{}\label{classOpcode_1_1Triangle_aa1c54e92402df7eaffd6a085cfb77abc}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1Triangle_a746c51f467f2261749852ed2637b9122}{Triangle} (const \hyperlink{classOpcode_1_1Point}{Point} \&p0, const \hyperlink{classOpcode_1_1Point}{Point} \&p1, const \hyperlink{classOpcode_1_1Point}{Point} \&p2)\hypertarget{classOpcode_1_1Triangle_a746c51f467f2261749852ed2637b9122}{}\label{classOpcode_1_1Triangle_a746c51f467f2261749852ed2637b9122}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1Triangle_a3adf9f46b1e81149c3eaf4c9b8cfa25d}{Triangle} (const \hyperlink{classOpcode_1_1Triangle}{Triangle} \&triangle)\hypertarget{classOpcode_1_1Triangle_a3adf9f46b1e81149c3eaf4c9b8cfa25d}{}\label{classOpcode_1_1Triangle_a3adf9f46b1e81149c3eaf4c9b8cfa25d}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1Triangle_a7af68ff934565b96a10fb875b61e3fc2}{$\sim$\+Triangle} ()\hypertarget{classOpcode_1_1Triangle_a7af68ff934565b96a10fb875b61e3fc2}{}\label{classOpcode_1_1Triangle_a7af68ff934565b96a10fb875b61e3fc2}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classOpcode_1_1Triangle_a474ba7649c0a8fb7013892e7205911c9}{Flip} ()
+\item 
+float \hyperlink{classOpcode_1_1Triangle_ad3885c40e78c33327a622351dbb07ed7}{Area} () const 
+\item 
+float \hyperlink{classOpcode_1_1Triangle_a599d3355adcfa507458f8c59127162e7}{Perimeter} () const 
+\item 
+float \hyperlink{classOpcode_1_1Triangle_af797cac6e93b15df3ff798e66caaeca1}{Compacity} () const 
+\item 
+void \hyperlink{classOpcode_1_1Triangle_a5a58c9b3d52e65ba3c6bc45a01daa006}{Normal} (\hyperlink{classOpcode_1_1Point}{Point} \&normal) const 
+\item 
+void \hyperlink{classOpcode_1_1Triangle_ab3f35b42fe3eda2a5cb24ecb9352327a}{Denormalized\+Normal} (\hyperlink{classOpcode_1_1Point}{Point} \&normal) const 
+\item 
+void \hyperlink{classOpcode_1_1Triangle_ab12266ad0b45dfcdb90f73864324c610}{Center} (\hyperlink{classOpcode_1_1Point}{Point} \&center) const 
+\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1Plane}{Plane} {\bfseries Plane\+Equation} () const \hypertarget{classOpcode_1_1Triangle_a2e5df9ce5b871687577dcdce0624d625}{}\label{classOpcode_1_1Triangle_a2e5df9ce5b871687577dcdce0624d625}
+
+\item 
+\hyperlink{Opcode_8h_a608a2f93617737a513782e86824d427d}{Part\+Val} {\bfseries Test\+Against\+Plane} (const \hyperlink{classOpcode_1_1Plane}{Plane} \&plane, float epsilon) const \hypertarget{classOpcode_1_1Triangle_a576c2439b17d2df127a309d455da88c2}{}\label{classOpcode_1_1Triangle_a576c2439b17d2df127a309d455da88c2}
+
+\item 
+void {\bfseries Compute\+Moment} (Moment \&m)\hypertarget{classOpcode_1_1Triangle_a399705e64e8a55eb29a6dcc042a5265f}{}\label{classOpcode_1_1Triangle_a399705e64e8a55eb29a6dcc042a5265f}
+
+\item 
+float \hyperlink{classOpcode_1_1Triangle_a013363d89cadfbaa44584c2d4514283a}{Min\+Edge\+Length} () const 
+\item 
+float \hyperlink{classOpcode_1_1Triangle_a7a67fed5c72f72dff4153d53cca3bf17}{Max\+Edge\+Length} () const 
+\item 
+void \hyperlink{classOpcode_1_1Triangle_ab7e8470714c153103ad1c1d72841e0cf}{Compute\+Point} (float u, float v, \hyperlink{classOpcode_1_1Point}{Point} \&pt, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$nearvtx=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const 
+\item 
+void {\bfseries Inflate} (float fat\+\_\+coeff, bool constant\+\_\+border)\hypertarget{classOpcode_1_1Triangle_a707f856524937c61b1ada90faf19685c}{}\label{classOpcode_1_1Triangle_a707f856524937c61b1ada90faf19685c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1Point}{Point} \hyperlink{classOpcode_1_1Triangle_a2765f754e0c026cce472f9b744d447a5}{m\+Verts} \mbox{[}3\mbox{]}\hypertarget{classOpcode_1_1Triangle_a2765f754e0c026cce472f9b744d447a5}{}\label{classOpcode_1_1Triangle_a2765f754e0c026cce472f9b744d447a5}
+
+\begin{DoxyCompactList}\small\item\em Vertices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Area@{Area}}
+\index{Area@{Area}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Area() const }{Area() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1Triangle_ad3885c40e78c33327a622351dbb07ed7}{}\label{classOpcode_1_1Triangle_ad3885c40e78c33327a622351dbb07ed7}
+Computes the triangle area. \begin{DoxyReturn}{Returns}
+the area 
+\end{DoxyReturn}
+\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Center@{Center}}
+\index{Center@{Center}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Center(\+Point \&center) const }{Center(Point &center) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Center (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{center}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1Triangle_ab12266ad0b45dfcdb90f73864324c610}{}\label{classOpcode_1_1Triangle_ab12266ad0b45dfcdb90f73864324c610}
+Computes the triangle center. 
+\begin{DoxyParams}{Parameters}
+{\em center} & \mbox{[}out\mbox{]} the computed center \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Compacity@{Compacity}}
+\index{Compacity@{Compacity}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Compacity() const }{Compacity() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Compacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1Triangle_af797cac6e93b15df3ff798e66caaeca1}{}\label{classOpcode_1_1Triangle_af797cac6e93b15df3ff798e66caaeca1}
+Computes the triangle compacity. \begin{DoxyReturn}{Returns}
+the compacity 
+\end{DoxyReturn}
+\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Compute\+Point@{Compute\+Point}}
+\index{Compute\+Point@{Compute\+Point}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Compute\+Point(float u, float v, Point \&pt, udword $\ast$nearvtx=null) const }{ComputePoint(float u, float v, Point &pt, udword *nearvtx=null) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Compute\+Point (
+\begin{DoxyParamCaption}
+\item[{float}]{u, }
+\item[{float}]{v, }
+\item[{{\bf Point} \&}]{pt, }
+\item[{{\bf udword} $\ast$}]{nearvtx = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1Triangle_ab7e8470714c153103ad1c1d72841e0cf}{}\label{classOpcode_1_1Triangle_ab7e8470714c153103ad1c1d72841e0cf}
+Computes a point on the triangle according to the stabbing information. 
+\begin{DoxyParams}{Parameters}
+{\em u,v} & \mbox{[}in\mbox{]} point\textquotesingle{}s barycentric coordinates \\
+\hline
+{\em pt} & \mbox{[}out\mbox{]} point on triangle \\
+\hline
+{\em nearvtx} & \mbox{[}out\mbox{]} index of nearest vertex \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Denormalized\+Normal@{Denormalized\+Normal}}
+\index{Denormalized\+Normal@{Denormalized\+Normal}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Denormalized\+Normal(\+Point \&normal) const }{DenormalizedNormal(Point &normal) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Denormalized\+Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{normal}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1Triangle_ab3f35b42fe3eda2a5cb24ecb9352327a}{}\label{classOpcode_1_1Triangle_ab3f35b42fe3eda2a5cb24ecb9352327a}
+Computes the triangle denormalized normal. 
+\begin{DoxyParams}{Parameters}
+{\em normal} & \mbox{[}out\mbox{]} the computed normal \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Flip@{Flip}}
+\index{Flip@{Flip}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Flip()}{Flip()}}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Flip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1Triangle_a474ba7649c0a8fb7013892e7205911c9}{}\label{classOpcode_1_1Triangle_a474ba7649c0a8fb7013892e7205911c9}
+Flips the winding order. \index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Max\+Edge\+Length@{Max\+Edge\+Length}}
+\index{Max\+Edge\+Length@{Max\+Edge\+Length}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Max\+Edge\+Length() const }{MaxEdgeLength() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Max\+Edge\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1Triangle_a7a67fed5c72f72dff4153d53cca3bf17}{}\label{classOpcode_1_1Triangle_a7a67fed5c72f72dff4153d53cca3bf17}
+Computes the triangle\textquotesingle{}s largest edge length. \begin{DoxyReturn}{Returns}
+the largest edge length 
+\end{DoxyReturn}
+\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Min\+Edge\+Length@{Min\+Edge\+Length}}
+\index{Min\+Edge\+Length@{Min\+Edge\+Length}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Min\+Edge\+Length() const }{MinEdgeLength() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Min\+Edge\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1Triangle_a013363d89cadfbaa44584c2d4514283a}{}\label{classOpcode_1_1Triangle_a013363d89cadfbaa44584c2d4514283a}
+Computes the triangle moment. 
+\begin{DoxyParams}{Parameters}
+{\em m} & \mbox{[}out\mbox{]} the moment Computes the triangle\textquotesingle{}s smallest edge length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the smallest edge length 
+\end{DoxyReturn}
+\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Normal@{Normal}}
+\index{Normal@{Normal}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Normal(\+Point \&normal) const }{Normal(Point &normal) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::\+Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{normal}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1Triangle_a5a58c9b3d52e65ba3c6bc45a01daa006}{}\label{classOpcode_1_1Triangle_a5a58c9b3d52e65ba3c6bc45a01daa006}
+Computes the triangle normal. 
+\begin{DoxyParams}{Parameters}
+{\em normal} & \mbox{[}out\mbox{]} the computed normal \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Triangle@{Opcode\+::\+Triangle}!Perimeter@{Perimeter}}
+\index{Perimeter@{Perimeter}!Opcode\+::\+Triangle@{Opcode\+::\+Triangle}}
+\subsubsection[{\texorpdfstring{Perimeter() const }{Perimeter() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Triangle\+::\+Perimeter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1Triangle_a599d3355adcfa507458f8c59127162e7}{}\label{classOpcode_1_1Triangle_a599d3355adcfa507458f8c59127162e7}
+Computes the triangle perimeter. \begin{DoxyReturn}{Returns}
+the perimeter 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\+Ice/\hyperlink{IceTriangle_8cpp}{Ice\+Triangle.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,182 @@
+\hypertarget{classCamera}{}\section{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+
+
+Collaboration diagram for Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{d4/ddb/classCamera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Projection\+Type} \{ {\bfseries P\+A\+R\+A\+L\+L\+EL}, 
+{\bfseries P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}
+ \}\hypertarget{classCamera_ad98e4e57f3d6471357d0779c65613be1}{}\label{classCamera_ad98e4e57f3d6471357d0779c65613be1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+Cockpit\+Offset} (float c)\hypertarget{classCamera_a06684a517619efc0e55b3fcc1b139782}{}\label{classCamera_a06684a517619efc0e55b3fcc1b139782}
+
+\item 
+float {\bfseries get\+Cockpit\+Offset} ()\hypertarget{classCamera_ac3a12f6e9575a5c2f06c4df8c77e4dfc}{}\label{classCamera_ac3a12f6e9575a5c2f06c4df8c77e4dfc}
+
+\item 
+\hyperlink{classCamera_a3d906bcf7cb14fec2e62bc7dec9699a2}{Camera} (Projection\+Type proj=P\+E\+R\+S\+P\+E\+C\+T\+I\+VE)\hypertarget{classCamera_a3d906bcf7cb14fec2e62bc7dec9699a2}{}\label{classCamera_a3d906bcf7cb14fec2e62bc7dec9699a2}
+
+\begin{DoxyCompactList}\small\item\em for Get\+Unit (); \end{DoxyCompactList}\item 
+void {\bfseries Look\+Direction} (const Vector \&forevec, const Vector \&up)\hypertarget{classCamera_a7d8599b811ab34d4dbd5c268554f9cd4}{}\label{classCamera_a7d8599b811ab34d4dbd5c268554f9cd4}
+
+\item 
+void {\bfseries Set\+Nebula} (\hyperlink{classNebula}{Nebula} $\ast$neb)\hypertarget{classCamera_a43e6a60de275ff258b785febb3a7b107}{}\label{classCamera_a43e6a60de275ff258b785febb3a7b107}
+
+\item 
+\hyperlink{classNebula}{Nebula} $\ast$ {\bfseries Get\+Nebula} ()\hypertarget{classCamera_a86d5ea21457ab560fbe5b962c0d9237d}{}\label{classCamera_a86d5ea21457ab560fbe5b962c0d9237d}
+
+\item 
+void \hyperlink{classCamera_abc7d906afa5fbc4dbab916e967667b2e}{Update\+Camera\+Sounds} ()\hypertarget{classCamera_abc7d906afa5fbc4dbab916e967667b2e}{}\label{classCamera_abc7d906afa5fbc4dbab916e967667b2e}
+
+\begin{DoxyCompactList}\small\item\em This function updates the sound if sound is not updated on a per frame basis. \end{DoxyCompactList}\item 
+void {\bfseries Get\+View} (\hyperlink{classMatrix}{Matrix} \&)\hypertarget{classCamera_a598d450ce97e8b168de813afca4bc77a}{}\label{classCamera_a598d450ce97e8b168de813afca4bc77a}
+
+\item 
+const Vector \& {\bfseries GetR} ()\hypertarget{classCamera_a070588d0684768534f8bbbe9cfc80ce4}{}\label{classCamera_a070588d0684768534f8bbbe9cfc80ce4}
+
+\item 
+void {\bfseries Get\+P\+QR} (Vector \&p1, Vector \&q1, Vector \&r1)\hypertarget{classCamera_ad53fce5afb44f52fed1cbc04dcc78116}{}\label{classCamera_ad53fce5afb44f52fed1cbc04dcc78116}
+
+\item 
+void {\bfseries Update\+G\+FX} (G\+F\+X\+B\+O\+OL clip, G\+F\+X\+B\+O\+OL update\+Frustum, G\+F\+X\+B\+O\+OL center\+Camera, G\+F\+X\+B\+O\+OL override\+Z\+Frustum, float override\+Z\+Near, float override\+Z\+Far)\hypertarget{classCamera_a34033fc30cb7ab719872ae8e950e6f56}{}\label{classCamera_a34033fc30cb7ab719872ae8e950e6f56}
+
+\item 
+void {\bfseries Update\+G\+FX} (G\+F\+X\+B\+O\+OL clip=G\+F\+X\+T\+R\+UE, G\+F\+X\+B\+O\+OL update\+Frustum=G\+F\+X\+T\+R\+UE, G\+F\+X\+B\+O\+OL center\+Camera=G\+F\+X\+F\+A\+L\+SE)\hypertarget{classCamera_a4bd104f3c72ada744287bdef41bbf149}{}\label{classCamera_a4bd104f3c72ada744287bdef41bbf149}
+
+\item 
+void {\bfseries Update\+G\+F\+X\+Frustum} (G\+F\+X\+B\+O\+OL override\+Z\+Frustum, float override\+Z\+Near, float override\+Z\+Far)\hypertarget{classCamera_ab17457938679c559f7079798d1861fcf}{}\label{classCamera_ab17457938679c559f7079798d1861fcf}
+
+\item 
+void {\bfseries Update\+G\+F\+X\+Again} ()\hypertarget{classCamera_ae7b6b57f519565f4863b3293899bf625}{}\label{classCamera_ae7b6b57f519565f4863b3293899bf625}
+
+\item 
+void {\bfseries Update\+Planet\+G\+FX} ()\hypertarget{classCamera_a86aa1e55c74d1219cdac7b2de1f6c1a5}{}\label{classCamera_a86aa1e55c74d1219cdac7b2de1f6c1a5}
+
+\item 
+\hyperlink{classMatrix}{Matrix} $\ast$ \hyperlink{classCamera_a4263186b84618f0403eff92c8c147c0b}{Get\+Planet\+G\+FX} ()
+\item 
+void {\bfseries Update\+G\+L\+Center} ()\hypertarget{classCamera_a24e03f195cf366d41695d5b8900afd7d}{}\label{classCamera_a24e03f195cf366d41695d5b8900afd7d}
+
+\item 
+void {\bfseries Set\+Position} (const Q\+Vector \&origin, const Vector \&velocity, const Vector \&angular\+\_\+velocity, const Vector \&acceleration)\hypertarget{classCamera_a4f0575898ea040a2932702f3ac703be9}{}\label{classCamera_a4f0575898ea040a2932702f3ac703be9}
+
+\item 
+void {\bfseries Get\+Position} (Q\+Vector \&vect)\hypertarget{classCamera_a813ec89a24c2b6556573a2316f0d5a6d}{}\label{classCamera_a813ec89a24c2b6556573a2316f0d5a6d}
+
+\item 
+Vector {\bfseries Get\+Angular\+Velocity} () const \hypertarget{classCamera_a55547cff21848600f2ff7d63a412b176}{}\label{classCamera_a55547cff21848600f2ff7d63a412b176}
+
+\item 
+Vector {\bfseries Get\+Velocity} () const \hypertarget{classCamera_a407b7427c1267b9e34ecfadb6be1cc53}{}\label{classCamera_a407b7427c1267b9e34ecfadb6be1cc53}
+
+\item 
+Vector {\bfseries Get\+Acceleration} () const \hypertarget{classCamera_aa3d451aa82c38df35196f7284d8a46d2}{}\label{classCamera_aa3d451aa82c38df35196f7284d8a46d2}
+
+\item 
+void {\bfseries Get\+Orientation} (Vector \&p, Vector \&q, Vector \&r)\hypertarget{classCamera_a54c0e84d1752b064d8f9f8afe9949545}{}\label{classCamera_a54c0e84d1752b064d8f9f8afe9949545}
+
+\item 
+const Q\+Vector \& {\bfseries Get\+Position} () const \hypertarget{classCamera_a814164b580663ec5fa11f2e730f4acc6}{}\label{classCamera_a814164b580663ec5fa11f2e730f4acc6}
+
+\item 
+float {\bfseries Get\+Z\+Dist} (const Vector \&v) const \hypertarget{classCamera_a79cef6906d202291be0f38d47f281669}{}\label{classCamera_a79cef6906d202291be0f38d47f281669}
+
+\item 
+void {\bfseries Set\+Orientation} (const Vector \&p, const Vector \&q, const Vector \&r)\hypertarget{classCamera_ab8df07f549ee35053aff02be96f75b1c}{}\label{classCamera_ab8df07f549ee35053aff02be96f75b1c}
+
+\item 
+void {\bfseries Set\+Subwindow} (float x, float y, float xsize, float ysize)\hypertarget{classCamera_a794aa2a0e60327707ac765eb0011ddee}{}\label{classCamera_a794aa2a0e60327707ac765eb0011ddee}
+
+\item 
+void {\bfseries Set\+Projection\+Type} (Projection\+Type t)\hypertarget{classCamera_ad722ad237a9fec650080739d1e7809f3}{}\label{classCamera_ad722ad237a9fec650080739d1e7809f3}
+
+\item 
+void {\bfseries Set\+Zoom} (float z)\hypertarget{classCamera_ae260d200c0de40a8bd474b3e964fcec3}{}\label{classCamera_ae260d200c0de40a8bd474b3e964fcec3}
+
+\item 
+float {\bfseries Get\+Zoom} () const \hypertarget{classCamera_a68d9f0b5127fc2526bdb95840358dab8}{}\label{classCamera_a68d9f0b5127fc2526bdb95840358dab8}
+
+\item 
+void {\bfseries Set\+Fov} (float f)\hypertarget{classCamera_adc85190cf830510bb201522655562b1c}{}\label{classCamera_adc85190cf830510bb201522655562b1c}
+
+\item 
+float {\bfseries Get\+Fov} () const \hypertarget{classCamera_aaa4009f80907d3df162dca0a0ad410d3}{}\label{classCamera_aaa4009f80907d3df162dca0a0ad410d3}
+
+\item 
+void {\bfseries Yaw} (float rad)\hypertarget{classCamera_a73556e647628dfefe8506b90241810f0}{}\label{classCamera_a73556e647628dfefe8506b90241810f0}
+
+\item 
+void {\bfseries Pitch} (float rad)\hypertarget{classCamera_a1dcded3261d6692d2e7cc52095229afb}{}\label{classCamera_a1dcded3261d6692d2e7cc52095229afb}
+
+\item 
+void {\bfseries Roll} (float rad)\hypertarget{classCamera_a67c035a9486710b5535170c0df233751}{}\label{classCamera_a67c035a9486710b5535170c0df233751}
+
+\item 
+void {\bfseries X\+Slide} (float factor)\hypertarget{classCamera_ab83c459772d08e0489186f52b24d4553}{}\label{classCamera_ab83c459772d08e0489186f52b24d4553}
+
+\item 
+void {\bfseries Y\+Slide} (float factor)\hypertarget{classCamera_aaada743736f71994d5b02582d91dbb4c}{}\label{classCamera_aaada743736f71994d5b02582d91dbb4c}
+
+\item 
+void {\bfseries Z\+Slide} (float factor)\hypertarget{classCamera_ae1c71d445786ebc7734237667fe3b919}{}\label{classCamera_ae1c71d445786ebc7734237667fe3b919}
+
+\item 
+void {\bfseries Restore\+View\+Port} (float xoffset, float yoffset)\hypertarget{classCamera_a83727e5e3a0a4bf157067b9278ca9103}{}\label{classCamera_a83727e5e3a0a4bf157067b9278ca9103}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector {\bfseries P}\hypertarget{classCamera_a006e79ce146cf74eb17eb81896e0fea7}{}\label{classCamera_a006e79ce146cf74eb17eb81896e0fea7}
+
+\item 
+Vector {\bfseries Q}\hypertarget{classCamera_ad11b2071726cc007eebb8febbbc80e1f}{}\label{classCamera_ad11b2071726cc007eebb8febbbc80e1f}
+
+\item 
+Vector {\bfseries R}\hypertarget{classCamera_a77572a2256f413691401d11e81394a99}{}\label{classCamera_a77572a2256f413691401d11e81394a99}
+
+\item 
+\hyperlink{classPhysicsSystem}{Physics\+System} {\bfseries my\+Physics}\hypertarget{classCamera_a2bb6692167f5b51a34d72b96f1c103f4}{}\label{classCamera_a2bb6692167f5b51a34d72b96f1c103f4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Camera@{Camera}!Get\+Planet\+G\+FX@{Get\+Planet\+G\+FX}}
+\index{Get\+Planet\+G\+FX@{Get\+Planet\+G\+FX}!Camera@{Camera}}
+\subsubsection[{\texorpdfstring{Get\+Planet\+G\+F\+X()}{GetPlanetGFX()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} $\ast$ Camera\+::\+Get\+Planet\+G\+FX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCamera_a4263186b84618f0403eff92c8c147c0b}{}\label{classCamera_a4263186b84618f0403eff92c8c147c0b}
+Get\+View (\hyperlink{classMatrix}{Matrix} x) returns the view matrix (inverse matrix based on camera pqr) 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{d1/df0/classCamera_a4263186b84618f0403eff92c8c147c0b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/camera.\+h\item 
+gfx/camera.\+cpp\end{DoxyCompactItemize}

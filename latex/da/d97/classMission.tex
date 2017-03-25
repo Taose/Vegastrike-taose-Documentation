@@ -1,0 +1,233 @@
+\hypertarget{classMission}{}\section{Mission Class Reference}
+\label{classMission}\index{Mission@{Mission}}
+
+
+Collaboration diagram for Mission\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d7e/classMission__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMission_1_1Objective}{Objective}
+\item 
+struct \hyperlink{structMission_1_1Runtime}{Runtime}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries M\+I\+S\+S\+I\+O\+N\+\_\+\+A\+U\+TO} \{ {\bfseries A\+U\+T\+O\+\_\+\+O\+FF} =-\/1, 
+{\bfseries A\+U\+T\+O\+\_\+\+N\+O\+R\+M\+AL} =0, 
+{\bfseries A\+U\+T\+O\+\_\+\+ON} =1
+ \}\hypertarget{classMission_a01158d0afcb5462499845949b91e8c11}{}\label{classMission_a01158d0afcb5462499845949b91e8c11}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set\+Unpickle\+Data} (std\+::string dat)\hypertarget{classMission_abe34e56a59560161545b3d7155ef6184}{}\label{classMission_abe34e56a59560161545b3d7155ef6184}
+
+\item 
+void {\bfseries terminate\+Mission} ()\hypertarget{classMission_aed716cda86a8f49c9da24d9f855ad99b}{}\label{classMission_aed716cda86a8f49c9da24d9f855ad99b}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries call\+\_\+unit\+\_\+launch} (class \hyperlink{classCreateFlightgroup}{Create\+Flightgroup} $\ast$fg, int type, const std\+::string \&destinations)\hypertarget{classMission_ab97f29a0ca707c6f1b08f5986b24f9a3}{}\label{classMission_ab97f29a0ca707c6f1b08f5986b24f9a3}
+
+\item 
+{\bfseries Mission} (const char $\ast$configfile, bool loadscripts=true)\hypertarget{classMission_aca7e9635ca776d2e6631fc250419ad4d}{}\label{classMission_aca7e9635ca776d2e6631fc250419ad4d}
+
+\item 
+{\bfseries Mission} (const char $\ast$filename, const std\+::string \&pythonscript, bool loadscripts=true)\hypertarget{classMission_a8afbb9dfaed9f630969e17717944b02b}{}\label{classMission_a8afbb9dfaed9f630969e17717944b02b}
+
+\item 
+std\+::string {\bfseries Pickle} ()\hypertarget{classMission_a9c1e7bd70b5107a332b0397b1b43042b}{}\label{classMission_a9c1e7bd70b5107a332b0397b1b43042b}
+
+\item 
+void {\bfseries Un\+Pickle} (std\+::string pickled)\hypertarget{classMission_a568181b17ec0a39ccba287a8909bd6a4}{}\label{classMission_a568181b17ec0a39ccba287a8909bd6a4}
+
+\item 
+void {\bfseries Add\+Flightgroup} (\hyperlink{classFlightgroup}{Flightgroup} $\ast$fg)\hypertarget{classMission_a62e5a6c173b88bd1e8691cc89ca42ed8}{}\label{classMission_a62e5a6c173b88bd1e8691cc89ca42ed8}
+
+\item 
+void {\bfseries init\+Mission} (bool loadscripts=true)\hypertarget{classMission_a74e48ae8f09db6f8481f92e745adabf9}{}\label{classMission_a74e48ae8f09db6f8481f92e745adabf9}
+
+\item 
+int {\bfseries get\+Player\+Mission\+Number} ()\hypertarget{classMission_a9249df45d832bf95142cf7263cd89048}{}\label{classMission_a9249df45d832bf95142cf7263cd89048}
+
+\item 
+\hyperlink{classMission_ad1a61b34162393ac42be5955d9772921}{$\sim$\+Mission} ()\hypertarget{classMission_ad1a61b34162393ac42be5955d9772921}{}\label{classMission_ad1a61b34162393ac42be5955d9772921}
+
+\begin{DoxyCompactList}\small\item\em alex Please help me make this function...this is called between mission loops \end{DoxyCompactList}\item 
+\hyperlink{classFlightgroup}{Flightgroup} $\ast$ {\bfseries find\+Flightgroup} (const string \&fg\+\_\+name, const string \&faction)\hypertarget{classMission_ad3350eb7945bfdac9a1025b1775f3041}{}\label{classMission_ad3350eb7945bfdac9a1025b1775f3041}
+
+\item 
+string {\bfseries get\+Variable} (string name, string defaultval)\hypertarget{classMission_a1280b13e9d46aa053ed83aaaa8cf076d}{}\label{classMission_a1280b13e9d46aa053ed83aaaa8cf076d}
+
+\item 
+void {\bfseries Get\+Origin} (Q\+Vector \&pos, string \&planetname)\hypertarget{classMission_a476f5d0f4340ed548b1ef7b5fc5e435f}{}\label{classMission_a476f5d0f4340ed548b1ef7b5fc5e435f}
+
+\item 
+void {\bfseries Director\+Loop} ()\hypertarget{classMission_ad8042c87af63022718fa78fdf28c5fa2}{}\label{classMission_ad8042c87af63022718fa78fdf28c5fa2}
+
+\item 
+void {\bfseries Director\+Start} (\hyperlink{classmissionNode}{mission\+Node} $\ast$node)\hypertarget{classMission_a806f9aa19212743b97f69cb755684e7d}{}\label{classMission_a806f9aa19212743b97f69cb755684e7d}
+
+\item 
+void {\bfseries Director\+Start\+Star\+System} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classMission_a65c923b0d3feaf415d651acb02671f03}{}\label{classMission_a65c923b0d3feaf415d651acb02671f03}
+
+\item 
+void {\bfseries Director\+Initgame} ()\hypertarget{classMission_a3377bcac8f71bb18c6b07135e82da114}{}\label{classMission_a3377bcac8f71bb18c6b07135e82da114}
+
+\item 
+void {\bfseries Director\+End} ()\hypertarget{classMission_ada1f81ed36cea256e5d9daa518999f46}{}\label{classMission_ada1f81ed36cea256e5d9daa518999f46}
+
+\item 
+void {\bfseries Director\+Benchmark} ()\hypertarget{classMission_a3efa1fe17494f41ed09683b6a3a88455}{}\label{classMission_a3efa1fe17494f41ed09683b6a3a88455}
+
+\item 
+void {\bfseries Director\+Ship\+Destroyed} (\hyperlink{classUnit}{Unit} $\ast$unit)\hypertarget{classMission_aba3dea7a545e1f77669970b9f9c353f7}{}\label{classMission_aba3dea7a545e1f77669970b9f9c353f7}
+
+\item 
+void {\bfseries Briefing\+Start} ()\hypertarget{classMission_af9b83fa54826894c849e7cc099ac508a}{}\label{classMission_af9b83fa54826894c849e7cc099ac508a}
+
+\item 
+class \hyperlink{classTextPlane}{Text\+Plane} $\ast$ {\bfseries Briefing\+Render} ()\hypertarget{classMission_a1f1014adefdf648144ed96aa88c785b7}{}\label{classMission_a1f1014adefdf648144ed96aa88c785b7}
+
+\item 
+void {\bfseries Briefing\+Loop} ()\hypertarget{classMission_a7c8320cb568dd2c0a79fb387012b7360}{}\label{classMission_a7c8320cb568dd2c0a79fb387012b7360}
+
+\item 
+void {\bfseries Briefing\+Update} ()\hypertarget{classMission_a83a4452635e98a536a991d655e3c7b85}{}\label{classMission_a83a4452635e98a536a991d655e3c7b85}
+
+\item 
+void {\bfseries Briefing\+End} ()\hypertarget{classMission_afd5b0c3ad9057c521327186e95d397fa}{}\label{classMission_afd5b0c3ad9057c521327186e95d397fa}
+
+\item 
+bool {\bfseries Briefing\+In\+Progress} ()\hypertarget{classMission_ad4299932825d67e0622f334b73af2a73}{}\label{classMission_ad4299932825d67e0622f334b73af2a73}
+
+\item 
+double {\bfseries get\+Gametime} ()\hypertarget{classMission_ae21a07a3470f7369f5a39b5f4f0446b9}{}\label{classMission_ae21a07a3470f7369f5a39b5f4f0446b9}
+
+\item 
+void {\bfseries load\+Mission\+Modules} ()\hypertarget{classMission_a9d0a986cff2e1f3161828651f2645150}{}\label{classMission_a9d0a986cff2e1f3161828651f2645150}
+
+\item 
+void {\bfseries load\+Module} (string modulename)\hypertarget{classMission_ac0cb585ae7b32db5f6b0285d1c57a6aa}{}\label{classMission_ac0cb585ae7b32db5f6b0285d1c57a6aa}
+
+\item 
+void {\bfseries add\+Module} (string modulename)\hypertarget{classMission_a20bd32c2fedda2ecd66c9fa7543335e6}{}\label{classMission_a20bd32c2fedda2ecd66c9fa7543335e6}
+
+\item 
+bool {\bfseries run\+Script} (string modulename, const string \&scriptname, unsigned int classid=0)\hypertarget{classMission_a0f8aedf1154b39cbfeb29cde327eba3f}{}\label{classMission_a0f8aedf1154b39cbfeb29cde327eba3f}
+
+\item 
+bool {\bfseries run\+Script} (\hyperlink{classmissionNode}{mission\+Node} $\ast$, const string \&scriptname, unsigned int classid=0)\hypertarget{classMission_a6898878815157022da3cf1ae4296ba3e}{}\label{classMission_a6898878815157022da3cf1ae4296ba3e}
+
+\item 
+void {\bfseries Run\+Director\+Script} (const string \&)\hypertarget{classMission_a40b9333d56c96f5bfb1152b3b86d855c}{}\label{classMission_a40b9333d56c96f5bfb1152b3b86d855c}
+
+\item 
+unsigned int {\bfseries create\+Class\+Instance} (string modulename)\hypertarget{classMission_a48163c30a097fe3f5fe538b2f9268c97}{}\label{classMission_a48163c30a097fe3f5fe538b2f9268c97}
+
+\item 
+void {\bfseries set\+Current\+A\+I\+Unit} (\hyperlink{classUnit}{Unit} $\ast$unit)\hypertarget{classMission_a0825a12a731406a041bff7bdbe368d99}{}\label{classMission_a0825a12a731406a041bff7bdbe368d99}
+
+\item 
+void {\bfseries set\+Current\+A\+I\+Order} (\hyperlink{classOrder}{Order} $\ast$order)\hypertarget{classMission_a0eb9b81f2bde7f2c5be6f2193b7fdaa3}{}\label{classMission_a0eb9b81f2bde7f2c5be6f2193b7fdaa3}
+
+\item 
+\hyperlink{classvarInst}{var\+Inst} $\ast$ {\bfseries lookup\+Class\+Variable} (string modulename, string varname, unsigned int classid)\hypertarget{classMission_a9a915d634617b4eb3ceac8a638dc5d62}{}\label{classMission_a9a915d634617b4eb3ceac8a638dc5d62}
+
+\item 
+void {\bfseries destroy\+Class\+Instance} (string modulename, unsigned int classid)\hypertarget{classMission_af758268ee0d81f31c7d4acd846679f92}{}\label{classMission_af758268ee0d81f31c7d4acd846679f92}
+
+\item 
+void {\bfseries call\+\_\+vector\+\_\+into\+\_\+olist} (\hyperlink{classvarInst}{var\+Inst} $\ast$vec\+\_\+vi, Q\+Vector vec3)\hypertarget{classMission_af5e6667a1e0a98455b0716e5df7cf9d4}{}\label{classMission_af5e6667a1e0a98455b0716e5df7cf9d4}
+
+\item 
+void {\bfseries delete\+Var\+Inst} (\hyperlink{classvarInst}{var\+Inst} $\ast$vi, bool del\+\_\+local=false)\hypertarget{classMission_af018b400201dcbfd33631a3649bd2a86}{}\label{classMission_af018b400201dcbfd33631a3649bd2a86}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMission}{Mission} $\ast$ {\bfseries get\+Nth\+Player\+Mission} (int cp, int num)\hypertarget{classMission_a38d44146199b90ba2d8f5785890d23fd}{}\label{classMission_a38d44146199b90ba2d8f5785890d23fd}
+
+\item 
+static void {\bfseries wipe\+Deleted\+Missions} ()\hypertarget{classMission_a8e418f307d1bfa2f6d3a819c6ac0b1a0}{}\label{classMission_a8e418f307d1bfa2f6d3a819c6ac0b1a0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries player\+\_\+num}\hypertarget{classMission_a824c1a747136fd3384cc4ff59172c1ab}{}\label{classMission_a824c1a747136fd3384cc4ff59172c1ab}
+
+\item 
+M\+I\+S\+S\+I\+O\+N\+\_\+\+A\+U\+TO {\bfseries player\+\_\+autopilot}\hypertarget{classMission_a8dd33ddd0be2f7fdc942b9bedde6cc53}{}\label{classMission_a8dd33ddd0be2f7fdc942b9bedde6cc53}
+
+\item 
+M\+I\+S\+S\+I\+O\+N\+\_\+\+A\+U\+TO {\bfseries global\+\_\+autopilot}\hypertarget{classMission_a0f7e0dc5c727231fad8e2ac67959ebf0}{}\label{classMission_a0f7e0dc5c727231fad8e2ac67959ebf0}
+
+\item 
+vector$<$ \hyperlink{structMission_1_1Objective}{Objective} $>$ {\bfseries objectives}\hypertarget{classMission_ae32f512fa2c63c61e3d35a814196d678}{}\label{classMission_ae32f512fa2c63c61e3d35a814196d678}
+
+\item 
+class \hyperlink{classBriefing}{Briefing} $\ast$ {\bfseries briefing}\hypertarget{classMission_a9ff36a58e6a5342af6c519ea1a528cb1}{}\label{classMission_a9ff36a58e6a5342af6c519ea1a528cb1}
+
+\item 
+string {\bfseries mission\+\_\+name}\hypertarget{classMission_a12949feaa68210796c3a7ef94185a152}{}\label{classMission_a12949feaa68210796c3a7ef94185a152}
+
+\item 
+struct \hyperlink{structMission_1_1Runtime}{Mission\+::\+Runtime} {\bfseries runtime}\hypertarget{classMission_ad406a525f72e55c1dc05400c80370d16}{}\label{classMission_ad406a525f72e55c1dc05400c80370d16}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static double {\bfseries gametime} = 0.\+0\hypertarget{classMission_a66e970154d67da007dd4ccbdfa8e3d2e}{}\label{classMission_a66e970154d67da007dd4ccbdfa8e3d2e}
+
+\item 
+static int {\bfseries number\+\_\+of\+\_\+flightgroups} = 0\hypertarget{classMission_a620d75a2003e9195238e6e9c5a73b52c}{}\label{classMission_a620d75a2003e9195238e6e9c5a73b52c}
+
+\item 
+static int {\bfseries number\+\_\+of\+\_\+ships} = 0\hypertarget{classMission_a1388361866dccd4d0d2c08521a83e5d3}{}\label{classMission_a1388361866dccd4d0d2c08521a83e5d3}
+
+\item 
+static vector$<$ \hyperlink{classFlightgroup}{Flightgroup} $\ast$ $>$ {\bfseries flightgroups}\hypertarget{classMission_a4a7779a06a7a97838f60f0266ba2baed}{}\label{classMission_a4a7779a06a7a97838f60f0266ba2baed}
+
+\item 
+static \hyperlink{classMessageCenter}{Message\+Center} $\ast$ {\bfseries msgcenter} = N\+U\+LL\hypertarget{classMission_a3f6373313acf20ac3dcbd1d00d3c2e48}{}\label{classMission_a3f6373313acf20ac3dcbd1d00d3c2e48}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Unpickle\+Mission} (std\+::string pickled)\hypertarget{classMission_a103b144aff8e084b9dfe7921acdada4a}{}\label{classMission_a103b144aff8e084b9dfe7921acdada4a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/script/mission.\+h\item 
+cmd/script/director.\+cpp\item 
+cmd/script/director\+\_\+generic.\+cpp\item 
+cmd/script/director\+\_\+server.\+cpp\item 
+cmd/script/mission.\+cpp\item 
+cmd/script/mission\+\_\+script.\+cpp\item 
+cmd/script/script\+\_\+call\+\_\+briefing.\+cpp\item 
+cmd/script/script\+\_\+call\+\_\+olist.\+cpp\item 
+cmd/script/script\+\_\+call\+\_\+omap.\+cpp\item 
+cmd/script/script\+\_\+call\+\_\+order.\+cpp\item 
+cmd/script/script\+\_\+call\+\_\+string.\+cpp\item 
+cmd/script/script\+\_\+call\+\_\+unit\+\_\+generic.\+cpp\item 
+cmd/script/script\+\_\+callbacks.\+cpp\item 
+cmd/script/script\+\_\+expression.\+cpp\item 
+cmd/script/script\+\_\+generic.\+cpp\item 
+cmd/script/script\+\_\+statement.\+cpp\item 
+cmd/script/script\+\_\+util.\+cpp\item 
+cmd/script/script\+\_\+variables.\+cpp\end{DoxyCompactItemize}

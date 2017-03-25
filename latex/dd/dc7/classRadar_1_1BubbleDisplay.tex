@@ -1,0 +1,105 @@
+\hypertarget{classRadar_1_1BubbleDisplay}{}\section{Radar\+:\+:Bubble\+Display Class Reference}
+\label{classRadar_1_1BubbleDisplay}\index{Radar\+::\+Bubble\+Display@{Radar\+::\+Bubble\+Display}}
+
+
+Inheritance diagram for Radar\+:\+:Bubble\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d0b/classRadar_1_1BubbleDisplay__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Radar\+:\+:Bubble\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/d5b/classRadar_1_1BubbleDisplay__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRadar_1_1BubbleDisplay_1_1AnimationItem}{Animation\+Item}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Draw} (const \hyperlink{classRadar_1_1Sensor}{Sensor} \&, \hyperlink{classVSSprite}{V\+S\+Sprite} $\ast$, \hyperlink{classVSSprite}{V\+S\+Sprite} $\ast$)\hypertarget{classRadar_1_1BubbleDisplay_a3e75b0e4ef86d5f99eebacb2ea665ba1}{}\label{classRadar_1_1BubbleDisplay_a3e75b0e4ef86d5f99eebacb2ea665ba1}
+
+\item 
+void {\bfseries On\+Dock\+End} ()\hypertarget{classRadar_1_1BubbleDisplay_aed12f133906170519f51081cd6646f54}{}\label{classRadar_1_1BubbleDisplay_aed12f133906170519f51081cd6646f54}
+
+\item 
+void {\bfseries On\+Jump\+Begin} ()\hypertarget{classRadar_1_1BubbleDisplay_a8e457e9f4a36fe59d9c9a23755e65ea1}{}\label{classRadar_1_1BubbleDisplay_a8e457e9f4a36fe59d9c9a23755e65ea1}
+
+\item 
+void {\bfseries On\+Jump\+End} ()\hypertarget{classRadar_1_1BubbleDisplay_aec569d96355a749f7d7febe70c4b1f9b}{}\label{classRadar_1_1BubbleDisplay_aec569d96355a749f7d7febe70c4b1f9b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ float $>$ {\bfseries Zoom\+Sequence}\hypertarget{classRadar_1_1BubbleDisplay_ab0f4ab60a8af1873fd8a169e22045a3e}{}\label{classRadar_1_1BubbleDisplay_ab0f4ab60a8af1873fd8a169e22045a3e}
+
+\item 
+typedef std\+::queue$<$ \hyperlink{structRadar_1_1BubbleDisplay_1_1AnimationItem}{Animation\+Item} $>$ {\bfseries Animation\+Collection}\hypertarget{classRadar_1_1BubbleDisplay_a5e5d9ed35d57d472bec66b1aa3017e80}{}\label{classRadar_1_1BubbleDisplay_a5e5d9ed35d57d472bec66b1aa3017e80}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Draw\+Background} (const \hyperlink{structRadar_1_1ViewArea}{View\+Area} \&, float)\hypertarget{classRadar_1_1BubbleDisplay_ad306e7a8b7716747a42f06508c650201}{}\label{classRadar_1_1BubbleDisplay_ad306e7a8b7716747a42f06508c650201}
+
+\item 
+void {\bfseries Draw\+Track} (const \hyperlink{classRadar_1_1Sensor}{Sensor} \&, const \hyperlink{structRadar_1_1ViewArea}{View\+Area} \&, const \hyperlink{classRadar_1_1Track}{Track} \&)\hypertarget{classRadar_1_1BubbleDisplay_adb063c63cc42ff14fc8529e853974fe9}{}\label{classRadar_1_1BubbleDisplay_adb063c63cc42ff14fc8529e853974fe9}
+
+\item 
+void {\bfseries Draw\+Target\+Marker} (const Vector \&, float)\hypertarget{classRadar_1_1BubbleDisplay_a1c2483aa32f216eb6e9670700fe97ae7}{}\label{classRadar_1_1BubbleDisplay_a1c2483aa32f216eb6e9670700fe97ae7}
+
+\item 
+void {\bfseries Animate} ()\hypertarget{classRadar_1_1BubbleDisplay_a9c307304b000ecf9dfe2bcc429a6dc11}{}\label{classRadar_1_1BubbleDisplay_a9c307304b000ecf9dfe2bcc429a6dc11}
+
+\item 
+void {\bfseries Prepare\+Animation} (const Zoom\+Sequence \&)\hypertarget{classRadar_1_1BubbleDisplay_a9e02326b9a2e090fe5929612897b066c}{}\label{classRadar_1_1BubbleDisplay_a9e02326b9a2e090fe5929612897b066c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const float {\bfseries inner\+Sphere}\hypertarget{classRadar_1_1BubbleDisplay_a19f6d87a140c8ba1ef2ce022049bf52f}{}\label{classRadar_1_1BubbleDisplay_a19f6d87a140c8ba1ef2ce022049bf52f}
+
+\item 
+const float {\bfseries outer\+Sphere}\hypertarget{classRadar_1_1BubbleDisplay_a16aa371aecaa93edca07814c656d797d}{}\label{classRadar_1_1BubbleDisplay_a16aa371aecaa93edca07814c656d797d}
+
+\item 
+float {\bfseries sphere\+Zoom}\hypertarget{classRadar_1_1BubbleDisplay_a78823c4db1bdb3e94f5888db0e1480a9}{}\label{classRadar_1_1BubbleDisplay_a78823c4db1bdb3e94f5888db0e1480a9}
+
+\item 
+float {\bfseries radar\+Time}\hypertarget{classRadar_1_1BubbleDisplay_a02327f621ebde497a76cbe6aa6360aa5}{}\label{classRadar_1_1BubbleDisplay_a02327f621ebde497a76cbe6aa6360aa5}
+
+\item 
+float {\bfseries current\+Target\+Marker\+Size}\hypertarget{classRadar_1_1BubbleDisplay_a71449ec85bf0de96041016f262c75fb7}{}\label{classRadar_1_1BubbleDisplay_a71449ec85bf0de96041016f262c75fb7}
+
+\item 
+Animation\+Collection {\bfseries animation}\hypertarget{classRadar_1_1BubbleDisplay_a7fa0a6bdeeb2194f1dcb3cac7669ef8c}{}\label{classRadar_1_1BubbleDisplay_a7fa0a6bdeeb2194f1dcb3cac7669ef8c}
+
+\item 
+float {\bfseries last\+Animation\+Time}\hypertarget{classRadar_1_1BubbleDisplay_a1847e9c8b1501a2a36875f2a69b8eec9}{}\label{classRadar_1_1BubbleDisplay_a1847e9c8b1501a2a36875f2a69b8eec9}
+
+\item 
+Zoom\+Sequence {\bfseries explode\+Sequence}\hypertarget{classRadar_1_1BubbleDisplay_a6ef3380e71c3d2b9c9882323bba3213e}{}\label{classRadar_1_1BubbleDisplay_a6ef3380e71c3d2b9c9882323bba3213e}
+
+\item 
+Zoom\+Sequence {\bfseries implode\+Sequence}\hypertarget{classRadar_1_1BubbleDisplay_ab4eb850f596272ea0b9bf350a26610ce}{}\label{classRadar_1_1BubbleDisplay_ab4eb850f596272ea0b9bf350a26610ce}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/radar/bubble\+\_\+display.\+h\item 
+gfx/radar/bubble\+\_\+display.\+cpp\end{DoxyCompactItemize}

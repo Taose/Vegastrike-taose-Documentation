@@ -1,0 +1,72 @@
+\hypertarget{classEventManager}{}\section{Event\+Manager Class Reference}
+\label{classEventManager}\index{Event\+Manager@{Event\+Manager}}
+
+
+Collaboration diagram for Event\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{db/d78/classEventManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries push\+Responder} (\hyperlink{classEventResponder}{Event\+Responder} $\ast$responder)\hypertarget{classEventManager_ad08661baf935449c53e99c44325c7e1b}{}\label{classEventManager_ad08661baf935449c53e99c44325c7e1b}
+
+\item 
+void {\bfseries remove\+Responder} (\hyperlink{classEventResponder}{Event\+Responder} $\ast$responder, bool top=false)\hypertarget{classEventManager_ad4618279e658f2a63f90866760dc3c5d}{}\label{classEventManager_ad4618279e658f2a63f90866760dc3c5d}
+
+\item 
+void {\bfseries send\+Command} (const Event\+Command\+Id \&id, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classEventManager_a00ade079f81b3e1a46dcc64daa21b101}{}\label{classEventManager_a00ade079f81b3e1a46dcc64daa21b101}
+
+\item 
+\hyperlink{classPoint}{Point} {\bfseries mouse\+Loc} (void)\hypertarget{classEventManager_ac8f7e971c5e7d2aa22a1d5cd35350bfd}{}\label{classEventManager_ac8f7e971c5e7d2aa22a1d5cd35350bfd}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries add\+To\+Delete\+Queue} (\hyperlink{classEventResponder}{Event\+Responder} $\ast$control\+To\+Delete)\hypertarget{classEventManager_a1a0da82f04f947ff598d6c9ffa02b5db}{}\label{classEventManager_a1a0da82f04f947ff598d6c9ffa02b5db}
+
+\item 
+static void {\bfseries initialize\+Event\+Manager} (void)\hypertarget{classEventManager_a0e94eab662a2acb79b853f75c37031ce}{}\label{classEventManager_a0e94eab662a2acb79b853f75c37031ce}
+
+\item 
+static void {\bfseries Process\+Mouse\+Click} (int button, int state, int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classEventManager_ae694afdd47a901faa369829dcb3a6f44}{}\label{classEventManager_ae694afdd47a901faa369829dcb3a6f44}
+
+\item 
+static void {\bfseries Process\+Mouse\+Active} (int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classEventManager_a15a4e944907bb17adabde9ff53ae04b6}{}\label{classEventManager_a15a4e944907bb17adabde9ff53ae04b6}
+
+\item 
+static void {\bfseries Process\+Mouse\+Passive} (int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classEventManager_a17bb3487b9debc365dd00a943a2d4c83}{}\label{classEventManager_a17bb3487b9debc365dd00a943a2d4c83}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries send\+Input\+Event} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classEventManager_a677b00241d7074baeb2b95d2c216cbf1}{}\label{classEventManager_a677b00241d7074baeb2b95d2c216cbf1}
+
+\item 
+void {\bfseries check\+For\+Shut\+Down\+Event\+Manager} (void)\hypertarget{classEventManager_ad9c69182d6451f377d0c856f4d99e6d1}{}\label{classEventManager_ad9c69182d6451f377d0c856f4d99e6d1}
+
+\item 
+void {\bfseries take\+Over\+Event\+Management} (void)\hypertarget{classEventManager_a985f3640258bad937b619e81c2997419}{}\label{classEventManager_a985f3640258bad937b619e81c2997419}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classEventResponder}{Event\+Responder} $\ast$ $>$ {\bfseries m\+\_\+responders}\hypertarget{classEventManager_a39e5d700ce23e46a667eee89114e49ac}{}\label{classEventManager_a39e5d700ce23e46a667eee89114e49ac}
+
+\item 
+\hyperlink{classPoint}{Point} {\bfseries m\+\_\+mouse\+Loc}\hypertarget{classEventManager_aab8efd880880fc6830dd864f52f46191}{}\label{classEventManager_aab8efd880880fc6830dd864f52f46191}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/eventmanager.\+h\item 
+gui/eventmanager.\+cpp\end{DoxyCompactItemize}

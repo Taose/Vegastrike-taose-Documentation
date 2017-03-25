@@ -1,0 +1,154 @@
+\hypertarget{classGameUniverse}{}\section{Game\+Universe Class Reference}
+\label{classGameUniverse}\index{Game\+Universe@{Game\+Universe}}
+
+
+{\ttfamily \#include $<$universe.\+h$>$}
+
+
+
+Inheritance diagram for Game\+Universe\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/deb/classGameUniverse__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Universe\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/db7/classGameUniverse__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ \hyperlink{classGameUniverse_ac2317f5bc265b0dbfc9d00be2e4ea20b}{Generate\+Star\+System} (const char $\ast$file, const char $\ast$jumpback, Vector origin)\hypertarget{classGameUniverse_ac2317f5bc265b0dbfc9d00be2e4ea20b}{}\label{classGameUniverse_ac2317f5bc265b0dbfc9d00be2e4ea20b}
+
+\begin{DoxyCompactList}\small\item\em A list of all factions. \end{DoxyCompactList}\item 
+void {\bfseries Write\+Save\+Game} (bool auto\+\_\+save)\hypertarget{classGameUniverse_afa16d96039777dca774da1d7a409dc32}{}\label{classGameUniverse_afa16d96039777dca774da1d7a409dc32}
+
+\item 
+void {\bfseries Setup\+Cockpits} (std\+::vector$<$ std\+::string $>$players)\hypertarget{classGameUniverse_ad54be1a76b1e5a26e0baed51bb26bd33}{}\label{classGameUniverse_ad54be1a76b1e5a26e0baed51bb26bd33}
+
+\item 
+void {\bfseries activate\+Light\+Map} (int stage=1)\hypertarget{classGameUniverse_aed979389e1cbb1d94ebdfc63e39236d5}{}\label{classGameUniverse_aed979389e1cbb1d94ebdfc63e39236d5}
+
+\item 
+\hyperlink{classTexture}{Texture} $\ast$ {\bfseries get\+Light\+Map} ()\hypertarget{classGameUniverse_a166021f29be438f91c004498a1d57469}{}\label{classGameUniverse_a166021f29be438f91c004498a1d57469}
+
+\item 
+\hyperlink{classGameUniverse_a7aea55ebb828e4e6174639d559f5dab7}{Game\+Universe} (int argc, char $\ast$$\ast$argv, const char $\ast$galaxy)\hypertarget{classGameUniverse_a7aea55ebb828e4e6174639d559f5dab7}{}\label{classGameUniverse_a7aea55ebb828e4e6174639d559f5dab7}
+
+\begin{DoxyCompactList}\small\item\em inits graphics with args \end{DoxyCompactList}\item 
+void {\bfseries Init} (int argc, char $\ast$$\ast$argv, const char $\ast$galaxy)\hypertarget{classGameUniverse_ad5156e0f251f934187ddac03c01cb213}{}\label{classGameUniverse_ad5156e0f251f934187ddac03c01cb213}
+
+\item 
+void \hyperlink{classGameUniverse_a15e30010b9d79ae5d247fe4796302738}{Start\+G\+FX} ()\hypertarget{classGameUniverse_a15e30010b9d79ae5d247fe4796302738}{}\label{classGameUniverse_a15e30010b9d79ae5d247fe4796302738}
+
+\begin{DoxyCompactList}\small\item\em Loads Defaults in Graphics Drivers. \end{DoxyCompactList}\item 
+class \hyperlink{classStarSystem}{Star\+System} $\ast$ \hyperlink{classGameUniverse_a498907a74126272d0339303cb8ff31ed}{Init} (string systemfile, const Vector \&centroid=Vector(0, 0, 0), const string planetname=string())\hypertarget{classGameUniverse_a498907a74126272d0339303cb8ff31ed}{}\label{classGameUniverse_a498907a74126272d0339303cb8ff31ed}
+
+\begin{DoxyCompactList}\small\item\em Should load the \hyperlink{classUniverse}{Universe} data file. Now just inits system with test.\+xml. \end{DoxyCompactList}\item 
+void \hyperlink{classGameUniverse_a03a60a21ff73d975b9d5e176c27fb26d}{Start\+Draw} ()\hypertarget{classGameUniverse_a03a60a21ff73d975b9d5e176c27fb26d}{}\label{classGameUniverse_a03a60a21ff73d975b9d5e176c27fb26d}
+
+\begin{DoxyCompactList}\small\item\em Begins a scene. \end{DoxyCompactList}\item 
+void \hyperlink{classGameUniverse_aaddabc56fbce3070ec1029cbb6a57012}{Loop} (void main\+\_\+loop())\hypertarget{classGameUniverse_aaddabc56fbce3070ec1029cbb6a57012}{}\label{classGameUniverse_aaddabc56fbce3070ec1029cbb6a57012}
+
+\begin{DoxyCompactList}\small\item\em Runs the main loop. \end{DoxyCompactList}\item 
+void \hyperlink{classGameUniverse_aa9cfc73e3cf569a0f5822e335f777582}{Select\+Camera} (int cam)\hypertarget{classGameUniverse_aa9cfc73e3cf569a0f5822e335f777582}{}\label{classGameUniverse_aa9cfc73e3cf569a0f5822e335f777582}
+
+\begin{DoxyCompactList}\small\item\em Wrapper function for Star System. \end{DoxyCompactList}\item 
+\hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classGameUniverse_a39a641088e1e94eff4b29d00c87dc930}{Access\+Camera} (int num)
+\begin{DoxyCompactList}\small\item\em Accessor to cockpit. \end{DoxyCompactList}\item 
+\hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classGameUniverse_a5396db9ed4982fc978eb4467bfdee262}{Access\+Camera} ()\hypertarget{classGameUniverse_a5396db9ed4982fc978eb4467bfdee262}{}\label{classGameUniverse_a5396db9ed4982fc978eb4467bfdee262}
+
+\begin{DoxyCompactList}\small\item\em Wrapper function for star system. \end{DoxyCompactList}\item 
+\hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classGameUniverse_a4b66bc4193207b91c3978045a0578b55}{Access\+Hud\+Camera} ()\hypertarget{classGameUniverse_a4b66bc4193207b91c3978045a0578b55}{}\label{classGameUniverse_a4b66bc4193207b91c3978045a0578b55}
+
+\begin{DoxyCompactList}\small\item\em Returns the current hud cam. \end{DoxyCompactList}\item 
+void \hyperlink{classGameUniverse_acf52d326b454289fcefbd8126b6fc185}{Set\+Viewport} ()\hypertarget{classGameUniverse_acf52d326b454289fcefbd8126b6fc185}{}\label{classGameUniverse_acf52d326b454289fcefbd8126b6fc185}
+
+\begin{DoxyCompactList}\small\item\em Wrapper function for star system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGameUniverse_a4377ca9b4107bd0c5874379bf3dc9d2c}{Start\+GL} ()\hypertarget{classGameUniverse_a4377ca9b4107bd0c5874379bf3dc9d2c}{}\label{classGameUniverse_a4377ca9b4107bd0c5874379bf3dc9d2c}
+
+\begin{DoxyCompactList}\small\item\em init proc \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCamera}{Camera} \hyperlink{classGameUniverse_a54f0e74750ae6274f4f759c8bce9c097}{hud\+\_\+camera}
+\begin{DoxyCompactList}\small\item\em The users cockpit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGameUniverse_a4a1f7c0cbc176eac176210f33da3c025}{bootstrap\+\_\+main\+\_\+loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classGameUniverse}{Game\+Universe} Deals with universal constants. It is a global, accessed from anywhere as \+\_\+\+Universe-\/$>$ \hyperlink{classUniverse}{Universe} may be queried for Relationships, the current star system rendering is taking place in etc. It acts as a wrapper to the active Star System. Additionally it handles beginning and ending the main loop. And starting and ending graphics. (incl the task of wiping temp lights) Deprecated\+: loaded dynamic gldrv module 
+
+\subsection{Member Function Documentation}
+\index{Game\+Universe@{Game\+Universe}!Access\+Camera@{Access\+Camera}}
+\index{Access\+Camera@{Access\+Camera}!Game\+Universe@{Game\+Universe}}
+\subsubsection[{\texorpdfstring{Access\+Camera(int num)}{AccessCamera(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera}$\ast$ Game\+Universe\+::\+Access\+Camera (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classGameUniverse_a39a641088e1e94eff4b29d00c87dc930}{}\label{classGameUniverse_a39a641088e1e94eff4b29d00c87dc930}
+
+
+Accessor to cockpit. 
+
+Wrapper function for Star System 
+
+Reimplemented from \hyperlink{classUniverse_a04a32ac804354ce7074bd8db0efe5386}{Universe}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/da9/classGameUniverse_a39a641088e1e94eff4b29d00c87dc930_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Game\+Universe@{Game\+Universe}!bootstrap\+\_\+main\+\_\+loop@{bootstrap\+\_\+main\+\_\+loop}}
+\index{bootstrap\+\_\+main\+\_\+loop@{bootstrap\+\_\+main\+\_\+loop}!Game\+Universe@{Game\+Universe}}
+\subsubsection[{\texorpdfstring{bootstrap\+\_\+main\+\_\+loop}{bootstrap_main_loop}}]{\setlength{\rightskip}{0pt plus 5cm}void bootstrap\+\_\+main\+\_\+loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classGameUniverse_a4a1f7c0cbc176eac176210f33da3c025}{}\label{classGameUniverse_a4a1f7c0cbc176eac176210f33da3c025}
+return to idle func which now should call main\+\_\+loop mohahahah
+
+Draw \hyperlink{classTexture}{Texture} 
+
+\subsection{Member Data Documentation}
+\index{Game\+Universe@{Game\+Universe}!hud\+\_\+camera@{hud\+\_\+camera}}
+\index{hud\+\_\+camera@{hud\+\_\+camera}!Game\+Universe@{Game\+Universe}}
+\subsubsection[{\texorpdfstring{hud\+\_\+camera}{hud_camera}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} Game\+Universe\+::hud\+\_\+camera\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classGameUniverse_a54f0e74750ae6274f4f759c8bce9c097}{}\label{classGameUniverse_a54f0e74750ae6274f4f759c8bce9c097}
+
+
+The users cockpit. 
+
+a generic camera facing the H\+UD 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+universe.\+h\item 
+universe.\+cpp\end{DoxyCompactItemize}

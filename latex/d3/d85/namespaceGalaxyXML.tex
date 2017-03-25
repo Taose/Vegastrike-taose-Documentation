@@ -1,0 +1,93 @@
+\hypertarget{namespaceGalaxyXML}{}\section{Galaxy\+X\+ML Namespace Reference}
+\label{namespaceGalaxyXML}\index{Galaxy\+X\+ML@{Galaxy\+X\+ML}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classGalaxyXML_1_1Galaxy}{Galaxy}
+\item 
+class \hyperlink{classGalaxyXML_1_1SGalaxy}{S\+Galaxy}
+\item 
+class \hyperlink{classGalaxyXML_1_1SubHeirarchy}{Sub\+Heirarchy}
+\item 
+class \hyperlink{classGalaxyXML_1_1XML}{X\+ML}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, std\+::string $>$ {\bfseries String\+Map}\hypertarget{namespaceGalaxyXML_aa29f3f4f258a86e6c4d4e520c8c7f799}{}\label{namespaceGalaxyXML_aa29f3f4f258a86e6c4d4e520c8c7f799}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Galaxy\+Names} \{ \\*
+{\bfseries U\+N\+K\+N\+O\+WN}, 
+{\bfseries G\+A\+L\+A\+XY}, 
+{\bfseries S\+Y\+S\+T\+E\+MS}, 
+{\bfseries S\+E\+C\+T\+OR}, 
+\\*
+{\bfseries S\+Y\+S\+T\+EM}, 
+{\bfseries V\+AR}, 
+{\bfseries N\+A\+ME}, 
+{\bfseries V\+A\+L\+UE}, 
+\\*
+{\bfseries P\+L\+A\+N\+E\+TS}, 
+{\bfseries P\+L\+A\+N\+ET}
+ \}\hypertarget{namespaceGalaxyXML_a6540aeea78df7fddb1ef120cd03ec1fb}{}\label{namespaceGalaxyXML_a6540aeea78df7fddb1ef120cd03ec1fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries begin\+Element} (void $\ast$userdata, const X\+M\+L\+\_\+\+Char $\ast$nam, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{namespaceGalaxyXML_aa527140c20cae1c23e17abe714f857ce}{}\label{namespaceGalaxyXML_aa527140c20cae1c23e17abe714f857ce}
+
+\item 
+void {\bfseries end\+Element} (void $\ast$userdata, const X\+M\+L\+\_\+\+Char $\ast$nam)\hypertarget{namespaceGalaxyXML_a7979206e086c90e60fb7e63bccaa57dd}{}\label{namespaceGalaxyXML_a7979206e086c90e60fb7e63bccaa57dd}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{Enum\+Map\+::\+Pair} {\bfseries element\+\_\+names} \mbox{[}8\mbox{]}
+\item 
+const \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{Enum\+Map\+::\+Pair} {\bfseries attribute\+\_\+names} \mbox{[}3\mbox{]}
+\item 
+const \hyperlink{classXMLSupport_1_1EnumMap}{Enum\+Map} {\bfseries element\+\_\+map} (element\+\_\+names, 8)\hypertarget{namespaceGalaxyXML_a5693f207e9899508f02cfce82d47dda3}{}\label{namespaceGalaxyXML_a5693f207e9899508f02cfce82d47dda3}
+
+\item 
+const \hyperlink{classXMLSupport_1_1EnumMap}{Enum\+Map} {\bfseries attribute\+\_\+map} (attribute\+\_\+names, 3)\hypertarget{namespaceGalaxyXML_ad21e620d6511ff988a2b59360e771a31}{}\label{namespaceGalaxyXML_ad21e620d6511ff988a2b59360e771a31}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classUniverse}{Universe} Deals with universal constants. It is a global, accessed from anywhere as \+\_\+\+Universe-\/$>$ \hyperlink{classUniverse}{Universe} may be queried for Relationships, the current star system rendering is taking place in etc. It acts as a wrapper to the active Star System. Additionally it handles beginning and ending the main loop. And starting and ending graphics. (incl the task of wiping temp lights) Deprecated\+: loaded dynamic gldrv module 
+
+\subsection{Variable Documentation}
+\index{Galaxy\+X\+ML@{Galaxy\+X\+ML}!attribute\+\_\+names@{attribute\+\_\+names}}
+\index{attribute\+\_\+names@{attribute\+\_\+names}!Galaxy\+X\+ML@{Galaxy\+X\+ML}}
+\subsubsection[{\texorpdfstring{attribute\+\_\+names}{attribute_names}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Enum\+Map\+::\+Pair} Galaxy\+X\+M\+L\+::attribute\+\_\+names\mbox{[}3\mbox{]}}\hypertarget{namespaceGalaxyXML_a761fbe2b92781a4d5a1220233d96f94d}{}\label{namespaceGalaxyXML_a761fbe2b92781a4d5a1220233d96f94d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"UNKNOWN"}, UNKNOWN ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"name"},    NAME ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"value"},   VALUE )
+\}
+\end{DoxyCode}
+\index{Galaxy\+X\+ML@{Galaxy\+X\+ML}!element\+\_\+names@{element\+\_\+names}}
+\index{element\+\_\+names@{element\+\_\+names}!Galaxy\+X\+ML@{Galaxy\+X\+ML}}
+\subsubsection[{\texorpdfstring{element\+\_\+names}{element_names}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Enum\+Map\+::\+Pair} Galaxy\+X\+M\+L\+::element\+\_\+names\mbox{[}8\mbox{]}}\hypertarget{namespaceGalaxyXML_a27768b93eb7d224d795e1b91062346cf}{}\label{namespaceGalaxyXML_a27768b93eb7d224d795e1b91062346cf}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"UNKNOWN"}, UNKNOWN ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"Galaxy"},  GALAXY ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"Systems"}, SYSTEMS ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"Sector"},  SECTOR ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"System"},  SYSTEM ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"Planets"}, PLANETS ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"Planet"},  PLANET ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"Var"},     VAR )
+\}
+\end{DoxyCode}

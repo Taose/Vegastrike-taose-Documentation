@@ -1,0 +1,11 @@
+<map id="Audio::Sound::isStreaming" name="Audio::Sound::isStreaming">
+<area shape="rect" id="node2" href="$de/d2d/classAudio_1_1Sound.html#a916b66e6374afd61e5bef2963e8c6def" title="Audio::Sound::load" alt="" coords="247,107,379,133"/>
+<area shape="rect" id="node5" href="$de/d2d/classAudio_1_1Sound.html#a32acc8687f9c7f0741363c73fd8ff5e1" title="Audio::Sound::loadImpl" alt="" coords="449,5,607,32"/>
+<area shape="rect" id="node6" href="$de/d2d/classAudio_1_1Sound.html#aa18c8b54b681491a6346d6df9405c752" title="Audio::Sound::waitLoad" alt="" coords="448,107,608,133"/>
+<area shape="rect" id="node7" href="$de/d2d/classAudio_1_1Sound.html#a949ed40b63466d4117766c2f7997a4cc" title="Audio::Sound::unload" alt="" coords="239,208,386,235"/>
+<area shape="rect" id="node8" href="$de/d2d/classAudio_1_1Sound.html#ae809e61eb0fe186ad9b0baf0dcb51759" title="Audio::Sound::abortLoad" alt="" coords="445,259,611,285"/>
+<area shape="rect" id="node9" href="$de/d2d/classAudio_1_1Sound.html#a01bd788703f9ac9855ed6e52045f344c" title="Audio::Sound::unloadImpl" alt="" coords="443,309,613,336"/>
+<area shape="rect" id="node10" href="$de/d2d/classAudio_1_1Sound.html#ae6b55d6b14f5706c3f11fa70878b960e" title="Audio::Sound::onLoaded" alt="" coords="231,360,395,387"/>
+<area shape="rect" id="node3" href="$de/d2d/classAudio_1_1Sound.html#aedf1e75aa5941f03832b1311409f3207" title="Audio::Sound::isLoaded" alt="" coords="448,157,608,184"/>
+<area shape="rect" id="node4" href="$de/d2d/classAudio_1_1Sound.html#af0eb3f71210b9edbc68dbb6dbd6c5ffa" title="Audio::Sound::isLoading" alt="" coords="661,107,824,133"/>
+</map>

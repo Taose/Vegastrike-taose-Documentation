@@ -1,0 +1,6 @@
+<map id="MeshDrawContext" name="MeshDrawContext">
+<area shape="rect" id="node3" href="$dd/d24/classMeshFX.html" title="{MeshFX\n|+ delta\l+ TTL\l+ TTD\l|+ MeshFX()\l+ MeshFX()\l+ MergeLights()\l+ Update()\l}" alt="" coords="161,462,274,613"/>
+<area shape="rect" id="node4" href="$d7/ded/classGFXLight.html" title="Holds all information for a single light object. " alt="" coords="150,5,285,376"/>
+<area shape="rect" id="node5" href="$d2/d7d/structGFXColor.html" title="{GFXColor\n|+ r\l+ g\l+ b\l+ a\l|+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ netswap()\l+ clamp()\l}" alt="" coords="298,440,398,635"/>
+<area shape="rect" id="node6" href="$d3/d3f/classMatrix.html" title="{Matrix\n|+ r\l+ p\l|+ Matrix()\l+ netswap()\l+ getR()\l+ getQ()\l+ getP()\l+ Matrix()\l+ InvertRotationInto()\l+ Matrix()\l+ Matrix()\l+ operator*()\l}" alt="" coords="423,425,569,649"/>
+</map>

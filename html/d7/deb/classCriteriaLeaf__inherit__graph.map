@@ -1,0 +1,6 @@
+<map id="CriteriaLeaf" name="CriteriaLeaf">
+<area shape="rect" id="node3" href="$da/da9/classCriteriaContains.html" title="{CriteriaContains\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ clone()\l+ CriteriaContains()\l+ ~CriteriaContains()\l}" alt="" coords="5,447,149,597"/>
+<area shape="rect" id="node4" href="$d0/d65/classCriteriaOwnedBy.html" title="{CriteriaOwnedBy\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ clone()\l+ CriteriaOwnedBy()\l+ ~CriteriaOwnedBy()\l}" alt="" coords="173,447,323,597"/>
+<area shape="rect" id="node5" href="$da/d7e/classCriteriaSector.html" title="{CriteriaSector\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ clone()\l+ CriteriaSector()\l+ ~CriteriaSector()\l}" alt="" coords="347,447,477,597"/>
+<area shape="rect" id="node2" href="$df/d68/classCriteriaNode.html" title="{CriteriaNode\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ unhook()\l+ getChildren()\l+ clone()\l+ CriteriaNode()\l+ ~CriteriaNode()\l+ setParent()\l+ getParent()\l}" alt="" coords="185,5,311,215"/>
+</map>

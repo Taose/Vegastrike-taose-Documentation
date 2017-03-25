@@ -1,0 +1,167 @@
+\hypertarget{classAudio_1_1RenderableListener}{}\section{Audio\+:\+:Renderable\+Listener Class Reference}
+\label{classAudio_1_1RenderableListener}\index{Audio\+::\+Renderable\+Listener@{Audio\+::\+Renderable\+Listener}}
+
+
+{\ttfamily \#include $<$Renderable\+Listener.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Renderable\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{d5/d98/classAudio_1_1RenderableListener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Renderable\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{d4/d63/classAudio_1_1RenderableListener__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Update\+Flags} \{ \\*
+{\bfseries U\+P\+D\+A\+T\+E\+\_\+\+A\+LL} = 0x0F, 
+{\bfseries U\+P\+D\+A\+T\+E\+\_\+\+L\+O\+C\+A\+T\+I\+ON} = 0x01, 
+{\bfseries U\+P\+D\+A\+T\+E\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES} = 0x02, 
+{\bfseries U\+P\+D\+A\+T\+E\+\_\+\+E\+F\+F\+E\+C\+TS} = 0x04, 
+\\*
+{\bfseries U\+P\+D\+A\+T\+E\+\_\+\+G\+A\+IN} = 0x08
+ \}\hypertarget{classAudio_1_1RenderableListener_aafe3760e6d6a83e2bcf7608df8188544}{}\label{classAudio_1_1RenderableListener_aafe3760e6d6a83e2bcf7608df8188544}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1Listener}{Listener} $\ast$ \hyperlink{classAudio_1_1RenderableListener_a4770042edc2947dae87e11f90a557b84}{get\+Listener} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1RenderableListener_aed1e3ef1f4a64b6225288b67b0a33cd1}{update} (int flags)  throw ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1RenderableListener_a1aa80327d0edc4f0ea20ebda81226398}{Renderable\+Listener} (\hyperlink{classAudio_1_1Listener}{Listener} $\ast$listener)  throw ()
+\item 
+virtual void \hyperlink{classAudio_1_1RenderableListener_a3330e524b2d82de2a5ca39d8e7c1198d}{update\+Impl} (int flags)=0  throw (\+Exception)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Renderable \hyperlink{classAudio_1_1Listener}{Listener} abstract class
+
+\begin{DoxyRemark}{Remarks}
+This is the interface to renderer-\/specific listeners. Listeners attached to a renderer receive one such instance that allows listener-\/specific commands to be given to the renderer, like requesting position updates and such. 
+\end{DoxyRemark}
+\begin{DoxyNote}{Note}
+Since this mutual attachment would create circular references, it is implemented on this side with raw pointers. No problem should arise since the smart pointer used in abstract listener already handles everything correctly, but care must be had not to have detached renderable listeners around. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Renderable\+Listener@{Audio\+::\+Renderable\+Listener}!Renderable\+Listener@{Renderable\+Listener}}
+\index{Renderable\+Listener@{Renderable\+Listener}!Audio\+::\+Renderable\+Listener@{Audio\+::\+Renderable\+Listener}}
+\subsubsection[{\texorpdfstring{Renderable\+Listener(\+Listener $\ast$listener)}{RenderableListener(Listener *listener)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Renderable\+Listener\+::\+Renderable\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1RenderableListener_a1aa80327d0edc4f0ea20ebda81226398}{}\label{classAudio_1_1RenderableListener_a1aa80327d0edc4f0ea20ebda81226398}
+Internal constructor used by derived classes 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Renderable\+Listener@{Audio\+::\+Renderable\+Listener}!get\+Listener@{get\+Listener}}
+\index{get\+Listener@{get\+Listener}!Audio\+::\+Renderable\+Listener@{Audio\+::\+Renderable\+Listener}}
+\subsubsection[{\texorpdfstring{get\+Listener() const }{getListener() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Listener}$\ast$ Audio\+::\+Renderable\+Listener\+::get\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1RenderableListener_a4770042edc2947dae87e11f90a557b84}{}\label{classAudio_1_1RenderableListener_a4770042edc2947dae87e11f90a557b84}
+Get the attached listener 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d0a/classAudio_1_1RenderableListener_a4770042edc2947dae87e11f90a557b84_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Renderable\+Listener@{Audio\+::\+Renderable\+Listener}!update@{update}}
+\index{update@{update}!Audio\+::\+Renderable\+Listener@{Audio\+::\+Renderable\+Listener}}
+\subsubsection[{\texorpdfstring{update(int flags)}{update(int flags)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Renderable\+Listener\+::update (
+\begin{DoxyParamCaption}
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1RenderableListener_aed1e3ef1f4a64b6225288b67b0a33cd1}{}\label{classAudio_1_1RenderableListener_aed1e3ef1f4a64b6225288b67b0a33cd1}
+Update the underlying A\+PI with dirty attributes 
+\begin{DoxyParams}{Parameters}
+{\em flags} & You may specify which attributes to update. Not all attributes are equally costly, so you\textquotesingle{}ll want to ease up on some, pump up some others. You can or-\/combine flags. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Although the implementation may throw exceptions, the interface will ignore them (just log them or something like that). Updates are non-\/critical and may fail silently. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d0a/classAudio_1_1RenderableListener_aed1e3ef1f4a64b6225288b67b0a33cd1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d0a/classAudio_1_1RenderableListener_aed1e3ef1f4a64b6225288b67b0a33cd1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Renderable\+Listener@{Audio\+::\+Renderable\+Listener}!update\+Impl@{update\+Impl}}
+\index{update\+Impl@{update\+Impl}!Audio\+::\+Renderable\+Listener@{Audio\+::\+Renderable\+Listener}}
+\subsubsection[{\texorpdfstring{update\+Impl(int flags)=0}{updateImpl(int flags)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Renderable\+Listener\+::update\+Impl (
+\begin{DoxyParamCaption}
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1RenderableListener_a3330e524b2d82de2a5ca39d8e7c1198d}{}\label{classAudio_1_1RenderableListener_a3330e524b2d82de2a5ca39d8e7c1198d}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1RenderableListener_aed1e3ef1f4a64b6225288b67b0a33cd1}{update}. 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classAudio_1_1OpenALRenderableListener_ae932bb6881351355c031aefcf81b0207}{Audio\+::\+Open\+A\+L\+Renderable\+Listener}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d0a/classAudio_1_1RenderableListener_a3330e524b2d82de2a5ca39d8e7c1198d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Renderable\+Listener.\+h\item 
+audio/Renderable\+Listener.\+cpp\end{DoxyCompactItemize}

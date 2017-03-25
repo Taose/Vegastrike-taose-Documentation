@@ -1,0 +1,95 @@
+\hypertarget{classAudio_1_1OggCodec}{}\section{Audio\+:\+:Ogg\+Codec Class Reference}
+\label{classAudio_1_1OggCodec}\index{Audio\+::\+Ogg\+Codec@{Audio\+::\+Ogg\+Codec}}
+
+
+{\ttfamily \#include $<$Ogg\+Codec.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Ogg\+Codec\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{d2/d3c/classAudio_1_1OggCodec__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Ogg\+Codec\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{db/d93/classAudio_1_1OggCodec__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const \hyperlink{classAudio_1_1Codec_a2f2e8eb4d85b0e5b338764adfa4bc881}{Extensions} $\ast$ \hyperlink{classAudio_1_1OggCodec_acc8ecbc48b092d851b2e9280234f1cdd}{get\+Extensions} () const   throw ()
+\item 
+virtual bool \hyperlink{classAudio_1_1OggCodec_af8071151d8920b49f7ca5ed1c826ee80}{can\+Handle} (const std\+::string \&path, bool can\+Open, V\+S\+File\+System\+::\+V\+S\+File\+Type type=V\+S\+File\+System\+::\+Unknown\+File)  throw ()
+\item 
+virtual \hyperlink{classAudio_1_1Stream}{Stream} $\ast$ \hyperlink{classAudio_1_1OggCodec_a23ea17b563b23f37bd607932ccb9a06d}{open} (const std\+::string \&path, V\+S\+File\+System\+::\+V\+S\+File\+Type type=V\+S\+File\+System\+::\+Unknown\+File)  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1OggCodec}{Ogg\+Codec} factory class, for Ogg audio streams. \begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1CodecRegistry}{Codec\+Registry} to create \hyperlink{classAudio_1_1OggCodec}{Ogg\+Codec} instances. 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Ogg\+Codec@{Audio\+::\+Ogg\+Codec}!can\+Handle@{can\+Handle}}
+\index{can\+Handle@{can\+Handle}!Audio\+::\+Ogg\+Codec@{Audio\+::\+Ogg\+Codec}}
+\subsubsection[{\texorpdfstring{can\+Handle(const std\+::string \&path, bool can\+Open, V\+S\+File\+System\+::\+V\+S\+File\+Type type=\+V\+S\+File\+System\+::\+Unknown\+File)}{canHandle(const std::string &path, bool canOpen, VSFileSystem::VSFileType type=VSFileSystem::UnknownFile)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Audio\+::\+Ogg\+Codec\+::can\+Handle (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{bool}]{can\+Open, }
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type = {\ttfamily VSFileSystem\+:\+:UnknownFile}}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OggCodec_af8071151d8920b49f7ca5ed1c826ee80}{}\label{classAudio_1_1OggCodec_af8071151d8920b49f7ca5ed1c826ee80}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Codec_aaae42e87264f1bfa7a75ed041c4432fb}{Codec\+::can\+Handle} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1Codec_aaae42e87264f1bfa7a75ed041c4432fb}{Audio\+::\+Codec}.
+
+\index{Audio\+::\+Ogg\+Codec@{Audio\+::\+Ogg\+Codec}!get\+Extensions@{get\+Extensions}}
+\index{get\+Extensions@{get\+Extensions}!Audio\+::\+Ogg\+Codec@{Audio\+::\+Ogg\+Codec}}
+\subsubsection[{\texorpdfstring{get\+Extensions() const }{getExtensions() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf Extensions}$\ast$ Audio\+::\+Ogg\+Codec\+::get\+Extensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OggCodec_acc8ecbc48b092d851b2e9280234f1cdd}{}\label{classAudio_1_1OggCodec_acc8ecbc48b092d851b2e9280234f1cdd}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Codec_af898298ac49f9bc82db8f352159014ef}{Codec\+::get\+Extensions} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \hyperlink{classAudio_1_1Codec_af898298ac49f9bc82db8f352159014ef}{Audio\+::\+Codec}.
+
+\index{Audio\+::\+Ogg\+Codec@{Audio\+::\+Ogg\+Codec}!open@{open}}
+\index{open@{open}!Audio\+::\+Ogg\+Codec@{Audio\+::\+Ogg\+Codec}}
+\subsubsection[{\texorpdfstring{open(const std\+::string \&path, V\+S\+File\+System\+::\+V\+S\+File\+Type type=\+V\+S\+File\+System\+::\+Unknown\+File)}{open(const std::string &path, VSFileSystem::VSFileType type=VSFileSystem::UnknownFile)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Stream}$\ast$ Audio\+::\+Ogg\+Codec\+::open (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type = {\ttfamily VSFileSystem\+:\+:UnknownFile}}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OggCodec_a23ea17b563b23f37bd607932ccb9a06d}{}\label{classAudio_1_1OggCodec_a23ea17b563b23f37bd607932ccb9a06d}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Codec_ace346d58a094f8c467cb152da061f82e}{Codec\+::open} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1Codec_ace346d58a094f8c467cb152da061f82e}{Audio\+::\+Codec}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/codecs/Ogg\+Codec.\+h\end{DoxyCompactItemize}

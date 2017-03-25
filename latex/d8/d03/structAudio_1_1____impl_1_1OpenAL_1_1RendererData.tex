@@ -1,0 +1,91 @@
+\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData}{}\section{Audio\+:\+:\+\_\+\+\_\+impl\+:\+:Open\+AL\+:\+:Renderer\+Data Struct Reference}
+\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData}\index{Audio\+::\+\_\+\+\_\+impl\+::\+Open\+A\+L\+::\+Renderer\+Data@{Audio\+::\+\_\+\+\_\+impl\+::\+Open\+A\+L\+::\+Renderer\+Data}}
+
+
+Collaboration diagram for Audio\+:\+:\+\_\+\+\_\+impl\+:\+:Open\+AL\+:\+:Renderer\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{df/d98/structAudio_1_1____impl_1_1OpenAL_1_1RendererData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAudio_1_1____impl_1_1OpenAL_1_1RendererData_1_1SoundKey}{Sound\+Key}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ \hyperlink{classAudio_1_1____impl_1_1OpenAL_1_1RendererData_1_1SoundKey}{Sound\+Key}, Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ $>$ {\bfseries Sound\+Map}\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_aff2a86a1a2d524a207aec2cf38a4ff74}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_aff2a86a1a2d524a207aec2cf38a4ff74}
+
+\item 
+typedef std\+::map$<$ Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$, \hyperlink{classAudio_1_1____impl_1_1OpenAL_1_1RendererData_1_1SoundKey}{Sound\+Key} $>$ {\bfseries Reverse\+Sound\+Map}\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_ae5dd22c4c5f2025fb39a3e89f20f4af5}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_ae5dd22c4c5f2025fb39a3e89f20f4af5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ {\bfseries lookup\+Sound} (V\+S\+File\+System\+::\+V\+S\+File\+Type type, const std\+::string \&name) const \hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_adb199ffb70f50060bbafceabadcf2bf3}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_adb199ffb70f50060bbafceabadcf2bf3}
+
+\item 
+\hyperlink{classAudio_1_1____impl_1_1OpenAL_1_1RendererData_1_1SoundKey}{Sound\+Key} {\bfseries lookup\+Sound} (const Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ \&sound) const \hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a8ec58804eb0a15dd437cb13c23847267}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a8ec58804eb0a15dd437cb13c23847267}
+
+\item 
+void {\bfseries add\+Sound} (V\+S\+File\+System\+::\+V\+S\+File\+Type type, const std\+::string \&name, Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ sound)\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a370fd7600fad183883b487c69955be8a}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a370fd7600fad183883b487c69955be8a}
+
+\item 
+void {\bfseries unload\+Sound} (const Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ \&sound)\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a96ff45c6f57ca60bea1773eeec067ef6}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a96ff45c6f57ca60bea1773eeec067ef6}
+
+\item 
+void {\bfseries unload\+Sounds} ()\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_ac52ce1bb3e95867eda5ca6c5b008000b}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_ac52ce1bb3e95867eda5ca6c5b008000b}
+
+\item 
+void {\bfseries open\+Device} (const char $\ast$device\+Specifier)  throw (\+Exception)\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a6c650f80d9e7a728beadb4f5c1d4a02e}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a6c650f80d9e7a728beadb4f5c1d4a02e}
+
+\item 
+void {\bfseries close\+Device} ()  throw (\+Exception)\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a8d84a6783fed2635099267dca95a8703}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a8d84a6783fed2635099267dca95a8703}
+
+\item 
+void {\bfseries open\+Context} (const \hyperlink{structAudio_1_1Format}{Format} \&format)  throw (\+Exception)\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a08a7d6e2e49bf3951da753df95f65054}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a08a7d6e2e49bf3951da753df95f65054}
+
+\item 
+void {\bfseries commit} ()  throw (\+Exception)\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_aa5dd705369d8586158e3d80c20787d11}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_aa5dd705369d8586158e3d80c20787d11}
+
+\item 
+void {\bfseries suspend} ()  throw (\+Exception)\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_ace908e21075161556ac40531f8424c91}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_ace908e21075161556ac40531f8424c91}
+
+\item 
+void {\bfseries close\+Context} ()  throw (\+Exception)\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a58a077d06513d31f8f17a75c965fa4d6}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a58a077d06513d31f8f17a75c965fa4d6}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+A\+L\+Cdevice $\ast$ {\bfseries al\+Device}\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a3e395bffd611bf1a79e62b997c8631f7}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a3e395bffd611bf1a79e62b997c8631f7}
+
+\item 
+A\+L\+Ccontext $\ast$ {\bfseries al\+Context}\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a1962eef8e1eeadac4e98de9d96f26bcb}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a1962eef8e1eeadac4e98de9d96f26bcb}
+
+\item 
+Sound\+Map {\bfseries loaded\+Sounds}\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a5bb809a40a2cff0482e3c4068535bdfd}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a5bb809a40a2cff0482e3c4068535bdfd}
+
+\item 
+Reverse\+Sound\+Map {\bfseries loaded\+Sounds\+Reverse}\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_acddb4a84ead72c77f1b3d00e3e47b29f}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_acddb4a84ead72c77f1b3d00e3e47b29f}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int {\bfseries meterDistance}: 1\\
+\>int {\bfseries dopplerFactor}: 1\\
+\} {\bfseries dirty}\hypertarget{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a783b92810000b8734eb04bba1fef5315}{}\label{structAudio_1_1____impl_1_1OpenAL_1_1RendererData_a783b92810000b8734eb04bba1fef5315}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Renderer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,234 @@
+\hypertarget{classAudio_1_1TemplateManager}{}\section{Audio\+:\+:Template\+Manager Class Reference}
+\label{classAudio_1_1TemplateManager}\index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+
+
+{\ttfamily \#include $<$Template\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Template\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{d4/d38/classAudio_1_1TemplateManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Template\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{d4/d86/classAudio_1_1TemplateManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1TemplateManager_ab2e4aea1a61540b3ee8d85e4e308ebad}{Template\+Manager} ()  throw ()
+\item 
+void \hyperlink{classAudio_1_1TemplateManager_a2b119f54bfe5273f5d4cdae9068189b1}{add\+Definition\+File} (const std\+::string \&path, bool persistent)  throw (\+Exception)
+\item 
+void \hyperlink{classAudio_1_1TemplateManager_ad76a82d86800913f3fa0ce60d91b1a7a}{add\+Definition\+File} (const std\+::string \&path, Shared\+Ptr$<$ \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document} $>$ definition)  throw (\+Exception)
+\item 
+Shared\+Ptr$<$ \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document} $>$ \hyperlink{classAudio_1_1TemplateManager_a2291778045ec34331cdd324082c80909}{get\+Definition\+File} (const std\+::string \&path) const   throw (\+Resource\+Not\+Loaded\+Exception)
+\item 
+Shared\+Ptr$<$ \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document} $>$ \hyperlink{classAudio_1_1TemplateManager_aded9885db09bfa5f2adeef4ab7dd6b7f}{get\+Definition\+File} (const std\+::string \&path)  throw (\+Exception)
+\item 
+void \hyperlink{classAudio_1_1TemplateManager_a03ddc9b5a016e2140b84efca9a2fe20d}{set\+Default\+Definition\+File} (const std\+::string \&x)  throw ()
+\item 
+const std\+::string \& \hyperlink{classAudio_1_1TemplateManager_a30d309c998849eafcf18bc1524f7ed0b}{get\+Default\+Definition\+File} () const   throw ()
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1SourceTemplate}{Source\+Template} $>$ \hyperlink{classAudio_1_1TemplateManager_a2ad1459769666d84a15a8c7dd5354264}{get\+Source\+Template} (const std\+::string \&name)  throw (\+Exception)
+\item 
+void \hyperlink{classAudio_1_1TemplateManager_a47d60d03c1322a19246669484fcefc8e}{add\+Source\+Template} (const std\+::string \&name, Shared\+Ptr$<$ \hyperlink{classAudio_1_1SourceTemplate}{Source\+Template} $>$ tpl, bool perm=true)  throw (\+Resource\+Already\+Loaded\+Exception)
+\item 
+void \hyperlink{classAudio_1_1TemplateManager_a4f3986632d0328894a31baa62a51a344}{add\+Source\+Template} (const std\+::string \&path, const std\+::string \&name, Shared\+Ptr$<$ \hyperlink{classAudio_1_1SourceTemplate}{Source\+Template} $>$ tpl, bool perm=true)  throw (\+Resource\+Already\+Loaded\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1SourceTemplate}{Source\+Template} $>$ \hyperlink{classAudio_1_1TemplateManager_ac3893d12dc6caaa5f5c443b6834fd0aa}{load\+Source\+Template} (const std\+::string \&name)  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Template manager class.
+
+\begin{DoxyRemark}{Remarks}
+Use it to create and manage source templates. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Instead of storing source templates themselves, since they may be shared,}
+you should store shared pointers to them. The manager will automatically detect and unload unreferenced templates. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Templates are addressed by key -\/ keys are composed in a very specific way.}
+They are all of the form \mbox{[}path\mbox{]}\+:\mbox{[}name\mbox{]}, where \mbox{[}path\mbox{]} is a source definition xml file and \mbox{[}name\mbox{]} is a source name within the xml file. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Usually xml files are loaded on-\/demand, and unloaded shortly after. Some}
+definition files, however, may contain heavily used sources and those are useful to keep laying around, preparsed. You can instruct the manager to do so with \hyperlink{classAudio_1_1TemplateManager_a2b119f54bfe5273f5d4cdae9068189b1}{add\+Definition\+File()}. 
+\end{DoxyParagraph}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1SourceTemplate}{Source\+Template} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!Template\+Manager@{Template\+Manager}}
+\index{Template\+Manager@{Template\+Manager}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{Template\+Manager()}{TemplateManager()}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Template\+Manager\+::\+Template\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1TemplateManager_ab2e4aea1a61540b3ee8d85e4e308ebad}{}\label{classAudio_1_1TemplateManager_ab2e4aea1a61540b3ee8d85e4e308ebad}
+Construct a new manager \begin{DoxyRemark}{Remarks}
+End-\/users of the class shouldn\textquotesingle{}t be using this. Singletons need it. 
+\end{DoxyRemark}
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!add\+Definition\+File@{add\+Definition\+File}}
+\index{add\+Definition\+File@{add\+Definition\+File}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{add\+Definition\+File(const std\+::string \&path, bool persistent)}{addDefinitionFile(const std::string &path, bool persistent)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Template\+Manager\+::add\+Definition\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{bool}]{persistent}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1TemplateManager_a2b119f54bfe5273f5d4cdae9068189b1}{}\label{classAudio_1_1TemplateManager_a2b119f54bfe5273f5d4cdae9068189b1}
+Add a definition file, persistent or not \index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!add\+Definition\+File@{add\+Definition\+File}}
+\index{add\+Definition\+File@{add\+Definition\+File}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{add\+Definition\+File(const std\+::string \&path, Shared\+Ptr$<$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document $>$ definition)}{addDefinitionFile(const std::string &path, SharedPtr< XMLDOM::XMLDocument > definition)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Template\+Manager\+::add\+Definition\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{Shared\+Ptr$<$ {\bf X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document} $>$}]{definition}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1TemplateManager_ad76a82d86800913f3fa0ce60d91b1a7a}{}\label{classAudio_1_1TemplateManager_ad76a82d86800913f3fa0ce60d91b1a7a}
+Add a definition document under a specified path, always persistent (as there is no way to reload) \index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!add\+Source\+Template@{add\+Source\+Template}}
+\index{add\+Source\+Template@{add\+Source\+Template}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{add\+Source\+Template(const std\+::string \&name, Shared\+Ptr$<$ Source\+Template $>$ tpl, bool perm=true)}{addSourceTemplate(const std::string &name, SharedPtr< SourceTemplate > tpl, bool perm=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Template\+Manager\+::add\+Source\+Template (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{Shared\+Ptr$<$ {\bf Source\+Template} $>$}]{tpl, }
+\item[{bool}]{perm = {\ttfamily true}}
+\end{DoxyParamCaption}
+) throw  {\bf Resource\+Already\+Loaded\+Exception}) }\hypertarget{classAudio_1_1TemplateManager_a47d60d03c1322a19246669484fcefc8e}{}\label{classAudio_1_1TemplateManager_a47d60d03c1322a19246669484fcefc8e}
+Add a manually-\/created template 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name portion of the template\textquotesingle{}s key \\
+\hline
+{\em tpl} & the template to be added \\
+\hline
+{\em perm} & if true, a strong reference will be held and the template will become permanently loaded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The key to the newly added template will always be \+:\mbox{[}name\mbox{]} (empty path), denoting dynamically-\/created templates. 
+\end{DoxyRemark}
+\begin{DoxyNote}{Note}
+Since the manager only holds weak references to templates if perm is not given, you must hold onto a reference at least, or the manager will \char`\"{}forget\char`\"{} you added this resource. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classAudio_1_1ResourceAlreadyLoadedException}{Resource\+Already\+Loaded\+Exception},when} & the key already has an associated template. \\
+\hline
+\end{DoxyExceptions}
+\index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!add\+Source\+Template@{add\+Source\+Template}}
+\index{add\+Source\+Template@{add\+Source\+Template}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{add\+Source\+Template(const std\+::string \&path, const std\+::string \&name, Shared\+Ptr$<$ Source\+Template $>$ tpl, bool perm=true)}{addSourceTemplate(const std::string &path, const std::string &name, SharedPtr< SourceTemplate > tpl, bool perm=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Template\+Manager\+::add\+Source\+Template (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{const std\+::string \&}]{name, }
+\item[{Shared\+Ptr$<$ {\bf Source\+Template} $>$}]{tpl, }
+\item[{bool}]{perm = {\ttfamily true}}
+\end{DoxyParamCaption}
+) throw  {\bf Resource\+Already\+Loaded\+Exception}) }\hypertarget{classAudio_1_1TemplateManager_a4f3986632d0328894a31baa62a51a344}{}\label{classAudio_1_1TemplateManager_a4f3986632d0328894a31baa62a51a344}
+Add a manually-\/created template 
+\begin{DoxyParams}{Parameters}
+{\em path} & the path portion of the template\textquotesingle{}s key \\
+\hline
+{\em name} & the name portion of the template\textquotesingle{}s key \\
+\hline
+{\em tpl} & the template to be added \\
+\hline
+{\em perm} & if true, a strong reference will be held and the template will become permanently loaded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The key to the newly added template will always be \mbox{[}path\mbox{]}\+:\mbox{[}name\mbox{]}. Using this method is discouraged if collission with filesystem-\/based templates would be possible (pick paths that don\textquotesingle{}t map to file system paths) 
+\end{DoxyRemark}
+\begin{DoxyNote}{Note}
+Since the manager only holds weak references to templates if perm is not given, you must hold onto a reference at least, or the manager will \char`\"{}forget\char`\"{} you added this resource. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classAudio_1_1ResourceAlreadyLoadedException}{Resource\+Already\+Loaded\+Exception},when} & the key already has an associated template. \\
+\hline
+\end{DoxyExceptions}
+\index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!get\+Default\+Definition\+File@{get\+Default\+Definition\+File}}
+\index{get\+Default\+Definition\+File@{get\+Default\+Definition\+File}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Default\+Definition\+File() const }{getDefaultDefinitionFile() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& Audio\+::\+Template\+Manager\+::get\+Default\+Definition\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1TemplateManager_a30d309c998849eafcf18bc1524f7ed0b}{}\label{classAudio_1_1TemplateManager_a30d309c998849eafcf18bc1524f7ed0b}
+Get the default definition file \begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1TemplateManager_a03ddc9b5a016e2140b84efca9a2fe20d}{set\+Default\+Definition\+File} 
+\end{DoxySeeAlso}
+\index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!get\+Definition\+File@{get\+Definition\+File}}
+\index{get\+Definition\+File@{get\+Definition\+File}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Definition\+File(const std\+::string \&path) const }{getDefinitionFile(const std::string &path) const }}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<$ {\bf X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document} $>$ Audio\+::\+Template\+Manager\+::get\+Definition\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+) const throw  {\bf Resource\+Not\+Loaded\+Exception}) }\hypertarget{classAudio_1_1TemplateManager_a2291778045ec34331cdd324082c80909}{}\label{classAudio_1_1TemplateManager_a2291778045ec34331cdd324082c80909}
+Get an already loaded definition file, fail if not found or not loaded \index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!get\+Definition\+File@{get\+Definition\+File}}
+\index{get\+Definition\+File@{get\+Definition\+File}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Definition\+File(const std\+::string \&path)}{getDefinitionFile(const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<$ {\bf X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document} $>$ Audio\+::\+Template\+Manager\+::get\+Definition\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1TemplateManager_aded9885db09bfa5f2adeef4ab7dd6b7f}{}\label{classAudio_1_1TemplateManager_aded9885db09bfa5f2adeef4ab7dd6b7f}
+Get an already loaded definition file, load if not loaded \index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!get\+Source\+Template@{get\+Source\+Template}}
+\index{get\+Source\+Template@{get\+Source\+Template}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Source\+Template(const std\+::string \&name)}{getSourceTemplate(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<$ {\bf Source\+Template} $>$ Audio\+::\+Template\+Manager\+::get\+Source\+Template (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1TemplateManager_a2ad1459769666d84a15a8c7dd5354264}{}\label{classAudio_1_1TemplateManager_a2ad1459769666d84a15a8c7dd5354264}
+Get a source template by its key \index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!load\+Source\+Template@{load\+Source\+Template}}
+\index{load\+Source\+Template@{load\+Source\+Template}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{load\+Source\+Template(const std\+::string \&name)}{loadSourceTemplate(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<$ {\bf Source\+Template} $>$ Audio\+::\+Template\+Manager\+::load\+Source\+Template (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1TemplateManager_ac3893d12dc6caaa5f5c443b6834fd0aa}{}\label{classAudio_1_1TemplateManager_ac3893d12dc6caaa5f5c443b6834fd0aa}
+Get a source template by its key 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/db1/classAudio_1_1TemplateManager_ac3893d12dc6caaa5f5c443b6834fd0aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}!set\+Default\+Definition\+File@{set\+Default\+Definition\+File}}
+\index{set\+Default\+Definition\+File@{set\+Default\+Definition\+File}!Audio\+::\+Template\+Manager@{Audio\+::\+Template\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Default\+Definition\+File(const std\+::string \&x)}{setDefaultDefinitionFile(const std::string &x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Template\+Manager\+::set\+Default\+Definition\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{x}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1TemplateManager_a03ddc9b5a016e2140b84efca9a2fe20d}{}\label{classAudio_1_1TemplateManager_a03ddc9b5a016e2140b84efca9a2fe20d}
+Set default definition file \begin{DoxyRemark}{Remarks}
+when a template named without its source definition file is requested, it is assumed to come from this definition file. 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Template\+Manager.\+h\item 
+audio/Template\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{classListMutableSet}{}\section{List\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$ Class Template Reference}
+\label{classListMutableSet}\index{List\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$@{List\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$}}
+
+
+Inheritance diagram for List\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d5/d26/classListMutableSet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for List\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d8/dca/classListMutableSet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries flatten} ()\hypertarget{classListMutableSet_a4a093a8574ad192af93477436a3ce0e5}{}\label{classListMutableSet_a4a093a8574ad192af93477436a3ce0e5}
+
+\item 
+void \hyperlink{classListMutableSet_a3860de511d3f9480d8eedad51bbe66ac}{check\+Set} ()\hypertarget{classListMutableSet_a3860de511d3f9480d8eedad51bbe66ac}{}\label{classListMutableSet_a3860de511d3f9480d8eedad51bbe66ac}
+
+\begin{DoxyCompactList}\small\item\em This just checks the order of the set for testing purposes.. \end{DoxyCompactList}\item 
+void \hyperlink{classListMutableSet_a7540fc87f18d5019e2e94b04bbb4383d}{change\+Key} (typename S\+U\+P\+E\+R\+::iterator \&iter, const T \&new\+Key, typename S\+U\+P\+E\+R\+::iterator \&templess, typename S\+U\+P\+E\+R\+::iterator \&rettempmore)
+\begin{DoxyCompactList}\small\item\em Given an iterator you can alter that iterator\textquotesingle{}s key to be the one passed in. \end{DoxyCompactList}\item 
+S\+U\+P\+E\+R\+::iterator {\bfseries change\+Key} (typename S\+U\+P\+E\+R\+::iterator iter, const T \&new\+Key)\hypertarget{classListMutableSet_a38f1754915730cde02bd9459710a10fc}{}\label{classListMutableSet_a38f1754915730cde02bd9459710a10fc}
+
+\item 
+S\+U\+P\+E\+R\+::iterator {\bfseries insert} (const T \&new\+Key, typename S\+U\+P\+E\+R\+::iterator hint)\hypertarget{classListMutableSet_a58341324365191a01f884960c3160dcd}{}\label{classListMutableSet_a58341324365191a01f884960c3160dcd}
+
+\item 
+S\+U\+P\+E\+R\+::iterator {\bfseries insert} (const T \&new\+Key)\hypertarget{classListMutableSet_a33161253b3430ab777d7b8122da8fb9f}{}\label{classListMutableSet_a33161253b3430ab777d7b8122da8fb9f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{List\+Mutable\+Set@{List\+Mutable\+Set}!change\+Key@{change\+Key}}
+\index{change\+Key@{change\+Key}!List\+Mutable\+Set@{List\+Mutable\+Set}}
+\subsubsection[{\texorpdfstring{change\+Key(typename S\+U\+P\+E\+R\+::iterator \&iter, const T \&new\+Key, typename S\+U\+P\+E\+R\+::iterator \&templess, typename S\+U\+P\+E\+R\+::iterator \&rettempmore)}{changeKey(typename SUPER::iterator &iter, const T &newKey, typename SUPER::iterator &templess, typename SUPER::iterator &rettempmore)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class \+\_\+\+Compare  = std\+::less$<$ T $>$$>$ void {\bf List\+Mutable\+Set}$<$ T, \+\_\+\+Compare $>$\+::change\+Key (
+\begin{DoxyParamCaption}
+\item[{typename S\+U\+P\+E\+R\+::iterator \&}]{iter, }
+\item[{const T \&}]{new\+Key, }
+\item[{typename S\+U\+P\+E\+R\+::iterator \&}]{templess, }
+\item[{typename S\+U\+P\+E\+R\+::iterator \&}]{rettempmore}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classListMutableSet_a7540fc87f18d5019e2e94b04bbb4383d}{}\label{classListMutableSet_a7540fc87f18d5019e2e94b04bbb4383d}
+
+
+Given an iterator you can alter that iterator\textquotesingle{}s key to be the one passed in. 
+
+The type must have a function called change\+Key(const Key \&new\+Key) that changes its key to the specified new key. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/key\+\_\+mutable\+\_\+set.\+h\end{DoxyCompactItemize}

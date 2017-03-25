@@ -1,0 +1,9 @@
+<map id="Unit::ProcessDeleteQueue" name="Unit::ProcessDeleteQueue">
+<area shape="rect" id="node2" href="$da/dea/classStarSystem.html#a4c1430d5d251a5cd8d51e1818e819309" title="Requeues the unit so that it is simulated ASAP. " alt="" coords="421,5,616,32"/>
+<area shape="rect" id="node3" href="$da/dea/classStarSystem.html#a761562b9400fa14e0442557eb5d6e64e" title="update a simulation atom ExecuteDirector must be false if star system is just loaded before mission i..." alt="" coords="232,56,373,83"/>
+<area shape="rect" id="node4" href="$d9/dba/classCockpit.html#a77661eaba99c97a4bcb0192adaee01be" title="Draws Cockpit then restores viewport. " alt="" coords="465,56,572,83"/>
+<area shape="rect" id="node7" href="$dc/dce/classUniverse.html#a0c93df0a193723c26f031fa81cde3b2a" title="Wrapper function for Star System. " alt="" coords="434,107,603,133"/>
+<area shape="rect" id="node8" href="$dc/dce/classUniverse.html#a18722326f55b37627846cb7652b4dfff" title="Begins a scene. " alt="" coords="448,157,589,184"/>
+<area shape="rect" id="node5" href="$d5/d38/classGameStarSystem.html#a22a64a77861767b3503b7c6b5ab0b786" title="GameStarSystem::Draw" alt="" coords="664,56,829,83"/>
+<area shape="rect" id="node6" href="$d5/d38/classGameStarSystem.html#a08724f59ce670c81fd5c43aef06401c1" title="activates the light map texture " alt="" coords="877,56,1076,83"/>
+</map>

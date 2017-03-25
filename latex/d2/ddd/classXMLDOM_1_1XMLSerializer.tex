@@ -1,0 +1,246 @@
+\hypertarget{classXMLDOM_1_1XMLSerializer}{}\section{X\+M\+L\+D\+OM\+:\+:X\+M\+L\+Serializer Class Reference}
+\label{classXMLDOM_1_1XMLSerializer}\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}}
+
+
+Inheritance diagram for X\+M\+L\+D\+OM\+:\+:X\+M\+L\+Serializer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{d6/db5/classXMLDOM_1_1XMLSerializer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for X\+M\+L\+D\+OM\+:\+:X\+M\+L\+Serializer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{d4/daf/classXMLDOM_1_1XMLSerializer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Options} \{ \\*
+{\bfseries O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+C\+D\+A\+TA} =0x01, 
+{\bfseries O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+C\+O\+M\+M\+E\+N\+TS} =0x02, 
+{\bfseries O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+N\+A\+M\+E\+B\+I\+N\+D\+I\+N\+GS} =0x04, 
+{\bfseries O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+N\+A\+M\+E\+B\+I\+N\+D\+I\+N\+G\+S\+\_\+\+D\+E\+E\+P\+S\+C\+AN} =0x08, 
+\\*
+{\bfseries O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+A\+LL} =O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+C\+D\+A\+T\+A$\vert$\+O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+C\+O\+M\+M\+E\+N\+TS, 
+{\bfseries O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+D\+E\+E\+P\+B\+I\+N\+D\+I\+N\+GS} =O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+N\+A\+M\+E\+B\+I\+N\+D\+I\+N\+G\+S$\vert$\+O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+N\+A\+M\+E\+B\+I\+N\+D\+I\+N\+G\+S\+\_\+\+D\+E\+E\+P\+S\+C\+AN, 
+{\bfseries O\+P\+T\+\_\+\+D\+E\+F\+A\+U\+LT} =O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+A\+L\+L$\vert$\+O\+P\+T\+\_\+\+W\+A\+N\+T\+\_\+\+D\+E\+E\+P\+B\+I\+N\+D\+I\+N\+GS
+ \}\hypertarget{classXMLDOM_1_1XMLSerializer_a46e4320d804eee5541413d625dc2a901}{}\label{classXMLDOM_1_1XMLSerializer_a46e4320d804eee5541413d625dc2a901}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries X\+M\+L\+Serializer} (const char $\ast$encoding=0, \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+Document} $\ast$doc=0, \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$elem=0)\hypertarget{classXMLDOM_1_1XMLSerializer_ae08dc16c373e9ba73a3859598d5ed9fb}{}\label{classXMLDOM_1_1XMLSerializer_ae08dc16c373e9ba73a3859598d5ed9fb}
+
+\item 
+virtual bool \hyperlink{classXMLDOM_1_1XMLSerializer_abea28fce905d61d5b89c987f01808335}{parse} (const void $\ast$buf, unsigned int len)
+\item 
+virtual bool \hyperlink{classXMLDOM_1_1XMLSerializer_a2224aae579bed3aa406471e9f560c81b}{import\+X\+ML} (const std\+::string \&path)
+\item 
+virtual bool \hyperlink{classXMLDOM_1_1XMLSerializer_a195e26f4d238914c24b8e59347562fd3}{export\+X\+ML} (std\+::ostream \&stream)
+\item 
+bool \hyperlink{classXMLDOM_1_1XMLSerializer_aa0ac8b5d06367e14956be8db680b9f85}{export\+X\+ML} (const std\+::string \&filename)
+\item 
+virtual void \hyperlink{classXMLDOM_1_1XMLSerializer_aea081140e9fe48604e7b3824c8d9ecf4}{add\+Processor} (\hyperlink{classXMLDOM_1_1XMLProcessor}{X\+M\+L\+Processor} $\ast$proc)
+\item 
+virtual bool \hyperlink{classXMLDOM_1_1XMLSerializer_a24742822d98c992acb2332ce743353dc}{initialise} (const char $\ast$encoding=0, \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+Document} $\ast$doc=0, \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$elem=0)
+\item 
+virtual \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+Document} $\ast$ \hyperlink{classXMLDOM_1_1XMLSerializer_a992f4314b31d6a76ca05cddf09dbf2a1}{close} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries options}\hypertarget{classXMLDOM_1_1XMLSerializer_abf0c97479fbe7356737809a4108a3ec0}{}\label{classXMLDOM_1_1XMLSerializer_abf0c97479fbe7356737809a4108a3ec0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}!add\+Processor@{add\+Processor}}
+\index{add\+Processor@{add\+Processor}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}}
+\subsubsection[{\texorpdfstring{add\+Processor(\+X\+M\+L\+Processor $\ast$proc)}{addProcessor(XMLProcessor *proc)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Serializer\+::add\+Processor (
+\begin{DoxyParamCaption}
+\item[{{\bf X\+M\+L\+Processor} $\ast$}]{proc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classXMLDOM_1_1XMLSerializer_aea081140e9fe48604e7b3824c8d9ecf4}{}\label{classXMLDOM_1_1XMLSerializer_aea081140e9fe48604e7b3824c8d9ecf4}
+Add the specified processor (a subclass of \hyperlink{classXMLDOM_1_1XMLProcessor}{X\+M\+L\+Processor}) \begin{DoxyRemark}{Remarks}
+This allows definition of xml processors without requiring a subclass of X\+M\+L\+Parser 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/ddd/classXMLDOM_1_1XMLSerializer_aea081140e9fe48604e7b3824c8d9ecf4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}!close@{close}}
+\index{close@{close}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Document} $\ast$ X\+M\+L\+Serializer\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classXMLDOM_1_1XMLSerializer_a992f4314b31d6a76ca05cddf09dbf2a1}{}\label{classXMLDOM_1_1XMLSerializer_a992f4314b31d6a76ca05cddf09dbf2a1}
+Close parsing -\/ do cleanup, free memory, etc... \begin{DoxyRemark}{Remarks}
+Returns the parsed document -\/ make sure to grab it, or delete it. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/ddd/classXMLDOM_1_1XMLSerializer_a992f4314b31d6a76ca05cddf09dbf2a1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/ddd/classXMLDOM_1_1XMLSerializer_a992f4314b31d6a76ca05cddf09dbf2a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}!export\+X\+ML@{export\+X\+ML}}
+\index{export\+X\+ML@{export\+X\+ML}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}}
+\subsubsection[{\texorpdfstring{export\+X\+M\+L(std\+::ostream \&stream)}{exportXML(std::ostream &stream)}}]{\setlength{\rightskip}{0pt plus 5cm}bool X\+M\+L\+Serializer\+::export\+X\+ML (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classXMLDOM_1_1XMLSerializer_a195e26f4d238914c24b8e59347562fd3}{}\label{classXMLDOM_1_1XMLSerializer_a195e26f4d238914c24b8e59347562fd3}
+Write the document to the specified stream. \begin{DoxyRemark}{Remarks}
+You must pass... hence... a document in the constructor. That... or you\textquotesingle{}re just going to write the current document. Pick your choice. 
+\end{DoxyRemark}
+
+
+Reimplemented in \hyperlink{classXMLDOM_1_1VSFileXMLSerializer_a918a86641b065f9d3a3ff7115c1ed942}{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer}.
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}!export\+X\+ML@{export\+X\+ML}}
+\index{export\+X\+ML@{export\+X\+ML}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}}
+\subsubsection[{\texorpdfstring{export\+X\+M\+L(const std\+::string \&filename)}{exportXML(const std::string &filename)}}]{\setlength{\rightskip}{0pt plus 5cm}bool X\+M\+L\+Serializer\+::export\+X\+ML (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLSerializer_aa0ac8b5d06367e14956be8db680b9f85}{}\label{classXMLDOM_1_1XMLSerializer_aa0ac8b5d06367e14956be8db680b9f85}
+Write the document to the specified file. \begin{DoxySeeAlso}{See also}
+write(std\+::ostream\&) 
+\end{DoxySeeAlso}
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}!import\+X\+ML@{import\+X\+ML}}
+\index{import\+X\+ML@{import\+X\+ML}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}}
+\subsubsection[{\texorpdfstring{import\+X\+M\+L(const std\+::string \&path)}{importXML(const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}bool X\+M\+L\+Serializer\+::import\+X\+ML (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classXMLDOM_1_1XMLSerializer_a2224aae579bed3aa406471e9f560c81b}{}\label{classXMLDOM_1_1XMLSerializer_a2224aae579bed3aa406471e9f560c81b}
+Parse the specified file \begin{DoxyRemark}{Remarks}
+You can mix it with other kinds of parsing -\/ the result is rather interesting\+: concatenation of data. Calls the \hyperlink{classXMLDOM_1_1XMLSerializer_abea28fce905d61d5b89c987f01808335}{parse(const void$\ast$,unsigned int)} implementation. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{}
+Override, for instance, to retrieve data in special ways (like from special resource providers). 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Returns false on error. 
+\end{DoxyParagraph}
+
+
+Reimplemented in \hyperlink{classXMLDOM_1_1VSFileXMLSerializer_a4a7c1df7485259ae594ed8e18137c664}{X\+M\+L\+D\+O\+M\+::\+V\+S\+File\+X\+M\+L\+Serializer}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/ddd/classXMLDOM_1_1XMLSerializer_a2224aae579bed3aa406471e9f560c81b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}!initialise@{initialise}}
+\index{initialise@{initialise}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}}
+\subsubsection[{\texorpdfstring{initialise(const char $\ast$encoding=0, X\+M\+L\+Document $\ast$doc=0, X\+M\+L\+Element $\ast$elem=0)}{initialise(const char *encoding=0, XMLDocument *doc=0, XMLElement *elem=0)}}]{\setlength{\rightskip}{0pt plus 5cm}bool X\+M\+L\+Serializer\+::initialise (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{encoding = {\ttfamily 0}, }
+\item[{{\bf X\+M\+L\+Document} $\ast$}]{doc = {\ttfamily 0}, }
+\item[{{\bf X\+M\+L\+Element} $\ast$}]{elem = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classXMLDOM_1_1XMLSerializer_a24742822d98c992acb2332ce743353dc}{}\label{classXMLDOM_1_1XMLSerializer_a24742822d98c992acb2332ce743353dc}
+Initialise parsing -\/ destroy any current data if already initialised \begin{DoxyRemark}{Remarks}
+If you pass a document, its contents will be \textquotesingle{}inherited\textquotesingle{}. If you pass an element pointer (make certain it is an element of the passed document), all parsing results are added as a child of that element -\/ if not, the document\textquotesingle{}s root element is used for that purpose. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{}
+Have in mind that until \hyperlink{classXMLDOM_1_1XMLSerializer_a992f4314b31d6a76ca05cddf09dbf2a1}{close()} is called, or the parser is destroyed, it will own \textquotesingle{}doc\textquotesingle{} (and hence \textquotesingle{}elem\textquotesingle{}) -\/ which means it will delete it if destroyed. 
+\end{DoxyParagraph}
+
+\begin{DoxyParams}{Parameters}
+{\em encoding} & If N\+U\+LL, the default character encoding (U\+T\+F8). If not, the name of another encoding. Note, though, that handling of different encodings is not yet supported -\/ this is a placeholder for future enhancement, and as such should always be set to N\+U\+LL, until the day custom encodings are handled. \\
+\hline
+{\em doc} & If N\+U\+LL, a new document will be created. If not, parsed elements will be added to the specified document. \\
+\hline
+{\em elem} & If N\+U\+LL, parsed elements will be added to the document\textquotesingle{}s root element (either the automatically generated document, or the specified document). If not, they will be added as child elements of the specified element. Be certain to pass an element within doc... otherwise, results will be undefined. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/ddd/classXMLDOM_1_1XMLSerializer_a24742822d98c992acb2332ce743353dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}!parse@{parse}}
+\index{parse@{parse}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Serializer}}
+\subsubsection[{\texorpdfstring{parse(const void $\ast$buf, unsigned int len)}{parse(const void *buf, unsigned int len)}}]{\setlength{\rightskip}{0pt plus 5cm}bool X\+M\+L\+Serializer\+::parse (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buf, }
+\item[{unsigned int}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classXMLDOM_1_1XMLSerializer_abea28fce905d61d5b89c987f01808335}{}\label{classXMLDOM_1_1XMLSerializer_abea28fce905d61d5b89c987f01808335}
+Parse the specified data chunk from memory \begin{DoxyRemark}{Remarks}
+Base implementation of data parsing -\/ override this one if you want to do it differently, intercept the data chunks, preprocess, or things like that. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{}
+Returns false on error. 
+\end{DoxyParagraph}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/ddd/classXMLDOM_1_1XMLSerializer_abea28fce905d61d5b89c987f01808335_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+X\+M\+L\+Document.\+h\item 
+X\+M\+L\+Document.\+cpp\end{DoxyCompactItemize}

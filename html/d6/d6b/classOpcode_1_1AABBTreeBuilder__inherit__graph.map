@@ -1,0 +1,5 @@
+<map id="Opcode::AABBTreeBuilder" name="Opcode::AABBTreeBuilder">
+<area shape="rect" id="node2" href="$d0/dde/classOpcode_1_1AABBTreeOfAABBsBuilder.html" title="{Opcode::AABBTreeOfAABBsBuilder\n|+ nb_prims\l+ const\l+ const\l+ mAABBArray\l|+ AABBTreeOfAABBsBuilder()\l+ ~AABBTreeOfAABBsBuilder()\l+ override()\l+ override()\l}" alt="" coords="5,351,240,516"/>
+<area shape="rect" id="node3" href="$d2/d20/classOpcode_1_1AABBTreeOfTrianglesBuilder.html" title="{Opcode::AABBTreeOfTriangles\lBuilder\n|+ nb_prims\l+ const\l+ const\l+ global_box\l+ const\l+ mIMesh\l|+ AABBTreeOfTrianglesBuilder()\l+ ~AABBTreeOfTrianglesBuilder()\l+ override()\l+ override()\l+ override()\l}" alt="" coords="264,321,483,545"/>
+<area shape="rect" id="node4" href="$d9/d29/classOpcode_1_1AABBTreeOfVerticesBuilder.html" title="{Opcode::AABBTreeOfVertices\lBuilder\n|+ nb_prims\l+ const\l+ const\l+ global_box\l+ const\l+ mVertexArray\l|+ AABBTreeOfVerticesBuilder()\l+ ~AABBTreeOfVerticesBuilder()\l+ override()\l+ override()\l+ override()\l}" alt="" coords="507,321,722,545"/>
+</map>

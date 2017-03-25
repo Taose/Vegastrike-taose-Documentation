@@ -1,0 +1,3 @@
+<map id="Opcode::AABBTreeCollider" name="Opcode::AABBTreeCollider">
+<area shape="rect" id="node2" href="$db/da8/classOpcode_1_1Collider.html" title="{Opcode::Collider\n|# mFlags\l# mCurrentModel\l# mIMesh\l|+ Collider()\l+ ~Collider()\l+ GetContactStatus()\l+ FirstContactEnabled()\l+ TemporalCoherenceEnabled()\l+ ContactFound()\l+ TemporalHit()\l+ SkipPrimitiveTests()\l+ SetFirstContact()\l+ SetTemporalCoherence()\l+ SetPrimitiveTests()\l+ ValidateSettings()\l# Setup()\l# InitQuery()\l}" alt="" coords="5,5,212,303"/>
+</map>

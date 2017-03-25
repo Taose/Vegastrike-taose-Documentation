@@ -1,0 +1,12 @@
+<map id="Mission" name="Mission">
+<area shape="rect" id="node4" href="$d6/d3b/classMessageCenter.html" title="{MessageCenter\n||+ last()\l+ add()\l+ clear()\l}" alt="" coords="399,696,514,803"/>
+<area shape="rect" id="node7" href="$db/d48/classBriefing.html" title="{Briefing\n||+ Render()\l+ Update()\l+ AddStarship()\l+ RemoveStarship()\l+ EnqueueOrder()\l+ OverrideOrder()\l+ SetPosition()\l+ GetPosition()\l+ SetCloak()\l+ Briefing()\l+ ~Briefing()\l}" alt="" coords="623,637,762,861"/>
+<area shape="rect" id="node8" href="$d1/d49/classTextPlane.html" title="{TextPlane\n||+ TextPlane()\l+ ~TextPlane()\l+ SetPos()\l+ SetCharSize()\l+ GetCharSize()\l+ GetPos()\l+ SetSize()\l+ GetSize()\l+ Draw()\l+ Draw()\l+ SetText()\l+ GetText()\l}" alt="" coords="463,314,581,553"/>
+<area shape="rect" id="node9" href="$d2/d7d/structGFXColor.html" title="{GFXColor\n|+ r\l+ g\l+ b\l+ a\l|+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ netswap()\l+ clamp()\l}" alt="" coords="472,20,572,215"/>
+<area shape="rect" id="node10" href="$d1/df0/classCamera.html" title="{Camera\n|+ P\l+ Q\l+ R\l|+ setCockpitOffset()\l+ getCockpitOffset()\l+ Camera()\l+ LookDirection()\l+ SetNebula()\l+ GetNebula()\l+ UpdateCameraSounds()\l+ GetView()\l+ GetR()\l+ GetPQR()\land 29 more...\l}" alt="" coords="605,307,780,560"/>
+<area shape="rect" id="node11" href="$d5/d74/classPhysicsSystem.html" title="{PhysicsSystem\n||+ PhysicsSystem()\l+ Rotate()\l+ JettisonReactionMass()\l+ JettisonMass()\l+ ResistiveLiquidTorque()\l+ ResistiveTorque()\l+ ResistiveLiquidForce()\l+ ResistiveForce()\l+ ResistiveThrust()\l+ ResistiveTorqueThrust()\land 10 more...\l}" alt="" coords="605,5,780,229"/>
+<area shape="rect" id="node13" href="$d2/d59/structMission_1_1Runtime.html" title="{Mission::Runtime\n|+ thread_nr\l|}" alt="" coords="1311,711,1435,788"/>
+<area shape="rect" id="node15" href="$de/d39/classPythonMissionBaseClass.html" title="{PythonMissionBaseClass\n|+ relevant_units\l|+ PythonMissionBaseClass()\l+ Destroy()\l+ ~PythonMissionBaseClass()\l+ Execute()\l+ callFunction()\l+ Pickle()\l+ UnPickle()\l# Destructor()\l}" alt="" coords="1198,343,1398,523"/>
+<area shape="rect" id="node16" href="$dc/da7/classmissionThread.html" title="{missionThread\n||+ ~missionThread()\l}" alt="" coords="1423,395,1557,472"/>
+<area shape="rect" id="node21" href="$d6/dfd/classvarInstVec.html" title="{varInstVec\n||+ addVar()\l}" alt="" coords="1826,395,1911,472"/>
+</map>

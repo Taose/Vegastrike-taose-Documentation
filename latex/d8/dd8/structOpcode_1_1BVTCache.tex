@@ -1,0 +1,55 @@
+\hypertarget{structOpcode_1_1BVTCache}{}\section{Opcode\+:\+:B\+V\+T\+Cache Struct Reference}
+\label{structOpcode_1_1BVTCache}\index{Opcode\+::\+B\+V\+T\+Cache@{Opcode\+::\+B\+V\+T\+Cache}}
+
+
+{\ttfamily \#include $<$Opcode.\+h$>$}
+
+
+
+Inheritance diagram for Opcode\+:\+:B\+V\+T\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{d5/d78/structOpcode_1_1BVTCache__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Opcode\+:\+:B\+V\+T\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/d58/structOpcode_1_1BVTCache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structOpcode_1_1BVTCache_a064e447850ccddf54288211c1423eef5}{B\+V\+T\+Cache} ()\hypertarget{structOpcode_1_1BVTCache_a064e447850ccddf54288211c1423eef5}{}\label{structOpcode_1_1BVTCache_a064e447850ccddf54288211c1423eef5}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void {\bfseries Reset\+Cache} ()\hypertarget{structOpcode_1_1BVTCache_ab3ac638549f4af01a62f1aa82c25210b}{}\label{structOpcode_1_1BVTCache_ab3ac638549f4af01a62f1aa82c25210b}
+
+\item 
+void {\bfseries Reset\+Count\+Down} ()\hypertarget{structOpcode_1_1BVTCache_a5e09b031c97779ecd759aa96e7c56baa}{}\label{structOpcode_1_1BVTCache_a5e09b031c97779ecd759aa96e7c56baa}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classOpcode_1_1Model}{Model} $\ast$ \hyperlink{structOpcode_1_1BVTCache_a623b0e8df04b74c6b8f73ae670a3cada}{Model0}\hypertarget{structOpcode_1_1BVTCache_a623b0e8df04b74c6b8f73ae670a3cada}{}\label{structOpcode_1_1BVTCache_a623b0e8df04b74c6b8f73ae670a3cada}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1Model}{Model} for first object. \end{DoxyCompactList}\item 
+const \hyperlink{classOpcode_1_1Model}{Model} $\ast$ \hyperlink{structOpcode_1_1BVTCache_ac75edb1f1715bce42a62ae31c5053a7b}{Model1}\hypertarget{structOpcode_1_1BVTCache_ac75edb1f1715bce42a62ae31c5053a7b}{}\label{structOpcode_1_1BVTCache_ac75edb1f1715bce42a62ae31c5053a7b}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1Model}{Model} for second object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure holds cached information used by the algorithm. Two model pointers and two colliding primitives are cached. \hyperlink{classOpcode_1_1Model}{Model} pointers are assigned to their respective meshes, and the pair of colliding primitives is used for temporal coherence. That is, in case temporal coherence is enabled, those two primitives are tested for overlap before everything else. If they still collide, we\textquotesingle{}re done before even entering the recursive collision code. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\end{DoxyCompactItemize}

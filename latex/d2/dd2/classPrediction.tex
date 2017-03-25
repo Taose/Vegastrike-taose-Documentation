@@ -1,0 +1,82 @@
+\hypertarget{classPrediction}{}\section{Prediction Class Reference}
+\label{classPrediction}\index{Prediction@{Prediction}}
+
+
+Inheritance diagram for Prediction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d7b/classPrediction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Prediction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{d9/dd9/classPrediction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Init\+Interpolation} (\hyperlink{classUnit}{Unit} $\ast$un, const \hyperlink{classClientState}{Client\+State} \&last\+\_\+packet\+\_\+state, double elapsed\+\_\+since\+\_\+last\+\_\+packet, double deltatime)\hypertarget{classPrediction_a7b925382a9e9aeec0f0a1e373df3641f}{}\label{classPrediction_a7b925382a9e9aeec0f0a1e373df3641f}
+
+\item 
+virtual Q\+Vector {\bfseries Interpolate\+Position} (\hyperlink{classUnit}{Unit} $\ast$un, double deltatime) const =0\hypertarget{classPrediction_a6c0f4ba1a3b461989fb1805fe2ecd5f1}{}\label{classPrediction_a6c0f4ba1a3b461989fb1805fe2ecd5f1}
+
+\item 
+virtual \hyperlink{structQuaternion}{Quaternion} {\bfseries Interpolate\+Orientation} (\hyperlink{classUnit}{Unit} $\ast$un, double deltatime) const =0\hypertarget{classPrediction_afe9f89ae6290466ec8b31b890342d0b3}{}\label{classPrediction_afe9f89ae6290466ec8b31b890342d0b3}
+
+\item 
+virtual \hyperlink{structTransformation}{Transformation} {\bfseries Interpolate} (\hyperlink{classUnit}{Unit} $\ast$un, double deltatime) const \hypertarget{classPrediction_a75bf52c8b0bbef1e5a6fb23bdeab0c6e}{}\label{classPrediction_a75bf52c8b0bbef1e5a6fb23bdeab0c6e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Vector {\bfseries A0}\hypertarget{classPrediction_a45d4c0964d2300d29c5f0a133b826e8d}{}\label{classPrediction_a45d4c0964d2300d29c5f0a133b826e8d}
+
+\item 
+Q\+Vector {\bfseries B}\hypertarget{classPrediction_a7a8e2c4c2290691b8a36fa1981884a1f}{}\label{classPrediction_a7a8e2c4c2290691b8a36fa1981884a1f}
+
+\item 
+Q\+Vector {\bfseries A1}\hypertarget{classPrediction_aaab2e69aa726045a242f605e3cb7d854}{}\label{classPrediction_aaab2e69aa726045a242f605e3cb7d854}
+
+\item 
+Q\+Vector {\bfseries A2}\hypertarget{classPrediction_a3a2802f20d760acb45a8342b92fd37f4}{}\label{classPrediction_a3a2802f20d760acb45a8342b92fd37f4}
+
+\item 
+Q\+Vector {\bfseries A3}\hypertarget{classPrediction_a41ad16fefaf88dc0133df44e55236fc4}{}\label{classPrediction_a41ad16fefaf88dc0133df44e55236fc4}
+
+\item 
+Vector {\bfseries VA}\hypertarget{classPrediction_ad6304ea0f45e6122b346e386217b0f82}{}\label{classPrediction_ad6304ea0f45e6122b346e386217b0f82}
+
+\item 
+Vector {\bfseries VB}\hypertarget{classPrediction_aa4f6a97f273b7c668f11dc4a87c3f8c5}{}\label{classPrediction_aa4f6a97f273b7c668f11dc4a87c3f8c5}
+
+\item 
+Vector {\bfseries AA}\hypertarget{classPrediction_a866d0c142dafcc97caa6c51252ee4366}{}\label{classPrediction_a866d0c142dafcc97caa6c51252ee4366}
+
+\item 
+Vector {\bfseries AB}\hypertarget{classPrediction_a967d6c10e4f60ab27f504d1d8acc005c}{}\label{classPrediction_a967d6c10e4f60ab27f504d1d8acc005c}
+
+\item 
+\hyperlink{structQuaternion}{Quaternion} {\bfseries OA}\hypertarget{classPrediction_a92b2f0be75200deddf254991823d5a21}{}\label{classPrediction_a92b2f0be75200deddf254991823d5a21}
+
+\item 
+\hyperlink{structQuaternion}{Quaternion} {\bfseries OB}\hypertarget{classPrediction_abef39ee42e5a2801f9bf03a40f8b1768}{}\label{classPrediction_abef39ee42e5a2801f9bf03a40f8b1768}
+
+\item 
+double {\bfseries deltatime}\hypertarget{classPrediction_a992db76c4e65e6b3dfbefe18213e340a}{}\label{classPrediction_a992db76c4e65e6b3dfbefe18213e340a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/prediction.\+h\item 
+networking/prediction.\+cpp\end{DoxyCompactItemize}

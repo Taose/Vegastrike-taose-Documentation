@@ -1,0 +1,100 @@
+\hypertarget{classRadar_1_1Sensor}{}\section{Radar\+:\+:Sensor Class Reference}
+\label{classRadar_1_1Sensor}\index{Radar\+::\+Sensor@{Radar\+::\+Sensor}}
+
+
+Collaboration diagram for Radar\+:\+:Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc8/classRadar_1_1Sensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRadar_1_1Sensor_1_1Capability}{Capability}
+\item 
+struct \hyperlink{structRadar_1_1Sensor_1_1ThreatLevel}{Threat\+Level}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \hyperlink{classRadar_1_1Track}{Track} $>$ {\bfseries Track\+Collection}\hypertarget{classRadar_1_1Sensor_a7324264482668619cd1268b6b7f29500}{}\label{classRadar_1_1Sensor_a7324264482668619cd1268b6b7f29500}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Sensor} (\hyperlink{classUnit}{Unit} $\ast$player)\hypertarget{classRadar_1_1Sensor_a4d38f09ec1ba0f5ba83a6a217b2a35d9}{}\label{classRadar_1_1Sensor_a4d38f09ec1ba0f5ba83a6a217b2a35d9}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries Get\+Player} () const \hypertarget{classRadar_1_1Sensor_a158eec533331d32ac8c6848e8d34bfd2}{}\label{classRadar_1_1Sensor_a158eec533331d32ac8c6848e8d34bfd2}
+
+\item 
+float {\bfseries Get\+Close\+Range} () const \hypertarget{classRadar_1_1Sensor_a6c023f48823c92b12d6a5d89ed434a0b}{}\label{classRadar_1_1Sensor_a6c023f48823c92b12d6a5d89ed434a0b}
+
+\item 
+float {\bfseries Get\+Max\+Range} () const \hypertarget{classRadar_1_1Sensor_a013e1471876f1a83fc6ea42873c5c749}{}\label{classRadar_1_1Sensor_a013e1471876f1a83fc6ea42873c5c749}
+
+\item 
+float {\bfseries Get\+Max\+Cone} () const \hypertarget{classRadar_1_1Sensor_a736d59651171b61ec51d80724bdfe7e2}{}\label{classRadar_1_1Sensor_a736d59651171b61ec51d80724bdfe7e2}
+
+\item 
+float {\bfseries Get\+Lock\+Cone} () const \hypertarget{classRadar_1_1Sensor_a0c5377d7ceb8998426819f42a7cd9183}{}\label{classRadar_1_1Sensor_a0c5377d7ceb8998426819f42a7cd9183}
+
+\item 
+bool {\bfseries Use\+Friend\+Foe} () const \hypertarget{classRadar_1_1Sensor_a6e7845552125c77f1d26708e53d39ce9}{}\label{classRadar_1_1Sensor_a6e7845552125c77f1d26708e53d39ce9}
+
+\item 
+bool {\bfseries Use\+Object\+Recognition} () const \hypertarget{classRadar_1_1Sensor_a840a818277c01bd439940a4a38c26617}{}\label{classRadar_1_1Sensor_a840a818277c01bd439940a4a38c26617}
+
+\item 
+bool {\bfseries Use\+Threat\+Assessment} () const \hypertarget{classRadar_1_1Sensor_ac0eb412da05f7c3df95b76593b6cea06}{}\label{classRadar_1_1Sensor_ac0eb412da05f7c3df95b76593b6cea06}
+
+\item 
+\hyperlink{classRadar_1_1Track}{Track} {\bfseries Create\+Track} (\hyperlink{classUnit}{Unit} $\ast$) const \hypertarget{classRadar_1_1Sensor_a247ccda6cbf998c1f1042e809d3b21bf}{}\label{classRadar_1_1Sensor_a247ccda6cbf998c1f1042e809d3b21bf}
+
+\item 
+\hyperlink{classRadar_1_1Track}{Track} {\bfseries Create\+Track} (\hyperlink{classUnit}{Unit} $\ast$, const Vector \&) const \hypertarget{classRadar_1_1Sensor_a414834dbe5192b5c4c9725f8a65b1c78}{}\label{classRadar_1_1Sensor_a414834dbe5192b5c4c9725f8a65b1c78}
+
+\item 
+bool {\bfseries Is\+Tracking} (const \hyperlink{classRadar_1_1Track}{Track} \&) const \hypertarget{classRadar_1_1Sensor_affe6927b96a44109f65aa54c4d3ebf27}{}\label{classRadar_1_1Sensor_affe6927b96a44109f65aa54c4d3ebf27}
+
+\item 
+bool {\bfseries Inside\+Nebula} () const \hypertarget{classRadar_1_1Sensor_ab08288041a7339734271fc0da19e39f2}{}\label{classRadar_1_1Sensor_ab08288041a7339734271fc0da19e39f2}
+
+\item 
+bool {\bfseries In\+Range} (const \hyperlink{classRadar_1_1Track}{Track} \&) const \hypertarget{classRadar_1_1Sensor_abeef1f843d07d48a2482519bbc5b879a}{}\label{classRadar_1_1Sensor_abeef1f843d07d48a2482519bbc5b879a}
+
+\item 
+const Track\+Collection \& {\bfseries Find\+Tracks\+In\+Range} () const \hypertarget{classRadar_1_1Sensor_a8aa80468a1d4570c492590ec8e8e7537}{}\label{classRadar_1_1Sensor_a8aa80468a1d4570c492590ec8e8e7537}
+
+\item 
+Threat\+Level\+::\+Value {\bfseries Identify\+Threat} (const \hyperlink{classRadar_1_1Track}{Track} \&) const \hypertarget{classRadar_1_1Sensor_a7eb99a4e4ae19541be759bfa167295a9}{}\label{classRadar_1_1Sensor_a7eb99a4e4ae19541be759bfa167295a9}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries Get\+Color} (const \hyperlink{classRadar_1_1Track}{Track} \&) const \hypertarget{classRadar_1_1Sensor_a038479bccb11f622532ae9b28c72148f}{}\label{classRadar_1_1Sensor_a038479bccb11f622532ae9b28c72148f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries player}\hypertarget{classRadar_1_1Sensor_a6c0dae829af83e744ef1c6d011a7ffcc}{}\label{classRadar_1_1Sensor_a6c0dae829af83e744ef1c6d011a7ffcc}
+
+\item 
+float {\bfseries close\+Range}\hypertarget{classRadar_1_1Sensor_ac469dfa76e765fded149c34afdf879dc}{}\label{classRadar_1_1Sensor_ac469dfa76e765fded149c34afdf879dc}
+
+\item 
+Track\+Collection {\bfseries collection}\hypertarget{classRadar_1_1Sensor_a2cf4b03e7f797d76711cf32dc7b8c1e1}{}\label{classRadar_1_1Sensor_a2cf4b03e7f797d76711cf32dc7b8c1e1}
+
+\item 
+bool {\bfseries use\+Threat\+Assessment}\hypertarget{classRadar_1_1Sensor_a275169e5d9404acb5867c990553d483b}{}\label{classRadar_1_1Sensor_a275169e5d9404acb5867c990553d483b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/radar/sensor.\+h\item 
+gfx/radar/sensor.\+cpp\end{DoxyCompactItemize}

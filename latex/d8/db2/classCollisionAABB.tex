@@ -1,0 +1,101 @@
+\hypertarget{classCollisionAABB}{}\section{Collision\+A\+A\+BB Class Reference}
+\label{classCollisionAABB}\index{Collision\+A\+A\+BB@{Collision\+A\+A\+BB}}
+
+
+Collaboration diagram for Collision\+A\+A\+BB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{d4/d2e/classCollisionAABB__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classCollisionAABB_af906906c07792fd4206d6acc58ebb514}{Collision\+A\+A\+BB} ()\hypertarget{classCollisionAABB_af906906c07792fd4206d6acc58ebb514}{}\label{classCollisionAABB_af906906c07792fd4206d6acc58ebb514}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classCollisionAABB_ada0c6c5a1c80b46156c965e56b752fbc}{Collision\+A\+A\+BB} (const \hyperlink{classAABB}{A\+A\+BB} \&b)\hypertarget{classCollisionAABB_ada0c6c5a1c80b46156c965e56b752fbc}{}\label{classCollisionAABB_ada0c6c5a1c80b46156c965e56b752fbc}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classCollisionAABB_a61df95f9c6f7eccd172efaeadc780ba2}{$\sim$\+Collision\+A\+A\+BB} ()\hypertarget{classCollisionAABB_a61df95f9c6f7eccd172efaeadc780ba2}{}\label{classCollisionAABB_a61df95f9c6f7eccd172efaeadc780ba2}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classCollisionAABB_a5084b74e57fa1af3a24046393cc40927}{Get\+Min} (\hyperlink{classPoint}{Point} \&min) const \hypertarget{classCollisionAABB_a5084b74e57fa1af3a24046393cc40927}{}\label{classCollisionAABB_a5084b74e57fa1af3a24046393cc40927}
+
+\begin{DoxyCompactList}\small\item\em Get min point of the box. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classCollisionAABB_a3a6017937a77b1f2b0c85ef65e4e2b68}{Get\+Max} (\hyperlink{classPoint}{Point} \&max) const \hypertarget{classCollisionAABB_a3a6017937a77b1f2b0c85ef65e4e2b68}{}\label{classCollisionAABB_a3a6017937a77b1f2b0c85ef65e4e2b68}
+
+\begin{DoxyCompactList}\small\item\em Get max point of the box. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{classCollisionAABB_a5d0562b18a2f9c1b6650497418151d2b}{Get\+Min} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const \hypertarget{classCollisionAABB_a5d0562b18a2f9c1b6650497418151d2b}{}\label{classCollisionAABB_a5d0562b18a2f9c1b6650497418151d2b}
+
+\begin{DoxyCompactList}\small\item\em Get component of the box\textquotesingle{}s min point along a given axis. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{classCollisionAABB_a04092d9c71ac7959bdd7e8864759ada2}{Get\+Max} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis) const \hypertarget{classCollisionAABB_a04092d9c71ac7959bdd7e8864759ada2}{}\label{classCollisionAABB_a04092d9c71ac7959bdd7e8864759ada2}
+
+\begin{DoxyCompactList}\small\item\em Get component of the box\textquotesingle{}s max point along a given axis. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classCollisionAABB_a77f7c00377db42bc0988a9b882bad296}{Set\+Min\+Max} (const \hyperlink{classPoint}{Point} \&min, const \hyperlink{classPoint}{Point} \&max)
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classCollisionAABB_a108349eb75dbdebc7444b35e3e40aa46}{Is\+Inside} (const \hyperlink{classCollisionAABB}{Collision\+A\+A\+BB} \&box) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classCollisionAABB_a4be227d0bf648dcfefb6f8bb0cb7b4d3}{m\+Center}\hypertarget{classCollisionAABB_a4be227d0bf648dcfefb6f8bb0cb7b4d3}{}\label{classCollisionAABB_a4be227d0bf648dcfefb6f8bb0cb7b4d3}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classBox}{Box} center. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classCollisionAABB_a8c66d75004d57c817e73fe16e263e87d}{m\+Extents}\hypertarget{classCollisionAABB_a8c66d75004d57c817e73fe16e263e87d}{}\label{classCollisionAABB_a8c66d75004d57c817e73fe16e263e87d}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classBox}{Box} extents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An \hyperlink{classAABB}{A\+A\+BB} dedicated to collision detection. We don\textquotesingle{}t use the generic \hyperlink{classAABB}{A\+A\+BB} class included in I\+CE, since it can be a Min/\+Max or a Center/\+Extents one (depends on compilation flags). Since the Center/\+Extents model is more efficient in collision detection, it was worth using an extra special class.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Collision\+A\+A\+BB@{Collision\+A\+A\+BB}!Is\+Inside@{Is\+Inside}}
+\index{Is\+Inside@{Is\+Inside}!Collision\+A\+A\+BB@{Collision\+A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Is\+Inside(const Collision\+A\+A\+B\+B \&box) const }{IsInside(const CollisionAABB &box) const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Collision\+A\+A\+B\+B\+::\+Is\+Inside (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collision\+A\+A\+BB} \&}]{box}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollisionAABB_a108349eb75dbdebc7444b35e3e40aa46}{}\label{classCollisionAABB_a108349eb75dbdebc7444b35e3e40aa46}
+Checks a box is inside another box. 
+\begin{DoxyParams}{Parameters}
+{\em box} & \mbox{[}in\mbox{]} the other box \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current box is inside input box 
+\end{DoxyReturn}
+\index{Collision\+A\+A\+BB@{Collision\+A\+A\+BB}!Set\+Min\+Max@{Set\+Min\+Max}}
+\index{Set\+Min\+Max@{Set\+Min\+Max}!Collision\+A\+A\+BB@{Collision\+A\+A\+BB}}
+\subsubsection[{\texorpdfstring{Set\+Min\+Max(const Point \&min, const Point \&max)}{SetMinMax(const Point &min, const Point &max)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Collision\+A\+A\+B\+B\+::\+Set\+Min\+Max (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{min, }
+\item[{const {\bf Point} \&}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCollisionAABB_a77f7c00377db42bc0988a9b882bad296}{}\label{classCollisionAABB_a77f7c00377db42bc0988a9b882bad296}
+Setups an \hyperlink{classAABB}{A\+A\+BB} from min \& max vectors. 
+\begin{DoxyParams}{Parameters}
+{\em min} & \mbox{[}in\mbox{]} the min point \\
+\hline
+{\em max} & \mbox{[}in\mbox{]} the max point \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__Common_8h}{O\+P\+C\+\_\+\+Common.\+h}\end{DoxyCompactItemize}

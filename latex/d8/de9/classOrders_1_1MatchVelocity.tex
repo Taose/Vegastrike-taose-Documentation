@@ -1,0 +1,66 @@
+\hypertarget{classOrders_1_1MatchVelocity}{}\section{Orders\+:\+:Match\+Velocity Class Reference}
+\label{classOrders_1_1MatchVelocity}\index{Orders\+::\+Match\+Velocity@{Orders\+::\+Match\+Velocity}}
+
+
+{\ttfamily \#include $<$flybywire.\+h$>$}
+
+
+
+Inheritance diagram for Orders\+:\+:Match\+Velocity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d1a/classOrders_1_1MatchVelocity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Orders\+:\+:Match\+Velocity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dfd/classOrders_1_1MatchVelocity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Match\+Velocity} (const Vector \&desired, const Vector \&desired\+\_\+ang, const bool Local, const bool afterburner, const bool fini=true)\hypertarget{classOrders_1_1MatchVelocity_a0a566225956806ad713522e7d79431b3}{}\label{classOrders_1_1MatchVelocity_a0a566225956806ad713522e7d79431b3}
+
+\item 
+void \hyperlink{classOrders_1_1MatchVelocity_a7097ae7ca76d4cb530fdb2cad7212851}{Execute} ()\hypertarget{classOrders_1_1MatchVelocity_a7097ae7ca76d4cb530fdb2cad7212851}{}\label{classOrders_1_1MatchVelocity_a7097ae7ca76d4cb530fdb2cad7212851}
+
+\begin{DoxyCompactList}\small\item\em The function that gets called and executes all queued suborders. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Desired\+Velocity} (const Vector \&desired, const bool Local)\hypertarget{classOrders_1_1MatchVelocity_abfe5e7ab6343ebd9c0eda158886e4ffd}{}\label{classOrders_1_1MatchVelocity_abfe5e7ab6343ebd9c0eda158886e4ffd}
+
+\item 
+void {\bfseries Set\+Afterburn} (bool use\+\_\+afterburn)\hypertarget{classOrders_1_1MatchVelocity_a84e80290dd624c1610d5ab06b195bc57}{}\label{classOrders_1_1MatchVelocity_a84e80290dd624c1610d5ab06b195bc57}
+
+\item 
+virtual std\+::string {\bfseries get\+Order\+Description} ()\hypertarget{classOrders_1_1MatchVelocity_ad57154e02b9263949d8ad709f5c5bacc}{}\label{classOrders_1_1MatchVelocity_ad57154e02b9263949d8ad709f5c5bacc}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector \hyperlink{classOrders_1_1MatchVelocity_a03477a392949f67783ae5b03811ff30b}{desired\+\_\+velocity}\hypertarget{classOrders_1_1MatchVelocity_a03477a392949f67783ae5b03811ff30b}{}\label{classOrders_1_1MatchVelocity_a03477a392949f67783ae5b03811ff30b}
+
+\begin{DoxyCompactList}\small\item\em werld space... generally r$\ast$speed or local space \end{DoxyCompactList}\item 
+bool \hyperlink{classOrders_1_1MatchVelocity_a51804555d925398cdaaa92fffe31ae0a}{Local\+Velocity}\hypertarget{classOrders_1_1MatchVelocity_a51804555d925398cdaaa92fffe31ae0a}{}\label{classOrders_1_1MatchVelocity_a51804555d925398cdaaa92fffe31ae0a}
+
+\begin{DoxyCompactList}\small\item\em Is the above in world space? \end{DoxyCompactList}\item 
+bool {\bfseries afterburn}\hypertarget{classOrders_1_1MatchVelocity_aa506dedeca89d90d13264b9ce932fdd9}{}\label{classOrders_1_1MatchVelocity_aa506dedeca89d90d13264b9ce932fdd9}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class matches both angular and linear velocity. It cannot have multiple inheritance because of the colliding virtual \char`\"{}\+Execute\char`\"{} functions, I believe Use a \#define to \char`\"{}share code\char`\"{} between them 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/flybywire.\+h\item 
+cmd/ai/flybywire.\+cpp\end{DoxyCompactItemize}

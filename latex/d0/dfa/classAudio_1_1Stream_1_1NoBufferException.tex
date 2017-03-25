@@ -1,0 +1,46 @@
+\hypertarget{classAudio_1_1Stream_1_1NoBufferException}{}\section{Audio\+:\+:Stream\+:\+:No\+Buffer\+Exception Class Reference}
+\label{classAudio_1_1Stream_1_1NoBufferException}\index{Audio\+::\+Stream\+::\+No\+Buffer\+Exception@{Audio\+::\+Stream\+::\+No\+Buffer\+Exception}}
+
+
+{\ttfamily \#include $<$Stream.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Stream\+:\+:No\+Buffer\+Exception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{d4/d69/classAudio_1_1Stream_1_1NoBufferException__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Stream\+:\+:No\+Buffer\+Exception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{d3/d13/classAudio_1_1Stream_1_1NoBufferException__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries No\+Buffer\+Exception} (const \hyperlink{classAudio_1_1Stream_1_1NoBufferException}{No\+Buffer\+Exception} \&other)\hypertarget{classAudio_1_1Stream_1_1NoBufferException_ac3f0cf012f907a012d94d435f8fc94d1}{}\label{classAudio_1_1Stream_1_1NoBufferException_ac3f0cf012f907a012d94d435f8fc94d1}
+
+\item 
+{\bfseries No\+Buffer\+Exception} (const std\+::string \&message)\hypertarget{classAudio_1_1Stream_1_1NoBufferException_ace20822264a14b080b6fa133b896db16}{}\label{classAudio_1_1Stream_1_1NoBufferException_ace20822264a14b080b6fa133b896db16}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+No Buffer exception \begin{DoxyRemark}{Remarks}
+thrown when a call to \hyperlink{classAudio_1_1Stream_a9e751b39449a3cfe0aa6579cdba43e65}{get\+Buffer\+Impl()} is made without a preceding call to \hyperlink{classAudio_1_1Stream_a3efb4fa10e2a575805d9f8be9a133b6f}{next\+Buffer\+Impl()}. Notice that this is commonplace at times, since calling \hyperlink{classAudio_1_1Stream_a3efb4fa10e2a575805d9f8be9a133b6f}{next\+Buffer\+Impl()} would advance the stream, and sometimes one must read the current buffer without advancing the stream, but whether or not a call was made to \hyperlink{classAudio_1_1Stream_a3efb4fa10e2a575805d9f8be9a133b6f}{next\+Buffer\+Impl()} may be hard to know. 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/Stream.\+h\end{DoxyCompactItemize}

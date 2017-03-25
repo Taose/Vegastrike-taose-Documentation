@@ -1,0 +1,126 @@
+\hypertarget{classRadar_1_1PlaneDisplay}{}\section{Radar\+:\+:Plane\+Display Class Reference}
+\label{classRadar_1_1PlaneDisplay}\index{Radar\+::\+Plane\+Display@{Radar\+::\+Plane\+Display}}
+
+
+Inheritance diagram for Radar\+:\+:Plane\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/d43/classRadar_1_1PlaneDisplay__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Radar\+:\+:Plane\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/d70/classRadar_1_1PlaneDisplay__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRadar_1_1PlaneDisplay_1_1AnimationItem}{Animation\+Item}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Draw} (const \hyperlink{classRadar_1_1Sensor}{Sensor} \&sensor, \hyperlink{classVSSprite}{V\+S\+Sprite} $\ast$, \hyperlink{classVSSprite}{V\+S\+Sprite} $\ast$)\hypertarget{classRadar_1_1PlaneDisplay_ac8eba8daca05f2ba1f18d577292d9d04}{}\label{classRadar_1_1PlaneDisplay_ac8eba8daca05f2ba1f18d577292d9d04}
+
+\item 
+void {\bfseries On\+Dock\+End} ()\hypertarget{classRadar_1_1PlaneDisplay_a44253bdf7b7375122883dc8b3950ad58}{}\label{classRadar_1_1PlaneDisplay_a44253bdf7b7375122883dc8b3950ad58}
+
+\item 
+void {\bfseries On\+Jump\+End} ()\hypertarget{classRadar_1_1PlaneDisplay_aa25326dd03715e7ebaa5b33c64dafe5d}{}\label{classRadar_1_1PlaneDisplay_aa25326dd03715e7ebaa5b33c64dafe5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ float $>$ {\bfseries Angle\+Sequence}\hypertarget{classRadar_1_1PlaneDisplay_a1ac373b86ed66149186f9cb94699a749}{}\label{classRadar_1_1PlaneDisplay_a1ac373b86ed66149186f9cb94699a749}
+
+\item 
+typedef std\+::queue$<$ \hyperlink{structRadar_1_1PlaneDisplay_1_1AnimationItem}{Animation\+Item} $>$ {\bfseries Animation\+Collection}\hypertarget{classRadar_1_1PlaneDisplay_aba3de6d4e3f1bc15db9a0a4d521eb69d}{}\label{classRadar_1_1PlaneDisplay_aba3de6d4e3f1bc15db9a0a4d521eb69d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Draw\+Ground} (const \hyperlink{classRadar_1_1Sensor}{Sensor} \&, const \hyperlink{structRadar_1_1ViewArea}{View\+Area} \&)\hypertarget{classRadar_1_1PlaneDisplay_a2df2adbae4d4a951bac78c645eacb880}{}\label{classRadar_1_1PlaneDisplay_a2df2adbae4d4a951bac78c645eacb880}
+
+\item 
+void {\bfseries Draw\+Near} (const \hyperlink{classRadar_1_1Sensor}{Sensor} \&, const Sensor\+::\+Track\+Collection \&)\hypertarget{classRadar_1_1PlaneDisplay_aac08159f798453cf93a6447e8b72d33c}{}\label{classRadar_1_1PlaneDisplay_aac08159f798453cf93a6447e8b72d33c}
+
+\item 
+void {\bfseries Draw\+Distant} (const \hyperlink{classRadar_1_1Sensor}{Sensor} \&, const Sensor\+::\+Track\+Collection \&)\hypertarget{classRadar_1_1PlaneDisplay_ab66f63b2e71737fb297f996b0c2ecbfa}{}\label{classRadar_1_1PlaneDisplay_ab66f63b2e71737fb297f996b0c2ecbfa}
+
+\item 
+void {\bfseries Draw\+Track} (const \hyperlink{classRadar_1_1Sensor}{Sensor} \&, const \hyperlink{structRadar_1_1ViewArea}{View\+Area} \&, const \hyperlink{classRadar_1_1Track}{Track} \&, float)\hypertarget{classRadar_1_1PlaneDisplay_acebf5a9f52917e98e3f85e6ac08a3629}{}\label{classRadar_1_1PlaneDisplay_acebf5a9f52917e98e3f85e6ac08a3629}
+
+\item 
+void {\bfseries Draw\+Target} (Track\+::\+Type\+::\+Value, const Vector \&, const Vector \&, float, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&)\hypertarget{classRadar_1_1PlaneDisplay_aee507123a0e08ee7b656c6481d86297f}{}\label{classRadar_1_1PlaneDisplay_aee507123a0e08ee7b656c6481d86297f}
+
+\item 
+void {\bfseries Draw\+Target\+Marker} (const Vector \&, const Vector \&, const Vector \&, float, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&, bool)\hypertarget{classRadar_1_1PlaneDisplay_ae8dbf18b9b7fe005bddc4b1de700d46f}{}\label{classRadar_1_1PlaneDisplay_ae8dbf18b9b7fe005bddc4b1de700d46f}
+
+\item 
+void {\bfseries Animate} ()\hypertarget{classRadar_1_1PlaneDisplay_a7a39320b37c35f1b15a6b563b3ef2d85}{}\label{classRadar_1_1PlaneDisplay_a7a39320b37c35f1b15a6b563b3ef2d85}
+
+\item 
+void {\bfseries Prepare\+Animation} (const Vector \&, const Vector \&, const Angle\+Sequence \&, const Angle\+Sequence \&, const Angle\+Sequence \&)\hypertarget{classRadar_1_1PlaneDisplay_a28e85973a080831e719f254e678a955c}{}\label{classRadar_1_1PlaneDisplay_a28e85973a080831e719f254e678a955c}
+
+\item 
+void {\bfseries Calculate\+Rotation} ()\hypertarget{classRadar_1_1PlaneDisplay_a7e61f4de46bb424122348e54059ed989}{}\label{classRadar_1_1PlaneDisplay_a7e61f4de46bb424122348e54059ed989}
+
+\item 
+Vector {\bfseries Projection} (const \hyperlink{structRadar_1_1ViewArea}{View\+Area} \&, const Vector \&)\hypertarget{classRadar_1_1PlaneDisplay_a6f4a75491c23484b6ecc2ebab98d3593}{}\label{classRadar_1_1PlaneDisplay_a6f4a75491c23484b6ecc2ebab98d3593}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector {\bfseries final\+Camera\+Angle}\hypertarget{classRadar_1_1PlaneDisplay_a4ee5078b3892579fd4de7dedebf569b5}{}\label{classRadar_1_1PlaneDisplay_a4ee5078b3892579fd4de7dedebf569b5}
+
+\item 
+Vector {\bfseries current\+Camera\+Angle}\hypertarget{classRadar_1_1PlaneDisplay_aa07fcc2626cd35e0084d843cb09a4335}{}\label{classRadar_1_1PlaneDisplay_aa07fcc2626cd35e0084d843cb09a4335}
+
+\item 
+Vector {\bfseries xrotation}\hypertarget{classRadar_1_1PlaneDisplay_a5e024f9cb3be0d3f50e5d38b784f3076}{}\label{classRadar_1_1PlaneDisplay_a5e024f9cb3be0d3f50e5d38b784f3076}
+
+\item 
+Vector {\bfseries yrotation}\hypertarget{classRadar_1_1PlaneDisplay_a8788e41fe1c1d7bd7838435556d546e2}{}\label{classRadar_1_1PlaneDisplay_a8788e41fe1c1d7bd7838435556d546e2}
+
+\item 
+Vector {\bfseries zrotation}\hypertarget{classRadar_1_1PlaneDisplay_aee7b36758aa4d3caa1a6ba79f938ddea}{}\label{classRadar_1_1PlaneDisplay_aee7b36758aa4d3caa1a6ba79f938ddea}
+
+\item 
+std\+::vector$<$ Vector $>$ {\bfseries ground\+Plane}\hypertarget{classRadar_1_1PlaneDisplay_a747f0aa1eb2c230c06cc66a1b24ffaac}{}\label{classRadar_1_1PlaneDisplay_a747f0aa1eb2c230c06cc66a1b24ffaac}
+
+\item 
+float {\bfseries radar\+Time}\hypertarget{classRadar_1_1PlaneDisplay_a4aa85ab0678f86037297dbcf0199400a}{}\label{classRadar_1_1PlaneDisplay_a4aa85ab0678f86037297dbcf0199400a}
+
+\item 
+Animation\+Collection {\bfseries animation}\hypertarget{classRadar_1_1PlaneDisplay_a59135fb6bf42a46e181aae9d945f9c34}{}\label{classRadar_1_1PlaneDisplay_a59135fb6bf42a46e181aae9d945f9c34}
+
+\item 
+float {\bfseries last\+Animation\+Time}\hypertarget{classRadar_1_1PlaneDisplay_ad8b88aac4e34b66e87ee1d3a5cc46d8d}{}\label{classRadar_1_1PlaneDisplay_ad8b88aac4e34b66e87ee1d3a5cc46d8d}
+
+\item 
+Angle\+Sequence {\bfseries nothing\+Sequence}\hypertarget{classRadar_1_1PlaneDisplay_ac47f25780e010d65cda280fa2cfbb447}{}\label{classRadar_1_1PlaneDisplay_ac47f25780e010d65cda280fa2cfbb447}
+
+\item 
+Angle\+Sequence {\bfseries bounce\+Sequence}\hypertarget{classRadar_1_1PlaneDisplay_a1772bc08f6c28b9282c28e8f46480f3e}{}\label{classRadar_1_1PlaneDisplay_a1772bc08f6c28b9282c28e8f46480f3e}
+
+\item 
+Angle\+Sequence {\bfseries cosine\+Sequence}\hypertarget{classRadar_1_1PlaneDisplay_a7276e5ff96cb4151ab6531cf3721d3ca}{}\label{classRadar_1_1PlaneDisplay_a7276e5ff96cb4151ab6531cf3721d3ca}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/radar/plane\+\_\+display.\+h\item 
+gfx/radar/plane\+\_\+display.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="Building::Buildingparent" name="Building::Buildingparent">
+<area shape="rect" id="node2" href="$d5/d57/classTerrain.html" title="{Terrain\n||+ Terrain()\l+ SetTotalSize()\l+ ~Terrain()\l+ Collide()\l+ Collide()\l+ Collide()\l+ SetTransformation()\l+ Render()\l+ DisableDraw()\l+ EnableDraw()\l+ DisableUpdate()\l+ EnableUpdate()\l+ GetUpVector()\l+ CollideAll()\l+ DeleteAll()\l+ RenderAll()\l+ UpdateAll()\l}" alt="" coords="5,595,155,907"/>
+<area shape="rect" id="node3" href="$d2/dae/classQuadTree.html" title="{QuadTree\n||+ QuadTree()\l+ ~QuadTree()\l+ Render()\l+ SetNeighbors()\l+ Update()\l+ SetTransformation()\l+ GetHeight()\l+ beginElement()\l+ endElement()\l+ getminX()\land 9 more...\l+ beginElement()\l+ endElement()\l}" alt="" coords="5,292,155,545"/>
+<area shape="rect" id="node4" href="$d3/d3f/classMatrix.html" title="{Matrix\n|+ r\l+ p\l|+ Matrix()\l+ netswap()\l+ getR()\l+ getQ()\l+ getP()\l+ Matrix()\l+ InvertRotationInto()\l+ Matrix()\l+ Matrix()\l+ operator*()\l}" alt="" coords="7,5,153,229"/>
+<area shape="rect" id="node5" href="$dd/d00/classContinuousTerrain.html" title="{ContinuousTerrain\n||+ ContinuousTerrain()\l+ SetTransformation()\l+ AdjustTerrain()\l+ AdjustTerrain()\l+ ~ContinuousTerrain()\l+ DisableDraw()\l+ EnableDraw()\l+ DisableUpdate()\l+ EnableUpdate()\l+ Draw()\land 7 more...\l}" alt="" coords="179,639,335,863"/>
+</map>

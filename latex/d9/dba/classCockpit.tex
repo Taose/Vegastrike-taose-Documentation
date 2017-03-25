@@ -1,0 +1,414 @@
+\hypertarget{classCockpit}{}\section{Cockpit Class Reference}
+\label{classCockpit}\index{Cockpit@{Cockpit}}
+
+
+{\ttfamily \#include $<$cockpit\+\_\+generic.\+h$>$}
+
+
+
+Inheritance diagram for Cockpit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/db0/classCockpit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cockpit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d76/classCockpit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries set\+Target\+Label} (const string \&msg)\hypertarget{classCockpit_ae78bbb2e6e5aadf1708c1f77ff0ffdac}{}\label{classCockpit_ae78bbb2e6e5aadf1708c1f77ff0ffdac}
+
+\item 
+virtual string {\bfseries get\+Target\+Label} ()\hypertarget{classCockpit_af6ecb87af721bac5ad943335237f1605}{}\label{classCockpit_af6ecb87af721bac5ad943335237f1605}
+
+\item 
+void {\bfseries update\+Attackers} ()\hypertarget{classCockpit_a8eaa12e0bcd9ab96a8e840ed3ca16dec}{}\label{classCockpit_a8eaa12e0bcd9ab96a8e840ed3ca16dec}
+
+\item 
+virtual void {\bfseries Received\+Target\+Info} ()\hypertarget{classCockpit_aedae14870dd9b635a3faafcf91340f11}{}\label{classCockpit_aedae14870dd9b635a3faafcf91340f11}
+
+\item 
+bool {\bfseries auto\+In\+Progress} ()\hypertarget{classCockpit_a269df6973d64e8c919eee52b3ed89006}{}\label{classCockpit_a269df6973d64e8c919eee52b3ed89006}
+
+\item 
+bool {\bfseries unit\+In\+Auto\+Region} (\hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classCockpit_aedf53dea32f89b442d05896dff0ce1b5}{}\label{classCockpit_aedf53dea32f89b442d05896dff0ce1b5}
+
+\item 
+void \hyperlink{classCockpit_adb74db30dc16904fce01905d6936276a}{Set\+View} (const enum V\+I\+E\+W\+S\+T\+Y\+LE tmp)\hypertarget{classCockpit_adb74db30dc16904fce01905d6936276a}{}\label{classCockpit_adb74db30dc16904fce01905d6936276a}
+
+\begin{DoxyCompactList}\small\item\em Sets the current viewstyle. \end{DoxyCompactList}\item 
+enum V\+I\+E\+W\+S\+T\+Y\+LE {\bfseries Get\+View} ()\hypertarget{classCockpit_a16a730e9c3b8f8588927e259cf7b1219}{}\label{classCockpit_a16a730e9c3b8f8588927e259cf7b1219}
+
+\item 
+virtual void {\bfseries Init\+Static} ()\hypertarget{classCockpit_aecf8c9487493aae39d94fbaae661183c}{}\label{classCockpit_aecf8c9487493aae39d94fbaae661183c}
+
+\item 
+virtual void {\bfseries Shake} (float amt, int level)\hypertarget{classCockpit_a053728d5029c082f7e357b54ee713c84}{}\label{classCockpit_a053728d5029c082f7e357b54ee713c84}
+
+\item 
+virtual int {\bfseries Autopilot} (\hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classCockpit_a1222457e2ed20659ffd4b6cfeb278f4f}{}\label{classCockpit_a1222457e2ed20659ffd4b6cfeb278f4f}
+
+\item 
+void {\bfseries Restore\+Godliness} ()\hypertarget{classCockpit_a92125756dbde65a20d2f720ffbd244eb}{}\label{classCockpit_a92125756dbde65a20d2f720ffbd244eb}
+
+\item 
+virtual void \hyperlink{classCockpit_a507f3a179c90907af6f43c216358bcd7}{Restore\+View\+Port} ()\hypertarget{classCockpit_a507f3a179c90907af6f43c216358bcd7}{}\label{classCockpit_a507f3a179c90907af6f43c216358bcd7}
+
+\begin{DoxyCompactList}\small\item\em Restores the view from the I\+Dentity \hyperlink{classMatrix}{Matrix} needed to draw sprites. \end{DoxyCompactList}\item 
+std\+::string \& {\bfseries Get\+Unit\+File\+Name} (unsigned int which=0)\hypertarget{classCockpit_a16427591227a42993d19f5a0b4a060f4}{}\label{classCockpit_a16427591227a42993d19f5a0b4a060f4}
+
+\item 
+std\+::string \& {\bfseries Get\+Unit\+System\+Name} (unsigned int which=0)\hypertarget{classCockpit_ac6511b14d7657b9f0f2bfc05b605956c}{}\label{classCockpit_ac6511b14d7657b9f0f2bfc05b605956c}
+
+\item 
+std\+::string \& {\bfseries Get\+Unit\+Base\+Name} (unsigned int which=0)\hypertarget{classCockpit_adc62cc76c20fb94419d225925c2946e2}{}\label{classCockpit_adc62cc76c20fb94419d225925c2946e2}
+
+\item 
+const std\+::string \& {\bfseries Get\+Unit\+File\+Name} (unsigned int which=0) const \hypertarget{classCockpit_ad27011ea0c57586f5d7f6a6a81e4e93d}{}\label{classCockpit_ad27011ea0c57586f5d7f6a6a81e4e93d}
+
+\item 
+const std\+::string \& {\bfseries Get\+Unit\+System\+Name} (unsigned int which=0) const \hypertarget{classCockpit_af8fd64112a478971038d087de1518237}{}\label{classCockpit_af8fd64112a478971038d087de1518237}
+
+\item 
+const std\+::string \& {\bfseries Get\+Unit\+Base\+Name} (unsigned int which=0) const \hypertarget{classCockpit_ae99efc9f24d1be16f5454dc83e48d1cf}{}\label{classCockpit_ae99efc9f24d1be16f5454dc83e48d1cf}
+
+\item 
+void {\bfseries Remove\+Unit} (unsigned int which=0)\hypertarget{classCockpit_a82ef99d03fd9e178d5be38d3ebd748b0}{}\label{classCockpit_a82ef99d03fd9e178d5be38d3ebd748b0}
+
+\item 
+std\+::string {\bfseries Get\+Unit\+Modifications} ()\hypertarget{classCockpit_abb3618f27a8eef75cbf08d8be5459e2f}{}\label{classCockpit_abb3618f27a8eef75cbf08d8be5459e2f}
+
+\item 
+size\+\_\+t {\bfseries Get\+Num\+Units} () const \hypertarget{classCockpit_a304f2bdf891a120481bcbfa6e073c575}{}\label{classCockpit_a304f2bdf891a120481bcbfa6e073c575}
+
+\item 
+void {\bfseries Pack\+Unit\+Info} (vector$<$ std\+::string $>$ \&info) const \hypertarget{classCockpit_af8e1a107ee8e7b5d0fdf6f10d97c46ac}{}\label{classCockpit_af8e1a107ee8e7b5d0fdf6f10d97c46ac}
+
+\item 
+void {\bfseries Unpack\+Unit\+Info} (vector$<$ std\+::string $>$ \&info)\hypertarget{classCockpit_a1c76aabafdb15212845eec13eae59990}{}\label{classCockpit_a1c76aabafdb15212845eec13eae59990}
+
+\item 
+{\bfseries Cockpit} (const char $\ast$file, \hyperlink{classUnit}{Unit} $\ast$\hyperlink{classCockpit_a5a28bce27feff8d43de419368eb2da1c}{parent}, const std\+::string \&pilotname)\hypertarget{classCockpit_ab5475e4ad7960ec82e6853f7434f292b}{}\label{classCockpit_ab5475e4ad7960ec82e6853f7434f292b}
+
+\item 
+virtual float \hyperlink{classCockpit_a7a4c5ba80c42238eb5becb611bac0490}{Lookup\+Target\+Stat} (int \hyperlink{structstat}{stat}, \hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classCockpit_a7a4c5ba80c42238eb5becb611bac0490}{}\label{classCockpit_a7a4c5ba80c42238eb5becb611bac0490}
+
+\begin{DoxyCompactList}\small\item\em Looks up a particular \hyperlink{classGauge}{Gauge} stat on target unit. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCockpit_a4203dc3421c88348938455a73b3726bd}{Init} (const char $\ast$file, bool default\+Cockpit=false)\hypertarget{classCockpit_a4203dc3421c88348938455a73b3726bd}{}\label{classCockpit_a4203dc3421c88348938455a73b3726bd}
+
+\begin{DoxyCompactList}\small\item\em Loads cockpit info...just as constructor. \end{DoxyCompactList}\item 
+void {\bfseries recreate} (const std\+::string \&pilotname)\hypertarget{classCockpit_aabf7e31dd786dcf295fb1a2d83ce3096}{}\label{classCockpit_aabf7e31dd786dcf295fb1a2d83ce3096}
+
+\item 
+virtual void {\bfseries Set\+Parent} (\hyperlink{classUnit}{Unit} $\ast$unit, const char $\ast$filename, const char $\ast$\hyperlink{classCockpit_ac7211adcabf919204ebf498bb73adbd6}{unitmodname}, const Q\+Vector \&startloc)\hypertarget{classCockpit_a6db02cd8ce3e2e6ba024bc23a101580e}{}\label{classCockpit_a6db02cd8ce3e2e6ba024bc23a101580e}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries Get\+Parent} ()\hypertarget{classCockpit_a14f33431037e8420423acfa491bbe94a}{}\label{classCockpit_a14f33431037e8420423acfa491bbe94a}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries Get\+Save\+Parent} ()\hypertarget{classCockpit_ae87878913437d1c9ae664471f0efb0e9}{}\label{classCockpit_ae87878913437d1c9ae664471f0efb0e9}
+
+\item 
+virtual void \hyperlink{classCockpit_a77661eaba99c97a4bcb0192adaee01be}{Draw} ()\hypertarget{classCockpit_a77661eaba99c97a4bcb0192adaee01be}{}\label{classCockpit_a77661eaba99c97a4bcb0192adaee01be}
+
+\begin{DoxyCompactList}\small\item\em Draws \hyperlink{classCockpit}{Cockpit} then restores viewport. \end{DoxyCompactList}\item 
+bool {\bfseries Update} ()\hypertarget{classCockpit_a7f8bc1217ab41b5540bbd796954c9686}{}\label{classCockpit_a7f8bc1217ab41b5540bbd796954c9686}
+
+\item 
+virtual void {\bfseries Upd\+Auto\+Pilot} ()\hypertarget{classCockpit_ad7282e03bc3d3dba6141766931550fb9}{}\label{classCockpit_ad7282e03bc3d3dba6141766931550fb9}
+
+\item 
+virtual void \hyperlink{classCockpit_ad5ebe898866c1fc287b37aec2bb180d7}{Setup\+View\+Port} (bool clip=true)\hypertarget{classCockpit_ad5ebe898866c1fc287b37aec2bb180d7}{}\label{classCockpit_ad5ebe898866c1fc287b37aec2bb180d7}
+
+\begin{DoxyCompactList}\small\item\em Sets up the world for rendering...call before draw. \end{DoxyCompactList}\item 
+virtual int {\bfseries get\+V\+D\+U\+Mode} (int vdunum)\hypertarget{classCockpit_a4582c82ce8c098feba16659302cc2e02}{}\label{classCockpit_a4582c82ce8c098feba16659302cc2e02}
+
+\item 
+virtual void {\bfseries V\+D\+U\+Switch} (int vdunum)\hypertarget{classCockpit_ae6bf08abe0b07a21f4026829616dacff}{}\label{classCockpit_ae6bf08abe0b07a21f4026829616dacff}
+
+\item 
+virtual void {\bfseries Scroll\+V\+DU} (int vdunum, int howmuch)\hypertarget{classCockpit_a3e2c6dc09b4b4b8cec2216827f4b34bb}{}\label{classCockpit_a3e2c6dc09b4b4b8cec2216827f4b34bb}
+
+\item 
+virtual void {\bfseries Scroll\+All\+V\+DU} (int howmuch)\hypertarget{classCockpit_abc45680bca86f20ee8a386de0386197f}{}\label{classCockpit_abc45680bca86f20ee8a386de0386197f}
+
+\item 
+virtual int {\bfseries get\+Scroll\+Offset} (unsigned int whichtype)\hypertarget{classCockpit_a0d329e032adc5515341a7350abd85484}{}\label{classCockpit_a0d329e032adc5515341a7350abd85484}
+
+\item 
+virtual void {\bfseries Select\+Proper\+Camera} ()\hypertarget{classCockpit_a64c05ddd1eabe3f2b3ea879be8491161}{}\label{classCockpit_a64c05ddd1eabe3f2b3ea879be8491161}
+
+\item 
+virtual void {\bfseries Eject} ()\hypertarget{classCockpit_ab8a3343d97a26e8131c1c03242172d92}{}\label{classCockpit_ab8a3343d97a26e8131c1c03242172d92}
+
+\item 
+virtual void {\bfseries Eject\+Dock} ()\hypertarget{classCockpit_aa7e89db9adef5e2364e918305ec09353}{}\label{classCockpit_aa7e89db9adef5e2364e918305ec09353}
+
+\item 
+virtual void {\bfseries Set\+Inside\+Pan\+Yaw\+Speed} (float speed)\hypertarget{classCockpit_a4c55bfac6a710651f8798dbd935da4f6}{}\label{classCockpit_a4c55bfac6a710651f8798dbd935da4f6}
+
+\item 
+virtual void {\bfseries Set\+Inside\+Pan\+Pitch\+Speed} (float speed)\hypertarget{classCockpit_a57a8425a9a8814119bd13cc20e24d5e1}{}\label{classCockpit_a57a8425a9a8814119bd13cc20e24d5e1}
+
+\item 
+virtual void {\bfseries Set\+Comm\+Animation} (\hyperlink{classAnimation}{Animation} $\ast$ani, \hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classCockpit_a6199d9fa448fbb229744282e63912f64}{}\label{classCockpit_a6199d9fa448fbb229744282e63912f64}
+
+\item 
+virtual void {\bfseries Set\+Static\+Animation} ()\hypertarget{classCockpit_a0743c9c20c4b56eb21d08859be171e98}{}\label{classCockpit_a0743c9c20c4b56eb21d08859be171e98}
+
+\item 
+virtual \hyperlink{classNavigationSystem}{Navigation\+System} $\ast$ \hyperlink{classCockpit_a795ae1ce60cad8d66ba9d062435ba9ac}{Access\+Nav\+System} ()\hypertarget{classCockpit_a795ae1ce60cad8d66ba9d062435ba9ac}{}\label{classCockpit_a795ae1ce60cad8d66ba9d062435ba9ac}
+
+\begin{DoxyCompactList}\small\item\em Accesses the current navigationsystem. \end{DoxyCompactList}\item 
+virtual std\+::string {\bfseries Get\+Nav\+Selected\+System} ()\hypertarget{classCockpit_aa771ef2631ae36eff272e828aa6131a1}{}\label{classCockpit_aa771ef2631ae36eff272e828aa6131a1}
+
+\item 
+virtual \hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classCockpit_a60d1ff1ef51c62c036ec1acc1321be33}{Access\+Camera} ()\hypertarget{classCockpit_a60d1ff1ef51c62c036ec1acc1321be33}{}\label{classCockpit_a60d1ff1ef51c62c036ec1acc1321be33}
+
+\begin{DoxyCompactList}\small\item\em Accesses the current camera. \end{DoxyCompactList}\item 
+virtual \hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classCockpit_a4d844e6bb4ed19f6ca763d0a08c5ed1c}{Access\+Camera} (int)\hypertarget{classCockpit_a4d844e6bb4ed19f6ca763d0a08c5ed1c}{}\label{classCockpit_a4d844e6bb4ed19f6ca763d0a08c5ed1c}
+
+\begin{DoxyCompactList}\small\item\em Returns the passed in cam. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCockpit_a3a6ed1512288540e668cd8f0cba94720}{Select\+Camera} (int)\hypertarget{classCockpit_a3a6ed1512288540e668cd8f0cba94720}{}\label{classCockpit_a3a6ed1512288540e668cd8f0cba94720}
+
+\begin{DoxyCompactList}\small\item\em Changes current camera to selected camera. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCockpit_ad10193e00b4455177ab6efc0b712cc57}{Set\+Viewport} ()\hypertarget{classCockpit_ad10193e00b4455177ab6efc0b712cc57}{}\label{classCockpit_ad10193e00b4455177ab6efc0b712cc57}
+
+\begin{DoxyCompactList}\small\item\em G\+F\+X\+Load\+Matrix proper camera. \end{DoxyCompactList}\item 
+virtual void {\bfseries visit\+System} (std\+::string system\+Name)\hypertarget{classCockpit_a96efa6ebd1229937d2d659cf07431122}{}\label{classCockpit_a96efa6ebd1229937d2d659cf07431122}
+
+\item 
+virtual bool {\bfseries Set\+Draw\+Nav\+System} (bool)\hypertarget{classCockpit_ab937da34a33b617152910885d8f8ea3e}{}\label{classCockpit_ab937da34a33b617152910885d8f8ea3e}
+
+\item 
+virtual bool {\bfseries Can\+Draw\+Nav\+System} ()\hypertarget{classCockpit_ac4b089e4f7a8fcb3b4c3b0d97aac2b10}{}\label{classCockpit_ac4b089e4f7a8fcb3b4c3b0d97aac2b10}
+
+\item 
+virtual bool {\bfseries Draw\+Nav\+System} ()\hypertarget{classCockpit_aded4c6c860c0b89933957d89c50a2ae2}{}\label{classCockpit_aded4c6c860c0b89933957d89c50a2ae2}
+
+\item 
+virtual bool {\bfseries Check\+Comm\+Animation} (\hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classCockpit_a4305e051971f5585595fb74f9c98f77c}{}\label{classCockpit_a4305e051971f5585595fb74f9c98f77c}
+
+\item 
+virtual void {\bfseries On\+Pause\+Begin} ()\hypertarget{classCockpit_ae248da7618a58117ba1b023096919b61}{}\label{classCockpit_ae248da7618a58117ba1b023096919b61}
+
+\item 
+virtual void {\bfseries On\+Pause\+End} ()\hypertarget{classCockpit_a9e5f4b7fb5ac4bc2771b4b4d52dd7af4}{}\label{classCockpit_a9e5f4b7fb5ac4bc2771b4b4d52dd7af4}
+
+\item 
+virtual void {\bfseries On\+Dock\+End} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classCockpit_a37681ddfd248a92d557a0e91a99d932c}{}\label{classCockpit_a37681ddfd248a92d557a0e91a99d932c}
+
+\item 
+virtual void {\bfseries On\+Jump\+Begin} (\hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classCockpit_a2a7edac20ed33ca5c90bc66bb2d10b3b}{}\label{classCockpit_a2a7edac20ed33ca5c90bc66bb2d10b3b}
+
+\item 
+virtual void {\bfseries On\+Jump\+End} (\hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classCockpit_a9baa7c2f6653bfdd204ed71c1b5bbfc4}{}\label{classCockpit_a9baa7c2f6653bfdd204ed71c1b5bbfc4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries too\+Many\+Attackers} ()\hypertarget{classCockpit_af7c4a90f2ae4746257b6a0cc1afcb5a5}{}\label{classCockpit_af7c4a90f2ae4746257b6a0cc1afcb5a5}
+
+\item 
+static std\+::string {\bfseries Make\+Base\+Name} (const \hyperlink{classUnit}{Unit} $\ast$base)\hypertarget{classCockpit_afbeafa66ea5b336343607cfabe26f484}{}\label{classCockpit_afbeafa66ea5b336343607cfabe26f484}
+
+\item 
+static void {\bfseries Respawn} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classCockpit_a2de15ff63a53432bed802bbfe4d65af2}{}\label{classCockpit_a2de15ff63a53432bed802bbfe4d65af2}
+
+\item 
+static void {\bfseries Switch\+Control} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classCockpit_af332c0c16dd186014682fcf55414e551}{}\label{classCockpit_af332c0c16dd186014682fcf55414e551}
+
+\item 
+static void {\bfseries Force\+Switch\+Control} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classCockpit_ad8f76c663b208f5de615475f31515f70}{}\label{classCockpit_ad8f76c663b208f5de615475f31515f70}
+
+\item 
+static void {\bfseries Turret\+Control} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classCockpit_a8668683eb6cad415ea99a3f9e525e589}{}\label{classCockpit_a8668683eb6cad415ea99a3f9e525e589}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries seconds\+With\+Zero\+Energy}\hypertarget{classCockpit_a0de3f3111f5148b8e192387ba252feda}{}\label{classCockpit_a0de3f3111f5148b8e192387ba252feda}
+
+\item 
+int {\bfseries number\+\_\+of\+\_\+attackers}\hypertarget{classCockpit_a11ec935b77d9fe237e2d553f117961d9}{}\label{classCockpit_a11ec935b77d9fe237e2d553f117961d9}
+
+\item 
+unsigned int {\bfseries retry\+\_\+dock}\hypertarget{classCockpit_a45cd153dafeee012d63c72edfd0ce624}{}\label{classCockpit_a45cd153dafeee012d63c72edfd0ce624}
+
+\item 
+double {\bfseries Time\+Of\+Last\+Collision}\hypertarget{classCockpit_acdb6c117f3683f0945deb7ec202e35f7}{}\label{classCockpit_acdb6c117f3683f0945deb7ec202e35f7}
+
+\item 
+char {\bfseries jumpok}\hypertarget{classCockpit_ae122921304a733c442d5d65d2f151138}{}\label{classCockpit_ae122921304a733c442d5d65d2f151138}
+
+\item 
+float {\bfseries godliness}\hypertarget{classCockpit_a269833671448067e897867abe7845792}{}\label{classCockpit_a269833671448067e897867abe7845792}
+
+\item 
+std\+::string {\bfseries communication\+\_\+choices}\hypertarget{classCockpit_a6e34a3f461dcb7155231edad361eb2bd}{}\label{classCockpit_a6e34a3f461dcb7155231edad361eb2bd}
+
+\item 
+float {\bfseries credits}\hypertarget{classCockpit_aade2c48dbd8b4c2b4aa2a7ebef0998e4}{}\label{classCockpit_aade2c48dbd8b4c2b4aa2a7ebef0998e4}
+
+\item 
+float \hyperlink{classCockpit_a19cb4a855d955d1cf2e6215c6cb3fbf2}{zoomfactor}\hypertarget{classCockpit_a19cb4a855d955d1cf2e6215c6cb3fbf2}{}\label{classCockpit_a19cb4a855d955d1cf2e6215c6cb3fbf2}
+
+\begin{DoxyCompactList}\small\item\em How far away chasecam and pan cam is. \end{DoxyCompactList}\item 
+class \hyperlink{classFlightgroup}{Flightgroup} $\ast$ \hyperlink{classCockpit_a9bb8c7dd6a52b72b61ec58db9bbfa5aa}{fg}\hypertarget{classCockpit_a9bb8c7dd6a52b72b61ec58db9bbfa5aa}{}\label{classCockpit_a9bb8c7dd6a52b72b61ec58db9bbfa5aa}
+
+\begin{DoxyCompactList}\small\item\em Sets owner of this cockpit. \end{DoxyCompactList}\item 
+class \hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries active\+Star\+System}\hypertarget{classCockpit_a8dbefe60276613268c8c9b25b8851829}{}\label{classCockpit_a8dbefe60276613268c8c9b25b8851829}
+
+\item 
+class \hyperlink{classSaveGame}{Save\+Game} $\ast$ {\bfseries savegame}\hypertarget{classCockpit_ac03d766ee2a98e3f38df75e447cf1c12}{}\label{classCockpit_ac03d766ee2a98e3f38df75e447cf1c12}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Load\+X\+ML} (const char $\ast$file)\hypertarget{classCockpit_a877ed59b9c05666ddd871aeda2d949fc}{}\label{classCockpit_a877ed59b9c05666ddd871aeda2d949fc}
+
+\item 
+virtual void {\bfseries Load\+X\+ML} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} \&f)\hypertarget{classCockpit_a27e78520c916d5fa1e0c4decb0a09bb6}{}\label{classCockpit_a27e78520c916d5fa1e0c4decb0a09bb6}
+
+\item 
+virtual void {\bfseries begin\+Element} (const string \&name, const \hyperlink{classXMLSupport_1_1AttributeList}{Attribute\+List} \&attributes)\hypertarget{classCockpit_ab718a4367e3e5e23c16b8bddae04cdb2}{}\label{classCockpit_ab718a4367e3e5e23c16b8bddae04cdb2}
+
+\item 
+virtual void {\bfseries end\+Element} (const string \&name)\hypertarget{classCockpit_a1e752e7e85dd42123c10452ba5f99a8a}{}\label{classCockpit_a1e752e7e85dd42123c10452ba5f99a8a}
+
+\item 
+virtual void \hyperlink{classCockpit_a4315ca8cdf10b2a20a8768b35bf963f3}{Delete} ()\hypertarget{classCockpit_a4315ca8cdf10b2a20a8768b35bf963f3}{}\label{classCockpit_a4315ca8cdf10b2a20a8768b35bf963f3}
+
+\begin{DoxyCompactList}\small\item\em Destructs cockpit info for new loading. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCockpit_a172ebf9a8d38f44b252bd23f0aa89106}{Draw\+Navigation\+Symbol} (const Vector \&loc, const Vector \&p, const Vector \&q, float size)\hypertarget{classCockpit_a172ebf9a8d38f44b252bd23f0aa89106}{}\label{classCockpit_a172ebf9a8d38f44b252bd23f0aa89106}
+
+\begin{DoxyCompactList}\small\item\em draws the navigation symbol around targetted location \end{DoxyCompactList}\item 
+virtual float \hyperlink{classCockpit_afa51d54ed020eb6dc757c5daa461cc3e}{compute\+Locking\+Symbol} (\hyperlink{classUnit}{Unit} $\ast$par)\hypertarget{classCockpit_afa51d54ed020eb6dc757c5daa461cc3e}{}\label{classCockpit_afa51d54ed020eb6dc757c5daa461cc3e}
+
+\begin{DoxyCompactList}\small\item\em draws the target box around targetted unit \end{DoxyCompactList}\item 
+virtual void {\bfseries Draw\+Target\+Box} ()\hypertarget{classCockpit_a3f6b90d520528eaac24b6c5e783fd8fc}{}\label{classCockpit_a3f6b90d520528eaac24b6c5e783fd8fc}
+
+\item 
+virtual void \hyperlink{classCockpit_abc76993825a065e7d40b69ae2fa4a3db}{Draw\+Target\+Boxes} (const \hyperlink{classRadar_1_1Sensor}{Radar\+::\+Sensor} \&)\hypertarget{classCockpit_abc76993825a065e7d40b69ae2fa4a3db}{}\label{classCockpit_abc76993825a065e7d40b69ae2fa4a3db}
+
+\begin{DoxyCompactList}\small\item\em draws the target box around all units \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCockpit_a4d666d42baa8cef5e187c364df97f71e}{Draw\+Turret\+Target\+Boxes} ()\hypertarget{classCockpit_a4d666d42baa8cef5e187c364df97f71e}{}\label{classCockpit_a4d666d42baa8cef5e187c364df97f71e}
+
+\begin{DoxyCompactList}\small\item\em draws a target cross around all units targeted by your turrets // $\ast$$\ast$ jay \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCockpit_a89616f9df4b1d96d3237a483fce19425}{Draw\+Tactical\+Target\+Box} ()\hypertarget{classCockpit_a89616f9df4b1d96d3237a483fce19425}{}\label{classCockpit_a89616f9df4b1d96d3237a483fce19425}
+
+\begin{DoxyCompactList}\small\item\em Shows the flightgroup\textquotesingle{}s target, if any. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCockpit_a49816449cb1a72ce9f431ecdd78e6b5e}{Draw\+Radar} (const \hyperlink{classRadar_1_1Sensor}{Radar\+::\+Sensor} \&)\hypertarget{classCockpit_a49816449cb1a72ce9f431ecdd78e6b5e}{}\label{classCockpit_a49816449cb1a72ce9f431ecdd78e6b5e}
+
+\begin{DoxyCompactList}\small\item\em Draws all the tracks on the radar. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCockpit_a9f8fa6143bf6ef9d1eff8b5c3117ca64}{Draw\+Gauges} (\hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classCockpit_a9f8fa6143bf6ef9d1eff8b5c3117ca64}{}\label{classCockpit_a9f8fa6143bf6ef9d1eff8b5c3117ca64}
+
+\begin{DoxyCompactList}\small\item\em Draws gauges. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries begin\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{classCockpit_af0d8b5b428f14e9d5cf61defeeed0e76}{}\label{classCockpit_af0d8b5b428f14e9d5cf61defeeed0e76}
+
+\item 
+static void {\bfseries end\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name)\hypertarget{classCockpit_a1f9172d778733568cfde72151053b92b}{}\label{classCockpit_a1f9172d778733568cfde72151053b92b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum V\+I\+E\+W\+S\+T\+Y\+LE \hyperlink{classCockpit_ab782766f007eec4072d5e5c0da573553}{view}\hypertarget{classCockpit_ab782766f007eec4072d5e5c0da573553}{}\label{classCockpit_ab782766f007eec4072d5e5c0da573553}
+
+\begin{DoxyCompactList}\small\item\em style of current view (chase cam, inside) \end{DoxyCompactList}\item 
+int {\bfseries currentcamera}\hypertarget{classCockpit_a5dafef9fc211d69d8f9238193dec16cb}{}\label{classCockpit_a5dafef9fc211d69d8f9238193dec16cb}
+
+\item 
+float {\bfseries radar\+\_\+time}\hypertarget{classCockpit_ad303bb6fe3139f939aa8ea65e9a0d604}{}\label{classCockpit_ad303bb6fe3139f939aa8ea65e9a0d604}
+
+\item 
+float {\bfseries gauge\+\_\+time} \mbox{[}\hyperlink{structUnitImages}{Unit\+Images}$<$ void $>$\+::N\+U\+M\+G\+A\+U\+G\+ES\mbox{]}\hypertarget{classCockpit_afe53cbd357a95fb5c86a6222d6d8a7dd}{}\label{classCockpit_afe53cbd357a95fb5c86a6222d6d8a7dd}
+
+\item 
+float \hyperlink{classCockpit_aa38272d3115d052d2c80bed75b97a12f}{Start\+Armor} \mbox{[}9\mbox{]}
+\begin{DoxyCompactList}\small\item\em 8 armor vals and 1 for startfuel \end{DoxyCompactList}\item 
+float \hyperlink{classCockpit_a6546ea5815cfe3d734437f78a3a64473}{maxfuel}\hypertarget{classCockpit_a6546ea5815cfe3d734437f78a3a64473}{}\label{classCockpit_a6546ea5815cfe3d734437f78a3a64473}
+
+\begin{DoxyCompactList}\small\item\em saved values to compare with current values (might need more for damage) \end{DoxyCompactList}\item 
+float {\bfseries maxhull}\hypertarget{classCockpit_a3249aee890a7f50fa2750ce146a64baa}{}\label{classCockpit_a3249aee890a7f50fa2750ce146a64baa}
+
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} \hyperlink{classCockpit_a5a28bce27feff8d43de419368eb2da1c}{parent}\hypertarget{classCockpit_a5a28bce27feff8d43de419368eb2da1c}{}\label{classCockpit_a5a28bce27feff8d43de419368eb2da1c}
+
+\begin{DoxyCompactList}\small\item\em this is the parent that \hyperlink{classCockpit}{Cockpit} will read data from \end{DoxyCompactList}\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries parentturret}\hypertarget{classCockpit_af11d4927e2e18404b583e9bd1a99af4f}{}\label{classCockpit_af11d4927e2e18404b583e9bd1a99af4f}
+
+\item 
+int {\bfseries unitfaction}\hypertarget{classCockpit_a0bd296375ba8c42a1a69f4ae35d42cfe}{}\label{classCockpit_a0bd296375ba8c42a1a69f4ae35d42cfe}
+
+\item 
+float \hyperlink{classCockpit_a87434e008fefecbca3dac9272ba7f25b}{shakin}\hypertarget{classCockpit_a87434e008fefecbca3dac9272ba7f25b}{}\label{classCockpit_a87434e008fefecbca3dac9272ba7f25b}
+
+\begin{DoxyCompactList}\small\item\em 4 views f/r/l/b \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCockpit_ac7211adcabf919204ebf498bb73adbd6}{unitmodname}\hypertarget{classCockpit_ac7211adcabf919204ebf498bb73adbd6}{}\label{classCockpit_ac7211adcabf919204ebf498bb73adbd6}
+
+\begin{DoxyCompactList}\small\item\em Video Display Units (may need more than 2 in future) \end{DoxyCompactList}\item 
+float \hyperlink{classCockpit_af9bafcbbecb751c2d3529f2a1f632a69}{autopilot\+\_\+time}
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries autopilot\+\_\+target}\hypertarget{classCockpit_ac61f327dd555f422b9aef7200ba9e409}{}\label{classCockpit_ac61f327dd555f422b9aef7200ba9e409}
+
+\item 
+float \hyperlink{classCockpit_abfd38e7f629da18799014c03912a8f7d}{cockpit\+\_\+offset}
+\item 
+float {\bfseries viewport\+\_\+offset}\hypertarget{classCockpit_a528c3dd4a506eabb6fad8df059295cc6}{}\label{classCockpit_a528c3dd4a506eabb6fad8df059295cc6}
+
+\item 
+float {\bfseries cockpit\+\_\+time}\hypertarget{classCockpit_aafb1f1b671707c6de53be28709ed83c8}{}\label{classCockpit_aafb1f1b671707c6de53be28709ed83c8}
+
+\item 
+bool {\bfseries ejecting}\hypertarget{classCockpit_aaa7a00f2f9388f7d5858e9b99d3ece77}{}\label{classCockpit_aaa7a00f2f9388f7d5858e9b99d3ece77}
+
+\item 
+bool {\bfseries going\+\_\+to\+\_\+dock\+\_\+screen}\hypertarget{classCockpit_a7ef625751f8844ad1d60f225d95b6535}{}\label{classCockpit_a7ef625751f8844ad1d60f225d95b6535}
+
+\item 
+int {\bfseries partial\+\_\+number\+\_\+of\+\_\+attackers}\hypertarget{classCockpit_aaec23a67f7a0557f857d46f42be986f8}{}\label{classCockpit_aaec23a67f7a0557f857d46f42be986f8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classCockpit}{Cockpit} Contains all displayable information about a particular \hyperlink{classUnit}{Unit} $\ast$ Gauges are used to indicate analog controls, and some diagital ones The ones starting from K\+PS are digital with text readout 
+
+\subsection{Member Data Documentation}
+\index{Cockpit@{Cockpit}!autopilot\+\_\+time@{autopilot\+\_\+time}}
+\index{autopilot\+\_\+time@{autopilot\+\_\+time}!Cockpit@{Cockpit}}
+\subsubsection[{\texorpdfstring{autopilot\+\_\+time}{autopilot_time}}]{\setlength{\rightskip}{0pt plus 5cm}float Cockpit\+::autopilot\+\_\+time\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classCockpit_af9bafcbbecb751c2d3529f2a1f632a69}{}\label{classCockpit_af9bafcbbecb751c2d3529f2a1f632a69}
+Color of cockpit default text The font that the entire cockpit will use. Currently without color \index{Cockpit@{Cockpit}!cockpit\+\_\+offset@{cockpit\+\_\+offset}}
+\index{cockpit\+\_\+offset@{cockpit\+\_\+offset}!Cockpit@{Cockpit}}
+\subsubsection[{\texorpdfstring{cockpit\+\_\+offset}{cockpit_offset}}]{\setlength{\rightskip}{0pt plus 5cm}float Cockpit\+::cockpit\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classCockpit_abfd38e7f629da18799014c03912a8f7d}{}\label{classCockpit_abfd38e7f629da18799014c03912a8f7d}
+two values that represent the adjustment to perspective needed to center teh crosshairs in the perceived view. \index{Cockpit@{Cockpit}!Start\+Armor@{Start\+Armor}}
+\index{Start\+Armor@{Start\+Armor}!Cockpit@{Cockpit}}
+\subsubsection[{\texorpdfstring{Start\+Armor}{StartArmor}}]{\setlength{\rightskip}{0pt plus 5cm}float Cockpit\+::\+Start\+Armor\mbox{[}9\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classCockpit_aa38272d3115d052d2c80bed75b97a12f}{}\label{classCockpit_aa38272d3115d052d2c80bed75b97a12f}
+
+
+8 armor vals and 1 for startfuel 
+
+8 armor vals and 1 for startfuel 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/cockpit\+\_\+generic.\+h\item 
+gfx/cockpit\+\_\+generic.\+cpp\end{DoxyCompactItemize}

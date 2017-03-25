@@ -1,0 +1,122 @@
+\hypertarget{OPC__RayCollider_8cpp}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Ray\+Collider.cpp File Reference}
+\label{OPC__RayCollider_8cpp}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{cmd/collide2/\+O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Ray\+A\+A\+B\+B\+Overlap.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Ray\+Tri\+Overlap.\+h\char`\"{}}\\*
+Include dependency graph for O\+P\+C\+\_\+\+Ray\+Collider.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d31/OPC__RayCollider_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}(prim\+\_\+index,  flag)
+\item 
+\#define {\bfseries H\+A\+N\+D\+L\+E\+\_\+\+C\+O\+N\+T\+A\+CT}(prim\+\_\+index,  flag)
+\item 
+\#define {\bfseries U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}
+\item 
+\#define {\bfseries S\+E\+G\+M\+E\+N\+T\+\_\+\+P\+R\+IM}(prim\+\_\+index,  flag)
+\item 
+\#define {\bfseries R\+A\+Y\+\_\+\+P\+R\+IM}(prim\+\_\+index,  flag)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for a ray collider.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June, 2, 2001 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}!H\+A\+N\+D\+L\+E\+\_\+\+C\+O\+N\+T\+A\+CT@{H\+A\+N\+D\+L\+E\+\_\+\+C\+O\+N\+T\+A\+CT}}
+\index{H\+A\+N\+D\+L\+E\+\_\+\+C\+O\+N\+T\+A\+CT@{H\+A\+N\+D\+L\+E\+\_\+\+C\+O\+N\+T\+A\+CT}!O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{H\+A\+N\+D\+L\+E\+\_\+\+C\+O\+N\+T\+A\+CT}{HANDLE_CONTACT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+A\+N\+D\+L\+E\+\_\+\+C\+O\+N\+T\+A\+CT(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__RayCollider_8cpp_a67bbf967f1071168328e1b7c6a176b1a}{}\label{OPC__RayCollider_8cpp_a67bbf967f1071168328e1b7c6a176b1a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+SET\_CONTACT(prim\_index, flag)                                                           \(\backslash\)
+                                                                                                \(\backslash\)
+        if(mHitCallback)    (mHitCallback)(mStabbedFace, mUserData);\textcolor{keywordflow}{else}\{\}
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}!R\+A\+Y\+\_\+\+P\+R\+IM@{R\+A\+Y\+\_\+\+P\+R\+IM}}
+\index{R\+A\+Y\+\_\+\+P\+R\+IM@{R\+A\+Y\+\_\+\+P\+R\+IM}!O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{R\+A\+Y\+\_\+\+P\+R\+IM}{RAY_PRIM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+A\+Y\+\_\+\+P\+R\+IM(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__RayCollider_8cpp_a9f8886f05347275388ce2d2e45cc78cd}{}\label{OPC__RayCollider_8cpp_a9f8886f05347275388ce2d2e45cc78cd}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Request vertices from the app */}                                                     \(\backslash\)
+    VertexPointers VP;  mIMesh->GetTriangle(VP, prim\_index);                                \(\backslash\)
+                                                                                            \(\backslash\)
+    \textcolor{comment}{/* Perform ray-tri overlap test and return */}                                           \(\backslash\)
+    if(RayTriOverlap(*VP.Vertex[0], *VP.Vertex[1], *VP.Vertex[2]))                          \(\backslash\)
+    \{                                                                                       \(\backslash\)
+        HANDLE\_CONTACT(prim\_index, flag)                                                    \(\backslash\)
+    \}\textcolor{keywordflow}{else}\{\}
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}!S\+E\+G\+M\+E\+N\+T\+\_\+\+P\+R\+IM@{S\+E\+G\+M\+E\+N\+T\+\_\+\+P\+R\+IM}}
+\index{S\+E\+G\+M\+E\+N\+T\+\_\+\+P\+R\+IM@{S\+E\+G\+M\+E\+N\+T\+\_\+\+P\+R\+IM}!O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+G\+M\+E\+N\+T\+\_\+\+P\+R\+IM}{SEGMENT_PRIM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+G\+M\+E\+N\+T\+\_\+\+P\+R\+IM(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__RayCollider_8cpp_a068103f25d16032791bfff5af2e3d357}{}\label{OPC__RayCollider_8cpp_a068103f25d16032791bfff5af2e3d357}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Request vertices from the app */}                                                     \(\backslash\)
+    VertexPointers VP;  mIMesh->GetTriangle(VP, prim\_index);                                \(\backslash\)
+                                                                                            \(\backslash\)
+    \textcolor{comment}{/* Perform ray-tri overlap test and return */}                                           \(\backslash\)
+    if(RayTriOverlap(*VP.Vertex[0], *VP.Vertex[1], *VP.Vertex[2]))                          \(\backslash\)
+    \{                                                                                       \(\backslash\)
+        \textcolor{comment}{/* Intersection point is valid if dist < segment's length */}                        \(\backslash\)
+        \textcolor{comment}{/* We know dist>0 so we can use integers */}                                         \(\backslash\)
+        if(\hyperlink{IceFPU_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}{IR}(mStabbedFace.mDistance)<\hyperlink{IceFPU_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}{IR}(mMaxDist))                                         \(\backslash\)
+        \{                                                                                   \(\backslash\)
+            HANDLE\_CONTACT(prim\_index, flag)                                                \(\backslash\)
+        \}                                                                                   \(\backslash\)
+    \}\textcolor{keywordflow}{else}\{\}
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}!S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}}
+\index{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}!O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}{SET_CONTACT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__RayCollider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}{}\label{OPC__RayCollider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+mNbIntersections++;                                                         \(\backslash\)
+    \textcolor{comment}{/* Set contact status */}                                                    \(\backslash\)
+    mFlags |= flag;                                                             \(\backslash\)
+    \textcolor{comment}{/* In any case the contact has been found and recorded in mStabbedFace  */}  \(\backslash\)
+    mStabbedFace.mFaceID = prim\_index;
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}!U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE@{U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}}
+\index{U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE@{U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}!O\+P\+C\+\_\+\+Ray\+Collider.\+cpp@{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}{UPDATE_CACHE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+P\+D\+A\+T\+E\+\_\+\+C\+A\+C\+HE}\hypertarget{OPC__RayCollider_8cpp_a55ef118ec7db46f0d2609d78e4648168}{}\label{OPC__RayCollider_8cpp_a55ef118ec7db46f0d2609d78e4648168}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(cache && GetContactStatus())     \(\backslash\)
+        \{                                   \(\backslash\)
+            *cache  = mStabbedFace.mFaceID; \(\backslash\)
+        \}\textcolor{keywordflow}{else}\{\}
+\end{DoxyCode}

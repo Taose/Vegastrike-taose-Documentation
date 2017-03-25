@@ -1,0 +1,3 @@
+<map id="GFXSphereVertexList" name="GFXSphereVertexList">
+<area shape="rect" id="node2" href="$d9/de6/classGFXVertexList.html" title="{GFXVertexList\n|# numVertices\l# data\l# index\l# mode\l# unique_mode\l# display_list\l# vbo_data\l# numlists\l# offsets\l# changed\l|+ RefreshDisplayList()\l+ GFXVertexList()\l+ GFXVertexList()\l+ GFXVertexList()\l+ GFXVertexList()\l+ ~GFXVertexList()\l+ numTris()\l+ numQuads()\l+ GetIndex()\l+ GetPolyType()\land 18 more...\l# GetVertex()\l# GetColorVertex()\l# Init()\l# Draw()\l# RenormalizeNormals()\l# GFXVertexList()\l# VtxCopy()\l# ColVtxCopy()\l# ColIndVtxCopy()\l# IndVtxCopy()\l}" alt="" coords="13,5,175,508"/>
+</map>

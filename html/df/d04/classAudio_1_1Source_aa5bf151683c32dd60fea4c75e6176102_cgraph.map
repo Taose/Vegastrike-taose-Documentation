@@ -1,0 +1,6 @@
+<map id="Audio::Source::seek" name="Audio::Source::seek">
+<area shape="rect" id="node2" href="$df/d04/classAudio_1_1Source.html#aaceb400c059019233ace3b0c10206548" title="Audio::Source::isPlaying" alt="" coords="208,5,373,32"/>
+<area shape="rect" id="node4" href="$df/d04/classAudio_1_1Source.html#ab5e750c91839e53326a2d9af1d2f6575" title="Audio::Source::isActive" alt="" coords="211,56,370,83"/>
+<area shape="rect" id="node5" href="$df/d04/classAudio_1_1Source.html#a80bb4782218d1ea593ce3f1db3bfbf58" title="Audio::Source::setLastKnown\lPlayingTime" alt="" coords="193,107,388,149"/>
+<area shape="rect" id="node3" href="$df/d04/classAudio_1_1Source.html#ab9f6505b3317358970cd16f2b1469ea9" title="Audio::Source::isPlayingImpl" alt="" coords="436,5,627,32"/>
+</map>

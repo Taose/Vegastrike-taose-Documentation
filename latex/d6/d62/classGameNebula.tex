@@ -1,0 +1,89 @@
+\hypertarget{classGameNebula}{}\section{Game\+Nebula Class Reference}
+\label{classGameNebula}\index{Game\+Nebula@{Game\+Nebula}}
+
+
+Inheritance diagram for Game\+Nebula\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/dcc/classGameNebula__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Nebula\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dbb/classGameNebula__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classGameNebula_a3028dccb3764fba45b25990d1a31d8bb}{Update\+Physics2} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{structTransformation}{Transformation} \&old\+\_\+physical\+\_\+state, const Vector \&accel, float difficulty, const \hyperlink{classMatrix}{Matrix} \&transmat, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em returns true if jump possible even if not taken \end{DoxyCompactList}\item 
+void {\bfseries Set\+Fog\+State} ()\hypertarget{classGameNebula_a2c891cc71cb3522489ecd5180373af62}{}\label{classGameNebula_a2c891cc71cb3522489ecd5180373af62}
+
+\item 
+void {\bfseries Put\+Inside\+Cam} (int)\hypertarget{classGameNebula_a0077bafd00f793becd01f30837dc2d56}{}\label{classGameNebula_a0077bafd00f793becd01f30837dc2d56}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGameNebula_a32ef4fc24cf332b2b9564fd9d5348e5e}{Game\+Nebula} (const char $\ast$unitfile, bool SubU, int faction, \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL, int fg\+\_\+snumber=0)\hypertarget{classGameNebula_a32ef4fc24cf332b2b9564fd9d5348e5e}{}\label{classGameNebula_a32ef4fc24cf332b2b9564fd9d5348e5e}
+
+\begin{DoxyCompactList}\small\item\em constructor only to be called by \hyperlink{classUnitFactory}{Unit\+Factory} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classGameNebula_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classGameNebula_a187c66d2d867f6265d3b0c99ffc34838}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Game\+Nebula@{Game\+Nebula}!Update\+Physics2@{Update\+Physics2}}
+\index{Update\+Physics2@{Update\+Physics2}!Game\+Nebula@{Game\+Nebula}}
+\subsubsection[{\texorpdfstring{Update\+Physics2(const Transformation \&trans, const Transformation \&old\+\_\+physical\+\_\+state, const Vector \&accel, float difficulty, const Matrix \&transmat, const Vector \&\+Cumulative\+Velocity, bool Resolve\+Last, Unit\+Collection $\ast$uc=\+N\+U\+L\+L)}{UpdatePhysics2(const Transformation &trans, const Transformation &old_physical_state, const Vector &accel, float difficulty, const Matrix &transmat, const Vector &CumulativeVelocity, bool ResolveLast, UnitCollection *uc=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Nebula\+::\+Update\+Physics2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transformation} \&}]{trans, }
+\item[{const {\bf Transformation} \&}]{old\+\_\+physical\+\_\+state, }
+\item[{const Vector \&}]{accel, }
+\item[{float}]{difficulty, }
+\item[{const {\bf Matrix} \&}]{transmat, }
+\item[{const Vector \&}]{Cumulative\+Velocity, }
+\item[{bool}]{Resolve\+Last, }
+\item[{{\bf Unit\+Collection} $\ast$}]{uc = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGameNebula_a3028dccb3764fba45b25990d1a31d8bb}{}\label{classGameNebula_a3028dccb3764fba45b25990d1a31d8bb}
+
+
+returns true if jump possible even if not taken 
+
+Updates physics given unit space transformations and if this is the last physics frame in the current gfx frame 
+
+Reimplemented from \hyperlink{classGameUnit_af229f9e649c3dcf2f7a94082e070cc2b}{Game\+Unit$<$ Nebula $>$}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d62/classGameNebula_a3028dccb3764fba45b25990d1a31d8bb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/nebula.\+h\item 
+cmd/nebula.\+cpp\end{DoxyCompactItemize}

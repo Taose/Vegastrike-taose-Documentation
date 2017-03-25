@@ -1,0 +1,299 @@
+\hypertarget{classUniverse}{}\section{Universe Class Reference}
+\label{classUniverse}\index{Universe@{Universe}}
+
+
+Inheritance diagram for Universe\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/da1/classUniverse__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Universe\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d1d/classUniverse__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classUniverse_abc0e3733e0a2bb96c490e0034a17f687}{net\+Lock} (bool enable)\hypertarget{classUniverse_abc0e3733e0a2bb96c490e0034a17f687}{}\label{classUniverse_abc0e3733e0a2bb96c490e0034a17f687}
+
+\begin{DoxyCompactList}\small\item\em A list of all factions. \end{DoxyCompactList}\item 
+bool {\bfseries net\+Locked} ()\hypertarget{classUniverse_aedb1d50f6f8423606c4085a462e7927b}{}\label{classUniverse_aedb1d50f6f8423606c4085a462e7927b}
+
+\item 
+bool {\bfseries is\+Server} ()\hypertarget{classUniverse_a1952e70086caec8e5bb8fa180a1ddaac}{}\label{classUniverse_a1952e70086caec8e5bb8fa180a1ddaac}
+
+\item 
+\hyperlink{classCockpit}{Cockpit} $\ast$ {\bfseries is\+Player\+Starship} (const \hyperlink{classUnit}{Unit} $\ast$fighter)\hypertarget{classUniverse_ad85aa0c647897986ed2e3344f200ca39}{}\label{classUniverse_ad85aa0c647897986ed2e3344f200ca39}
+
+\item 
+\hyperlink{classCockpit}{Cockpit} $\ast$ {\bfseries is\+Player\+Starship\+Void} (const void $\ast$pointercompare)\hypertarget{classUniverse_a3156f148ffbb90f1beb988bbfd386095}{}\label{classUniverse_a3156f148ffbb90f1beb988bbfd386095}
+
+\item 
+int {\bfseries which\+Player\+Starship} (const \hyperlink{classUnit}{Unit} $\ast$fighter)\hypertarget{classUniverse_a2aac72dec5c5c305c26e9497fb9d1a67}{}\label{classUniverse_a2aac72dec5c5c305c26e9497fb9d1a67}
+
+\item 
+\hyperlink{classCockpit}{Cockpit} $\ast$ {\bfseries Access\+Cockpit} ()\hypertarget{classUniverse_a53fb43f8c8af4f517d2f735c11507036}{}\label{classUniverse_a53fb43f8c8af4f517d2f735c11507036}
+
+\item 
+\hyperlink{classCockpit}{Cockpit} $\ast$ {\bfseries Access\+Cockpit} (int i)\hypertarget{classUniverse_a6d7994f68e240e98235b246185eabfeb}{}\label{classUniverse_a6d7994f68e240e98235b246185eabfeb}
+
+\item 
+unsigned int {\bfseries Current\+Cockpit} ()\hypertarget{classUniverse_abcb814a395c470ae31996285647a81be}{}\label{classUniverse_abcb814a395c470ae31996285647a81be}
+
+\item 
+virtual \hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classUniverse_a04a32ac804354ce7074bd8db0efe5386}{Access\+Camera} (int num)\hypertarget{classUniverse_a04a32ac804354ce7074bd8db0efe5386}{}\label{classUniverse_a04a32ac804354ce7074bd8db0efe5386}
+
+\begin{DoxyCompactList}\small\item\em Wrapper function for Star System. \end{DoxyCompactList}\item 
+virtual \hyperlink{classCamera}{Camera} $\ast$ {\bfseries Access\+Camera} ()\hypertarget{classUniverse_ad1372dbc869494bdb62c1b3ebdef9ee1}{}\label{classUniverse_ad1372dbc869494bdb62c1b3ebdef9ee1}
+
+\item 
+virtual \hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classUniverse_aaa62510660e9796e8287ddf0a34d7cb2}{Access\+Hud\+Camera} ()\hypertarget{classUniverse_aaa62510660e9796e8287ddf0a34d7cb2}{}\label{classUniverse_aaa62510660e9796e8287ddf0a34d7cb2}
+
+\begin{DoxyCompactList}\small\item\em Returns the current hud cam. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classUniverse_ae9ca5fc07ad734348c6a28081a033b42}{Set\+Viewport} ()\hypertarget{classUniverse_ae9ca5fc07ad734348c6a28081a033b42}{}\label{classUniverse_ae9ca5fc07ad734348c6a28081a033b42}
+
+\begin{DoxyCompactList}\small\item\em Wrapper function for star system. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Active\+Cockpit} (int whichcockpit)\hypertarget{classUniverse_a0bfcb34dd18a8115181d377dfd7f2056}{}\label{classUniverse_a0bfcb34dd18a8115181d377dfd7f2056}
+
+\item 
+void {\bfseries Set\+Active\+Cockpit} (\hyperlink{classCockpit}{Cockpit} $\ast$which)\hypertarget{classUniverse_ad7369cb0796b27cf10e157eef13c726b}{}\label{classUniverse_ad7369cb0796b27cf10e157eef13c726b}
+
+\item 
+virtual void {\bfseries Write\+Save\+Game} (bool auto\+\_\+save)\hypertarget{classUniverse_a235d163d16003ddc050681572b37e8cb}{}\label{classUniverse_a235d163d16003ddc050681572b37e8cb}
+
+\item 
+virtual void {\bfseries Setup\+Cockpits} (std\+::vector$<$ std\+::string $>$players)\hypertarget{classUniverse_a9f60651000b343bc485bcb1b15421801}{}\label{classUniverse_a9f60651000b343bc485bcb1b15421801}
+
+\item 
+virtual void {\bfseries activate\+Light\+Map} (int stage=1)\hypertarget{classUniverse_aaa2abb9d2c76a83f36d36a5712fd1f45}{}\label{classUniverse_aaa2abb9d2c76a83f36d36a5712fd1f45}
+
+\item 
+virtual \hyperlink{classTexture}{Texture} $\ast$ {\bfseries get\+Light\+Map} ()\hypertarget{classUniverse_a3cb0e00002c522a4ba9bda2257129861}{}\label{classUniverse_a3cb0e00002c522a4ba9bda2257129861}
+
+\item 
+virtual void {\bfseries Select\+Camera} (int cam)\hypertarget{classUniverse_ad7d3ab546b961832c716383c6033f2a3}{}\label{classUniverse_ad7d3ab546b961832c716383c6033f2a3}
+
+\item 
+\hyperlink{classCockpit}{Cockpit} $\ast$ {\bfseries create\+Cockpit} (std\+::string player)\hypertarget{classUniverse_a7b3362e44e02301f7d2b307379b40ad5}{}\label{classUniverse_a7b3362e44e02301f7d2b307379b40ad5}
+
+\item 
+void {\bfseries get\+Jump\+Path} (const std\+::string \&from, const std\+::string \&to, std\+::vector$<$ std\+::string $>$ \&path) const \hypertarget{classUniverse_aa902a4110dfbce58b75c2e5a9d5d2163}{}\label{classUniverse_aa902a4110dfbce58b75c2e5a9d5d2163}
+
+\item 
+const std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+Adjacent\+Star\+Systems} (const std\+::string \&ss) const \hypertarget{classUniverse_a29f7c2744d7a0f190313457c30a4db66}{}\label{classUniverse_a29f7c2744d7a0f190313457c30a4db66}
+
+\item 
+std\+::string {\bfseries get\+Galaxy\+Property} (const std\+::string \&sys, const std\+::string \&prop)\hypertarget{classUniverse_a68222bc0ea1f2e422a56e5b3c41ed3c3}{}\label{classUniverse_a68222bc0ea1f2e422a56e5b3c41ed3c3}
+
+\item 
+std\+::string {\bfseries get\+Galaxy\+Property\+Default} (const std\+::string \&sys, const std\+::string \&prop, const std\+::string def=\char`\"{}\char`\"{})\hypertarget{classUniverse_ae2c6ff440579e88f6eda381fa4ee0504}{}\label{classUniverse_ae2c6ff440579e88f6eda381fa4ee0504}
+
+\item 
+\hyperlink{classGalaxyXML_1_1Galaxy}{Galaxy\+X\+M\+L\+::\+Galaxy} $\ast$ {\bfseries get\+Galaxy} ()\hypertarget{classUniverse_a900f9aa0990440f655c94e7a9980252c}{}\label{classUniverse_a900f9aa0990440f655c94e7a9980252c}
+
+\item 
+bool {\bfseries Still\+Exists} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classUniverse_a007287a48f0ecb4da7ef17b62b25943d}{}\label{classUniverse_a007287a48f0ecb4da7ef17b62b25943d}
+
+\item 
+void {\bfseries set\+Active\+Star\+System} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classUniverse_a8202e678afb5a3328d037ef7a3f99375}{}\label{classUniverse_a8202e678afb5a3328d037ef7a3f99375}
+
+\item 
+void {\bfseries push\+Active\+Star\+System} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classUniverse_a8e4e96fccac1693f315e481950fe77a7}{}\label{classUniverse_a8e4e96fccac1693f315e481950fe77a7}
+
+\item 
+void {\bfseries pop\+Active\+Star\+System} ()\hypertarget{classUniverse_a67a104f1726422128948be5483aec594}{}\label{classUniverse_a67a104f1726422128948be5483aec594}
+
+\item 
+void {\bfseries clear\+All\+Systems} ()\hypertarget{classUniverse_ada85785d8b24da2ce203435a64db0f43}{}\label{classUniverse_ada85785d8b24da2ce203435a64db0f43}
+
+\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries get\+Active\+Star\+System} (unsigned int size)\hypertarget{classUniverse_ad8892472932657a68e23beed86695964}{}\label{classUniverse_ad8892472932657a68e23beed86695964}
+
+\item 
+unsigned int {\bfseries get\+Num\+Active\+Star\+System} ()\hypertarget{classUniverse_aded81b19908962ff3bc978ec2c862d58}{}\label{classUniverse_aded81b19908962ff3bc978ec2c862d58}
+
+\item 
+void {\bfseries Load\+Star\+System} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classUniverse_a5038965876c49b7cede00dd768288534}{}\label{classUniverse_a5038965876c49b7cede00dd768288534}
+
+\item 
+void {\bfseries Unload\+Star\+System} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classUniverse_a873fe95abca9d08d7144b63aaadb2525}{}\label{classUniverse_a873fe95abca9d08d7144b63aaadb2525}
+
+\item 
+void {\bfseries Generate1} (const char $\ast$file, const char $\ast$jumpback)\hypertarget{classUniverse_aa91ce92b135df925d12eaf44281f9d82}{}\label{classUniverse_aa91ce92b135df925d12eaf44281f9d82}
+
+\item 
+void {\bfseries Generate2} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classUniverse_a5d7679e79a0612a281312d9a486fb3e8}{}\label{classUniverse_a5d7679e79a0612a281312d9a486fb3e8}
+
+\item 
+virtual \hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries Generate\+Star\+System} (const char $\ast$file, const char $\ast$jumpback, Vector origin)\hypertarget{classUniverse_adbd2c8f430298e48e8d3ca38a169adb8}{}\label{classUniverse_adbd2c8f430298e48e8d3ca38a169adb8}
+
+\item 
+void \hyperlink{classUniverse_a921e57f524a0ded33269b24ae55513d9}{Load\+Faction\+X\+ML} (const char $\ast$factfile)\hypertarget{classUniverse_a921e57f524a0ded33269b24ae55513d9}{}\label{classUniverse_a921e57f524a0ded33269b24ae55513d9}
+
+\begin{DoxyCompactList}\small\item\em Loads and parses factions. \end{DoxyCompactList}\item 
+\hyperlink{classUniverse_a4d137a146dd3c2514dfb692dfbab6984}{Universe} ()\hypertarget{classUniverse_a4d137a146dd3c2514dfb692dfbab6984}{}\label{classUniverse_a4d137a146dd3c2514dfb692dfbab6984}
+
+\begin{DoxyCompactList}\small\item\em inits graphics with args \end{DoxyCompactList}\item 
+{\bfseries Universe} (int argc, char $\ast$$\ast$argv, const char $\ast$galaxy, bool server=false)\hypertarget{classUniverse_a914dfe559b052d0a4edc83b10103e3fb}{}\label{classUniverse_a914dfe559b052d0a4edc83b10103e3fb}
+
+\item 
+void {\bfseries Init} (const char $\ast$gal)\hypertarget{classUniverse_a6ef00141cfe3dfd3be9d69431fe4dbe4}{}\label{classUniverse_a6ef00141cfe3dfd3be9d69431fe4dbe4}
+
+\item 
+virtual class \hyperlink{classStarSystem}{Star\+System} $\ast$ \hyperlink{classUniverse_aa01b611ee2197aabf1282f5a3947c33e}{Init} (string systemfile, const Vector \&centroid=Vector(0, 0, 0), const string planetname=string())
+\begin{DoxyCompactList}\small\item\em Loads Defaults in Graphics Drivers. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classUniverse_a18722326f55b37627846cb7652b4dfff}{Start\+Draw} ()\hypertarget{classUniverse_a18722326f55b37627846cb7652b4dfff}{}\label{classUniverse_a18722326f55b37627846cb7652b4dfff}
+
+\begin{DoxyCompactList}\small\item\em Begins a scene. \end{DoxyCompactList}\item 
+void {\bfseries Update} ()\hypertarget{classUniverse_a8f7cd03a827a2223a02651142092df21}{}\label{classUniverse_a8f7cd03a827a2223a02651142092df21}
+
+\item 
+virtual void \hyperlink{classUniverse_a845e0faab4c7f02ede00f38226bd0212}{Loop} (void f())\hypertarget{classUniverse_a845e0faab4c7f02ede00f38226bd0212}{}\label{classUniverse_a845e0faab4c7f02ede00f38226bd0212}
+
+\begin{DoxyCompactList}\small\item\em Runs the main loop. \end{DoxyCompactList}\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ \hyperlink{classUniverse_ab8fbc57c0ea2c21172e5e21945884a0a}{active\+Star\+System} ()\hypertarget{classUniverse_ab8fbc57c0ea2c21172e5e21945884a0a}{}\label{classUniverse_ab8fbc57c0ea2c21172e5e21945884a0a}
+
+\begin{DoxyCompactList}\small\item\em returns active star system \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classUniverse_a7ee0f80ac31698ac9bf4fba5dbff0367}{num\+Players} ()
+\begin{DoxyCompactList}\small\item\em Wrapper function for Star System. \end{DoxyCompactList}\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ \hyperlink{classUniverse_a0c93df0a193723c26f031fa81cde3b2a}{get\+Star\+System} (string name)
+\begin{DoxyCompactList}\small\item\em Wrapper function for Star System. \end{DoxyCompactList}\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries script\+Star\+System} ()\hypertarget{classUniverse_a84035c7dea1ab15166409a7b22309569}{}\label{classUniverse_a84035c7dea1ab15166409a7b22309569}
+
+\item 
+bool {\bfseries set\+Script\+System} (string name)\hypertarget{classUniverse_aae67414b77c1eb36436bde7ab7000611}{}\label{classUniverse_aae67414b77c1eb36436bde7ab7000611}
+
+\item 
+int {\bfseries Star\+System\+Index} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classUniverse_a3697067a136d214e18c07b763cac1803}{}\label{classUniverse_a3697067a136d214e18c07b763cac1803}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStarDate}{Star\+Date} {\bfseries current\+\_\+stardate}\hypertarget{classUniverse_a962416d6d4fa7914e30ab83c2102cfcb}{}\label{classUniverse_a962416d6d4fa7914e30ab83c2102cfcb}
+
+\item 
+std\+::vector$<$ \hyperlink{classStarSystem}{Star\+System} $\ast$ $>$ {\bfseries star\+\_\+system}\hypertarget{classUniverse_a3bf1db67c11954196e1fa392d5f87ebc}{}\label{classUniverse_a3bf1db67c11954196e1fa392d5f87ebc}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classGalaxyXML_1_1Galaxy}{Galaxy\+X\+M\+L\+::\+Galaxy} $>$ {\bfseries galaxy}\hypertarget{classUniverse_a15048b2dc57f7a25e7aeca48b5b2c18d}{}\label{classUniverse_a15048b2dc57f7a25e7aeca48b5b2c18d}
+
+\item 
+unsigned int \hyperlink{classUniverse_a6b4f838f379761dc5c494f795164ba21}{current\+\_\+cockpit}\hypertarget{classUniverse_a6b4f838f379761dc5c494f795164ba21}{}\label{classUniverse_a6b4f838f379761dc5c494f795164ba21}
+
+\begin{DoxyCompactList}\small\item\em The users cockpit. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classCockpit}{Cockpit} $\ast$ $>$ {\bfseries cockpit}\hypertarget{classUniverse_acb7b62c66dd501b7e1ac70b445e4efc0}{}\label{classUniverse_acb7b62c66dd501b7e1ac70b445e4efc0}
+
+\item 
+std\+::vector$<$ \hyperlink{classStarSystem}{Star\+System} $\ast$ $>$ \hyperlink{classUniverse_a892535cda03f92e53397feaab2379042}{active\+\_\+star\+\_\+system}
+\begin{DoxyCompactList}\small\item\em a generic camera facing the H\+UD \end{DoxyCompactList}\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries script\+\_\+system}\hypertarget{classUniverse_aac2186caf9dcd498ded16d733fc00ff1}{}\label{classUniverse_aac2186caf9dcd498ded16d733fc00ff1}
+
+\item 
+bool {\bfseries is\+\_\+server}\hypertarget{classUniverse_a7b6a8cd4073f04e8c9d220b3746a5a89}{}\label{classUniverse_a7b6a8cd4073f04e8c9d220b3746a5a89}
+
+\item 
+bool {\bfseries network\+\_\+lock}\hypertarget{classUniverse_a3911b7790b01be15cda0b88ff25d08e0}{}\label{classUniverse_a3911b7790b01be15cda0b88ff25d08e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classUniverse_abd70d3fa6043bc857bf6bc4d82805737}{Faction}\hypertarget{classUniverse_abd70d3fa6043bc857bf6bc4d82805737}{}\label{classUniverse_abd70d3fa6043bc857bf6bc4d82805737}
+
+\begin{DoxyCompactList}\small\item\em Many C++ implementations count classes within as friends. (not all) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Universe@{Universe}!get\+Star\+System@{get\+Star\+System}}
+\index{get\+Star\+System@{get\+Star\+System}!Universe@{Universe}}
+\subsubsection[{\texorpdfstring{get\+Star\+System(string name)}{getStarSystem(string name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Star\+System} $\ast$ Universe\+::get\+Star\+System (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classUniverse_a0c93df0a193723c26f031fa81cde3b2a}{}\label{classUniverse_a0c93df0a193723c26f031fa81cde3b2a}
+
+
+Wrapper function for Star System. 
+
+Wrapper function for star system Returns the current hud cam Wrapper function for star system 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dce/classUniverse_a0c93df0a193723c26f031fa81cde3b2a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Universe@{Universe}!Init@{Init}}
+\index{Init@{Init}!Universe@{Universe}}
+\subsubsection[{\texorpdfstring{Init(string systemfile, const Vector \&centroid=\+Vector(0, 0, 0), const string planetname=string())}{Init(string systemfile, const Vector &centroid=Vector(0, 0, 0), const string planetname=string())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Star\+System} $\ast$ Universe\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{string}]{systemfile, }
+\item[{const Vector \&}]{centroid = {\ttfamily Vector(~0,~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~0,~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~0~)}, }
+\item[{const string}]{planetname = {\ttfamily string()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classUniverse_aa01b611ee2197aabf1282f5a3947c33e}{}\label{classUniverse_aa01b611ee2197aabf1282f5a3947c33e}
+
+
+Loads Defaults in Graphics Drivers. 
+
+Should load the \hyperlink{classUniverse}{Universe} data file. Now just inits system with test.\+xml 
+
+Reimplemented in \hyperlink{classGameUniverse_a498907a74126272d0339303cb8ff31ed}{Game\+Universe}.
+
+\index{Universe@{Universe}!num\+Players@{num\+Players}}
+\index{num\+Players@{num\+Players}!Universe@{Universe}}
+\subsubsection[{\texorpdfstring{num\+Players()}{numPlayers()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Universe\+::num\+Players (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classUniverse_a7ee0f80ac31698ac9bf4fba5dbff0367}{}\label{classUniverse_a7ee0f80ac31698ac9bf4fba5dbff0367}
+
+
+Wrapper function for Star System. 
+
+Accessor to cockpit 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dce/classUniverse_a7ee0f80ac31698ac9bf4fba5dbff0367_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Universe@{Universe}!active\+\_\+star\+\_\+system@{active\+\_\+star\+\_\+system}}
+\index{active\+\_\+star\+\_\+system@{active\+\_\+star\+\_\+system}!Universe@{Universe}}
+\subsubsection[{\texorpdfstring{active\+\_\+star\+\_\+system}{active_star_system}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Star\+System}$\ast$ $>$ Universe\+::active\+\_\+star\+\_\+system\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classUniverse_a892535cda03f92e53397feaab2379042}{}\label{classUniverse_a892535cda03f92e53397feaab2379042}
+
+
+a generic camera facing the H\+UD 
+
+init proc currently only 1 star system is stored 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+universe\+\_\+generic.\+h\item 
+galaxy.\+cpp\item 
+universe\+\_\+generic.\+cpp\end{DoxyCompactItemize}

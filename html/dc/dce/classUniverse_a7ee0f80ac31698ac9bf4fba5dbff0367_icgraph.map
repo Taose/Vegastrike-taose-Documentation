@@ -1,0 +1,27 @@
+<map id="Universe::numPlayers" name="Universe::numPlayers">
+<area shape="rect" id="node2" href="$d2/dc8/classCommunicatingAI.html#ac1ba228f69815ab82e08c7277919a2ed" title="The virutal function that unrefs all memory then calls Destruct () which takes care of unreffing this..." alt="" coords="204,5,384,32"/>
+<area shape="rect" id="node3" href="$d2/d2f/classMusic.html#a61581ffcb7a7ef4a822a2e92429942ae" title="Music::Music" alt="" coords="244,80,344,107"/>
+<area shape="rect" id="node4" href="$df/dd9/classUnit.html#a68211f28b547231db2e2cf8de2be323d" title="Unit::getSubUnits" alt="" coords="231,407,357,433"/>
+<area shape="rect" id="node10" href="$da/dea/classStarSystem.html#a761562b9400fa14e0442557eb5d6e64e" title="update a simulation atom ExecuteDirector must be false if star system is just loaded before mission i..." alt="" coords="695,185,837,212"/>
+<area shape="rect" id="node20" href="$d9/dba/classCockpit.html#a4315ca8cdf10b2a20a8768b35bf963f3" title="Destructs cockpit info for new loading. " alt="" coords="470,668,583,695"/>
+<area shape="rect" id="node21" href="$dd/d50/classGameCockpit.html#ac6830c42b8dab613f34a7415fd936811" title="Loads cockpit info...just as constructor. " alt="" coords="944,668,1072,695"/>
+<area shape="rect" id="node23" href="$dd/d50/classGameCockpit.html#a558479694454a63b1ec53f2df316e1ae" title="Draws Cockpit then restores viewport. " alt="" coords="937,744,1079,771"/>
+<area shape="rect" id="node5" href="$d8/d4d/classOrders_1_1TurretAI.html#aa919eb810238b31331c1b22d32c0d0a7" title="The function that gets called and executes all queued suborders. " alt="" coords="441,567,613,593"/>
+<area shape="rect" id="node6" href="$df/dd9/classUnit.html#a01d9c8985fdb16b02765a7374c5e8201" title="Unit::Unit" alt="" coords="487,181,566,208"/>
+<area shape="rect" id="node7" href="$df/dd9/classUnit.html#a255f7adad1ce1ad8a29799e278e66cad" title="Unit::FireEngines" alt="" coords="465,232,588,259"/>
+<area shape="rect" id="node8" href="$df/dd9/classUnit.html#af7dc49d6e2d3d0e91ea042c5ee0543b8" title="Unit::ProcessDeleteQueue" alt="" coords="437,283,616,309"/>
+<area shape="rect" id="node16" href="$d2/d68/classMount.html#ac0ea3cddae54a2528e451a0e2ff9d2a7" title="Sets this gun to inactive, unless unchosen or destroyed. " alt="" coords="467,465,587,492"/>
+<area shape="rect" id="node17" href="$df/dd9/classUnit.html#aec19392b9fba96570b5e8fe8918bcfb4" title="Unit::UpgradeSubUnitsWith\lFactory" alt="" coords="435,399,619,441"/>
+<area shape="rect" id="node19" href="$df/dd9/classUnit.html#a0a0dbb25c02ab3e89fe8f0c818a26513" title="Unit::GetManifest" alt="" coords="464,516,589,543"/>
+<area shape="rect" id="node24" href="$da/dea/classStarSystem.html#a13fddd8b91153dd5d32e23f428f91e6b" title="The Light Map corresponding for the BP for spheremapping. " alt="" coords="432,334,621,375"/>
+<area shape="rect" id="node9" href="$da/dea/classStarSystem.html#a4c1430d5d251a5cd8d51e1818e819309" title="Requeues the unit so that it is simulated ASAP. " alt="" coords="911,261,1105,288"/>
+<area shape="rect" id="node11" href="$d9/dba/classCockpit.html#a77661eaba99c97a4bcb0192adaee01be" title="Draws Cockpit then restores viewport. " alt="" coords="955,109,1061,136"/>
+<area shape="rect" id="node14" href="$dc/dce/classUniverse.html#a0c93df0a193723c26f031fa81cde3b2a" title="Wrapper function for Star System. " alt="" coords="923,160,1093,187"/>
+<area shape="rect" id="node15" href="$dc/dce/classUniverse.html#a18722326f55b37627846cb7652b4dfff" title="Begins a scene. " alt="" coords="937,211,1079,237"/>
+<area shape="rect" id="node12" href="$d5/d38/classGameStarSystem.html#a22a64a77861767b3503b7c6b5ab0b786" title="GameStarSystem::Draw" alt="" coords="1153,109,1319,136"/>
+<area shape="rect" id="node13" href="$d5/d38/classGameStarSystem.html#a08724f59ce670c81fd5c43aef06401c1" title="activates the light map texture " alt="" coords="1367,109,1565,136"/>
+<area shape="rect" id="node18" href="$df/dd9/classUnit.html#a0856ef106b785e733a077f3be09376da" title="Unit::UpgradeMounts" alt="" coords="693,429,839,456"/>
+<area shape="rect" id="node22" href="$d9/dba/classCockpit.html#a4203dc3421c88348938455a73b3726bd" title="Loads cockpit info...just as constructor. " alt="" coords="719,719,813,745"/>
+<area shape="rect" id="node25" href="$d5/d38/classGameStarSystem.html#adc47d08069caab62564ed07668457d5d" title="GameStarSystem::GameStar\lSystem" alt="" coords="669,363,863,405"/>
+<area shape="rect" id="node26" href="$da/dea/classStarSystem.html#a0bc8d41a7815ffaa5ba60fd70cfb9f71" title="StarSystem::StarSystem" alt="" coords="682,312,850,339"/>
+</map>

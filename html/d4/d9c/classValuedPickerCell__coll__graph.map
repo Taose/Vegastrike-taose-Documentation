@@ -1,0 +1,7 @@
+<map id="ValuedPickerCell&lt; T &gt;" name="ValuedPickerCell&lt; T &gt;">
+<area shape="rect" id="node2" href="$d5/d54/classSimplePickerCell.html" title="{SimplePickerCell\n|# m_tag\l|+ text()\l+ id()\l+ textColor()\l+ children()\l+ tag()\l+ setTextColor()\l+ addChild()\l+ createEmptyChildList()\l+ SimplePickerCell()\l+ ~SimplePickerCell()\l+ operator=()\l+ SimplePickerCell()\l}" alt="" coords="161,477,328,716"/>
+<area shape="rect" id="node3" href="$d7/d82/classPickerCell.html" title="{PickerCell\n|# m_hideChildren\l|+ ~PickerCell()\l+ text()\l+ id()\l+ textColor()\l+ children()\l+ tag()\l+ hideChildren()\l+ setHideChildren()\l+ PickerCell()\l}" alt="" coords="5,205,140,400"/>
+<area shape="rect" id="node5" href="$db/deb/classSimplePickerCells.html" title="{SimplePickerCells\n|# m_cells\l|+ count()\l+ cellAt()\l+ cellAt()\l+ addCell()\l+ clear()\l+ SimplePickerCells()\l+ ~SimplePickerCells()\l}" alt="" coords="243,220,401,385"/>
+<area shape="rect" id="node6" href="$dd/d98/classPickerCells.html" title="{PickerCells\n||+ ~PickerCells()\l+ count()\l+ cellAt()\l+ cellAt()\l+ cellWithId()\l+ saveOpenCategories()\l}" alt="" coords="240,5,404,156"/>
+<area shape="rect" id="node7" href="$d2/d7d/structGFXColor.html" title="{GFXColor\n|+ r\l+ g\l+ b\l+ a\l|+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ netswap()\l+ clamp()\l}" alt="" coords="425,205,525,400"/>
+</map>

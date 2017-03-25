@@ -1,0 +1,94 @@
+\hypertarget{classTriangle}{}\section{Triangle Class Reference}
+\label{classTriangle}\index{Triangle@{Triangle}}
+
+
+Collaboration diagram for Triangle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{da/d98/classTriangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classTriangle_ac80e3c2a3d219c8aa81d99af89cae0f9}{Triangle} ()\hypertarget{classTriangle_ac80e3c2a3d219c8aa81d99af89cae0f9}{}\label{classTriangle_ac80e3c2a3d219c8aa81d99af89cae0f9}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classTriangle_a1acf1a7a9de668ddf66fc1661ad8cd14}{Triangle} (const \hyperlink{classPoint}{Point} \&p0, const \hyperlink{classPoint}{Point} \&p1, const \hyperlink{classPoint}{Point} \&p2)\hypertarget{classTriangle_a1acf1a7a9de668ddf66fc1661ad8cd14}{}\label{classTriangle_a1acf1a7a9de668ddf66fc1661ad8cd14}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classTriangle_a6b07d7c9cfafa6a3422e4f55dd9e28dc}{Triangle} (const \hyperlink{classTriangle}{Triangle} \&triangle)\hypertarget{classTriangle_a6b07d7c9cfafa6a3422e4f55dd9e28dc}{}\label{classTriangle_a6b07d7c9cfafa6a3422e4f55dd9e28dc}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classTriangle_ab6a7b5183019a7282955c0c57f1ea98e}{$\sim$\+Triangle} ()\hypertarget{classTriangle_ab6a7b5183019a7282955c0c57f1ea98e}{}\label{classTriangle_ab6a7b5183019a7282955c0c57f1ea98e}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void {\bfseries Flip} ()\hypertarget{classTriangle_a474ba7649c0a8fb7013892e7205911c9}{}\label{classTriangle_a474ba7649c0a8fb7013892e7205911c9}
+
+\item 
+float {\bfseries Area} () const \hypertarget{classTriangle_ad3885c40e78c33327a622351dbb07ed7}{}\label{classTriangle_ad3885c40e78c33327a622351dbb07ed7}
+
+\item 
+float {\bfseries Perimeter} () const \hypertarget{classTriangle_a599d3355adcfa507458f8c59127162e7}{}\label{classTriangle_a599d3355adcfa507458f8c59127162e7}
+
+\item 
+float {\bfseries Compacity} () const \hypertarget{classTriangle_af797cac6e93b15df3ff798e66caaeca1}{}\label{classTriangle_af797cac6e93b15df3ff798e66caaeca1}
+
+\item 
+void {\bfseries Normal} (\hyperlink{classPoint}{Point} \&normal) const \hypertarget{classTriangle_a5a58c9b3d52e65ba3c6bc45a01daa006}{}\label{classTriangle_a5a58c9b3d52e65ba3c6bc45a01daa006}
+
+\item 
+void {\bfseries Denormalized\+Normal} (\hyperlink{classPoint}{Point} \&normal) const \hypertarget{classTriangle_ab3f35b42fe3eda2a5cb24ecb9352327a}{}\label{classTriangle_ab3f35b42fe3eda2a5cb24ecb9352327a}
+
+\item 
+void {\bfseries Center} (\hyperlink{classPoint}{Point} \&center) const \hypertarget{classTriangle_ab12266ad0b45dfcdb90f73864324c610}{}\label{classTriangle_ab12266ad0b45dfcdb90f73864324c610}
+
+\item 
+inline\+\_\+ \hyperlink{classPlane}{Plane} {\bfseries Plane\+Equation} () const \hypertarget{classTriangle_a5fd363cf7a18893fd8e9a9725a51b6bf}{}\label{classTriangle_a5fd363cf7a18893fd8e9a9725a51b6bf}
+
+\item 
+\hyperlink{IceTriangle_8h_a996b8c795aeae8a7613008c9300751ea}{Part\+Val} {\bfseries Test\+Against\+Plane} (const \hyperlink{classPlane}{Plane} \&plane, float epsilon) const \hypertarget{classTriangle_a576c2439b17d2df127a309d455da88c2}{}\label{classTriangle_a576c2439b17d2df127a309d455da88c2}
+
+\item 
+void {\bfseries Compute\+Moment} (Moment \&m)\hypertarget{classTriangle_a0ff6ad4b924743fad9d16b7b29847d75}{}\label{classTriangle_a0ff6ad4b924743fad9d16b7b29847d75}
+
+\item 
+float {\bfseries Min\+Edge\+Length} () const \hypertarget{classTriangle_a013363d89cadfbaa44584c2d4514283a}{}\label{classTriangle_a013363d89cadfbaa44584c2d4514283a}
+
+\item 
+float {\bfseries Max\+Edge\+Length} () const \hypertarget{classTriangle_a7a67fed5c72f72dff4153d53cca3bf17}{}\label{classTriangle_a7a67fed5c72f72dff4153d53cca3bf17}
+
+\item 
+void {\bfseries Compute\+Point} (float u, float v, \hyperlink{classPoint}{Point} \&pt, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$nearvtx=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const \hypertarget{classTriangle_ab7e8470714c153103ad1c1d72841e0cf}{}\label{classTriangle_ab7e8470714c153103ad1c1d72841e0cf}
+
+\item 
+void {\bfseries Inflate} (float fat\+\_\+coeff, bool constant\+\_\+border)\hypertarget{classTriangle_a707f856524937c61b1ada90faf19685c}{}\label{classTriangle_a707f856524937c61b1ada90faf19685c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classTriangle_a08015a93222f99844caad6aa1bacc990}{m\+Verts} \mbox{[}3\mbox{]}\hypertarget{classTriangle_a08015a93222f99844caad6aa1bacc990}{}\label{classTriangle_a08015a93222f99844caad6aa1bacc990}
+
+\begin{DoxyCompactList}\small\item\em Vertices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains an indexed triangle class.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08.\+15.\+98 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IceTriangle_8h}{Ice\+Triangle.\+h}\end{DoxyCompactItemize}

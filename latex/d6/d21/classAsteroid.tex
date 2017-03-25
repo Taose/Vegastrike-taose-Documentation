@@ -1,0 +1,93 @@
+\hypertarget{classAsteroid}{}\section{Asteroid Class Reference}
+\label{classAsteroid}\index{Asteroid@{Asteroid}}
+
+
+Inheritance diagram for Asteroid\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/dc6/classAsteroid__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroid\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d5b/classAsteroid__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Init} (float difficulty)\hypertarget{classAsteroid_af73bfdbf8f0b85636055dbea060df60a}{}\label{classAsteroid_af73bfdbf8f0b85636055dbea060df60a}
+
+\item 
+virtual enum clsptr {\bfseries is\+Unit} () const \hypertarget{classAsteroid_a970f126a40dd6eace4ee107a3efd2ab3}{}\label{classAsteroid_a970f126a40dd6eace4ee107a3efd2ab3}
+
+\item 
+virtual void {\bfseries react\+To\+Collision} (\hyperlink{classUnit}{Unit} $\ast$smaller, const Q\+Vector \&biglocation, const Vector \&bignormal, const Q\+Vector \&smalllocation, const Vector \&smallnormal, float dist)\hypertarget{classAsteroid_a7c1faad0b6b4e49f61cfab75fee7b641}{}\label{classAsteroid_a7c1faad0b6b4e49f61cfab75fee7b641}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroid_affc6fbe47011026956bc189608260c5f}{Asteroid} (const char $\ast$filename, int faction, \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL, int fg\+\_\+snumber=0, float difficulty=.\+01)
+\item 
+{\bfseries Asteroid} (std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$ m, bool b, int i)\hypertarget{classAsteroid_a2f62621ae5bf8895801b50ff4426b8c9}{}\label{classAsteroid_a2f62621ae5bf8895801b50ff4426b8c9}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classAsteroid_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classAsteroid_a187c66d2d867f6265d3b0c99ffc34838}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\subsubsection[{\texorpdfstring{Asteroid(const char $\ast$filename, int faction, Flightgroup $\ast$fg=\+N\+U\+L\+L, int fg\+\_\+snumber=0, float difficulty=.\+01)}{Asteroid(const char *filename, int faction, Flightgroup *fg=NULL, int fg_snumber=0, float difficulty=.01)}}]{\setlength{\rightskip}{0pt plus 5cm}Asteroid\+::\+Asteroid (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{int}]{faction, }
+\item[{{\bf Flightgroup} $\ast$}]{fg = {\ttfamily NULL}, }
+\item[{int}]{fg\+\_\+snumber = {\ttfamily 0}, }
+\item[{float}]{difficulty = {\ttfamily .01}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAsteroid_affc6fbe47011026956bc189608260c5f}{}\label{classAsteroid_affc6fbe47011026956bc189608260c5f}
+Constructor that can only be called by the \hyperlink{classUnitFactory}{Unit\+Factory}. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{d6/d21/classAsteroid_affc6fbe47011026956bc189608260c5f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{d6/d21/classAsteroid_affc6fbe47011026956bc189608260c5f_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/asteroid\+\_\+generic.\+h\item 
+cmd/asteroid\+\_\+generic.\+cpp\end{DoxyCompactItemize}

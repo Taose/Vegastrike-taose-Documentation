@@ -1,0 +1,61 @@
+\hypertarget{structServerSocket}{}\section{Server\+Socket Struct Reference}
+\label{structServerSocket}\index{Server\+Socket@{Server\+Socket}}
+
+
+Inheritance diagram for Server\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{d2/df2/structServerSocket__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Server\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/dc3/structServerSocket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Server\+Socket} (int fd, const \hyperlink{structAddressIP}{Address\+IP} \&adr, const char $\ast$socktype, \hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{structServerSocket_af81b4e970ec07b01f9d36d9fe8bc03c5}{}\label{structServerSocket_af81b4e970ec07b01f9d36d9fe8bc03c5}
+
+\item 
+const \hyperlink{structAddressIP}{Address\+IP} \& {\bfseries get\+\_\+adr} () const \hypertarget{structServerSocket_ab18fc2c173c16b5d341fdb0900016d70}{}\label{structServerSocket_ab18fc2c173c16b5d341fdb0900016d70}
+
+\item 
+virtual \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} {\bfseries accept\+New\+Conn} ()=0\hypertarget{structServerSocket_ae819dec5f90e03ab6cc6e84bdd68cce0}{}\label{structServerSocket_ae819dec5f90e03ab6cc6e84bdd68cce0}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries child\+\_\+disconnect} (const char $\ast$s)\hypertarget{structServerSocket_a585d1969960865eeb05ca5a31ee87bff}{}\label{structServerSocket_a585d1969960865eeb05ca5a31ee87bff}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structAddressIP}{Address\+IP} {\bfseries \+\_\+srv\+\_\+ip}\hypertarget{structServerSocket_abb9c45fa346f8a87f79d3c7b18ac5599}{}\label{structServerSocket_abb9c45fa346f8a87f79d3c7b18ac5599}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&ostr, const \hyperlink{structServerSocket}{Server\+Socket} \&s)\hypertarget{structServerSocket_a82b780a676c74f3eda5911bc55c3e8b9}{}\label{structServerSocket_a82b780a676c74f3eda5911bc55c3e8b9}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{structServerSocket}{Server\+Socket} \&l, const \hyperlink{structServerSocket}{Server\+Socket} \&r)\hypertarget{structServerSocket_a63b49a6e4337ef9bf0bda5adf018b0c9}{}\label{structServerSocket_a63b49a6e4337ef9bf0bda5adf018b0c9}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+serversocket.\+h\item 
+networking/lowlevel/vsnet\+\_\+serversocket.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,148 @@
+\hypertarget{classWindow}{}\section{Window Class Reference}
+\label{classWindow}\index{Window@{Window}}
+
+
+Inheritance diagram for Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d7b/classWindow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d01/classWindow__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries set\+Rect} (const \hyperlink{classRect}{Rect} \&r)\hypertarget{classWindow_a2296d6c162216d437c1f9b2107dfa9b7}{}\label{classWindow_a2296d6c162216d437c1f9b2107dfa9b7}
+
+\item 
+void {\bfseries set\+Full\+Screen} (void)\hypertarget{classWindow_ad8521c34a5c325ac991c59a5a66d25a5}{}\label{classWindow_ad8521c34a5c325ac991c59a5a66d25a5}
+
+\item 
+void {\bfseries set\+Size\+And\+Center} (const \hyperlink{structSize}{Size} \&size)\hypertarget{classWindow_a736211035eb0323d070ccee5d5e74e6a}{}\label{classWindow_a736211035eb0323d070ccee5d5e74e6a}
+
+\item 
+virtual void {\bfseries open} (void)\hypertarget{classWindow_a121af073df9703a6d39a77bb8e57c6ab}{}\label{classWindow_a121af073df9703a6d39a77bb8e57c6ab}
+
+\item 
+virtual void {\bfseries close} (void)\hypertarget{classWindow_af939ce62f5fd60c6ec88d5151fc881c6}{}\label{classWindow_af939ce62f5fd60c6ec88d5151fc881c6}
+
+\item 
+virtual void {\bfseries add\+Control} (\hyperlink{classControl}{Control} $\ast$c)\hypertarget{classWindow_a82c47ffbdec3191e58a0d9374d2f4449}{}\label{classWindow_a82c47ffbdec3191e58a0d9374d2f4449}
+
+\item 
+virtual void {\bfseries delete\+Control} (\hyperlink{classControl}{Control} $\ast$c)\hypertarget{classWindow_ac5ac0113bd19eaadc65542ade8b18695}{}\label{classWindow_ac5ac0113bd19eaadc65542ade8b18695}
+
+\item 
+virtual \hyperlink{classControl}{Control} $\ast$ {\bfseries remove\+Control\+From\+Window} (\hyperlink{classControl}{Control} $\ast$c)\hypertarget{classWindow_a5ec9715d6c17c521cda596e2161511fa}{}\label{classWindow_a5ec9715d6c17c521cda596e2161511fa}
+
+\item 
+virtual \hyperlink{classControl}{Control} $\ast$ {\bfseries find\+Control\+By\+Id} (const std\+::string \&id)\hypertarget{classWindow_ae67eb184d336bce04f436e290a807cfb}{}\label{classWindow_ae67eb184d336bce04f436e290a807cfb}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries color} (void)\hypertarget{classWindow_a1571bd06885c887970e3ee2fa85302f4}{}\label{classWindow_a1571bd06885c887970e3ee2fa85302f4}
+
+\item 
+virtual void {\bfseries set\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classWindow_a0520e842ee3ce6a4ce229dd31174e86f}{}\label{classWindow_a0520e842ee3ce6a4ce229dd31174e86f}
+
+\item 
+virtual \hyperlink{classGuiTexture}{Gui\+Texture} \& {\bfseries texture} (void)\hypertarget{classWindow_aa9dc5ea12955fc69573c77b26ca3eba6}{}\label{classWindow_aa9dc5ea12955fc69573c77b26ca3eba6}
+
+\item 
+virtual void {\bfseries set\+Texture} (const std\+::string \&texture\+Name)\hypertarget{classWindow_ad15ee7f28a016bf7ca9308b24074d67c}{}\label{classWindow_ad15ee7f28a016bf7ca9308b24074d67c}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries outline\+Color} (void)\hypertarget{classWindow_a49e41d103ef6fc4996695ef9334f4451}{}\label{classWindow_a49e41d103ef6fc4996695ef9334f4451}
+
+\item 
+virtual void {\bfseries set\+Outline\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classWindow_a2aa7606ea6786729008d5f174dddca30}{}\label{classWindow_a2aa7606ea6786729008d5f174dddca30}
+
+\item 
+virtual float {\bfseries outline\+Width} (void)\hypertarget{classWindow_aa15a8506563ef4635bdb114c03d8874b}{}\label{classWindow_aa15a8506563ef4635bdb114c03d8874b}
+
+\item 
+virtual void {\bfseries set\+Outline\+Width} (float width)\hypertarget{classWindow_addd323d1f9396814300fcd1fc7f6be34}{}\label{classWindow_addd323d1f9396814300fcd1fc7f6be34}
+
+\item 
+virtual \hyperlink{classWindowController}{Window\+Controller} $\ast$ {\bfseries controller} (void)\hypertarget{classWindow_ae1a9b0151d09024d5694b2489407e5b9}{}\label{classWindow_ae1a9b0151d09024d5694b2489407e5b9}
+
+\item 
+virtual void {\bfseries set\+Controller} (\hyperlink{classWindowController}{Window\+Controller} $\ast$controller)\hypertarget{classWindow_ab8a9f51a08e55c063bbe1ba640c04188}{}\label{classWindow_ab8a9f51a08e55c063bbe1ba640c04188}
+
+\item 
+virtual void {\bfseries draw} (void)\hypertarget{classWindow_a9e00af8f33ece8170bdd0b7c655dea9b}{}\label{classWindow_a9e00af8f33ece8170bdd0b7c655dea9b}
+
+\item 
+virtual void {\bfseries read\+From\+Xml} (const std\+::string \&file\+Name)\hypertarget{classWindow_adbc53cf0f013bf8d7158ef605bb20976}{}\label{classWindow_adbc53cf0f013bf8d7158ef605bb20976}
+
+\item 
+virtual bool {\bfseries delete\+On\+Close} (void)\hypertarget{classWindow_a55ec58e91ed784ad69512eee450a22ce}{}\label{classWindow_a55ec58e91ed784ad69512eee450a22ce}
+
+\item 
+virtual void {\bfseries set\+Delete\+On\+Close} (bool del)\hypertarget{classWindow_a686a987325b86f639a7429da23f8eb0b}{}\label{classWindow_a686a987325b86f639a7429da23f8eb0b}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Down} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classWindow_ade55e114bbc03c5eb6dddbb94151531a}{}\label{classWindow_ade55e114bbc03c5eb6dddbb94151531a}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Up} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classWindow_a4485f7f6555a9950ccc5d44389ce24a4}{}\label{classWindow_a4485f7f6555a9950ccc5d44389ce24a4}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Move} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classWindow_adba3665cc5e970b86c1999f07bc9bf17}{}\label{classWindow_adba3665cc5e970b86c1999f07bc9bf17}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Drag} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classWindow_a988ee9af09606de20b7c4560a343bb75}{}\label{classWindow_a988ee9af09606de20b7c4560a343bb75}
+
+\item 
+virtual bool {\bfseries process\+Command} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classWindow_a2e57308a931e1847c2999caf7ac1af57}{}\label{classWindow_a2e57308a931e1847c2999caf7ac1af57}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries draw\+Background} (void)\hypertarget{classWindow_aabb141ca3cab6d196253002e2fbe0a0c}{}\label{classWindow_aabb141ca3cab6d196253002e2fbe0a0c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRect}{Rect} {\bfseries m\+\_\+rect}\hypertarget{classWindow_a50e4c8426e965d0d806aae7fbfacee9b}{}\label{classWindow_a50e4c8426e965d0d806aae7fbfacee9b}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+color}\hypertarget{classWindow_ad74cae96a8db44e8c6a4e355f6c01f8b}{}\label{classWindow_ad74cae96a8db44e8c6a4e355f6c01f8b}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+outline\+Color}\hypertarget{classWindow_a8e3c6f1b05a77852a4f4353ba4fa1ce9}{}\label{classWindow_a8e3c6f1b05a77852a4f4353ba4fa1ce9}
+
+\item 
+float {\bfseries m\+\_\+outline\+Width}\hypertarget{classWindow_a1c9b9dbb2e6a9a4e8ab011bf97c90bae}{}\label{classWindow_a1c9b9dbb2e6a9a4e8ab011bf97c90bae}
+
+\item 
+\hyperlink{classGuiTexture}{Gui\+Texture} {\bfseries m\+\_\+texture}\hypertarget{classWindow_ad5aa2c246ab9bc160c5635e34d2affa7}{}\label{classWindow_ad5aa2c246ab9bc160c5635e34d2affa7}
+
+\item 
+bool {\bfseries m\+\_\+delete\+On\+Close}\hypertarget{classWindow_aa82791781cbc0f0e8fd091a0f89eefcb}{}\label{classWindow_aa82791781cbc0f0e8fd091a0f89eefcb}
+
+\item 
+\hyperlink{classGroupControl}{Group\+Control} $\ast$ {\bfseries m\+\_\+controls}\hypertarget{classWindow_afd4ae06daa1e160e80e8db2583a6f44c}{}\label{classWindow_afd4ae06daa1e160e80e8db2583a6f44c}
+
+\item 
+\hyperlink{classWindowController}{Window\+Controller} $\ast$ {\bfseries m\+\_\+controller}\hypertarget{classWindow_a67642ee5ff6fa3b594ea4a5d20182734}{}\label{classWindow_a67642ee5ff6fa3b594ea4a5d20182734}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/window.\+h\item 
+gui/window.\+cpp\end{DoxyCompactItemize}

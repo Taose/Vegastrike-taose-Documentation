@@ -1,0 +1,53 @@
+\hypertarget{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo}{}\section{Audio\+:\+:\+\_\+\+\_\+impl\+:\+:Template\+Manager\+Data\+:\+:Definition\+File\+Info Struct Reference}
+\label{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo}\index{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info@{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info}}
+
+
+Collaboration diagram for Audio\+:\+:\+\_\+\+\_\+impl\+:\+:Template\+Manager\+Data\+:\+:Definition\+File\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{d8/d7a/structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries compute\+Expiration\+Time} ()  throw ()\hypertarget{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a120a1ca75b1fdc0682c496f8ca17dc86}{}\label{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a120a1ca75b1fdc0682c496f8ca17dc86}
+
+\item 
+void {\bfseries load} (const string \&path)  throw (\+Exception)\hypertarget{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a2fab7dc3b2c48fb1685fb3ab2422d925}{}\label{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a2fab7dc3b2c48fb1685fb3ab2422d925}
+
+\item 
+void {\bfseries touch} () const   throw ()\hypertarget{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_af9fbfbad9b7164b548094772682a83d4}{}\label{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_af9fbfbad9b7164b548094772682a83d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Shared\+Ptr$<$ \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document} $>$ \hyperlink{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a63d30a8c972c159479ba7cffafd0dd64}{parsed}
+\item 
+Timestamp \hyperlink{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a160cef86b17ce9ef5c5fd5ead1f44f23}{last\+Usage\+Time}
+\item 
+Duration \hyperlink{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a3cb6d5f3b2087b25e198aa07f23b05dc}{expiration\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info@{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info}!expiration\+Time@{expiration\+Time}}
+\index{expiration\+Time@{expiration\+Time}!Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info@{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info}}
+\subsubsection[{\texorpdfstring{expiration\+Time}{expirationTime}}]{\setlength{\rightskip}{0pt plus 5cm}Duration Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info\+::expiration\+Time}\hypertarget{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a3cb6d5f3b2087b25e198aa07f23b05dc}{}\label{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a3cb6d5f3b2087b25e198aa07f23b05dc}
+Time since last usage that must pass before the entry is purged. \begin{DoxyNote}{Note}
+0 means keep forever. -\/1 means auto (calculate based on definition count) 
+\end{DoxyNote}
+\index{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info@{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info}!last\+Usage\+Time@{last\+Usage\+Time}}
+\index{last\+Usage\+Time@{last\+Usage\+Time}!Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info@{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info}}
+\subsubsection[{\texorpdfstring{last\+Usage\+Time}{lastUsageTime}}]{\setlength{\rightskip}{0pt plus 5cm}Timestamp Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info\+::last\+Usage\+Time\hspace{0.3cm}{\ttfamily [mutable]}}\hypertarget{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a160cef86b17ce9ef5c5fd5ead1f44f23}{}\label{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a160cef86b17ce9ef5c5fd5ead1f44f23}
+Last time the file was used -\/ for aging and purging \index{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info@{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info}!parsed@{parsed}}
+\index{parsed@{parsed}!Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info@{Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info}}
+\subsubsection[{\texorpdfstring{parsed}{parsed}}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<${\bf X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}$>$ Audio\+::\+\_\+\+\_\+impl\+::\+Template\+Manager\+Data\+::\+Definition\+File\+Info\+::parsed}\hypertarget{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a63d30a8c972c159479ba7cffafd0dd64}{}\label{structAudio_1_1____impl_1_1TemplateManagerData_1_1DefinitionFileInfo_a63d30a8c972c159479ba7cffafd0dd64}
+Pointer to the already-\/parsed document 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/Template\+Manager.\+cpp\end{DoxyCompactItemize}

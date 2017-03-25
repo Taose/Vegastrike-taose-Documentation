@@ -1,0 +1,122 @@
+\hypertarget{classOpcode_1_1LSS}{}\section{Opcode\+:\+:L\+SS Class Reference}
+\label{classOpcode_1_1LSS}\index{Opcode\+::\+L\+SS@{Opcode\+::\+L\+SS}}
+
+
+Inheritance diagram for Opcode\+:\+:L\+SS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{d6/d7f/classOpcode_1_1LSS__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Opcode\+:\+:L\+SS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/da0/classOpcode_1_1LSS__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1LSS_ab3ce2e0a510d377bc30d91f4007eb24e}{L\+SS} ()\hypertarget{classOpcode_1_1LSS_ab3ce2e0a510d377bc30d91f4007eb24e}{}\label{classOpcode_1_1LSS_ab3ce2e0a510d377bc30d91f4007eb24e}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1LSS_ad894b442ef98a841561a26e2f7b96566}{L\+SS} (const \hyperlink{classOpcode_1_1Segment}{Segment} \&seg, float radius)\hypertarget{classOpcode_1_1LSS_ad894b442ef98a841561a26e2f7b96566}{}\label{classOpcode_1_1LSS_ad894b442ef98a841561a26e2f7b96566}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classOpcode_1_1LSS_a4f570ca299ea69ecad6fce52d3a33d03}{$\sim$\+L\+SS} ()\hypertarget{classOpcode_1_1LSS_a4f570ca299ea69ecad6fce52d3a33d03}{}\label{classOpcode_1_1LSS_a4f570ca299ea69ecad6fce52d3a33d03}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classOpcode_1_1LSS_ad52f13885dfe3a773154dc1597ab359a}{Compute\+O\+BB} (\hyperlink{classOpcode_1_1OBB}{O\+BB} \&box)
+\item 
+inline\+\_\+ bool \hyperlink{classOpcode_1_1LSS_a12820c729caa83355cc3de770d2e43e4}{Contains} (const \hyperlink{classOpcode_1_1Point}{Point} \&pt) const 
+\item 
+inline\+\_\+ bool \hyperlink{classOpcode_1_1LSS_a88c641f0e90118d5b9714d6706385e00}{Contains} (const \hyperlink{classOpcode_1_1Sphere}{Sphere} \&sphere)
+\item 
+inline\+\_\+ bool \hyperlink{classOpcode_1_1LSS_aacac9a9588ded18465182686f339c88b}{Contains} (const \hyperlink{classOpcode_1_1LSS}{L\+SS} \&lss)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classOpcode_1_1LSS_a1bf501900007bcd8b1786982ecc3bbfc}{m\+Radius}\hypertarget{classOpcode_1_1LSS_a1bf501900007bcd8b1786982ecc3bbfc}{}\label{classOpcode_1_1LSS_a1bf501900007bcd8b1786982ecc3bbfc}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1Sphere}{Sphere} radius. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+L\+SS@{Opcode\+::\+L\+SS}!Compute\+O\+BB@{Compute\+O\+BB}}
+\index{Compute\+O\+BB@{Compute\+O\+BB}!Opcode\+::\+L\+SS@{Opcode\+::\+L\+SS}}
+\subsubsection[{\texorpdfstring{Compute\+O\+B\+B(\+O\+B\+B \&box)}{ComputeOBB(OBB &box)}}]{\setlength{\rightskip}{0pt plus 5cm}void Opcode\+::\+L\+S\+S\+::\+Compute\+O\+BB (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+BB} \&}]{box}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1LSS_ad52f13885dfe3a773154dc1597ab359a}{}\label{classOpcode_1_1LSS_ad52f13885dfe3a773154dc1597ab359a}
+Computes an \hyperlink{classOpcode_1_1OBB}{O\+BB} surrounding the \hyperlink{classOpcode_1_1LSS}{L\+SS}. 
+\begin{DoxyParams}{Parameters}
+{\em box} & \mbox{[}out\mbox{]} the \hyperlink{classOpcode_1_1OBB}{O\+BB} \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+SS@{Opcode\+::\+L\+SS}!Contains@{Contains}}
+\index{Contains@{Contains}!Opcode\+::\+L\+SS@{Opcode\+::\+L\+SS}}
+\subsubsection[{\texorpdfstring{Contains(const Point \&pt) const }{Contains(const Point &pt) const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool Opcode\+::\+L\+S\+S\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1LSS_a12820c729caa83355cc3de770d2e43e4}{}\label{classOpcode_1_1LSS_a12820c729caa83355cc3de770d2e43e4}
+Tests if a point is contained within the \hyperlink{classOpcode_1_1LSS}{L\+SS}. 
+\begin{DoxyParams}{Parameters}
+{\em pt} & \mbox{[}in\mbox{]} the point to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if inside the \hyperlink{classOpcode_1_1LSS}{L\+SS} 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+point and \hyperlink{classOpcode_1_1LSS}{L\+SS} must be in same space 
+\end{DoxyWarning}
+\index{Opcode\+::\+L\+SS@{Opcode\+::\+L\+SS}!Contains@{Contains}}
+\index{Contains@{Contains}!Opcode\+::\+L\+SS@{Opcode\+::\+L\+SS}}
+\subsubsection[{\texorpdfstring{Contains(const Sphere \&sphere)}{Contains(const Sphere &sphere)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool Opcode\+::\+L\+S\+S\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sphere} \&}]{sphere}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1LSS_a88c641f0e90118d5b9714d6706385e00}{}\label{classOpcode_1_1LSS_a88c641f0e90118d5b9714d6706385e00}
+Tests if a sphere is contained within the \hyperlink{classOpcode_1_1LSS}{L\+SS}. 
+\begin{DoxyParams}{Parameters}
+{\em sphere} & \mbox{[}in\mbox{]} the sphere to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if inside the \hyperlink{classOpcode_1_1LSS}{L\+SS} 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+sphere and \hyperlink{classOpcode_1_1LSS}{L\+SS} must be in same space 
+\end{DoxyWarning}
+\index{Opcode\+::\+L\+SS@{Opcode\+::\+L\+SS}!Contains@{Contains}}
+\index{Contains@{Contains}!Opcode\+::\+L\+SS@{Opcode\+::\+L\+SS}}
+\subsubsection[{\texorpdfstring{Contains(const L\+S\+S \&lss)}{Contains(const LSS &lss)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool Opcode\+::\+L\+S\+S\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\+SS} \&}]{lss}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1LSS_aacac9a9588ded18465182686f339c88b}{}\label{classOpcode_1_1LSS_aacac9a9588ded18465182686f339c88b}
+Tests if an \hyperlink{classOpcode_1_1LSS}{L\+SS} is contained within the \hyperlink{classOpcode_1_1LSS}{L\+SS}. 
+\begin{DoxyParams}{Parameters}
+{\em lss} & \mbox{[}in\mbox{]} the \hyperlink{classOpcode_1_1LSS}{L\+SS} to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if inside the \hyperlink{classOpcode_1_1LSS}{L\+SS} 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+both \hyperlink{classOpcode_1_1LSS}{L\+SS} must be in same space 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\end{DoxyCompactItemize}

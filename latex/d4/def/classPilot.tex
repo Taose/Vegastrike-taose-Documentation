@@ -1,0 +1,70 @@
+\hypertarget{classPilot}{}\section{Pilot Class Reference}
+\label{classPilot}\index{Pilot@{Pilot}}
+
+
+Collaboration diagram for Pilot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d0/d44/classPilot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef vs\+U\+Map$<$ const void $\ast$, float $>$ {\bfseries relationmap}\hypertarget{classPilot_a6b7f2338f0db3dad446ae21ffe181140}{}\label{classPilot_a6b7f2338f0db3dad446ae21ffe181140}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Pilot} (int faction)\hypertarget{classPilot_a9ab55291052bd1c1909280ccd2f4ab04}{}\label{classPilot_a9ab55291052bd1c1909280ccd2f4ab04}
+
+\item 
+void {\bfseries Set\+Comm} (\hyperlink{classUnit}{Unit} $\ast$comm\+\_\+unit)\hypertarget{classPilot_aa170a17d4ab8953372d5e84558ddb612}{}\label{classPilot_aa170a17d4ab8953372d5e84558ddb612}
+
+\item 
+\hyperlink{classAnimation}{Animation} $\ast$ {\bfseries get\+Comm\+Face} (\hyperlink{classUnit}{Unit} $\ast$parent, float moon, unsigned char \&gender)\hypertarget{classPilot_a036b2cfbfb953d4e8bf684e82725cb51}{}\label{classPilot_a036b2cfbfb953d4e8bf684e82725cb51}
+
+\item 
+float {\bfseries get\+Reaction\+Time} ()\hypertarget{classPilot_abc04cfbd7af3b723e7514a793772974d}{}\label{classPilot_abc04cfbd7af3b723e7514a793772974d}
+
+\item 
+unsigned char {\bfseries get\+Gender} ()\hypertarget{classPilot_a001d4e031bd64529de36892914be3daa}{}\label{classPilot_a001d4e031bd64529de36892914be3daa}
+
+\item 
+float {\bfseries get\+Rank} ()\hypertarget{classPilot_ad045b335733bedc9f8c644cc3638d9ef}{}\label{classPilot_ad045b335733bedc9f8c644cc3638d9ef}
+
+\item 
+float {\bfseries get\+Anger} (const \hyperlink{classUnit}{Unit} $\ast$parent, const \hyperlink{classUnit}{Unit} $\ast$un) const \hypertarget{classPilot_aa1ea0fcd261e2194545cd11449e7d231}{}\label{classPilot_aa1ea0fcd261e2194545cd11449e7d231}
+
+\item 
+std\+::vector$<$ \hyperlink{classAnimation}{Animation} $\ast$ $>$ $\ast$ {\bfseries get\+Comm\+Faces} (unsigned char \&sex)\hypertarget{classPilot_a754ede41a39d89b3a3f28a253e07c477}{}\label{classPilot_a754ede41a39d89b3a3f28a253e07c477}
+
+\item 
+float {\bfseries Get\+Effective\+Relationship} (const \hyperlink{classUnit}{Unit} $\ast$parent, const \hyperlink{classUnit}{Unit} $\ast$target) const \hypertarget{classPilot_ace6569a0a2274916cc97e3fd83c6f841}{}\label{classPilot_ace6569a0a2274916cc97e3fd83c6f841}
+
+\item 
+float {\bfseries adjust\+Specific\+Relationship} (\hyperlink{classUnit}{Unit} $\ast$parent, void $\ast$aggressor, float value, int guessed\+Faction)\hypertarget{classPilot_add3f59406ba6cd3e356110dfbb3279ee}{}\label{classPilot_add3f59406ba6cd3e356110dfbb3279ee}
+
+\item 
+void {\bfseries Do\+Hit} (\hyperlink{classUnit}{Unit} $\ast$parent, void $\ast$aggressor, int guessed\+Faction)\hypertarget{classPilot_a03acc29a0923a94e64c8730f76f879f0}{}\label{classPilot_a03acc29a0923a94e64c8730f76f879f0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+relationmap {\bfseries effective\+\_\+relationship}\hypertarget{classPilot_a4325cbe1a7c968863f3a19fd1359f2e3}{}\label{classPilot_a4325cbe1a7c968863f3a19fd1359f2e3}
+
+\item 
+std\+::vector$<$ \hyperlink{classAnimation}{Animation} $\ast$ $>$ $\ast$ {\bfseries comm\+\_\+face}\hypertarget{classPilot_a168ed278987804200c66bbb04ac1873b}{}\label{classPilot_a168ed278987804200c66bbb04ac1873b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/pilot.\+h\item 
+cmd/pilot.\+cpp\item 
+cmd/pilot\+\_\+server.\+cpp\end{DoxyCompactItemize}

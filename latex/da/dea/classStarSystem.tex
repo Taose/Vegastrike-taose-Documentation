@@ -1,0 +1,370 @@
+\hypertarget{classStarSystem}{}\section{Star\+System Class Reference}
+\label{classStarSystem}\index{Star\+System@{Star\+System}}
+
+
+Inheritance diagram for Star\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/dd4/classStarSystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Star\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d44/classStarSystem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structStarSystem_1_1StarXML}{Star\+X\+ML}
+\begin{DoxyCompactList}\small\item\em Starsystem X\+ML Struct For use with X\+ML loading. \end{DoxyCompactList}\item 
+struct \hyperlink{structStarSystem_1_1Statistics}{Statistics}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStarSystem_ac725dd1dfdb4474127ca1ae36885196b}{Star\+System} ()
+\item 
+\hyperlink{classStarSystem_a0bc8d41a7815ffaa5ba60fd70cfb9f71}{Star\+System} (const char $\ast$filename, const Vector \&centroid=Vector(0, 0, 0), const float timeofyear=0)
+\item 
+void {\bfseries Set\+Zone} (unsigned int zonenum)\hypertarget{classStarSystem_a572e0644de68b51621ee9e5a8145b903}{}\label{classStarSystem_a572e0644de68b51621ee9e5a8145b903}
+
+\item 
+unsigned int {\bfseries Get\+Zone} ()\hypertarget{classStarSystem_abcf075d8d8e22bc2a4520afc8bbb596b}{}\label{classStarSystem_abcf075d8d8e22bc2a4520afc8bbb596b}
+
+\item 
+virtual void {\bfseries Add\+Missile\+To\+Queue} (class \hyperlink{classMissileEffect}{Missile\+Effect} $\ast$)\hypertarget{classStarSystem_a2cb3b268b0e69eb42e9ee498394aca41}{}\label{classStarSystem_a2cb3b268b0e69eb42e9ee498394aca41}
+
+\item 
+virtual void {\bfseries Update\+Missiles} ()\hypertarget{classStarSystem_a991bcdedcfc709867ab3d1fbaebbc315}{}\label{classStarSystem_a991bcdedcfc709867ab3d1fbaebbc315}
+
+\item 
+void {\bfseries Update\+Unit\+Physics} (bool firstframe)\hypertarget{classStarSystem_aa1bc08840c7bf404827021869a1cbb39}{}\label{classStarSystem_aa1bc08840c7bf404827021869a1cbb39}
+
+\item 
+void \hyperlink{classStarSystem_a4c1430d5d251a5cd8d51e1818e819309}{Request\+Physics} (\hyperlink{classUnit}{Unit} $\ast$un, unsigned int queue)\hypertarget{classStarSystem_a4c1430d5d251a5cd8d51e1818e819309}{}\label{classStarSystem_a4c1430d5d251a5cd8d51e1818e819309}
+
+\begin{DoxyCompactList}\small\item\em Requeues the unit so that it is simulated A\+S\+AP. \end{DoxyCompactList}\item 
+virtual void {\bfseries activate\+Light\+Map} (int stage=1)\hypertarget{classStarSystem_a4fd53b29bcad5b6369218eee1e26fb12}{}\label{classStarSystem_a4fd53b29bcad5b6369218eee1e26fb12}
+
+\item 
+virtual \hyperlink{classTexture}{Texture} $\ast$ {\bfseries get\+Light\+Map} ()\hypertarget{classStarSystem_a7821ba00a501003462e74d7174a0e761}{}\label{classStarSystem_a7821ba00a501003462e74d7174a0e761}
+
+\item 
+virtual unsigned int \hyperlink{classStarSystem_aa0fd84c272a59afaee4d7d39a5c9c469}{num\+Terrain} ()\hypertarget{classStarSystem_aa0fd84c272a59afaee4d7d39a5c9c469}{}\label{classStarSystem_aa0fd84c272a59afaee4d7d39a5c9c469}
+
+\begin{DoxyCompactList}\small\item\em activates the light map texture \end{DoxyCompactList}\item 
+virtual unsigned int {\bfseries num\+Cont\+Terrain} ()\hypertarget{classStarSystem_a810cc88f9ea8b11a10ffb24777e439c0}{}\label{classStarSystem_a810cc88f9ea8b11a10ffb24777e439c0}
+
+\item 
+virtual void \hyperlink{classStarSystem_abae8700eaf960b3b1750f5c67b3999eb}{Draw} (bool Draw\+Cockpit=true)\hypertarget{classStarSystem_abae8700eaf960b3b1750f5c67b3999eb}{}\label{classStarSystem_abae8700eaf960b3b1750f5c67b3999eb}
+
+\begin{DoxyCompactList}\small\item\em Draws a frame of action, interpolating between physics frames. \end{DoxyCompactList}\item 
+void \hyperlink{classStarSystem_a761562b9400fa14e0442557eb5d6e64e}{Update} (float priority, bool execute\+Director)
+\begin{DoxyCompactList}\small\item\em update a simulation atom Execute\+Director must be false if star system is just loaded before mission is loaded \end{DoxyCompactList}\item 
+void {\bfseries Update} (float priority)\hypertarget{classStarSystem_a44e2f03aa3109c183cb3ab569855876a}{}\label{classStarSystem_a44e2f03aa3109c183cb3ab569855876a}
+
+\item 
+virtual void \hyperlink{classStarSystem_a87a83c6a03fafbe32510d6020d3ad0b7}{Swap\+In} ()\hypertarget{classStarSystem_a87a83c6a03fafbe32510d6020d3ad0b7}{}\label{classStarSystem_a87a83c6a03fafbe32510d6020d3ad0b7}
+
+\begin{DoxyCompactList}\small\item\em re-\/enables the included lights and terrains \end{DoxyCompactList}\item 
+virtual void \hyperlink{classStarSystem_a9126bfe990d94fb19687a6e1412847dc}{Swap\+Out} ()\hypertarget{classStarSystem_a9126bfe990d94fb19687a6e1412847dc}{}\label{classStarSystem_a9126bfe990d94fb19687a6e1412847dc}
+
+\begin{DoxyCompactList}\small\item\em Disables included lights and terrains. \end{DoxyCompactList}\item 
+virtual \hyperlink{classTerrain}{Terrain} $\ast$ {\bfseries get\+Terrain} (unsigned int which)\hypertarget{classStarSystem_ad78b4513097646e46f29a81db3bd58f3}{}\label{classStarSystem_ad78b4513097646e46f29a81db3bd58f3}
+
+\item 
+virtual \hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$ {\bfseries get\+Cont\+Terrain} (unsigned int which)\hypertarget{classStarSystem_a1c5bd267ab4847d07fd396d133ae2c43}{}\label{classStarSystem_a1c5bd267ab4847d07fd396d133ae2c43}
+
+\item 
+virtual \hyperlink{classBackground}{Background} $\ast$ {\bfseries get\+Background} ()\hypertarget{classStarSystem_a267efed120650d298c4c01bace7172a5}{}\label{classStarSystem_a267efed120650d298c4c01bace7172a5}
+
+\item 
+virtual \hyperlink{classClickList}{Click\+List} $\ast$ {\bfseries get\+Click\+List} ()\hypertarget{classStarSystem_a2aaa227d4a16c3b34540fcda97c67c00}{}\label{classStarSystem_a2aaa227d4a16c3b34540fcda97c67c00}
+
+\item 
+unsigned int \hyperlink{classStarSystem_a9400f0ededdd5d0450ec27dc27401659}{get\+Current\+Sim\+Frame} () const \hypertarget{classStarSystem_a9400f0ededdd5d0450ec27dc27401659}{}\label{classStarSystem_a9400f0ededdd5d0450ec27dc27401659}
+
+\begin{DoxyCompactList}\small\item\em Gets the current simulation frame. \end{DoxyCompactList}\item 
+void {\bfseries Execute\+Unit\+AI} ()\hypertarget{classStarSystem_abc3aca2045beba9ed1046486931ba188}{}\label{classStarSystem_abc3aca2045beba9ed1046486931ba188}
+
+\item 
+std\+::string {\bfseries get\+File\+Name} () const \hypertarget{classStarSystem_a559dda34624fcc752edaf7a601468718}{}\label{classStarSystem_a559dda34624fcc752edaf7a601468718}
+
+\item 
+std\+::string {\bfseries get\+Name} ()\hypertarget{classStarSystem_a50c0c326aecf358adfc3d31525b8c522}{}\label{classStarSystem_a50c0c326aecf358adfc3d31525b8c522}
+
+\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} \& \hyperlink{classStarSystem_aa8dd4a802628173d8b7d04d33f6fc7bc}{get\+Unit\+List} ()\hypertarget{classStarSystem_aa8dd4a802628173d8b7d04d33f6fc7bc}{}\label{classStarSystem_aa8dd4a802628173d8b7d04d33f6fc7bc}
+
+\begin{DoxyCompactList}\small\item\em Loads the star system from an X\+ML file. \end{DoxyCompactList}\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} \& {\bfseries gravitational\+Units} ()\hypertarget{classStarSystem_a8c0a386d8b6cba71df30dcb8a8318e64}{}\label{classStarSystem_a8c0a386d8b6cba71df30dcb8a8318e64}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries next\+Significant\+Unit} ()\hypertarget{classStarSystem_a03463dd5ad775951f15c7774f8d26ad1}{}\label{classStarSystem_a03463dd5ad775951f15c7774f8d26ad1}
+
+\item 
+void \hyperlink{classStarSystem_acecee1515e867ce0afe0982e73144422}{Add\+Unit} (\hyperlink{classUnit}{Unit} $\ast$unit)
+\item 
+bool \hyperlink{classStarSystem_aaf122ac71cf8146b44cb10161687e8c6}{Remove\+Unit} (\hyperlink{classUnit}{Unit} $\ast$unit)\hypertarget{classStarSystem_aaf122ac71cf8146b44cb10161687e8c6}{}\label{classStarSystem_aaf122ac71cf8146b44cb10161687e8c6}
+
+\begin{DoxyCompactList}\small\item\em Removes from draw list. \end{DoxyCompactList}\item 
+bool {\bfseries Jump\+To} (\hyperlink{classUnit}{Unit} $\ast$unit, \hyperlink{classUnit}{Unit} $\ast$jumppoint, const std\+::string \&system, bool force=false, bool save\+\_\+coordinates=false)\hypertarget{classStarSystem_ab56fa12c03d545a09c45c07ae7c704de}{}\label{classStarSystem_ab56fa12c03d545a09c45c07ae7c704de}
+
+\item 
+virtual void {\bfseries Volitalize\+Jump\+Animation} (const int ani)\hypertarget{classStarSystem_a5c6c3b5111432b334f5ffd71aee7c996}{}\label{classStarSystem_a5c6c3b5111432b334f5ffd71aee7c996}
+
+\item 
+virtual void {\bfseries Do\+Jumping\+Come\+Sight\+And\+Sound} (\hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classStarSystem_a0cd3bfbf6ba8ce511ea78840822139ce}{}\label{classStarSystem_a0cd3bfbf6ba8ce511ea78840822139ce}
+
+\item 
+virtual int {\bfseries Do\+Jumping\+Leave\+Sight\+And\+Sound} (\hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classStarSystem_a3b09ec4ea51ed3cff5d24894ed58d007}{}\label{classStarSystem_a3b09ec4ea51ed3cff5d24894ed58d007}
+
+\item 
+virtual void {\bfseries create\+Background} (\hyperlink{structStarSystem_1_1StarXML}{Star\+System\+::\+Star\+X\+ML} $\ast$xml)\hypertarget{classStarSystem_aff68d900a9d1a0d015d13b74721a4453}{}\label{classStarSystem_aff68d900a9d1a0d015d13b74721a4453}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries begin\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$\hyperlink{classStarSystem_a1ca90e6ba69744ed55bb6009fd000c2b}{name}, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{classStarSystem_afd92fac1f17bcb28c1ce10d6b63cebde}{}\label{classStarSystem_afd92fac1f17bcb28c1ce10d6b63cebde}
+
+\item 
+static void {\bfseries end\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$\hyperlink{classStarSystem_a1ca90e6ba69744ed55bb6009fd000c2b}{name})\hypertarget{classStarSystem_ae3d19c7f1d26785e4be8e0425f1cb297}{}\label{classStarSystem_ae3d19c7f1d26785e4be8e0425f1cb297}
+
+\item 
+static void {\bfseries Process\+Pending\+Jumps} ()\hypertarget{classStarSystem_a469764650ae2c9ca9b2edf98a1beec66}{}\label{classStarSystem_a469764650ae2c9ca9b2edf98a1beec66}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structStarSystem_1_1Statistics}{Star\+System\+::\+Statistics} {\bfseries stats}\hypertarget{classStarSystem_a8c4be01bdf57cb5129cd0a9be7618904}{}\label{classStarSystem_a8c4be01bdf57cb5129cd0a9be7618904}
+
+\item 
+std\+::multimap$<$ \hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$ $>$ {\bfseries last\+\_\+collisions}\hypertarget{classStarSystem_a0851d3f8cca7968957b965607c779785}{}\label{classStarSystem_a0851d3f8cca7968957b965607c779785}
+
+\item 
+class \hyperlink{classCollideTable}{Collide\+Table} $\ast$ {\bfseries collidetable}\hypertarget{classStarSystem_a330113d8efeff095d4a3eea670d14827}{}\label{classStarSystem_a330113d8efeff095d4a3eea670d14827}
+
+\item 
+\hyperlink{classCollideMap}{Collide\+Map} $\ast$ {\bfseries collidemap} \mbox{[}2\mbox{]}\hypertarget{classStarSystem_ac06460018fba8de6bc46490ad2d55d6b}{}\label{classStarSystem_ac06460018fba8de6bc46490ad2d55d6b}
+
+\item 
+class \hyperlink{classbolt__draw}{bolt\+\_\+draw} $\ast$ {\bfseries bolts}\hypertarget{classStarSystem_a1e9f525ed1b5ab0e0ba128679155b542}{}\label{classStarSystem_a1e9f525ed1b5ab0e0ba128679155b542}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classStarSystem_ae8d7d6862b3d9218cb82894352895aa7}{P\+H\+Y\+S\+I\+C\+S\+\_\+\+S\+T\+A\+GE} \{ {\bfseries M\+I\+S\+S\+I\+O\+N\+\_\+\+S\+I\+M\+U\+L\+A\+T\+I\+ON}, 
+{\bfseries P\+R\+O\+C\+E\+S\+S\+\_\+\+U\+N\+IT}, 
+{\bfseries P\+H\+Y\+\_\+\+N\+UM}
+ \}\hypertarget{classStarSystem_ae8d7d6862b3d9218cb82894352895aa7}{}\label{classStarSystem_ae8d7d6862b3d9218cb82894352895aa7}
+\begin{DoxyCompactList}\small\item\em Physics is divided into 3 stages spread over 3 frames. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Load\+X\+ML} (const char $\ast$, const Vector \&centroid, const float timeofyear)\hypertarget{classStarSystem_a471c0a845cff3c39f976ca46e2634a17}{}\label{classStarSystem_a471c0a845cff3c39f976ca46e2634a17}
+
+\item 
+void {\bfseries begin\+Element} (const std\+::string \&\hyperlink{classStarSystem_a1ca90e6ba69744ed55bb6009fd000c2b}{name}, const \hyperlink{classXMLSupport_1_1AttributeList}{Attribute\+List} \&attributes)\hypertarget{classStarSystem_a05fe26c51ca300d3ea7c3b159ce6c3ab}{}\label{classStarSystem_a05fe26c51ca300d3ea7c3b159ce6c3ab}
+
+\item 
+void {\bfseries end\+Element} (const std\+::string \&\hyperlink{classStarSystem_a1ca90e6ba69744ed55bb6009fd000c2b}{name})\hypertarget{classStarSystem_acd6f1ad027eeb318a6c4d719249a0131}{}\label{classStarSystem_acd6f1ad027eeb318a6c4d719249a0131}
+
+\item 
+void \hyperlink{classStarSystem_a13fddd8b91153dd5d32e23f428f91e6b}{Add\+Starsystem\+To\+Universe} (const std\+::string \&filename)\hypertarget{classStarSystem_a13fddd8b91153dd5d32e23f428f91e6b}{}\label{classStarSystem_a13fddd8b91153dd5d32e23f428f91e6b}
+
+\begin{DoxyCompactList}\small\item\em The Light Map corresponding for the BP for spheremapping. \end{DoxyCompactList}\item 
+void {\bfseries Remove\+Starsystem\+From\+Universe} ()\hypertarget{classStarSystem_a2bac97e7feab0352c9395bc090b17962}{}\label{classStarSystem_a2bac97e7feab0352c9395bc090b17962}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structStarSystem_1_1StarXML}{Star\+System\+::\+Star\+X\+ML} $\ast$ {\bfseries xml}\hypertarget{classStarSystem_a5711b39908dfcf288e47e585a43a155e}{}\label{classStarSystem_a5711b39908dfcf288e47e585a43a155e}
+
+\item 
+enum \hyperlink{classStarSystem_ae8d7d6862b3d9218cb82894352895aa7}{Star\+System\+::\+P\+H\+Y\+S\+I\+C\+S\+\_\+\+S\+T\+A\+GE} {\bfseries current\+\_\+stage}\hypertarget{classStarSystem_a4f4a7b46cc625a312c291c414e3746bf}{}\label{classStarSystem_a4f4a7b46cc625a312c291c414e3746bf}
+
+\item 
+std\+::vector$<$ \hyperlink{classTerrain}{Terrain} $\ast$ $>$ \hyperlink{classStarSystem_a33cc71baef9da21e8cf6efb451ef17fc}{terrains}\hypertarget{classStarSystem_a33cc71baef9da21e8cf6efb451ef17fc}{}\label{classStarSystem_a33cc71baef9da21e8cf6efb451ef17fc}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classStars}{Stars}, planets, etc. Orbital mechanics precalculated. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$ $>$ {\bfseries contterrains}\hypertarget{classStarSystem_a89f1f82328d6eaab7bd22146377aacfc}{}\label{classStarSystem_a89f1f82328d6eaab7bd22146377aacfc}
+
+\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} \hyperlink{classStarSystem_a3f20918c69dee3b4758bb4a356d9a2ca}{draw\+List}\hypertarget{classStarSystem_a3f20918c69dee3b4758bb4a356d9a2ca}{}\label{classStarSystem_a3f20918c69dee3b4758bb4a356d9a2ca}
+
+\begin{DoxyCompactList}\small\item\em Everything to be drawn. Folded missiles in here oneday. \end{DoxyCompactList}\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} {\bfseries Gravitational\+Units}\hypertarget{classStarSystem_aa7613fe8f5db2c40bd06dbdd23fd0f00}{}\label{classStarSystem_aa7613fe8f5db2c40bd06dbdd23fd0f00}
+
+\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} {\bfseries physics\+\_\+buffer} \mbox{[}S\+I\+M\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE+1\mbox{]}\hypertarget{classStarSystem_a6df109ee57f3799124a0579f6fbbbe90}{}\label{classStarSystem_a6df109ee57f3799124a0579f6fbbbe90}
+
+\item 
+unsigned int {\bfseries current\+\_\+sim\+\_\+location}\hypertarget{classStarSystem_a7352b3df7e31373d978ddac8ec7106ef}{}\label{classStarSystem_a7352b3df7e31373d978ddac8ec7106ef}
+
+\item 
+unsigned char \hyperlink{classStarSystem_a9516100378d6413d084200ae7b848175}{no\+\_\+collision\+\_\+time}\hypertarget{classStarSystem_a9516100378d6413d084200ae7b848175}{}\label{classStarSystem_a9516100378d6413d084200ae7b848175}
+
+\begin{DoxyCompactList}\small\item\em Objects subject to global gravitron physics (disabled) \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classStarSystem_a1ca90e6ba69744ed55bb6009fd000c2b}{name}\hypertarget{classStarSystem_a1ca90e6ba69744ed55bb6009fd000c2b}{}\label{classStarSystem_a1ca90e6ba69744ed55bb6009fd000c2b}
+
+\begin{DoxyCompactList}\small\item\em system name \end{DoxyCompactList}\item 
+std\+::string {\bfseries filename}\hypertarget{classStarSystem_a609850f033721f2aa8d8b7097cb2299e}{}\label{classStarSystem_a609850f033721f2aa8d8b7097cb2299e}
+
+\item 
+\hyperlink{classUnitCollection_1_1UnitIterator}{un\+\_\+iter} {\bfseries sig\+Iter}\hypertarget{classStarSystem_a0515d06590bec2ccbf853fd199595745}{}\label{classStarSystem_a0515d06590bec2ccbf853fd199595745}
+
+\item 
+double \hyperlink{classStarSystem_a1dffd2f3fe4cbb0907cb2270158c0a3a}{time}\hypertarget{classStarSystem_a1dffd2f3fe4cbb0907cb2270158c0a3a}{}\label{classStarSystem_a1dffd2f3fe4cbb0907cb2270158c0a3a}
+
+\begin{DoxyCompactList}\small\item\em to track the next given physics frame \end{DoxyCompactList}\item 
+\hyperlink{classStars}{Stars} $\ast$ \hyperlink{classStarSystem_aa7f7e879d3c0c788bf1a2ac0fc7c8e03}{stars}
+\begin{DoxyCompactList}\small\item\em The background associated with this system. \end{DoxyCompactList}\item 
+int {\bfseries lightcontext}\hypertarget{classStarSystem_a7011126018924af657651172f99fd5fe}{}\label{classStarSystem_a7011126018924af657651172f99fd5fe}
+
+\item 
+std\+::vector$<$ class \hyperlink{classMissileEffect}{Missile\+Effect} $\ast$ $>$ {\bfseries discharged\+Missiles}\hypertarget{classStarSystem_a3cad3f1d3722d37728c27b7644f98959}{}\label{classStarSystem_a3cad3f1d3722d37728c27b7644f98959}
+
+\item 
+unsigned int {\bfseries zone}\hypertarget{classStarSystem_a30bfa2518dfe4e9ec83a3b858072ad32}{}\label{classStarSystem_a30bfa2518dfe4e9ec83a3b858072ad32}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Universe}\hypertarget{classStarSystem_ac4da8dd404a2eaf5a0bd84aeb8de1197}{}\label{classStarSystem_ac4da8dd404a2eaf5a0bd84aeb8de1197}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Star\+System@{Star\+System}!Star\+System@{Star\+System}}
+\index{Star\+System@{Star\+System}!Star\+System@{Star\+System}}
+\subsubsection[{\texorpdfstring{Star\+System()}{StarSystem()}}]{\setlength{\rightskip}{0pt plus 5cm}Star\+System\+::\+Star\+System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classStarSystem_ac725dd1dfdb4474127ca1ae36885196b}{}\label{classStarSystem_ac725dd1dfdb4474127ca1ae36885196b}
+adds to jumping table; 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dea/classStarSystem_ac725dd1dfdb4474127ca1ae36885196b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Star\+System@{Star\+System}!Star\+System@{Star\+System}}
+\index{Star\+System@{Star\+System}!Star\+System@{Star\+System}}
+\subsubsection[{\texorpdfstring{Star\+System(const char $\ast$filename, const Vector \&centroid=\+Vector(0, 0, 0), const float timeofyear=0)}{StarSystem(const char *filename, const Vector &centroid=Vector(0, 0, 0), const float timeofyear=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Star\+System\+::\+Star\+System (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{const Vector \&}]{centroid = {\ttfamily Vector(~0,~0,~0~)}, }
+\item[{const float}]{timeofyear = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classStarSystem_a0bc8d41a7815ffaa5ba60fd70cfb9f71}{}\label{classStarSystem_a0bc8d41a7815ffaa5ba60fd70cfb9f71}
+adds to jumping table; 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dea/classStarSystem_a0bc8d41a7815ffaa5ba60fd70cfb9f71_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Star\+System@{Star\+System}!Add\+Unit@{Add\+Unit}}
+\index{Add\+Unit@{Add\+Unit}!Star\+System@{Star\+System}}
+\subsubsection[{\texorpdfstring{Add\+Unit(\+Unit $\ast$unit)}{AddUnit(Unit *unit)}}]{\setlength{\rightskip}{0pt plus 5cm}void Star\+System\+::\+Add\+Unit (
+\begin{DoxyParamCaption}
+\item[{{\bf Unit} $\ast$}]{unit}
+\end{DoxyParamCaption}
+)}\hypertarget{classStarSystem_acecee1515e867ce0afe0982e73144422}{}\label{classStarSystem_acecee1515e867ce0afe0982e73144422}
+returns xy sorted bounding spheres of all units in current view Adds to draw list 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dea/classStarSystem_acecee1515e867ce0afe0982e73144422_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Star\+System@{Star\+System}!Update@{Update}}
+\index{Update@{Update}!Star\+System@{Star\+System}}
+\subsubsection[{\texorpdfstring{Update(float priority, bool execute\+Director)}{Update(float priority, bool executeDirector)}}]{\setlength{\rightskip}{0pt plus 5cm}void Star\+System\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{float}]{priority, }
+\item[{bool}]{execute\+Director}
+\end{DoxyParamCaption}
+)}\hypertarget{classStarSystem_a761562b9400fa14e0442557eb5d6e64e}{}\label{classStarSystem_a761562b9400fa14e0442557eb5d6e64e}
+
+
+update a simulation atom Execute\+Director must be false if star system is just loaded before mission is loaded 
+
+this makes it so systems without players may be simulated less accurately
+
+just be sure to restore this at the end 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dea/classStarSystem_a761562b9400fa14e0442557eb5d6e64e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dea/classStarSystem_a761562b9400fa14e0442557eb5d6e64e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Star\+System@{Star\+System}!stars@{stars}}
+\index{stars@{stars}!Star\+System@{Star\+System}}
+\subsubsection[{\texorpdfstring{stars}{stars}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stars}$\ast$ Star\+System\+::stars\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classStarSystem_aa7f7e879d3c0c788bf1a2ac0fc7c8e03}{}\label{classStarSystem_aa7f7e879d3c0c788bf1a2ac0fc7c8e03}
+
+
+The background associated with this system. 
+
+The moving, fading stars 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+star\+\_\+system\+\_\+generic.\+h\item 
+cmd/missile\+\_\+generic.\+cpp\item 
+star\+\_\+system\+\_\+generic.\+cpp\item 
+star\+\_\+system\+\_\+xml.\+cpp\end{DoxyCompactItemize}

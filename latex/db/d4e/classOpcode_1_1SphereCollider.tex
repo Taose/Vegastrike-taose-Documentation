@@ -1,0 +1,317 @@
+\hypertarget{classOpcode_1_1SphereCollider}{}\section{Opcode\+:\+:Sphere\+Collider Class Reference}
+\label{classOpcode_1_1SphereCollider}\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+
+
+Inheritance diagram for Opcode\+:\+:Sphere\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/df0/classOpcode_1_1SphereCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Opcode\+:\+:Sphere\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d15/classOpcode_1_1SphereCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1SphereCollider_af46ca28e45d8efa559f097aadfb9bc44}{Sphere\+Collider} ()
+\item 
+virtual \hyperlink{classOpcode_1_1SphereCollider_ac3f355cae4d6cbd988bf7b4ea74b5472}{$\sim$\+Sphere\+Collider} ()
+\item 
+bool \hyperlink{classOpcode_1_1SphereCollider_ad5c6c1a0fb1ea0377b5d6a89a8b5c54b}{Collide} (\hyperlink{structOpcode_1_1SphereCache}{Sphere\+Cache} \&cache, const \hyperlink{classOpcode_1_1Sphere}{Sphere} \&sphere, const \hyperlink{classOpcode_1_1Model}{Model} \&model, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worlds=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool \hyperlink{classOpcode_1_1SphereCollider_a3f0d0ed9663d0c39c75f54b4ed4568ce}{Collide} (\hyperlink{structOpcode_1_1SphereCache}{Sphere\+Cache} \&cache, const \hyperlink{classOpcode_1_1Sphere}{Sphere} \&sphere, const \hyperlink{classOpcode_1_1AABBTree}{A\+A\+B\+B\+Tree} $\ast$tree)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classOpcode_1_1SphereCollider_a87e6d2c389bbec6bc24400eb09912232}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1SphereCollider_a0e73ee33d0eaefc60fe8b756cedb7117}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1SphereCollider_a9e313ae0980c136b19c0bde2724dfde6}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1SphereCollider_a3a58245a95a724018734c4039ac76a9e}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1SphereCollider_a41d72752c6d07889c74763b86fd9d4f8}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1SphereCollider_a6a83fc6aa69d9b89b979da433aa26acd}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1SphereCollider_a21c5701914a94187121940781bca8858}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1SphereCollider_ae92449297f94e2edd2ac463befbfcdf0}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1SphereCollider_a9a17662f7c12c190bcf996329019e3af}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)
+\item 
+inline\+\_\+ bool \hyperlink{classOpcode_1_1SphereCollider_af91e473c490bf39e08cb19da4b1c761a}{Sphere\+Contains\+Box} (const \hyperlink{classOpcode_1_1Point}{Point} \&bc, const \hyperlink{classOpcode_1_1Point}{Point} \&be)
+\item 
+inline\+\_\+ bool {\bfseries Sphere\+A\+A\+B\+B\+Overlap} (const \hyperlink{classOpcode_1_1Point}{Point} \&center, const \hyperlink{classOpcode_1_1Point}{Point} \&extents)\hypertarget{classOpcode_1_1SphereCollider_a91ee9ba5e56693d489ffe5b636bbef5a}{}\label{classOpcode_1_1SphereCollider_a91ee9ba5e56693d489ffe5b636bbef5a}
+
+\item 
+bool {\bfseries Sphere\+Tri\+Overlap} (const \hyperlink{classOpcode_1_1Point}{Point} \&vert0, const \hyperlink{classOpcode_1_1Point}{Point} \&vert1, const \hyperlink{classOpcode_1_1Point}{Point} \&vert2)\hypertarget{classOpcode_1_1SphereCollider_a7fc9348689d5e372e5539312810057dc}{}\label{classOpcode_1_1SphereCollider_a7fc9348689d5e372e5539312810057dc}
+
+\item 
+bool \hyperlink{classOpcode_1_1SphereCollider_a06a934db23544e0747cf9772c0cfdcbf}{Init\+Query} (\hyperlink{structOpcode_1_1SphereCache}{Sphere\+Cache} \&cache, const \hyperlink{classOpcode_1_1Sphere}{Sphere} \&sphere, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worlds=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1Point}{Point} \hyperlink{classOpcode_1_1SphereCollider_a8e30411e77a64668ce3a5d40822fc4d1}{m\+Center}\hypertarget{classOpcode_1_1SphereCollider_a8e30411e77a64668ce3a5d40822fc4d1}{}\label{classOpcode_1_1SphereCollider_a8e30411e77a64668ce3a5d40822fc4d1}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1Sphere}{Sphere} center. \end{DoxyCompactList}\item 
+float \hyperlink{classOpcode_1_1SphereCollider_a9ce22daca40f942f4ce4e3bbc483149c}{m\+Radius2}\hypertarget{classOpcode_1_1SphereCollider_a9ce22daca40f942f4ce4e3bbc483149c}{}\label{classOpcode_1_1SphereCollider_a9ce22daca40f942f4ce4e3bbc483149c}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1Sphere}{Sphere} radius squared. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!Sphere\+Collider@{Sphere\+Collider}}
+\index{Sphere\+Collider@{Sphere\+Collider}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{Sphere\+Collider()}{SphereCollider()}}]{\setlength{\rightskip}{0pt plus 5cm}Sphere\+Collider\+::\+Sphere\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1SphereCollider_af46ca28e45d8efa559f097aadfb9bc44}{}\label{classOpcode_1_1SphereCollider_af46ca28e45d8efa559f097aadfb9bc44}
+Constructor. \index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!````~Sphere\+Collider@{$\sim$\+Sphere\+Collider}}
+\index{````~Sphere\+Collider@{$\sim$\+Sphere\+Collider}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{$\sim$\+Sphere\+Collider()}{~SphereCollider()}}]{\setlength{\rightskip}{0pt plus 5cm}Sphere\+Collider\+::$\sim$\+Sphere\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classOpcode_1_1SphereCollider_ac3f355cae4d6cbd988bf7b4ea74b5472}{}\label{classOpcode_1_1SphereCollider_ac3f355cae4d6cbd988bf7b4ea74b5472}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Collision\+Node $\ast$node)}{_Collide(const AABBCollisionNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_a87e6d2c389bbec6bc24400eb09912232}{}\label{classOpcode_1_1SphereCollider_a87e6d2c389bbec6bc24400eb09912232}
+Recursive collision query for normal \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+No\+Leaf\+Node $\ast$node)}{_Collide(const AABBNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_a0e73ee33d0eaefc60fe8b756cedb7117}{}\label{classOpcode_1_1SphereCollider_a0e73ee33d0eaefc60fe8b756cedb7117}
+Recursive collision query for no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Quantized\+Node $\ast$node)}{_Collide(const AABBQuantizedNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_a9e313ae0980c136b19c0bde2724dfde6}{}\label{classOpcode_1_1SphereCollider_a9e313ae0980c136b19c0bde2724dfde6}
+Recursive collision query for quantized \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Quantized\+No\+Leaf\+Node $\ast$node)}{_Collide(const AABBQuantizedNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_a3a58245a95a724018734c4039ac76a9e}{}\label{classOpcode_1_1SphereCollider_a3a58245a95a724018734c4039ac76a9e}
+Recursive collision query for quantized no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Tree\+Node $\ast$node)}{_Collide(const AABBTreeNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Tree\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_a41d72752c6d07889c74763b86fd9d4f8}{}\label{classOpcode_1_1SphereCollider_a41d72752c6d07889c74763b86fd9d4f8}
+Recursive collision query for vanilla \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+Collision\+Node $\ast$node)}{_CollideNoPrimitiveTest(const AABBCollisionNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_a6a83fc6aa69d9b89b979da433aa26acd}{}\label{classOpcode_1_1SphereCollider_a6a83fc6aa69d9b89b979da433aa26acd}
+Recursive collision query for normal \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+No\+Leaf\+Node $\ast$node)}{_CollideNoPrimitiveTest(const AABBNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_a21c5701914a94187121940781bca8858}{}\label{classOpcode_1_1SphereCollider_a21c5701914a94187121940781bca8858}
+Recursive collision query for no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+Quantized\+Node $\ast$node)}{_CollideNoPrimitiveTest(const AABBQuantizedNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_ae92449297f94e2edd2ac463befbfcdf0}{}\label{classOpcode_1_1SphereCollider_ae92449297f94e2edd2ac463befbfcdf0}
+Recursive collision query for quantized \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+Quantized\+No\+Leaf\+Node $\ast$node)}{_CollideNoPrimitiveTest(const AABBQuantizedNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_a9a17662f7c12c190bcf996329019e3af}{}\label{classOpcode_1_1SphereCollider_a9a17662f7c12c190bcf996329019e3af}
+Recursive collision query for quantized no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(\+Sphere\+Cache \&cache, const Sphere \&sphere, const Model \&model, const Matrix4x4 $\ast$worlds=null, const Matrix4x4 $\ast$worldm=null)}{Collide(SphereCache &cache, const Sphere &sphere, const Model &model, const Matrix4x4 *worlds=null, const Matrix4x4 *worldm=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sphere\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Cache} \&}]{cache, }
+\item[{const {\bf Sphere} \&}]{sphere, }
+\item[{const {\bf Model} \&}]{model, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worlds = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1SphereCollider_ad5c6c1a0fb1ea0377b5d6a89a8b5c54b}{}\label{classOpcode_1_1SphereCollider_ad5c6c1a0fb1ea0377b5d6a89a8b5c54b}
+Generic collision query for generic O\+P\+C\+O\+DE models. After the call, access the results\+:
+\begin{DoxyItemize}
+\item with \hyperlink{classOpcode_1_1Collider_a7d8c3e6a85be417ac7505930f14f141c}{Get\+Contact\+Status()}
+\item with \hyperlink{classOpcode_1_1VolumeCollider_ab4ab03fdecae438e89ef98433b7fc6c1}{Get\+Nb\+Touched\+Primitives()}
+\item with \hyperlink{classOpcode_1_1VolumeCollider_ac85a0c717bc3d3424af31becc7abbebd}{Get\+Touched\+Primitives()}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} a sphere cache \\
+\hline
+{\em sphere} & \mbox{[}in\mbox{]} collision sphere in local space \\
+\hline
+{\em model} & \mbox{[}in\mbox{]} Opcode model to collide with \\
+\hline
+{\em worlds} & \mbox{[}in\mbox{]} sphere\textquotesingle{}s world matrix, or null \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(\+Sphere\+Cache \&cache, const Sphere \&sphere, const A\+A\+B\+B\+Tree $\ast$tree)}{Collide(SphereCache &cache, const Sphere &sphere, const AABBTree *tree)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sphere\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Cache} \&}]{cache, }
+\item[{const {\bf Sphere} \&}]{sphere, }
+\item[{const {\bf A\+A\+B\+B\+Tree} $\ast$}]{tree}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1SphereCollider_a3f0d0ed9663d0c39c75f54b4ed4568ce}{}\label{classOpcode_1_1SphereCollider_a3f0d0ed9663d0c39c75f54b4ed4568ce}
+Collision query for vanilla \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} a sphere cache \\
+\hline
+{\em sphere} & \mbox{[}in\mbox{]} collision sphere in world space \\
+\hline
+{\em tree} & \mbox{[}in\mbox{]} \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!Init\+Query@{Init\+Query}}
+\index{Init\+Query@{Init\+Query}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{Init\+Query(\+Sphere\+Cache \&cache, const Sphere \&sphere, const Matrix4x4 $\ast$worlds=null, const Matrix4x4 $\ast$worldm=null)}{InitQuery(SphereCache &cache, const Sphere &sphere, const Matrix4x4 *worlds=null, const Matrix4x4 *worldm=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sphere\+Collider\+::\+Init\+Query (
+\begin{DoxyParamCaption}
+\item[{{\bf Sphere\+Cache} \&}]{cache, }
+\item[{const {\bf Sphere} \&}]{sphere, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worlds = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_a06a934db23544e0747cf9772c0cfdcbf}{}\label{classOpcode_1_1SphereCollider_a06a934db23544e0747cf9772c0cfdcbf}
+Initializes a collision query \+:
+\begin{DoxyItemize}
+\item reset stats \& contact status
+\item setup matrices
+\item check temporal coherence
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} a sphere cache \\
+\hline
+{\em sphere} & \mbox{[}in\mbox{]} sphere in local space \\
+\hline
+{\em worlds} & \mbox{[}in\mbox{]} sphere\textquotesingle{}s world matrix, or null \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if we can return immediately 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}!Sphere\+Contains\+Box@{Sphere\+Contains\+Box}}
+\index{Sphere\+Contains\+Box@{Sphere\+Contains\+Box}!Opcode\+::\+Sphere\+Collider@{Opcode\+::\+Sphere\+Collider}}
+\subsubsection[{\texorpdfstring{Sphere\+Contains\+Box(const Point \&bc, const Point \&be)}{SphereContainsBox(const Point &bc, const Point &be)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool Sphere\+Collider\+::\+Sphere\+Contains\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{bc, }
+\item[{const {\bf Point} \&}]{be}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1SphereCollider_af91e473c490bf39e08cb19da4b1c761a}{}\label{classOpcode_1_1SphereCollider_af91e473c490bf39e08cb19da4b1c761a}
+Checks the sphere completely contains the box. In which case we can end the query sooner. 
+\begin{DoxyParams}{Parameters}
+{\em bc} & \mbox{[}in\mbox{]} box center \\
+\hline
+{\em be} & \mbox{[}in\mbox{]} box extents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the sphere contains the whole box 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\hyperlink{OPC__SphereCollider_8cpp}{O\+P\+C\+\_\+\+Sphere\+Collider.\+cpp}\end{DoxyCompactItemize}

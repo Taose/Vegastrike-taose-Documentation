@@ -1,0 +1,57 @@
+\hypertarget{classAABBCollisionNode}{}\section{A\+A\+B\+B\+Collision\+Node Class Reference}
+\label{classAABBCollisionNode}\index{A\+A\+B\+B\+Collision\+Node@{A\+A\+B\+B\+Collision\+Node}}
+
+
+Collaboration diagram for A\+A\+B\+B\+Collision\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{d6/dd8/classAABBCollisionNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAABBCollisionNode_ada461a1e7da4f92ef39f9a6aa4a012b8}{\+\_\+\+Build\+Collision\+Tree} (\hyperlink{classOpcode_1_1AABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$linear, const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} box\+\_\+id, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&current\+\_\+id, const \hyperlink{classOpcode_1_1AABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$current\+\_\+node)
+\end{DoxyCompactItemize}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{A\+A\+B\+B\+Collision\+Node@{A\+A\+B\+B\+Collision\+Node}!\+\_\+\+Build\+Collision\+Tree@{\+\_\+\+Build\+Collision\+Tree}}
+\index{\+\_\+\+Build\+Collision\+Tree@{\+\_\+\+Build\+Collision\+Tree}!A\+A\+B\+B\+Collision\+Node@{A\+A\+B\+B\+Collision\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Build\+Collision\+Tree(\+A\+A\+B\+B\+Collision\+Node $\ast$linear, const udword box\+\_\+id, udword \&current\+\_\+id, const A\+A\+B\+B\+Tree\+Node $\ast$current\+\_\+node)}{_BuildCollisionTree(AABBCollisionNode *linear, const udword box_id, udword &current_id, const AABBTreeNode *current_node)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+Build\+Collision\+Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{linear, }
+\item[{const {\bf udword}}]{box\+\_\+id, }
+\item[{{\bf udword} \&}]{current\+\_\+id, }
+\item[{const {\bf A\+A\+B\+B\+Tree\+Node} $\ast$}]{current\+\_\+node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\hypertarget{classAABBCollisionNode_ada461a1e7da4f92ef39f9a6aa4a012b8}{}\label{classAABBCollisionNode_ada461a1e7da4f92ef39f9a6aa4a012b8}
+Builds an implicit tree from a standard one. An implicit tree is a complete tree (2$\ast$\+N-\/1 nodes) whose negative box pointers and primitive pointers have been made implicit, hence packing 3 pointers in one.
+
+Layout for implicit trees\+: Node\+:
+\begin{DoxyItemize}
+\item box
+\item data (32-\/bits value)
+\end{DoxyItemize}
+
+if data\textquotesingle{}s L\+SB = 1 =$>$ remaining bits are a primitive pointer else remaining bits are a P-\/node pointer, and N = P + 1
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear} & \mbox{[}in\mbox{]} base address of destination nodes \\
+\hline
+{\em box\+\_\+id} & \mbox{[}in\mbox{]} index of destination node \\
+\hline
+{\em current\+\_\+id} & \mbox{[}in\mbox{]} current running index \\
+\hline
+{\em current\+\_\+node} & \mbox{[}in\mbox{]} current node from input tree \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__OptimizedTree_8h}{O\+P\+C\+\_\+\+Optimized\+Tree.\+h}\item 
+cmd/collide2/\hyperlink{OPC__OptimizedTree_8cpp}{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}\end{DoxyCompactItemize}

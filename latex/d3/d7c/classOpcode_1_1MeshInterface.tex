@@ -1,0 +1,144 @@
+\hypertarget{classOpcode_1_1MeshInterface}{}\section{Opcode\+:\+:Mesh\+Interface Class Reference}
+\label{classOpcode_1_1MeshInterface}\index{Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}}
+
+
+Collaboration diagram for Opcode\+:\+:Mesh\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d3/d84/classOpcode_1_1MeshInterface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1MeshInterface_aba590ec6ec5432322174b1450745f808}{Mesh\+Interface} ()
+\item 
+\hyperlink{classOpcode_1_1MeshInterface_abb1a0da3ced5e305f059d66b289a1f85}{$\sim$\+Mesh\+Interface} ()
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Nb\+Triangles} () const \hypertarget{classOpcode_1_1MeshInterface_a23527784fa1a47b9d6616ba26b9e11c6}{}\label{classOpcode_1_1MeshInterface_a23527784fa1a47b9d6616ba26b9e11c6}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Nb\+Vertices} () const \hypertarget{classOpcode_1_1MeshInterface_ad28dd32ec1a81aaef187bd6bdfb93596}{}\label{classOpcode_1_1MeshInterface_ad28dd32ec1a81aaef187bd6bdfb93596}
+
+\item 
+inline\+\_\+ void {\bfseries Set\+Nb\+Triangles} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)\hypertarget{classOpcode_1_1MeshInterface_aeca8af2c1f71da2dc455a4ced7d9da74}{}\label{classOpcode_1_1MeshInterface_aeca8af2c1f71da2dc455a4ced7d9da74}
+
+\item 
+inline\+\_\+ void {\bfseries Set\+Nb\+Vertices} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)\hypertarget{classOpcode_1_1MeshInterface_a48eec38993e540f2bef7cd15416ac1c0}{}\label{classOpcode_1_1MeshInterface_a48eec38993e540f2bef7cd15416ac1c0}
+
+\item 
+bool \hyperlink{classOpcode_1_1MeshInterface_af21a0ce88197f843e178349289f0b335}{Set\+Callback} (Request\+Callback callback, void $\ast$user\+\_\+data)
+\item 
+inline\+\_\+ void $\ast$ {\bfseries Get\+User\+Data} () const \hypertarget{classOpcode_1_1MeshInterface_aed086ab8ebb179be61e25f755766955f}{}\label{classOpcode_1_1MeshInterface_aed086ab8ebb179be61e25f755766955f}
+
+\item 
+inline\+\_\+ Request\+Callback {\bfseries Get\+Callback} () const \hypertarget{classOpcode_1_1MeshInterface_a5cb1bd40e16779b42f34e9f7ffad1ed1}{}\label{classOpcode_1_1MeshInterface_a5cb1bd40e16779b42f34e9f7ffad1ed1}
+
+\item 
+inline\+\_\+ void \hyperlink{classOpcode_1_1MeshInterface_a0b29d914aa1a078f0034b19fe2df61ff}{Get\+Triangle} (\hyperlink{structOpcode_1_1VertexPointers}{Vertex\+Pointers} \&vp, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} index) const 
+\item 
+bool \hyperlink{classOpcode_1_1MeshInterface_a7507e521cb4cd844960dd5e24eba937a}{Remap\+Client} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+indices, const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$permutation) const 
+\item 
+bool \hyperlink{classOpcode_1_1MeshInterface_a28e02f1fa9f6d41523fae3f8649fcdb5}{Is\+Valid} () const 
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1MeshInterface_a27f3838ddf40b99457039bf161fc2aa7}{Check\+Topology} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}!Mesh\+Interface@{Mesh\+Interface}}
+\index{Mesh\+Interface@{Mesh\+Interface}!Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}}
+\subsubsection[{\texorpdfstring{Mesh\+Interface()}{MeshInterface()}}]{\setlength{\rightskip}{0pt plus 5cm}Mesh\+Interface\+::\+Mesh\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1MeshInterface_aba590ec6ec5432322174b1450745f808}{}\label{classOpcode_1_1MeshInterface_aba590ec6ec5432322174b1450745f808}
+Constructor. \index{Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}!````~Mesh\+Interface@{$\sim$\+Mesh\+Interface}}
+\index{````~Mesh\+Interface@{$\sim$\+Mesh\+Interface}!Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}}
+\subsubsection[{\texorpdfstring{$\sim$\+Mesh\+Interface()}{~MeshInterface()}}]{\setlength{\rightskip}{0pt plus 5cm}Mesh\+Interface\+::$\sim$\+Mesh\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1MeshInterface_abb1a0da3ced5e305f059d66b289a1f85}{}\label{classOpcode_1_1MeshInterface_abb1a0da3ced5e305f059d66b289a1f85}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}!Check\+Topology@{Check\+Topology}}
+\index{Check\+Topology@{Check\+Topology}!Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}}
+\subsubsection[{\texorpdfstring{Check\+Topology() const }{CheckTopology() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} Mesh\+Interface\+::\+Check\+Topology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1MeshInterface_a27f3838ddf40b99457039bf161fc2aa7}{}\label{classOpcode_1_1MeshInterface_a27f3838ddf40b99457039bf161fc2aa7}
+Checks the mesh itself is valid. Currently we only look for degenerate faces. \begin{DoxyReturn}{Returns}
+number of degenerate faces 
+\end{DoxyReturn}
+\index{Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}!Get\+Triangle@{Get\+Triangle}}
+\index{Get\+Triangle@{Get\+Triangle}!Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}}
+\subsubsection[{\texorpdfstring{Get\+Triangle(\+Vertex\+Pointers \&vp, udword index) const }{GetTriangle(VertexPointers &vp, udword index) const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Opcode\+::\+Mesh\+Interface\+::\+Get\+Triangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex\+Pointers} \&}]{vp, }
+\item[{{\bf udword}}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1MeshInterface_a0b29d914aa1a078f0034b19fe2df61ff}{}\label{classOpcode_1_1MeshInterface_a0b29d914aa1a078f0034b19fe2df61ff}
+Fetches a triangle given a triangle index. 
+\begin{DoxyParams}{Parameters}
+{\em vp} & \mbox{[}out\mbox{]} required triangle\textquotesingle{}s vertex pointers \\
+\hline
+{\em index} & \mbox{[}in\mbox{]} triangle index \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}}
+\subsubsection[{\texorpdfstring{Is\+Valid() const }{IsValid() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mesh\+Interface\+::\+Is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1MeshInterface_a28e02f1fa9f6d41523fae3f8649fcdb5}{}\label{classOpcode_1_1MeshInterface_a28e02f1fa9f6d41523fae3f8649fcdb5}
+Checks the mesh interface is valid, i.\+e. things have been setup correctly. \begin{DoxyReturn}{Returns}
+true if valid 
+\end{DoxyReturn}
+\index{Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}!Remap\+Client@{Remap\+Client}}
+\index{Remap\+Client@{Remap\+Client}!Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}}
+\subsubsection[{\texorpdfstring{Remap\+Client(udword nb\+\_\+indices, const udword $\ast$permutation) const }{RemapClient(udword nb_indices, const udword *permutation) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mesh\+Interface\+::\+Remap\+Client (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{nb\+\_\+indices, }
+\item[{const {\bf udword} $\ast$}]{permutation}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1MeshInterface_a7507e521cb4cd844960dd5e24eba937a}{}\label{classOpcode_1_1MeshInterface_a7507e521cb4cd844960dd5e24eba937a}
+Remaps client\textquotesingle{}s mesh according to a permutation. 
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+indices} & \mbox{[}in\mbox{]} number of indices in the permutation (will be checked against number of triangles) \\
+\hline
+{\em permutation} & \mbox{[}in\mbox{]} list of triangle indices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}!Set\+Callback@{Set\+Callback}}
+\index{Set\+Callback@{Set\+Callback}!Opcode\+::\+Mesh\+Interface@{Opcode\+::\+Mesh\+Interface}}
+\subsubsection[{\texorpdfstring{Set\+Callback(\+Request\+Callback callback, void $\ast$user\+\_\+data)}{SetCallback(RequestCallback callback, void *user_data)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mesh\+Interface\+::\+Set\+Callback (
+\begin{DoxyParamCaption}
+\item[{Request\+Callback}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1MeshInterface_af21a0ce88197f843e178349289f0b335}{}\label{classOpcode_1_1MeshInterface_af21a0ce88197f843e178349289f0b335}
+Callback control\+: setups object callback. Must provide triangle-\/vertices for a given triangle index. 
+\begin{DoxyParams}{Parameters}
+{\em callback} & \mbox{[}in\mbox{]} user-\/defined callback \\
+\hline
+{\em user\+\_\+data} & \mbox{[}in\mbox{]} user-\/defined data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\hyperlink{OPC__MeshInterface_8cpp}{O\+P\+C\+\_\+\+Mesh\+Interface.\+cpp}\end{DoxyCompactItemize}

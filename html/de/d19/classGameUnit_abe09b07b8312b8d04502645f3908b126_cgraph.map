@@ -1,0 +1,5 @@
+<map id="GameUnit::TransferUnitToSystem" name="GameUnit::TransferUnitToSystem">
+<area shape="rect" id="node2" href="$da/dea/classStarSystem.html#a9126bfe990d94fb19687a6e1412847dc" title="Disables included lights and terrains. " alt="" coords="246,5,399,32"/>
+<area shape="rect" id="node3" href="$dc/dce/classUniverse.html#ab8fbc57c0ea2c21172e5e21945884a0a" title="returns active star system " alt="" coords="229,56,416,83"/>
+<area shape="rect" id="node4" href="$da/dea/classStarSystem.html#aa8dd4a802628173d8b7d04d33f6fc7bc" title="Loads the star system from an XML file. " alt="" coords="241,107,404,133"/>
+</map>

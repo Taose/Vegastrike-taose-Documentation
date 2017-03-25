@@ -1,0 +1,4 @@
+<map id="BaseInterface::Room::BaseVSMovie" name="BaseInterface::Room::BaseVSMovie">
+<area shape="rect" id="node2" href="$df/da2/classBaseInterface_1_1Room_1_1BaseVSSprite.html" title="{BaseInterface::Room\l::BaseVSSprite\n|+ spr\l+ soundsource\l+ soundscene\l|+ Draw()\l+ ~BaseVSSprite()\l+ BaseVSSprite()\l+ SetSprite()\l+ SetPos()\l+ SetSize()\l+ SetTime()\l+ isPlaying()\l# BaseVSSprite()\l}" alt="" coords="5,175,152,413"/>
+<area shape="rect" id="node3" href="$df/db7/classBaseInterface_1_1Room_1_1BaseObj.html" title="{BaseInterface::Room\l::BaseObj\n|+ index\l|+ Draw()\l+ ~BaseObj()\l+ BaseObj()\l}" alt="" coords="5,5,152,127"/>
+</map>

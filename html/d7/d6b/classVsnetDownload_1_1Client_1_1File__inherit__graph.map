@@ -1,0 +1,4 @@
+<map id="VsnetDownload::Client::File" name="VsnetDownload::Client::File">
+<area shape="rect" id="node3" href="$df/d09/classVsnetDownload_1_1Client_1_1NoteFile.html" title="{VsnetDownload::Client\l::NoteFile\n||+ NoteFile()\l+ NoteFile()\l+ NoteFile()\l+ ~NoteFile()\l+ done()\l+ ok()\l+ total()\l+ offset()\l}" alt="" coords="23,564,179,759"/>
+<area shape="rect" id="node2" href="$df/d3a/classVsnetDownload_1_1Client_1_1Item.html" title="{VsnetDownload::Client\l::Item\n|# _filetype\l|+ Item()\l+ ~Item()\l+ state()\l+ error()\l+ changeState()\l+ changeState()\l+ setFileType()\l+ getFileType()\l+ setSize()\l+ append()\l+ getFilename()\l+ getSock()\l+ get_fd()\l# childSetSize()\l# childAppend()\l# protected_replace_notifier()\l}" alt="" coords="5,5,196,317"/>
+</map>

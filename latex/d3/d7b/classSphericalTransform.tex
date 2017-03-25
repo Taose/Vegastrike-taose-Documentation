@@ -1,0 +1,72 @@
+\hypertarget{classSphericalTransform}{}\section{Spherical\+Transform Class Reference}
+\label{classSphericalTransform}\index{Spherical\+Transform@{Spherical\+Transform}}
+
+
+Inheritance diagram for Spherical\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{d6/d1e/classSphericalTransform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Spherical\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{d7/d57/classSphericalTransform__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Spherical\+Transform} (float a, float b, float c)\hypertarget{classSphericalTransform_a07a35bf37881e516a4398549828cd116}{}\label{classSphericalTransform_a07a35bf37881e516a4398549828cd116}
+
+\item 
+void {\bfseries Set\+XZ} (float x, float z)\hypertarget{classSphericalTransform_aafaefeaec18858c6771d4580848f1059}{}\label{classSphericalTransform_aafaefeaec18858c6771d4580848f1059}
+
+\item 
+void {\bfseries SetR} (float rr)\hypertarget{classSphericalTransform_ab4b551608e2131031b0ff010f279222e}{}\label{classSphericalTransform_ab4b551608e2131031b0ff010f279222e}
+
+\item 
+float {\bfseries GetR} () const \hypertarget{classSphericalTransform_a1a2e185fa2cde0cf85c9c548fdf6f5e4}{}\label{classSphericalTransform_a1a2e185fa2cde0cf85c9c548fdf6f5e4}
+
+\item 
+float {\bfseries GetX} () const \hypertarget{classSphericalTransform_a5e67dff38264d593e8c559dfe6fc45f4}{}\label{classSphericalTransform_a5e67dff38264d593e8c559dfe6fc45f4}
+
+\item 
+float {\bfseries GetZ} () const \hypertarget{classSphericalTransform_a808d510276d6dad5a9c4c95f6fd63c65}{}\label{classSphericalTransform_a808d510276d6dad5a9c4c95f6fd63c65}
+
+\item 
+Q\+Vector \hyperlink{classSphericalTransform_a0bb191ad75182945a1e337fd662d15a9}{Transform} (const Q\+Vector \&v) const \hypertarget{classSphericalTransform_a0bb191ad75182945a1e337fd662d15a9}{}\label{classSphericalTransform_a0bb191ad75182945a1e337fd662d15a9}
+
+\begin{DoxyCompactList}\small\item\em Transforms in a possibly nonlinear way the point to some new space. \end{DoxyCompactList}\item 
+Q\+Vector \hyperlink{classSphericalTransform_aca2f3328d4b174c17baa6cc91077654f}{Transform\+Normal} (const Q\+Vector \&point, const Q\+Vector \&n) const \hypertarget{classSphericalTransform_aca2f3328d4b174c17baa6cc91077654f}{}\label{classSphericalTransform_aca2f3328d4b174c17baa6cc91077654f}
+
+\begin{DoxyCompactList}\small\item\em transforms a direction to some new space \end{DoxyCompactList}\item 
+Q\+Vector \hyperlink{classSphericalTransform_ac124a23ed1b5f3ec7f1278cd4ac1a3be}{Inv\+Transform} (const Q\+Vector \&v) const \hypertarget{classSphericalTransform_ac124a23ed1b5f3ec7f1278cd4ac1a3be}{}\label{classSphericalTransform_ac124a23ed1b5f3ec7f1278cd4ac1a3be}
+
+\begin{DoxyCompactList}\small\item\em Transforms in reverse the vector into quadsquare space. \end{DoxyCompactList}\item 
+C\+L\+I\+P\+S\+T\+A\+TE \hyperlink{classSphericalTransform_ae587ed700e27eb1a867c7396d7174ecf}{Box\+In\+Frustum} (Vector \&min, Vector \&max, const Vector \&campos) const \hypertarget{classSphericalTransform_ae587ed700e27eb1a867c7396d7174ecf}{}\label{classSphericalTransform_ae587ed700e27eb1a867c7396d7174ecf}
+
+\begin{DoxyCompactList}\small\item\em Transforms a min and a max vector and figures out what is bigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries scalex}\hypertarget{classSphericalTransform_a3f288f9a155a5fcecc032188ddd2bae4}{}\label{classSphericalTransform_a3f288f9a155a5fcecc032188ddd2bae4}
+
+\item 
+float {\bfseries scalez}\hypertarget{classSphericalTransform_af06dccb64dda85f427d1b8c96e31e1b7}{}\label{classSphericalTransform_af06dccb64dda85f427d1b8c96e31e1b7}
+
+\item 
+float {\bfseries r}\hypertarget{classSphericalTransform_ae2500d6e4e24cf896e3340af6e94642b}{}\label{classSphericalTransform_ae2500d6e4e24cf896e3340af6e94642b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gfx/nonlinear\+\_\+transform.\+h\end{DoxyCompactItemize}

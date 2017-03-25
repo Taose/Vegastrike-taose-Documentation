@@ -1,0 +1,8 @@
+<map id="Audio::Source::isPlaying" name="Audio::Source::isPlaying">
+<area shape="rect" id="node2" href="$d6/df0/classAudio_1_1SimpleSource.html#a8aa133d72148aabedb8bdfa885e74b6b" title="Audio::SimpleSource\l::startPlayingImpl" alt="" coords="249,5,393,47"/>
+<area shape="rect" id="node3" href="$d6/df0/classAudio_1_1SimpleSource.html#a364dea7e215b115dee978f1d53e752fc" title="Audio::SimpleSource\l::stopPlayingImpl" alt="" coords="249,71,393,112"/>
+<area shape="rect" id="node4" href="$df/d04/classAudio_1_1Source.html#a65ce708851ffb9435948c3dfd6c891a0" title="Audio::Source::continuePlaying" alt="" coords="219,137,423,163"/>
+<area shape="rect" id="node5" href="$df/d04/classAudio_1_1Source.html#a99ae629edea3dcda748d56cc5a48b40c" title="Audio::Source::setRelative" alt="" coords="471,162,649,189"/>
+<area shape="rect" id="node6" href="$df/d04/classAudio_1_1Source.html#aa5bf151683c32dd60fea4c75e6176102" title="Audio::Source::seek" alt="" coords="251,238,391,265"/>
+<area shape="rect" id="node7" href="$df/d04/classAudio_1_1Source.html#a48a9992621c4825b28552c381b449b8d" title="Audio::Source::setSound" alt="" coords="477,238,643,265"/>
+</map>

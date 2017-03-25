@@ -1,0 +1,3 @@
+<map id="Opcode::Model" name="Opcode::Model">
+<area shape="rect" id="node2" href="$d2/d83/classOpcode_1_1BaseModel.html" title="{Opcode::BaseModel\n|# mIMesh\l# mModelCode\l# mSource\l# mTree\l|+ BaseModel()\l+ ~BaseModel()\l+ Build()\l+ GetUsedBytes()\l+ Refit()\l+ GetSourceTree()\l+ GetTree()\l+ GetTree()\l+ GetNbNodes()\l+ HasLeafNodes()\l+ IsQuantized()\l+ HasSingleNode()\l+ GetModelCode()\l+ GetMeshInterface()\l+ SetMeshInterface()\l# ReleaseBase()\l# CreateTree()\l}" alt="" coords="5,5,152,361"/>
+</map>

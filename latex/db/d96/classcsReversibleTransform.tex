@@ -1,0 +1,312 @@
+\hypertarget{classcsReversibleTransform}{}\section{cs\+Reversible\+Transform Class Reference}
+\label{classcsReversibleTransform}\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+
+
+{\ttfamily \#include $<$optransfrm.\+h$>$}
+
+
+
+Inheritance diagram for cs\+Reversible\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d1f/classcsReversibleTransform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cs\+Reversible\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d6e/classcsReversibleTransform__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsReversibleTransform_a141d3b365df0f36b1fb1b704d2e8dc91}{cs\+Reversible\+Transform} ()
+\item 
+\hyperlink{classcsReversibleTransform_a917f54955d333318b6c5214aab098d42}{cs\+Reversible\+Transform} (const \hyperlink{classMatrix}{Matrix} \&m)
+\item 
+\hyperlink{classcsReversibleTransform_af0d26f0b33e7692b5fc018b1e9a7f8c1}{cs\+Reversible\+Transform} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&o2t, const \hyperlink{classcsVector3}{cs\+Vector3} \&pos)
+\item 
+\hyperlink{classcsReversibleTransform_a2430185a991ce4493378b2e657828499}{cs\+Reversible\+Transform} (const \hyperlink{classcsTransform}{cs\+Transform} \&t)
+\item 
+{\bfseries cs\+Reversible\+Transform} (const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t)\hypertarget{classcsReversibleTransform_a262626bbd8bc304f09ab008e67ff7e54}{}\label{classcsReversibleTransform_a262626bbd8bc304f09ab008e67ff7e54}
+
+\item 
+const \hyperlink{classcsMatrix3}{cs\+Matrix3} \& \hyperlink{classcsReversibleTransform_a9b24e3ccd1874dd74ed48c8ef504db36}{Get\+T2O} () const 
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsReversibleTransform_a7d76fc227ef7e67297899060f70c3273}{Get\+T2\+O\+Translation} () const 
+\item 
+\hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \hyperlink{classcsReversibleTransform_a4da7113ed78952f3c0fbec4534595492}{Get\+Inverse} () const 
+\item 
+virtual void \hyperlink{classcsReversibleTransform_a7adc3d305ab65cd54d4360d5fcf8c0f1}{Set\+O2T} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&m)
+\item 
+virtual void \hyperlink{classcsReversibleTransform_aa0ae7c7834a8104fa463f9501734337c}{Set\+T2O} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&m)
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsReversibleTransform_a0583af0d751ee86b38a29ff5f260facd}{This2\+Other} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v) const 
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsReversibleTransform_a812d772c7db08d2ac2c17ce9b3c9f048}{This2\+Other\+Relative} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v) const 
+\item 
+void \hyperlink{classcsReversibleTransform_a36f17397f444e8a98b2b4d086c215df8}{Rotate\+Other} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, float angle)
+\item 
+void \hyperlink{classcsReversibleTransform_ad774bc775536dd10c2490752e1ebbef5}{Rotate\+This} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, float angle)
+\item 
+void \hyperlink{classcsReversibleTransform_acc4167fabbf3b9195f9f24d6312e4bf5}{Rotate\+Other} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&m)
+\item 
+void \hyperlink{classcsReversibleTransform_ab9dc14db5f80245d9ce2025df8e3c470}{Rotate\+This} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&m)
+\item 
+void \hyperlink{classcsReversibleTransform_a10ce5361544cb5cb59f259f677879769}{Look\+At} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, const \hyperlink{classcsVector3}{cs\+Vector3} \&up)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsReversibleTransform_a07618e95ad9ccd82c3c07e4f6e2914cd}{cs\+Reversible\+Transform} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&o2t, const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&t2o, const \hyperlink{classcsVector3}{cs\+Vector3} \&pos)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsMatrix3}{cs\+Matrix3} \hyperlink{classcsReversibleTransform_af500740bc965322a64e7bc714ce7196d}{m\+\_\+t2o}\hypertarget{classcsReversibleTransform_af500740bc965322a64e7bc714ce7196d}{}\label{classcsReversibleTransform_af500740bc965322a64e7bc714ce7196d}
+
+\begin{DoxyCompactList}\small\item\em Inverse transformation matrix (\textquotesingle{}this\textquotesingle{} to \textquotesingle{}other\textquotesingle{} space). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsReversibleTransform_af7f65049e697c557c82c21ecd92097e2}{operator/} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t)\hypertarget{classcsReversibleTransform_af7f65049e697c557c82c21ecd92097e2}{}\label{classcsReversibleTransform_af7f65049e697c557c82c21ecd92097e2}
+
+\begin{DoxyCompactList}\small\item\em Reverse a transformation on a 3D vector. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsReversibleTransform_a6151843d11cd0c1cf381013acb7b990d}{operator/=} (\hyperlink{classcsVector3}{cs\+Vector3} \&v, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t)\hypertarget{classcsReversibleTransform_a6151843d11cd0c1cf381013acb7b990d}{}\label{classcsReversibleTransform_a6151843d11cd0c1cf381013acb7b990d}
+
+\begin{DoxyCompactList}\small\item\em Reverse a transformation on a 3D vector. \end{DoxyCompactList}\item 
+\hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \& \hyperlink{classcsReversibleTransform_a506b68248f2d1bf11a062c908b05d5c8}{operator$\ast$=} (\hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t1, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t2)
+\begin{DoxyCompactList}\small\item\em Reverse a transformation on a \hyperlink{classPlane}{Plane}. \end{DoxyCompactList}\item 
+\hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \hyperlink{classcsReversibleTransform_ae76a19c7d0d0933b3bf909f6896e5d95}{operator$\ast$} (const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t1, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t2)\hypertarget{classcsReversibleTransform_ae76a19c7d0d0933b3bf909f6896e5d95}{}\label{classcsReversibleTransform_ae76a19c7d0d0933b3bf909f6896e5d95}
+
+\begin{DoxyCompactList}\small\item\em Combine two transforms, with the rightmost being applied first. \end{DoxyCompactList}\item 
+\hyperlink{classcsTransform}{cs\+Transform} \hyperlink{classcsReversibleTransform_a176327eefeb5555004a1fdd03478b836}{operator$\ast$} (const \hyperlink{classcsTransform}{cs\+Transform} \&t1, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t2)\hypertarget{classcsReversibleTransform_a176327eefeb5555004a1fdd03478b836}{}\label{classcsReversibleTransform_a176327eefeb5555004a1fdd03478b836}
+
+\begin{DoxyCompactList}\small\item\em Combine two transforms, with the rightmost being applied first. \end{DoxyCompactList}\item 
+\hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \& \hyperlink{classcsReversibleTransform_ac67052dda388b6f7234a0f65aa2ecbe5}{operator/=} (\hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t1, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t2)\hypertarget{classcsReversibleTransform_ac67052dda388b6f7234a0f65aa2ecbe5}{}\label{classcsReversibleTransform_ac67052dda388b6f7234a0f65aa2ecbe5}
+
+\begin{DoxyCompactList}\small\item\em Combine two transforms, reversing t2 then applying t1. \end{DoxyCompactList}\item 
+\hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \hyperlink{classcsReversibleTransform_ae3764bd4248ab88bd11ffb18d8618af0}{operator/} (const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t1, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t2)\hypertarget{classcsReversibleTransform_ae3764bd4248ab88bd11ffb18d8618af0}{}\label{classcsReversibleTransform_ae3764bd4248ab88bd11ffb18d8618af0}
+
+\begin{DoxyCompactList}\small\item\em Combine two transforms, reversing t2 then applying t1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class which defines a reversible transformation from one coordinate system to another by maintaining an inverse transformation matrix. This version is similar to \hyperlink{classcsTransform}{cs\+Transform} (in fact, it is a sub-\/class) but it is more efficient if you plan to do inverse transformations often. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Reversible\+Transform(const cs\+Matrix3 \&o2t, const cs\+Matrix3 \&t2o, const cs\+Vector3 \&pos)}{csReversibleTransform(const csMatrix3 &o2t, const csMatrix3 &t2o, const csVector3 &pos)}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Reversible\+Transform\+::cs\+Reversible\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{o2t, }
+\item[{const {\bf cs\+Matrix3} \&}]{t2o, }
+\item[{const {\bf cs\+Vector3} \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classcsReversibleTransform_a07618e95ad9ccd82c3c07e4f6e2914cd}{}\label{classcsReversibleTransform_a07618e95ad9ccd82c3c07e4f6e2914cd}
+Initialize transform with both transform matrix and inverse tranform. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Reversible\+Transform()}{csReversibleTransform()}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Reversible\+Transform\+::cs\+Reversible\+Transform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_a141d3b365df0f36b1fb1b704d2e8dc91}{}\label{classcsReversibleTransform_a141d3b365df0f36b1fb1b704d2e8dc91}
+Initialize with the identity transformation. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Reversible\+Transform(const Matrix \&m)}{csReversibleTransform(const Matrix &m)}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Reversible\+Transform\+::cs\+Reversible\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_a917f54955d333318b6c5214aab098d42}{}\label{classcsReversibleTransform_a917f54955d333318b6c5214aab098d42}
+Daniel\+: I think that this matrix is in row major order... but it appears to look for the matrix that takes from world to object hence it is the transpose... transpose of transpose is identty...which is what I pass in below \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Reversible\+Transform(const cs\+Matrix3 \&o2t, const cs\+Vector3 \&pos)}{csReversibleTransform(const csMatrix3 &o2t, const csVector3 &pos)}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Reversible\+Transform\+::cs\+Reversible\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{o2t, }
+\item[{const {\bf cs\+Vector3} \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_af0d26f0b33e7692b5fc018b1e9a7f8c1}{}\label{classcsReversibleTransform_af0d26f0b33e7692b5fc018b1e9a7f8c1}
+Initialize with the given transformation. The transformation is given as a 3x3 matrix and a vector. The transformation is defined to mean T=M$\ast$(O-\/V) with T the vector in \textquotesingle{}this\textquotesingle{} space, O the vector in \textquotesingle{}other\textquotesingle{} space, M the transformation matrix and V the transformation vector. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d96/classcsReversibleTransform_af0d26f0b33e7692b5fc018b1e9a7f8c1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Reversible\+Transform(const cs\+Transform \&t)}{csReversibleTransform(const csTransform &t)}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Reversible\+Transform\+::cs\+Reversible\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Transform} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_a2430185a991ce4493378b2e657828499}{}\label{classcsReversibleTransform_a2430185a991ce4493378b2e657828499}
+Initialize with the given transformation. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d96/classcsReversibleTransform_a2430185a991ce4493378b2e657828499_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Get\+Inverse@{Get\+Inverse}}
+\index{Get\+Inverse@{Get\+Inverse}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Get\+Inverse() const }{GetInverse() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Reversible\+Transform} cs\+Reversible\+Transform\+::\+Get\+Inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_a4da7113ed78952f3c0fbec4534595492}{}\label{classcsReversibleTransform_a4da7113ed78952f3c0fbec4534595492}
+Get the inverse of this transform. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Get\+T2O@{Get\+T2O}}
+\index{Get\+T2O@{Get\+T2O}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Get\+T2\+O() const }{GetT2O() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cs\+Matrix3}\& cs\+Reversible\+Transform\+::\+Get\+T2O (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_a9b24e3ccd1874dd74ed48c8ef504db36}{}\label{classcsReversibleTransform_a9b24e3ccd1874dd74ed48c8ef504db36}
+Get \textquotesingle{}this\textquotesingle{} to \textquotesingle{}other\textquotesingle{} transformation matrix. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Get\+T2\+O\+Translation@{Get\+T2\+O\+Translation}}
+\index{Get\+T2\+O\+Translation@{Get\+T2\+O\+Translation}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Get\+T2\+O\+Translation() const }{GetT2OTranslation() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} cs\+Reversible\+Transform\+::\+Get\+T2\+O\+Translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_a7d76fc227ef7e67297899060f70c3273}{}\label{classcsReversibleTransform_a7d76fc227ef7e67297899060f70c3273}
+Get \textquotesingle{}this\textquotesingle{} to \textquotesingle{}other\textquotesingle{} translation. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Look\+At@{Look\+At}}
+\index{Look\+At@{Look\+At}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Look\+At(const cs\+Vector3 \&v, const cs\+Vector3 \&up)}{LookAt(const csVector3 &v, const csVector3 &up)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Reversible\+Transform\+::\+Look\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v, }
+\item[{const {\bf cs\+Vector3} \&}]{up}
+\end{DoxyParamCaption}
+)}\hypertarget{classcsReversibleTransform_a10ce5361544cb5cb59f259f677879769}{}\label{classcsReversibleTransform_a10ce5361544cb5cb59f259f677879769}
+Let this transform look at the given (x,y,z) point, using up as the up-\/vector. \textquotesingle{}v\textquotesingle{} should be given relative to the position of the origin of this transform. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Rotate\+Other@{Rotate\+Other}}
+\index{Rotate\+Other@{Rotate\+Other}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Rotate\+Other(const cs\+Vector3 \&v, float angle)}{RotateOther(const csVector3 &v, float angle)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Reversible\+Transform\+::\+Rotate\+Other (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}\hypertarget{classcsReversibleTransform_a36f17397f444e8a98b2b4d086c215df8}{}\label{classcsReversibleTransform_a36f17397f444e8a98b2b4d086c215df8}
+Convert a plane in \textquotesingle{}this\textquotesingle{} space to \textquotesingle{}other\textquotesingle{} space. Convert a plane in \textquotesingle{}this\textquotesingle{} space to \textquotesingle{}other\textquotesingle{} space. This version ignores translation. Convert a plane in \textquotesingle{}this\textquotesingle{} space to \textquotesingle{}other\textquotesingle{} space. This is an optimized version for which a point on the new plane is known (point). The result is stored in \textquotesingle{}result\textquotesingle{}. Rotate the transform by the angle (radians) around the given vector, in other coordinates. Note\+: this function rotates the transform, not the coordinate system. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Rotate\+Other@{Rotate\+Other}}
+\index{Rotate\+Other@{Rotate\+Other}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Rotate\+Other(const cs\+Matrix3 \&m)}{RotateOther(const csMatrix3 &m)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Reversible\+Transform\+::\+Rotate\+Other (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_acc4167fabbf3b9195f9f24d6312e4bf5}{}\label{classcsReversibleTransform_acc4167fabbf3b9195f9f24d6312e4bf5}
+Use the given transformation matrix, in other space, to reorient the transformation. Note\+: this function rotates the transformation, not the coordinate system. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Rotate\+This@{Rotate\+This}}
+\index{Rotate\+This@{Rotate\+This}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Rotate\+This(const cs\+Vector3 \&v, float angle)}{RotateThis(const csVector3 &v, float angle)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Reversible\+Transform\+::\+Rotate\+This (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}\hypertarget{classcsReversibleTransform_ad774bc775536dd10c2490752e1ebbef5}{}\label{classcsReversibleTransform_ad774bc775536dd10c2490752e1ebbef5}
+Rotate the transform by the angle (radians) around the given vector, in these coordinates. Note\+: this function rotates the tranform, not the coordinate system. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Rotate\+This@{Rotate\+This}}
+\index{Rotate\+This@{Rotate\+This}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Rotate\+This(const cs\+Matrix3 \&m)}{RotateThis(const csMatrix3 &m)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Reversible\+Transform\+::\+Rotate\+This (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_ab9dc14db5f80245d9ce2025df8e3c470}{}\label{classcsReversibleTransform_ab9dc14db5f80245d9ce2025df8e3c470}
+Use the given transformation matrix, in this space, to reorient the transformation. Note\+: this function rotates the transformation, not the coordinate system. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Set\+O2T@{Set\+O2T}}
+\index{Set\+O2T@{Set\+O2T}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Set\+O2\+T(const cs\+Matrix3 \&m)}{SetO2T(const csMatrix3 &m)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void cs\+Reversible\+Transform\+::\+Set\+O2T (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classcsReversibleTransform_a7adc3d305ab65cd54d4360d5fcf8c0f1}{}\label{classcsReversibleTransform_a7adc3d305ab65cd54d4360d5fcf8c0f1}
+Set \textquotesingle{}other\textquotesingle{} to \textquotesingle{}this\textquotesingle{} transformation matrix. 
+
+Reimplemented from \hyperlink{classcsTransform_a8982b8df6c6260a98fbf9ac18ec0a681}{cs\+Transform}.
+
+
+
+Reimplemented in \hyperlink{classcsOrthoTransform_a2c075ede84fdeddac05480eb5a39b85d}{cs\+Ortho\+Transform}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{db/d96/classcsReversibleTransform_a7adc3d305ab65cd54d4360d5fcf8c0f1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!Set\+T2O@{Set\+T2O}}
+\index{Set\+T2O@{Set\+T2O}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{Set\+T2\+O(const cs\+Matrix3 \&m)}{SetT2O(const csMatrix3 &m)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void cs\+Reversible\+Transform\+::\+Set\+T2O (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classcsReversibleTransform_aa0ae7c7834a8104fa463f9501734337c}{}\label{classcsReversibleTransform_aa0ae7c7834a8104fa463f9501734337c}
+Set \textquotesingle{}this\textquotesingle{} to \textquotesingle{}other\textquotesingle{} transformation matrix. 
+
+Reimplemented in \hyperlink{classcsOrthoTransform_a851a3ee657be77e99ba8b926f837eeed}{cs\+Ortho\+Transform}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{db/d96/classcsReversibleTransform_aa0ae7c7834a8104fa463f9501734337c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!This2\+Other@{This2\+Other}}
+\index{This2\+Other@{This2\+Other}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{This2\+Other(const cs\+Vector3 \&v) const }{This2Other(const csVector3 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} cs\+Reversible\+Transform\+::\+This2\+Other (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_a0583af0d751ee86b38a29ff5f260facd}{}\label{classcsReversibleTransform_a0583af0d751ee86b38a29ff5f260facd}
+Convert vector v in \textquotesingle{}this\textquotesingle{} space to \textquotesingle{}other\textquotesingle{} space. This is the basic inverse transform operation. \index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!This2\+Other\+Relative@{This2\+Other\+Relative}}
+\index{This2\+Other\+Relative@{This2\+Other\+Relative}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{This2\+Other\+Relative(const cs\+Vector3 \&v) const }{This2OtherRelative(const csVector3 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} cs\+Reversible\+Transform\+::\+This2\+Other\+Relative (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsReversibleTransform_a812d772c7db08d2ac2c17ce9b3c9f048}{}\label{classcsReversibleTransform_a812d772c7db08d2ac2c17ce9b3c9f048}
+Convert vector v in \textquotesingle{}this\textquotesingle{} space to a vector in \textquotesingle{}other\textquotesingle{} space, relative to local origin. 
+
+\subsection{Friends And Related Function Documentation}
+\index{cs\+Reversible\+Transform@{cs\+Reversible\+Transform}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cs\+Reversible\+Transform@{cs\+Reversible\+Transform}}
+\subsubsection[{\texorpdfstring{operator$\ast$=}{operator*=}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Reversible\+Transform}\& operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{{\bf cs\+Reversible\+Transform} \&}]{t1, }
+\item[{const {\bf cs\+Reversible\+Transform} \&}]{t2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classcsReversibleTransform_a506b68248f2d1bf11a062c908b05d5c8}{}\label{classcsReversibleTransform_a506b68248f2d1bf11a062c908b05d5c8}
+
+
+Reverse a transformation on a \hyperlink{classPlane}{Plane}. 
+
+Reverse a transformation on a \hyperlink{classPlane}{Plane}. Combine two transforms, with the rightmost being applied first. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/csgeom2/optransfrm.\+h\end{DoxyCompactItemize}

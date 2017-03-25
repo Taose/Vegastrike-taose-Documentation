@@ -1,0 +1,25 @@
+\hypertarget{group__PoshFunctions}{}\section{Utility Functions}
+\label{group__PoshFunctions}\index{Utility Functions@{Utility Functions}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{group__PoshFunctions_ga535671be0edadd56e44d4d3a89385ae5}{P\+O\+S\+H\+\_\+\+Get\+Arch\+String} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{Utility Functions@{Utility Functions}!P\+O\+S\+H\+\_\+\+Get\+Arch\+String@{P\+O\+S\+H\+\_\+\+Get\+Arch\+String}}
+\index{P\+O\+S\+H\+\_\+\+Get\+Arch\+String@{P\+O\+S\+H\+\_\+\+Get\+Arch\+String}!Utility Functions@{Utility Functions}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Get\+Arch\+String(void)}{POSH_GetArchString(void)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ P\+O\+S\+H\+\_\+\+Get\+Arch\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__PoshFunctions_ga535671be0edadd56e44d4d3a89385ae5}{}\label{group__PoshFunctions_ga535671be0edadd56e44d4d3a89385ae5}
+Returns a string describing this platform\textquotesingle{}s basic attributes.
+
+\hyperlink{group__PoshFunctions_ga535671be0edadd56e44d4d3a89385ae5}{P\+O\+S\+H\+\_\+\+Get\+Arch\+String()} reports on an architecture\textquotesingle{}s statically determined attributes. In addition, it will perform run-\/time verification checks to make sure the various platform specific functions work. If an error occurs, please contact me at \href{mailto:poshlib@poshlib.org}{\tt poshlib@poshlib.\+org} so we can try to resolve what the specific failure case is. \begin{DoxyReturn}{Returns}
+a string describing this platform on success, or a string in the form \char`\"{}$\ast$\+E\+R\+R\+O\+R\+: \mbox{[}text\mbox{]}\char`\"{} on failure. You can simply check to see if the first character returned is \textquotesingle{}$\ast$\textquotesingle{} to verify an error condition. 
+\end{DoxyReturn}

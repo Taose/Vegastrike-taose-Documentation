@@ -1,0 +1,1226 @@
+\hypertarget{classXMLDOM_1_1XMLElement}{}\section{X\+M\+L\+D\+OM\+:\+:X\+M\+L\+Element Class Reference}
+\label{classXMLDOM_1_1XMLElement}\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+
+
+Collaboration diagram for X\+M\+L\+D\+OM\+:\+:X\+M\+L\+Element\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{db/d67/classXMLDOM_1_1XMLElement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ {\bfseries X\+E\+T\+\_\+\+T\+AG}, 
+{\bfseries X\+E\+T\+\_\+\+C\+D\+A\+TA}, 
+{\bfseries X\+E\+T\+\_\+\+C\+O\+M\+M\+E\+NT}, 
+{\bfseries X\+E\+T\+\_\+\+R\+O\+OT}
+ \}\hypertarget{classXMLDOM_1_1XMLElement_a2275d5868dfcd311aedaf1f1cec76adc}{}\label{classXMLDOM_1_1XMLElement_a2275d5868dfcd311aedaf1f1cec76adc}
+
+\item 
+typedef Element\+List\+::iterator {\bfseries child\+\_\+iterator}\hypertarget{classXMLDOM_1_1XMLElement_a81b6054337bcea45449019ca3acaf49a}{}\label{classXMLDOM_1_1XMLElement_a81b6054337bcea45449019ca3acaf49a}
+
+\item 
+typedef Element\+List\+::const\+\_\+iterator {\bfseries const\+\_\+child\+\_\+iterator}\hypertarget{classXMLDOM_1_1XMLElement_a67f3c6e6dcdb1bb378cece31afa051f7}{}\label{classXMLDOM_1_1XMLElement_a67f3c6e6dcdb1bb378cece31afa051f7}
+
+\item 
+typedef Attribute\+Map\+::iterator {\bfseries attribute\+\_\+iterator}\hypertarget{classXMLDOM_1_1XMLElement_a445a314ef98c6723023003384f63ac82}{}\label{classXMLDOM_1_1XMLElement_a445a314ef98c6723023003384f63ac82}
+
+\item 
+typedef Attribute\+Map\+::const\+\_\+iterator {\bfseries const\+\_\+attribute\+\_\+iterator}\hypertarget{classXMLDOM_1_1XMLElement_afa0d0e4c025551993d05b5148c51f121}{}\label{classXMLDOM_1_1XMLElement_afa0d0e4c025551993d05b5148c51f121}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement_ae6e0c3440c60484c1fa97e06efdae280}{X\+M\+L\+Element} ()
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement_a9eb89ab0895b7538d8be3870d21d46d8}{X\+M\+L\+Element} (Type \hyperlink{classXMLDOM_1_1XMLElement_ac6abb91539f92aacb495162199a8c610}{type}, const std\+::string \&data=std\+::string())
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement_a5e35b4c34b54ca37b8f9d61e39c905d8}{X\+M\+L\+Element} (const std\+::string \&cdata)
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement_ad2bf1d99f6ba83c870f546f3a4e6aa78}{X\+M\+L\+Element} (const char $\ast$\hyperlink{classXMLDOM_1_1XMLElement_a4f51bcc83b35ed12e2b776085835a369}{tag\+Name}, const char $\ast$const $\ast$attr\+Value\+Pair\+List)
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement_afd5abcb481eac86977df3b2e763c5601}{X\+M\+L\+Element} (const char $\ast$\hyperlink{classXMLDOM_1_1XMLElement_a4f51bcc83b35ed12e2b776085835a369}{tag\+Name}, const char $\ast$const $\ast$attr\+Value\+Pair\+List, unsigned int n\+Attr)
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement_a161545cdaa7937cf5b6fb5511cef6728}{X\+M\+L\+Element} (const std\+::string \&\hyperlink{classXMLDOM_1_1XMLElement_a4f51bcc83b35ed12e2b776085835a369}{tag\+Name}, const std\+::vector$<$ std\+::string $>$ \&attr\+Value\+Pair\+List)
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement_a6f2525c1773adb68912a274c076d0ff6}{X\+M\+L\+Element} (const std\+::string \&\hyperlink{classXMLDOM_1_1XMLElement_a4f51bcc83b35ed12e2b776085835a369}{tag\+Name}, const std\+::map$<$ std\+::string, std\+::string $>$ \&attr\+Value\+Pair\+List)
+\item 
+Type \hyperlink{classXMLDOM_1_1XMLElement_ac6abb91539f92aacb495162199a8c610}{type} () const 
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_a6341f47796d6516478d239c5733ec995}{set\+Type} (Type new\+Type)
+\item 
+const std\+::string \& \hyperlink{classXMLDOM_1_1XMLElement_a4f51bcc83b35ed12e2b776085835a369}{tag\+Name} () const 
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_a84a1700aeaa8dee143ac58ccd2027b4e}{get\+Parent} () const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_aa8b34dd58162dca0c55a099f38322997}{get\+Parent} ()
+\item 
+const \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+Document} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_a7ca2364a51efbb2a2fae927ed44eb7a6}{get\+Document} () const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+Document} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_a25d23e71643b55728f910604b43beed0}{get\+Document} ()
+\item 
+const std\+::string \& \hyperlink{classXMLDOM_1_1XMLElement_a233ff65ad65b92fee2f145d2ba059c3a}{contents} () const 
+\item 
+std\+::string \& \hyperlink{classXMLDOM_1_1XMLElement_a8ea797d366a39b336d3430f507363c39}{contents} ()
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_a599cf001586620a89628d63b342378e2}{append\+Contents} (const std\+::string \&cont)
+\item 
+unsigned int \hyperlink{classXMLDOM_1_1XMLElement_a17fbc9119c8cd50b6f689e0b64084348}{num\+Children} () const 
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_a91cd5c70c6d67bb74d357f74e8ec6de5}{get\+Child} (unsigned int idx) const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_ae719f0588c09f90d5d5ca1e86d56222d}{get\+Child} (unsigned int idx)
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_a9dc8e59b0e865711da58b9eaae6ad910}{get\+Child\+By\+Id} (const std\+::string \&id) const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_a806d22ef3eb9402140e1efc544fb4ea0}{get\+Child\+By\+Id} (const std\+::string \&id)
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_a7d42b4e451aa93b60b6bb5e2e582da0e}{get\+Child\+By\+Name} (const std\+::string \&name) const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_a03e059f16c2ee6ca88e25c0c8ae71420}{get\+Child\+By\+Name} (const std\+::string \&name)
+\item 
+const std\+::string \& \hyperlink{classXMLDOM_1_1XMLElement_a12c51b261667efee2db62c72c2cfccca}{get\+Id} () const 
+\item 
+const std\+::string \& \hyperlink{classXMLDOM_1_1XMLElement_a91f4ab38d1cea2d53c5190ec51259761}{get\+Name} () const 
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_a49a63387c3f5f3e23bca6aabb0d3c419}{get\+Child\+By\+Hierarchical\+Id} (const std\+::string \&id) const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_ae6c965e2495d76343ce9a167938e8a4c}{get\+Child\+By\+Hierarchical\+Id} (const std\+::string \&id)
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_ac15c8554200cad88b328b44e9b3d4f6e}{get\+Child\+By\+Hierarchical\+Name} (const std\+::string \&name) const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLElement_aaa6d95acff0343578a860246e58dce17}{get\+Child\+By\+Hierarchical\+Name} (const std\+::string \&name)
+\item 
+unsigned int \hyperlink{classXMLDOM_1_1XMLElement_a01276193af3cda360867f98c82b5ecbb}{append\+Child} (\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$new\+Elem)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_ae3c90039e128d8125c180761d3019a2b}{remove\+Child} (unsigned int idx)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_a8c8cbcd6935e451afdfc1de62be0a44b}{remove\+Child} (const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$which)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_ab8a1a521c06fef728c0ff5be44c14eec}{remove\+Child\+By\+Id} (const std\+::string \&id)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_af501dcc46e59d0d9aec560cd92d11d66}{remove\+Child\+By\+Name} (const std\+::string \&name)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_abe4cbb213e383278b497ca79062c3f5a}{clear} (bool do\+Attributes=true)
+\item 
+const\+\_\+attribute\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_a2aa40c03f1c2acb1148a304a0a92d154}{get\+Attribute} (const std\+::string \&name) const 
+\item 
+attribute\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_a24561b966a6840413b4804fddede2011}{get\+Attribute} (const std\+::string \&name)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_a8d47de14572108518a19abdf074c7b83}{remove\+Attribute} (const std\+::string \&name)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_a28140b3cd726d36930ae1d59d258fa04}{set\+Attribute} (const std\+::string \&name, const std\+::string \&value)
+\item 
+const std\+::string \& \hyperlink{classXMLDOM_1_1XMLElement_a5d09435a6f8e608a9d4c2bae19701fd0}{get\+Attribute\+Value} (const std\+::string \&name) const 
+\item 
+const std\+::string \& \hyperlink{classXMLDOM_1_1XMLElement_a421fe7112187db26d6c8529a2af3187a}{get\+Attribute\+Value} (const std\+::string \&name, const std\+::string \&def) const 
+\item 
+attribute\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_af5535e7b15134b7f780a19a62852f0b8}{attributes\+Begin} ()
+\item 
+const\+\_\+attribute\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_ace8e37dfd5644c9a4f94cf99d74bcc76}{attributes\+Begin} () const 
+\item 
+attribute\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_aa89a2b2409bd1a55d0e4f0644f530d8d}{attributes\+End} ()
+\item 
+const\+\_\+attribute\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_ae8bdc3b87c921fbbda7593bdc3c84320}{attributes\+End} () const 
+\item 
+child\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_aabdd3c93fc39142e773ed65c42fbcfb0}{children\+Begin} ()
+\item 
+const\+\_\+child\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_aea217caa9f1395f4c80a5a3766ac30f9}{children\+Begin} () const 
+\item 
+child\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_a95d33e72e4dd9a7b1a6ad3bb26053777}{children\+End} ()
+\item 
+const\+\_\+child\+\_\+iterator \hyperlink{classXMLDOM_1_1XMLElement_a535aa02187cf032bea6dc26b85e29179}{children\+End} () const 
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_a2ea0c98e68c76b1777e85d869af9733b}{rebuild\+Named\+Bindings} (bool deep\+Scan=true)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+Parent} (\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$parent)\hypertarget{classXMLDOM_1_1XMLElement_a1f1b766a051c8c205f4410298ef772cb}{}\label{classXMLDOM_1_1XMLElement_a1f1b766a051c8c205f4410298ef772cb}
+
+\item 
+void \hyperlink{classXMLDOM_1_1XMLElement_a02f6fbb46ba06175df97596f01e61a48}{set\+Document} (\hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+Document} $\ast$document)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{X\+M\+L\+Element()}{XMLElement()}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+L\+Element\+::\+X\+M\+L\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_ae6e0c3440c60484c1fa97e06efdae280}{}\label{classXMLDOM_1_1XMLElement_ae6e0c3440c60484c1fa97e06efdae280}
+Creates an empty cdata element 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ae6e0c3440c60484c1fa97e06efdae280_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{X\+M\+L\+Element(\+Type type, const std\+::string \&data=std\+::string())}{XMLElement(Type type, const std::string &data=std::string())}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+L\+Element\+::\+X\+M\+L\+Element (
+\begin{DoxyParamCaption}
+\item[{Type}]{type, }
+\item[{const std\+::string \&}]{data = {\ttfamily std\+:\+:string()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a9eb89ab0895b7538d8be3870d21d46d8}{}\label{classXMLDOM_1_1XMLElement_a9eb89ab0895b7538d8be3870d21d46d8}
+Creates an element of type \textquotesingle{}type\textquotesingle{} -\/ with \textquotesingle{}data\textquotesingle{} as contents \begin{DoxyRemark}{Remarks}
+empty if type is not X\+E\+T\+\_\+\+C\+D\+A\+TA or X\+E\+T\+\_\+\+C\+O\+M\+M\+E\+NT 
+\end{DoxyRemark}
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{X\+M\+L\+Element(const std\+::string \&cdata)}{XMLElement(const std::string &cdata)}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+L\+Element\+::\+X\+M\+L\+Element (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{cdata}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a5e35b4c34b54ca37b8f9d61e39c905d8}{}\label{classXMLDOM_1_1XMLElement_a5e35b4c34b54ca37b8f9d61e39c905d8}
+Creates a C\+Data element with \textquotesingle{}cdata\textquotesingle{} as contents \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{X\+M\+L\+Element(const char $\ast$tag\+Name, const char $\ast$const $\ast$attr\+Value\+Pair\+List)}{XMLElement(const char *tagName, const char *const *attrValuePairList)}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+L\+Element\+::\+X\+M\+L\+Element (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{tag\+Name, }
+\item[{const char $\ast$const $\ast$}]{attr\+Value\+Pair\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_ad2bf1d99f6ba83c870f546f3a4e6aa78}{}\label{classXMLDOM_1_1XMLElement_ad2bf1d99f6ba83c870f546f3a4e6aa78}
+Creates a T\+AG element with specified tag\+Name and attributes 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ad2bf1d99f6ba83c870f546f3a4e6aa78_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{X\+M\+L\+Element(const char $\ast$tag\+Name, const char $\ast$const $\ast$attr\+Value\+Pair\+List, unsigned int n\+Attr)}{XMLElement(const char *tagName, const char *const *attrValuePairList, unsigned int nAttr)}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+L\+Element\+::\+X\+M\+L\+Element (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{tag\+Name, }
+\item[{const char $\ast$const $\ast$}]{attr\+Value\+Pair\+List, }
+\item[{unsigned int}]{n\+Attr}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_afd5abcb481eac86977df3b2e763c5601}{}\label{classXMLDOM_1_1XMLElement_afd5abcb481eac86977df3b2e763c5601}
+Creates a T\+AG element with specified tag\+Name and attributes 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_afd5abcb481eac86977df3b2e763c5601_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{X\+M\+L\+Element(const std\+::string \&tag\+Name, const std\+::vector$<$ std\+::string $>$ \&attr\+Value\+Pair\+List)}{XMLElement(const std::string &tagName, const std::vector< std::string > &attrValuePairList)}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+L\+Element\+::\+X\+M\+L\+Element (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{tag\+Name, }
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{attr\+Value\+Pair\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a161545cdaa7937cf5b6fb5511cef6728}{}\label{classXMLDOM_1_1XMLElement_a161545cdaa7937cf5b6fb5511cef6728}
+Creates a T\+AG element with specified tag\+Name and attributes 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a161545cdaa7937cf5b6fb5511cef6728_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{X\+M\+L\+Element(const std\+::string \&tag\+Name, const std\+::map$<$ std\+::string, std\+::string $>$ \&attr\+Value\+Pair\+List)}{XMLElement(const std::string &tagName, const std::map< std::string, std::string > &attrValuePairList)}}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+L\+Element\+::\+X\+M\+L\+Element (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{tag\+Name, }
+\item[{const std\+::map$<$ std\+::string, std\+::string $>$ \&}]{attr\+Value\+Pair\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a6f2525c1773adb68912a274c076d0ff6}{}\label{classXMLDOM_1_1XMLElement_a6f2525c1773adb68912a274c076d0ff6}
+Creates a T\+AG element with specified tag\+Name and attributes 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a6f2525c1773adb68912a274c076d0ff6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!append\+Child@{append\+Child}}
+\index{append\+Child@{append\+Child}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{append\+Child(\+X\+M\+L\+Element $\ast$new\+Elem)}{appendChild(XMLElement *newElem)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int X\+M\+L\+Element\+::append\+Child (
+\begin{DoxyParamCaption}
+\item[{{\bf X\+M\+L\+Element} $\ast$}]{new\+Elem}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a01276193af3cda360867f98c82b5ecbb}{}\label{classXMLDOM_1_1XMLElement_a01276193af3cda360867f98c82b5ecbb}
+Add the specified element as a child to this one. \begin{DoxyRemark}{Remarks}
+The class takes ownership of the pointer. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a01276193af3cda360867f98c82b5ecbb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a01276193af3cda360867f98c82b5ecbb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!append\+Contents@{append\+Contents}}
+\index{append\+Contents@{append\+Contents}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{append\+Contents(const std\+::string \&cont)}{appendContents(const std::string &cont)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::append\+Contents (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{cont}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a599cf001586620a89628d63b342378e2}{}\label{classXMLDOM_1_1XMLElement_a599cf001586620a89628d63b342378e2}
+Appends character contents to this element. \begin{DoxyRemark}{Remarks}
+Works for all element types. For C\+D\+A\+TA elements, quite straightforwardly appends the specified string to the contents string. For T\+AG elements, it checks the last child element -\/ if it\textquotesingle{}s a C\+D\+A\+TA element, it appends to this element. If not, it creates a new C\+D\+A\+TA element with those contents instead. Useful for tidy X\+ML document parsing. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a599cf001586620a89628d63b342378e2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a599cf001586620a89628d63b342378e2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!attributes\+Begin@{attributes\+Begin}}
+\index{attributes\+Begin@{attributes\+Begin}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{attributes\+Begin()}{attributesBegin()}}]{\setlength{\rightskip}{0pt plus 5cm}attribute\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::attributes\+Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_af5535e7b15134b7f780a19a62852f0b8}{}\label{classXMLDOM_1_1XMLElement_af5535e7b15134b7f780a19a62852f0b8}
+Get an iterator pointing to the first attribute 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_af5535e7b15134b7f780a19a62852f0b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!attributes\+Begin@{attributes\+Begin}}
+\index{attributes\+Begin@{attributes\+Begin}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{attributes\+Begin() const }{attributesBegin() const }}]{\setlength{\rightskip}{0pt plus 5cm}const\+\_\+attribute\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::attributes\+Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_ace8e37dfd5644c9a4f94cf99d74bcc76}{}\label{classXMLDOM_1_1XMLElement_ace8e37dfd5644c9a4f94cf99d74bcc76}
+Get an iterator pointing to the first attribute \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!attributes\+End@{attributes\+End}}
+\index{attributes\+End@{attributes\+End}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{attributes\+End()}{attributesEnd()}}]{\setlength{\rightskip}{0pt plus 5cm}attribute\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::attributes\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_aa89a2b2409bd1a55d0e4f0644f530d8d}{}\label{classXMLDOM_1_1XMLElement_aa89a2b2409bd1a55d0e4f0644f530d8d}
+Get an iterator pointing to the last attribute 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_aa89a2b2409bd1a55d0e4f0644f530d8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!attributes\+End@{attributes\+End}}
+\index{attributes\+End@{attributes\+End}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{attributes\+End() const }{attributesEnd() const }}]{\setlength{\rightskip}{0pt plus 5cm}const\+\_\+attribute\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::attributes\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_ae8bdc3b87c921fbbda7593bdc3c84320}{}\label{classXMLDOM_1_1XMLElement_ae8bdc3b87c921fbbda7593bdc3c84320}
+Get an iterator pointing to the last attribute \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!children\+Begin@{children\+Begin}}
+\index{children\+Begin@{children\+Begin}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{children\+Begin()}{childrenBegin()}}]{\setlength{\rightskip}{0pt plus 5cm}child\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::children\+Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_aabdd3c93fc39142e773ed65c42fbcfb0}{}\label{classXMLDOM_1_1XMLElement_aabdd3c93fc39142e773ed65c42fbcfb0}
+Get an iterator pointing to the first child 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_aabdd3c93fc39142e773ed65c42fbcfb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!children\+Begin@{children\+Begin}}
+\index{children\+Begin@{children\+Begin}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{children\+Begin() const }{childrenBegin() const }}]{\setlength{\rightskip}{0pt plus 5cm}const\+\_\+child\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::children\+Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_aea217caa9f1395f4c80a5a3766ac30f9}{}\label{classXMLDOM_1_1XMLElement_aea217caa9f1395f4c80a5a3766ac30f9}
+Get an iterator pointing to the first child \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!children\+End@{children\+End}}
+\index{children\+End@{children\+End}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{children\+End()}{childrenEnd()}}]{\setlength{\rightskip}{0pt plus 5cm}child\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::children\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a95d33e72e4dd9a7b1a6ad3bb26053777}{}\label{classXMLDOM_1_1XMLElement_a95d33e72e4dd9a7b1a6ad3bb26053777}
+Get an iterator pointing to the last child 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a95d33e72e4dd9a7b1a6ad3bb26053777_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!children\+End@{children\+End}}
+\index{children\+End@{children\+End}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{children\+End() const }{childrenEnd() const }}]{\setlength{\rightskip}{0pt plus 5cm}const\+\_\+child\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::children\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a535aa02187cf032bea6dc26b85e29179}{}\label{classXMLDOM_1_1XMLElement_a535aa02187cf032bea6dc26b85e29179}
+Get an iterator pointing to the last child 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a535aa02187cf032bea6dc26b85e29179_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!clear@{clear}}
+\index{clear@{clear}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{clear(bool do\+Attributes=true)}{clear(bool doAttributes=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::clear (
+\begin{DoxyParamCaption}
+\item[{bool}]{do\+Attributes = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_abe4cbb213e383278b497ca79062c3f5a}{}\label{classXMLDOM_1_1XMLElement_abe4cbb213e383278b497ca79062c3f5a}
+Remove everything -\/ including attributes, if specified -\/ in a very quick manner 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_abe4cbb213e383278b497ca79062c3f5a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_abe4cbb213e383278b497ca79062c3f5a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!contents@{contents}}
+\index{contents@{contents}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{contents() const }{contents() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& X\+M\+L\+Element\+::contents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classXMLDOM_1_1XMLElement_a233ff65ad65b92fee2f145d2ba059c3a}{}\label{classXMLDOM_1_1XMLElement_a233ff65ad65b92fee2f145d2ba059c3a}
+Returns the element\textquotesingle{}s content \begin{DoxyRemark}{Remarks}
+For cdata/comment elements, the character data inside the element. For tag elements, the contents of the first child if its an cdata element, otherwise just empty. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a233ff65ad65b92fee2f145d2ba059c3a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a233ff65ad65b92fee2f145d2ba059c3a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!contents@{contents}}
+\index{contents@{contents}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{contents()}{contents()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string \& X\+M\+L\+Element\+::contents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a8ea797d366a39b336d3430f507363c39}{}\label{classXMLDOM_1_1XMLElement_a8ea797d366a39b336d3430f507363c39}
+Returns a read-\/write reference to the element\textquotesingle{}s content \begin{DoxyRemark}{Remarks}
+For cdata/comment elements only -\/ calling it with tag elements will probably just bring an \textquotesingle{}assertion failed\textquotesingle{} dialog ;) 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a8ea797d366a39b336d3430f507363c39_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Attribute@{get\+Attribute}}
+\index{get\+Attribute@{get\+Attribute}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Attribute(const std\+::string \&name) const }{getAttribute(const std::string &name) const }}]{\setlength{\rightskip}{0pt plus 5cm}const\+\_\+attribute\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a2aa40c03f1c2acb1148a304a0a92d154}{}\label{classXMLDOM_1_1XMLElement_a2aa40c03f1c2acb1148a304a0a92d154}
+Get an iterator pointing to the specified attribute 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a2aa40c03f1c2acb1148a304a0a92d154_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Attribute@{get\+Attribute}}
+\index{get\+Attribute@{get\+Attribute}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Attribute(const std\+::string \&name)}{getAttribute(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}attribute\+\_\+iterator X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a24561b966a6840413b4804fddede2011}{}\label{classXMLDOM_1_1XMLElement_a24561b966a6840413b4804fddede2011}
+Get an iterator pointing to the specified attribute 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a24561b966a6840413b4804fddede2011_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Attribute\+Value@{get\+Attribute\+Value}}
+\index{get\+Attribute\+Value@{get\+Attribute\+Value}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Attribute\+Value(const std\+::string \&name) const }{getAttributeValue(const std::string &name) const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Attribute\+Value (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a5d09435a6f8e608a9d4c2bae19701fd0}{}\label{classXMLDOM_1_1XMLElement_a5d09435a6f8e608a9d4c2bae19701fd0}
+Get the contents of the specified attribute -\/ undefined if the attribute does not exist 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a5d09435a6f8e608a9d4c2bae19701fd0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a5d09435a6f8e608a9d4c2bae19701fd0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Attribute\+Value@{get\+Attribute\+Value}}
+\index{get\+Attribute\+Value@{get\+Attribute\+Value}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Attribute\+Value(const std\+::string \&name, const std\+::string \&def) const }{getAttributeValue(const std::string &name, const std::string &def) const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Attribute\+Value (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{def}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a421fe7112187db26d6c8529a2af3187a}{}\label{classXMLDOM_1_1XMLElement_a421fe7112187db26d6c8529a2af3187a}
+Get the contents of the specified attribute -\/ or the specified default if it does not exist 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a421fe7112187db26d6c8529a2af3187a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child@{get\+Child}}
+\index{get\+Child@{get\+Child}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child(unsigned int idx) const }{getChild(unsigned int idx) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Child (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a91cd5c70c6d67bb74d357f74e8ec6de5}{}\label{classXMLDOM_1_1XMLElement_a91cd5c70c6d67bb74d357f74e8ec6de5}
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if idx is out of range 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a91cd5c70c6d67bb74d357f74e8ec6de5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child@{get\+Child}}
+\index{get\+Child@{get\+Child}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child(unsigned int idx)}{getChild(unsigned int idx)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Child (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_ae719f0588c09f90d5d5ca1e86d56222d}{}\label{classXMLDOM_1_1XMLElement_ae719f0588c09f90d5d5ca1e86d56222d}
+Returns a pointer to the specified children, or N\+U\+LL if idx is out of range 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ae719f0588c09f90d5d5ca1e86d56222d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child\+By\+Hierarchical\+Id@{get\+Child\+By\+Hierarchical\+Id}}
+\index{get\+Child\+By\+Hierarchical\+Id@{get\+Child\+By\+Hierarchical\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child\+By\+Hierarchical\+Id(const std\+::string \&id) const }{getChildByHierarchicalId(const std::string &id) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element} $\ast$ X\+M\+L\+Element\+::get\+Child\+By\+Hierarchical\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+) const}\hypertarget{classXMLDOM_1_1XMLElement_a49a63387c3f5f3e23bca6aabb0d3c419}{}\label{classXMLDOM_1_1XMLElement_a49a63387c3f5f3e23bca6aabb0d3c419}
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found \begin{DoxyRemark}{Remarks}
+Hierarchical I\+Ds are tree-\/like I\+Ds which sometimes are able to resolve ambiguities. They\textquotesingle{}re specified like file paths\+: $<$name1$>$/$<$name2$>$/$<$name3$>$ involves searching for \textquotesingle{}name1\textquotesingle{}, then inside the found element (if any), search for \textquotesingle{}name2\textquotesingle{}, and then inside \textquotesingle{}name2\textquotesingle{} search for \textquotesingle{}name3\textquotesingle{}. Notice that there still is room for ambiguity... but with well design structures, it should be avoidable. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a49a63387c3f5f3e23bca6aabb0d3c419_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a49a63387c3f5f3e23bca6aabb0d3c419_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child\+By\+Hierarchical\+Id@{get\+Child\+By\+Hierarchical\+Id}}
+\index{get\+Child\+By\+Hierarchical\+Id@{get\+Child\+By\+Hierarchical\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child\+By\+Hierarchical\+Id(const std\+::string \&id)}{getChildByHierarchicalId(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element} $\ast$ X\+M\+L\+Element\+::get\+Child\+By\+Hierarchical\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_ae6c965e2495d76343ce9a167938e8a4c}{}\label{classXMLDOM_1_1XMLElement_ae6c965e2495d76343ce9a167938e8a4c}
+Returns a pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found \begin{DoxyRemark}{Remarks}
+Hierarchical I\+Ds are tree-\/like I\+Ds which sometimes are able to resolve ambiguities. They\textquotesingle{}re specified like file paths\+: $<$name1$>$/$<$name2$>$/$<$name3$>$ involves searching for \textquotesingle{}name1\textquotesingle{}, then inside the found element (if any), search for \textquotesingle{}name2\textquotesingle{}, and then inside \textquotesingle{}name2\textquotesingle{} search for \textquotesingle{}name3\textquotesingle{}. Notice that there still is room for ambiguity... but with well design structures, it should be avoidable. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ae6c965e2495d76343ce9a167938e8a4c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child\+By\+Hierarchical\+Name@{get\+Child\+By\+Hierarchical\+Name}}
+\index{get\+Child\+By\+Hierarchical\+Name@{get\+Child\+By\+Hierarchical\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child\+By\+Hierarchical\+Name(const std\+::string \&name) const }{getChildByHierarchicalName(const std::string &name) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element} $\ast$ X\+M\+L\+Element\+::get\+Child\+By\+Hierarchical\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const}\hypertarget{classXMLDOM_1_1XMLElement_ac15c8554200cad88b328b44e9b3d4f6e}{}\label{classXMLDOM_1_1XMLElement_ac15c8554200cad88b328b44e9b3d4f6e}
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found \begin{DoxySeeAlso}{See also}
+\hyperlink{classXMLDOM_1_1XMLElement_a49a63387c3f5f3e23bca6aabb0d3c419}{get\+Child\+By\+Hierarchical\+Id} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ac15c8554200cad88b328b44e9b3d4f6e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ac15c8554200cad88b328b44e9b3d4f6e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child\+By\+Hierarchical\+Name@{get\+Child\+By\+Hierarchical\+Name}}
+\index{get\+Child\+By\+Hierarchical\+Name@{get\+Child\+By\+Hierarchical\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child\+By\+Hierarchical\+Name(const std\+::string \&name)}{getChildByHierarchicalName(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element} $\ast$ X\+M\+L\+Element\+::get\+Child\+By\+Hierarchical\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_aaa6d95acff0343578a860246e58dce17}{}\label{classXMLDOM_1_1XMLElement_aaa6d95acff0343578a860246e58dce17}
+Returns a pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found \begin{DoxySeeAlso}{See also}
+\hyperlink{classXMLDOM_1_1XMLElement_a49a63387c3f5f3e23bca6aabb0d3c419}{get\+Child\+By\+Hierarchical\+Id} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_aaa6d95acff0343578a860246e58dce17_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child\+By\+Id@{get\+Child\+By\+Id}}
+\index{get\+Child\+By\+Id@{get\+Child\+By\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child\+By\+Id(const std\+::string \&id) const }{getChildById(const std::string &id) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element} $\ast$ X\+M\+L\+Element\+::get\+Child\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+) const}\hypertarget{classXMLDOM_1_1XMLElement_a9dc8e59b0e865711da58b9eaae6ad910}{}\label{classXMLDOM_1_1XMLElement_a9dc8e59b0e865711da58b9eaae6ad910}
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a9dc8e59b0e865711da58b9eaae6ad910_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child\+By\+Id@{get\+Child\+By\+Id}}
+\index{get\+Child\+By\+Id@{get\+Child\+By\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child\+By\+Id(const std\+::string \&id)}{getChildById(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element} $\ast$ X\+M\+L\+Element\+::get\+Child\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a806d22ef3eb9402140e1efc544fb4ea0}{}\label{classXMLDOM_1_1XMLElement_a806d22ef3eb9402140e1efc544fb4ea0}
+Returns a pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child\+By\+Name@{get\+Child\+By\+Name}}
+\index{get\+Child\+By\+Name@{get\+Child\+By\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child\+By\+Name(const std\+::string \&name) const }{getChildByName(const std::string &name) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element} $\ast$ X\+M\+L\+Element\+::get\+Child\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const}\hypertarget{classXMLDOM_1_1XMLElement_a7d42b4e451aa93b60b6bb5e2e582da0e}{}\label{classXMLDOM_1_1XMLElement_a7d42b4e451aa93b60b6bb5e2e582da0e}
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if name isn\textquotesingle{}t found 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a7d42b4e451aa93b60b6bb5e2e582da0e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Child\+By\+Name@{get\+Child\+By\+Name}}
+\index{get\+Child\+By\+Name@{get\+Child\+By\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Child\+By\+Name(const std\+::string \&name)}{getChildByName(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element} $\ast$ X\+M\+L\+Element\+::get\+Child\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a03e059f16c2ee6ca88e25c0c8ae71420}{}\label{classXMLDOM_1_1XMLElement_a03e059f16c2ee6ca88e25c0c8ae71420}
+Returns a pointer to the specified children, or N\+U\+LL if name isn\textquotesingle{}t found \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Document@{get\+Document}}
+\index{get\+Document@{get\+Document}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Document() const }{getDocument() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Document}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a7ca2364a51efbb2a2fae927ed44eb7a6}{}\label{classXMLDOM_1_1XMLElement_a7ca2364a51efbb2a2fae927ed44eb7a6}
+Returns the element containing this element, if any -\/ N\+U\+LL otherwise \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Document@{get\+Document}}
+\index{get\+Document@{get\+Document}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Document()}{getDocument()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Document}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a25d23e71643b55728f910604b43beed0}{}\label{classXMLDOM_1_1XMLElement_a25d23e71643b55728f910604b43beed0}
+Returns the element containing this element, if any -\/ N\+U\+LL otherwise 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a25d23e71643b55728f910604b43beed0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Id() const }{getId() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a12c51b261667efee2db62c72c2cfccca}{}\label{classXMLDOM_1_1XMLElement_a12c51b261667efee2db62c72c2cfccca}
+Returns the \char`\"{}id\char`\"{} attribute\textquotesingle{}s value -\/ much quicker than \hyperlink{classXMLDOM_1_1XMLElement_a2aa40c03f1c2acb1148a304a0a92d154}{get\+Attribute()} \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a91f4ab38d1cea2d53c5190ec51259761}{}\label{classXMLDOM_1_1XMLElement_a91f4ab38d1cea2d53c5190ec51259761}
+Returns the \char`\"{}name\char`\"{} attribute\textquotesingle{}s value -\/ much quicker than \hyperlink{classXMLDOM_1_1XMLElement_a2aa40c03f1c2acb1148a304a0a92d154}{get\+Attribute()} \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Parent() const }{getParent() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a84a1700aeaa8dee143ac58ccd2027b4e}{}\label{classXMLDOM_1_1XMLElement_a84a1700aeaa8dee143ac58ccd2027b4e}
+Returns the element containing this element, if any -\/ N\+U\+LL otherwise \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{get\+Parent()}{getParent()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_aa8b34dd58162dca0c55a099f38322997}{}\label{classXMLDOM_1_1XMLElement_aa8b34dd58162dca0c55a099f38322997}
+Returns the element containing this element, if any -\/ N\+U\+LL otherwise \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!num\+Children@{num\+Children}}
+\index{num\+Children@{num\+Children}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{num\+Children() const }{numChildren() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::num\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a17fbc9119c8cd50b6f689e0b64084348}{}\label{classXMLDOM_1_1XMLElement_a17fbc9119c8cd50b6f689e0b64084348}
+Returns the number of children this element has attached 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a17fbc9119c8cd50b6f689e0b64084348_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!rebuild\+Named\+Bindings@{rebuild\+Named\+Bindings}}
+\index{rebuild\+Named\+Bindings@{rebuild\+Named\+Bindings}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{rebuild\+Named\+Bindings(bool deep\+Scan=true)}{rebuildNamedBindings(bool deepScan=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::rebuild\+Named\+Bindings (
+\begin{DoxyParamCaption}
+\item[{bool}]{deep\+Scan = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a2ea0c98e68c76b1777e85d869af9733b}{}\label{classXMLDOM_1_1XMLElement_a2ea0c98e68c76b1777e85d869af9733b}
+Recreate the internal structures for get\+Child\+By\+Name/get\+Child\+By\+Id 
+\begin{DoxyParams}{Parameters}
+{\em deep\+Scan} & If true (default), children will be added to the map so that a get\+Child\+By\+X() may return deep children. If false, only direct descendants will be added, which is much less likely to generate collisions, and would be preferred for highly structured sources. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a2ea0c98e68c76b1777e85d869af9733b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a2ea0c98e68c76b1777e85d869af9733b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!remove\+Attribute@{remove\+Attribute}}
+\index{remove\+Attribute@{remove\+Attribute}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{remove\+Attribute(const std\+::string \&name)}{removeAttribute(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::remove\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a8d47de14572108518a19abdf074c7b83}{}\label{classXMLDOM_1_1XMLElement_a8d47de14572108518a19abdf074c7b83}
+Remove the specified attribute 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a8d47de14572108518a19abdf074c7b83_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!remove\+Child@{remove\+Child}}
+\index{remove\+Child@{remove\+Child}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{remove\+Child(unsigned int idx)}{removeChild(unsigned int idx)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::remove\+Child (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{idx}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_ae3c90039e128d8125c180761d3019a2b}{}\label{classXMLDOM_1_1XMLElement_ae3c90039e128d8125c180761d3019a2b}
+Remove the specified element from this one. \begin{DoxyRemark}{Remarks}
+May be costly... since internal housekeeping has to be done as well. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ae3c90039e128d8125c180761d3019a2b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!remove\+Child@{remove\+Child}}
+\index{remove\+Child@{remove\+Child}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{remove\+Child(const X\+M\+L\+Element $\ast$which)}{removeChild(const XMLElement *which)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::remove\+Child (
+\begin{DoxyParamCaption}
+\item[{const {\bf X\+M\+L\+Element} $\ast$}]{which}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a8c8cbcd6935e451afdfc1de62be0a44b}{}\label{classXMLDOM_1_1XMLElement_a8c8cbcd6935e451afdfc1de62be0a44b}
+
+
+
+
+Remove the specified element from this one. \begin{DoxyRemark}{Remarks}
+May be costly... since internal housekeeping has to be done as well. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a8c8cbcd6935e451afdfc1de62be0a44b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!remove\+Child\+By\+Id@{remove\+Child\+By\+Id}}
+\index{remove\+Child\+By\+Id@{remove\+Child\+By\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{remove\+Child\+By\+Id(const std\+::string \&id)}{removeChildById(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::remove\+Child\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_ab8a1a521c06fef728c0ff5be44c14eec}{}\label{classXMLDOM_1_1XMLElement_ab8a1a521c06fef728c0ff5be44c14eec}
+
+
+
+
+Remove the specified element from this one. \begin{DoxyRemark}{Remarks}
+May be costly... since internal housekeeping has to be done as well. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ab8a1a521c06fef728c0ff5be44c14eec_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ab8a1a521c06fef728c0ff5be44c14eec_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!remove\+Child\+By\+Name@{remove\+Child\+By\+Name}}
+\index{remove\+Child\+By\+Name@{remove\+Child\+By\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{remove\+Child\+By\+Name(const std\+::string \&name)}{removeChildByName(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::remove\+Child\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_af501dcc46e59d0d9aec560cd92d11d66}{}\label{classXMLDOM_1_1XMLElement_af501dcc46e59d0d9aec560cd92d11d66}
+
+
+
+
+Remove the specified element from this one. \begin{DoxyRemark}{Remarks}
+May be costly... since internal housekeeping has to be done as well. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_af501dcc46e59d0d9aec560cd92d11d66_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_af501dcc46e59d0d9aec560cd92d11d66_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!set\+Attribute@{set\+Attribute}}
+\index{set\+Attribute@{set\+Attribute}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{set\+Attribute(const std\+::string \&name, const std\+::string \&value)}{setAttribute(const std::string &name, const std::string &value)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::set\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a28140b3cd726d36930ae1d59d258fa04}{}\label{classXMLDOM_1_1XMLElement_a28140b3cd726d36930ae1d59d258fa04}
+Set the contents of the specified attribute 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a28140b3cd726d36930ae1d59d258fa04_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!set\+Document@{set\+Document}}
+\index{set\+Document@{set\+Document}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{set\+Document(\+X\+M\+L\+Document $\ast$document)}{setDocument(XMLDocument *document)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::set\+Document (
+\begin{DoxyParamCaption}
+\item[{{\bf X\+M\+L\+Document} $\ast$}]{document}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classXMLDOM_1_1XMLElement_a02f6fbb46ba06175df97596f01e61a48}{}\label{classXMLDOM_1_1XMLElement_a02f6fbb46ba06175df97596f01e61a48}
+\begin{DoxyNote}{Note}
+Cascade effect 
+\end{DoxyNote}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a02f6fbb46ba06175df97596f01e61a48_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a02f6fbb46ba06175df97596f01e61a48_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{set\+Type(\+Type new\+Type)}{setType(Type newType)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::set\+Type (
+\begin{DoxyParamCaption}
+\item[{Type}]{new\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{classXMLDOM_1_1XMLElement_a6341f47796d6516478d239c5733ec995}{}\label{classXMLDOM_1_1XMLElement_a6341f47796d6516478d239c5733ec995}
+Changes the type of element -\/ beware, though... it destroys the element 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a6341f47796d6516478d239c5733ec995_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a6341f47796d6516478d239c5733ec995_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!tag\+Name@{tag\+Name}}
+\index{tag\+Name@{tag\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{tag\+Name() const }{tagName() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::tag\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_a4f51bcc83b35ed12e2b776085835a369}{}\label{classXMLDOM_1_1XMLElement_a4f51bcc83b35ed12e2b776085835a369}
+Returns the tag name of this X\+E\+T\+\_\+\+T\+AG element -\/ otherwise... undefined 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_a4f51bcc83b35ed12e2b776085835a369_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}!type@{type}}
+\index{type@{type}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element}}
+\subsubsection[{\texorpdfstring{type() const }{type() const }}]{\setlength{\rightskip}{0pt plus 5cm}Type X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Element\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLElement_ac6abb91539f92aacb495162199a8c610}{}\label{classXMLDOM_1_1XMLElement_ac6abb91539f92aacb495162199a8c610}
+Returns the type of element -\/ only a few types have been defined, nowhere near true D\+OM types 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ac6abb91539f92aacb495162199a8c610_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d8f/classXMLDOM_1_1XMLElement_ac6abb91539f92aacb495162199a8c610_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+X\+M\+L\+Document.\+h\item 
+X\+M\+L\+Document.\+cpp\end{DoxyCompactItemize}

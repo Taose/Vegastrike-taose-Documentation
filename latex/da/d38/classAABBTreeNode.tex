@@ -1,0 +1,74 @@
+\hypertarget{classAABBTreeNode}{}\section{A\+A\+B\+B\+Tree\+Node Class Reference}
+\label{classAABBTreeNode}\index{A\+A\+B\+B\+Tree\+Node@{A\+A\+B\+B\+Tree\+Node}}
+
+
+Inheritance diagram for A\+A\+B\+B\+Tree\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{de/d0e/classAABBTreeNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+A\+B\+B\+Tree\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{d9/d2c/classAABBTreeNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ {\bfseries Get\+Primitives} () const \hypertarget{classAABBTreeNode_a5657ae9a805b1f4242d3cad8d6776862}{}\label{classAABBTreeNode_a5657ae9a805b1f4242d3cad8d6776862}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Nb\+Primitives} () const \hypertarget{classAABBTreeNode_addab28e7f0dc9e2737f08a82148121a1}{}\label{classAABBTreeNode_addab28e7f0dc9e2737f08a82148121a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Split} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis, \hyperlink{classAABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)\hypertarget{classAABBTreeNode_aefc4588f956b98d324b26d9dbecc20f8}{}\label{classAABBTreeNode_aefc4588f956b98d324b26d9dbecc20f8}
+
+\item 
+bool {\bfseries Subdivide} (\hyperlink{classAABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)\hypertarget{classAABBTreeNode_a30febc55e0cd39f7114f02395e2a69f5}{}\label{classAABBTreeNode_a30febc55e0cd39f7114f02395e2a69f5}
+
+\item 
+void {\bfseries \+\_\+\+Build\+Hierarchy} (\hyperlink{classAABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)\hypertarget{classAABBTreeNode_acf08af7ca37efb06780ef3ff433effcd}{}\label{classAABBTreeNode_acf08af7ca37efb06780ef3ff433effcd}
+
+\item 
+void {\bfseries \+\_\+\+Refit} (\hyperlink{classAABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)\hypertarget{classAABBTreeNode_a9b07d0707b9b2d043a60672f3c9cb47a}{}\label{classAABBTreeNode_a9b07d0707b9b2d043a60672f3c9cb47a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{classAABBTreeNode_ac01ca7b2cdae3d84ace89e53b700f319}{m\+Node\+Primitives}\hypertarget{classAABBTreeNode_ac01ca7b2cdae3d84ace89e53b700f319}{}\label{classAABBTreeNode_ac01ca7b2cdae3d84ace89e53b700f319}
+
+\begin{DoxyCompactList}\small\item\em Node-\/related primitives (shortcut to a position in m\+Indices below) \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classAABBTreeNode_ad06152e9431cd71da9d82ac60801b9a0}{m\+Nb\+Primitives}\hypertarget{classAABBTreeNode_ad06152e9431cd71da9d82ac60801b9a0}{}\label{classAABBTreeNode_ad06152e9431cd71da9d82ac60801b9a0}
+
+\begin{DoxyCompactList}\small\item\em Number of primitives for this node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains a generic \hyperlink{classAABB}{A\+A\+BB} tree node.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__AABBTree_8h}{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h}\end{DoxyCompactItemize}

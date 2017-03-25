@@ -1,0 +1,100 @@
+\hypertarget{IceRay_8h}{}\section{cmd/collide2/\+Ice/\+Ice\+Ray.h File Reference}
+\label{IceRay_8h}\index{cmd/collide2/\+Ice/\+Ice\+Ray.\+h@{cmd/collide2/\+Ice/\+Ice\+Ray.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d87/IceRay_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classRay}{Ray}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ void {\bfseries Compute\+Reflexion\+Vector} (\hyperlink{classPoint}{Point} \&reflected, const \hyperlink{classPoint}{Point} \&incoming\+\_\+dir, const \hyperlink{classPoint}{Point} \&outward\+\_\+normal)\hypertarget{IceRay_8h_aee3c80c603d09e004d7a385d840724a0}{}\label{IceRay_8h_aee3c80c603d09e004d7a385d840724a0}
+
+\item 
+inline\+\_\+ void {\bfseries Compute\+Reflexion\+Vector} (\hyperlink{classPoint}{Point} \&reflected, const \hyperlink{classPoint}{Point} \&source, const \hyperlink{classPoint}{Point} \&impact, const \hyperlink{classPoint}{Point} \&normal)\hypertarget{IceRay_8h_a094af22c0a43ca70a1a9dd7ad36603bf}{}\label{IceRay_8h_a094af22c0a43ca70a1a9dd7ad36603bf}
+
+\item 
+inline\+\_\+ void {\bfseries Decompose\+Vector} (\hyperlink{classPoint}{Point} \&normal\+\_\+compo, \hyperlink{classPoint}{Point} \&tangent\+\_\+compo, const \hyperlink{classPoint}{Point} \&outward\+\_\+dir, const \hyperlink{classPoint}{Point} \&outward\+\_\+normal)\hypertarget{IceRay_8h_aaf4bd5141d901009c1888e01c8114f76}{}\label{IceRay_8h_aaf4bd5141d901009c1888e01c8114f76}
+
+\item 
+inline\+\_\+ void \hyperlink{IceRay_8h_a2ade36eaffeebaf0be7ea46132ab9a4d}{Compute\+Local\+Direction} (\hyperlink{classPoint}{Point} \&local\+\_\+dir, const \hyperlink{classPoint}{Point} \&world\+\_\+dir, const \hyperlink{classMatrix4x4}{Matrix4x4} \&world)
+\item 
+inline\+\_\+ void \hyperlink{IceRay_8h_ae2b052900713287b86c972b0ee635bd4}{Compute\+Local\+Point} (\hyperlink{classPoint}{Point} \&local\+\_\+pt, const \hyperlink{classPoint}{Point} \&world\+\_\+pt, const \hyperlink{classMatrix4x4}{Matrix4x4} \&world)
+\item 
+inline\+\_\+ void \hyperlink{IceRay_8h_a7a63211019b0379a62f8ced2abc3b94a}{Compute\+Local\+Ray} (\hyperlink{classRay}{Ray} \&local\+\_\+ray, const \hyperlink{classRay}{Ray} \&world\+\_\+ray, const \hyperlink{classMatrix4x4}{Matrix4x4} \&world)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for rays.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Ice\+Ray.\+h@{Ice\+Ray.\+h}!Compute\+Local\+Direction@{Compute\+Local\+Direction}}
+\index{Compute\+Local\+Direction@{Compute\+Local\+Direction}!Ice\+Ray.\+h@{Ice\+Ray.\+h}}
+\subsubsection[{\texorpdfstring{Compute\+Local\+Direction(\+Point \&local\+\_\+dir, const Point \&world\+\_\+dir, const Matrix4x4 \&world)}{ComputeLocalDirection(Point &local_dir, const Point &world_dir, const Matrix4x4 &world)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Compute\+Local\+Direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{local\+\_\+dir, }
+\item[{const {\bf Point} \&}]{world\+\_\+dir, }
+\item[{const {\bf Matrix4x4} \&}]{world}
+\end{DoxyParamCaption}
+)}\hypertarget{IceRay_8h_a2ade36eaffeebaf0be7ea46132ab9a4d}{}\label{IceRay_8h_a2ade36eaffeebaf0be7ea46132ab9a4d}
+Transforms a direction vector from world space to local space 
+\begin{DoxyParams}{Parameters}
+{\em local\+\_\+dir} & \mbox{[}out\mbox{]} direction vector in local space \\
+\hline
+{\em world\+\_\+dir} & \mbox{[}in\mbox{]} direction vector in world space \\
+\hline
+{\em world} & \mbox{[}in\mbox{]} world transform \\
+\hline
+\end{DoxyParams}
+\index{Ice\+Ray.\+h@{Ice\+Ray.\+h}!Compute\+Local\+Point@{Compute\+Local\+Point}}
+\index{Compute\+Local\+Point@{Compute\+Local\+Point}!Ice\+Ray.\+h@{Ice\+Ray.\+h}}
+\subsubsection[{\texorpdfstring{Compute\+Local\+Point(\+Point \&local\+\_\+pt, const Point \&world\+\_\+pt, const Matrix4x4 \&world)}{ComputeLocalPoint(Point &local_pt, const Point &world_pt, const Matrix4x4 &world)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Compute\+Local\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{local\+\_\+pt, }
+\item[{const {\bf Point} \&}]{world\+\_\+pt, }
+\item[{const {\bf Matrix4x4} \&}]{world}
+\end{DoxyParamCaption}
+)}\hypertarget{IceRay_8h_ae2b052900713287b86c972b0ee635bd4}{}\label{IceRay_8h_ae2b052900713287b86c972b0ee635bd4}
+Transforms a position vector from world space to local space 
+\begin{DoxyParams}{Parameters}
+{\em local\+\_\+pt} & \mbox{[}out\mbox{]} position vector in local space \\
+\hline
+{\em world\+\_\+pt} & \mbox{[}in\mbox{]} position vector in world space \\
+\hline
+{\em world} & \mbox{[}in\mbox{]} world transform \\
+\hline
+\end{DoxyParams}
+\index{Ice\+Ray.\+h@{Ice\+Ray.\+h}!Compute\+Local\+Ray@{Compute\+Local\+Ray}}
+\index{Compute\+Local\+Ray@{Compute\+Local\+Ray}!Ice\+Ray.\+h@{Ice\+Ray.\+h}}
+\subsubsection[{\texorpdfstring{Compute\+Local\+Ray(\+Ray \&local\+\_\+ray, const Ray \&world\+\_\+ray, const Matrix4x4 \&world)}{ComputeLocalRay(Ray &local_ray, const Ray &world_ray, const Matrix4x4 &world)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Compute\+Local\+Ray (
+\begin{DoxyParamCaption}
+\item[{{\bf Ray} \&}]{local\+\_\+ray, }
+\item[{const {\bf Ray} \&}]{world\+\_\+ray, }
+\item[{const {\bf Matrix4x4} \&}]{world}
+\end{DoxyParamCaption}
+)}\hypertarget{IceRay_8h_a7a63211019b0379a62f8ced2abc3b94a}{}\label{IceRay_8h_a7a63211019b0379a62f8ced2abc3b94a}
+Transforms a ray from world space to local space 
+\begin{DoxyParams}{Parameters}
+{\em local\+\_\+ray} & \mbox{[}out\mbox{]} ray in local space \\
+\hline
+{\em world\+\_\+ray} & \mbox{[}in\mbox{]} ray in world space \\
+\hline
+{\em world} & \mbox{[}in\mbox{]} world transform \\
+\hline
+\end{DoxyParams}

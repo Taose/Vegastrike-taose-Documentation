@@ -1,0 +1,58 @@
+\hypertarget{opmath_8h}{}\section{cmd/collide2/csgeom2/opmath.h File Reference}
+\label{opmath_8h}\index{cmd/collide2/csgeom2/opmath.\+h@{cmd/collide2/csgeom2/opmath.\+h}}
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$float.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}cmd/collide2/opcodealgorithms.\+h\char`\"{}}\\*
+Include dependency graph for opmath.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d0d/opmath_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries H\+A\+V\+E\+\_\+\+I\+S\+N\+O\+R\+M\+AL}~1\hypertarget{opmath_8h_a28072037b2de0b2721acf18078f2ac18}{}\label{opmath_8h_a28072037b2de0b2721acf18078f2ac18}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\const T \& \hyperlink{group__geom__utils_gad847ae4a7674e661f256da05955e7eb7}{cs\+Max} (const T \&a, const T \&b)
+\item 
+{\footnotesize template$<$class T $>$ }\\const T \& \hyperlink{group__geom__utils_ga84074616ede088bc78fe3566f87eab81}{cs\+Min} (const T \&a, const T \&b)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{group__geom__utils_gae988b1834e0316df2aab598e45ea4639}{cs\+Sort} (T \&a, T \&b)
+\item 
+{\footnotesize template$<$class T , class U $>$ }\\void \hyperlink{group__geom__utils_gac15f60e919826a14d41be755b9a73cad}{cs\+Sort} (T \&a, T \&b, U \&x, U \&\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{group__geom__utils_gaa317019148dc6f7659a3a6ab244a39ba}{cs\+Clamp} (const T \&a, T max, T min)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{group__geom__utils_ga4ae5527a870c7f63d552657905c9939a}{cs\+Smooth\+Step} (const T \&a, T max, T min)
+\item 
+{\footnotesize template$<$class T , class Tfactor $>$ }\\T \hyperlink{group__geom__utils_gad5238b838897dc5350774d44e5f52001}{cs\+Lerp} (const T \&a, const T \&b, const Tfactor \&f)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{group__geom__utils_ga490abe249d6289528341e55af14b5e14}{cs\+Square} (const T \&x)
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_ga9f09b774d5cca1884a80213a91d84b64}{cs\+Finite} (float f)
+\begin{DoxyCompactList}\small\item\em Checks if a floating point value is finite. \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_ga4cd283243ebdd16050674317314df026}{cs\+Finite} (double d)
+\begin{DoxyCompactList}\small\item\em Checks if a double-\/precision floating point value is finite. \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_gaed49a33b4a87f5efa741888aaf9c5eca}{cs\+NaN} (float f)
+\begin{DoxyCompactList}\small\item\em Checks if a floating point value is not-\/a-\/number. \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_gac302c6cf13d5219407a1502838dfc1bf}{cs\+NaN} (double d)
+\begin{DoxyCompactList}\small\item\em Checks if a double-\/precision floating point value is not-\/a-\/number. \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_gaca1dc0177b20035712ee9144abdd41f1}{cs\+Normal} (float f)
+\begin{DoxyCompactList}\small\item\em Checks if a floating point value is normal (not infinite or nan). \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_gadc53a075ca2450bd20c4fb1c8cf406aa}{cs\+Normal} (double d)
+\begin{DoxyCompactList}\small\item\em Checks if a double-\/precision floating point value is normal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+
+\subsection{Detailed Description}
+Generic mathematic utility functions. 

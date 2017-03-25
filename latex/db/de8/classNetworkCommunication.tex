@@ -1,0 +1,96 @@
+\hypertarget{classNetworkCommunication}{}\section{Network\+Communication Class Reference}
+\label{classNetworkCommunication}\index{Network\+Communication@{Network\+Communication}}
+
+
+Collaboration diagram for Network\+Communication\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d1/d5b/classNetworkCommunication__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Communication\+Method} \{ {\bfseries Client\+Broadcast}, 
+{\bfseries Server\+Unicast}
+ \}\hypertarget{classNetworkCommunication_a67b9391a72b5ce271cd14fb36b03930c}{}\label{classNetworkCommunication_a67b9391a72b5ce271cd14fb36b03930c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Network\+Communication} (float minfreq, float maxfreq, bool video, bool secured, std\+::string method)\hypertarget{classNetworkCommunication_a33b79c17eef42e2b46325fce7ceaf6db}{}\label{classNetworkCommunication_a33b79c17eef42e2b46325fce7ceaf6db}
+
+\item 
+{\bfseries Network\+Communication} (int nb)\hypertarget{classNetworkCommunication_a667f6f35b8d899751d513cb75800d33b}{}\label{classNetworkCommunication_a667f6f35b8d899751d513cb75800d33b}
+
+\item 
+int {\bfseries Init\+Session} (float frequency)\hypertarget{classNetworkCommunication_a2516ae99b299b327cfbd404dbb9af2d7}{}\label{classNetworkCommunication_a2516ae99b299b327cfbd404dbb9af2d7}
+
+\item 
+void {\bfseries Send\+Sound} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&send\+\_\+sock, Obj\+Serial serial)\hypertarget{classNetworkCommunication_a1c080047650f8969041a59f4f655ddc9}{}\label{classNetworkCommunication_a1c080047650f8969041a59f4f655ddc9}
+
+\item 
+void {\bfseries Send\+Message} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&send\+\_\+sock, Obj\+Serial serial, std\+::string message)\hypertarget{classNetworkCommunication_ad09c333cb24544c435ce7bc1c169fd9c}{}\label{classNetworkCommunication_ad09c333cb24544c435ce7bc1c169fd9c}
+
+\item 
+void {\bfseries Recv\+Sound} (const char $\ast$sndbuffer, int length, bool encrypted=false)\hypertarget{classNetworkCommunication_a9ae81ab509a2f858e0cc983855d99fd5}{}\label{classNetworkCommunication_a9ae81ab509a2f858e0cc983855d99fd5}
+
+\item 
+void {\bfseries Recv\+Message} (std\+::string message, bool encrypted=false)\hypertarget{classNetworkCommunication_a2cd92362cee7b4ce93409f45ca7df39e}{}\label{classNetworkCommunication_a2cd92362cee7b4ce93409f45ca7df39e}
+
+\item 
+int {\bfseries Destroy\+Session} ()\hypertarget{classNetworkCommunication_a3a42623fd33ce0c0f6663dcd65592e77}{}\label{classNetworkCommunication_a3a42623fd33ce0c0f6663dcd65592e77}
+
+\item 
+void {\bfseries Add\+To\+Session} (Client\+Ptr clt)\hypertarget{classNetworkCommunication_af68cae5d7ff6d87a5e7d8d951605362b}{}\label{classNetworkCommunication_af68cae5d7ff6d87a5e7d8d951605362b}
+
+\item 
+void {\bfseries Remove\+From\+Session} (Client\+Ptr clt)\hypertarget{classNetworkCommunication_ac3417adea8ed41f904d0292db611a4e7}{}\label{classNetworkCommunication_ac3417adea8ed41f904d0292db611a4e7}
+
+\item 
+bool {\bfseries Is\+Active} ()\hypertarget{classNetworkCommunication_a19287204acfa5463fb4e83ea391fa667}{}\label{classNetworkCommunication_a19287204acfa5463fb4e83ea391fa667}
+
+\item 
+char $\ast$ {\bfseries Get\+Webcam\+Capture} ()\hypertarget{classNetworkCommunication_ae710462caffcb83db5706457de05bcf7}{}\label{classNetworkCommunication_ae710462caffcb83db5706457de05bcf7}
+
+\item 
+char $\ast$ {\bfseries Get\+Webcam\+From\+Network} (int \&length)\hypertarget{classNetworkCommunication_a042060c2793eeb950c29c2641266a345}{}\label{classNetworkCommunication_a042060c2793eeb950c29c2641266a345}
+
+\item 
+void {\bfseries Start\+Webcam\+Transfer} ()\hypertarget{classNetworkCommunication_a02769397c3d2255059e9a6945aaba974}{}\label{classNetworkCommunication_a02769397c3d2255059e9a6945aaba974}
+
+\item 
+void {\bfseries Stop\+Webcam\+Transfer} ()\hypertarget{classNetworkCommunication_a52fcb9a2791718c23e4c79bf3679ec6f}{}\label{classNetworkCommunication_a52fcb9a2791718c23e4c79bf3679ec6f}
+
+\item 
+char {\bfseries Has\+Webcam} ()\hypertarget{classNetworkCommunication_ad1c80f9912dfe63c76f86bd1a5274928}{}\label{classNetworkCommunication_ad1c80f9912dfe63c76f86bd1a5274928}
+
+\item 
+char {\bfseries Has\+Portaudio} ()\hypertarget{classNetworkCommunication_a022560b72da42f4007a7a1cbcd556641}{}\label{classNetworkCommunication_a022560b72da42f4007a7a1cbcd556641}
+
+\item 
+char {\bfseries Is\+Secured} ()\hypertarget{classNetworkCommunication_a288bcbc9d6381b4e05361d6d98e3d34f}{}\label{classNetworkCommunication_a288bcbc9d6381b4e05361d6d98e3d34f}
+
+\item 
+void {\bfseries Switch\+Secured} ()\hypertarget{classNetworkCommunication_a5d95a859af08a4ad9e93eff28c5772c7}{}\label{classNetworkCommunication_a5d95a859af08a4ad9e93eff28c5772c7}
+
+\item 
+void {\bfseries Switch\+Webcam} ()\hypertarget{classNetworkCommunication_ae629c24a46ec85637ab0a146dc46b488}{}\label{classNetworkCommunication_ae629c24a46ec85637ab0a146dc46b488}
+
+\item 
+float {\bfseries Min\+Freq} ()\hypertarget{classNetworkCommunication_a13b68a995011a59bbff64f5f1e68b085}{}\label{classNetworkCommunication_a13b68a995011a59bbff64f5f1e68b085}
+
+\item 
+float {\bfseries Max\+Freq} ()\hypertarget{classNetworkCommunication_a763ece36c8784b582d74b285fcaef135}{}\label{classNetworkCommunication_a763ece36c8784b582d74b285fcaef135}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/networkcomm.\+h\item 
+networking/networkcomm.\+cpp\item 
+networking/networkcomm\+\_\+server.\+cpp\end{DoxyCompactItemize}

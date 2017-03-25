@@ -1,0 +1,229 @@
+\hypertarget{classNavigationSystem}{}\section{Navigation\+System Class Reference}
+\label{classNavigationSystem}\index{Navigation\+System@{Navigation\+System}}
+
+
+Collaboration diagram for Navigation\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d4c/classNavigationSystem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classNavigationSystem_1_1CachedSectorIterator}{Cached\+Sector\+Iterator}
+\item 
+class \hyperlink{classNavigationSystem_1_1CachedSystemIterator}{Cached\+System\+Iterator}
+\item 
+class \hyperlink{classNavigationSystem_1_1SystemIterator}{System\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+Current\+System} (string new\+System)\hypertarget{classNavigationSystem_aae2baa6e560bd6590fe3ee974243dde4}{}\label{classNavigationSystem_aae2baa6e560bd6590fe3ee974243dde4}
+
+\item 
+std\+::string {\bfseries get\+Current\+System} ()\hypertarget{classNavigationSystem_a6323533ee4f33339722acc0f60a58d55}{}\label{classNavigationSystem_a6323533ee4f33339722acc0f60a58d55}
+
+\item 
+std\+::string {\bfseries get\+Selected\+System} ()\hypertarget{classNavigationSystem_a0e2b16d4e1729544c0f224c82d7d6927}{}\label{classNavigationSystem_a0e2b16d4e1729544c0f224c82d7d6927}
+
+\item 
+std\+::string {\bfseries get\+Focused\+System} ()\hypertarget{classNavigationSystem_a7c51ae567564c6648ea14225f77b647f}{}\label{classNavigationSystem_a7c51ae567564c6648ea14225f77b647f}
+
+\item 
+std\+::string {\bfseries get\+Destination\+System} ()\hypertarget{classNavigationSystem_aca339cb57b2931f37b7294ca51e4cba4}{}\label{classNavigationSystem_aca339cb57b2931f37b7294ca51e4cba4}
+
+\item 
+void \hyperlink{classNavigationSystem_aeefeabb0c4f58c24af13fd7a601ef9c5}{Draw\+Button} (float \&x1, float \&x2, float \&y1, float \&y2, int button\+\_\+number, bool outline)
+\item 
+void {\bfseries Draw\+Button\+Outline} (float \&x1, float \&x2, float \&y1, float \&y2, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_a1f87a7c28d8c24e11cfdfd99d55ea2fc}{}\label{classNavigationSystem_a1f87a7c28d8c24e11cfdfd99d55ea2fc}
+
+\item 
+void {\bfseries Draw\+Cursor} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float wid, float hei, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_ab7f249ed0cdf2ac6918c854715f86b1d}{}\label{classNavigationSystem_ab7f249ed0cdf2ac6918c854715f86b1d}
+
+\item 
+void {\bfseries Draw\+Grid} (float \&screen\+\_\+x1, float \&screen\+\_\+x2, float \&screen\+\_\+y1, float \&screen\+\_\+y2, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_aed226c24f4f924c904feff7109d6ea90}{}\label{classNavigationSystem_aed226c24f4f924c904feff7109d6ea90}
+
+\item 
+bool {\bfseries Test\+If\+In\+Range} (float \&x1, float \&x2, float \&y1, float \&y2, float tx, float ty)\hypertarget{classNavigationSystem_af3831fe3414c6057734e601a41df87d5}{}\label{classNavigationSystem_af3831fe3414c6057734e601a41df87d5}
+
+\item 
+bool {\bfseries Test\+If\+In\+Range\+Blk} (float \&x1, float \&x2, float size, float tx, float ty)\hypertarget{classNavigationSystem_a7b4c7d7568bc840b674b8b2a49976a1f}{}\label{classNavigationSystem_a7b4c7d7568bc840b674b8b2a49976a1f}
+
+\item 
+bool {\bfseries Test\+If\+In\+Range\+Rad} (float \&x, float \&\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float size, float tx, float ty)\hypertarget{classNavigationSystem_a16af102ded7ea2e77ceba81ed153c13c}{}\label{classNavigationSystem_a16af102ded7ea2e77ceba81ed153c13c}
+
+\item 
+bool {\bfseries Parse\+File} (string filename)\hypertarget{classNavigationSystem_aedf496a174a7281e37efb1c3777eff1b}{}\label{classNavigationSystem_aedf496a174a7281e37efb1c3777eff1b}
+
+\item 
+bool {\bfseries Check\+Draw} ()\hypertarget{classNavigationSystem_a167717cbf29b5010b668b2a03d6f4be5}{}\label{classNavigationSystem_a167717cbf29b5010b668b2a03d6f4be5}
+
+\item 
+void {\bfseries Draw\+System} ()\hypertarget{classNavigationSystem_a8983dd7a8093ee777c35ac0cdcdbe144}{}\label{classNavigationSystem_a8983dd7a8093ee777c35ac0cdcdbe144}
+
+\item 
+void {\bfseries Draw\+Galaxy} ()\hypertarget{classNavigationSystem_ac1831462bfb0884850a50ae7faa4c155}{}\label{classNavigationSystem_ac1831462bfb0884850a50ae7faa4c155}
+
+\item 
+void {\bfseries Draw\+Mission} ()\hypertarget{classNavigationSystem_accb4efb5dfd15364fcddb9bff6269b58}{}\label{classNavigationSystem_accb4efb5dfd15364fcddb9bff6269b58}
+
+\item 
+void {\bfseries Draw\+Ship} ()\hypertarget{classNavigationSystem_ab78f8027115638eee4862da6da4c79ae}{}\label{classNavigationSystem_ab78f8027115638eee4862da6da4c79ae}
+
+\item 
+void {\bfseries Draw\+Sector\+List} ()\hypertarget{classNavigationSystem_a8c942f4e9139a37e4e3ab5c7c269575e}{}\label{classNavigationSystem_a8c942f4e9139a37e4e3ab5c7c269575e}
+
+\item 
+void {\bfseries Draw\+Objectives} ()\hypertarget{classNavigationSystem_a726c59c4e343c7c7448e542597b5f7cc}{}\label{classNavigationSystem_a726c59c4e343c7c7448e542597b5f7cc}
+
+\item 
+void {\bfseries Set\+Mouse\+Flip\+Status} ()\hypertarget{classNavigationSystem_ab263522186c80d2315ee8e4f3f359764}{}\label{classNavigationSystem_ab263522186c80d2315ee8e4f3f359764}
+
+\item 
+void {\bfseries Screen\+To\+Coord} (float \&x)\hypertarget{classNavigationSystem_a6fc66d8a0142fdb26d41638104be1ba9}{}\label{classNavigationSystem_a6fc66d8a0142fdb26d41638104be1ba9}
+
+\item 
+void {\bfseries Intersect\+Border} (float \&x, float \&\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, const float \&x1, const float \&y1) const \hypertarget{classNavigationSystem_a13e8042bac09aeef3512a8cef3c8f213}{}\label{classNavigationSystem_a13e8042bac09aeef3512a8cef3c8f213}
+
+\item 
+void {\bfseries Draw} ()\hypertarget{classNavigationSystem_aa362418068ae260c5044dd2f81ebd4ef}{}\label{classNavigationSystem_aa362418068ae260c5044dd2f81ebd4ef}
+
+\item 
+void {\bfseries Setup} ()\hypertarget{classNavigationSystem_ad6982f9bc588d660dd177e78bda5f65c}{}\label{classNavigationSystem_ad6982f9bc588d660dd177e78bda5f65c}
+
+\item 
+void {\bfseries Set\+Draw} (bool n)\hypertarget{classNavigationSystem_a6d6f6dc599a6fb2bedc35fae4805a59a}{}\label{classNavigationSystem_a6d6f6dc599a6fb2bedc35fae4805a59a}
+
+\item 
+void {\bfseries Clear\+Priorities} ()\hypertarget{classNavigationSystem_a64b3011a3a9eb4ecb30b90711671c248}{}\label{classNavigationSystem_a64b3011a3a9eb4ecb30b90711671c248}
+
+\item 
+void {\bfseries update\+Path} ()\hypertarget{classNavigationSystem_a54cd86537c20203e05d7f1c75f179e07}{}\label{classNavigationSystem_a54cd86537c20203e05d7f1c75f179e07}
+
+\item 
+void {\bfseries scroll} (signed int scrollamt)\hypertarget{classNavigationSystem_a4e0704cff013cf5aa7f8441f291f8703}{}\label{classNavigationSystem_a4e0704cff013cf5aa7f8441f291f8703}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Draw\+Circle} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_a537dc213b32ce635f064ab81844c0e95}{}\label{classNavigationSystem_a537dc213b32ce635f064ab81844c0e95}
+
+\item 
+static void {\bfseries Draw\+Half\+Circle\+Top} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_a6d46eed1f4b3fde1329b15fec3ffda0e}{}\label{classNavigationSystem_a6d46eed1f4b3fde1329b15fec3ffda0e}
+
+\item 
+static void {\bfseries Draw\+Half\+Circle\+Bottom} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_ac6f03f9e0eccac6ed5bd0d701ddea6a6}{}\label{classNavigationSystem_ac6f03f9e0eccac6ed5bd0d701ddea6a6}
+
+\item 
+static void {\bfseries Draw\+Planet} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_afc7564255687636f3965e8696b16abf8}{}\label{classNavigationSystem_afc7564255687636f3965e8696b16abf8}
+
+\item 
+static void {\bfseries Draw\+Station} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_a2da3e50cbffae6edbdf89fb665396f83}{}\label{classNavigationSystem_a2da3e50cbffae6edbdf89fb665396f83}
+
+\item 
+static void {\bfseries Draw\+Jump} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_a47b84646f57017c04567470dd58d1808}{}\label{classNavigationSystem_a47b84646f57017c04567470dd58d1808}
+
+\item 
+static void {\bfseries Draw\+Missile} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_a4e847da9a1c65bcbd989e7c1c2f6ac8e}{}\label{classNavigationSystem_a4e847da9a1c65bcbd989e7c1c2f6ac8e}
+
+\item 
+static void {\bfseries Draw\+Target\+Corners} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_a667563b1750a9fa2fb40359b5d0c2ffe}{}\label{classNavigationSystem_a667563b1750a9fa2fb40359b5d0c2ffe}
+
+\item 
+static void {\bfseries Draw\+Nav\+Circle} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float rot\+\_\+x, float rot\+\_\+y, float size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col)\hypertarget{classNavigationSystem_a548033f40a171175396d07efb32f7a85}{}\label{classNavigationSystem_a548033f40a171175396d07efb32f7a85}
+
+\item 
+static void {\bfseries mouse\+Drag} (int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classNavigationSystem_a55f6a4f06ba5c8e805e2d5eb814b5d12}{}\label{classNavigationSystem_a55f6a4f06ba5c8e805e2d5eb814b5d12}
+
+\item 
+static void {\bfseries mouse\+Motion} (int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classNavigationSystem_aa594e49889c880d5d6655b531c32ce15}{}\label{classNavigationSystem_aa594e49889c880d5d6655b531c32ce15}
+
+\item 
+static void {\bfseries mouse\+Click} (int button, int state, int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classNavigationSystem_ac1b646696db24ec1e6e943d105359a3d}{}\label{classNavigationSystem_ac1b646696db24ec1e6e943d105359a3d}
+
+\item 
+static int {\bfseries get\+Mouse\+Button\+Status} ()\hypertarget{classNavigationSystem_aa76e7f3c5f87b317ca9ec30e8f8d1b72}{}\label{classNavigationSystem_aa76e7f3c5f87b317ca9ec30e8f8d1b72}
+
+\item 
+static class Q\+Vector {\bfseries dxyz} (class Q\+Vector, double x\+\_\+, double y\+\_\+, double z\+\_\+)\hypertarget{classNavigationSystem_ae061f8f8a500712c0b1a49a97a4f9f10}{}\label{classNavigationSystem_ae061f8f8a500712c0b1a49a97a4f9f10}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPathManager}{Path\+Manager} $\ast$ {\bfseries pathman}\hypertarget{classNavigationSystem_a05cc3c6d3b2f4e85b36739b50bd2c2a5}{}\label{classNavigationSystem_a05cc3c6d3b2f4e85b36739b50bd2c2a5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries mousex} = 0\hypertarget{classNavigationSystem_a08d0aa56bb7da1ebde4e5c55db2c3654}{}\label{classNavigationSystem_a08d0aa56bb7da1ebde4e5c55db2c3654}
+
+\item 
+static int {\bfseries mousey} = 0\hypertarget{classNavigationSystem_a8f4a0a8f9f5aee2d7af804cffa74885c}{}\label{classNavigationSystem_a8f4a0a8f9f5aee2d7af804cffa74885c}
+
+\item 
+static int {\bfseries mousestat}\hypertarget{classNavigationSystem_ab948d5a3e00beb918ee21d8235b67131}{}\label{classNavigationSystem_ab948d5a3e00beb918ee21d8235b67131}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Nav\+Computer}\hypertarget{classNavigationSystem_a1e201bac6febf7e8408c0fe9f486bf2a}{}\label{classNavigationSystem_a1e201bac6febf7e8408c0fe9f486bf2a}
+
+\item 
+class {\bfseries Current\+Path\+Node}\hypertarget{classNavigationSystem_a72d2ce294573e4e663ffa0d2ff9917d1}{}\label{classNavigationSystem_a72d2ce294573e4e663ffa0d2ff9917d1}
+
+\item 
+class {\bfseries Target\+Path\+Node}\hypertarget{classNavigationSystem_a621cf4220c16b61ae9a97f5343677151}{}\label{classNavigationSystem_a621cf4220c16b61ae9a97f5343677151}
+
+\item 
+class {\bfseries Absolute\+Path\+Node}\hypertarget{classNavigationSystem_abdbf5141f7da726083693e239bdac66e}{}\label{classNavigationSystem_abdbf5141f7da726083693e239bdac66e}
+
+\item 
+class {\bfseries Criteria\+Contains}\hypertarget{classNavigationSystem_a14e55b3e4e55558c26d928e127d9419b}{}\label{classNavigationSystem_a14e55b3e4e55558c26d928e127d9419b}
+
+\item 
+class {\bfseries Criteria\+Owned\+By}\hypertarget{classNavigationSystem_af4290d98abec1e9c608678f618636812}{}\label{classNavigationSystem_af4290d98abec1e9c608678f618636812}
+
+\item 
+class {\bfseries Criteria\+Sector}\hypertarget{classNavigationSystem_aa8d00536515f2a6c9aa1bbd73f5fca24}{}\label{classNavigationSystem_aa8d00536515f2a6c9aa1bbd73f5fca24}
+
+\item 
+class {\bfseries Nav\+Path}\hypertarget{classNavigationSystem_ad52bb5f8c5442d6b93c1d3150be08380}{}\label{classNavigationSystem_ad52bb5f8c5442d6b93c1d3150be08380}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Navigation\+System@{Navigation\+System}!Draw\+Button@{Draw\+Button}}
+\index{Draw\+Button@{Draw\+Button}!Navigation\+System@{Navigation\+System}}
+\subsubsection[{\texorpdfstring{Draw\+Button(float \&x1, float \&x2, float \&y1, float \&y2, int button\+\_\+number, bool outline)}{DrawButton(float &x1, float &x2, float &y1, float &y2, int button_number, bool outline)}}]{\setlength{\rightskip}{0pt plus 5cm}void Navigation\+System\+::\+Draw\+Button (
+\begin{DoxyParamCaption}
+\item[{float \&}]{x1, }
+\item[{float \&}]{x2, }
+\item[{float \&}]{y1, }
+\item[{float \&}]{y2, }
+\item[{int}]{button\+\_\+number, }
+\item[{bool}]{outline}
+\end{DoxyParamCaption}
+)}\hypertarget{classNavigationSystem_aeefeabb0c4f58c24af13fd7a601ef9c5}{}\label{classNavigationSystem_aeefeabb0c4f58c24af13fd7a601ef9c5}
+!! D\+E\+P\+R\+E\+SS !!!
+
+!! R\+E\+L\+E\+A\+SE !!!
+
+!! O\+UT OF B\+O\+U\+N\+DS !!! 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/nav/navscreen.\+h\item 
+gfx/nav/drawgalaxy.\+cpp\item 
+gfx/nav/drawsystem.\+cpp\item 
+gfx/nav/navitemstodraw.\+h\item 
+gfx/nav/navparse.\+h\item 
+gfx/nav/navscreen.\+cpp\end{DoxyCompactItemize}

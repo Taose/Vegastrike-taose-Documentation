@@ -1,0 +1,102 @@
+\hypertarget{classClientState}{}\section{Client\+State Class Reference}
+\label{classClientState}\index{Client\+State@{Client\+State}}
+
+
+Collaboration diagram for Client\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{da/dbd/classClientState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Client\+State} (Obj\+Serial serial)\hypertarget{classClientState_a36ce0b4082f863a287dfa736373cd147}{}\label{classClientState_a36ce0b4082f863a287dfa736373cd147}
+
+\item 
+{\bfseries Client\+State} (Obj\+Serial serial, Q\+Vector posit, \hyperlink{structQuaternion}{Quaternion} orientat, Vector velocity, Vector acc, Vector angvel)\hypertarget{classClientState_a02ac64fb525dbbbe20a7c7279654da36}{}\label{classClientState_a02ac64fb525dbbbe20a7c7279654da36}
+
+\item 
+{\bfseries Client\+State} (Obj\+Serial serial, Q\+Vector posit, \hyperlink{structQuaternion}{Quaternion} orientat, Vector velocity, Vector acc, Vector angvel, unsigned int del)\hypertarget{classClientState_a33110642d240550f91d826993dcd1c8f}{}\label{classClientState_a33110642d240550f91d826993dcd1c8f}
+
+\item 
+{\bfseries Client\+State} (Obj\+Serial serial, \hyperlink{structTransformation}{Transformation} trans, Vector velocity, Vector acc, Vector angvel, unsigned int del)\hypertarget{classClientState_a3ef93e711477b55aa9f53d00102522a7}{}\label{classClientState_a3ef93e711477b55aa9f53d00102522a7}
+
+\item 
+{\bfseries Client\+State} (const \hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classClientState_a10fd14df81ed7ca8201d9ece333d75a6}{}\label{classClientState_a10fd14df81ed7ca8201d9ece333d75a6}
+
+\item 
+const Q\+Vector \& {\bfseries get\+Position} () const \hypertarget{classClientState_a01eea88cbe8349abcc6588fffe2d83bc}{}\label{classClientState_a01eea88cbe8349abcc6588fffe2d83bc}
+
+\item 
+const \hyperlink{structQuaternion}{Quaternion} \& {\bfseries get\+Orientation} () const \hypertarget{classClientState_aba1129a9a378551e0587c4c421056ad7}{}\label{classClientState_aba1129a9a378551e0587c4c421056ad7}
+
+\item 
+const \hyperlink{structTransformation}{Transformation} \& {\bfseries get\+Transformation} () const \hypertarget{classClientState_af288a074bd60b7bdfbf23d668a15fe63}{}\label{classClientState_af288a074bd60b7bdfbf23d668a15fe63}
+
+\item 
+const Vector \& {\bfseries get\+Velocity} () const \hypertarget{classClientState_a68087f4461e6837a58a32d695d1bbfd0}{}\label{classClientState_a68087f4461e6837a58a32d695d1bbfd0}
+
+\item 
+const Vector \& {\bfseries get\+Angular\+Velocity} () const \hypertarget{classClientState_ac19050a6f29a6f5a6e5f9dd0d5b5c216}{}\label{classClientState_ac19050a6f29a6f5a6e5f9dd0d5b5c216}
+
+\item 
+float {\bfseries get\+Spec\+Ramp} () const \hypertarget{classClientState_a9a1d6c1f4080ea5e6fb100fa4d7b4242}{}\label{classClientState_a9a1d6c1f4080ea5e6fb100fa4d7b4242}
+
+\item 
+float {\bfseries get\+Spec\+Mult} () const \hypertarget{classClientState_ae02b427f1c3439fa9c6752d1dcc9e4ab}{}\label{classClientState_ae02b427f1c3439fa9c6752d1dcc9e4ab}
+
+\item 
+void {\bfseries set\+Acceleration} (Vector acc)\hypertarget{classClientState_a812fa6fb3d2949775e90ba5134847d4c}{}\label{classClientState_a812fa6fb3d2949775e90ba5134847d4c}
+
+\item 
+void {\bfseries set\+Unit\+State} (\hyperlink{classUnit}{Unit} $\ast$un) const \hypertarget{classClientState_aec621385e79d33a80f21097a970c7912}{}\label{classClientState_aec621385e79d33a80f21097a970c7912}
+
+\item 
+Obj\+Serial {\bfseries get\+Serial} () const \hypertarget{classClientState_ab4e2ff85df0857c600b265b9459b92ad}{}\label{classClientState_ab4e2ff85df0857c600b265b9459b92ad}
+
+\item 
+void {\bfseries set\+Serial} (Obj\+Serial ser)\hypertarget{classClientState_abb156ffb85a143d472de857783ec0486}{}\label{classClientState_abb156ffb85a143d472de857783ec0486}
+
+\item 
+void {\bfseries set\+Position} (Q\+Vector posit)\hypertarget{classClientState_af4dab10fa684d59375402aa5f575b167}{}\label{classClientState_af4dab10fa684d59375402aa5f575b167}
+
+\item 
+void {\bfseries set\+Orientation} (\hyperlink{structQuaternion}{Quaternion} orient)\hypertarget{classClientState_a72518188418744c3b2543a34f62b22a7}{}\label{classClientState_a72518188418744c3b2543a34f62b22a7}
+
+\item 
+void {\bfseries set\+Velocity} (Vector vel)\hypertarget{classClientState_a6b4bd861a417fee756fd288af2fae981}{}\label{classClientState_a6b4bd861a417fee756fd288af2fae981}
+
+\item 
+void {\bfseries set\+Angular\+Velocity} (Vector vel)\hypertarget{classClientState_a78c96a8cf3ffa6f58e7ca6b75bf61e2b}{}\label{classClientState_a78c96a8cf3ffa6f58e7ca6b75bf61e2b}
+
+\item 
+void {\bfseries set\+Spec\+Ramp} (float rc)\hypertarget{classClientState_a56187e4ed07588f62f3a250188003819}{}\label{classClientState_a56187e4ed07588f62f3a250188003819}
+
+\item 
+void {\bfseries set\+Spec\+Mult} (float wfm)\hypertarget{classClientState_a0b2bb7fd9df8ded4001d28f18fd1074a}{}\label{classClientState_a0b2bb7fd9df8ded4001d28f18fd1074a}
+
+\item 
+void {\bfseries display} (std\+::ostream \&ostr) const \hypertarget{classClientState_ac7821e2ba472cf53b83fb38b83623072}{}\label{classClientState_ac7821e2ba472cf53b83fb38b83623072}
+
+\item 
+void {\bfseries display} () const \hypertarget{classClientState_a8cc9648db9a7e72bd344c1c53fc27367}{}\label{classClientState_a8cc9648db9a7e72bd344c1c53fc27367}
+
+\item 
+int {\bfseries operator==} (const \hyperlink{classClientState}{Client\+State} \&ctmp) const \hypertarget{classClientState_a0a197f19dfe55a571de8ce18e789bc2e}{}\label{classClientState_a0a197f19dfe55a571de8ce18e789bc2e}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Net\+Buffer}\hypertarget{classClientState_a5fa9dc68a18506d711ae309eb2b89feb}{}\label{classClientState_a5fa9dc68a18506d711ae309eb2b89feb}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+clientstate.\+h\item 
+networking/lowlevel/vsnet\+\_\+clientstate.\+cpp\end{DoxyCompactItemize}

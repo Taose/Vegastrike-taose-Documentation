@@ -1,0 +1,113 @@
+\hypertarget{classCommunicatingAI}{}\section{Communicating\+AI Class Reference}
+\label{classCommunicatingAI}\index{Communicating\+AI@{Communicating\+AI}}
+
+
+this class is meant to be inherited by AI wishing to process comm messages  
+
+
+
+
+{\ttfamily \#include $<$comm\+\_\+ai.\+h$>$}
+
+
+
+Inheritance diagram for Communicating\+AI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d04/classCommunicatingAI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Communicating\+AI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dfc/classCommunicatingAI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classCommunicatingAI_ac1ba228f69815ab82e08c7277919a2ed}{Destroy} ()\hypertarget{classCommunicatingAI_ac1ba228f69815ab82e08c7277919a2ed}{}\label{classCommunicatingAI_ac1ba228f69815ab82e08c7277919a2ed}
+
+\begin{DoxyCompactList}\small\item\em The virutal function that unrefs all memory then calls Destruct () which takes care of unreffing this or calling delete on this. \end{DoxyCompactList}\item 
+virtual float {\bfseries get\+Mood} ()\hypertarget{classCommunicatingAI_ad40507377c0a80e481cbfaff5c0b7954}{}\label{classCommunicatingAI_ad40507377c0a80e481cbfaff5c0b7954}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries Get\+Random\+Unit} (float Player\+Probability, float Target\+Probability)\hypertarget{classCommunicatingAI_a26cf23858b5830195d889856fbbf399e}{}\label{classCommunicatingAI_a26cf23858b5830195d889856fbbf399e}
+
+\item 
+void {\bfseries Random\+Initiate\+Communication} (float Player\+Probability, float Target\+Probability)\hypertarget{classCommunicatingAI_a2aa20dd1630981dbe7f58e95fcba7831}{}\label{classCommunicatingAI_a2aa20dd1630981dbe7f58e95fcba7831}
+
+\item 
+void {\bfseries Terminate\+Contraband\+Search} (bool foundcontraband)\hypertarget{classCommunicatingAI_ab193cabfa5e7edbf345cb54cb71560c1}{}\label{classCommunicatingAI_ab193cabfa5e7edbf345cb54cb71560c1}
+
+\item 
+void {\bfseries Initiate\+Contraband\+Search} (float Player\+Probability, float Target\+Probability)\hypertarget{classCommunicatingAI_a7f029927ff4f301760b3f613ba517ec3}{}\label{classCommunicatingAI_a7f029927ff4f301760b3f613ba517ec3}
+
+\item 
+void {\bfseries Update\+Contraband\+Search} ()\hypertarget{classCommunicatingAI_ad8b2df74c717cd4717f9a6f97c462553}{}\label{classCommunicatingAI_ad8b2df74c717cd4717f9a6f97c462553}
+
+\item 
+{\bfseries Communicating\+AI} (int ttype, int stype, float mood=0, float anger=-\/666, float appeasement=666, float moodswingyness=666, float randomnessresponse=666)\hypertarget{classCommunicatingAI_a0e98b1ccd2433716520a59104a61028b}{}\label{classCommunicatingAI_a0e98b1ccd2433716520a59104a61028b}
+
+\item 
+virtual void \hyperlink{classCommunicatingAI_a468baea9cc0679615b7f5976de5b5bce}{Process\+Comm\+Message} (class \hyperlink{classCommunicationMessage}{Communication\+Message} \&c)\hypertarget{classCommunicatingAI_a468baea9cc0679615b7f5976de5b5bce}{}\label{classCommunicatingAI_a468baea9cc0679615b7f5976de5b5bce}
+
+\begin{DoxyCompactList}\small\item\em processes a single message...generally called by the Messages() func \end{DoxyCompactList}\item 
+virtual void {\bfseries Adjust\+Relation\+To} (\hyperlink{classUnit}{Unit} $\ast$un, float factor)\hypertarget{classCommunicatingAI_af445b7b8c394dc19edba816515e4dff0}{}\label{classCommunicatingAI_af445b7b8c394dc19edba816515e4dff0}
+
+\item 
+virtual int {\bfseries select\+Communication\+Message} (class \hyperlink{classCommunicationMessage}{Communication\+Message} \&c, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classCommunicatingAI_acd733e5670f879773eea1f6dc38010fc}{}\label{classCommunicatingAI_acd733e5670f879773eea1f6dc38010fc}
+
+\item 
+virtual int {\bfseries select\+Communication\+Message\+Mood} (\hyperlink{classCommunicationMessage}{Communication\+Message} \&c, float mood)\hypertarget{classCommunicatingAI_a2d49aa5fb086c7e333241054463224a3}{}\label{classCommunicatingAI_a2d49aa5fb086c7e333241054463224a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Get\+Mad\+At} (\hyperlink{classUnit}{Unit} $\ast$which, int how\+Mad)\hypertarget{classCommunicatingAI_ab806cccfbc16af054c63a675d7830bad}{}\label{classCommunicatingAI_ab806cccfbc16af054c63a675d7830bad}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries anger}\hypertarget{classCommunicatingAI_a220ef78b4638ff74acbe507bd4bfd1fb}{}\label{classCommunicatingAI_a220ef78b4638ff74acbe507bd4bfd1fb}
+
+\item 
+float {\bfseries appease}\hypertarget{classCommunicatingAI_a337b4a770f2e7d86d24a6b6db91e2549}{}\label{classCommunicatingAI_a337b4a770f2e7d86d24a6b6db91e2549}
+
+\item 
+float {\bfseries moodswingyness}\hypertarget{classCommunicatingAI_a6432f4be8f6a48d91f98c6e2e8e386c9}{}\label{classCommunicatingAI_a6432f4be8f6a48d91f98c6e2e8e386c9}
+
+\item 
+float {\bfseries randomresponse}\hypertarget{classCommunicatingAI_a0f6a920089f33aff6baa86ba6c918e2b}{}\label{classCommunicatingAI_a0f6a920089f33aff6baa86ba6c918e2b}
+
+\item 
+float {\bfseries mood}\hypertarget{classCommunicatingAI_afbdaac5f1c8dfbab42ae341f23a3a0c6}{}\label{classCommunicatingAI_afbdaac5f1c8dfbab42ae341f23a3a0c6}
+
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries contraband\+\_\+searchee}\hypertarget{classCommunicatingAI_a575b973313f8c5d42b5778bd2261e26b}{}\label{classCommunicatingAI_a575b973313f8c5d42b5778bd2261e26b}
+
+\item 
+Vector {\bfseries Speed\+And\+Course}\hypertarget{classCommunicatingAI_ac27ed566fc73efd1aaec475d2d645f3c}{}\label{classCommunicatingAI_ac27ed566fc73efd1aaec475d2d645f3c}
+
+\item 
+int {\bfseries which\+\_\+cargo\+\_\+item}\hypertarget{classCommunicatingAI_a2188f196508c0d32d604ca38b470cc57}{}\label{classCommunicatingAI_a2188f196508c0d32d604ca38b470cc57}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+this class is meant to be inherited by AI wishing to process comm messages 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/comm\+\_\+ai.\+h\item 
+cmd/ai/comm\+\_\+ai.\+cpp\end{DoxyCompactItemize}

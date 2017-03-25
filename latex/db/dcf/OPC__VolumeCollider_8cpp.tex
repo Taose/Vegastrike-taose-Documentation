@@ -1,0 +1,76 @@
+\hypertarget{OPC__VolumeCollider_8cpp}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Volume\+Collider.cpp File Reference}
+\label{OPC__VolumeCollider_8cpp}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Volume\+Collider.\+cpp@{cmd/collide2/\+O\+P\+C\+\_\+\+Volume\+Collider.\+cpp}}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+Include dependency graph for O\+P\+C\+\_\+\+Volume\+Collider.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d92/OPC__VolumeCollider_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+D\+U\+MP}(type)
+\item 
+\#define {\bfseries I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+L\+E\+A\+F\+D\+U\+MP}(type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains base volume collider class.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June, 2, 2001 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{O\+P\+C\+\_\+\+Volume\+Collider.\+cpp@{O\+P\+C\+\_\+\+Volume\+Collider.\+cpp}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+L\+E\+A\+F\+D\+U\+MP@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+L\+E\+A\+F\+D\+U\+MP}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+L\+E\+A\+F\+D\+U\+MP@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+L\+E\+A\+F\+D\+U\+MP}!O\+P\+C\+\_\+\+Volume\+Collider.\+cpp@{O\+P\+C\+\_\+\+Volume\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+L\+E\+A\+F\+D\+U\+MP}{IMPLEMENT_LEAFDUMP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+L\+E\+A\+F\+D\+U\+MP(
+\begin{DoxyParamCaption}
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__VolumeCollider_8cpp_a64621eab22445fbbb03be68f7974a3da}{}\label{OPC__VolumeCollider_8cpp_a64621eab22445fbbb03be68f7974a3da}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} VolumeCollider::\_Dump(\textcolor{keyword}{const} type* node)            \(\backslash\)
+\{                                                       \(\backslash\)
+    if(node->IsLeaf())                                  \(\backslash\)
+    \{                                                   \(\backslash\)
+        mTouchedPrimitives->Add(node->GetPrimitive());  \(\backslash\)
+    \}                                                   \(\backslash\)
+    else                                                \(\backslash\)
+    \{                                                   \(\backslash\)
+        \_Dump(node->GetPos());                          \(\backslash\)
+                                                        \(\backslash\)
+        if(ContactFound()) return;                      \(\backslash\)
+                                                        \(\backslash\)
+        \_Dump(node->GetNeg());                          \(\backslash\)
+    \}                                                   \(\backslash\)
+\}
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Volume\+Collider.\+cpp@{O\+P\+C\+\_\+\+Volume\+Collider.\+cpp}!I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+D\+U\+MP@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+D\+U\+MP}}
+\index{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+D\+U\+MP@{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+D\+U\+MP}!O\+P\+C\+\_\+\+Volume\+Collider.\+cpp@{O\+P\+C\+\_\+\+Volume\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+D\+U\+MP}{IMPLEMENT_NOLEAFDUMP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+L\+E\+A\+F\+D\+U\+MP(
+\begin{DoxyParamCaption}
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__VolumeCollider_8cpp_aafccf978d47875880954a0fdb6c236b4}{}\label{OPC__VolumeCollider_8cpp_aafccf978d47875880954a0fdb6c236b4}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} VolumeCollider::\_Dump(\textcolor{keyword}{const} type* node)                                    \(\backslash\)
+\{                                                                               \(\backslash\)
+    if(node->HasPosLeaf())  mTouchedPrimitives->Add(node->GetPosPrimitive());   \(\backslash\)
+    else                    \_Dump(node->GetPos());                              \(\backslash\)
+                                                                                \(\backslash\)
+    if(ContactFound()) return;                                                  \(\backslash\)
+                                                                                \(\backslash\)
+    if(node->HasNegLeaf())  mTouchedPrimitives->Add(node->GetNegPrimitive());   \(\backslash\)
+    else                    \_Dump(node->GetNeg());                              \(\backslash\)
+\}
+\end{DoxyCode}

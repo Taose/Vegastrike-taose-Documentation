@@ -1,0 +1,6 @@
+<map id="VsnetDownload::Client::Item" name="VsnetDownload::Client::Item">
+<area shape="rect" id="node2" href="$da/d44/classVsnetDownload_1_1Client_1_1Buffer.html" title="{VsnetDownload::Client\l::Buffer\n||+ Buffer()\l+ ~Buffer()\l+ getBuffer()\l+ getSize()\l+ done()\l+ ok()\l+ total()\l+ offset()\l# childSetSize()\l# childAppend()\l}" alt="" coords="5,365,161,589"/>
+<area shape="rect" id="node3" href="$de/d04/classVsnetDownload_1_1Client_1_1File.html" title="{VsnetDownload::Client\l::File\n||+ File()\l+ File()\l+ ~File()\l# childSetSize()\l# childAppend()\l}" alt="" coords="185,402,341,553"/>
+<area shape="rect" id="node5" href="$de/ddf/classVsnetDownload_1_1Client_1_1TestItem.html" title="{VsnetDownload::Client\l::TestItem\n||+ TestItem()\l+ ~TestItem()\l# childSetSize()\l# childAppend()\l}" alt="" coords="365,409,521,545"/>
+<area shape="rect" id="node4" href="$df/d09/classVsnetDownload_1_1Client_1_1NoteFile.html" title="{VsnetDownload::Client\l::NoteFile\n||+ NoteFile()\l+ NoteFile()\l+ NoteFile()\l+ ~NoteFile()\l+ done()\l+ ok()\l+ total()\l+ offset()\l}" alt="" coords="185,637,341,832"/>
+</map>

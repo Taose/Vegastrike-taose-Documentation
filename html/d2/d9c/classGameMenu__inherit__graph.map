@@ -1,0 +1,4 @@
+<map id="GameMenu" name="GameMenu">
+<area shape="rect" id="node2" href="$dd/d66/classWctlBase.html" title="{WctlBase\&lt; GameMenu \&gt;\n|# WctlCommandTable\l|+ processWindowCommand()\l}" alt="" coords="17,248,212,325"/>
+<area shape="rect" id="node3" href="$d4/d72/classWindowController.html" title="{WindowController\n|# m_window\l# m_deleteOnWindowClose\l|+ init()\l+ run()\l+ draw()\l+ window()\l+ setWindow()\l+ processWindowCommand()\l+ WindowController()\l+ ~WindowController()\l}" alt="" coords="17,5,212,200"/>
+</map>

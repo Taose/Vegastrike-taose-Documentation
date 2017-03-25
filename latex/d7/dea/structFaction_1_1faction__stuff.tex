@@ -1,0 +1,41 @@
+\hypertarget{structFaction_1_1faction__stuff}{}\section{Faction\+:\+:faction\+\_\+stuff Struct Reference}
+\label{structFaction_1_1faction__stuff}\index{Faction\+::faction\+\_\+stuff@{Faction\+::faction\+\_\+stuff}}
+
+
+{\ttfamily \#include $<$faction\+\_\+generic.\+h$>$}
+
+
+
+Collaboration diagram for Faction\+:\+:faction\+\_\+stuff\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{dc/d6e/structFaction_1_1faction__stuff__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionFaction_1_1faction__stuff_1_1faction__name}{faction\+\_\+name}
+\begin{DoxyCompactList}\small\item\em for internal purposes only. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionFaction_1_1faction__stuff_1_1faction__name}{Faction\+::faction\+\_\+stuff\+::faction\+\_\+name} {\bfseries stats}\hypertarget{structFaction_1_1faction__stuff_a82354b1346d0fb335588e05049ee4167}{}\label{structFaction_1_1faction__stuff_a82354b1346d0fb335588e05049ee4167}
+
+\item 
+float \hyperlink{structFaction_1_1faction__stuff_a4610e6a1ac2bf7dea1bedc1cb4154c39}{relationship}\hypertarget{structFaction_1_1faction__stuff_a4610e6a1ac2bf7dea1bedc1cb4154c39}{}\label{structFaction_1_1faction__stuff_a4610e6a1ac2bf7dea1bedc1cb4154c39}
+
+\begin{DoxyCompactList}\small\item\em A value between 0 and 1 indicating my attitude towards index. \end{DoxyCompactList}\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{classFSM}{F\+SM} $>$ {\bfseries conversation}\hypertarget{structFaction_1_1faction__stuff_a88fa348d8723683b9d2da02c7d1e2240}{}\label{structFaction_1_1faction__stuff_a88fa348d8723683b9d2da02c7d1e2240}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Faction\+\_\+stuff holds the index and relationship of each and every Other faction. After it has been properly processed when calling Load\+X\+ML, it will hold an ordered list containing all factions. myfaction.\+faction\mbox{[}theirfaction\mbox{]}.relationship will contain my attitude to their faction 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+faction\+\_\+generic.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="GamePlanet::Draw" name="GamePlanet::Draw">
+<area shape="rect" id="node2" href="$dc/dce/classUniverse.html#a04a32ac804354ce7074bd8db0efe5386" title="Wrapper function for Star System. " alt="" coords="194,5,366,32"/>
+<area shape="rect" id="node3" href="$d1/df0/classCamera.html#a4263186b84618f0403eff92c8c147c0b" title="Camera::GetPlanetGFX" alt="" coords="199,56,361,83"/>
+<area shape="rect" id="node4" href="$dc/dce/classUniverse.html#ab8fbc57c0ea2c21172e5e21945884a0a" title="returns active star system " alt="" coords="187,107,373,133"/>
+</map>

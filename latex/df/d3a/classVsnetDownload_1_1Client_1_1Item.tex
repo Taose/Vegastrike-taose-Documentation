@@ -1,0 +1,85 @@
+\hypertarget{classVsnetDownload_1_1Client_1_1Item}{}\section{Vsnet\+Download\+:\+:Client\+:\+:Item Class Reference}
+\label{classVsnetDownload_1_1Client_1_1Item}\index{Vsnet\+Download\+::\+Client\+::\+Item@{Vsnet\+Download\+::\+Client\+::\+Item}}
+
+
+Inheritance diagram for Vsnet\+Download\+:\+:Client\+:\+:Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d94/classVsnetDownload_1_1Client_1_1Item__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Vsnet\+Download\+:\+:Client\+:\+:Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d6/dcc/classVsnetDownload_1_1Client_1_1Item__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Item} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} sock, const std\+::string \&filename, V\+S\+File\+System\+::\+V\+S\+File\+Type=V\+S\+File\+System\+::\+Unknown\+File, Notify\+Ptr notify=Notify\+Ptr())\hypertarget{classVsnetDownload_1_1Client_1_1Item_a6c541aa3aac2fbbd6719846e01ad15a9}{}\label{classVsnetDownload_1_1Client_1_1Item_a6c541aa3aac2fbbd6719846e01ad15a9}
+
+\item 
+State {\bfseries state} () const \hypertarget{classVsnetDownload_1_1Client_1_1Item_aa30da1c6470728dba0c34acb8f19994b}{}\label{classVsnetDownload_1_1Client_1_1Item_aa30da1c6470728dba0c34acb8f19994b}
+
+\item 
+V\+S\+Error {\bfseries error} () const \hypertarget{classVsnetDownload_1_1Client_1_1Item_a10d84224e81d5b43a644eefb79800c52}{}\label{classVsnetDownload_1_1Client_1_1Item_a10d84224e81d5b43a644eefb79800c52}
+
+\item 
+void {\bfseries change\+State} (State s)\hypertarget{classVsnetDownload_1_1Client_1_1Item_a2f83372e22947169ef8bb67c01536489}{}\label{classVsnetDownload_1_1Client_1_1Item_a2f83372e22947169ef8bb67c01536489}
+
+\item 
+void {\bfseries change\+State} (State s, V\+S\+Error e)\hypertarget{classVsnetDownload_1_1Client_1_1Item_a63098106a6ac94471898e4319da9ece3}{}\label{classVsnetDownload_1_1Client_1_1Item_a63098106a6ac94471898e4319da9ece3}
+
+\item 
+void {\bfseries set\+File\+Type} (V\+S\+File\+System\+::\+V\+S\+File\+Type ft)\hypertarget{classVsnetDownload_1_1Client_1_1Item_a827ca12f702c9635fe6fe4778e8af4ec}{}\label{classVsnetDownload_1_1Client_1_1Item_a827ca12f702c9635fe6fe4778e8af4ec}
+
+\item 
+V\+S\+File\+System\+::\+V\+S\+File\+Type {\bfseries get\+File\+Type} ()\hypertarget{classVsnetDownload_1_1Client_1_1Item_a05a839c72a46afda1f31ced1987ad158}{}\label{classVsnetDownload_1_1Client_1_1Item_a05a839c72a46afda1f31ced1987ad158}
+
+\item 
+void {\bfseries set\+Size} (int len)\hypertarget{classVsnetDownload_1_1Client_1_1Item_a023c36a7628e52b456f91ad81314b71d}{}\label{classVsnetDownload_1_1Client_1_1Item_a023c36a7628e52b456f91ad81314b71d}
+
+\item 
+void {\bfseries append} (unsigned char $\ast$buffer, int bufsize)\hypertarget{classVsnetDownload_1_1Client_1_1Item_afcde01036825874184093dd85d5a2e47}{}\label{classVsnetDownload_1_1Client_1_1Item_afcde01036825874184093dd85d5a2e47}
+
+\item 
+const std\+::string \& {\bfseries get\+Filename} () const \hypertarget{classVsnetDownload_1_1Client_1_1Item_a37390e0b5f743215dbffb8fac0083eb2}{}\label{classVsnetDownload_1_1Client_1_1Item_a37390e0b5f743215dbffb8fac0083eb2}
+
+\item 
+\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} {\bfseries get\+Sock} () const \hypertarget{classVsnetDownload_1_1Client_1_1Item_a8d113e9870e8d93ccba4c7e55607ac21}{}\label{classVsnetDownload_1_1Client_1_1Item_a8d113e9870e8d93ccba4c7e55607ac21}
+
+\item 
+int {\bfseries get\+\_\+fd} () const \hypertarget{classVsnetDownload_1_1Client_1_1Item_a652beeeb06feb512418d14e795e8d442}{}\label{classVsnetDownload_1_1Client_1_1Item_a652beeeb06feb512418d14e795e8d442}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries child\+Set\+Size} (int len)=0\hypertarget{classVsnetDownload_1_1Client_1_1Item_a7c2cdfee537d5be95a60ed1bbd667f45}{}\label{classVsnetDownload_1_1Client_1_1Item_a7c2cdfee537d5be95a60ed1bbd667f45}
+
+\item 
+virtual void {\bfseries child\+Append} (unsigned char $\ast$buffer, int bufsize)=0\hypertarget{classVsnetDownload_1_1Client_1_1Item_af645a6f1c62857efa877ef3e620d80f4}{}\label{classVsnetDownload_1_1Client_1_1Item_af645a6f1c62857efa877ef3e620d80f4}
+
+\item 
+void {\bfseries protected\+\_\+replace\+\_\+notifier} (Notify\+Ptr ptr)\hypertarget{classVsnetDownload_1_1Client_1_1Item_a5dc6b6059cc75ba8260b2edf6723e198}{}\label{classVsnetDownload_1_1Client_1_1Item_a5dc6b6059cc75ba8260b2edf6723e198}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+V\+S\+File\+System\+::\+V\+S\+File\+Type {\bfseries \+\_\+filetype}\hypertarget{classVsnetDownload_1_1Client_1_1Item_a686ffe35420537c86e0273148ed3ceb7}{}\label{classVsnetDownload_1_1Client_1_1Item_a686ffe35420537c86e0273148ed3ceb7}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+notify.\+h\item 
+networking/lowlevel/vsnet\+\_\+notify.\+cpp\end{DoxyCompactItemize}

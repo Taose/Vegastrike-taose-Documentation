@@ -1,0 +1,6 @@
+<map id="Audio::SoundBuffer::reserve" name="Audio::SoundBuffer::reserve">
+<area shape="rect" id="node2" href="$dd/d53/classAudio_1_1OpenALSimpleSound.html#a53277103288edb5e5815acd168d2349a" title="Audio::OpenALSimpleSound\l::loadImpl" alt="" coords="188,5,375,47"/>
+<area shape="rect" id="node4" href="$d6/d0a/classAudio_1_1SoundBuffer.html#a8147b306d37589176c8dd5a971ea4ab8" title="Audio::SoundBuffer\l::SoundBuffer" alt="" coords="214,71,349,112"/>
+<area shape="rect" id="node5" href="$d6/d0a/classAudio_1_1SoundBuffer.html#a593491238df1c985a96c805eff2fa752" title="Audio::SoundBuffer\l::reserve" alt="" coords="214,136,349,177"/>
+<area shape="rect" id="node3" href="$dd/d53/classAudio_1_1OpenALSimpleSound.html#a0742c186bb9a64bd24a4bb00944817dd" title="Audio::OpenALSimpleSound\l::getAlBuffer" alt="" coords="423,5,609,47"/>
+</map>

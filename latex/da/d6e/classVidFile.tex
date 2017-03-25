@@ -1,0 +1,73 @@
+\hypertarget{classVidFile}{}\section{Vid\+File Class Reference}
+\label{classVidFile}\index{Vid\+File@{Vid\+File}}
+
+
+Collaboration diagram for Vid\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{d2/d1c/classVidFile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classVidFile_1_1EndOfStreamException}{End\+Of\+Stream\+Exception}
+\item 
+class \hyperlink{classVidFile_1_1Exception}{Exception}
+\item 
+class \hyperlink{classVidFile_1_1FileOpenException}{File\+Open\+Exception}
+\item 
+class \hyperlink{classVidFile_1_1FrameDecodeException}{Frame\+Decode\+Exception}
+\item 
+class \hyperlink{classVidFile_1_1UnsupportedCodecException}{Unsupported\+Codec\+Exception}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+Open} () const   throw ()\hypertarget{classVidFile_a8988372f6b08b96af32460f28e60244f}{}\label{classVidFile_a8988372f6b08b96af32460f28e60244f}
+
+\item 
+void {\bfseries open} (const std\+::string \&path, size\+\_\+t max\+Dimension=65535, bool force\+P\+OT=false)  throw (\+Exception)\hypertarget{classVidFile_a2afbdc27d888ac9aa7034f40f96570dd}{}\label{classVidFile_a2afbdc27d888ac9aa7034f40f96570dd}
+
+\item 
+void {\bfseries close} ()  throw ()\hypertarget{classVidFile_a4b792b54e3c42ed724890f6ef4af65e1}{}\label{classVidFile_a4b792b54e3c42ed724890f6ef4af65e1}
+
+\item 
+bool \hyperlink{classVidFile_aa77795e2c9b00d9d58f836edf02a5378}{seek} (float time)  throw (\+Exception)
+\item 
+float {\bfseries get\+Frame\+Rate} () const   throw ()\hypertarget{classVidFile_ab8060fbebe45a3af582323df324ce1fb}{}\label{classVidFile_ab8060fbebe45a3af582323df324ce1fb}
+
+\item 
+float {\bfseries get\+Duration} () const   throw ()\hypertarget{classVidFile_a71cd73d4d71bc653e4a3280dbc8185c0}{}\label{classVidFile_a71cd73d4d71bc653e4a3280dbc8185c0}
+
+\item 
+int {\bfseries get\+Width} () const   throw ()\hypertarget{classVidFile_ad16c9146110ed4ff1db4556819007aba}{}\label{classVidFile_ad16c9146110ed4ff1db4556819007aba}
+
+\item 
+int {\bfseries get\+Height} () const   throw ()\hypertarget{classVidFile_af2d8419b056382170ad7cfee067ec2da}{}\label{classVidFile_af2d8419b056382170ad7cfee067ec2da}
+
+\item 
+void $\ast$ {\bfseries get\+Frame\+Buffer} () const   throw ()\hypertarget{classVidFile_adc25049cb18f1aab542f3ba307c9c614}{}\label{classVidFile_adc25049cb18f1aab542f3ba307c9c614}
+
+\item 
+int {\bfseries get\+Frame\+Buffer\+Stride} () const   throw ()\hypertarget{classVidFile_adb7fdb7d921a5a96d42ad09498062522}{}\label{classVidFile_adb7fdb7d921a5a96d42ad09498062522}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Vid\+File@{Vid\+File}!seek@{seek}}
+\index{seek@{seek}!Vid\+File@{Vid\+File}}
+\subsubsection[{\texorpdfstring{seek(float time)}{seek(float time)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Vid\+File\+::seek (
+\begin{DoxyParamCaption}
+\item[{float}]{time}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classVidFile_aa77795e2c9b00d9d58f836edf02a5378}{}\label{classVidFile_aa77795e2c9b00d9d58f836edf02a5378}
+Seeks to the specified time  true if frame changed, false otherwise.  \hyperlink{classVidFile_1_1EndOfStreamException}{End\+Of\+Stream\+Exception} when time lays past the end.  \hyperlink{classVidFile_1_1FrameDecodeException}{Frame\+Decode\+Exception} when an error occurs during frame decode. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/vid\+\_\+file.\+h\item 
+gfx/vid\+\_\+file.\+cpp\end{DoxyCompactItemize}

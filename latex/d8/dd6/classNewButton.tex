@@ -1,0 +1,188 @@
+\hypertarget{classNewButton}{}\section{New\+Button Class Reference}
+\label{classNewButton}\index{New\+Button@{New\+Button}}
+
+
+Inheritance diagram for New\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/dd1/classNewButton__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for New\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d0e/classNewButton__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries N\+O\+R\+M\+A\+L\+\_\+\+S\+T\+A\+TE} =0, 
+{\bfseries D\+O\+W\+N\+\_\+\+S\+T\+A\+TE}, 
+{\bfseries H\+I\+G\+H\+L\+I\+G\+H\+T\+\_\+\+S\+T\+A\+TE}, 
+{\bfseries D\+I\+S\+A\+B\+L\+E\+D\+\_\+\+S\+T\+A\+TE}, 
+\\*
+{\bfseries F\+I\+N\+A\+L\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+TE} =D\+I\+S\+A\+B\+L\+E\+D\+\_\+\+S\+T\+A\+TE
+ \}\hypertarget{classNewButton_a810f9a706c5b6cdc18112be25f25d59b}{}\label{classNewButton_a810f9a706c5b6cdc18112be25f25d59b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int {\bfseries drawing\+State} (void)\hypertarget{classNewButton_ab46440456e7c6a5ad3361248ee72b1b2}{}\label{classNewButton_ab46440456e7c6a5ad3361248ee72b1b2}
+
+\item 
+virtual void {\bfseries set\+Drawing\+State} (int new\+State)\hypertarget{classNewButton_a2bfc60a2a063afdbab8d169c3cdf007a}{}\label{classNewButton_a2bfc60a2a063afdbab8d169c3cdf007a}
+
+\item 
+virtual Event\+Command\+Id {\bfseries command} (void)\hypertarget{classNewButton_a8547819e7b85a35ef15e208f88786b33}{}\label{classNewButton_a8547819e7b85a35ef15e208f88786b33}
+
+\item 
+virtual void {\bfseries set\+Command} (Event\+Command\+Id id)\hypertarget{classNewButton_acb304555d3cb27067643c2be518acb1f}{}\label{classNewButton_acb304555d3cb27067643c2be518acb1f}
+
+\item 
+virtual std\+::string {\bfseries label} (void)\hypertarget{classNewButton_a6228f413378ef867f827e826b78853c6}{}\label{classNewButton_a6228f413378ef867f827e826b78853c6}
+
+\item 
+virtual void {\bfseries set\+Label} (std\+::string l)\hypertarget{classNewButton_a6873fdc05e3304777870e67363c81d20}{}\label{classNewButton_a6873fdc05e3304777870e67363c81d20}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries highlight\+Color} (void)\hypertarget{classNewButton_aad5e6516506a5f0ff23910496c67b566}{}\label{classNewButton_aad5e6516506a5f0ff23910496c67b566}
+
+\item 
+virtual void {\bfseries set\+Highlight\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classNewButton_af19a1b52438251ad79e2ff8eb878df07}{}\label{classNewButton_af19a1b52438251ad79e2ff8eb878df07}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries text\+Highlight\+Color} (void)\hypertarget{classNewButton_a8b4e7324cc79b0509eacc69af0778a4d}{}\label{classNewButton_a8b4e7324cc79b0509eacc69af0778a4d}
+
+\item 
+virtual void {\bfseries set\+Text\+Highlight\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classNewButton_ac33caca7a85ff47462d33095e57c6a47}{}\label{classNewButton_ac33caca7a85ff47462d33095e57c6a47}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries down\+Color} (void)\hypertarget{classNewButton_a16c34b5e35dba1abc63954c06ae9a158}{}\label{classNewButton_a16c34b5e35dba1abc63954c06ae9a158}
+
+\item 
+virtual void {\bfseries set\+Down\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classNewButton_ada32b09219767de04dfff62d5be4a535}{}\label{classNewButton_ada32b09219767de04dfff62d5be4a535}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries down\+Text\+Color} (void)\hypertarget{classNewButton_a6bbd6c669d9cdb2184abc56a9941f40e}{}\label{classNewButton_a6bbd6c669d9cdb2184abc56a9941f40e}
+
+\item 
+virtual void {\bfseries set\+Down\+Text\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classNewButton_aa42612b12cd71bd369cd096b3ab19ce0}{}\label{classNewButton_aa42612b12cd71bd369cd096b3ab19ce0}
+
+\item 
+virtual float {\bfseries shadow\+Width} (void)\hypertarget{classNewButton_a63730a56c220c6f88761b8b1b73f964b}{}\label{classNewButton_a63730a56c220c6f88761b8b1b73f964b}
+
+\item 
+virtual void {\bfseries set\+Shadow\+Width} (float width)\hypertarget{classNewButton_a1e2f2991ca780395bc3bd38ed912d9b1}{}\label{classNewButton_a1e2f2991ca780395bc3bd38ed912d9b1}
+
+\item 
+virtual float {\bfseries variable\+Border\+Cycle\+Time} (void)\hypertarget{classNewButton_a684d921b51e6ab4f860a1c0837eabc1b}{}\label{classNewButton_a684d921b51e6ab4f860a1c0837eabc1b}
+
+\item 
+virtual void {\bfseries set\+Variable\+Border\+Cycle\+Time} (float cycle\+Time)\hypertarget{classNewButton_a6fcb73ca152a118782bc7551cc492934}{}\label{classNewButton_a6fcb73ca152a118782bc7551cc492934}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries border\+Color} (void)\hypertarget{classNewButton_af79693c254678158ac4df511e004e987}{}\label{classNewButton_af79693c254678158ac4df511e004e987}
+
+\item 
+virtual void {\bfseries set\+Border\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classNewButton_a62006ecbee6ea312e47a265e7f667250}{}\label{classNewButton_a62006ecbee6ea312e47a265e7f667250}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries end\+Border\+Color} (void)\hypertarget{classNewButton_a690dccf76800058f10e72517cdd53efc}{}\label{classNewButton_a690dccf76800058f10e72517cdd53efc}
+
+\item 
+virtual void {\bfseries set\+End\+Border\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classNewButton_abd2d2bc76d7b626a9fd5cc9100240131}{}\label{classNewButton_abd2d2bc76d7b626a9fd5cc9100240131}
+
+\item 
+virtual void {\bfseries draw} (void)\hypertarget{classNewButton_a623fe082ca8d83c2ce9d557153e382c5}{}\label{classNewButton_a623fe082ca8d83c2ce9d557153e382c5}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Down} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classNewButton_a96e86922b7ce06f4464bdf1fdd5a831f}{}\label{classNewButton_a96e86922b7ce06f4464bdf1fdd5a831f}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Up} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classNewButton_ae2f87cb9e89fb1852687f615de13f268}{}\label{classNewButton_ae2f87cb9e89fb1852687f615de13f268}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries send\+Button\+Command} (void)\hypertarget{classNewButton_afbc37ffefc6e80713c0aa629fb460311}{}\label{classNewButton_afbc37ffefc6e80713c0aa629fb460311}
+
+\item 
+virtual void {\bfseries draw\+Cycle\+Border} (float line\+Width)\hypertarget{classNewButton_a199c5c085c5fd07d44dd419fea1c5f43}{}\label{classNewButton_a199c5c085c5fd07d44dd419fea1c5f43}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries m\+\_\+drawing\+State}\hypertarget{classNewButton_a401074df637706d200b0725719478c98}{}\label{classNewButton_a401074df637706d200b0725719478c98}
+
+\item 
+Event\+Command\+Id {\bfseries m\+\_\+command\+Id}\hypertarget{classNewButton_a05b7f210a58494013ade921e1eca2446}{}\label{classNewButton_a05b7f210a58494013ade921e1eca2446}
+
+\item 
+std\+::string {\bfseries m\+\_\+label}\hypertarget{classNewButton_a4fac6270000ab34d70091b60624dde60}{}\label{classNewButton_a4fac6270000ab34d70091b60624dde60}
+
+\item 
+bool {\bfseries m\+\_\+left\+Pressed}\hypertarget{classNewButton_a1e059168416ae62d623a5182ba975e5f}{}\label{classNewButton_a1e059168416ae62d623a5182ba975e5f}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+highlight\+Color}\hypertarget{classNewButton_a6fcc4da4740b1eba084e37d5f228d011}{}\label{classNewButton_a6fcc4da4740b1eba084e37d5f228d011}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+text\+Highlight\+Color}\hypertarget{classNewButton_a4a31cadddfb07b810eedd0970ce85417}{}\label{classNewButton_a4a31cadddfb07b810eedd0970ce85417}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+down\+Color}\hypertarget{classNewButton_aea17971545ebe0ecb20d83925e2290ec}{}\label{classNewButton_aea17971545ebe0ecb20d83925e2290ec}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+down\+Text\+Color}\hypertarget{classNewButton_af43056778c7edc079c1c132cfdb81d40}{}\label{classNewButton_af43056778c7edc079c1c132cfdb81d40}
+
+\item 
+float {\bfseries m\+\_\+shadow\+Width}\hypertarget{classNewButton_a8fc5b5af572d38ff8641dae24bc30686}{}\label{classNewButton_a8fc5b5af572d38ff8641dae24bc30686}
+
+\item 
+float {\bfseries m\+\_\+variable\+Border\+Cycle\+Time}\hypertarget{classNewButton_a51540d715583f1ed5cecc5ad8c641d64}{}\label{classNewButton_a51540d715583f1ed5cecc5ad8c641d64}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+border\+Color}\hypertarget{classNewButton_a5f9240efac7da17a6bfa6b2b8efae770}{}\label{classNewButton_a5f9240efac7da17a6bfa6b2b8efae770}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+end\+Border\+Color}\hypertarget{classNewButton_af1c8ecd6e5404f527be068459f0aa334}{}\label{classNewButton_af1c8ecd6e5404f527be068459f0aa334}
+
+\item 
+\hyperlink{classPaintText}{Paint\+Text} {\bfseries m\+\_\+paint\+Text}\hypertarget{classNewButton_aae15a3a0193b14355866d6c89f51a688}{}\label{classNewButton_aae15a3a0193b14355866d6c89f51a688}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+current\+Cycle\+Color}\hypertarget{classNewButton_a83e54e647064caaf42fd7206dee87f95}{}\label{classNewButton_a83e54e647064caaf42fd7206dee87f95}
+
+\item 
+int {\bfseries m\+\_\+current\+Cycle}\hypertarget{classNewButton_ad40888b29a8e554f004500b07f5a02d0}{}\label{classNewButton_ad40888b29a8e554f004500b07f5a02d0}
+
+\item 
+int {\bfseries m\+\_\+cycle\+Step\+Count}\hypertarget{classNewButton_a710142b1f43d83d2e832fa906aee215b}{}\label{classNewButton_a710142b1f43d83d2e832fa906aee215b}
+
+\item 
+int {\bfseries m\+\_\+cycle\+Direction}\hypertarget{classNewButton_abc0f4b70c4717eb7130d05f4ce8ac99b}{}\label{classNewButton_abc0f4b70c4717eb7130d05f4ce8ac99b}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+cycle\+Color\+Delta}\hypertarget{classNewButton_a4dfe6d8bb3474193e715139f8619d61b}{}\label{classNewButton_a4dfe6d8bb3474193e715139f8619d61b}
+
+\item 
+double {\bfseries m\+\_\+last\+Step\+Time}\hypertarget{classNewButton_a7dd451b1dc33f87a48fa62883fdf9369}{}\label{classNewButton_a7dd451b1dc33f87a48fa62883fdf9369}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/newbutton.\+h\item 
+gui/newbutton.\+cpp\end{DoxyCompactItemize}

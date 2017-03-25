@@ -1,0 +1,3 @@
+<map id="AABBTreeCollider" name="AABBTreeCollider">
+<area shape="rect" id="node2" href="$d0/d62/classCollider.html" title="{Collider\n|# mFlags\l# mCurrentModel\l# mIMesh\l|+ Collider()\l+ ~Collider()\l+ GetContactStatus()\l+ FirstContactEnabled()\l+ TemporalCoherenceEnabled()\l+ ContactFound()\l+ TemporalHit()\l+ SkipPrimitiveTests()\l+ SetFirstContact()\l+ SetTemporalCoherence()\l+ SetPrimitiveTests()\l+ ValidateSettings()\l# Setup()\l# InitQuery()\l}" alt="" coords="5,5,212,303"/>
+</map>

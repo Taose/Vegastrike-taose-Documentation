@@ -1,0 +1,106 @@
+\hypertarget{classSegment}{}\section{Segment Class Reference}
+\label{classSegment}\index{Segment@{Segment}}
+
+
+Inheritance diagram for Segment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{d7/dd7/classSegment__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Segment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{de/d20/classSegment__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classSegment_ab067e08f6599ee1806e1d194e4a7a4e9}{Segment} ()\hypertarget{classSegment_ab067e08f6599ee1806e1d194e4a7a4e9}{}\label{classSegment_ab067e08f6599ee1806e1d194e4a7a4e9}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classSegment_a02406c475aa9c46fa205290109a762a1}{Segment} (const \hyperlink{classPoint}{Point} \&p0, const \hyperlink{classPoint}{Point} \&p1)\hypertarget{classSegment_a02406c475aa9c46fa205290109a762a1}{}\label{classSegment_a02406c475aa9c46fa205290109a762a1}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classSegment_a576715f83bfd385c7e71222fe3e77019}{Segment} (const \hyperlink{classSegment}{Segment} \&seg)\hypertarget{classSegment_a576715f83bfd385c7e71222fe3e77019}{}\label{classSegment_a576715f83bfd385c7e71222fe3e77019}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classSegment_ab64b9646af8a507fb06a1e838e236327}{$\sim$\+Segment} ()\hypertarget{classSegment_ab64b9646af8a507fb06a1e838e236327}{}\label{classSegment_ab64b9646af8a507fb06a1e838e236327}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+inline\+\_\+ const \hyperlink{classPoint}{Point} \& {\bfseries Get\+Origin} () const \hypertarget{classSegment_a032468942d1ec87f4b63e21015917890}{}\label{classSegment_a032468942d1ec87f4b63e21015917890}
+
+\item 
+inline\+\_\+ \hyperlink{classPoint}{Point} {\bfseries Compute\+Direction} () const \hypertarget{classSegment_ab16c46daff4a7968e93961c1463cb721}{}\label{classSegment_ab16c46daff4a7968e93961c1463cb721}
+
+\item 
+inline\+\_\+ void {\bfseries Compute\+Direction} (\hyperlink{classPoint}{Point} \&dir) const \hypertarget{classSegment_a655a68b2dbb98b0fb88852744075d8e5}{}\label{classSegment_a655a68b2dbb98b0fb88852744075d8e5}
+
+\item 
+inline\+\_\+ float {\bfseries Compute\+Length} () const \hypertarget{classSegment_ab1e8818ec363cb591a644e271d29810b}{}\label{classSegment_ab1e8818ec363cb591a644e271d29810b}
+
+\item 
+inline\+\_\+ float {\bfseries Compute\+Square\+Length} () const \hypertarget{classSegment_a23f96f91da3b70a5df97743e565d8ec7}{}\label{classSegment_a23f96f91da3b70a5df97743e565d8ec7}
+
+\item 
+inline\+\_\+ void {\bfseries Set\+Origin\+Direction} (const \hyperlink{classPoint}{Point} \&origin, const \hyperlink{classPoint}{Point} \&direction)\hypertarget{classSegment_a5125897eff3e07e5df4e4c5c98a4910e}{}\label{classSegment_a5125897eff3e07e5df4e4c5c98a4910e}
+
+\item 
+inline\+\_\+ void \hyperlink{classSegment_a45b255d4ad881d40bbe924e38d49368b}{Compute\+Point} (\hyperlink{classPoint}{Point} \&pt, float t) const 
+\item 
+float {\bfseries Square\+Distance} (const \hyperlink{classPoint}{Point} \&point, float $\ast$t=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const \hypertarget{classSegment_adaac64662e3b372e393181b8de576a44}{}\label{classSegment_adaac64662e3b372e393181b8de576a44}
+
+\item 
+inline\+\_\+ float {\bfseries Distance} (const \hyperlink{classPoint}{Point} \&point, float $\ast$t=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const \hypertarget{classSegment_a9143629d69ca029c3062916440e7b854}{}\label{classSegment_a9143629d69ca029c3062916440e7b854}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint}{Point} \hyperlink{classSegment_a728fd28f0e3e55f6451191cb58e08ad4}{m\+P0}\hypertarget{classSegment_a728fd28f0e3e55f6451191cb58e08ad4}{}\label{classSegment_a728fd28f0e3e55f6451191cb58e08ad4}
+
+\begin{DoxyCompactList}\small\item\em Start of segment. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classSegment_adacb19db251a4bd1da51db8376e059cc}{m\+P1}\hypertarget{classSegment_adacb19db251a4bd1da51db8376e059cc}{}\label{classSegment_adacb19db251a4bd1da51db8376e059cc}
+
+\begin{DoxyCompactList}\small\item\em End of segment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classSegment}{Segment} class. A segment is defined by S(t) = m\+P0 $\ast$ (1 -\/ t) + m\+P1 $\ast$ t, with 0 $<$= t $<$= 1 Alternatively, a segment is S(t) = Origin + t $\ast$ Direction for 0 $<$= t $<$= 1. Direction is not necessarily unit length. The end points are Origin = m\+P0 and Origin + Direction = m\+P1.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\index{Segment@{Segment}!Compute\+Point@{Compute\+Point}}
+\index{Compute\+Point@{Compute\+Point}!Segment@{Segment}}
+\subsubsection[{\texorpdfstring{Compute\+Point(\+Point \&pt, float t) const }{ComputePoint(Point &pt, float t) const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Segment\+::\+Compute\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{pt, }
+\item[{float}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSegment_a45b255d4ad881d40bbe924e38d49368b}{}\label{classSegment_a45b255d4ad881d40bbe924e38d49368b}
+Computes a point on the segment 
+\begin{DoxyParams}{Parameters}
+{\em pt} & \mbox{[}out\mbox{]} point on segment \\
+\hline
+{\em t} & \mbox{[}in\mbox{]} point\textquotesingle{}s parameter \mbox{[}t=0 =$>$ pt = m\+P0, t=1 =$>$ pt = m\+P1\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IceSegment_8h}{Ice\+Segment.\+h}\end{DoxyCompactItemize}

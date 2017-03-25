@@ -1,0 +1,59 @@
+\hypertarget{IceFPU_8h}{}\section{cmd/collide2/\+Ice/\+Ice\+F\+PU.h File Reference}
+\label{IceFPU_8h}\index{cmd/collide2/\+Ice/\+Ice\+F\+P\+U.\+h@{cmd/collide2/\+Ice/\+Ice\+F\+P\+U.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d10/IceFPU_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+I\+G\+N\+\_\+\+B\+I\+T\+M\+A\+SK}~0x80000000\hypertarget{IceFPU_8h_acb9b9ac64c64d12338e570855e58fbe3}{}\label{IceFPU_8h_acb9b9ac64c64d12338e570855e58fbe3}
+
+\item 
+\#define \hyperlink{IceFPU_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}{IR}(x)~((\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword}\&)(x))\hypertarget{IceFPU_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}{}\label{IceFPU_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}
+
+\begin{DoxyCompactList}\small\item\em Integer representation of a floating-\/point value. \end{DoxyCompactList}\item 
+\#define \hyperlink{IceFPU_8h_a02dca9accffc04badb82ae15765b74c8}{S\+IR}(x)~((\hyperlink{IceTypes_8h_a1459338e4e102e56fead3b10918f15dd}{sdword}\&)(x))\hypertarget{IceFPU_8h_a02dca9accffc04badb82ae15765b74c8}{}\label{IceFPU_8h_a02dca9accffc04badb82ae15765b74c8}
+
+\begin{DoxyCompactList}\small\item\em Signed integer representation of a floating-\/point value. \end{DoxyCompactList}\item 
+\#define \hyperlink{IceFPU_8h_aa854d8430e0acc31adb1ddb3647f6534}{A\+IR}(x)~(\hyperlink{IceFPU_8h_aa54c7fcd0c551f1db5fc34a2f6b11e74}{IR}(x)\&0x7fffffff)\hypertarget{IceFPU_8h_aa854d8430e0acc31adb1ddb3647f6534}{}\label{IceFPU_8h_aa854d8430e0acc31adb1ddb3647f6534}
+
+\begin{DoxyCompactList}\small\item\em Absolute integer representation of a floating-\/point value. \end{DoxyCompactList}\item 
+\#define \hyperlink{IceFPU_8h_a38d7c2b066b875bd36ed35784782d6cd}{FR}(x)~((float\&)(x))\hypertarget{IceFPU_8h_a38d7c2b066b875bd36ed35784782d6cd}{}\label{IceFPU_8h_a38d7c2b066b875bd36ed35784782d6cd}
+
+\begin{DoxyCompactList}\small\item\em Floating-\/point representation of an integer value. \end{DoxyCompactList}\item 
+\#define {\bfseries C\+H\+E\+C\+K\+\_\+\+V\+A\+L\+I\+D\+\_\+\+F\+L\+O\+AT}(x)~O\+P\+A\+S\+S\+E\+RT(Is\+Valid\+Float(x));\hypertarget{IceFPU_8h_a64ef8bb27d373a3233407609d4267bf2}{}\label{IceFPU_8h_a64ef8bb27d373a3233407609d4267bf2}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ bool \hyperlink{IceFPU_8h_aaf149f53279b512b33e2777ba4f95575}{Is\+N\+AN} (float value)\hypertarget{IceFPU_8h_aaf149f53279b512b33e2777ba4f95575}{}\label{IceFPU_8h_aaf149f53279b512b33e2777ba4f95575}
+
+\begin{DoxyCompactList}\small\item\em Is the float valid ? \end{DoxyCompactList}\item 
+inline\+\_\+ bool {\bfseries Is\+Indeterminate} (float value)\hypertarget{IceFPU_8h_a33dd5de26c2c8ca1d78b2ce4ec4e55a8}{}\label{IceFPU_8h_a33dd5de26c2c8ca1d78b2ce4ec4e55a8}
+
+\item 
+inline\+\_\+ bool {\bfseries Is\+Plus\+Inf} (float value)\hypertarget{IceFPU_8h_af1c7f371bd60091ae0d35e2bff77b58d}{}\label{IceFPU_8h_af1c7f371bd60091ae0d35e2bff77b58d}
+
+\item 
+inline\+\_\+ bool {\bfseries Is\+Minus\+Inf} (float value)\hypertarget{IceFPU_8h_abfd78e1bd312133abdb15aba47ef1e14}{}\label{IceFPU_8h_abfd78e1bd312133abdb15aba47ef1e14}
+
+\item 
+inline\+\_\+ bool {\bfseries Is\+Valid\+Float} (float value)\hypertarget{IceFPU_8h_aaf486d6f21ec189b2d553f206382fc66}{}\label{IceFPU_8h_aaf486d6f21ec189b2d553f206382fc66}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains F\+PU related code.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000 
+\end{DoxyDate}

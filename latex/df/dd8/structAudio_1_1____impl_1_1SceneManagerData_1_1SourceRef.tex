@@ -1,0 +1,46 @@
+\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef}{}\section{Audio\+:\+:\+\_\+\+\_\+impl\+:\+:Scene\+Manager\+Data\+:\+:Source\+Ref Struct Reference}
+\label{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef}\index{Audio\+::\+\_\+\+\_\+impl\+::\+Scene\+Manager\+Data\+::\+Source\+Ref@{Audio\+::\+\_\+\+\_\+impl\+::\+Scene\+Manager\+Data\+::\+Source\+Ref}}
+
+
+Collaboration diagram for Audio\+:\+:\+\_\+\+\_\+impl\+:\+:Scene\+Manager\+Data\+:\+:Source\+Ref\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{d5/d69/structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Source\+Ref} (const Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Source} $>$ \&src, const Shared\+Ptr$<$ \hyperlink{classAudio_1_1Scene}{Scene} $>$ \&scn)\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a0ebd121abaf22e6f9745d30858329827}{}\label{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a0ebd121abaf22e6f9745d30858329827}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef}{Source\+Ref} \&o) const \hypertarget{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a0fdd6ee05b00364c10f9a61854142058}{}\label{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a0fdd6ee05b00364c10f9a61854142058}
+
+\item 
+bool {\bfseries operator$<$} (const \hyperlink{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef}{Source\+Ref} \&o) const \hypertarget{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a8670881f01c79ae55a148f2adebd1080}{}\label{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a8670881f01c79ae55a148f2adebd1080}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Source} $>$ {\bfseries source}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_aed0a12b8e863c06614c8382fc6cc4aa6}{}\label{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_aed0a12b8e863c06614c8382fc6cc4aa6}
+
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1Scene}{Scene} $>$ {\bfseries scene}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a662d89b9a2e2d8268bd48b7d9e513a61}{}\label{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a662d89b9a2e2d8268bd48b7d9e513a61}
+
+\item 
+int \hyperlink{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a5b6065ab537136c4b993595f869d04aa}{needs\+Activation}\+: 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{Audio\+::\+\_\+\+\_\+impl\+::\+Scene\+Manager\+Data\+::\+Source\+Ref@{Audio\+::\+\_\+\+\_\+impl\+::\+Scene\+Manager\+Data\+::\+Source\+Ref}!needs\+Activation@{needs\+Activation}}
+\index{needs\+Activation@{needs\+Activation}!Audio\+::\+\_\+\+\_\+impl\+::\+Scene\+Manager\+Data\+::\+Source\+Ref@{Audio\+::\+\_\+\+\_\+impl\+::\+Scene\+Manager\+Data\+::\+Source\+Ref}}
+\subsubsection[{\texorpdfstring{needs\+Activation}{needsActivation}}]{\setlength{\rightskip}{0pt plus 5cm}int Audio\+::\+\_\+\+\_\+impl\+::\+Scene\+Manager\+Data\+::\+Source\+Ref\+::needs\+Activation\hspace{0.3cm}{\ttfamily [mutable]}}\hypertarget{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a5b6065ab537136c4b993595f869d04aa}{}\label{structAudio_1_1____impl_1_1SceneManagerData_1_1SourceRef_a5b6065ab537136c4b993595f869d04aa}
+If true, an update phase will start playing the source. Set when the activation phase attaches a renderable (or decides to resume one), since it cannot do so immediately or positional glitches would be apparent. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/Scene\+Manager.\+cpp\end{DoxyCompactItemize}

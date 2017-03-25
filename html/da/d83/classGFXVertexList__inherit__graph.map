@@ -1,0 +1,3 @@
+<map id="GFXVertexList" name="GFXVertexList">
+<area shape="rect" id="node2" href="$d9/d56/classGFXSphereVertexList.html" title="{GFXSphereVertexList\n|# radius\l# sphere\l|+ GFXSphereVertexList()\l+ ~GFXSphereVertexList()\l+ BeginMutate()\l+ EndMutate()\l+ BeginDrawState()\l+ Draw()\l+ EndDrawState()\l+ GetPolys()\l+ ProceduralModification()\l# Draw()\l}" alt="" coords="5,556,183,780"/>
+</map>

@@ -1,0 +1,138 @@
+\hypertarget{classMeshAnimation}{}\section{Mesh\+Animation Class Reference}
+\label{classMeshAnimation}\index{Mesh\+Animation@{Mesh\+Animation}}
+
+
+Collaboration diagram for Mesh\+Animation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d38/classMeshAnimation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Mesh\+Animation} (\hyperlink{classUnit}{Unit} $\ast$\+\_\+unit\+Dst)\hypertarget{classMeshAnimation_a4d2fd7576765b1cdc126c61fc0feba0c}{}\label{classMeshAnimation_a4d2fd7576765b1cdc126c61fc0feba0c}
+
+\item 
+bool {\bfseries Init} (const char $\ast$filename, int faction, \hyperlink{classFlightgroup}{Flightgroup} $\ast$flightgrp=N\+U\+LL, const char $\ast$animation\+Ext=N\+U\+LL)\hypertarget{classMeshAnimation_aede48e11690cbbef28f9a6ded05ce856}{}\label{classMeshAnimation_aede48e11690cbbef28f9a6ded05ce856}
+
+\item 
+void {\bfseries Animation\+Step} ()\hypertarget{classMeshAnimation_a730850e10db6f063ba5ca090ea2e462e}{}\label{classMeshAnimation_a730850e10db6f063ba5ca090ea2e462e}
+
+\item 
+void {\bfseries clear} ()\hypertarget{classMeshAnimation_a090db9b8127c6207038e06d67c80c26f}{}\label{classMeshAnimation_a090db9b8127c6207038e06d67c80c26f}
+
+\item 
+string {\bfseries get\+Animation\+Name} (unsigned int animation\+Number) const \hypertarget{classMeshAnimation_a15fc528d68a0a519e38cbb9cc7b7e1db}{}\label{classMeshAnimation_a15fc528d68a0a519e38cbb9cc7b7e1db}
+
+\item 
+unsigned int {\bfseries get\+Animation\+Number} (const char $\ast$name) const \hypertarget{classMeshAnimation_ad2e8354c66ee48c3e185b885b788eae5}{}\label{classMeshAnimation_ad2e8354c66ee48c3e185b885b788eae5}
+
+\item 
+void {\bfseries Change\+Animation} (const char $\ast$name)\hypertarget{classMeshAnimation_a125024ca229cf6f557f05e6fc7c088f0}{}\label{classMeshAnimation_a125024ca229cf6f557f05e6fc7c088f0}
+
+\item 
+void {\bfseries Change\+Animation} (unsigned int Anim\+Number)\hypertarget{classMeshAnimation_aff784a934d786bbe75f988e14cd63caa}{}\label{classMeshAnimation_aff784a934d786bbe75f988e14cd63caa}
+
+\item 
+void {\bfseries Start\+Animation} (unsigned int how\+\_\+many\+\_\+times=0, int num\+Animation=0)\hypertarget{classMeshAnimation_a967a1f5a4846b521d72077a9e7e305ab}{}\label{classMeshAnimation_a967a1f5a4846b521d72077a9e7e305ab}
+
+\item 
+void {\bfseries Stop\+Animation} ()\hypertarget{classMeshAnimation_a1c9a422813f07019027e67e2cf0dec1e}{}\label{classMeshAnimation_a1c9a422813f07019027e67e2cf0dec1e}
+
+\item 
+bool {\bfseries is\+Animated\+Mesh} () const \hypertarget{classMeshAnimation_ac1ff349498b5752c6fd59f449ea52b08}{}\label{classMeshAnimation_ac1ff349498b5752c6fd59f449ea52b08}
+
+\item 
+bool {\bfseries animation\+Runs} () const \hypertarget{classMeshAnimation_a7841c4c0adb9620b66f496eebc03183f}{}\label{classMeshAnimation_a7841c4c0adb9620b66f496eebc03183f}
+
+\item 
+unsigned int {\bfseries num\+Animations} ()\hypertarget{classMeshAnimation_a71acdec19bdf52be1ecc1ad74a872469}{}\label{classMeshAnimation_a71acdec19bdf52be1ecc1ad74a872469}
+
+\item 
+bool {\bfseries is\+Continuous\+Loop} () const \hypertarget{classMeshAnimation_aff687f32d3c4eff27711d0387dbff66f}{}\label{classMeshAnimation_aff687f32d3c4eff27711d0387dbff66f}
+
+\item 
+void {\bfseries add\+Animation} (std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$ $\ast$meshes, const char $\ast$name)\hypertarget{classMeshAnimation_affc51d5f42663b03ddb7561bfde5a45b}{}\label{classMeshAnimation_affc51d5f42663b03ddb7561bfde5a45b}
+
+\item 
+double {\bfseries frames\+Per\+Second} () const \hypertarget{classMeshAnimation_aba38d809319d9a3622a8e59988f98f55}{}\label{classMeshAnimation_aba38d809319d9a3622a8e59988f98f55}
+
+\item 
+double {\bfseries time\+Per\+Frame} () const \hypertarget{classMeshAnimation_acb4d6a8706498056b373231c91fcd0a5}{}\label{classMeshAnimation_acb4d6a8706498056b373231c91fcd0a5}
+
+\item 
+void {\bfseries Toggle\+Animated\+Mesh} (bool on)\hypertarget{classMeshAnimation_a1018e7dcdbc3e838c9f218f442f6e772}{}\label{classMeshAnimation_a1018e7dcdbc3e838c9f218f442f6e772}
+
+\item 
+void {\bfseries Set\+Ani\+Speed} (float speed)\hypertarget{classMeshAnimation_a9928384425b66db7c4116da4997b2f45}{}\label{classMeshAnimation_a9928384425b66db7c4116da4997b2f45}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Update\+Frames} ()\hypertarget{classMeshAnimation_ac610344f80f84ee7a75edbaa1010eca5}{}\label{classMeshAnimation_ac610344f80f84ee7a75edbaa1010eca5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries curtime}\hypertarget{classMeshAnimation_a4203b6efee95e719763bbad6e9cf11cf}{}\label{classMeshAnimation_a4203b6efee95e719763bbad6e9cf11cf}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int {\bfseries unit\+Count} = 0\hypertarget{classMeshAnimation_ac4488165f322d59a0e2f2848713c43fa}{}\label{classMeshAnimation_ac4488165f322d59a0e2f2848713c43fa}
+
+\item 
+static std\+::map$<$ string, \hyperlink{classUnit}{Unit} $\ast$ $>$ {\bfseries Units}\hypertarget{classMeshAnimation_a6d2e59ab8413b670e019a9d70fdf0fdf}{}\label{classMeshAnimation_a6d2e59ab8413b670e019a9d70fdf0fdf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$ $\ast$ $>$ {\bfseries vec\+Animations}\hypertarget{classMeshAnimation_a3628b8cfdb70732b80b45174c4d58d04}{}\label{classMeshAnimation_a3628b8cfdb70732b80b45174c4d58d04}
+
+\item 
+std\+::vector$<$ string $>$ {\bfseries vec\+Animation\+Names}\hypertarget{classMeshAnimation_aa1bc2a2aa26b89e3ecfe880f94df4db1}{}\label{classMeshAnimation_aa1bc2a2aa26b89e3ecfe880f94df4db1}
+
+\item 
+bool {\bfseries animated\+Mesh}\hypertarget{classMeshAnimation_ad1cacb200fa8f6efe6da96e99aa7218e}{}\label{classMeshAnimation_ad1cacb200fa8f6efe6da96e99aa7218e}
+
+\item 
+unsigned int {\bfseries active\+Animation}\hypertarget{classMeshAnimation_ab2c652eba7967e36f3ab66a313949dc4}{}\label{classMeshAnimation_ab2c652eba7967e36f3ab66a313949dc4}
+
+\item 
+double {\bfseries timeperframe}\hypertarget{classMeshAnimation_a421bec11dcbb84aa7d3f5d07d774fef3}{}\label{classMeshAnimation_a421bec11dcbb84aa7d3f5d07d774fef3}
+
+\item 
+bool {\bfseries done}\hypertarget{classMeshAnimation_aacd635ad003beaccae183d613298f757}{}\label{classMeshAnimation_aacd635ad003beaccae183d613298f757}
+
+\item 
+unsigned int {\bfseries active\+Mesh}\hypertarget{classMeshAnimation_a1f0c9dc8dfadb4b225a735087091347b}{}\label{classMeshAnimation_a1f0c9dc8dfadb4b225a735087091347b}
+
+\item 
+unsigned int {\bfseries nextactive\+Mesh}\hypertarget{classMeshAnimation_a120f1eef3967297d9afd652ca73121b7}{}\label{classMeshAnimation_a120f1eef3967297d9afd652ca73121b7}
+
+\item 
+bool {\bfseries infinite\+Loop}\hypertarget{classMeshAnimation_a491f4ce60dbc04ea75c447c465d6211e}{}\label{classMeshAnimation_a491f4ce60dbc04ea75c447c465d6211e}
+
+\item 
+unsigned int {\bfseries loop\+Count}\hypertarget{classMeshAnimation_a4ce23d0673a810b1c8e33ea5867978a2}{}\label{classMeshAnimation_a4ce23d0673a810b1c8e33ea5867978a2}
+
+\item 
+string {\bfseries unique\+Unit\+Name}\hypertarget{classMeshAnimation_ae3a1a053b6a80740d628548037cb8dfa}{}\label{classMeshAnimation_ae3a1a053b6a80740d628548037cb8dfa}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries unit\+Dst}\hypertarget{classMeshAnimation_a92938e6f16ce068330960ab869c2579a}{}\label{classMeshAnimation_a92938e6f16ce068330960ab869c2579a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/unit\+\_\+generic.\+h\item 
+cmd/unit\+\_\+generic.\+cpp\end{DoxyCompactItemize}

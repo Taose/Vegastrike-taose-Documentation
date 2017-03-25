@@ -1,0 +1,5 @@
+<map id="Radar::DualDisplayBase" name="Radar::DualDisplayBase">
+<area shape="rect" id="node2" href="$db/df2/classRadar_1_1Display.html" title="{Radar::Display\n||+ ~Display()\l+ Draw()\l+ OnDockEnd()\l+ OnJumpBegin()\l+ OnJumpEnd()\l+ OnPauseBegin()\l+ OnPauseEnd()\l}" alt="" coords="5,292,135,457"/>
+<area shape="rect" id="node3" href="$db/d6c/structRadar_1_1ViewArea.html" title="{Radar::ViewArea\n|+ position\l+ size\l|+ ViewArea()\l+ SetSprite()\l+ Scale()\l+ GetColor()\l+ IsActive()\l}" alt="" coords="159,299,280,450"/>
+<area shape="rect" id="node4" href="$d0/d8d/classVSSprite.html" title="{VSSprite\n||+ VSSprite()\l+ VSSprite()\l+ VSSprite()\l+ ~VSSprite()\l+ LoadSuccess()\l+ Draw()\l+ DrawHere()\l+ Rotate()\l+ SetRotation()\l+ GetRotation()\land 15 more...\l}" alt="" coords="159,5,280,229"/>
+</map>

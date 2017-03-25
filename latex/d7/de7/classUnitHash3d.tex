@@ -1,0 +1,69 @@
+\hypertarget{classUnitHash3d}{}\section{Unit\+Hash3d$<$ C\+T\+S\+IZ, C\+T\+A\+C\+C\+U\+R\+A\+CY, C\+T\+H\+U\+GE $>$ Class Template Reference}
+\label{classUnitHash3d}\index{Unit\+Hash3d$<$ C\+T\+S\+I\+Z, C\+T\+A\+C\+C\+U\+R\+A\+C\+Y, C\+T\+H\+U\+G\+E $>$@{Unit\+Hash3d$<$ C\+T\+S\+I\+Z, C\+T\+A\+C\+C\+U\+R\+A\+C\+Y, C\+T\+H\+U\+G\+E $>$}}
+
+
+{\ttfamily \#include $<$unit\+\_\+collide.\+h$>$}
+
+
+
+Collaboration diagram for Unit\+Hash3d$<$ C\+T\+S\+IZ, C\+T\+A\+C\+C\+U\+R\+A\+CY, C\+T\+H\+U\+GE $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d7/d9d/classUnitHash3d__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Unit\+Hash3d} (\hyperlink{classStarSystem}{Star\+System} $\ast$ss)\hypertarget{classUnitHash3d_acde1661955c90a68a20f18dec50b919c}{}\label{classUnitHash3d_acde1661955c90a68a20f18dec50b919c}
+
+\item 
+void {\bfseries Swap\+Huge\+Accum} ()\hypertarget{classUnitHash3d_acb3d1be880e1b5ad0793e5bb8491fcd5}{}\label{classUnitHash3d_acb3d1be880e1b5ad0793e5bb8491fcd5}
+
+\item 
+void {\bfseries Add\+Huge\+To\+Active} (\hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classUnitHash3d_a88137f5e409afad39c441ce808ec1634}{}\label{classUnitHash3d_a88137f5e409afad39c441ce808ec1634}
+
+\item 
+void \hyperlink{classUnitHash3d_afaed7ef5a39d039f89ee6b19b00d0bfd}{Clear} ()\hypertarget{classUnitHash3d_afaed7ef5a39d039f89ee6b19b00d0bfd}{}\label{classUnitHash3d_afaed7ef5a39d039f89ee6b19b00d0bfd}
+
+\begin{DoxyCompactList}\small\item\em clears entire table \end{DoxyCompactList}\item 
+int \hyperlink{classUnitHash3d_a72d6ee0e0dcbcb5dc65179d70e51b82c}{Get} (const Q\+Vector \&Exact, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$retval\mbox{[}$\,$\mbox{]}, bool \hyperlink{classUnitHash3d_af4af4ef118380adeadd72fe201beb00a}{Get\+Huge})\hypertarget{classUnitHash3d_a72d6ee0e0dcbcb5dc65179d70e51b82c}{}\label{classUnitHash3d_a72d6ee0e0dcbcb5dc65179d70e51b82c}
+
+\begin{DoxyCompactList}\small\item\em returns any objects residing in the sector occupied by Exact \end{DoxyCompactList}\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} \& \hyperlink{classUnitHash3d_af4af4ef118380adeadd72fe201beb00a}{Get\+Huge} ()\hypertarget{classUnitHash3d_af4af4ef118380adeadd72fe201beb00a}{}\label{classUnitHash3d_af4af4ef118380adeadd72fe201beb00a}
+
+\begin{DoxyCompactList}\small\item\em Returns all objects too big to be conveniently fit in the array. \end{DoxyCompactList}\item 
+int \hyperlink{classUnitHash3d_ae6e27d752d119b6fb7c8d8bc7e2a770a}{Get} (const \hyperlink{structLineCollide}{Line\+Collide} $\ast$target, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$retval\mbox{[}$\,$\mbox{]}, bool \hyperlink{classUnitHash3d_af4af4ef118380adeadd72fe201beb00a}{Get\+Huge})\hypertarget{classUnitHash3d_ae6e27d752d119b6fb7c8d8bc7e2a770a}{}\label{classUnitHash3d_ae6e27d752d119b6fb7c8d8bc7e2a770a}
+
+\begin{DoxyCompactList}\small\item\em Returns all objects within sector(s) occupied by target. \end{DoxyCompactList}\item 
+void \hyperlink{classUnitHash3d_a0889f24703f42b1a0096aba7d8781091}{Put} (\hyperlink{structLineCollide}{Line\+Collide} $\ast$target, \hyperlink{classUnit}{Unit} $\ast$object\+To\+Put)\hypertarget{classUnitHash3d_a0889f24703f42b1a0096aba7d8781091}{}\label{classUnitHash3d_a0889f24703f42b1a0096aba7d8781091}
+
+\begin{DoxyCompactList}\small\item\em Adds object\+To\+Put into collide table with limits specified by target. \end{DoxyCompactList}\item 
+bool {\bfseries Eradicate} (\hyperlink{classUnit}{Unit} $\ast$object\+To\+Kill)\hypertarget{classUnitHash3d_adb7d24a04568b3db7eb144b6d4af7a2b}{}\label{classUnitHash3d_adb7d24a04568b3db7eb144b6d4af7a2b}
+
+\item 
+bool \hyperlink{classUnitHash3d_a44a5e533ffa1243911d016637eff36a0}{Remove} (const \hyperlink{structLineCollide}{Line\+Collide} $\ast$target, \hyperlink{classUnit}{Unit} $\ast$object\+To\+Kill)\hypertarget{classUnitHash3d_a44a5e533ffa1243911d016637eff36a0}{}\label{classUnitHash3d_a44a5e533ffa1243911d016637eff36a0}
+
+\begin{DoxyCompactList}\small\item\em Removes object\+To\+Kill from collide table with span of Target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classUnitHash3d_a5f79cda61ef485dddc9560ca9d5c10ca}{hash\+\_\+int} (const double aye)\hypertarget{classUnitHash3d_a5f79cda61ef485dddc9560ca9d5c10ca}{}\label{classUnitHash3d_a5f79cda61ef485dddc9560ca9d5c10ca}
+
+\begin{DoxyCompactList}\small\item\em Hashes a single value to a value on the collide table truncated to all 3d constraints. Consider using a swizzle. \end{DoxyCompactList}\item 
+static bool {\bfseries remove\+From\+Vector} (\hyperlink{classUnitCollection}{Unit\+Collection} \&myvector, \hyperlink{classUnit}{Unit} $\ast$object\+To\+Kill)\hypertarget{classUnitHash3d_ac10459b53ac63d2a08c6eb22c734b93e}{}\label{classUnitHash3d_ac10459b53ac63d2a08c6eb22c734b93e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class C\+T\+S\+IZ, class C\+T\+A\+C\+C\+U\+R\+A\+CY, class C\+T\+H\+U\+GE$>$\\*
+class Unit\+Hash3d$<$ C\+T\+S\+I\+Z, C\+T\+A\+C\+C\+U\+R\+A\+C\+Y, C\+T\+H\+U\+G\+E $>$}
+
+\hyperlink{classHashtable3d}{Hashtable3d} is a 3d datastructure that holds various starships that are near enough to crash into each other (or also lights that are big enough to shine on nearby units. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/unit\+\_\+collide.\+h\end{DoxyCompactItemize}

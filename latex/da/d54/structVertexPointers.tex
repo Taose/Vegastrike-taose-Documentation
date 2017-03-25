@@ -1,0 +1,43 @@
+\hypertarget{structVertexPointers}{}\section{Vertex\+Pointers Class Reference}
+\label{structVertexPointers}\index{Vertex\+Pointers@{Vertex\+Pointers}}
+
+
+Collaboration diagram for Vertex\+Pointers\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{d9/d32/structVertexPointers__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Backface\+Culling} (const \hyperlink{classPoint}{Point} \&source)\hypertarget{structVertexPointers_a676a8fd54ec43844508eb1ff5bc11325}{}\label{structVertexPointers_a676a8fd54ec43844508eb1ff5bc11325}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classPoint}{Point} $\ast$ {\bfseries Vertex} \mbox{[}3\mbox{]}\hypertarget{structVertexPointers_aa09a8651245010b416eac5bdb1bbeeb5}{}\label{structVertexPointers_aa09a8651245010b416eac5bdb1bbeeb5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure holds 3 vertex-\/pointers. It\textquotesingle{}s mainly used by collision callbacks so that the app doesn\textquotesingle{}t have to return 3 vertices to O\+P\+C\+O\+DE (36 bytes) but only 3 pointers (12 bytes). It seems better but I never profiled the alternative.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__MeshInterface_8h}{O\+P\+C\+\_\+\+Mesh\+Interface.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,196 @@
+\hypertarget{classAudio_1_1SourceListener}{}\section{Audio\+:\+:Source\+Listener Class Reference}
+\label{classAudio_1_1SourceListener}\index{Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}}
+
+
+{\ttfamily \#include $<$Source\+Listener.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Source\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/ddb/classAudio_1_1SourceListener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Source\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{da/d1c/classAudio_1_1SourceListener__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries want\+Attach\+Events} () const \hypertarget{classAudio_1_1SourceListener_a8e3e52b9dd63cf5762fe65345c513fab}{}\label{classAudio_1_1SourceListener_a8e3e52b9dd63cf5762fe65345c513fab}
+
+\item 
+bool {\bfseries want\+Play\+Events} () const \hypertarget{classAudio_1_1SourceListener_a5369597901404cf9c0be71e3fffc6c4d}{}\label{classAudio_1_1SourceListener_a5369597901404cf9c0be71e3fffc6c4d}
+
+\item 
+bool {\bfseries want\+Update\+Events} () const \hypertarget{classAudio_1_1SourceListener_a8e175ff5e871094fa5b9bdbb89c054e2}{}\label{classAudio_1_1SourceListener_a8e175ff5e871094fa5b9bdbb89c054e2}
+
+\item 
+virtual void \hyperlink{classAudio_1_1SourceListener_a94d0898f9f31e755696e14c9ffdcf408}{on\+Pre\+Attach} (\hyperlink{classAudio_1_1Source}{Source} \&source, bool detach)=0
+\item 
+virtual void \hyperlink{classAudio_1_1SourceListener_abb3c327881e989b24ca87c36b2a769b6}{on\+Post\+Attach} (\hyperlink{classAudio_1_1Source}{Source} \&source, bool detach)=0
+\item 
+virtual void \hyperlink{classAudio_1_1SourceListener_a63e8ecc4c172b1d1f116e8115e708b41}{on\+Update} (\hyperlink{classAudio_1_1Source}{Source} \&source, int update\+Flags)=0
+\item 
+virtual void \hyperlink{classAudio_1_1SourceListener_a926f5330f826c550a22cb9ef1abb0264}{on\+Pre\+Play} (\hyperlink{classAudio_1_1Source}{Source} \&source, bool stop)=0
+\item 
+virtual void \hyperlink{classAudio_1_1SourceListener_a3ec4cc743ec0a92a8448b12e562a6529}{on\+Post\+Play} (\hyperlink{classAudio_1_1Source}{Source} \&source, bool stop)=0
+\item 
+virtual void \hyperlink{classAudio_1_1SourceListener_a539fe71a1a4fa846801ce3a1821524ba}{on\+End\+Of\+Stream} (\hyperlink{classAudio_1_1Source}{Source} \&source)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int {\bfseries attach}: 1\\
+\>int {\bfseries play}: 1\\
+\>int {\bfseries update}: 1\\
+\} {\bfseries events}\hypertarget{classAudio_1_1SourceListener_ab7ff31d9c859eacfad0d47e473a14c0c}{}\label{classAudio_1_1SourceListener_ab7ff31d9c859eacfad0d47e473a14c0c}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1Source}{Source} event listener abstract class
+
+\begin{DoxyRemark}{Remarks}
+This is the interface clients must implement to be able to receive event notifications from audio sources. 
+\end{DoxyRemark}
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}!on\+End\+Of\+Stream@{on\+End\+Of\+Stream}}
+\index{on\+End\+Of\+Stream@{on\+End\+Of\+Stream}!Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+End\+Of\+Stream(\+Source \&source)=0}{onEndOfStream(Source &source)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Source\+Listener\+::on\+End\+Of\+Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1SourceListener_a539fe71a1a4fa846801ce3a1821524ba}{}\label{classAudio_1_1SourceListener_a539fe71a1a4fa846801ce3a1821524ba}
+Called after the source has been stopped due to end-\/of-\/stream conditions. It falls on the \char`\"{}play\char`\"{} event category. 
+\begin{DoxyParams}{Parameters}
+{\em source} & the source that reached its end \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classAudio_1_1UpdateSourceListener_a0c345fe8a7fa374527ba4efc0f3d9742}{Audio\+::\+Update\+Source\+Listener}, and \hyperlink{classBaseUtil_1_1VideoAudioStreamListener_a7f47963e328376543d5af3cd7fa7de19}{Base\+Util\+::\+Video\+Audio\+Stream\+Listener}.
+
+\index{Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}!on\+Post\+Attach@{on\+Post\+Attach}}
+\index{on\+Post\+Attach@{on\+Post\+Attach}!Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Post\+Attach(\+Source \&source, bool detach)=0}{onPostAttach(Source &source, bool detach)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Source\+Listener\+::on\+Post\+Attach (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source, }
+\item[{bool}]{detach}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1SourceListener_abb3c327881e989b24ca87c36b2a769b6}{}\label{classAudio_1_1SourceListener_abb3c327881e989b24ca87c36b2a769b6}
+Called after the source has been attached or detached 
+\begin{DoxyParams}{Parameters}
+{\em source} & the source to be attached or detached \\
+\hline
+{\em detach} & if true, it\textquotesingle{}s been detached. If false, it\textquotesingle{}s been attached \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classAudio_1_1UpdateSourceListener_ae4309512c3c5a7fd12c7ffc766215176}{Audio\+::\+Update\+Source\+Listener}, and \hyperlink{classBaseUtil_1_1VideoAudioStreamListener_a66f5b49ee9f5a500d7d5e098251d1e33}{Base\+Util\+::\+Video\+Audio\+Stream\+Listener}.
+
+\index{Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}!on\+Post\+Play@{on\+Post\+Play}}
+\index{on\+Post\+Play@{on\+Post\+Play}!Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Post\+Play(\+Source \&source, bool stop)=0}{onPostPlay(Source &source, bool stop)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Source\+Listener\+::on\+Post\+Play (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source, }
+\item[{bool}]{stop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1SourceListener_a3ec4cc743ec0a92a8448b12e562a6529}{}\label{classAudio_1_1SourceListener_a3ec4cc743ec0a92a8448b12e562a6529}
+Called after the source has been played or stopped 
+\begin{DoxyParams}{Parameters}
+{\em source} & the source to be played or stopped \\
+\hline
+{\em detach} & if true, it\textquotesingle{}s been played. If false, it\textquotesingle{}s been stopped \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classAudio_1_1UpdateSourceListener_a070f47d70e1a134490e81e841411cdef}{Audio\+::\+Update\+Source\+Listener}, and \hyperlink{classBaseUtil_1_1VideoAudioStreamListener_ad2f808b2475748a696e7a6fa4d711fdf}{Base\+Util\+::\+Video\+Audio\+Stream\+Listener}.
+
+\index{Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}!on\+Pre\+Attach@{on\+Pre\+Attach}}
+\index{on\+Pre\+Attach@{on\+Pre\+Attach}!Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Pre\+Attach(\+Source \&source, bool detach)=0}{onPreAttach(Source &source, bool detach)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Source\+Listener\+::on\+Pre\+Attach (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source, }
+\item[{bool}]{detach}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1SourceListener_a94d0898f9f31e755696e14c9ffdcf408}{}\label{classAudio_1_1SourceListener_a94d0898f9f31e755696e14c9ffdcf408}
+Called when the source is A\+B\+O\+UT TO be attached or detached 
+\begin{DoxyParams}{Parameters}
+{\em source} & the source to be attached or detached \\
+\hline
+{\em detach} & if true, it\textquotesingle{}s about to be detached. If false, it\textquotesingle{}s about to be attached \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+When reattaching, only the attach call is guaranteed to be issued. The detach may be left implied, or it may be explicitly performed. In any case, no event may happen between pre \& post calls. 
+\end{DoxyRemark}
+
+
+Implemented in \hyperlink{classAudio_1_1UpdateSourceListener_a0af524621247aad7bfab2039ab340a65}{Audio\+::\+Update\+Source\+Listener}, and \hyperlink{classBaseUtil_1_1VideoAudioStreamListener_a053885b191373752a7760e686da9a64b}{Base\+Util\+::\+Video\+Audio\+Stream\+Listener}.
+
+\index{Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}!on\+Pre\+Play@{on\+Pre\+Play}}
+\index{on\+Pre\+Play@{on\+Pre\+Play}!Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Pre\+Play(\+Source \&source, bool stop)=0}{onPrePlay(Source &source, bool stop)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Source\+Listener\+::on\+Pre\+Play (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source, }
+\item[{bool}]{stop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1SourceListener_a926f5330f826c550a22cb9ef1abb0264}{}\label{classAudio_1_1SourceListener_a926f5330f826c550a22cb9ef1abb0264}
+Called when the source is A\+B\+O\+UT TO be played (rendered) or stopped 
+\begin{DoxyParams}{Parameters}
+{\em source} & the source to be played or stopped \\
+\hline
+{\em detach} & if true, it\textquotesingle{}s about to be played. If false, it\textquotesingle{}s about to be stopped \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classAudio_1_1UpdateSourceListener_abe24b81e2c34fa6a2fc6faeed3ac61b2}{Audio\+::\+Update\+Source\+Listener}, and \hyperlink{classBaseUtil_1_1VideoAudioStreamListener_a69c69dad651eba90ed046df8abc7264e}{Base\+Util\+::\+Video\+Audio\+Stream\+Listener}.
+
+\index{Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}!on\+Update@{on\+Update}}
+\index{on\+Update@{on\+Update}!Audio\+::\+Source\+Listener@{Audio\+::\+Source\+Listener}}
+\subsubsection[{\texorpdfstring{on\+Update(\+Source \&source, int update\+Flags)=0}{onUpdate(Source &source, int updateFlags)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Source\+Listener\+::on\+Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Source} \&}]{source, }
+\item[{int}]{update\+Flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1SourceListener_a63e8ecc4c172b1d1f116e8115e708b41}{}\label{classAudio_1_1SourceListener_a63e8ecc4c172b1d1f116e8115e708b41}
+Called when the source is A\+B\+O\+UT TO be updated. 
+\begin{DoxyParams}{Parameters}
+{\em source} & the source to be updated \\
+\hline
+{\em update\+Flags} & the level of update the source will receive. See Renderable\+Source\+::\+Update\+Flags \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Renderable\+Source\+::\+Update\+Flags 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classAudio_1_1Test_1_1EngParticleListener_a9d18798d9a8565b367f65350268b26be}{Audio\+::\+Test\+::\+Eng\+Particle\+Listener}, and \hyperlink{classBaseUtil_1_1VideoAudioStreamListener_a9dc1b41e59e3113cb1d4e224347f5e7d}{Base\+Util\+::\+Video\+Audio\+Stream\+Listener}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/Source\+Listener.\+h\end{DoxyCompactItemize}

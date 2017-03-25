@@ -1,0 +1,166 @@
+\hypertarget{group__geom__utils}{}\section{Geom\+\_\+utils}
+\label{group__geom__utils}\index{Geom\+\_\+utils@{Geom\+\_\+utils}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\const T \& \hyperlink{group__geom__utils_gad847ae4a7674e661f256da05955e7eb7}{cs\+Max} (const T \&a, const T \&b)
+\item 
+{\footnotesize template$<$class T $>$ }\\const T \& \hyperlink{group__geom__utils_ga84074616ede088bc78fe3566f87eab81}{cs\+Min} (const T \&a, const T \&b)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{group__geom__utils_gae988b1834e0316df2aab598e45ea4639}{cs\+Sort} (T \&a, T \&b)
+\item 
+{\footnotesize template$<$class T , class U $>$ }\\void \hyperlink{group__geom__utils_gac15f60e919826a14d41be755b9a73cad}{cs\+Sort} (T \&a, T \&b, U \&x, U \&\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{group__geom__utils_gaa317019148dc6f7659a3a6ab244a39ba}{cs\+Clamp} (const T \&a, T max, T min)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{group__geom__utils_ga4ae5527a870c7f63d552657905c9939a}{cs\+Smooth\+Step} (const T \&a, T max, T min)
+\item 
+{\footnotesize template$<$class T , class Tfactor $>$ }\\T \hyperlink{group__geom__utils_gad5238b838897dc5350774d44e5f52001}{cs\+Lerp} (const T \&a, const T \&b, const Tfactor \&f)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{group__geom__utils_ga490abe249d6289528341e55af14b5e14}{cs\+Square} (const T \&x)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_ga9f09b774d5cca1884a80213a91d84b64}{cs\+Finite} (float f)\hypertarget{group__geom__utils_ga9f09b774d5cca1884a80213a91d84b64}{}\label{group__geom__utils_ga9f09b774d5cca1884a80213a91d84b64}
+
+\begin{DoxyCompactList}\small\item\em Checks if a floating point value is finite. \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_ga4cd283243ebdd16050674317314df026}{cs\+Finite} (double d)\hypertarget{group__geom__utils_ga4cd283243ebdd16050674317314df026}{}\label{group__geom__utils_ga4cd283243ebdd16050674317314df026}
+
+\begin{DoxyCompactList}\small\item\em Checks if a double-\/precision floating point value is finite. \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_gaed49a33b4a87f5efa741888aaf9c5eca}{cs\+NaN} (float f)\hypertarget{group__geom__utils_gaed49a33b4a87f5efa741888aaf9c5eca}{}\label{group__geom__utils_gaed49a33b4a87f5efa741888aaf9c5eca}
+
+\begin{DoxyCompactList}\small\item\em Checks if a floating point value is not-\/a-\/number. \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_gac302c6cf13d5219407a1502838dfc1bf}{cs\+NaN} (double d)\hypertarget{group__geom__utils_gac302c6cf13d5219407a1502838dfc1bf}{}\label{group__geom__utils_gac302c6cf13d5219407a1502838dfc1bf}
+
+\begin{DoxyCompactList}\small\item\em Checks if a double-\/precision floating point value is not-\/a-\/number. \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_gaca1dc0177b20035712ee9144abdd41f1}{cs\+Normal} (float f)\hypertarget{group__geom__utils_gaca1dc0177b20035712ee9144abdd41f1}{}\label{group__geom__utils_gaca1dc0177b20035712ee9144abdd41f1}
+
+\begin{DoxyCompactList}\small\item\em Checks if a floating point value is normal (not infinite or nan). \end{DoxyCompactList}\item 
+C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \hyperlink{group__geom__utils_gadc53a075ca2450bd20c4fb1c8cf406aa}{cs\+Normal} (double d)\hypertarget{group__geom__utils_gadc53a075ca2450bd20c4fb1c8cf406aa}{}\label{group__geom__utils_gadc53a075ca2450bd20c4fb1c8cf406aa}
+
+\begin{DoxyCompactList}\small\item\em Checks if a double-\/precision floating point value is normal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{Geom\+\_\+utils@{Geom\+\_\+utils}!cs\+Clamp@{cs\+Clamp}}
+\index{cs\+Clamp@{cs\+Clamp}!Geom\+\_\+utils@{Geom\+\_\+utils}}
+\subsubsection[{\texorpdfstring{cs\+Clamp(const T \&a, T max, T min)}{csClamp(const T &a, T max, T min)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T cs\+Clamp (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a, }
+\item[{T}]{max, }
+\item[{T}]{min}
+\end{DoxyParamCaption}
+)}\hypertarget{group__geom__utils_gaa317019148dc6f7659a3a6ab244a39ba}{}\label{group__geom__utils_gaa317019148dc6f7659a3a6ab244a39ba}
+Clamp a between max and min. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{d4/d1c/group__geom__utils_gaa317019148dc6f7659a3a6ab244a39ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Geom\+\_\+utils@{Geom\+\_\+utils}!cs\+Lerp@{cs\+Lerp}}
+\index{cs\+Lerp@{cs\+Lerp}!Geom\+\_\+utils@{Geom\+\_\+utils}}
+\subsubsection[{\texorpdfstring{cs\+Lerp(const T \&a, const T \&b, const Tfactor \&f)}{csLerp(const T &a, const T &b, const Tfactor &f)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class Tfactor $>$ T cs\+Lerp (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a, }
+\item[{const T \&}]{b, }
+\item[{const Tfactor \&}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{group__geom__utils_gad5238b838897dc5350774d44e5f52001}{}\label{group__geom__utils_gad5238b838897dc5350774d44e5f52001}
+Performs a linear interpolation between {\itshape a} and {\itshape b} with the factor {\itshape f}. \index{Geom\+\_\+utils@{Geom\+\_\+utils}!cs\+Max@{cs\+Max}}
+\index{cs\+Max@{cs\+Max}!Geom\+\_\+utils@{Geom\+\_\+utils}}
+\subsubsection[{\texorpdfstring{cs\+Max(const T \&a, const T \&b)}{csMax(const T &a, const T &b)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ const T\& cs\+Max (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a, }
+\item[{const T \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{group__geom__utils_gad847ae4a7674e661f256da05955e7eb7}{}\label{group__geom__utils_gad847ae4a7674e661f256da05955e7eb7}
+Returns bigger of a and b. If they are equal, a or b can be returned. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{d4/d1c/group__geom__utils_gad847ae4a7674e661f256da05955e7eb7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Geom\+\_\+utils@{Geom\+\_\+utils}!cs\+Min@{cs\+Min}}
+\index{cs\+Min@{cs\+Min}!Geom\+\_\+utils@{Geom\+\_\+utils}}
+\subsubsection[{\texorpdfstring{cs\+Min(const T \&a, const T \&b)}{csMin(const T &a, const T &b)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ const T\& cs\+Min (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a, }
+\item[{const T \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{group__geom__utils_ga84074616ede088bc78fe3566f87eab81}{}\label{group__geom__utils_ga84074616ede088bc78fe3566f87eab81}
+Returns smaller of a and b. If they are equal, a or b can be returned. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{d4/d1c/group__geom__utils_ga84074616ede088bc78fe3566f87eab81_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Geom\+\_\+utils@{Geom\+\_\+utils}!cs\+Smooth\+Step@{cs\+Smooth\+Step}}
+\index{cs\+Smooth\+Step@{cs\+Smooth\+Step}!Geom\+\_\+utils@{Geom\+\_\+utils}}
+\subsubsection[{\texorpdfstring{cs\+Smooth\+Step(const T \&a, T max, T min)}{csSmoothStep(const T &a, T max, T min)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T cs\+Smooth\+Step (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{a, }
+\item[{T}]{max, }
+\item[{T}]{min}
+\end{DoxyParamCaption}
+)}\hypertarget{group__geom__utils_ga4ae5527a870c7f63d552657905c9939a}{}\label{group__geom__utils_ga4ae5527a870c7f63d552657905c9939a}
+Performs a smooth interpolation of a on range min to max. \begin{DoxyReturn}{Returns}
+Smooth interporlated value if {\itshape min} $<$ {\itshape a} $<$ {\itshape max}, and 0 resp. 1 if {\itshape a} is smaller than {\itshape min} resp. larger than {\itshape max}. 
+\end{DoxyReturn}
+\index{Geom\+\_\+utils@{Geom\+\_\+utils}!cs\+Sort@{cs\+Sort}}
+\index{cs\+Sort@{cs\+Sort}!Geom\+\_\+utils@{Geom\+\_\+utils}}
+\subsubsection[{\texorpdfstring{cs\+Sort(\+T \&a, T \&b)}{csSort(T &a, T &b)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void cs\+Sort (
+\begin{DoxyParamCaption}
+\item[{T \&}]{a, }
+\item[{T \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{group__geom__utils_gae988b1834e0316df2aab598e45ea4639}{}\label{group__geom__utils_gae988b1834e0316df2aab598e45ea4639}
+Sort a and b in order of size. \index{Geom\+\_\+utils@{Geom\+\_\+utils}!cs\+Sort@{cs\+Sort}}
+\index{cs\+Sort@{cs\+Sort}!Geom\+\_\+utils@{Geom\+\_\+utils}}
+\subsubsection[{\texorpdfstring{cs\+Sort(\+T \&a, T \&b, U \&x, U \&y)}{csSort(T &a, T &b, U &x, U &y)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class U $>$ void cs\+Sort (
+\begin{DoxyParamCaption}
+\item[{T \&}]{a, }
+\item[{T \&}]{b, }
+\item[{U \&}]{x, }
+\item[{U \&}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{group__geom__utils_gac15f60e919826a14d41be755b9a73cad}{}\label{group__geom__utils_gac15f60e919826a14d41be755b9a73cad}
+Sort a and b in order of size. If swapping them, also swap x and y \index{Geom\+\_\+utils@{Geom\+\_\+utils}!cs\+Square@{cs\+Square}}
+\index{cs\+Square@{cs\+Square}!Geom\+\_\+utils@{Geom\+\_\+utils}}
+\subsubsection[{\texorpdfstring{cs\+Square(const T \&x)}{csSquare(const T &x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T cs\+Square (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{group__geom__utils_ga490abe249d6289528341e55af14b5e14}{}\label{group__geom__utils_ga490abe249d6289528341e55af14b5e14}
+Returns the square of the argument 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{d4/d1c/group__geom__utils_ga490abe249d6289528341e55af14b5e14_cgraph}
+\end{center}
+\end{figure}
+
+

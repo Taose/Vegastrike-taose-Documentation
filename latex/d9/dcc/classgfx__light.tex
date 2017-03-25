@@ -1,0 +1,247 @@
+\hypertarget{classgfx__light}{}\section{gfx\+\_\+light Class Reference}
+\label{classgfx__light}\index{gfx\+\_\+light@{gfx\+\_\+light}}
+
+
+{\ttfamily \#include $<$gl\+\_\+light.\+h$>$}
+
+
+
+Inheritance diagram for gfx\+\_\+light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/d87/classgfx__light__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gfx\+\_\+light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/dec/classgfx__light__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGFXLight}{G\+F\+X\+Light} \hyperlink{classgfx__light_a3266f2d2d33523590d891dc0ea4f7d82}{operator=} (const \hyperlink{classGFXLight}{G\+F\+X\+Light} \&tmp)\hypertarget{classgfx__light_a3266f2d2d33523590d891dc0ea4f7d82}{}\label{classgfx__light_a3266f2d2d33523590d891dc0ea4f7d82}
+
+\begin{DoxyCompactList}\small\item\em assigns a \hyperlink{classGFXLight}{G\+F\+X\+Light} to a \hyperlink{classgfx__light}{gfx\+\_\+light} \end{DoxyCompactList}\item 
+int \hyperlink{classgfx__light_a67a2d7edb4c0704edbe3bac49fa1c0a8}{light\+Num} ()\hypertarget{classgfx__light_a67a2d7edb4c0704edbe3bac49fa1c0a8}{}\label{classgfx__light_a67a2d7edb4c0704edbe3bac49fa1c0a8}
+
+\begin{DoxyCompactList}\small\item\em Returns the number this light is in the \+\_\+llights list. \end{DoxyCompactList}\item 
+bool \hyperlink{classgfx__light_a3523fbb38f63574f301d9297d509afb6}{Local\+Light} () const \hypertarget{classgfx__light_a3523fbb38f63574f301d9297d509afb6}{}\label{classgfx__light_a3523fbb38f63574f301d9297d509afb6}
+
+\begin{DoxyCompactList}\small\item\em Returns if this light was saved as a local light. \end{DoxyCompactList}\item 
+bool \hyperlink{classgfx__light_a0fff10aa6915be6907600782738914c8}{enabled} () const \hypertarget{classgfx__light_a0fff10aa6915be6907600782738914c8}{}\label{classgfx__light_a0fff10aa6915be6907600782738914c8}
+
+\begin{DoxyCompactList}\small\item\em Retursn if this light is enabled. \end{DoxyCompactList}\item 
+int \& \hyperlink{classgfx__light_ab401bb123118d1f2197daf42dafc4a88}{Target} ()\hypertarget{classgfx__light_ab401bb123118d1f2197daf42dafc4a88}{}\label{classgfx__light_ab401bb123118d1f2197daf42dafc4a88}
+
+\begin{DoxyCompactList}\small\item\em Returns the target Open\+GL light of this light. -\/1 is unassigned to a \char`\"{}real\char`\"{} light. \end{DoxyCompactList}\item 
+bool \hyperlink{classgfx__light_ac59f52b68d1631e537aea5b0397ddfe5}{Create} (const \hyperlink{classGFXLight}{G\+F\+X\+Light} \&, bool global)
+\item 
+void \hyperlink{classgfx__light_a176a34465b470ae5e50b0ebcb8e690a2}{Kill} ()\hypertarget{classgfx__light_a176a34465b470ae5e50b0ebcb8e690a2}{}\label{classgfx__light_a176a34465b470ae5e50b0ebcb8e690a2}
+
+\begin{DoxyCompactList}\small\item\em Disables it (may remove from table), trashes it from G\+Llights. sets target to -\/2 (dead) \end{DoxyCompactList}\item 
+void \hyperlink{classgfx__light_abb55026e68c8f5b8292d6d9915061913}{Send\+G\+L\+Position} (const G\+Lenum \hyperlink{classGFXLight_a4ff967e8c7144289a11061d4dc218aaa}{target}) const 
+\begin{DoxyCompactList}\small\item\em properly utilizes union to send to O\+GL \end{DoxyCompactList}\item 
+void \hyperlink{classgfx__light_af977a44d7ac73d054a866033c4e9cfbf}{Clobber\+G\+L\+Light} (const int \hyperlink{classGFXLight_a4ff967e8c7144289a11061d4dc218aaa}{target})\hypertarget{classgfx__light_af977a44d7ac73d054a866033c4e9cfbf}{}\label{classgfx__light_af977a44d7ac73d054a866033c4e9cfbf}
+
+\begin{DoxyCompactList}\small\item\em replaces target GL light in the implementation. Sets this-\/$>$target! Checks for -\/1 and calls Context\+Switch to clobber completely \end{DoxyCompactList}\item 
+void \hyperlink{classgfx__light_a093403b4e4c23264c4b56522ece80313}{Finesse\+Clobber\+Light} (const G\+Lenum \hyperlink{classGFXLight_a4ff967e8c7144289a11061d4dc218aaa}{target}, const int original)\hypertarget{classgfx__light_a093403b4e4c23264c4b56522ece80313}{}\label{classgfx__light_a093403b4e4c23264c4b56522ece80313}
+
+\begin{DoxyCompactList}\small\item\em replaces target GL light, copying all state sets this-\/$>$target! \end{DoxyCompactList}\item 
+void \hyperlink{classgfx__light_a7cc8477fa2d9d8544ce79513c769912e}{Context\+Switch\+Clobber\+Light} (const G\+Lenum \hyperlink{classGFXLight_a4ff967e8c7144289a11061d4dc218aaa}{target}, const int original) const \hypertarget{classgfx__light_a7cc8477fa2d9d8544ce79513c769912e}{}\label{classgfx__light_a7cc8477fa2d9d8544ce79513c769912e}
+
+\begin{DoxyCompactList}\small\item\em replaces target GL light, copying all state sets this-\/$>$target! \end{DoxyCompactList}\item 
+void \hyperlink{classgfx__light_a98dd12bab9a5abd1e753cfe45bc691e5}{Enable} ()
+\item 
+void \hyperlink{classgfx__light_a6f2e3188d31ac410ed8bb9f359109ada}{Disable} ()
+\item 
+void \hyperlink{classgfx__light_ad2f21e62fda27aa966ead4cdf970b498}{Reset\+Properties} (const enum L\+I\+G\+H\+T\+\_\+\+T\+A\+R\+G\+ET, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&color)
+\item 
+void \hyperlink{classgfx__light_ab1082197235eca910a259c3862de4a91}{Add\+To\+Table} ()\hypertarget{classgfx__light_ab1082197235eca910a259c3862de4a91}{}\label{classgfx__light_ab1082197235eca910a259c3862de4a91}
+
+\begin{DoxyCompactList}\small\item\em Adds this light to table (assume local) \end{DoxyCompactList}\item 
+bool \hyperlink{classgfx__light_abe5840a659d06adf02edb7970595ca0f}{Remove\+From\+Table} (bool shouldremove=true, const \hyperlink{classGFXLight}{G\+F\+X\+Light} \&t=\hyperlink{classGFXLight}{G\+F\+X\+Light}())\hypertarget{classgfx__light_abe5840a659d06adf02edb7970595ca0f}{}\label{classgfx__light_abe5840a659d06adf02edb7970595ca0f}
+
+\begin{DoxyCompactList}\small\item\em Removes this light from light table. \end{DoxyCompactList}\item 
+void \hyperlink{classgfx__light_a089842c22a956701aace437146b3393b}{Trash\+From\+G\+L\+Lights} ()\hypertarget{classgfx__light_a089842c22a956701aace437146b3393b}{}\label{classgfx__light_a089842c22a956701aace437146b3393b}
+
+\begin{DoxyCompactList}\small\item\em Trash this light from active G\+L\+Lights. \end{DoxyCompactList}\item 
+\hyperlink{structLineCollide}{Line\+Collide} \hyperlink{classgfx__light_a5e722e1372b93fe2eee3c68bbf472fc0}{Calculate\+Bounds} (bool \&err)\hypertarget{classgfx__light_a5e722e1372b93fe2eee3c68bbf472fc0}{}\label{classgfx__light_a5e722e1372b93fe2eee3c68bbf472fc0}
+
+\begin{DoxyCompactList}\small\item\em calculates bounds for the table given cutoffs! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classgfx__light_ab55dc26e554c05574d62ca845f02b21d}{dopickenables} ()\hypertarget{classgfx__light_ab55dc26e554c05574d62ca845f02b21d}{}\label{classgfx__light_ab55dc26e554c05574d62ca845f02b21d}
+
+\begin{DoxyCompactList}\small\item\em Do all enables from picking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This stores the state of a given GL Light in its fullness It inherits all values a light may have, and gains a number of functions that assist it in maintaining the virtual Open\+GL state amidst the limited Number of lights, etc 
+
+\subsection{Member Function Documentation}
+\index{gfx\+\_\+light@{gfx\+\_\+light}!Create@{Create}}
+\index{Create@{Create}!gfx\+\_\+light@{gfx\+\_\+light}}
+\subsubsection[{\texorpdfstring{Create(const G\+F\+X\+Light \&, bool global)}{Create(const GFXLight &, bool global)}}]{\setlength{\rightskip}{0pt plus 5cm}bool gfx\+\_\+light\+::\+Create (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+F\+X\+Light} \&}]{temp, }
+\item[{bool}]{global}
+\end{DoxyParamCaption}
+)}\hypertarget{classgfx__light_ac59f52b68d1631e537aea5b0397ddfe5}{}\label{classgfx__light_ac59f52b68d1631e537aea5b0397ddfe5}
+if global, puts it into G\+Llights (if space $\vert$$\vert$enabled) $<$clobber?$>$ for local lights, if enabled, call \hyperlink{classgfx__light_a98dd12bab9a5abd1e753cfe45bc691e5}{Enable()}. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classgfx__light_ac59f52b68d1631e537aea5b0397ddfe5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classgfx__light_ac59f52b68d1631e537aea5b0397ddfe5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{gfx\+\_\+light@{gfx\+\_\+light}!Disable@{Disable}}
+\index{Disable@{Disable}!gfx\+\_\+light@{gfx\+\_\+light}}
+\subsubsection[{\texorpdfstring{Disable()}{Disable()}}]{\setlength{\rightskip}{0pt plus 5cm}void gfx\+\_\+light\+::\+Disable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgfx__light_a6f2e3188d31ac410ed8bb9f359109ada}{}\label{classgfx__light_a6f2e3188d31ac410ed8bb9f359109ada}
+for global lights, G\+Ldisables it. for local lights, removes it from the table. and trashes it form G\+Llights. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classgfx__light_a6f2e3188d31ac410ed8bb9f359109ada_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classgfx__light_a6f2e3188d31ac410ed8bb9f359109ada_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{gfx\+\_\+light@{gfx\+\_\+light}!Enable@{Enable}}
+\index{Enable@{Enable}!gfx\+\_\+light@{gfx\+\_\+light}}
+\subsubsection[{\texorpdfstring{Enable()}{Enable()}}]{\setlength{\rightskip}{0pt plus 5cm}void gfx\+\_\+light\+::\+Enable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgfx__light_a98dd12bab9a5abd1e753cfe45bc691e5}{}\label{classgfx__light_a98dd12bab9a5abd1e753cfe45bc691e5}
+for global lights, clobbers S\+O\+M\+E\+T\+H\+I\+NG for sure, calls G\+Lenable for local lights, puts it into the light table 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classgfx__light_a98dd12bab9a5abd1e753cfe45bc691e5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classgfx__light_a98dd12bab9a5abd1e753cfe45bc691e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{gfx\+\_\+light@{gfx\+\_\+light}!Reset\+Properties@{Reset\+Properties}}
+\index{Reset\+Properties@{Reset\+Properties}!gfx\+\_\+light@{gfx\+\_\+light}}
+\subsubsection[{\texorpdfstring{Reset\+Properties(const enum L\+I\+G\+H\+T\+\_\+\+T\+A\+R\+G\+E\+T, const G\+F\+X\+Color \&color)}{ResetProperties(const enum LIGHT_TARGET, const GFXColor &color)}}]{\setlength{\rightskip}{0pt plus 5cm}void gfx\+\_\+light\+::\+Reset\+Properties (
+\begin{DoxyParamCaption}
+\item[{const enum L\+I\+G\+H\+T\+\_\+\+T\+A\+R\+G\+ET}]{light\+\_\+targ, }
+\item[{const {\bf G\+F\+X\+Color} \&}]{color}
+\end{DoxyParamCaption}
+)}\hypertarget{classgfx__light_ad2f21e62fda27aa966ead4cdf970b498}{}\label{classgfx__light_ad2f21e62fda27aa966ead4cdf970b498}
+sets properties, making minimum GL state changes for global, for local lights, removes it from table, trashes it from G\+Llights, if enabled, puts it bakc in table. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classgfx__light_ad2f21e62fda27aa966ead4cdf970b498_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classgfx__light_ad2f21e62fda27aa966ead4cdf970b498_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{gfx\+\_\+light@{gfx\+\_\+light}!Send\+G\+L\+Position@{Send\+G\+L\+Position}}
+\index{Send\+G\+L\+Position@{Send\+G\+L\+Position}!gfx\+\_\+light@{gfx\+\_\+light}}
+\subsubsection[{\texorpdfstring{Send\+G\+L\+Position(const G\+Lenum target) const }{SendGLPosition(const GLenum target) const }}]{\setlength{\rightskip}{0pt plus 5cm}void gfx\+\_\+light\+::\+Send\+G\+L\+Position (
+\begin{DoxyParamCaption}
+\item[{const G\+Lenum}]{target}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgfx__light_abb55026e68c8f5b8292d6d9915061913}{}\label{classgfx__light_abb55026e68c8f5b8292d6d9915061913}
+
+
+properly utilizes union to send to O\+GL 
+
+Clobber\+G\+L\+Light $\ast$$\ast$$\ast$$\ast$ most Open\+GL implementation dirty lighting if any info is changed at all having two different lights with the same stats and pos is unlikely at best 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dcc/classgfx__light_abb55026e68c8f5b8292d6d9915061913_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gldrv/gl\+\_\+light.\+h\item 
+gldrv/gl\+\_\+light\+\_\+pick.\+cpp\item 
+gldrv/gl\+\_\+light\+\_\+state.\+cpp\end{DoxyCompactItemize}

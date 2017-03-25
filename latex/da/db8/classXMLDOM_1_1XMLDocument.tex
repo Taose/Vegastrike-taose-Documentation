@@ -1,0 +1,369 @@
+\hypertarget{classXMLDOM_1_1XMLDocument}{}\section{X\+M\+L\+D\+OM\+:\+:X\+M\+L\+Document Class Reference}
+\label{classXMLDOM_1_1XMLDocument}\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+
+
+Collaboration diagram for X\+M\+L\+D\+OM\+:\+:X\+M\+L\+Document\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{d8/d5a/classXMLDOM_1_1XMLDocument__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classXMLDOM_1_1XMLDocument_a739000da7ba734adbe7114db1120891b}{rebuild\+Named\+Bindings} (bool deep\+Scan=true)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLDocument_abe501e7b169b45f1f26418c145d4365e}{remove\+Element\+By\+Id} (const std\+::string \&id)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLDocument_afc5d54ab623bafee4c186c9c87f6c485}{remove\+Element\+By\+Name} (const std\+::string \&name)
+\item 
+void \hyperlink{classXMLDOM_1_1XMLDocument_a3101fae4eab3b7f414f462073a62a059}{clear} ()
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLDocument_addc86fdde683287b6ebc83f7f014f54d}{get\+Element\+By\+Id} (const std\+::string \&id) const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLDocument_a2886be75a319474d1c62e8954256671b}{get\+Element\+By\+Id} (const std\+::string \&id)
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLDocument_a91c952fd0a92403c98f91d7dd1634e09}{get\+Element\+By\+Name} (const std\+::string \&name) const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLDocument_a919b2e677929fe5fa80498ba4223e030}{get\+Element\+By\+Name} (const std\+::string \&name)
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLDocument_ab3233ab561fa80459491578764e70cf7}{get\+Element\+By\+Hierarchical\+Id} (const std\+::string \&id) const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLDocument_aee0d066fec37c7e3b81e8c17f809224f}{get\+Element\+By\+Hierarchical\+Id} (const std\+::string \&id)
+\item 
+const \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLDocument_af37e0315519eeeb0e2ad53fefd15cd49}{get\+Element\+By\+Hierarchical\+Name} (const std\+::string \&name) const 
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$ \hyperlink{classXMLDOM_1_1XMLDocument_aaf4d4dcd6d75595107bdacb394e83240}{get\+Element\+By\+Hierarchical\+Name} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classXMLDOM_1_1XMLDocument_adc77c2e1652bb0dfb840de4149ac45f2}{doc\+Type}
+\item 
+std\+::string {\bfseries sys\+Id}\hypertarget{classXMLDOM_1_1XMLDocument_a85319475b8b516af34ad0e31c031647b}{}\label{classXMLDOM_1_1XMLDocument_a85319475b8b516af34ad0e31c031647b}
+
+\item 
+std\+::string {\bfseries pub\+Id}\hypertarget{classXMLDOM_1_1XMLDocument_aeaf25a587d8e2ab595e24a8f82343f60}{}\label{classXMLDOM_1_1XMLDocument_aeaf25a587d8e2ab595e24a8f82343f60}
+
+\item 
+bool \hyperlink{classXMLDOM_1_1XMLDocument_a2b263e2cc905fc03b178f9c4995802be}{dirty}
+\item 
+\hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} \hyperlink{classXMLDOM_1_1XMLDocument_a31683b4f1011941759245c61e4559d1f}{root}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!clear@{clear}}
+\index{clear@{clear}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_a3101fae4eab3b7f414f462073a62a059}{}\label{classXMLDOM_1_1XMLDocument_a3101fae4eab3b7f414f462073a62a059}
+Remove everything in a very quick manner 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_a3101fae4eab3b7f414f462073a62a059_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!get\+Element\+By\+Hierarchical\+Id@{get\+Element\+By\+Hierarchical\+Id}}
+\index{get\+Element\+By\+Hierarchical\+Id@{get\+Element\+By\+Hierarchical\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{get\+Element\+By\+Hierarchical\+Id(const std\+::string \&id) const }{getElementByHierarchicalId(const std::string &id) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::get\+Element\+By\+Hierarchical\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_ab3233ab561fa80459491578764e70cf7}{}\label{classXMLDOM_1_1XMLDocument_ab3233ab561fa80459491578764e70cf7}
+
+
+
+
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found \begin{DoxyRemark}{Remarks}
+Hierarchical I\+Ds are tree-\/like I\+Ds which sometimes are able to resolve ambiguities. They\textquotesingle{}re specified like file paths\+: $<$name1$>$/$<$name2$>$/$<$name3$>$ involves searching for \textquotesingle{}name1\textquotesingle{}, then inside the found element (if any), search for \textquotesingle{}name2\textquotesingle{}, and then inside \textquotesingle{}name2\textquotesingle{} search for \textquotesingle{}name3\textquotesingle{}. Notice that there still is room for ambiguity... but with well design structures, it should be avoidable. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_ab3233ab561fa80459491578764e70cf7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!get\+Element\+By\+Hierarchical\+Id@{get\+Element\+By\+Hierarchical\+Id}}
+\index{get\+Element\+By\+Hierarchical\+Id@{get\+Element\+By\+Hierarchical\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{get\+Element\+By\+Hierarchical\+Id(const std\+::string \&id)}{getElementByHierarchicalId(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::get\+Element\+By\+Hierarchical\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_aee0d066fec37c7e3b81e8c17f809224f}{}\label{classXMLDOM_1_1XMLDocument_aee0d066fec37c7e3b81e8c17f809224f}
+
+
+
+
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found \begin{DoxyRemark}{Remarks}
+Hierarchical I\+Ds are tree-\/like I\+Ds which sometimes are able to resolve ambiguities. They\textquotesingle{}re specified like file paths\+: $<$name1$>$/$<$name2$>$/$<$name3$>$ involves searching for \textquotesingle{}name1\textquotesingle{}, then inside the found element (if any), search for \textquotesingle{}name2\textquotesingle{}, and then inside \textquotesingle{}name2\textquotesingle{} search for \textquotesingle{}name3\textquotesingle{}. Notice that there still is room for ambiguity... but with well design structures, it should be avoidable. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_aee0d066fec37c7e3b81e8c17f809224f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!get\+Element\+By\+Hierarchical\+Name@{get\+Element\+By\+Hierarchical\+Name}}
+\index{get\+Element\+By\+Hierarchical\+Name@{get\+Element\+By\+Hierarchical\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{get\+Element\+By\+Hierarchical\+Name(const std\+::string \&name) const }{getElementByHierarchicalName(const std::string &name) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::get\+Element\+By\+Hierarchical\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_af37e0315519eeeb0e2ad53fefd15cd49}{}\label{classXMLDOM_1_1XMLDocument_af37e0315519eeeb0e2ad53fefd15cd49}
+
+
+
+
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found \begin{DoxySeeAlso}{See also}
+get\+Child\+By\+Hierarchical\+Id 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_af37e0315519eeeb0e2ad53fefd15cd49_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!get\+Element\+By\+Hierarchical\+Name@{get\+Element\+By\+Hierarchical\+Name}}
+\index{get\+Element\+By\+Hierarchical\+Name@{get\+Element\+By\+Hierarchical\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{get\+Element\+By\+Hierarchical\+Name(const std\+::string \&name)}{getElementByHierarchicalName(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::get\+Element\+By\+Hierarchical\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_aaf4d4dcd6d75595107bdacb394e83240}{}\label{classXMLDOM_1_1XMLDocument_aaf4d4dcd6d75595107bdacb394e83240}
+
+
+
+
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found \begin{DoxySeeAlso}{See also}
+get\+Child\+By\+Hierarchical\+Id 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_aaf4d4dcd6d75595107bdacb394e83240_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!get\+Element\+By\+Id@{get\+Element\+By\+Id}}
+\index{get\+Element\+By\+Id@{get\+Element\+By\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{get\+Element\+By\+Id(const std\+::string \&id) const }{getElementById(const std::string &id) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::get\+Element\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_addc86fdde683287b6ebc83f7f014f54d}{}\label{classXMLDOM_1_1XMLDocument_addc86fdde683287b6ebc83f7f014f54d}
+
+
+
+
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_addc86fdde683287b6ebc83f7f014f54d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!get\+Element\+By\+Id@{get\+Element\+By\+Id}}
+\index{get\+Element\+By\+Id@{get\+Element\+By\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{get\+Element\+By\+Id(const std\+::string \&id)}{getElementById(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::get\+Element\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_a2886be75a319474d1c62e8954256671b}{}\label{classXMLDOM_1_1XMLDocument_a2886be75a319474d1c62e8954256671b}
+
+
+
+
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if id isn\textquotesingle{}t found 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_a2886be75a319474d1c62e8954256671b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!get\+Element\+By\+Name@{get\+Element\+By\+Name}}
+\index{get\+Element\+By\+Name@{get\+Element\+By\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{get\+Element\+By\+Name(const std\+::string \&name) const }{getElementByName(const std::string &name) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::get\+Element\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_a91c952fd0a92403c98f91d7dd1634e09}{}\label{classXMLDOM_1_1XMLDocument_a91c952fd0a92403c98f91d7dd1634e09}
+
+
+
+
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if name isn\textquotesingle{}t found 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_a91c952fd0a92403c98f91d7dd1634e09_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!get\+Element\+By\+Name@{get\+Element\+By\+Name}}
+\index{get\+Element\+By\+Name@{get\+Element\+By\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{get\+Element\+By\+Name(const std\+::string \&name)}{getElementByName(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::get\+Element\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_a919b2e677929fe5fa80498ba4223e030}{}\label{classXMLDOM_1_1XMLDocument_a919b2e677929fe5fa80498ba4223e030}
+
+
+
+
+Returns a read-\/only pointer to the specified children, or N\+U\+LL if name isn\textquotesingle{}t found 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_a919b2e677929fe5fa80498ba4223e030_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!rebuild\+Named\+Bindings@{rebuild\+Named\+Bindings}}
+\index{rebuild\+Named\+Bindings@{rebuild\+Named\+Bindings}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{rebuild\+Named\+Bindings(bool deep\+Scan=true)}{rebuildNamedBindings(bool deepScan=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::rebuild\+Named\+Bindings (
+\begin{DoxyParamCaption}
+\item[{bool}]{deep\+Scan = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_a739000da7ba734adbe7114db1120891b}{}\label{classXMLDOM_1_1XMLDocument_a739000da7ba734adbe7114db1120891b}
+
+
+
+
+Recreate the internal structures for get\+Child\+By\+Name/get\+Child\+By\+Id 
+\begin{DoxyParams}{Parameters}
+{\em deep\+Scan} & If true (default), children will be added to the map so that a get\+Child\+By\+X() may return deep children. If false, only direct descendants will be added, which is much less likely to generate collisions, and would be preferred for highly structured sources. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_a739000da7ba734adbe7114db1120891b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!remove\+Element\+By\+Id@{remove\+Element\+By\+Id}}
+\index{remove\+Element\+By\+Id@{remove\+Element\+By\+Id}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{remove\+Element\+By\+Id(const std\+::string \&id)}{removeElementById(const std::string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::remove\+Element\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_abe501e7b169b45f1f26418c145d4365e}{}\label{classXMLDOM_1_1XMLDocument_abe501e7b169b45f1f26418c145d4365e}
+
+
+
+
+Remove the specified element from this one. \begin{DoxyRemark}{Remarks}
+May be costly... since internal housekeeping has to be done as well. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_abe501e7b169b45f1f26418c145d4365e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!remove\+Element\+By\+Name@{remove\+Element\+By\+Name}}
+\index{remove\+Element\+By\+Name@{remove\+Element\+By\+Name}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{remove\+Element\+By\+Name(const std\+::string \&name)}{removeElementByName(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::remove\+Element\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classXMLDOM_1_1XMLDocument_afc5d54ab623bafee4c186c9c87f6c485}{}\label{classXMLDOM_1_1XMLDocument_afc5d54ab623bafee4c186c9c87f6c485}
+
+
+
+
+Remove the specified element from this one. \begin{DoxyRemark}{Remarks}
+May be costly... since internal housekeeping has to be done as well. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db8/classXMLDOM_1_1XMLDocument_afc5d54ab623bafee4c186c9c87f6c485_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!dirty@{dirty}}
+\index{dirty@{dirty}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{dirty}{dirty}}]{\setlength{\rightskip}{0pt plus 5cm}bool X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::dirty}\hypertarget{classXMLDOM_1_1XMLDocument_a2b263e2cc905fc03b178f9c4995802be}{}\label{classXMLDOM_1_1XMLDocument_a2b263e2cc905fc03b178f9c4995802be}
+Set to true whenever the document changes \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!doc\+Type@{doc\+Type}}
+\index{doc\+Type@{doc\+Type}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{doc\+Type}{docType}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::doc\+Type}\hypertarget{classXMLDOM_1_1XMLDocument_adc77c2e1652bb0dfb840de4149ac45f2}{}\label{classXMLDOM_1_1XMLDocument_adc77c2e1652bb0dfb840de4149ac45f2}
+Document type, as defined in $<$!\+D\+O\+C\+T\+Y\+PE ...$>$ \index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}!root@{root}}
+\index{root@{root}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document}}
+\subsubsection[{\texorpdfstring{root}{root}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element} X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Document\+::root}\hypertarget{classXMLDOM_1_1XMLDocument_a31683b4f1011941759245c61e4559d1f}{}\label{classXMLDOM_1_1XMLDocument_a31683b4f1011941759245c61e4559d1f}
+The root element containing the entire document 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+X\+M\+L\+Document.\+h\end{DoxyCompactItemize}

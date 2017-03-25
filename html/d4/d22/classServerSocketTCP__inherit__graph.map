@@ -1,0 +1,4 @@
+<map id="ServerSocketTCP" name="ServerSocketTCP">
+<area shape="rect" id="node2" href="$db/d88/structServerSocket.html" title="{ServerSocket\n|# _srv_ip\l|+ ServerSocket()\l+ get_adr()\l+ acceptNewConn()\l# child_disconnect()\l}" alt="" coords="13,307,152,428"/>
+<area shape="rect" id="node3" href="$d1/d38/classVsnetSocketBase.html" title="{VsnetSocketBase\n|# _fd\l# _set\l|+ VsnetSocketBase()\l+ ~VsnetSocketBase()\l+ valid()\l+ get_fd()\l+ close_fd()\l+ get_socktype()\l+ set_block()\l+ set_nonblock()\l+ get_nonblock()\l+ isActive()\land 9 more...\l# child_disconnect()\l}" alt="" coords="5,5,160,259"/>
+</map>

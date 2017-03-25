@@ -1,0 +1,55 @@
+\hypertarget{structBVTCache}{}\section{B\+V\+T\+Cache Struct Reference}
+\label{structBVTCache}\index{B\+V\+T\+Cache@{B\+V\+T\+Cache}}
+
+
+{\ttfamily \#include $<$O\+P\+C\+\_\+\+Tree\+Collider.\+h$>$}
+
+
+
+Inheritance diagram for B\+V\+T\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{d4/dc7/structBVTCache__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for B\+V\+T\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d40/structBVTCache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structBVTCache_a2d02fc5772b2911eab77480fb602ba03}{B\+V\+T\+Cache} ()\hypertarget{structBVTCache_a2d02fc5772b2911eab77480fb602ba03}{}\label{structBVTCache_a2d02fc5772b2911eab77480fb602ba03}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void {\bfseries Reset\+Cache} ()\hypertarget{structBVTCache_aacca357b3b467e10268de85690bd7469}{}\label{structBVTCache_aacca357b3b467e10268de85690bd7469}
+
+\item 
+void {\bfseries Reset\+Count\+Down} ()\hypertarget{structBVTCache_a0ddd027537abc53a06f921d08855ca70}{}\label{structBVTCache_a0ddd027537abc53a06f921d08855ca70}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classModel}{Model} $\ast$ \hyperlink{structBVTCache_a69f8d5a7613435e6c58a6816ecd15e0a}{Model0}\hypertarget{structBVTCache_a69f8d5a7613435e6c58a6816ecd15e0a}{}\label{structBVTCache_a69f8d5a7613435e6c58a6816ecd15e0a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classModel}{Model} for first object. \end{DoxyCompactList}\item 
+const \hyperlink{classModel}{Model} $\ast$ \hyperlink{structBVTCache_a092159126dbd147d9488f881e675fea0}{Model1}\hypertarget{structBVTCache_a092159126dbd147d9488f881e675fea0}{}\label{structBVTCache_a092159126dbd147d9488f881e675fea0}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classModel}{Model} for second object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure holds cached information used by the algorithm. Two model pointers and two colliding primitives are cached. \hyperlink{classModel}{Model} pointers are assigned to their respective meshes, and the pair of colliding primitives is used for temporal coherence. That is, in case temporal coherence is enabled, those two primitives are tested for overlap before everything else. If they still collide, we\textquotesingle{}re done before even entering the recursive collision code. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__TreeCollider_8h}{O\+P\+C\+\_\+\+Tree\+Collider.\+h}\end{DoxyCompactItemize}

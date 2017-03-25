@@ -1,0 +1,265 @@
+\hypertarget{classNetClient}{}\section{Net\+Client Class Reference}
+\label{classNetClient}\index{Net\+Client@{Net\+Client}}
+
+
+Collaboration diagram for Net\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{d2/d1e/classNetClient__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Reinitialize} ()\hypertarget{classNetClient_aa2eb23b1af5cf5f150632398b7abd1cd}{}\label{classNetClient_aa2eb23b1af5cf5f150632398b7abd1cd}
+
+\item 
+int {\bfseries connect\+Load} (string user, string pass, string \&error)\hypertarget{classNetClient_ac5caed71ad872b8042e252ca05026049}{}\label{classNetClient_ac5caed71ad872b8042e252ca05026049}
+
+\item 
+vector$<$ string $>$ $\ast$ {\bfseries login\+Saved\+Game} (int ship=0)\hypertarget{classNetClient_a35f160939eea3b9dc71e173a3b4f28d5}{}\label{classNetClient_a35f160939eea3b9dc71e173a3b4f28d5}
+
+\item 
+void {\bfseries start\+Game} ()\hypertarget{classNetClient_afab3e781d1131077848628465e448218}{}\label{classNetClient_afab3e781d1131077848628465e448218}
+
+\item 
+void {\bfseries Set\+Config\+Server\+Address} (string \&host, unsigned short \&port)\hypertarget{classNetClient_ae033c4060c2619feec4fb89d072fa312}{}\label{classNetClient_ae033c4060c2619feec4fb89d072fa312}
+
+\item 
+void {\bfseries Get\+Current\+Server\+Address} (string \&host, unsigned short \&port)\hypertarget{classNetClient_a6452d3b8c00c7678d1926218140ffe4b}{}\label{classNetClient_a6452d3b8c00c7678d1926218140ffe4b}
+
+\item 
+void {\bfseries Set\+Current\+Server\+Address} (string host, unsigned short port)\hypertarget{classNetClient_ace647c9a87821a09d4cc02375afed825}{}\label{classNetClient_ace647c9a87821a09d4cc02375afed825}
+
+\item 
+const vector$<$ string $>$ \& {\bfseries ship\+Selections} ()\hypertarget{classNetClient_ad89747b3ebd72f30c171c01cf6ac0a1c}{}\label{classNetClient_ad89747b3ebd72f30c171c01cf6ac0a1c}
+
+\item 
+bool {\bfseries select\+Ship} (unsigned int ship)\hypertarget{classNetClient_a92abd336a76ba81dc788d206bb2670d4}{}\label{classNetClient_a92abd336a76ba81dc788d206bb2670d4}
+
+\item 
+int {\bfseries authenticate} ()\hypertarget{classNetClient_aa1dc9fa429622afd81599b1529a480e9}{}\label{classNetClient_aa1dc9fa429622afd81599b1529a480e9}
+
+\item 
+int {\bfseries login\+Auth} (string str\+\_\+callsign, string str\+\_\+passwd, string \&error)\hypertarget{classNetClient_afe37404d9eefada72039510926caa349}{}\label{classNetClient_afe37404d9eefada72039510926caa349}
+
+\item 
+int {\bfseries login\+Loop} (string \&error)\hypertarget{classNetClient_a06aad9a6da336ec61b249a25ebdc3c0c}{}\label{classNetClient_a06aad9a6da336ec61b249a25ebdc3c0c}
+
+\item 
+vector$<$ string $>$ \& {\bfseries login\+Acct\+Loop} (string str\+\_\+callsign, string str\+\_\+passwd)\hypertarget{classNetClient_aa5d52b7ce24e8c4b7ff2176e1cd528df}{}\label{classNetClient_aa5d52b7ce24e8c4b7ff2176e1cd528df}
+
+\item 
+void {\bfseries login\+Accept} (\hyperlink{classPacket}{Packet} \&p1)\hypertarget{classNetClient_a17fc61252f21d1b800304af63eac16b6}{}\label{classNetClient_a17fc61252f21d1b800304af63eac16b6}
+
+\item 
+void {\bfseries login\+Choose\+Ship} (\hyperlink{classPacket}{Packet} \&p1)\hypertarget{classNetClient_a49f576f8d257c2d45f45d4a19a979c20}{}\label{classNetClient_a49f576f8d257c2d45f45d4a19a979c20}
+
+\item 
+\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} {\bfseries init} (const char $\ast$addr, unsigned short port, string \&error)\hypertarget{classNetClient_a51c20604ff8fcab01f82c1ddeeef61aa}{}\label{classNetClient_a51c20604ff8fcab01f82c1ddeeef61aa}
+
+\item 
+\hyperlink{classVsnetHTTPSocket}{Vsnet\+H\+T\+T\+P\+Socket} $\ast$ {\bfseries init\+\_\+acct} (const std\+::string \&addr)\hypertarget{classNetClient_a9c200b0edca9b4f8bf95e1cc10340961}{}\label{classNetClient_a9c200b0edca9b4f8bf95e1cc10340961}
+
+\item 
+void {\bfseries synchronize\+Time} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} $\ast$)\hypertarget{classNetClient_a6ab365973d0019e1fb4c81b9150e15c3}{}\label{classNetClient_a6ab365973d0019e1fb4c81b9150e15c3}
+
+\item 
+void {\bfseries set\+Callsign} (char $\ast$calls)\hypertarget{classNetClient_abeabad66c278a89591ec541e8d288221}{}\label{classNetClient_abeabad66c278a89591ec541e8d288221}
+
+\item 
+void {\bfseries set\+Callsign} (string calls)\hypertarget{classNetClient_a413e03272c250fa5f0d2c631dcbbee45}{}\label{classNetClient_a413e03272c250fa5f0d2c631dcbbee45}
+
+\item 
+string {\bfseries get\+Callsign} ()\hypertarget{classNetClient_a64a7294acfe132fef2ebabdccf08f75a}{}\label{classNetClient_a64a7294acfe132fef2ebabdccf08f75a}
+
+\item 
+void {\bfseries set\+Unit} (\hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classNetClient_af0a20288e9bbbf45b5c2ac8d10c93df2}{}\label{classNetClient_af0a20288e9bbbf45b5c2ac8d10c93df2}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries get\+Unit} ()\hypertarget{classNetClient_a0474e86b3072e725625e2eff9a34af68}{}\label{classNetClient_a0474e86b3072e725625e2eff9a34af68}
+
+\item 
+unsigned int {\bfseries get\+Lag} ()\hypertarget{classNetClient_ad9e444772086cffba9e081f963d15606}{}\label{classNetClient_ad9e444772086cffba9e081f963d15606}
+
+\item 
+int {\bfseries is\+Time} ()\hypertarget{classNetClient_ac6c195972678a05bb993ba158e38eb17}{}\label{classNetClient_ac6c195972678a05bb993ba158e38eb17}
+
+\item 
+\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} $\ast$ {\bfseries logout} (bool leave\+U\+DP)\hypertarget{classNetClient_ad6110e1f462f83a0005b0d44362fcda8}{}\label{classNetClient_ad6110e1f462f83a0005b0d44362fcda8}
+
+\item 
+void {\bfseries Respawn} (Obj\+Serial clientname)\hypertarget{classNetClient_a26a4a41138fc9cd1bccd34ae3f56de6d}{}\label{classNetClient_a26a4a41138fc9cd1bccd34ae3f56de6d}
+
+\item 
+void {\bfseries save\+Request} ()\hypertarget{classNetClient_a04896a2b7d21ff285ac75adca6e965b8}{}\label{classNetClient_a04896a2b7d21ff285ac75adca6e965b8}
+
+\item 
+void {\bfseries die\+Request} ()\hypertarget{classNetClient_a8dee3cc2df3ba8403d13915c12a0e148}{}\label{classNetClient_a8dee3cc2df3ba8403d13915c12a0e148}
+
+\item 
+int {\bfseries check\+Msg} (\hyperlink{classPacket}{Packet} $\ast$outpacket)\hypertarget{classNetClient_a396cbb06098bfbeeb06994b6265ec47d}{}\label{classNetClient_a396cbb06098bfbeeb06994b6265ec47d}
+
+\item 
+void {\bfseries send} (Cmd cmd, \hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, int mode, const char $\ast$file, int line)\hypertarget{classNetClient_aa44efb592eb858a33c377c642d61c075}{}\label{classNetClient_aa44efb592eb858a33c377c642d61c075}
+
+\item 
+void {\bfseries send\+Custom} (string cmd, string args, string id)\hypertarget{classNetClient_a40f5887c1cd72295cfcd8d256f409b85}{}\label{classNetClient_a40f5887c1cd72295cfcd8d256f409b85}
+
+\item 
+void {\bfseries send\+Position} (const \hyperlink{classClientState}{Client\+State} $\ast$cs)\hypertarget{classNetClient_a21732d7884ae5bd5929e9cbcc21f5a96}{}\label{classNetClient_a21732d7884ae5bd5929e9cbcc21f5a96}
+
+\item 
+void {\bfseries send\+Cloak} (bool engage)\hypertarget{classNetClient_a0cbbacf2d18590c7d4e6701862b6863b}{}\label{classNetClient_a0cbbacf2d18590c7d4e6701862b6863b}
+
+\item 
+void {\bfseries send\+Alive} ()\hypertarget{classNetClient_a55b63ce67bf05b71c03629551879e11a}{}\label{classNetClient_a55b63ce67bf05b71c03629551879e11a}
+
+\item 
+void {\bfseries in\+Game} ()\hypertarget{classNetClient_a4bd696445598a6e5b0f51451e011afd8}{}\label{classNetClient_a4bd696445598a6e5b0f51451e011afd8}
+
+\item 
+bool {\bfseries is\+In\+Game} ()\hypertarget{classNetClient_a9b7cf2a9e64fc3080198927c6ec9b05e}{}\label{classNetClient_a9b7cf2a9e64fc3080198927c6ec9b05e}
+
+\item 
+\hyperlink{structTransformation}{Transformation} {\bfseries Interpolate} (\hyperlink{classUnit}{Unit} $\ast$un, double addtime)\hypertarget{classNetClient_a3954be6d9363efdefc2ebd682530a786}{}\label{classNetClient_a3954be6d9363efdefc2ebd682530a786}
+
+\item 
+void {\bfseries scan\+Request} (\hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classNetClient_aaf9cfb624490e64e1be70887391ec5e7}{}\label{classNetClient_aaf9cfb624490e64e1be70887391ec5e7}
+
+\item 
+void {\bfseries target\+Request} (\hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classNetClient_a74b57bd60250c45b9a3ab79a3572b1dd}{}\label{classNetClient_a74b57bd60250c45b9a3ab79a3572b1dd}
+
+\item 
+void {\bfseries respawn\+Request} ()\hypertarget{classNetClient_abd796469c946e1648c5b8c04e63b20dc}{}\label{classNetClient_abd796469c946e1648c5b8c04e63b20dc}
+
+\item 
+void {\bfseries text\+Message} (const string \&data)\hypertarget{classNetClient_accb8afb590ea5b2053e61992ae02c841}{}\label{classNetClient_accb8afb590ea5b2053e61992ae02c841}
+
+\item 
+void {\bfseries fire\+Request} (Obj\+Serial serial, const vector$<$ int $>$ \&mount\+\_\+indicies, char mis)\hypertarget{classNetClient_a79838b1c1a72ce48fbda6f1b9545c7f8}{}\label{classNetClient_a79838b1c1a72ce48fbda6f1b9545c7f8}
+
+\item 
+void {\bfseries unfire\+Request} (Obj\+Serial serial, const vector$<$ int $>$ \&mount\+\_\+indicies)\hypertarget{classNetClient_a54dac6eaa212e479df7b093a6560ef3e}{}\label{classNetClient_a54dac6eaa212e479df7b093a6560ef3e}
+
+\item 
+void {\bfseries cargo\+Request} (Obj\+Serial buyer, Obj\+Serial seller, const std\+::string \&cargo, unsigned int quantity, int mount\+Offset, int subunit\+Offset)\hypertarget{classNetClient_a7eb879bca19448af7105c58eac36912b}{}\label{classNetClient_a7eb879bca19448af7105c58eac36912b}
+
+\item 
+void {\bfseries ship\+Request} (const std\+::string \&cargo, unsigned char type)\hypertarget{classNetClient_a8929bf727be35d8b5dd489893ef8ce40}{}\label{classNetClient_a8929bf727be35d8b5dd489893ef8ce40}
+
+\item 
+void {\bfseries mission\+Request} (unsigned short packet\+Type, string mission, int pos)\hypertarget{classNetClient_a06567174e08b2bf39912823561d7ecb3}{}\label{classNetClient_a06567174e08b2bf39912823561d7ecb3}
+
+\item 
+void {\bfseries communication\+Request} (const class \hyperlink{classCommunicationMessage}{Communication\+Message} \&c, Obj\+Serial send\+To)\hypertarget{classNetClient_ada3ff6bbdeb4a93bb799767d7b607386}{}\label{classNetClient_ada3ff6bbdeb4a93bb799767d7b607386}
+
+\item 
+void {\bfseries download\+Zone\+Info} ()\hypertarget{classNetClient_a7e60a8b47d48f1e9ee21c0a3ab12c33c}{}\label{classNetClient_a7e60a8b47d48f1e9ee21c0a3ab12c33c}
+
+\item 
+void {\bfseries Add\+Objects} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf)\hypertarget{classNetClient_a03c51cc353d00be9485ed84142db1e2a}{}\label{classNetClient_a03c51cc353d00be9485ed84142db1e2a}
+
+\item 
+Client\+Ptr {\bfseries Add\+Client\+Object} (\hyperlink{classUnit}{Unit} $\ast$un, Obj\+Serial cltserial=0)\hypertarget{classNetClient_a73e259036177fd24ef8aeea4c50d7eae}{}\label{classNetClient_a73e259036177fd24ef8aeea4c50d7eae}
+
+\item 
+bool {\bfseries jump\+Request} (string newsystem, Obj\+Serial jumpserial)\hypertarget{classNetClient_a816fb1b008c82af0c8ee39325526cced}{}\label{classNetClient_a816fb1b008c82af0c8ee39325526cced}
+
+\item 
+bool {\bfseries ready\+To\+Jump} ()\hypertarget{classNetClient_a67360d92b8f33f23cb3dac393a75e857}{}\label{classNetClient_a67360d92b8f33f23cb3dac393a75e857}
+
+\item 
+void {\bfseries unready\+To\+Jump} ()\hypertarget{classNetClient_af98b69f25bb4097dd136f1568bd415d0}{}\label{classNetClient_af98b69f25bb4097dd136f1568bd415d0}
+
+\item 
+void {\bfseries dock\+Request} (Obj\+Serial utdw\+\_\+serial)\hypertarget{classNetClient_a26f5e2ea32bf6c4ffe1fb82538009ad4}{}\label{classNetClient_a26f5e2ea32bf6c4ffe1fb82538009ad4}
+
+\item 
+void {\bfseries undock\+Request} (Obj\+Serial utdw\+\_\+serial)\hypertarget{classNetClient_af8ea7895763b7a1cc6d5e2a26f15df1b}{}\label{classNetClient_af8ea7895763b7a1cc6d5e2a26f15df1b}
+
+\item 
+void {\bfseries create\+Net\+Comm} (float minfreq, float maxfreq, bool video, bool secured, string method)\hypertarget{classNetClient_a1b64aa304bd7276dcb1f18badd2f2338}{}\label{classNetClient_a1b64aa304bd7276dcb1f18badd2f2338}
+
+\item 
+void {\bfseries destroy\+Net\+Comm} ()\hypertarget{classNetClient_adc5e8d33b90ab1f708396735fa6dfe9b}{}\label{classNetClient_adc5e8d33b90ab1f708396735fa6dfe9b}
+
+\item 
+void {\bfseries start\+Communication} ()\hypertarget{classNetClient_addaad6ef20fb50e33e15154e2f969aca}{}\label{classNetClient_addaad6ef20fb50e33e15154e2f969aca}
+
+\item 
+void {\bfseries stop\+Communication} ()\hypertarget{classNetClient_a3c4afca49cac638164601d90b052c55d}{}\label{classNetClient_a3c4afca49cac638164601d90b052c55d}
+
+\item 
+void {\bfseries start\+Webcam\+Transfer} ()\hypertarget{classNetClient_a1b6ab1640ec8ed589918e251570c93de}{}\label{classNetClient_a1b6ab1640ec8ed589918e251570c93de}
+
+\item 
+void {\bfseries stop\+Webcam\+Transfer} ()\hypertarget{classNetClient_a1ccdfdaeebce9ab19fb4b02acd53384f}{}\label{classNetClient_a1ccdfdaeebce9ab19fb4b02acd53384f}
+
+\item 
+void {\bfseries send\+Webcam\+Picture} ()\hypertarget{classNetClient_aaac5fa0a6f733fc265fa70ced322707d}{}\label{classNetClient_aaac5fa0a6f733fc265fa70ced322707d}
+
+\item 
+char $\ast$ {\bfseries get\+Webcam\+Capture} ()\hypertarget{classNetClient_a1c7d2ea39ff5f72cfc78147271134b15}{}\label{classNetClient_a1c7d2ea39ff5f72cfc78147271134b15}
+
+\item 
+char $\ast$ {\bfseries get\+Webcam\+From\+Network} (int \&length)\hypertarget{classNetClient_a94d3e808b6b44fee44a0ddce713667dc}{}\label{classNetClient_a94d3e808b6b44fee44a0ddce713667dc}
+
+\item 
+void {\bfseries increase\+Frequency} ()\hypertarget{classNetClient_a909e4576bd89054e6e03b5f13c4f13c7}{}\label{classNetClient_a909e4576bd89054e6e03b5f13c4f13c7}
+
+\item 
+void {\bfseries decrease\+Frequency} ()\hypertarget{classNetClient_aba63c5969d16763cb40ed4139e263f24}{}\label{classNetClient_aba63c5969d16763cb40ed4139e263f24}
+
+\item 
+float {\bfseries get\+Selected\+Frequency} ()\hypertarget{classNetClient_a288f4009b6afa174c8a8a5cf0aafd1e8}{}\label{classNetClient_a288f4009b6afa174c8a8a5cf0aafd1e8}
+
+\item 
+float {\bfseries get\+Current\+Frequency} ()\hypertarget{classNetClient_a2ad0159c2ab52741c14daa41c0fa8918}{}\label{classNetClient_a2ad0159c2ab52741c14daa41c0fa8918}
+
+\item 
+void {\bfseries switch\+Secured} ()\hypertarget{classNetClient_a1b7b4bf02a673febd12666c8ceb0a4e3}{}\label{classNetClient_a1b7b4bf02a673febd12666c8ceb0a4e3}
+
+\item 
+void {\bfseries switch\+Webcam} ()\hypertarget{classNetClient_a3669388de7794fcfddc3df4522d118a0}{}\label{classNetClient_a3669388de7794fcfddc3df4522d118a0}
+
+\item 
+bool {\bfseries has\+Webcam} ()\hypertarget{classNetClient_a8cefcba6dcffae5f96cd924f74b40073}{}\label{classNetClient_a8cefcba6dcffae5f96cd924f74b40073}
+
+\item 
+void {\bfseries send\+Text\+Message} (string message)\hypertarget{classNetClient_a5a6491c708b25939f2406d92a186b3aa}{}\label{classNetClient_a5a6491c708b25939f2406d92a186b3aa}
+
+\item 
+bool {\bfseries Is\+Netcomm\+Active} () const \hypertarget{classNetClient_a28afaf222394bd96cc8062e6a3464e84}{}\label{classNetClient_a28afaf222394bd96cc8062e6a3464e84}
+
+\item 
+bool {\bfseries Is\+Netcomm\+Secured} () const \hypertarget{classNetClient_ab4f313115f6d8d927cb4dffafc116c5a}{}\label{classNetClient_ab4f313115f6d8d927cb4dffafc116c5a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Reconnect} (std\+::string srvipaddr, unsigned short port)\hypertarget{classNetClient_a340e0ab03a04587e661e089a9e443521}{}\label{classNetClient_a340e0ab03a04587e661e089a9e443521}
+
+\item 
+static void {\bfseries Clean\+Up} ()\hypertarget{classNetClient_ab277f32974266ce1b3c87ae8bf62197b}{}\label{classNetClient_ab277f32974266ce1b3c87ae8bf62197b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Obj\+Serial {\bfseries serial}\hypertarget{classNetClient_a0c70ee929447bc646408ab48ae1fac6b}{}\label{classNetClient_a0c70ee929447bc646408ab48ae1fac6b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+accountserver.\+cpp\item 
+networking/netclient.\+h\item 
+networking/netclient.\+cpp\item 
+networking/netclient\+\_\+clients.\+cpp\item 
+networking/netclient\+\_\+devices.\+cpp\item 
+networking/netclient\+\_\+login.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,286 @@
+\hypertarget{classOpcode_1_1PlanesCollider}{}\section{Opcode\+:\+:Planes\+Collider Class Reference}
+\label{classOpcode_1_1PlanesCollider}\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+
+
+Inheritance diagram for Opcode\+:\+:Planes\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/dd3/classOpcode_1_1PlanesCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Opcode\+:\+:Planes\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/daf/classOpcode_1_1PlanesCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1PlanesCollider_a85d977a4cffea432c5dd82861eb96dfb}{Planes\+Collider} ()
+\item 
+virtual \hyperlink{classOpcode_1_1PlanesCollider_a497b9251065bc7b3ebf4a2ec9e23d52d}{$\sim$\+Planes\+Collider} ()
+\item 
+bool \hyperlink{classOpcode_1_1PlanesCollider_aa5a7c2fb04b8842f5df317dfc3c15df6}{Collide} (\hyperlink{structOpcode_1_1PlanesCache}{Planes\+Cache} \&cache, const \hyperlink{classOpcode_1_1Plane}{Plane} $\ast$planes, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+planes, const \hyperlink{classOpcode_1_1Model}{Model} \&model, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+inline\+\_\+ bool {\bfseries Collide} (\hyperlink{structOpcode_1_1PlanesCache}{Planes\+Cache} \&cache, const \hyperlink{classOpcode_1_1OBB}{O\+BB} \&box, const \hyperlink{classOpcode_1_1Model}{Model} \&model, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldb=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})\hypertarget{classOpcode_1_1PlanesCollider_a90d045cbffc478ffc11e32fa1eef0b77}{}\label{classOpcode_1_1PlanesCollider_a90d045cbffc478ffc11e32fa1eef0b77}
+
+\item 
+\hyperlink{classOpcode_1_1PlanesCollider_a150ad13d0a23a7a132b9056a2207a2e7}{override} (\hyperlink{classOpcode_1_1Collider}{Collider}) const char $\ast$\hyperlink{classOpcode_1_1Collider_a9099aa79f7b57fe4018f37e967cc6be5}{Validate\+Settings}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classOpcode_1_1PlanesCollider_afe02fe2d147e793bbeab7a9eb89bed2b}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)
+\item 
+void \hyperlink{classOpcode_1_1PlanesCollider_a2fe298e87efaba35deff6e4ad7a56da0}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)
+\item 
+void \hyperlink{classOpcode_1_1PlanesCollider_a405bf739ddac7a191edee9a8e438bc8a}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)
+\item 
+void \hyperlink{classOpcode_1_1PlanesCollider_aface806a10833333a7e0473d7b30767b}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)
+\item 
+void \hyperlink{classOpcode_1_1PlanesCollider_ac449d61fe5762a288103ec40c8bf72ce}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)
+\item 
+void \hyperlink{classOpcode_1_1PlanesCollider_a63ae4b22dbfe779be74ca3bd60dd512a}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)
+\item 
+void \hyperlink{classOpcode_1_1PlanesCollider_a2c3e44827c703c4e97e224533c0b030c}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)
+\item 
+void \hyperlink{classOpcode_1_1PlanesCollider_a3b4960caf24415388d68e458225bf4db}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)
+\item 
+inline\+\_\+ bool {\bfseries Planes\+A\+A\+B\+B\+Overlap} (const \hyperlink{classOpcode_1_1Point}{Point} \&center, const \hyperlink{classOpcode_1_1Point}{Point} \&extents, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&out\+\_\+clip\+\_\+mask, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} in\+\_\+clip\+\_\+mask)\hypertarget{classOpcode_1_1PlanesCollider_a8ddc2a3be3fe02e19b0f612d4bf444d4}{}\label{classOpcode_1_1PlanesCollider_a8ddc2a3be3fe02e19b0f612d4bf444d4}
+
+\item 
+inline\+\_\+ bool {\bfseries Planes\+Tri\+Overlap} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} in\+\_\+clip\+\_\+mask)\hypertarget{classOpcode_1_1PlanesCollider_a2021fe53d4e1e2a7d99aa228fd77d81a}{}\label{classOpcode_1_1PlanesCollider_a2021fe53d4e1e2a7d99aa228fd77d81a}
+
+\item 
+bool \hyperlink{classOpcode_1_1PlanesCollider_a1d103b95a7eff849473aa7906d6b6f54}{Init\+Query} (\hyperlink{structOpcode_1_1PlanesCache}{Planes\+Cache} \&cache, const \hyperlink{classOpcode_1_1Plane}{Plane} $\ast$planes, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+planes, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries m\+Nb\+Planes}\hypertarget{classOpcode_1_1PlanesCollider_a71c2959125eaefd2dc6dcce32068dfc8}{}\label{classOpcode_1_1PlanesCollider_a71c2959125eaefd2dc6dcce32068dfc8}
+
+\item 
+\hyperlink{classOpcode_1_1Plane}{Plane} $\ast$ {\bfseries m\+Planes}\hypertarget{classOpcode_1_1PlanesCollider_a3a181c61c7104d825384c9c6e150b22b}{}\label{classOpcode_1_1PlanesCollider_a3a181c61c7104d825384c9c6e150b22b}
+
+\item 
+\hyperlink{structOpcode_1_1VertexPointers}{Vertex\+Pointers} {\bfseries m\+VP}\hypertarget{classOpcode_1_1PlanesCollider_a6857aa2834969b47d2693270a8d84237}{}\label{classOpcode_1_1PlanesCollider_a6857aa2834969b47d2693270a8d84237}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!Planes\+Collider@{Planes\+Collider}}
+\index{Planes\+Collider@{Planes\+Collider}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{Planes\+Collider()}{PlanesCollider()}}]{\setlength{\rightskip}{0pt plus 5cm}Planes\+Collider\+::\+Planes\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1PlanesCollider_a85d977a4cffea432c5dd82861eb96dfb}{}\label{classOpcode_1_1PlanesCollider_a85d977a4cffea432c5dd82861eb96dfb}
+Constructor. \index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!````~Planes\+Collider@{$\sim$\+Planes\+Collider}}
+\index{````~Planes\+Collider@{$\sim$\+Planes\+Collider}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{$\sim$\+Planes\+Collider()}{~PlanesCollider()}}]{\setlength{\rightskip}{0pt plus 5cm}Planes\+Collider\+::$\sim$\+Planes\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classOpcode_1_1PlanesCollider_a497b9251065bc7b3ebf4a2ec9e23d52d}{}\label{classOpcode_1_1PlanesCollider_a497b9251065bc7b3ebf4a2ec9e23d52d}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Collision\+Node $\ast$node, udword clip\+\_\+mask)}{_Collide(const AABBCollisionNode *node, udword clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}void Planes\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node, }
+\item[{{\bf udword}}]{clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1PlanesCollider_afe02fe2d147e793bbeab7a9eb89bed2b}{}\label{classOpcode_1_1PlanesCollider_afe02fe2d147e793bbeab7a9eb89bed2b}
+Recursive collision query for normal \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+No\+Leaf\+Node $\ast$node, udword clip\+\_\+mask)}{_Collide(const AABBNoLeafNode *node, udword clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}void Planes\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node, }
+\item[{{\bf udword}}]{clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1PlanesCollider_a2fe298e87efaba35deff6e4ad7a56da0}{}\label{classOpcode_1_1PlanesCollider_a2fe298e87efaba35deff6e4ad7a56da0}
+Recursive collision query for no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Quantized\+Node $\ast$node, udword clip\+\_\+mask)}{_Collide(const AABBQuantizedNode *node, udword clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}void Planes\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node, }
+\item[{{\bf udword}}]{clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1PlanesCollider_a405bf739ddac7a191edee9a8e438bc8a}{}\label{classOpcode_1_1PlanesCollider_a405bf739ddac7a191edee9a8e438bc8a}
+Recursive collision query for quantized \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Quantized\+No\+Leaf\+Node $\ast$node, udword clip\+\_\+mask)}{_Collide(const AABBQuantizedNoLeafNode *node, udword clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}void Planes\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node, }
+\item[{{\bf udword}}]{clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1PlanesCollider_aface806a10833333a7e0473d7b30767b}{}\label{classOpcode_1_1PlanesCollider_aface806a10833333a7e0473d7b30767b}
+Recursive collision query for quantized no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+Collision\+Node $\ast$node, udword clip\+\_\+mask)}{_CollideNoPrimitiveTest(const AABBCollisionNode *node, udword clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}void Planes\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node, }
+\item[{{\bf udword}}]{clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1PlanesCollider_ac449d61fe5762a288103ec40c8bf72ce}{}\label{classOpcode_1_1PlanesCollider_ac449d61fe5762a288103ec40c8bf72ce}
+Recursive collision query for normal \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+No\+Leaf\+Node $\ast$node, udword clip\+\_\+mask)}{_CollideNoPrimitiveTest(const AABBNoLeafNode *node, udword clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}void Planes\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node, }
+\item[{{\bf udword}}]{clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1PlanesCollider_a63ae4b22dbfe779be74ca3bd60dd512a}{}\label{classOpcode_1_1PlanesCollider_a63ae4b22dbfe779be74ca3bd60dd512a}
+Recursive collision query for no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+Quantized\+Node $\ast$node, udword clip\+\_\+mask)}{_CollideNoPrimitiveTest(const AABBQuantizedNode *node, udword clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}void Planes\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node, }
+\item[{{\bf udword}}]{clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1PlanesCollider_a2c3e44827c703c4e97e224533c0b030c}{}\label{classOpcode_1_1PlanesCollider_a2c3e44827c703c4e97e224533c0b030c}
+Recursive collision query for quantized \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+Quantized\+No\+Leaf\+Node $\ast$node, udword clip\+\_\+mask)}{_CollideNoPrimitiveTest(const AABBQuantizedNoLeafNode *node, udword clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}void Planes\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node, }
+\item[{{\bf udword}}]{clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1PlanesCollider_a3b4960caf24415388d68e458225bf4db}{}\label{classOpcode_1_1PlanesCollider_a3b4960caf24415388d68e458225bf4db}
+Recursive collision query for quantized no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(\+Planes\+Cache \&cache, const Plane $\ast$planes, udword nb\+\_\+planes, const Model \&model, const Matrix4x4 $\ast$worldm=null)}{Collide(PlanesCache &cache, const Plane *planes, udword nb_planes, const Model &model, const Matrix4x4 *worldm=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Planes\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf Planes\+Cache} \&}]{cache, }
+\item[{const {\bf Plane} $\ast$}]{planes, }
+\item[{{\bf udword}}]{nb\+\_\+planes, }
+\item[{const {\bf Model} \&}]{model, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1PlanesCollider_aa5a7c2fb04b8842f5df317dfc3c15df6}{}\label{classOpcode_1_1PlanesCollider_aa5a7c2fb04b8842f5df317dfc3c15df6}
+Generic collision query for generic O\+P\+C\+O\+DE models. After the call, access the results\+:
+\begin{DoxyItemize}
+\item with \hyperlink{classOpcode_1_1Collider_a7d8c3e6a85be417ac7505930f14f141c}{Get\+Contact\+Status()}
+\item with \hyperlink{classOpcode_1_1VolumeCollider_ab4ab03fdecae438e89ef98433b7fc6c1}{Get\+Nb\+Touched\+Primitives()}
+\item with \hyperlink{classOpcode_1_1VolumeCollider_ac85a0c717bc3d3424af31becc7abbebd}{Get\+Touched\+Primitives()}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} a planes cache \\
+\hline
+{\em planes} & \mbox{[}in\mbox{]} list of planes in world space \\
+\hline
+{\em nb\+\_\+planes} & \mbox{[}in\mbox{]} number of planes \\
+\hline
+{\em model} & \mbox{[}in\mbox{]} Opcode model to collide with \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!Init\+Query@{Init\+Query}}
+\index{Init\+Query@{Init\+Query}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{Init\+Query(\+Planes\+Cache \&cache, const Plane $\ast$planes, udword nb\+\_\+planes, const Matrix4x4 $\ast$worldm=null)}{InitQuery(PlanesCache &cache, const Plane *planes, udword nb_planes, const Matrix4x4 *worldm=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Planes\+Collider\+::\+Init\+Query (
+\begin{DoxyParamCaption}
+\item[{{\bf Planes\+Cache} \&}]{cache, }
+\item[{const {\bf Plane} $\ast$}]{planes, }
+\item[{{\bf udword}}]{nb\+\_\+planes, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1PlanesCollider_a1d103b95a7eff849473aa7906d6b6f54}{}\label{classOpcode_1_1PlanesCollider_a1d103b95a7eff849473aa7906d6b6f54}
+Initializes a collision query \+:
+\begin{DoxyItemize}
+\item reset stats \& contact status
+\item compute planes in model space
+\item check temporal coherence
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} a planes cache \\
+\hline
+{\em planes} & \mbox{[}in\mbox{]} list of planes \\
+\hline
+{\em nb\+\_\+planes} & \mbox{[}in\mbox{]} number of planes \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if we can return immediately 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrix must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}!override@{override}}
+\index{override@{override}!Opcode\+::\+Planes\+Collider@{Opcode\+::\+Planes\+Collider}}
+\subsubsection[{\texorpdfstring{override(\+Collider) const char $\ast$\+Validate\+Settings()}{override(Collider) const char *ValidateSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}Opcode\+::\+Planes\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1PlanesCollider_a150ad13d0a23a7a132b9056a2207a2e7}{}\label{classOpcode_1_1PlanesCollider_a150ad13d0a23a7a132b9056a2207a2e7}
+Validates current settings. You should call this method after all the settings and callbacks have been defined for a collider. \begin{DoxyReturn}{Returns}
+null if everything is ok, else a string describing the problem 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\hyperlink{OPC__PlanesCollider_8cpp}{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp}\end{DoxyCompactItemize}

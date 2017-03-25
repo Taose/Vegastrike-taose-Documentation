@@ -1,0 +1,91 @@
+\hypertarget{classFlightgroup}{}\section{Flightgroup Class Reference}
+\label{classFlightgroup}\index{Flightgroup@{Flightgroup}}
+
+
+Collaboration diagram for Flightgroup\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dba/classFlightgroup__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Decrement} (\hyperlink{classUnit}{Unit} $\ast$trashed)\hypertarget{classFlightgroup_a7459b7a546007c3f08dbc988b37ae4f6}{}\label{classFlightgroup_a7459b7a546007c3f08dbc988b37ae4f6}
+
+\item 
+void {\bfseries Init} (\hyperlink{classFlightgroup}{Flightgroup} $\ast$fg, const std\+::string \&name, const std\+::string \&type, const std\+::string \&faction, const std\+::string \&order, int num\+\_\+ships, int num\+\_\+waves, \hyperlink{classMission}{Mission} $\ast$mis)\hypertarget{classFlightgroup_a426fc5314ac8bcb25653601da6044ba3}{}\label{classFlightgroup_a426fc5314ac8bcb25653601da6044ba3}
+
+\item 
+{\bfseries Flightgroup} (\hyperlink{classFlightgroup}{Flightgroup} \&other)\hypertarget{classFlightgroup_a6298a3de16369fdba5a9323a4bb57851}{}\label{classFlightgroup_a6298a3de16369fdba5a9323a4bb57851}
+
+\item 
+\hyperlink{classFlightgroup}{Flightgroup} \& {\bfseries operator=} (\hyperlink{classFlightgroup}{Flightgroup} \&other)\hypertarget{classFlightgroup_a3de9b1eb3b428d4ea3469e9713a698c6}{}\label{classFlightgroup_a3de9b1eb3b428d4ea3469e9713a698c6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classFlightgroup}{Flightgroup} $\ast$ {\bfseries new\+Flightgroup} (const std\+::string \&name, const std\+::string \&type, const std\+::string \&faction, const std\+::string \&order, int num\+\_\+ships, int num\+\_\+waves, const std\+::string \&texname, const std\+::string \&alphname, class \hyperlink{classMission}{Mission} $\ast$mis)\hypertarget{classFlightgroup_ab69035f87d78cb356e73787267527496}{}\label{classFlightgroup_ab69035f87d78cb356e73787267527496}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries leader}\hypertarget{classFlightgroup_a2d4afc0e965d80ad73d6248f74a93e67}{}\label{classFlightgroup_a2d4afc0e965d80ad73d6248f74a93e67}
+
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries target}\hypertarget{classFlightgroup_a5c7a8c3ec479068e64fa9a1b1f61d6e0}{}\label{classFlightgroup_a5c7a8c3ec479068e64fa9a1b1f61d6e0}
+
+\item 
+int {\bfseries leader\+\_\+decision}\hypertarget{classFlightgroup_a0955c4933d98ba11bfae1250abf0873f}{}\label{classFlightgroup_a0955c4933d98ba11bfae1250abf0873f}
+
+\item 
+\hyperlink{classTexture}{Texture} $\ast$ {\bfseries squad\+Logo}\hypertarget{classFlightgroup_ae92f1464e682fafbc68b87602d27c159}{}\label{classFlightgroup_ae92f1464e682fafbc68b87602d27c159}
+
+\item 
+std\+::string {\bfseries directive}\hypertarget{classFlightgroup_a85ffbd8c5d0a7afe6b0de8a6ed76978f}{}\label{classFlightgroup_a85ffbd8c5d0a7afe6b0de8a6ed76978f}
+
+\item 
+std\+::string {\bfseries name}\hypertarget{classFlightgroup_a115771915e519da42c9647df96e1c0f5}{}\label{classFlightgroup_a115771915e519da42c9647df96e1c0f5}
+
+\item 
+std\+::string {\bfseries type}\hypertarget{classFlightgroup_a66481b4b452cceceea080fa20caeb6fe}{}\label{classFlightgroup_a66481b4b452cceceea080fa20caeb6fe}
+
+\item 
+std\+::string {\bfseries ainame}\hypertarget{classFlightgroup_aa83ea46662b8b50c9126fdc6c88bcd96}{}\label{classFlightgroup_aa83ea46662b8b50c9126fdc6c88bcd96}
+
+\item 
+std\+::string {\bfseries faction}\hypertarget{classFlightgroup_a148a01e383c688f5cdfab5d0db8be187}{}\label{classFlightgroup_a148a01e383c688f5cdfab5d0db8be187}
+
+\item 
+int {\bfseries flightgroup\+\_\+nr}\hypertarget{classFlightgroup_a25bcd04c5d5066f7ae768bba5dcb2a99}{}\label{classFlightgroup_a25bcd04c5d5066f7ae768bba5dcb2a99}
+
+\item 
+int {\bfseries nr\+\_\+ships}\hypertarget{classFlightgroup_a2e2bbe59e023e9fb935278dab4cea6bc}{}\label{classFlightgroup_a2e2bbe59e023e9fb935278dab4cea6bc}
+
+\item 
+Q\+Vector {\bfseries pos}\hypertarget{classFlightgroup_a1ab0bad879f6c8770fd3fb3d8f2ca7de}{}\label{classFlightgroup_a1ab0bad879f6c8770fd3fb3d8f2ca7de}
+
+\item 
+int {\bfseries nr\+\_\+ships\+\_\+left}\hypertarget{classFlightgroup_aca2afe6d6589d330aa9ef239ac0054e2}{}\label{classFlightgroup_aca2afe6d6589d330aa9ef239ac0054e2}
+
+\item 
+int {\bfseries nr\+\_\+waves\+\_\+left}\hypertarget{classFlightgroup_a8c8553e6c714d636c5e10fcaf297d87b}{}\label{classFlightgroup_a8c8553e6c714d636c5e10fcaf297d87b}
+
+\item 
+vs\+U\+Map$<$ std\+::string, std\+::string $>$ {\bfseries ordermap}\hypertarget{classFlightgroup_a793830005c72ea36487fc2bc437dce95}{}\label{classFlightgroup_a793830005c72ea36487fc2bc437dce95}
+
+\item 
+std\+::vector$<$ class \hyperlink{classvarInst}{var\+Inst} $\ast$ $>$ $\ast$ {\bfseries orderlist}\hypertarget{classFlightgroup_a290c580e17d6165bc4a498dafa7087a6}{}\label{classFlightgroup_a290c580e17d6165bc4a498dafa7087a6}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/script/flightgroup.\+h\item 
+cmd/script/flightgroup.\+cpp\item 
+cmd/script/flightgroup\+\_\+server.\+cpp\end{DoxyCompactItemize}

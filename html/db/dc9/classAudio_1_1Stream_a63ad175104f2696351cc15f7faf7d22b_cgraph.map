@@ -1,0 +1,11 @@
+<map id="Audio::Stream::getFormat" name="Audio::Stream::getFormat">
+<area shape="rect" id="node2" href="$db/dc9/classAudio_1_1Stream.html#a6beb34ff928c420128104e82400d9fd3" title="Audio::Stream::getLength" alt="" coords="229,5,400,32"/>
+<area shape="rect" id="node3" href="$db/dc9/classAudio_1_1Stream.html#a02c5f29ebc51834724acb403a4680526" title="Audio::Stream::getLengthImpl" alt="" coords="456,44,651,71"/>
+<area shape="rect" id="node4" href="$db/dc9/classAudio_1_1Stream.html#afad484dadc6c02def4277a667dc05327" title="Audio::Stream::read" alt="" coords="245,157,384,184"/>
+<area shape="rect" id="node5" href="$db/dc9/classAudio_1_1Stream.html#a9e751b39449a3cfe0aa6579cdba43e65" title="Audio::Stream::getBufferImpl" alt="" coords="458,120,649,147"/>
+<area shape="rect" id="node6" href="$db/dc9/classAudio_1_1Stream.html#a3efb4fa10e2a575805d9f8be9a133b6f" title="Audio::Stream::nextBufferImpl" alt="" coords="454,189,653,216"/>
+<area shape="rect" id="node7" href="$db/dc9/classAudio_1_1Stream.html#ab1f7f84931d20af5509c674c5c878788" title="Audio::Stream::getPosition" alt="" coords="225,259,404,285"/>
+<area shape="rect" id="node8" href="$db/dc9/classAudio_1_1Stream.html#abd7c2b572f0432f22ffdcad4ca60d0f7" title="Audio::Stream::getPositionImpl" alt="" coords="452,297,655,324"/>
+<area shape="rect" id="node9" href="$db/dc9/classAudio_1_1Stream.html#a5edea4e4a4d7c7569f12bc8f2a913aa0" title="Audio::Stream::seek" alt="" coords="244,360,385,387"/>
+<area shape="rect" id="node10" href="$db/dc9/classAudio_1_1Stream.html#a1e37ef0d6f53d1dd312f91413b840222" title="Audio::Stream::seekImpl" alt="" coords="470,373,637,400"/>
+</map>

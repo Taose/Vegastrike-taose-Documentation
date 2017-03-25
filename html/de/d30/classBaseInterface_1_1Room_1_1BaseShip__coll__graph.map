@@ -1,0 +1,4 @@
+<map id="BaseInterface::Room::BaseShip" name="BaseInterface::Room::BaseShip">
+<area shape="rect" id="node2" href="$df/db7/classBaseInterface_1_1Room_1_1BaseObj.html" title="{BaseInterface::Room\l::BaseObj\n|+ index\l|+ Draw()\l+ ~BaseObj()\l+ BaseObj()\l}" alt="" coords="5,57,152,178"/>
+<area shape="rect" id="node3" href="$d3/d3f/classMatrix.html" title="{Matrix\n|+ r\l+ p\l|+ Matrix()\l+ netswap()\l+ getR()\l+ getQ()\l+ getP()\l+ Matrix()\l+ InvertRotationInto()\l+ Matrix()\l+ Matrix()\l+ operator*()\l}" alt="" coords="176,5,323,229"/>
+</map>

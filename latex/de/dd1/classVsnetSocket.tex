@@ -1,0 +1,103 @@
+\hypertarget{classVsnetSocket}{}\section{Vsnet\+Socket Class Reference}
+\label{classVsnetSocket}\index{Vsnet\+Socket@{Vsnet\+Socket}}
+
+
+Inheritance diagram for Vsnet\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d1b/classVsnetSocket__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Vsnet\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d33/classVsnetSocket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Vsnet\+Socket} (int sock, const \hyperlink{structAddressIP}{Address\+IP} \&remote\+\_\+ip, const char $\ast$socktype, \hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{classVsnetSocket_a45c0ab5911f17c6abe870e2c2686e8b9}{}\label{classVsnetSocket_a45c0ab5911f17c6abe870e2c2686e8b9}
+
+\item 
+virtual bool {\bfseries is\+Tcp} () const =0\hypertarget{classVsnetSocket_a46d75a53fc32006d6497a9d4f7888be8}{}\label{classVsnetSocket_a46d75a53fc32006d6497a9d4f7888be8}
+
+\item 
+virtual int {\bfseries opt\+Payload\+Size} () const =0\hypertarget{classVsnetSocket_ab9cd1c83f2aad6b6c205c61bdac64044}{}\label{classVsnetSocket_ab9cd1c83f2aad6b6c205c61bdac64044}
+
+\item 
+virtual int {\bfseries queue\+Len} (int pri)=0\hypertarget{classVsnetSocket_a1d6a1f690b2f3afd52e75f454fd4193f}{}\label{classVsnetSocket_a1d6a1f690b2f3afd52e75f454fd4193f}
+
+\item 
+bool {\bfseries eq} (const \hyperlink{classVsnetSocket}{Vsnet\+Socket} \&r) const \hypertarget{classVsnetSocket_ac878d5a3f8af1284bd0984f23d4a2b3c}{}\label{classVsnetSocket_ac878d5a3f8af1284bd0984f23d4a2b3c}
+
+\item 
+bool {\bfseries lt} (const \hyperlink{classVsnetSocket}{Vsnet\+Socket} \&r) const \hypertarget{classVsnetSocket_acc676d0c1fd84d5903b1352499cdd71d}{}\label{classVsnetSocket_acc676d0c1fd84d5903b1352499cdd71d}
+
+\item 
+bool {\bfseries same\+Address} (const \hyperlink{classVsnetSocket}{Vsnet\+Socket} \&r) const \hypertarget{classVsnetSocket_a5ecdf91d45b5b6cb2fccbac998a3bab1}{}\label{classVsnetSocket_a5ecdf91d45b5b6cb2fccbac998a3bab1}
+
+\item 
+virtual int {\bfseries sendbuf} (\hyperlink{classPacket}{Packet} $\ast$packet, const \hyperlink{structAddressIP}{Address\+IP} $\ast$to, int pcktflags)=0\hypertarget{classVsnetSocket_abbbdda333f86d43ec40103082e44e6e1}{}\label{classVsnetSocket_abbbdda333f86d43ec40103082e44e6e1}
+
+\item 
+virtual int \hyperlink{classVsnetSocket_a329fcd755206e5bda56c689ee911e35a}{recvbuf} (\hyperlink{classPacket}{Packet} $\ast$p, \hyperlink{structAddressIP}{Address\+IP} $\ast$from)=0
+\item 
+virtual void {\bfseries dump} (std\+::ostream \&ostr) const =0\hypertarget{classVsnetSocket_a3a486dc410bb623cfaa9c9f47adb4605}{}\label{classVsnetSocket_a3a486dc410bb623cfaa9c9f47adb4605}
+
+\item 
+const \hyperlink{structAddressIP}{Address\+IP} \& {\bfseries get\+Remote\+Address} () const \hypertarget{classVsnetSocket_a07eac88d825e21ba83c37e14b0ad1ccb}{}\label{classVsnetSocket_a07eac88d825e21ba83c37e14b0ad1ccb}
+
+\item 
+virtual bool {\bfseries set\+Remote\+Address} (const \hyperlink{structAddressIP}{Address\+IP} \&)\hypertarget{classVsnetSocket_a858f57ef5d72c28914b43616d5cf6019}{}\label{classVsnetSocket_a858f57ef5d72c28914b43616d5cf6019}
+
+\item 
+const \hyperlink{structAddressIP}{Address\+IP} \& {\bfseries get\+Local\+Address} () const \hypertarget{classVsnetSocket_acdd8bb7c810f780a9510ddc0848e220f}{}\label{classVsnetSocket_acdd8bb7c810f780a9510ddc0848e220f}
+
+\item 
+bool {\bfseries set\+Local\+Address} (const \hyperlink{structAddressIP}{Address\+IP} \&lip)\hypertarget{classVsnetSocket_ac2d4085ff5a5845c0807f6130e91a708}{}\label{classVsnetSocket_ac2d4085ff5a5845c0807f6130e91a708}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structAddressIP}{Address\+IP} {\bfseries \+\_\+remote\+\_\+ip}\hypertarget{classVsnetSocket_a28c394ff547accb4e3f55a541068b864}{}\label{classVsnetSocket_a28c394ff547accb4e3f55a541068b864}
+
+\item 
+\hyperlink{structAddressIP}{Address\+IP} {\bfseries \+\_\+local\+\_\+ip}\hypertarget{classVsnetSocket_acf692aada44f62b12fcaaab294cf1f00}{}\label{classVsnetSocket_acf692aada44f62b12fcaaab294cf1f00}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&ostr, const \hyperlink{classVsnetSocket}{Vsnet\+Socket} \&s)\hypertarget{classVsnetSocket_ac31853066f5317bb7f1b45a03d5dfd39}{}\label{classVsnetSocket_ac31853066f5317bb7f1b45a03d5dfd39}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Vsnet\+Socket@{Vsnet\+Socket}!recvbuf@{recvbuf}}
+\index{recvbuf@{recvbuf}!Vsnet\+Socket@{Vsnet\+Socket}}
+\subsubsection[{\texorpdfstring{recvbuf(\+Packet $\ast$p, Address\+I\+P $\ast$from)=0}{recvbuf(Packet *p, AddressIP *from)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Vsnet\+Socket\+::recvbuf (
+\begin{DoxyParamCaption}
+\item[{{\bf Packet} $\ast$}]{p, }
+\item[{{\bf Address\+IP} $\ast$}]{from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classVsnetSocket_a329fcd755206e5bda56c689ee911e35a}{}\label{classVsnetSocket_a329fcd755206e5bda56c689ee911e35a}
+This function copies or moves data into the given \hyperlink{classPacketMem}{Packet\+Mem} variable. It is preferred over the other recvbuf function because it may reduce the number of copy operations by at least one. 
+
+Implemented in \hyperlink{classVsnetTCPSocket_a9dd7c50ffe1d6b53cb10a1ac5d35a544}{Vsnet\+T\+C\+P\+Socket}, and \hyperlink{classVsnetUDPSocket_ad503a9d7cada896837a3fc2f3888bdec}{Vsnet\+U\+D\+P\+Socket}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+socketbase.\+h\item 
+networking/lowlevel/vsnet\+\_\+socketbase.\+cpp\end{DoxyCompactItemize}

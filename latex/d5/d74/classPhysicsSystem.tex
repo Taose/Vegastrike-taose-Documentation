@@ -1,0 +1,81 @@
+\hypertarget{classPhysicsSystem}{}\section{Physics\+System Class Reference}
+\label{classPhysicsSystem}\index{Physics\+System@{Physics\+System}}
+
+
+Collaboration diagram for Physics\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{d9/d46/classPhysicsSystem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Physics\+System} (float M, float I, Q\+Vector $\ast$pos, Vector $\ast$p, Vector $\ast$q, Vector $\ast$r)\hypertarget{classPhysicsSystem_a30fd3a9343a9bd9a004bcd3f9c8bfa40}{}\label{classPhysicsSystem_a30fd3a9343a9bd9a004bcd3f9c8bfa40}
+
+\item 
+virtual void {\bfseries Rotate} (const Vector \&axis)\hypertarget{classPhysicsSystem_aeb8fb2743397f3682b459f891a4d7d2c}{}\label{classPhysicsSystem_aeb8fb2743397f3682b459f891a4d7d2c}
+
+\item 
+virtual void {\bfseries Jettison\+Reaction\+Mass} (const Vector \&Direction, float speed, float mass)\hypertarget{classPhysicsSystem_ac5a9beb8c8d90f8fc06585cdcaebd63b}{}\label{classPhysicsSystem_ac5a9beb8c8d90f8fc06585cdcaebd63b}
+
+\item 
+virtual void {\bfseries Jettison\+Mass} (const Vector \&Direction, float speed, float mass)\hypertarget{classPhysicsSystem_a464c1a58ce4248cbf3b56b7d1c76bcdf}{}\label{classPhysicsSystem_a464c1a58ce4248cbf3b56b7d1c76bcdf}
+
+\item 
+virtual void {\bfseries Resistive\+Liquid\+Torque} (float Resistive\+Force\+Coef)\hypertarget{classPhysicsSystem_a1c534b6f4a5e0d5e6543845391d3123d}{}\label{classPhysicsSystem_a1c534b6f4a5e0d5e6543845391d3123d}
+
+\item 
+virtual void {\bfseries Resistive\+Torque} (float Resistive\+Force\+Coef)\hypertarget{classPhysicsSystem_a37727d3bf65ad645149d710da19adfb0}{}\label{classPhysicsSystem_a37727d3bf65ad645149d710da19adfb0}
+
+\item 
+virtual void {\bfseries Resistive\+Liquid\+Force} (float Resistive\+Force\+Coef)\hypertarget{classPhysicsSystem_ac9c5dfec81a1fb6d5fbd615fdba727ff}{}\label{classPhysicsSystem_ac9c5dfec81a1fb6d5fbd615fdba727ff}
+
+\item 
+virtual void {\bfseries Resistive\+Force} (float Resistive\+Force\+Coef)\hypertarget{classPhysicsSystem_a2f55315c9c70f52deb4aac8f79654594}{}\label{classPhysicsSystem_a2f55315c9c70f52deb4aac8f79654594}
+
+\item 
+virtual void {\bfseries Resistive\+Thrust} (float strength)\hypertarget{classPhysicsSystem_a53ede108169ec55a276d52f451d53292}{}\label{classPhysicsSystem_a53ede108169ec55a276d52f451d53292}
+
+\item 
+virtual void {\bfseries Resistive\+Torque\+Thrust} (float strength, const Vector \&Position)\hypertarget{classPhysicsSystem_aa476b77f11bc214537d3ebed263278d9}{}\label{classPhysicsSystem_aa476b77f11bc214537d3ebed263278d9}
+
+\item 
+virtual void {\bfseries Apply\+Force} (const Vector \&Vforce, float time)\hypertarget{classPhysicsSystem_a24cc2fe215911427951d8bd267f18665}{}\label{classPhysicsSystem_a24cc2fe215911427951d8bd267f18665}
+
+\item 
+virtual void {\bfseries Apply\+Torque} (const Vector \&Vforce, const Vector \&Location, float time)\hypertarget{classPhysicsSystem_a207d54bb69123f9d79c65d4664ba5564}{}\label{classPhysicsSystem_a207d54bb69123f9d79c65d4664ba5564}
+
+\item 
+virtual void {\bfseries Apply\+Local\+Torque} (const Vector \&Vforce, const Vector \&Location, float time)\hypertarget{classPhysicsSystem_ae00c874b4315fb1934e46b248df01f74}{}\label{classPhysicsSystem_ae00c874b4315fb1934e46b248df01f74}
+
+\item 
+virtual void {\bfseries Apply\+Balanced\+Local\+Torque} (const Vector \&Vforce, const Vector \&Location, float time)\hypertarget{classPhysicsSystem_a22ac235e9655108e48cbfbf852b9f3ce}{}\label{classPhysicsSystem_a22ac235e9655108e48cbfbf852b9f3ce}
+
+\item 
+void {\bfseries Apply\+Impulses} (float Time)\hypertarget{classPhysicsSystem_a29e04e493d36a8c7b98f242b16b69659}{}\label{classPhysicsSystem_a29e04e493d36a8c7b98f242b16b69659}
+
+\item 
+void {\bfseries Set\+Velocity} (Vector v)\hypertarget{classPhysicsSystem_ae92573d8766dd0d75ca70845d73b4913}{}\label{classPhysicsSystem_ae92573d8766dd0d75ca70845d73b4913}
+
+\item 
+void {\bfseries Set\+Angular\+Velocity} (Vector w)\hypertarget{classPhysicsSystem_a38c0cf8ca73184fb89006c66e3759eeb}{}\label{classPhysicsSystem_a38c0cf8ca73184fb89006c66e3759eeb}
+
+\item 
+const Vector \& {\bfseries Get\+Velocity} () const \hypertarget{classPhysicsSystem_a75f6ab4aa5734de47fd19ec30dcaa604}{}\label{classPhysicsSystem_a75f6ab4aa5734de47fd19ec30dcaa604}
+
+\item 
+const Vector \& {\bfseries Get\+Angular\+Velocity} () const \hypertarget{classPhysicsSystem_aab98cda7d7ce0dd9b86bb6969e16d485}{}\label{classPhysicsSystem_aab98cda7d7ce0dd9b86bb6969e16d485}
+
+\item 
+virtual void {\bfseries Update} ()\hypertarget{classPhysicsSystem_afb208c7090cff19c8c56022cfe8fec9e}{}\label{classPhysicsSystem_afb208c7090cff19c8c56022cfe8fec9e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+physics.\+h\item 
+physics.\+cpp\end{DoxyCompactItemize}

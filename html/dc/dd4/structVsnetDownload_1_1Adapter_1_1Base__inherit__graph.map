@@ -1,0 +1,11 @@
+<map id="VsnetDownload::Adapter::Base" name="VsnetDownload::Adapter::Base">
+<area shape="rect" id="node2" href="$d2/dac/structVsnetDownload_1_1Adapter_1_1Download.html" title="{VsnetDownload::Adapter\l::Download\n|+ file\l+ payload_len\l+ payload\l|}" alt="" coords="5,153,172,274"/>
+<area shape="rect" id="node3" href="$db/dae/structVsnetDownload_1_1Adapter_1_1DownloadError.html" title="{VsnetDownload::Adapter\l::DownloadError\n|+ file\l|}" alt="" coords="196,167,363,259"/>
+<area shape="rect" id="node4" href="$d9/da3/structVsnetDownload_1_1Adapter_1_1DownloadFirstFragment.html" title="{VsnetDownload::Adapter\l::DownloadFirstFragment\n|+ file\l+ file_len\l+ payload_len\l+ payload\l|}" alt="" coords="387,145,556,281"/>
+<area shape="rect" id="node5" href="$de/db2/structVsnetDownload_1_1Adapter_1_1DownloadFragment.html" title="{VsnetDownload::Adapter\l::DownloadFragment\n|+ payload_len\l+ payload\l|}" alt="" coords="580,160,747,267"/>
+<area shape="rect" id="node6" href="$d7/dfc/structVsnetDownload_1_1Adapter_1_1DownloadLastFragment.html" title="{VsnetDownload::Adapter\l::DownloadLastFragment\n|+ payload_len\l+ payload\l|}" alt="" coords="771,160,939,267"/>
+<area shape="rect" id="node7" href="$dd/d51/structVsnetDownload_1_1Adapter_1_1DownloadRequest.html" title="{VsnetDownload::Adapter\l::DownloadRequest\n|+ num\l+ files\l|}" alt="" coords="964,160,1131,267"/>
+<area shape="rect" id="node8" href="$dd/d48/structVsnetDownload_1_1Adapter_1_1ResolveRequest.html" title="{VsnetDownload::Adapter\l::ResolveRequest\n|+ num\l+ files\l|}" alt="" coords="1155,160,1321,267"/>
+<area shape="rect" id="node9" href="$da/dcb/structVsnetDownload_1_1Adapter_1_1ResolveResponse.html" title="{VsnetDownload::Adapter\l::ResolveResponse\n|+ num\l+ files\l|}" alt="" coords="1345,160,1512,267"/>
+<area shape="rect" id="node10" href="$d0/dbb/structVsnetDownload_1_1Adapter_1_1UnexpectedSubcommand.html" title="{VsnetDownload::Adapter\l::UnexpectedSubcommand\n||}" alt="" coords="1536,167,1716,259"/>
+</map>

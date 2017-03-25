@@ -1,0 +1,179 @@
+\hypertarget{classMusic}{}\section{Music Struct Reference}
+\label{classMusic}\index{Music@{Music}}
+
+
+Collaboration diagram for Music\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{d1/dd9/classMusic__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Playlist} \{ \\*
+{\bfseries N\+O\+L\+I\+ST} =-\/1, 
+{\bfseries B\+A\+T\+T\+L\+E\+L\+I\+ST} =0, 
+{\bfseries P\+E\+A\+C\+E\+L\+I\+ST}, 
+{\bfseries P\+A\+N\+I\+C\+L\+I\+ST}, 
+\\*
+{\bfseries V\+I\+C\+T\+O\+R\+Y\+L\+I\+ST}, 
+{\bfseries L\+O\+S\+S\+L\+I\+ST}, 
+{\bfseries M\+A\+X\+L\+I\+ST}
+ \}\hypertarget{classMusic_a4559cbbf65b18a56ed5643ea8110a277}{}\label{classMusic_a4559cbbf65b18a56ed5643ea8110a277}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMusic_a61581ffcb7a7ef4a822a2e92429942ae}{Music} (\hyperlink{classUnit}{Unit} $\ast$parent=N\+U\+LL)
+\item 
+void {\bfseries Listen} ()\hypertarget{classMusic_a28e5211a6bcd385e81c7e42ad6c3e521}{}\label{classMusic_a28e5211a6bcd385e81c7e42ad6c3e521}
+
+\item 
+void {\bfseries Set\+Parent} (\hyperlink{classUnit}{Unit} $\ast$parent)\hypertarget{classMusic_adfdbbe567168c6b52f7d182d37f1cac6}{}\label{classMusic_adfdbbe567168c6b52f7d182d37f1cac6}
+
+\item 
+void {\bfseries Goto\+Song} (int whichlist, int whichsong, bool skip, int layer=-\/1)\hypertarget{classMusic_abf81922e330ca5bb6aee297a004841c4}{}\label{classMusic_abf81922e330ca5bb6aee297a004841c4}
+
+\item 
+bool {\bfseries Load} (const char $\ast$file)\hypertarget{classMusic_ad5be6766f8acc442a163b0b7746282ce}{}\label{classMusic_ad5be6766f8acc442a163b0b7746282ce}
+
+\item 
+bool {\bfseries Play} (float fadeout, float fadein, \hyperlink{classMusic}{Music} \&oldmusic)\hypertarget{classMusic_ad71c16ad204e1951a0d7ef8a5db0044f}{}\label{classMusic_ad71c16ad204e1951a0d7ef8a5db0044f}
+
+\item 
+void {\bfseries Stop} ()\hypertarget{classMusic_aba50daa8b632b6019506a3481a0fc760}{}\label{classMusic_aba50daa8b632b6019506a3481a0fc760}
+
+\item 
+void {\bfseries Free} ()\hypertarget{classMusic_a11e0a0d4323d89642e84f2c1ff258e49}{}\label{classMusic_a11e0a0d4323d89642e84f2c1ff258e49}
+
+\item 
+void {\bfseries Set\+Volume} (float vol)\hypertarget{classMusic_ae7db2c52870c9d5829354c12c1f81349}{}\label{classMusic_ae7db2c52870c9d5829354c12c1f81349}
+
+\item 
+bool {\bfseries Load} (const char $\ast$file)\hypertarget{classMusic_ad5be6766f8acc442a163b0b7746282ce}{}\label{classMusic_ad5be6766f8acc442a163b0b7746282ce}
+
+\item 
+bool {\bfseries Play} (float fadeout, float fadein, \hyperlink{classMusic}{Music} \&oldmusic)\hypertarget{classMusic_ad71c16ad204e1951a0d7ef8a5db0044f}{}\label{classMusic_ad71c16ad204e1951a0d7ef8a5db0044f}
+
+\item 
+void {\bfseries Stop} ()\hypertarget{classMusic_aba50daa8b632b6019506a3481a0fc760}{}\label{classMusic_aba50daa8b632b6019506a3481a0fc760}
+
+\item 
+void {\bfseries Free} ()\hypertarget{classMusic_a11e0a0d4323d89642e84f2c1ff258e49}{}\label{classMusic_a11e0a0d4323d89642e84f2c1ff258e49}
+
+\item 
+void {\bfseries Set\+Volume} (float vol)\hypertarget{classMusic_ae7db2c52870c9d5829354c12c1f81349}{}\label{classMusic_ae7db2c52870c9d5829354c12c1f81349}
+
+\item 
+void {\bfseries Set\+Master\+Volume} (float vol)\hypertarget{classMusic_a0cf162bc159a12f49995316f2b7b7c60}{}\label{classMusic_a0cf162bc159a12f49995316f2b7b7c60}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Addlist} (std\+::string listfile)\hypertarget{classMusic_aa1d96ad3d1b14e378dd98d87c7169b28}{}\label{classMusic_aa1d96ad3d1b14e378dd98d87c7169b28}
+
+\item 
+static void {\bfseries Set\+Loops} (int numloops, int layer=-\/1)\hypertarget{classMusic_a8526a94be7abb82f78cb88ac6f591666}{}\label{classMusic_a8526a94be7abb82f78cb88ac6f591666}
+
+\item 
+static void {\bfseries Change\+Volume} (float inc=0, int layer=-\/1)\hypertarget{classMusic_aefc00b5265f32b0941275389e1bf97b7}{}\label{classMusic_aefc00b5265f32b0941275389e1bf97b7}
+
+\item 
+static void {\bfseries Skip} (int layer=-\/1)\hypertarget{classMusic_a1aa971f3e8928ed2090651caca7cc57c}{}\label{classMusic_a1aa971f3e8928ed2090651caca7cc57c}
+
+\item 
+static void {\bfseries Stop} (int layer=-\/1)\hypertarget{classMusic_a44e36fec0808aa992f32b4b491266436}{}\label{classMusic_a44e36fec0808aa992f32b4b491266436}
+
+\item 
+static void {\bfseries Skip\+Rand\+Song} (int whichlist, int layer=-\/1)\hypertarget{classMusic_addb7903418a7b0073a45dc3a4b0f3942}{}\label{classMusic_addb7903418a7b0073a45dc3a4b0f3942}
+
+\item 
+static void {\bfseries Skip\+Rand\+List} (int layer=-\/1)\hypertarget{classMusic_ab6c9be4273aa0deadfe6c391405b1ed5}{}\label{classMusic_ab6c9be4273aa0deadfe6c391405b1ed5}
+
+\item 
+static void {\bfseries Goto\+Song} (std\+::string mus, int layer=-\/1)\hypertarget{classMusic_a94b6f0af371878da16ab82a5df21bb75}{}\label{classMusic_a94b6f0af371878da16ab82a5df21bb75}
+
+\item 
+static void {\bfseries Init\+Muzak} ()\hypertarget{classMusic_abd86ef3742a5c80d7b030043f4e39f6c}{}\label{classMusic_abd86ef3742a5c80d7b030043f4e39f6c}
+
+\item 
+static void {\bfseries Cleanup\+Muzak} ()\hypertarget{classMusic_a0dfd5104a5e49922a003c54c60a1e7ae}{}\label{classMusic_a0dfd5104a5e49922a003c54c60a1e7ae}
+
+\item 
+static void {\bfseries Muzak\+Cycle} ()\hypertarget{classMusic_a617fd7b671bab85df6fcab877c4eee92}{}\label{classMusic_a617fd7b671bab85df6fcab877c4eee92}
+
+\item 
+static void {\bfseries Set\+Volume} (float vol, int layer=-\/1, bool hardware=false, float latency\+\_\+override=-\/1)\hypertarget{classMusic_a682ca114170661f0035001f920124abe}{}\label{classMusic_a682ca114170661f0035001f920124abe}
+
+\item 
+static void {\bfseries Mute} (bool mute=true, int layer=-\/1)\hypertarget{classMusic_a4419389031f5fe9f0230dc0dc11e67a3}{}\label{classMusic_a4419389031f5fe9f0230dc0dc11e67a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries loopsleft}\hypertarget{classMusic_a54bcea4791822e7d90a543d587201492}{}\label{classMusic_a54bcea4791822e7d90a543d587201492}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries sounds\+\_\+to\+\_\+stop}\hypertarget{classMusic_ab4b5b13209d00e74e16f7d222f13d8d9}{}\label{classMusic_ab4b5b13209d00e74e16f7d222f13d8d9}
+
+\item 
+Mix\+\_\+\+Music $\ast$ {\bfseries m}\hypertarget{classMusic_ac299f3f379d8cc687bfe011b304e7bc9}{}\label{classMusic_ac299f3f379d8cc687bfe011b304e7bc9}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bfseries Muzak\+::reader\+Thread} (void $\ast$input)\hypertarget{classMusic_a1a86fb27980f9dbf774ad590a2608783}{}\label{classMusic_a1a86fb27980f9dbf774ad590a2608783}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Music@{Music}!Music@{Music}}
+\index{Music@{Music}!Music@{Music}}
+\subsubsection[{\texorpdfstring{Music(\+Unit $\ast$parent=\+N\+U\+L\+L)}{Music(Unit *parent=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}Music\+::\+Music (
+\begin{DoxyParamCaption}
+\item[{{\bf Unit} $\ast$}]{parent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMusic_a61581ffcb7a7ef4a822a2e92429942ae}{}\label{classMusic_a61581ffcb7a7ef4a822a2e92429942ae}
+E\+R\+R\+O\+R\+C\+H\+E\+C\+K\+\_\+\+M\+U\+T\+EX
+
+\+\_\+\+W\+I\+N32 U\+S\+E\+\_\+\+S\+O\+U\+N\+D\+S\+E\+R\+V\+ER 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d2/d2f/classMusic_a61581ffcb7a7ef4a822a2e92429942ae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{d2/d2f/classMusic_a61581ffcb7a7ef4a822a2e92429942ae_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/music.\+h\item 
+networking/soundserver.\+mac.\+notworking.\+cpp\item 
+networking/soundserver.\+segfault.\+cpp\item 
+cmd/music.\+cpp\item 
+networking/soundserver.\+mac.\+cpp\end{DoxyCompactItemize}

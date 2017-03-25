@@ -1,0 +1,6 @@
+<map id="VidFile::Exception" name="VidFile::Exception">
+<area shape="rect" id="node3" href="$dc/da2/classVidFile_1_1EndOfStreamException.html" title="{VidFile::EndOfStreamException\n||+ EndOfStreamException()\l+ EndOfStreamException()\l+ EndOfStreamException()\l}" alt="" coords="5,322,212,429"/>
+<area shape="rect" id="node4" href="$de/da8/classVidFile_1_1FileOpenException.html" title="{VidFile::FileOpenException\n||+ FileOpenException()\l+ FileOpenException()\l+ FileOpenException()\l}" alt="" coords="236,322,416,429"/>
+<area shape="rect" id="node5" href="$de/dc7/classVidFile_1_1FrameDecodeException.html" title="{VidFile::FrameDecodeException\n||+ FrameDecodeException()\l+ FrameDecodeException()\l+ FrameDecodeException()\l}" alt="" coords="441,322,651,429"/>
+<area shape="rect" id="node6" href="$d9/d2e/classVidFile_1_1UnsupportedCodecException.html" title="{VidFile::UnsupportedCodec\lException\n||+ UnsupportedCodecException()\l+ UnsupportedCodecException()\l+ UnsupportedCodecException()\l}" alt="" coords="675,315,887,436"/>
+</map>

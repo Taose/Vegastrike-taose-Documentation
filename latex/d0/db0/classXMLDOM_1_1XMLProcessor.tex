@@ -1,0 +1,62 @@
+\hypertarget{classXMLDOM_1_1XMLProcessor}{}\section{X\+M\+L\+D\+OM\+:\+:X\+M\+L\+Processor Class Reference}
+\label{classXMLDOM_1_1XMLProcessor}\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor}}
+
+
+Collaboration diagram for X\+M\+L\+D\+OM\+:\+:X\+M\+L\+Processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{d0/daf/classXMLDOM_1_1XMLProcessor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const std\+::string \& \hyperlink{classXMLDOM_1_1XMLProcessor_a1999a89e597d5db3334859a9e41f4ac8}{get\+Target} () const =0
+\item 
+virtual std\+::pair$<$ bool, std\+::string $>$ \hyperlink{classXMLDOM_1_1XMLProcessor_a72f5da76763e3f7ed1a17d9e8bf0af3b}{execute} (\hyperlink{classXMLDOM_1_1XMLSerializer}{X\+M\+L\+Serializer} $\ast$serializer, \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+Document} $\ast$doc, \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} $\ast$current, const std\+::string \&data)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor}!execute@{execute}}
+\index{execute@{execute}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor}}
+\subsubsection[{\texorpdfstring{execute(\+X\+M\+L\+Serializer $\ast$serializer, X\+M\+L\+Document $\ast$doc, X\+M\+L\+Element $\ast$current, const std\+::string \&data)=0}{execute(XMLSerializer *serializer, XMLDocument *doc, XMLElement *current, const std::string &data)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::pair$<$ bool, std\+::string $>$ X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor\+::execute (
+\begin{DoxyParamCaption}
+\item[{{\bf X\+M\+L\+Serializer} $\ast$}]{serializer, }
+\item[{{\bf X\+M\+L\+Document} $\ast$}]{doc, }
+\item[{{\bf X\+M\+L\+Element} $\ast$}]{current, }
+\item[{const std\+::string \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classXMLDOM_1_1XMLProcessor_a72f5da76763e3f7ed1a17d9e8bf0af3b}{}\label{classXMLDOM_1_1XMLProcessor_a72f5da76763e3f7ed1a17d9e8bf0af3b}
+Execute a processing instruction found in the document \begin{DoxyRemark}{Remarks}
+Modify the document or current element as a result of the processing. There is no mechanism for \textquotesingle{}textual processing\textquotesingle{}... rather, logic structure processing (you handle \hyperlink{classXMLDOM_1_1XMLDocument}{X\+M\+L\+Document} and \hyperlink{classXMLDOM_1_1XMLElement}{X\+M\+L\+Element} objects, not text). 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{}
+Return false, and the error description, to abort parsing. 
+\end{DoxyParagraph}
+\index{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor}!get\+Target@{get\+Target}}
+\index{get\+Target@{get\+Target}!X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor@{X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor}}
+\subsubsection[{\texorpdfstring{get\+Target() const =0}{getTarget() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\+::string\& X\+M\+L\+D\+O\+M\+::\+X\+M\+L\+Processor\+::get\+Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classXMLDOM_1_1XMLProcessor_a1999a89e597d5db3334859a9e41f4ac8}{}\label{classXMLDOM_1_1XMLProcessor_a1999a89e597d5db3334859a9e41f4ac8}
+Specify which instruction target this processor will handle 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/db0/classXMLDOM_1_1XMLProcessor_a1999a89e597d5db3334859a9e41f4ac8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+X\+M\+L\+Document.\+h\end{DoxyCompactItemize}

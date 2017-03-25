@@ -1,0 +1,10 @@
+<map id="gfx_light::Disable" name="gfx_light::Disable">
+<area shape="rect" id="node2" href="$d9/dcc/classgfx__light.html#ab401bb123118d1f2197daf42dafc4a88" title="Returns the target OpenGL light of this light. &#45;1 is unassigned to a &quot;real&quot; light. " alt="" coords="321,175,437,202"/>
+<area shape="rect" id="node9" href="$d9/dcc/classgfx__light.html#a176a34465b470ae5e50b0ebcb8e690a2" title="Disables it (may remove from table), trashes it from GLlights. sets target to &#45;2 (dead) ..." alt="" coords="176,175,273,202"/>
+<area shape="rect" id="node3" href="$d9/dcc/classgfx__light.html#a5e722e1372b93fe2eee3c68bbf472fc0" title="calculates bounds for the table given cutoffs! " alt="" coords="485,200,664,227"/>
+<area shape="rect" id="node4" href="$d9/dcc/classgfx__light.html#ab1082197235eca910a259c3862de4a91" title="Adds this light to table (assume local) " alt="" coords="733,150,882,176"/>
+<area shape="rect" id="node8" href="$d9/dcc/classgfx__light.html#abe5840a659d06adf02edb7970595ca0f" title="Removes this light from light table. " alt="" coords="712,226,903,252"/>
+<area shape="rect" id="node5" href="$d9/dcc/classgfx__light.html#ad2f21e62fda27aa966ead4cdf970b498" title="gfx_light::ResetProperties" alt="" coords="951,150,1124,176"/>
+<area shape="rect" id="node6" href="$d9/dcc/classgfx__light.html#a98dd12bab9a5abd1e753cfe45bc691e5" title="gfx_light::Enable" alt="" coords="978,48,1097,75"/>
+<area shape="rect" id="node7" href="$d9/dcc/classgfx__light.html#ac59f52b68d1631e537aea5b0397ddfe5" title="gfx_light::Create" alt="" coords="1172,23,1291,50"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="GameUnit::UpdatePhysics2" name="GameUnit::UpdatePhysics2">
+<area shape="rect" id="node2" href="$de/db6/classGameAsteroid.html#a7bc503988abf7084187034a723a08aed" title="returns true if jump possible even if not taken " alt="" coords="239,5,448,32"/>
+<area shape="rect" id="node3" href="$d8/d4a/classGameBuilding.html#a41b1af4a3b09603e76b52cf7f7617482" title="returns true if jump possible even if not taken " alt="" coords="240,56,447,83"/>
+<area shape="rect" id="node4" href="$db/d4a/classGameMissile.html#ab82fd3b8a814694c8df124d637bc9a45" title="returns true if jump possible even if not taken " alt="" coords="242,107,445,133"/>
+<area shape="rect" id="node5" href="$d6/d62/classGameNebula.html#a3028dccb3764fba45b25990d1a31d8bb" title="returns true if jump possible even if not taken " alt="" coords="242,157,445,184"/>
+</map>

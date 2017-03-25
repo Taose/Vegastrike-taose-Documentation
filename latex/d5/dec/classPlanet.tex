@@ -1,0 +1,190 @@
+\hypertarget{classPlanet}{}\section{Planet Class Reference}
+\label{classPlanet}\index{Planet@{Planet}}
+
+
+Inheritance diagram for Planet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d5f/classPlanet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Planet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d97/classPlanet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classPlanet_1_1PlanetIterator}{Planet\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Vector {\bfseries Add\+Space\+Elevator} (const std\+::string \&name, const std\+::string \&faction, char direction)\hypertarget{classPlanet_a3eadac928eddf6a6879091836195fdda}{}\label{classPlanet_a3eadac928eddf6a6879091836195fdda}
+
+\item 
+virtual void {\bfseries Add\+Fog} (const vector$<$ \hyperlink{structAtmosphericFogMesh}{Atmospheric\+Fog\+Mesh} $>$ \&meshes, bool optical\+\_\+illusion)\hypertarget{classPlanet_abeab827a319dbafc225579dcb8db3196}{}\label{classPlanet_abeab827a319dbafc225579dcb8db3196}
+
+\item 
+virtual void {\bfseries Add\+Atmosphere} (const std\+::string \&texture, float radius, B\+L\+E\+N\+D\+F\+U\+NC blend\+Src, B\+L\+E\+N\+D\+F\+U\+NC blend\+Dst, bool inside\+\_\+out)\hypertarget{classPlanet_abafc85439b242e113fe02ef28626b252}{}\label{classPlanet_abafc85439b242e113fe02ef28626b252}
+
+\item 
+virtual void {\bfseries Add\+Ring} (const std\+::string \&texture, float iradius, float oradius, const Q\+Vector \&r, const Q\+Vector \&s, int slices, int numwrapx, int numwrapy, B\+L\+E\+N\+D\+F\+U\+NC blend\+Src, B\+L\+E\+N\+D\+F\+U\+NC blend\+Dst)\hypertarget{classPlanet_ab68dc5aa268a1953ad0f841d5b200ec9}{}\label{classPlanet_ab68dc5aa268a1953ad0f841d5b200ec9}
+
+\item 
+virtual void {\bfseries Add\+City} (const std\+::string \&texture, float radius, int numwrapx, int numwrapy, B\+L\+E\+N\+D\+F\+U\+NC blend\+Src, B\+L\+E\+N\+D\+F\+U\+NC blend\+Dst, bool inside\+\_\+out=false, bool reverse\+\_\+normals=true)\hypertarget{classPlanet_ae9506654c5d2271bb86cc23cd00fe414}{}\label{classPlanet_ae9506654c5d2271bb86cc23cd00fe414}
+
+\item 
+virtual void {\bfseries Disable\+Lights} ()\hypertarget{classPlanet_a421a3a625a882f589e6634a5ff08b50f}{}\label{classPlanet_a421a3a625a882f589e6634a5ff08b50f}
+
+\item 
+virtual void {\bfseries Enable\+Lights} ()\hypertarget{classPlanet_a760b573d38d965a40515c8eff6955655}{}\label{classPlanet_a760b573d38d965a40515c8eff6955655}
+
+\item 
+void {\bfseries Add\+Satellite} (\hyperlink{classUnit}{Unit} $\ast$orbiter)\hypertarget{classPlanet_aa35ce2502cab794b921ee624f4fa6ae3}{}\label{classPlanet_aa35ce2502cab794b921ee624f4fa6ae3}
+
+\item 
+void {\bfseries end\+Element} ()\hypertarget{classPlanet_ae7d58eac4ae013cf2a88ffc8e04ab065}{}\label{classPlanet_ae7d58eac4ae013cf2a88ffc8e04ab065}
+
+\item 
+string {\bfseries get\+Cargo\+Unit\+Name} () const \hypertarget{classPlanet_aa96ab8323d1596503ecaae1f39f1b445}{}\label{classPlanet_aa96ab8323d1596503ecaae1f39f1b445}
+
+\item 
+string {\bfseries get\+Human\+Readable\+Planet\+Type} () const \hypertarget{classPlanet_ab735f0d9583d4fb854c3ada581755e24}{}\label{classPlanet_ab735f0d9583d4fb854c3ada581755e24}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries begin\+Element} (Q\+Vector x, Q\+Vector \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float vely, const Vector \&rotvel, float pos, float gravity, float radius, const string \&filename, const string \&technique, const string \&unitname, B\+L\+E\+N\+D\+F\+U\+NC blendsrc, B\+L\+E\+N\+D\+F\+U\+NC blenddst, const vector$<$ string $>$ \&dest, int level, const \hyperlink{structGFXMaterial}{G\+F\+X\+Material} \&ourmat, const std\+::vector$<$ \hyperlink{structGFXLightLocal}{G\+F\+X\+Light\+Local} $>$ \&ligh, bool isunit, int faction, string fullname, bool inside\+\_\+out)\hypertarget{classPlanet_a4c7e12332b0e4c00c5bd105857e534b0}{}\label{classPlanet_a4c7e12332b0e4c00c5bd105857e534b0}
+
+\item 
+\hyperlink{classPlanet}{Planet} $\ast$ {\bfseries Get\+Top\+Planet} (int level)\hypertarget{classPlanet_a91a03dd6d977773ca6c8b49c78ac980d}{}\label{classPlanet_a91a03dd6d977773ca6c8b49c78ac980d}
+
+\item 
+virtual enum clsptr {\bfseries is\+Unit} () const \hypertarget{classPlanet_ab3ad9c8a7654fcedcdcc09f78b44741e}{}\label{classPlanet_ab3ad9c8a7654fcedcdcc09f78b44741e}
+
+\item 
+virtual void {\bfseries Draw} (const \hyperlink{structTransformation}{Transformation} \&quat=identity\+\_\+transformation, const \hyperlink{classMatrix}{Matrix} \&m=identity\+\_\+matrix)\hypertarget{classPlanet_a4e5952e04e29f4b6f35b463e4580ebff}{}\label{classPlanet_a4e5952e04e29f4b6f35b463e4580ebff}
+
+\item 
+virtual void {\bfseries Draw\+Terrain} ()\hypertarget{classPlanet_ae4e523af67c79b004e7c0709269b3bca}{}\label{classPlanet_ae4e523af67c79b004e7c0709269b3bca}
+
+\item 
+virtual void {\bfseries Kill} (bool erasefromsave=false)\hypertarget{classPlanet_a6d4998bdd90fe865d7e48dd0c97ded9d}{}\label{classPlanet_a6d4998bdd90fe865d7e48dd0c97ded9d}
+
+\item 
+virtual Planetary\+Transform $\ast$ {\bfseries set\+Terrain} (\hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$, float ratiox, int numwraps, float scaleatmos)\hypertarget{classPlanet_a5c75de9900c8c0373b9a550f9346d071}{}\label{classPlanet_a5c75de9900c8c0373b9a550f9346d071}
+
+\item 
+virtual \hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$ {\bfseries get\+Terrain} (Planetary\+Transform $\ast$\&t)\hypertarget{classPlanet_a60a27bd5220404fd7bdadf1246ab7b9b}{}\label{classPlanet_a60a27bd5220404fd7bdadf1246ab7b9b}
+
+\item 
+virtual void {\bfseries set\+Atmosphere} (\hyperlink{classAtmosphere}{Atmosphere} $\ast$)\hypertarget{classPlanet_a4061b310820c98351a025e43bc4f5bc1}{}\label{classPlanet_a4061b310820c98351a025e43bc4f5bc1}
+
+\item 
+virtual \hyperlink{classAtmosphere}{Atmosphere} $\ast$ {\bfseries get\+Atmosphere} ()\hypertarget{classPlanet_a252b701a5b22a74e60ee568937849ae6}{}\label{classPlanet_a252b701a5b22a74e60ee568937849ae6}
+
+\item 
+virtual void {\bfseries react\+To\+Collision} (\hyperlink{classUnit}{Unit} $\ast$smaller, const Q\+Vector \&biglocation, const Vector \&bignormal, const Q\+Vector \&smalllocation, const Vector \&smallnormal, float dist)\hypertarget{classPlanet_a28b3366aa1df062393bd76010066a703}{}\label{classPlanet_a28b3366aa1df062393bd76010066a703}
+
+\item 
+\hyperlink{classPlanet_1_1PlanetIterator}{Planet\+Iterator} {\bfseries create\+Iterator} ()\hypertarget{classPlanet_abf6c705d284c0ce0d14769f9e285e310}{}\label{classPlanet_abf6c705d284c0ce0d14769f9e285e310}
+
+\item 
+bool {\bfseries is\+Atmospheric} ()\hypertarget{classPlanet_a5ff449361270e8b15acc6e868010f41d}{}\label{classPlanet_a5ff449361270e8b15acc6e868010f41d}
+
+\item 
+bool {\bfseries has\+Lights} ()\hypertarget{classPlanet_a2acdf8f8d6d413bc169c8d2f9b609304}{}\label{classPlanet_a2acdf8f8d6d413bc169c8d2f9b609304}
+
+\item 
+const std\+::vector$<$ int $>$ \& {\bfseries active\+Lights} ()\hypertarget{classPlanet_a6c06067e470625ba65fb5c030ec3b600}{}\label{classPlanet_a6c06067e470625ba65fb5c030ec3b600}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Process\+Terrains} ()\hypertarget{classPlanet_a1453df1f0b9c9c247fc283b57d439c43}{}\label{classPlanet_a1453df1f0b9c9c247fc283b57d439c43}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} {\bfseries satellites}\hypertarget{classPlanet_a91f8075da704d3541498580a08ff02fa}{}\label{classPlanet_a91f8075da704d3541498580a08ff02fa}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlanet_ac88200b337a62e1377858e3116f9412b}{Planet} ()\hypertarget{classPlanet_ac88200b337a62e1377858e3116f9412b}{}\label{classPlanet_ac88200b337a62e1377858e3116f9412b}
+
+\begin{DoxyCompactList}\small\item\em default constructor -\/ only to be called by \hyperlink{classUnitFactory}{Unit\+Factory} \end{DoxyCompactList}\item 
+\hyperlink{classPlanet_af0450083854f0da7c061f79a92e14a31}{Planet} (Q\+Vector x, Q\+Vector \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float vely, const Vector \&rotvel, float pos, float gravity, float radius, const string \&filename, const string \&technique, const string \&unitname, const vector$<$ string $>$ \&dest, const Q\+Vector \&orbitcent, \hyperlink{classUnit}{Unit} $\ast$parent, int faction, string fullname, bool inside\+\_\+out=false, unsigned int lights\+\_\+num=0)\hypertarget{classPlanet_af0450083854f0da7c061f79a92e14a31}{}\label{classPlanet_af0450083854f0da7c061f79a92e14a31}
+
+\begin{DoxyCompactList}\small\item\em constructor -\/ only to be called by \hyperlink{classUnitFactory}{Unit\+Factory} \end{DoxyCompactList}\item 
+void {\bfseries Init\+Planet} (Q\+Vector x, Q\+Vector \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float vely, const Vector \&rotvel, float pos, float gravity, float radius, const string \&filename, const string \&technique, const string \&unitname, const vector$<$ string $>$ \&dest, const Q\+Vector \&orbitcent, \hyperlink{classUnit}{Unit} $\ast$parent, int faction, string fullname, bool inside\+\_\+out, unsigned int lights\+\_\+num)\hypertarget{classPlanet_a0fa8d911e00f5043b0a3b51173082079}{}\label{classPlanet_a0fa8d911e00f5043b0a3b51173082079}
+
+\item 
+{\bfseries Planet} (std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$m, bool b, int i)\hypertarget{classPlanet_a1c8e9e54c125a63264fd15447e9bdb6e}{}\label{classPlanet_a1c8e9e54c125a63264fd15447e9bdb6e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Planetary\+Transform $\ast$ {\bfseries terraintrans}\hypertarget{classPlanet_a637e6eefce881cf8a7fd6861589b2348}{}\label{classPlanet_a637e6eefce881cf8a7fd6861589b2348}
+
+\item 
+\hyperlink{classAtmosphere}{Atmosphere} $\ast$ {\bfseries atmosphere}\hypertarget{classPlanet_a58e55b7259ff94260db13a95352ed5e4}{}\label{classPlanet_a58e55b7259ff94260db13a95352ed5e4}
+
+\item 
+\hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$ {\bfseries terrain}\hypertarget{classPlanet_a4f6139335c03921e91d789f9c92f8197}{}\label{classPlanet_a4f6139335c03921e91d789f9c92f8197}
+
+\item 
+Vector {\bfseries Terrain\+Up}\hypertarget{classPlanet_a4d81fc675264c6ec118341d7462ec7cf}{}\label{classPlanet_a4d81fc675264c6ec118341d7462ec7cf}
+
+\item 
+Vector {\bfseries TerrainH}\hypertarget{classPlanet_a78aca819ed243fddf3c7d6a2d1a928d1}{}\label{classPlanet_a78aca819ed243fddf3c7d6a2d1a928d1}
+
+\item 
+bool {\bfseries inside}\hypertarget{classPlanet_a23709318731ea6298971b5058cd1bd06}{}\label{classPlanet_a23709318731ea6298971b5058cd1bd06}
+
+\item 
+bool {\bfseries atmospheric}\hypertarget{classPlanet_adadf2c2022fc64b4ccd47071eaabd625}{}\label{classPlanet_adadf2c2022fc64b4ccd47071eaabd625}
+
+\item 
+float {\bfseries radius}\hypertarget{classPlanet_a8315cb11c044d85ae41759c4aae832ce}{}\label{classPlanet_a8315cb11c044d85ae41759c4aae832ce}
+
+\item 
+float {\bfseries gravity}\hypertarget{classPlanet_a7294bcc0776f58608155a994b0a1412c}{}\label{classPlanet_a7294bcc0776f58608155a994b0a1412c}
+
+\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} {\bfseries insiders}\hypertarget{classPlanet_a71bd416e7e988141ebb6a276b19ef7b1}{}\label{classPlanet_a71bd416e7e988141ebb6a276b19ef7b1}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries lights}\hypertarget{classPlanet_a65e0d7070265fe86913d445cb7a450b9}{}\label{classPlanet_a65e0d7070265fe86913d445cb7a450b9}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classPlanet_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classPlanet_a187c66d2d867f6265d3b0c99ffc34838}
+
+\item 
+class {\bfseries Planet\+::\+Planet\+Iterator}\hypertarget{classPlanet_a19c8a3f114292356a9bea4371bceb4c0}{}\label{classPlanet_a19c8a3f114292356a9bea4371bceb4c0}
+
+\item 
+class {\bfseries Planetary\+Orbit}\hypertarget{classPlanet_aa0e5d74fa4ec6dca72b358c4c600203f}{}\label{classPlanet_aa0e5d74fa4ec6dca72b358c4c600203f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/planet\+\_\+generic.\+h\item 
+cmd/planet\+\_\+generic.\+cpp\end{DoxyCompactItemize}

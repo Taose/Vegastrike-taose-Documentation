@@ -1,0 +1,286 @@
+\hypertarget{group__FloatingPoint}{}\section{Floating Point}
+\label{group__FloatingPoint}\index{Floating Point@{Floating Point}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} \hyperlink{group__FloatingPoint_ga384e7a2791d023062bcd0fb0c56d33cf}{P\+O\+S\+H\+\_\+\+Little\+Float\+Bits} (float f)
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} \hyperlink{group__FloatingPoint_ga1eca8e7b3d6e9f4953765d2bf33b0426}{P\+O\+S\+H\+\_\+\+Big\+Float\+Bits} (float f)
+\item 
+void \hyperlink{group__FloatingPoint_gaf99025b522ae347afdcffae40dcacb8e}{P\+O\+S\+H\+\_\+\+Double\+Bits} (double d, \hyperlink{group__PoshTypes_ga3d52997a5402758b6d8cea03bb931f05}{posh\+\_\+byte\+\_\+t} dst\mbox{[}8\mbox{]})
+\item 
+double \hyperlink{group__FloatingPoint_ga87e8b2d4f305581c96b1edb2345a5dbe}{P\+O\+S\+H\+\_\+\+Double\+From\+Bits} (const \hyperlink{group__PoshTypes_ga3d52997a5402758b6d8cea03bb931f05}{posh\+\_\+byte\+\_\+t} src\mbox{[}8\mbox{]})
+\item 
+float \hyperlink{group__FloatingPoint_gacefa578ca480f04ec24ce85f7b63634a}{P\+O\+S\+H\+\_\+\+Float\+From\+Little\+Bits} (\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} bits)
+\item 
+float \hyperlink{group__FloatingPoint_ga1556934ccc724bdf546127f4a2945b31}{P\+O\+S\+H\+\_\+\+Float\+From\+Big\+Bits} (\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} bits)
+\item 
+float $\ast$ {\bfseries P\+O\+S\+H\+\_\+\+Write\+Float\+To\+Little} (void $\ast$dst, float f)\hypertarget{group__FloatingPoint_ga481b51031dcba11606811c0ce56f91f8}{}\label{group__FloatingPoint_ga481b51031dcba11606811c0ce56f91f8}
+
+\item 
+float $\ast$ {\bfseries P\+O\+S\+H\+\_\+\+Write\+Float\+To\+Big} (void $\ast$dst, float f)\hypertarget{group__FloatingPoint_gae04425ce71a389be411b32d643753412}{}\label{group__FloatingPoint_gae04425ce71a389be411b32d643753412}
+
+\item 
+float {\bfseries P\+O\+S\+H\+\_\+\+Read\+Float\+From\+Little} (const void $\ast$src)\hypertarget{group__FloatingPoint_ga8a5230cf014861ad246bb487eba4eb55}{}\label{group__FloatingPoint_ga8a5230cf014861ad246bb487eba4eb55}
+
+\item 
+float {\bfseries P\+O\+S\+H\+\_\+\+Read\+Float\+From\+Big} (const void $\ast$src)\hypertarget{group__FloatingPoint_gab579133168ae4d67e4744d9d8ee792f7}{}\label{group__FloatingPoint_gab579133168ae4d67e4744d9d8ee792f7}
+
+\item 
+double $\ast$ {\bfseries P\+O\+S\+H\+\_\+\+Write\+Double\+To\+Little} (void $\ast$dst, double d)\hypertarget{group__FloatingPoint_ga5ee8b046be0741616aecc88607718b4b}{}\label{group__FloatingPoint_ga5ee8b046be0741616aecc88607718b4b}
+
+\item 
+double $\ast$ {\bfseries P\+O\+S\+H\+\_\+\+Write\+Double\+To\+Big} (void $\ast$dst, double d)\hypertarget{group__FloatingPoint_gaaeef5c2c79df383ba15e374d9a04751f}{}\label{group__FloatingPoint_gaaeef5c2c79df383ba15e374d9a04751f}
+
+\item 
+double {\bfseries P\+O\+S\+H\+\_\+\+Read\+Double\+From\+Little} (const void $\ast$src)\hypertarget{group__FloatingPoint_ga2a7d15d132374bbe73f76b74ebaf7204}{}\label{group__FloatingPoint_ga2a7d15d132374bbe73f76b74ebaf7204}
+
+\item 
+double {\bfseries P\+O\+S\+H\+\_\+\+Read\+Double\+From\+Big} (const void $\ast$src)\hypertarget{group__FloatingPoint_gab546851bb96225711dee8fe819a2f806}{}\label{group__FloatingPoint_gab546851bb96225711dee8fe819a2f806}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Unavailable if P\+O\+S\+H\+\_\+\+N\+O\+\_\+\+F\+L\+O\+AT is defined. By default floating point support is enabled, but if you find that this causes problems or is inconvenient and you\textquotesingle{}re not using the support, you can define {\ttfamily {\bfseries P\+O\+S\+H\+\_\+\+N\+O\+\_\+\+F\+L\+O\+AT} to disable P\+O\+SH\textquotesingle{}s use of any floating point types or operations.}
+
+{\ttfamily  Here are some code examples\+:}
+
+{\ttfamily \begin{DoxyVerb}*
+*  //read a little-endian float from disk
+*  float LoadFloat( FILE *fp )
+*  {
+*  float      f;
+*  posh_u32_t u32;
+*
+*  fread( &u32, sizeof( u32 ), 1, fp );
+*
+*  f = POSH_FloatFromLittleBits( u32 );
+*
+*  return f;
+*  }
+*
+*  //write a little-endian float to disk
+*  void WriteFloat( FILE *fp, float f )
+*  {
+*  posh_u32_t u32;
+*
+*  u32 = POSH_LittleFloatBits( f );
+*
+*  fwrite( &u32, sizeof( u32 ), 1, fp );
+*  }
+*
+*  \end{DoxyVerb}
+ }
+
+\subsection{Function Documentation}
+\index{Floating Point@{Floating Point}!P\+O\+S\+H\+\_\+\+Big\+Float\+Bits@{P\+O\+S\+H\+\_\+\+Big\+Float\+Bits}}
+\index{P\+O\+S\+H\+\_\+\+Big\+Float\+Bits@{P\+O\+S\+H\+\_\+\+Big\+Float\+Bits}!Floating Point@{Floating Point}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Big\+Float\+Bits(float f)}{POSH_BigFloatBits(float f)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf posh\+\_\+u32\+\_\+t} P\+O\+S\+H\+\_\+\+Big\+Float\+Bits (
+\begin{DoxyParamCaption}
+\item[{float}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{group__FloatingPoint_ga1eca8e7b3d6e9f4953765d2bf33b0426}{}\label{group__FloatingPoint_ga1eca8e7b3d6e9f4953765d2bf33b0426}
+Extracts raw big-\/endian bits from a 32-\/bit floating point value
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\mbox{[}in\mbox{]}} & floating point value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a big-\/endian bit representation of f 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{d0/dc0/group__FloatingPoint_ga1eca8e7b3d6e9f4953765d2bf33b0426_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{d0/dc0/group__FloatingPoint_ga1eca8e7b3d6e9f4953765d2bf33b0426_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Floating Point@{Floating Point}!P\+O\+S\+H\+\_\+\+Double\+Bits@{P\+O\+S\+H\+\_\+\+Double\+Bits}}
+\index{P\+O\+S\+H\+\_\+\+Double\+Bits@{P\+O\+S\+H\+\_\+\+Double\+Bits}!Floating Point@{Floating Point}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Double\+Bits(double d, posh\+\_\+byte\+\_\+t dst[8])}{POSH_DoubleBits(double d, posh_byte_t dst[8])}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+O\+S\+H\+\_\+\+Double\+Bits (
+\begin{DoxyParamCaption}
+\item[{double}]{d, }
+\item[{{\bf posh\+\_\+byte\+\_\+t}}]{dst\mbox{[}8\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{group__FloatingPoint_gaf99025b522ae347afdcffae40dcacb8e}{}\label{group__FloatingPoint_gaf99025b522ae347afdcffae40dcacb8e}
+Extracts raw, little-\/endian bit representation from a 64-\/bit double.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d\mbox{[}in\mbox{]}} & 64-\/bit double precision value \\
+\hline
+{\em dst\mbox{[}out\mbox{]}} & 8-\/byte storage buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the raw bits used to represent the value \textquotesingle{}d\textquotesingle{}, in the form dst\mbox{[}0\mbox{]}=L\+SB 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{d0/dc0/group__FloatingPoint_gaf99025b522ae347afdcffae40dcacb8e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Floating Point@{Floating Point}!P\+O\+S\+H\+\_\+\+Double\+From\+Bits@{P\+O\+S\+H\+\_\+\+Double\+From\+Bits}}
+\index{P\+O\+S\+H\+\_\+\+Double\+From\+Bits@{P\+O\+S\+H\+\_\+\+Double\+From\+Bits}!Floating Point@{Floating Point}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Double\+From\+Bits(const posh\+\_\+byte\+\_\+t src[8])}{POSH_DoubleFromBits(const posh_byte_t src[8])}}]{\setlength{\rightskip}{0pt plus 5cm}double P\+O\+S\+H\+\_\+\+Double\+From\+Bits (
+\begin{DoxyParamCaption}
+\item[{const {\bf posh\+\_\+byte\+\_\+t}}]{src\mbox{[}8\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{group__FloatingPoint_ga87e8b2d4f305581c96b1edb2345a5dbe}{}\label{group__FloatingPoint_ga87e8b2d4f305581c96b1edb2345a5dbe}
+Creates a double-\/precision, 64-\/bit floating point value from a set if raw, little-\/endian bits
+
+
+\begin{DoxyParams}{Parameters}
+{\em src\mbox{[}in\mbox{]}} & little-\/endian byte representation of 64-\/bit double precision floating point value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double precision floating point representation of the raw bits 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+No error checking is performed, so there are no guarantees that the result is a valid number, nor is there any check to ensure that src is non-\/\+N\+U\+LL. BE C\+A\+R\+E\+F\+UL U\+S\+I\+NG T\+H\+IS. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{d0/dc0/group__FloatingPoint_ga87e8b2d4f305581c96b1edb2345a5dbe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Floating Point@{Floating Point}!P\+O\+S\+H\+\_\+\+Float\+From\+Big\+Bits@{P\+O\+S\+H\+\_\+\+Float\+From\+Big\+Bits}}
+\index{P\+O\+S\+H\+\_\+\+Float\+From\+Big\+Bits@{P\+O\+S\+H\+\_\+\+Float\+From\+Big\+Bits}!Floating Point@{Floating Point}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Float\+From\+Big\+Bits(posh\+\_\+u32\+\_\+t bits)}{POSH_FloatFromBigBits(posh_u32_t bits)}}]{\setlength{\rightskip}{0pt plus 5cm}float P\+O\+S\+H\+\_\+\+Float\+From\+Big\+Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf posh\+\_\+u32\+\_\+t}}]{bits}
+\end{DoxyParamCaption}
+)}\hypertarget{group__FloatingPoint_ga1556934ccc724bdf546127f4a2945b31}{}\label{group__FloatingPoint_ga1556934ccc724bdf546127f4a2945b31}
+Creates a floating point number from big-\/endian bits
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits\mbox{[}in\mbox{]}} & raw floating point bits in big-\/endian form \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a floating point number based on the given bit representation 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+No error checking is performed, so there are no guarantees that the result is a valid number. BE C\+A\+R\+E\+F\+UL U\+S\+I\+NG T\+H\+IS. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{d0/dc0/group__FloatingPoint_ga1556934ccc724bdf546127f4a2945b31_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{d0/dc0/group__FloatingPoint_ga1556934ccc724bdf546127f4a2945b31_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Floating Point@{Floating Point}!P\+O\+S\+H\+\_\+\+Float\+From\+Little\+Bits@{P\+O\+S\+H\+\_\+\+Float\+From\+Little\+Bits}}
+\index{P\+O\+S\+H\+\_\+\+Float\+From\+Little\+Bits@{P\+O\+S\+H\+\_\+\+Float\+From\+Little\+Bits}!Floating Point@{Floating Point}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Float\+From\+Little\+Bits(posh\+\_\+u32\+\_\+t bits)}{POSH_FloatFromLittleBits(posh_u32_t bits)}}]{\setlength{\rightskip}{0pt plus 5cm}float P\+O\+S\+H\+\_\+\+Float\+From\+Little\+Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf posh\+\_\+u32\+\_\+t}}]{bits}
+\end{DoxyParamCaption}
+)}\hypertarget{group__FloatingPoint_gacefa578ca480f04ec24ce85f7b63634a}{}\label{group__FloatingPoint_gacefa578ca480f04ec24ce85f7b63634a}
+Creates a floating point number from little endian bits
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits\mbox{[}in\mbox{]}} & raw floating point bits in little-\/endian form \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a floating point number based on the given bit representation 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+No error checking is performed, so there are no guarantees that the result is a valid number. BE C\+A\+R\+E\+F\+UL U\+S\+I\+NG T\+H\+IS. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d0/dc0/group__FloatingPoint_gacefa578ca480f04ec24ce85f7b63634a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Floating Point@{Floating Point}!P\+O\+S\+H\+\_\+\+Little\+Float\+Bits@{P\+O\+S\+H\+\_\+\+Little\+Float\+Bits}}
+\index{P\+O\+S\+H\+\_\+\+Little\+Float\+Bits@{P\+O\+S\+H\+\_\+\+Little\+Float\+Bits}!Floating Point@{Floating Point}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+Little\+Float\+Bits(float f)}{POSH_LittleFloatBits(float f)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf posh\+\_\+u32\+\_\+t} P\+O\+S\+H\+\_\+\+Little\+Float\+Bits (
+\begin{DoxyParamCaption}
+\item[{float}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{group__FloatingPoint_ga384e7a2791d023062bcd0fb0c56d33cf}{}\label{group__FloatingPoint_ga384e7a2791d023062bcd0fb0c56d33cf}
+Extracts raw little-\/endian bits from a 32-\/bit floating point value
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\mbox{[}in\mbox{]}} & floating point value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a little-\/endian bit representation of f 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{d0/dc0/group__FloatingPoint_ga384e7a2791d023062bcd0fb0c56d33cf_cgraph}
+\end{center}
+\end{figure}
+
+

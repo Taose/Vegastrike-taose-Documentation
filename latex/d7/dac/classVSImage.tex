@@ -1,0 +1,99 @@
+\hypertarget{classVSImage}{}\section{V\+S\+Image Class Reference}
+\label{classVSImage}\index{V\+S\+Image@{V\+S\+Image}}
+
+
+Collaboration diagram for V\+S\+Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{d6/d20/classVSImage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries V\+S\+Image\+Mode} \{ \\*
+{\bfseries \+\_\+8\+B\+IT}, 
+{\bfseries \+\_\+24\+B\+IT}, 
+{\bfseries \+\_\+24\+B\+I\+T\+R\+G\+BA}, 
+{\bfseries \+\_\+\+D\+X\+T1}, 
+\\*
+{\bfseries \+\_\+\+D\+X\+T1\+R\+G\+BA}, 
+{\bfseries \+\_\+\+D\+X\+T3}, 
+{\bfseries \+\_\+\+D\+X\+T5}
+ \}\hypertarget{classVSImage_aef5081d7ab94591c11b0f70601e4ecd2}{}\label{classVSImage_aef5081d7ab94591c11b0f70601e4ecd2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries V\+S\+Image} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} $\ast$f, texture\+Transform $\ast$t=N\+U\+LL, bool strip=false, \hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} $\ast$f2=N\+U\+LL)\hypertarget{classVSImage_aafad6284971c50ff79601ff280e64f1a}{}\label{classVSImage_aafad6284971c50ff79601ff280e64f1a}
+
+\item 
+{\bfseries L\+O\+C\+A\+L\+C\+O\+N\+S\+T\+\_\+\+D\+E\+CL} (int, S\+I\+Z\+E\+O\+F\+\_\+\+B\+I\+T\+M\+A\+P\+F\+I\+L\+E\+H\+E\+A\+D\+ER, sizeof(W\+O\+RD)+sizeof(D\+W\+O\+RD)+sizeof(W\+O\+RD)+sizeof(W\+O\+RD)+sizeof(D\+W\+O\+RD)) L\+O\+C\+A\+L\+C\+O\+N\+S\+T\+\_\+\+D\+E\+CL(int\hypertarget{classVSImage_aa2aa9a9201cc3b5e0447d9bd0d239966}{}\label{classVSImage_aa2aa9a9201cc3b5e0447d9bd0d239966}
+
+\item 
+V\+S\+File\+System\+::\+V\+S\+Error {\bfseries Write\+Image} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} $\ast$pf, unsigned char $\ast$data, V\+S\+Image\+Type type, unsigned int width, unsigned int height, bool alpha=1, char bpp=16, bool flip=false)\hypertarget{classVSImage_a9e1a4bec79a50a0732fb72bb069d028d}{}\label{classVSImage_a9e1a4bec79a50a0732fb72bb069d028d}
+
+\item 
+int {\bfseries Depth} () const \hypertarget{classVSImage_acf0c6ed8994c38bcf5daba61fbd541cc}{}\label{classVSImage_acf0c6ed8994c38bcf5daba61fbd541cc}
+
+\item 
+int {\bfseries Format} () const \hypertarget{classVSImage_a9891c096cdb1a4a36dae5bb86cadc688}{}\label{classVSImage_a9891c096cdb1a4a36dae5bb86cadc688}
+
+\item 
+char {\bfseries Sides} () const \hypertarget{classVSImage_ab01b7883d2c3d32db241ad88c4d47bf0}{}\label{classVSImage_ab01b7883d2c3d32db241ad88c4d47bf0}
+
+\item 
+bool {\bfseries is\+Cube} () const \hypertarget{classVSImage_ac079fd14568ed69b618d423c2dcf81f1}{}\label{classVSImage_ac079fd14568ed69b618d423c2dcf81f1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$ {\bfseries palette}\hypertarget{classVSImage_a90c4c95f7913f86f767097428c91245f}{}\label{classVSImage_a90c4c95f7913f86f767097428c91245f}
+
+\item 
+enum V\+S\+Image\+::\+V\+S\+Image\+Mode {\bfseries mode}\hypertarget{classVSImage_a1e02b2ee1e91c19f5cc1db4b6cee95fc}{}\label{classVSImage_a1e02b2ee1e91c19f5cc1db4b6cee95fc}
+
+\item 
+unsigned long \hyperlink{classVSImage_ae5292347761f1391eba77939470421c1}{sizeX}\hypertarget{classVSImage_ae5292347761f1391eba77939470421c1}{}\label{classVSImage_ae5292347761f1391eba77939470421c1}
+
+\begin{DoxyCompactList}\small\item\em the dimensions of the texture \end{DoxyCompactList}\item 
+unsigned long {\bfseries sizeY}\hypertarget{classVSImage_ae5d55b627592a7ca9ecd0aa07a5afb47}{}\label{classVSImage_ae5d55b627592a7ca9ecd0aa07a5afb47}
+
+\item 
+{\bfseries S\+I\+Z\+E\+O\+F\+\_\+\+B\+I\+T\+M\+A\+P\+I\+N\+F\+O\+H\+E\+A\+D\+ER}\hypertarget{classVSImage_a6a433ae489a2ab832143b97174fae3f3}{}\label{classVSImage_a6a433ae489a2ab832143b97174fae3f3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Cube\+Sides} \{ \\*
+{\bfseries S\+I\+D\+E\+\_\+\+S\+I\+N\+G\+LE} =0, 
+{\bfseries S\+I\+D\+E\+\_\+\+P\+O\+S\+\_\+X} =0x01, 
+{\bfseries S\+I\+D\+E\+\_\+\+N\+E\+G\+\_\+X} =0x02, 
+{\bfseries S\+I\+D\+E\+\_\+\+P\+O\+S\+\_\+Y} =0x04, 
+\\*
+{\bfseries S\+I\+D\+E\+\_\+\+N\+E\+G\+\_\+Y} =0x08, 
+{\bfseries S\+I\+D\+E\+\_\+\+P\+O\+S\+\_\+Z} =0x10, 
+{\bfseries S\+I\+D\+E\+\_\+\+N\+E\+G\+\_\+Z} =0x20
+ \}\hypertarget{classVSImage_a4d037ae4235532c35dcaa17ebefe5df1}{}\label{classVSImage_a4d037ae4235532c35dcaa17ebefe5df1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char {\bfseries img\+\_\+sides}\hypertarget{classVSImage_a2acc0cf87d4e72c17fb0bdd272f377fd}{}\label{classVSImage_a2acc0cf87d4e72c17fb0bdd272f377fd}
+
+\item 
+int {\bfseries img\+\_\+nmips}\hypertarget{classVSImage_ad6150c502973b3f6d05c34c79a7d3fb9}{}\label{classVSImage_ad6150c502973b3f6d05c34c79a7d3fb9}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/vsimage.\+h\item 
+gfx/vsimage.\+cpp\end{DoxyCompactItemize}

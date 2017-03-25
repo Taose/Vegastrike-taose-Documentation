@@ -1,0 +1,10 @@
+<map id="Audio::SimpleSound::readBuffer" name="Audio::SimpleSound::readBuffer">
+<area shape="rect" id="node2" href="$de/d2d/classAudio_1_1Sound.html#a12781c8edb68b81c233940e8b1512bd1" title="Audio::Sound::getFormat" alt="" coords="757,5,924,32"/>
+<area shape="rect" id="node3" href="$d0/d49/classAudio_1_1SimpleSound.html#add557853513a4a92d0874606033ef039" title="Audio::SimpleSound\l::getStream" alt="" coords="193,53,333,94"/>
+<area shape="rect" id="node4" href="$d0/d49/classAudio_1_1SimpleSound.html#aa3afde47046eefb4ea193aa13c24aee4" title="Audio::SimpleSound\l::isStreamLoaded" alt="" coords="381,111,521,153"/>
+<area shape="rect" id="node5" href="$d0/d49/classAudio_1_1SimpleSound.html#a07f1ea79c9208ea7a79b4b42f186d0a0" title="Audio::SimpleSound\l::loadStream" alt="" coords="569,53,709,94"/>
+<area shape="rect" id="node8" href="$d0/d49/classAudio_1_1SimpleSound.html#ab913f6768fc1bff17c78deec94e3375d" title="Audio::SimpleSound\l::closeStream" alt="" coords="569,118,709,159"/>
+<area shape="rect" id="node9" href="$d0/d49/classAudio_1_1SimpleSound.html#a21e84a0a9ece8abce078fb316845e32f" title="Audio::SimpleSound\l::abortLoad" alt="" coords="569,183,709,225"/>
+<area shape="rect" id="node6" href="$de/d2d/classAudio_1_1Sound.html#abe908f4a8daa3bed34ae83d42b88995a" title="Audio::Sound::getName" alt="" coords="760,57,921,84"/>
+<area shape="rect" id="node7" href="$d0/d49/classAudio_1_1SimpleSound.html#a6d9df2525400aee9b21eebdbe4392d52" title="Audio::SimpleSound\l::getType" alt="" coords="771,109,911,150"/>
+</map>

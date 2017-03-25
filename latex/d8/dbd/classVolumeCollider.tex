@@ -1,0 +1,168 @@
+\hypertarget{classVolumeCollider}{}\section{Volume\+Collider Class Reference}
+\label{classVolumeCollider}\index{Volume\+Collider@{Volume\+Collider}}
+
+
+Inheritance diagram for Volume\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d25/classVolumeCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Volume\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/de6/classVolumeCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classVolumeCollider_a274b51032b2c2e4394b1cc9308fa8d71}{Get\+Nb\+Touched\+Primitives} () const 
+\item 
+inline\+\_\+ const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{classVolumeCollider_afca0d34cb9f4aa27537a4bfd03fe40d9}{Get\+Touched\+Primitives} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classVolumeCollider_a682b0bcfb8d5fbb96591909b6bae6276}{Get\+Nb\+Volume\+B\+V\+Tests} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classVolumeCollider_a752c69151ed1070abbb6fb68b5f4376a}{Get\+Nb\+Volume\+Prim\+Tests} () const 
+\item 
+\hyperlink{classVolumeCollider_a785ddb7e78cd48ff30179703f5c7285a}{override} (\hyperlink{classCollider}{Collider}) const char $\ast$\hyperlink{classCollider_a225d4861b2184336433894174c6e3e2d}{Validate\+Settings}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries \+\_\+\+Dump} (const \hyperlink{classAABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)\hypertarget{classVolumeCollider_a86f49b913fa453af05812f27a27e5606}{}\label{classVolumeCollider_a86f49b913fa453af05812f27a27e5606}
+
+\item 
+void {\bfseries \+\_\+\+Dump} (const \hyperlink{classAABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)\hypertarget{classVolumeCollider_ac9018229b2ce11b4b4cb6004e5cfa1a1}{}\label{classVolumeCollider_ac9018229b2ce11b4b4cb6004e5cfa1a1}
+
+\item 
+void {\bfseries \+\_\+\+Dump} (const \hyperlink{classAABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)\hypertarget{classVolumeCollider_a7d1365fd6410315c6b2e851a7532081c}{}\label{classVolumeCollider_a7d1365fd6410315c6b2e851a7532081c}
+
+\item 
+void {\bfseries \+\_\+\+Dump} (const \hyperlink{classAABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)\hypertarget{classVolumeCollider_a413569222c1d11b0e7fd620003870c3e}{}\label{classVolumeCollider_a413569222c1d11b0e7fd620003870c3e}
+
+\item 
+\hyperlink{classVolumeCollider_af4451514a209daf73bb5d99db7d91b73}{override} (\hyperlink{classCollider}{Collider}) inline\+\_\+ void \hyperlink{classCollider_a4ad7ed0314483cf47898290f4ac69081}{Init\+Query}()
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} {\bfseries Is\+Cache\+Valid} (\hyperlink{structVolumeCache}{Volume\+Cache} \&cache)\hypertarget{classVolumeCollider_a96a9dc6a410daa202784f487d7d73c98}{}\label{classVolumeCollider_a96a9dc6a410daa202784f487d7d73c98}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classContainer}{Container} $\ast$ \hyperlink{classVolumeCollider_a6cdf462ff6b4044dc67628cb8b140af9}{m\+Touched\+Primitives}\hypertarget{classVolumeCollider_a6cdf462ff6b4044dc67628cb8b140af9}{}\label{classVolumeCollider_a6cdf462ff6b4044dc67628cb8b140af9}
+
+\begin{DoxyCompactList}\small\item\em List of touched primitives. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} {\bfseries m\+Center\+Coeff}\hypertarget{classVolumeCollider_aa86498d2879ddda11f0e3f9d61359a56}{}\label{classVolumeCollider_aa86498d2879ddda11f0e3f9d61359a56}
+
+\item 
+\hyperlink{classPoint}{Point} {\bfseries m\+Extents\+Coeff}\hypertarget{classVolumeCollider_a6c501ce36d689ee182ae7376cac7fdfa}{}\label{classVolumeCollider_a6c501ce36d689ee182ae7376cac7fdfa}
+
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classVolumeCollider_a2bed61c3cf73610e06f4a6bf8bbabb25}{m\+Nb\+Volume\+B\+V\+Tests}\hypertarget{classVolumeCollider_a2bed61c3cf73610e06f4a6bf8bbabb25}{}\label{classVolumeCollider_a2bed61c3cf73610e06f4a6bf8bbabb25}
+
+\begin{DoxyCompactList}\small\item\em Number of Volume-\/\+BV tests. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classVolumeCollider_a1ffde7bc95aa62d86e2236548edb15fe}{m\+Nb\+Volume\+Prim\+Tests}\hypertarget{classVolumeCollider_a1ffde7bc95aa62d86e2236548edb15fe}{}\label{classVolumeCollider_a1ffde7bc95aa62d86e2236548edb15fe}
+
+\begin{DoxyCompactList}\small\item\em Number of Volume-\/\+Primitive tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the abstract class for volume colliders.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+June, 2, 2001 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Volume\+Collider@{Volume\+Collider}!Get\+Nb\+Touched\+Primitives@{Get\+Nb\+Touched\+Primitives}}
+\index{Get\+Nb\+Touched\+Primitives@{Get\+Nb\+Touched\+Primitives}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Touched\+Primitives() const }{GetNbTouchedPrimitives() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Volume\+Collider\+::\+Get\+Nb\+Touched\+Primitives (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classVolumeCollider_a274b51032b2c2e4394b1cc9308fa8d71}{}\label{classVolumeCollider_a274b51032b2c2e4394b1cc9308fa8d71}
+Gets the number of touched primitives after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{classCollider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()} 
+
+\hyperlink{classVolumeCollider_afca0d34cb9f4aa27537a4bfd03fe40d9}{Get\+Touched\+Primitives()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of touched primitives 
+\end{DoxyReturn}
+\index{Volume\+Collider@{Volume\+Collider}!Get\+Nb\+Volume\+B\+V\+Tests@{Get\+Nb\+Volume\+B\+V\+Tests}}
+\index{Get\+Nb\+Volume\+B\+V\+Tests@{Get\+Nb\+Volume\+B\+V\+Tests}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Volume\+B\+V\+Tests() const }{GetNbVolumeBVTests() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Volume\+Collider\+::\+Get\+Nb\+Volume\+B\+V\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classVolumeCollider_a682b0bcfb8d5fbb96591909b6bae6276}{}\label{classVolumeCollider_a682b0bcfb8d5fbb96591909b6bae6276}
+Stats\+: gets the number of Volume-\/\+BV overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{classVolumeCollider_a752c69151ed1070abbb6fb68b5f4376a}{Get\+Nb\+Volume\+Prim\+Tests()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of Volume-\/\+BV tests performed during last query 
+\end{DoxyReturn}
+\index{Volume\+Collider@{Volume\+Collider}!Get\+Nb\+Volume\+Prim\+Tests@{Get\+Nb\+Volume\+Prim\+Tests}}
+\index{Get\+Nb\+Volume\+Prim\+Tests@{Get\+Nb\+Volume\+Prim\+Tests}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Volume\+Prim\+Tests() const }{GetNbVolumePrimTests() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Volume\+Collider\+::\+Get\+Nb\+Volume\+Prim\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classVolumeCollider_a752c69151ed1070abbb6fb68b5f4376a}{}\label{classVolumeCollider_a752c69151ed1070abbb6fb68b5f4376a}
+Stats\+: gets the number of Volume-\/\+Triangle overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{classVolumeCollider_a682b0bcfb8d5fbb96591909b6bae6276}{Get\+Nb\+Volume\+B\+V\+Tests()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of Volume-\/\+Triangle tests performed during last query 
+\end{DoxyReturn}
+\index{Volume\+Collider@{Volume\+Collider}!Get\+Touched\+Primitives@{Get\+Touched\+Primitives}}
+\index{Get\+Touched\+Primitives@{Get\+Touched\+Primitives}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Touched\+Primitives() const }{GetTouchedPrimitives() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ const {\bf udword}$\ast$ Volume\+Collider\+::\+Get\+Touched\+Primitives (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classVolumeCollider_afca0d34cb9f4aa27537a4bfd03fe40d9}{}\label{classVolumeCollider_afca0d34cb9f4aa27537a4bfd03fe40d9}
+Gets the list of touched primitives after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{classCollider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()} 
+
+\hyperlink{classVolumeCollider_a274b51032b2c2e4394b1cc9308fa8d71}{Get\+Nb\+Touched\+Primitives()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the list of touched primitives (primitive indices) 
+\end{DoxyReturn}
+\index{Volume\+Collider@{Volume\+Collider}!override@{override}}
+\index{override@{override}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{\texorpdfstring{override(\+Collider) const char $\ast$\+Validate\+Settings()}{override(Collider) const char *ValidateSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}Volume\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVolumeCollider_a785ddb7e78cd48ff30179703f5c7285a}{}\label{classVolumeCollider_a785ddb7e78cd48ff30179703f5c7285a}
+Validates current settings. You should call this method after all the settings / callbacks have been defined for a collider. \begin{DoxyReturn}{Returns}
+null if everything is ok, else a string describing the problem 
+\end{DoxyReturn}
+\index{Volume\+Collider@{Volume\+Collider}!override@{override}}
+\index{override@{override}!Volume\+Collider@{Volume\+Collider}}
+\subsubsection[{\texorpdfstring{override(\+Collider) inline\+\_\+ void Init\+Query()}{override(Collider) inline_ void InitQuery()}}]{\setlength{\rightskip}{0pt plus 5cm}Volume\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classVolumeCollider_af4451514a209daf73bb5d99db7d91b73}{}\label{classVolumeCollider_af4451514a209daf73bb5d99db7d91b73}
+Initializes a query 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__VolumeCollider_8h}{O\+P\+C\+\_\+\+Volume\+Collider.\+h}\end{DoxyCompactItemize}

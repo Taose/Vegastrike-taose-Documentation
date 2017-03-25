@@ -1,0 +1,3 @@
+<map id="Universe" name="Universe">
+<area shape="rect" id="node2" href="$d6/da9/classGameUniverse.html" title="{GameUniverse\n|# hud_camera\l|+ GenerateStarSystem()\l+ WriteSaveGame()\l+ SetupCockpits()\l+ activateLightMap()\l+ getLightMap()\l+ GameUniverse()\l+ GameUniverse()\l+ Init()\l+ ~GameUniverse()\l+ StartGFX()\land 8 more...\l# StartGL()\l}" alt="" coords="5,395,169,633"/>
+</map>

@@ -1,0 +1,108 @@
+\hypertarget{classFaction}{}\section{Faction Class Reference}
+\label{classFaction}\index{Faction@{Faction}}
+
+
+Collaboration diagram for Faction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/dc3/classFaction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structFaction_1_1comm__face__t}{comm\+\_\+face\+\_\+t}
+\item 
+struct \hyperlink{structFaction_1_1faction__stuff}{faction\+\_\+stuff}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Parse\+Allies} (unsigned int whichfaction)\hypertarget{classFaction_aa0995211c1562192bb3378cf3479fb54}{}\label{classFaction_aa0995211c1562192bb3378cf3479fb54}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classFaction_aa73bc9f12725112e8ba2d7d6b56feb55}{Parse\+All\+Allies} ()\hypertarget{classFaction_aa73bc9f12725112e8ba2d7d6b56feb55}{}\label{classFaction_aa73bc9f12725112e8ba2d7d6b56feb55}
+
+\begin{DoxyCompactList}\small\item\em Figures out the relationships of each faction with each other. \end{DoxyCompactList}\item 
+static void {\bfseries Load\+X\+ML} (const char $\ast$factionfile, char $\ast$xmlbuffer=N\+U\+LL, int buflength=0)\hypertarget{classFaction_ad5a0ce446dc8ac913b46f8633b0d1bd6}{}\label{classFaction_ad5a0ce446dc8ac913b46f8633b0d1bd6}
+
+\item 
+static void {\bfseries begin\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{classFaction_a8c01f1e57a5d44273dc3a1a730a64c0f}{}\label{classFaction_a8c01f1e57a5d44273dc3a1a730a64c0f}
+
+\item 
+static void {\bfseries end\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name)\hypertarget{classFaction_a433ae03bd3366a470bf1215cf18c9140}{}\label{classFaction_a433ae03bd3366a470bf1215cf18c9140}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classFaction_aa3709d8463a31af0232e5e329ac462a2}{citizen}
+\item 
+int {\bfseries playlist}\hypertarget{classFaction_acc9a08ccc2ac0d0adb47e550e4427d9d}{}\label{classFaction_acc9a08ccc2ac0d0adb47e550e4427d9d}
+
+\item 
+float {\bfseries sparkcolor} \mbox{[}4\mbox{]}\hypertarget{classFaction_a06e9e0357347fb231c3db4d1ddf285f8}{}\label{classFaction_a06e9e0357347fb231c3db4d1ddf285f8}
+
+\item 
+std\+::vector$<$ \hyperlink{structFaction_1_1faction__stuff}{faction\+\_\+stuff} $>$ {\bfseries faction}\hypertarget{classFaction_a8ddfb6a3ef606234a6eb7d6b14b17f89}{}\label{classFaction_a8ddfb6a3ef606234a6eb7d6b14b17f89}
+
+\item 
+std\+::string \hyperlink{classFaction_aac8dbfad40ea6ae3e43528309ae17cb6}{logo\+Name}\hypertarget{classFaction_aac8dbfad40ea6ae3e43528309ae17cb6}{}\label{classFaction_aac8dbfad40ea6ae3e43528309ae17cb6}
+
+\begin{DoxyCompactList}\small\item\em If logo==0, load from this one. \end{DoxyCompactList}\item 
+std\+::string {\bfseries logo\+Alpha\+Name}\hypertarget{classFaction_a874c8c28c3afcb0ecb02b854ded34030}{}\label{classFaction_a874c8c28c3afcb0ecb02b854ded34030}
+
+\item 
+std\+::string \hyperlink{classFaction_ab85951d50ffab7c6b122aab67fec9fee}{secondary\+Logo\+Name}\hypertarget{classFaction_ab85951d50ffab7c6b122aab67fec9fee}{}\label{classFaction_ab85951d50ffab7c6b122aab67fec9fee}
+
+\begin{DoxyCompactList}\small\item\em If secondary\+Logo==0, load from this one. \end{DoxyCompactList}\item 
+std\+::string {\bfseries secondary\+Logo\+Alpha\+Name}\hypertarget{classFaction_a48f2f78cb6d0b1d5b9c1a089e9b0a41a}{}\label{classFaction_a48f2f78cb6d0b1d5b9c1a089e9b0a41a}
+
+\item 
+\hyperlink{classTexture}{Texture} $\ast$ \hyperlink{classFaction_a26377103e73c631aebd1c05c84bf42b7}{logo}\hypertarget{classFaction_a26377103e73c631aebd1c05c84bf42b7}{}\label{classFaction_a26377103e73c631aebd1c05c84bf42b7}
+
+\begin{DoxyCompactList}\small\item\em Logos used by the ships of that faction. \end{DoxyCompactList}\item 
+\hyperlink{classTexture}{Texture} $\ast$ {\bfseries secondary\+Logo}\hypertarget{classFaction_a3434584472d3de98752765cbe581b085}{}\label{classFaction_a3434584472d3de98752765cbe581b085}
+
+\item 
+char $\ast$ \hyperlink{classFaction_ae9a90b799c0b0c78a163c2dd97be244d}{factionname}\hypertarget{classFaction_ae9a90b799c0b0c78a163c2dd97be244d}{}\label{classFaction_ae9a90b799c0b0c78a163c2dd97be244d}
+
+\begin{DoxyCompactList}\small\item\em char $\ast$ of the name \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structFaction_1_1comm__face__t}{comm\+\_\+face\+\_\+t} $>$ {\bfseries comm\+\_\+faces}\hypertarget{classFaction_a36451a2afb7c15435f60f35c09318e17}{}\label{classFaction_a36451a2afb7c15435f60f35c09318e17}
+
+\item 
+std\+::vector$<$ boost\+::shared\+\_\+ptr$<$ \hyperlink{classAnimation}{Animation} $>$ $>$ {\bfseries explosion}\hypertarget{classFaction_a6490e63a206ed1160c66e42739d85143}{}\label{classFaction_a6490e63a206ed1160c66e42739d85143}
+
+\item 
+std\+::vector$<$ std\+::string $>$ {\bfseries explosion\+\_\+name}\hypertarget{classFaction_a2a7df1ab88bae97559856c5609b83804}{}\label{classFaction_a2a7df1ab88bae97559856c5609b83804}
+
+\item 
+std\+::vector$<$ unsigned char $>$ {\bfseries comm\+\_\+face\+\_\+sex}\hypertarget{classFaction_a9c0e7f834633733c79ea48e8ce5cd915}{}\label{classFaction_a9c0e7f834633733c79ea48e8ce5cd915}
+
+\item 
+Map\+String\+Float {\bfseries ship\+\_\+relation\+\_\+modifier}\hypertarget{classFaction_a9e36747ebe78c255b70abcfec0a40495}{}\label{classFaction_a9e36747ebe78c255b70abcfec0a40495}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{classUnit}{Unit} $>$ {\bfseries contraband}\hypertarget{classFaction_a130cdc7d544bdfb2cf1f2ba7d3fd7487}{}\label{classFaction_a130cdc7d544bdfb2cf1f2ba7d3fd7487}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{Faction@{Faction}!citizen@{citizen}}
+\index{citizen@{citizen}!Faction@{Faction}}
+\subsubsection[{\texorpdfstring{citizen}{citizen}}]{\setlength{\rightskip}{0pt plus 5cm}bool Faction\+::citizen}\hypertarget{classFaction_aa3709d8463a31af0232e5e329ac462a2}{}\label{classFaction_aa3709d8463a31af0232e5e329ac462a2}
+holds the relationships to all {\itshape other} factions loaded hold misguided info for self F\+I\+X\+ME 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+faction\+\_\+generic.\+h\item 
+cmd/faction\+\_\+xml.\+cpp\item 
+faction\+\_\+generic.\+cpp\item 
+faction\+\_\+util.\+cpp\item 
+faction\+\_\+util\+\_\+server.\+cpp\end{DoxyCompactItemize}

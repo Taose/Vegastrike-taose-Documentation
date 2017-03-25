@@ -1,0 +1,74 @@
+\hypertarget{classGroupControl}{}\section{Group\+Control Class Reference}
+\label{classGroupControl}\index{Group\+Control@{Group\+Control}}
+
+
+Inheritance diagram for Group\+Control\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/dad/classGroupControl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Group\+Control\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/df2/classGroupControl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool {\bfseries has\+Group\+Children} (void)\hypertarget{classGroupControl_a992a7003a77415c77df353a72456a932}{}\label{classGroupControl_a992a7003a77415c77df353a72456a932}
+
+\item 
+void {\bfseries add\+Child} (\hyperlink{classControl}{Control} $\ast$child)\hypertarget{classGroupControl_a71ec2f983610426a14264846903c2efa}{}\label{classGroupControl_a71ec2f983610426a14264846903c2efa}
+
+\item 
+bool {\bfseries delete\+Control} (\hyperlink{classControl}{Control} $\ast$c)\hypertarget{classGroupControl_a073d64f52a68a09c71004fc110312f0c}{}\label{classGroupControl_a073d64f52a68a09c71004fc110312f0c}
+
+\item 
+\hyperlink{classControl}{Control} $\ast$ {\bfseries remove\+Control\+From\+Group} (\hyperlink{classControl}{Control} $\ast$c)\hypertarget{classGroupControl_afee2ea055689509c26aac63506d83736}{}\label{classGroupControl_afee2ea055689509c26aac63506d83736}
+
+\item 
+\hyperlink{classControl}{Control} $\ast$ {\bfseries find\+Control\+By\+Id} (const std\+::string \&id)\hypertarget{classGroupControl_a8b7a8d85ab32b63c30ddd4a8f5371b17}{}\label{classGroupControl_a8b7a8d85ab32b63c30ddd4a8f5371b17}
+
+\item 
+int {\bfseries child\+Count} (void)\hypertarget{classGroupControl_a6f29b0d7204befd35a9947b76fcf1d24}{}\label{classGroupControl_a6f29b0d7204befd35a9947b76fcf1d24}
+
+\item 
+\hyperlink{classControl}{Control} $\ast$ {\bfseries child\+At} (int index)\hypertarget{classGroupControl_af3bef28b01cea2c4399800e82018d445}{}\label{classGroupControl_af3bef28b01cea2c4399800e82018d445}
+
+\item 
+virtual void {\bfseries draw} (void)\hypertarget{classGroupControl_a6a0b4844c1f142140b544fdf9cca8982}{}\label{classGroupControl_a6a0b4844c1f142140b544fdf9cca8982}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Down} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classGroupControl_a26d6d720b55005fa2eed82dacbeaddc4}{}\label{classGroupControl_a26d6d720b55005fa2eed82dacbeaddc4}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Up} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classGroupControl_a9d2e6a07fd2883bf4a24b33e57348490}{}\label{classGroupControl_a9d2e6a07fd2883bf4a24b33e57348490}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Move} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classGroupControl_abc5da944a795f30f1655fbe923bc9a13}{}\label{classGroupControl_abc5da944a795f30f1655fbe923bc9a13}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Drag} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classGroupControl_a43052cd235e03eed9bb8c981a93f7634}{}\label{classGroupControl_a43052cd235e03eed9bb8c981a93f7634}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classControl}{Control} $\ast$ $>$ {\bfseries m\+\_\+controls}\hypertarget{classGroupControl_abeca9ed2512f47c8bc08f4a6c6cb1653}{}\label{classGroupControl_abeca9ed2512f47c8bc08f4a6c6cb1653}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/groupcontrol.\+h\item 
+gui/groupcontrol.\+cpp\end{DoxyCompactItemize}

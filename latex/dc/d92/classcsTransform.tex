@@ -1,0 +1,249 @@
+\hypertarget{classcsTransform}{}\section{cs\+Transform Class Reference}
+\label{classcsTransform}\index{cs\+Transform@{cs\+Transform}}
+
+
+{\ttfamily \#include $<$optransfrm.\+h$>$}
+
+
+
+Inheritance diagram for cs\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/d12/classcsTransform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cs\+Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/d50/classcsTransform__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsTransform_a1b862dc9f2a33edd0db4814b71c26860}{cs\+Transform} ()
+\item 
+\hyperlink{classcsTransform_a5e0ff99eda1b2e313b62cdfae53df4af}{cs\+Transform} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&other2this, const \hyperlink{classcsVector3}{cs\+Vector3} \&origin\+\_\+pos)
+\item 
+const \hyperlink{classcsMatrix3}{cs\+Matrix3} \& \hyperlink{classcsTransform_a6b9dc087bd425a9bc8fe1c35a127e7b3}{Get\+O2T} () const 
+\item 
+const \hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsTransform_addaca558caeb0026f10074a43192a6b3}{Get\+O2\+T\+Translation} () const 
+\item 
+const \hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsTransform_a913ab986883038d0a450f07448d47c7d}{Get\+Origin} () const 
+\item 
+virtual void \hyperlink{classcsTransform_a8982b8df6c6260a98fbf9ac18ec0a681}{Set\+O2T} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&m)
+\item 
+virtual void \hyperlink{classcsTransform_a1630a99216c2b2a39116f4c42ffbf649}{Set\+O2\+T\+Translation} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)
+\item 
+void \hyperlink{classcsTransform_a5a12e267771bda04fee9a37c7d13d016}{Set\+Origin} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)
+\item 
+void \hyperlink{classcsTransform_a23206c158aa7582116460d126a427df0}{Translate} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsTransform_a463655d40948540a2a5b2a867d5ba03c}{Other2\+This} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v) const 
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsTransform_a7a1a4a71f1a2406bca35ac678d53f92e}{Other2\+This\+Relative} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsMatrix3}{cs\+Matrix3} \hyperlink{classcsTransform_a7f5f51248980a3ebf56744520e6a3825}{m\+\_\+o2t}\hypertarget{classcsTransform_a7f5f51248980a3ebf56744520e6a3825}{}\label{classcsTransform_a7f5f51248980a3ebf56744520e6a3825}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structTransformation}{Transformation} matrix from \textquotesingle{}other\textquotesingle{} space to \textquotesingle{}this\textquotesingle{} space. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsTransform_a155b35f82b56b9b7bbc8a0b2921d3c17}{v\+\_\+o2t}\hypertarget{classcsTransform_a155b35f82b56b9b7bbc8a0b2921d3c17}{}\label{classcsTransform_a155b35f82b56b9b7bbc8a0b2921d3c17}
+
+\begin{DoxyCompactList}\small\item\em Location of the origin for \textquotesingle{}this\textquotesingle{} space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsTransform_ace54e0736582a671a04a33b79a5f6cce}{operator$\ast$} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v, const \hyperlink{classcsTransform}{cs\+Transform} \&t)
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsTransform_a70e1d86872f3ed4561963a2bdfd01e8c}{operator$\ast$} (const \hyperlink{classcsTransform}{cs\+Transform} \&t, const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsTransform_a70e1d86872f3ed4561963a2bdfd01e8c}{}\label{classcsTransform_a70e1d86872f3ed4561963a2bdfd01e8c}
+
+\begin{DoxyCompactList}\small\item\em Apply a transformation to a 3D vector. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsTransform_a5bdd4aee62548b5330d36a81cd417e49}{operator$\ast$=} (\hyperlink{classcsVector3}{cs\+Vector3} \&v, const \hyperlink{classcsTransform}{cs\+Transform} \&t)\hypertarget{classcsTransform_a5bdd4aee62548b5330d36a81cd417e49}{}\label{classcsTransform_a5bdd4aee62548b5330d36a81cd417e49}
+
+\begin{DoxyCompactList}\small\item\em Apply a transformation to a 3D vector. \end{DoxyCompactList}\item 
+\hyperlink{classcsMatrix3}{cs\+Matrix3} \hyperlink{classcsTransform_adde3b7d29bcb49e5ff6e1d01c39d7c29}{operator$\ast$} (const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&m, const \hyperlink{classcsTransform}{cs\+Transform} \&t)
+\begin{DoxyCompactList}\small\item\em Apply a transformation to a \hyperlink{classPlane}{Plane}. \end{DoxyCompactList}\item 
+\hyperlink{classcsMatrix3}{cs\+Matrix3} \hyperlink{classcsTransform_a05d5caa141bd87b23486292cf724aa89}{operator$\ast$} (const \hyperlink{classcsTransform}{cs\+Transform} \&t, const \hyperlink{classcsMatrix3}{cs\+Matrix3} \&m)\hypertarget{classcsTransform_a05d5caa141bd87b23486292cf724aa89}{}\label{classcsTransform_a05d5caa141bd87b23486292cf724aa89}
+
+\begin{DoxyCompactList}\small\item\em Multiply a matrix with the transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{classcsMatrix3}{cs\+Matrix3} \& \hyperlink{classcsTransform_a7cb1bd7b0a38eaf3f6beee7c08c60d24}{operator$\ast$=} (\hyperlink{classcsMatrix3}{cs\+Matrix3} \&m, const \hyperlink{classcsTransform}{cs\+Transform} \&t)\hypertarget{classcsTransform_a7cb1bd7b0a38eaf3f6beee7c08c60d24}{}\label{classcsTransform_a7cb1bd7b0a38eaf3f6beee7c08c60d24}
+
+\begin{DoxyCompactList}\small\item\em Multiply a matrix with the transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{classcsTransform}{cs\+Transform} \hyperlink{classcsTransform_a176327eefeb5555004a1fdd03478b836}{operator$\ast$} (const \hyperlink{classcsTransform}{cs\+Transform} \&t1, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} \&t2)\hypertarget{classcsTransform_a176327eefeb5555004a1fdd03478b836}{}\label{classcsTransform_a176327eefeb5555004a1fdd03478b836}
+
+\begin{DoxyCompactList}\small\item\em Combine two transforms, rightmost first. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class which defines a transformation from one coordinate system to another. The two coordinate systems are refered to as \textquotesingle{}other\textquotesingle{} and \textquotesingle{}this\textquotesingle{}. The transform defines a transformation from \textquotesingle{}other\textquotesingle{} to \textquotesingle{}this\textquotesingle{}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{cs\+Transform@{cs\+Transform}!cs\+Transform@{cs\+Transform}}
+\index{cs\+Transform@{cs\+Transform}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Transform()}{csTransform()}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Transform\+::cs\+Transform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsTransform_a1b862dc9f2a33edd0db4814b71c26860}{}\label{classcsTransform_a1b862dc9f2a33edd0db4814b71c26860}
+Initialize with the identity transformation. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d92/classcsTransform_a1b862dc9f2a33edd0db4814b71c26860_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Transform@{cs\+Transform}!cs\+Transform@{cs\+Transform}}
+\index{cs\+Transform@{cs\+Transform}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{cs\+Transform(const cs\+Matrix3 \&other2this, const cs\+Vector3 \&origin\+\_\+pos)}{csTransform(const csMatrix3 &other2this, const csVector3 &origin_pos)}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Transform\+::cs\+Transform (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{other2this, }
+\item[{const {\bf cs\+Vector3} \&}]{origin\+\_\+pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsTransform_a5e0ff99eda1b2e313b62cdfae53df4af}{}\label{classcsTransform_a5e0ff99eda1b2e313b62cdfae53df4af}
+Initialize with the given transformation. The transformation is given as a 3x3 matrix and a vector. The transformation is defined to mean T=M$\ast$(O-\/V) with T the vector in \textquotesingle{}this\textquotesingle{} space, O the vector in \textquotesingle{}other\textquotesingle{} space, M the transformation matrix and V the transformation vector. 
+
+\subsection{Member Function Documentation}
+\index{cs\+Transform@{cs\+Transform}!Get\+O2T@{Get\+O2T}}
+\index{Get\+O2T@{Get\+O2T}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{Get\+O2\+T() const }{GetO2T() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cs\+Matrix3}\& cs\+Transform\+::\+Get\+O2T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsTransform_a6b9dc087bd425a9bc8fe1c35a127e7b3}{}\label{classcsTransform_a6b9dc087bd425a9bc8fe1c35a127e7b3}
+Get \textquotesingle{}other\textquotesingle{} to \textquotesingle{}this\textquotesingle{} transformation matrix. This is the 3x3 matrix M from the transform equation T=M$\ast$(O-\/V). \index{cs\+Transform@{cs\+Transform}!Get\+O2\+T\+Translation@{Get\+O2\+T\+Translation}}
+\index{Get\+O2\+T\+Translation@{Get\+O2\+T\+Translation}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{Get\+O2\+T\+Translation() const }{GetO2TTranslation() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cs\+Vector3}\& cs\+Transform\+::\+Get\+O2\+T\+Translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsTransform_addaca558caeb0026f10074a43192a6b3}{}\label{classcsTransform_addaca558caeb0026f10074a43192a6b3}
+Get \textquotesingle{}world\textquotesingle{} to \textquotesingle{}this\textquotesingle{} translation. This is the vector V from the transform equation T=M$\ast$(O-\/V). \index{cs\+Transform@{cs\+Transform}!Get\+Origin@{Get\+Origin}}
+\index{Get\+Origin@{Get\+Origin}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{Get\+Origin() const }{GetOrigin() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cs\+Vector3}\& cs\+Transform\+::\+Get\+Origin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsTransform_a913ab986883038d0a450f07448d47c7d}{}\label{classcsTransform_a913ab986883038d0a450f07448d47c7d}
+Get origin of transformed coordinate system. \index{cs\+Transform@{cs\+Transform}!Other2\+This@{Other2\+This}}
+\index{Other2\+This@{Other2\+This}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{Other2\+This(const cs\+Vector3 \&v) const }{Other2This(const csVector3 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} cs\+Transform\+::\+Other2\+This (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsTransform_a463655d40948540a2a5b2a867d5ba03c}{}\label{classcsTransform_a463655d40948540a2a5b2a867d5ba03c}
+Transform vector in \textquotesingle{}other\textquotesingle{} space v to a vector in \textquotesingle{}this\textquotesingle{} space. This is the basic transform function. \index{cs\+Transform@{cs\+Transform}!Other2\+This\+Relative@{Other2\+This\+Relative}}
+\index{Other2\+This\+Relative@{Other2\+This\+Relative}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{Other2\+This\+Relative(const cs\+Vector3 \&v) const }{Other2ThisRelative(const csVector3 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} cs\+Transform\+::\+Other2\+This\+Relative (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsTransform_a7a1a4a71f1a2406bca35ac678d53f92e}{}\label{classcsTransform_a7a1a4a71f1a2406bca35ac678d53f92e}
+Convert vector v in \textquotesingle{}other\textquotesingle{} space to a vector in \textquotesingle{}this\textquotesingle{} space. Use the origin of \textquotesingle{}other\textquotesingle{} space. \index{cs\+Transform@{cs\+Transform}!Set\+O2T@{Set\+O2T}}
+\index{Set\+O2T@{Set\+O2T}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{Set\+O2\+T(const cs\+Matrix3 \&m)}{SetO2T(const csMatrix3 &m)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void cs\+Transform\+::\+Set\+O2T (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classcsTransform_a8982b8df6c6260a98fbf9ac18ec0a681}{}\label{classcsTransform_a8982b8df6c6260a98fbf9ac18ec0a681}
+Set \textquotesingle{}other\textquotesingle{} to \textquotesingle{}this\textquotesingle{} transformation matrix. this is the 3x3 matrix M from the transform equation T=M$\ast$(O-\/V). 
+
+Reimplemented in \hyperlink{classcsOrthoTransform_a2c075ede84fdeddac05480eb5a39b85d}{cs\+Ortho\+Transform}, and \hyperlink{classcsReversibleTransform_a7adc3d305ab65cd54d4360d5fcf8c0f1}{cs\+Reversible\+Transform}.
+
+\index{cs\+Transform@{cs\+Transform}!Set\+O2\+T\+Translation@{Set\+O2\+T\+Translation}}
+\index{Set\+O2\+T\+Translation@{Set\+O2\+T\+Translation}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{Set\+O2\+T\+Translation(const cs\+Vector3 \&v)}{SetO2TTranslation(const csVector3 &v)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void cs\+Transform\+::\+Set\+O2\+T\+Translation (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classcsTransform_a1630a99216c2b2a39116f4c42ffbf649}{}\label{classcsTransform_a1630a99216c2b2a39116f4c42ffbf649}
+Set \textquotesingle{}world\textquotesingle{} to \textquotesingle{}this\textquotesingle{} translation. This is the vector V from the transform equation T=M$\ast$(O-\/V). 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d92/classcsTransform_a1630a99216c2b2a39116f4c42ffbf649_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Transform@{cs\+Transform}!Set\+Origin@{Set\+Origin}}
+\index{Set\+Origin@{Set\+Origin}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{Set\+Origin(const cs\+Vector3 \&v)}{SetOrigin(const csVector3 &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Transform\+::\+Set\+Origin (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsTransform_a5a12e267771bda04fee9a37c7d13d016}{}\label{classcsTransform_a5a12e267771bda04fee9a37c7d13d016}
+Set origin of transformed coordinate system. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d92/classcsTransform_a5a12e267771bda04fee9a37c7d13d016_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Transform@{cs\+Transform}!Translate@{Translate}}
+\index{Translate@{Translate}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{Translate(const cs\+Vector3 \&v)}{Translate(const csVector3 &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Transform\+::\+Translate (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsTransform_a23206c158aa7582116460d126a427df0}{}\label{classcsTransform_a23206c158aa7582116460d126a427df0}
+Move the \textquotesingle{}other\textquotesingle{} to \textquotesingle{}this\textquotesingle{} translation by a specified amount. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d92/classcsTransform_a23206c158aa7582116460d126a427df0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{cs\+Transform@{cs\+Transform}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{operator$\ast$}{operator*}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v, }
+\item[{const {\bf cs\+Transform} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classcsTransform_ace54e0736582a671a04a33b79a5f6cce}{}\label{classcsTransform_ace54e0736582a671a04a33b79a5f6cce}
+Convert a plane in \textquotesingle{}other\textquotesingle{} space to \textquotesingle{}this\textquotesingle{} space. Convert a plane in \textquotesingle{}other\textquotesingle{} space to \textquotesingle{}this\textquotesingle{} space. This version ignores translation. Convert a plane in \textquotesingle{}other\textquotesingle{} space to \textquotesingle{}this\textquotesingle{} space. This is an optimized version for which a point on the new plane is known (point). The result is stored in \textquotesingle{}result\textquotesingle{}. Apply a transformation to a 3D vector. \index{cs\+Transform@{cs\+Transform}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!cs\+Transform@{cs\+Transform}}
+\subsubsection[{\texorpdfstring{operator$\ast$}{operator*}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Matrix3} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Matrix3} \&}]{m, }
+\item[{const {\bf cs\+Transform} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classcsTransform_adde3b7d29bcb49e5ff6e1d01c39d7c29}{}\label{classcsTransform_adde3b7d29bcb49e5ff6e1d01c39d7c29}
+
+
+Apply a transformation to a \hyperlink{classPlane}{Plane}. 
+
+Apply a transformation to a \hyperlink{classPlane}{Plane}. Apply a transformation to a \hyperlink{classPlane}{Plane}. Multiply a matrix with the transformation matrix. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/csgeom2/optransfrm.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\hypertarget{OPC__PlanesCollider_8cpp}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Planes\+Collider.cpp File Reference}
+\label{OPC__PlanesCollider_8cpp}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Planes\+Collider.\+cpp@{cmd/collide2/\+O\+P\+C\+\_\+\+Planes\+Collider.\+cpp}}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Planes\+A\+A\+B\+B\+Overlap.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Planes\+Tri\+Overlap.\+h\char`\"{}}\\*
+Include dependency graph for O\+P\+C\+\_\+\+Planes\+Collider.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d80/OPC__PlanesCollider_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}(prim\+\_\+index,  flag)
+\item 
+\#define \hyperlink{OPC__PlanesCollider_8cpp_ae36ff5c3433828a57303044cb617dcc9}{P\+L\+A\+N\+E\+S\+\_\+\+P\+R\+IM}(prim\+\_\+index,  flag)
+\begin{DoxyCompactList}\small\item\em Planes-\/triangle test. \end{DoxyCompactList}\item 
+\#define {\bfseries T\+E\+S\+T\+\_\+\+C\+L\+I\+P\+\_\+\+M\+A\+SK}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for a planes collider.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January, 1st, 2002 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp@{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp}!P\+L\+A\+N\+E\+S\+\_\+\+P\+R\+IM@{P\+L\+A\+N\+E\+S\+\_\+\+P\+R\+IM}}
+\index{P\+L\+A\+N\+E\+S\+\_\+\+P\+R\+IM@{P\+L\+A\+N\+E\+S\+\_\+\+P\+R\+IM}!O\+P\+C\+\_\+\+Planes\+Collider.\+cpp@{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{P\+L\+A\+N\+E\+S\+\_\+\+P\+R\+IM}{PLANES_PRIM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+L\+A\+N\+E\+S\+\_\+\+P\+R\+IM(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__PlanesCollider_8cpp_ae36ff5c3433828a57303044cb617dcc9}{}\label{OPC__PlanesCollider_8cpp_ae36ff5c3433828a57303044cb617dcc9}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Request vertices from the app */}     \(\backslash\)
+    mIMesh->GetTriangle(mVP, prim\_index);   \(\backslash\)
+    \textcolor{comment}{/* Perform triangle-box overlap test */} \(\backslash\)
+    if(PlanesTriOverlap(clip\_mask))         \(\backslash\)
+    \{                                       \(\backslash\)
+        SET\_CONTACT(prim\_index, flag)       \(\backslash\)
+    \}
+\end{DoxyCode}
+
+
+Planes-\/triangle test. 
+
+\index{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp@{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp}!S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}}
+\index{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}!O\+P\+C\+\_\+\+Planes\+Collider.\+cpp@{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}{SET_CONTACT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__PlanesCollider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}{}\label{OPC__PlanesCollider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Set contact status */}                \(\backslash\)
+    mFlags |= flag;                         \(\backslash\)
+    mTouchedPrimitives->Add(prim\_index);
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp@{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp}!T\+E\+S\+T\+\_\+\+C\+L\+I\+P\+\_\+\+M\+A\+SK@{T\+E\+S\+T\+\_\+\+C\+L\+I\+P\+\_\+\+M\+A\+SK}}
+\index{T\+E\+S\+T\+\_\+\+C\+L\+I\+P\+\_\+\+M\+A\+SK@{T\+E\+S\+T\+\_\+\+C\+L\+I\+P\+\_\+\+M\+A\+SK}!O\+P\+C\+\_\+\+Planes\+Collider.\+cpp@{O\+P\+C\+\_\+\+Planes\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+L\+I\+P\+\_\+\+M\+A\+SK}{TEST_CLIP_MASK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+C\+L\+I\+P\+\_\+\+M\+A\+SK}\hypertarget{OPC__PlanesCollider_8cpp_aab1ac2faac5ef629be6c09c85f03fe69}{}\label{OPC__PlanesCollider_8cpp_aab1ac2faac5ef629be6c09c85f03fe69}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* If the box is completely included, so are its children. We don't need to do extra tests, we */}   \(\backslash\)
+    \textcolor{comment}{/* can immediately output a list of visible children. Those ones won't need to be clipped. */}       \(\backslash\)
+    if(!OutClipMask)                                                                                    \(\backslash\)
+    \{                                                                                                   \(\backslash\)
+        \textcolor{comment}{/* Set contact status */}                                                                        \(\backslash\)
+        mFlags |= \hyperlink{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca53e8ef89e9c1f26e6f7a8c6ced5a8089}{OPC\_CONTACT};                                                                           
+      \(\backslash\)
+        \_Dump(node);                                                                                    \(\backslash\)
+        return;                                                                                         \(\backslash\)
+    \}
+\end{DoxyCode}

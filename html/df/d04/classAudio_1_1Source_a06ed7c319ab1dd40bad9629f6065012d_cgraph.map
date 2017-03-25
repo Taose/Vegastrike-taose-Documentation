@@ -1,0 +1,5 @@
+<map id="Audio::Source::pausePlaying" name="Audio::Source::pausePlaying">
+<area shape="rect" id="node2" href="$df/d04/classAudio_1_1Source.html#ab5e750c91839e53326a2d9af1d2f6575" title="Audio::Source::isActive" alt="" coords="495,34,653,60"/>
+<area shape="rect" id="node3" href="$df/d04/classAudio_1_1Source.html#a80bb4782218d1ea593ce3f1db3bfbf58" title="Audio::Source::setLastKnown\lPlayingTime" alt="" coords="248,26,443,68"/>
+<area shape="rect" id="node4" href="$df/d04/classAudio_1_1Source.html#a4096dd64ab51c7f98831be31c3dea77d" title="Audio::Source::getPlayingTime" alt="" coords="244,92,447,119"/>
+</map>

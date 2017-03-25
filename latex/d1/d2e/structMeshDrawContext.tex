@@ -1,0 +1,71 @@
+\hypertarget{structMeshDrawContext}{}\section{Mesh\+Draw\+Context Struct Reference}
+\label{structMeshDrawContext}\index{Mesh\+Draw\+Context@{Mesh\+Draw\+Context}}
+
+
+{\ttfamily \#include $<$mesh.\+h$>$}
+
+
+
+Collaboration diagram for Mesh\+Draw\+Context\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d79/structMeshDrawContext__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries C\+LK} \{ \\*
+{\bfseries N\+O\+NE} =0x0, 
+{\bfseries C\+L\+O\+AK} =0x1, 
+{\bfseries F\+OG} =0x2, 
+{\bfseries N\+E\+A\+R\+I\+N\+V\+IS} =0x4, 
+\\*
+{\bfseries G\+L\+A\+S\+S\+C\+L\+O\+AK} =0x8, 
+{\bfseries R\+E\+N\+O\+R\+M\+A\+L\+I\+ZE} =0x10
+ \}\hypertarget{structMeshDrawContext_a1fe8f2f1fae247c69a1543cdb23763e6}{}\label{structMeshDrawContext_a1fe8f2f1fae247c69a1543cdb23763e6}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Mesh\+Draw\+Context} (const \hyperlink{classMatrix}{Matrix} \&m)\hypertarget{structMeshDrawContext_a4a44ae658e46d4b2017c113a01141429}{}\label{structMeshDrawContext_a4a44ae658e46d4b2017c113a01141429}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{structMeshDrawContext_af89df36085c8cee5b915f2079ffdd166}{mat}\hypertarget{structMeshDrawContext_af89df36085c8cee5b915f2079ffdd166}{}\label{structMeshDrawContext_af89df36085c8cee5b915f2079ffdd166}
+
+\begin{DoxyCompactList}\small\item\em The matrix in world space. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classMeshFX}{Mesh\+FX} $>$ $\ast$ \hyperlink{structMeshDrawContext_a2233171fc39890c1ffe0e312b1f200b5}{Special\+FX}\hypertarget{structMeshDrawContext_a2233171fc39890c1ffe0e312b1f200b5}{}\label{structMeshDrawContext_a2233171fc39890c1ffe0e312b1f200b5}
+
+\begin{DoxyCompactList}\small\item\em The special FX vector pointing to all active special FX. \end{DoxyCompactList}\item 
+\hyperlink{classMeshFX}{Mesh\+FX} {\bfseries xtra\+FX}\hypertarget{structMeshDrawContext_ae918e776282b08b045e41851bb0e29fc}{}\label{structMeshDrawContext_ae918e776282b08b045e41851bb0e29fc}
+
+\item 
+bool {\bfseries use\+Xtra\+FX}\hypertarget{structMeshDrawContext_aea475ee55fb4f1ca7b5db6c995177a25}{}\label{structMeshDrawContext_aea475ee55fb4f1ca7b5db6c995177a25}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries Cloak\+FX}\hypertarget{structMeshDrawContext_a7b992930f5c1bd0487a6e656e35fb914}{}\label{structMeshDrawContext_a7b992930f5c1bd0487a6e656e35fb914}
+
+\item 
+char {\bfseries cloaked}\hypertarget{structMeshDrawContext_a4acc77c295fab2b50f14fd9a2397e81b}{}\label{structMeshDrawContext_a4acc77c295fab2b50f14fd9a2397e81b}
+
+\item 
+char {\bfseries mesh\+\_\+seq}\hypertarget{structMeshDrawContext_ae0093a7f17ff0b2c4b49a2e33d0e01cb}{}\label{structMeshDrawContext_ae0093a7f17ff0b2c4b49a2e33d0e01cb}
+
+\item 
+unsigned char {\bfseries damage}\hypertarget{structMeshDrawContext_a08472e729743ccc68fc099ce7b8ab634}{}\label{structMeshDrawContext_a08472e729743ccc68fc099ce7b8ab634}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores relevant info needed to draw a mesh given only the orig 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gfx/mesh.\+h\end{DoxyCompactItemize}

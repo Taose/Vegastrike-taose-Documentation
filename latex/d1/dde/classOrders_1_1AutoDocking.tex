@@ -1,0 +1,86 @@
+\hypertarget{classOrders_1_1AutoDocking}{}\section{Orders\+:\+:Auto\+Docking Class Reference}
+\label{classOrders_1_1AutoDocking}\index{Orders\+::\+Auto\+Docking@{Orders\+::\+Auto\+Docking}}
+
+
+Inheritance diagram for Orders\+:\+:Auto\+Docking\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/db4/classOrders_1_1AutoDocking__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Orders\+:\+:Auto\+Docking\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d9f/classOrders_1_1AutoDocking__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::deque$<$ size\+\_\+t $>$ {\bfseries Docking\+Path}\hypertarget{classOrders_1_1AutoDocking_ae8578041722594263e5f7490da2abeb0}{}\label{classOrders_1_1AutoDocking_ae8578041722594263e5f7490da2abeb0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Auto\+Docking} (\hyperlink{classUnit}{Unit} $\ast$destination)\hypertarget{classOrders_1_1AutoDocking_afb9705952b77d652eb68e2fe53c1794b}{}\label{classOrders_1_1AutoDocking_afb9705952b77d652eb68e2fe53c1794b}
+
+\item 
+void \hyperlink{classOrders_1_1AutoDocking_a5394447eca321816ce91fddff2a85c26}{Execute} ()\hypertarget{classOrders_1_1AutoDocking_a5394447eca321816ce91fddff2a85c26}{}\label{classOrders_1_1AutoDocking_a5394447eca321816ce91fddff2a85c26}
+
+\begin{DoxyCompactList}\small\item\em The function that gets called and executes all queued suborders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Can\+Dock} (\hyperlink{classUnit}{Unit} $\ast$player, \hyperlink{classUnit}{Unit} $\ast$station)\hypertarget{classOrders_1_1AutoDocking_af1a5bbb7d06ea28795b4a071406c7a23}{}\label{classOrders_1_1AutoDocking_af1a5bbb7d06ea28795b4a071406c7a23}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initial\+State} (\hyperlink{classUnit}{Unit} $\ast$player, \hyperlink{classUnit}{Unit} $\ast$station)\hypertarget{classOrders_1_1AutoDocking_a9d18f11ec6abd36aab77a632f65b976c}{}\label{classOrders_1_1AutoDocking_a9d18f11ec6abd36aab77a632f65b976c}
+
+\item 
+void {\bfseries Selection\+State} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1AutoDocking_a0f75f77afb54cc5d66ae3e54256b1fae}{}\label{classOrders_1_1AutoDocking_a0f75f77afb54cc5d66ae3e54256b1fae}
+
+\item 
+void {\bfseries Approach\+State} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1AutoDocking_a442f66ff16ced772e24499785da8fe79}{}\label{classOrders_1_1AutoDocking_a442f66ff16ced772e24499785da8fe79}
+
+\item 
+void {\bfseries Docking\+State} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1AutoDocking_ab9e7f7b766df455a3740d09a04d04f1c}{}\label{classOrders_1_1AutoDocking_ab9e7f7b766df455a3740d09a04d04f1c}
+
+\item 
+void {\bfseries Docked\+State} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1AutoDocking_a4e433a4876ba870812cb885f02885164}{}\label{classOrders_1_1AutoDocking_a4e433a4876ba870812cb885f02885164}
+
+\item 
+void {\bfseries Undocking\+State} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1AutoDocking_a7ba86f9e492aed2e96c52b21ed35a74e}{}\label{classOrders_1_1AutoDocking_a7ba86f9e492aed2e96c52b21ed35a74e}
+
+\item 
+void {\bfseries Departure\+State} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1AutoDocking_a3ae1f13578ea3e79ef706fc33d642f32}{}\label{classOrders_1_1AutoDocking_a3ae1f13578ea3e79ef706fc33d642f32}
+
+\item 
+void {\bfseries Abort\+State} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1AutoDocking_a4501055d0e2cb4880d8d480d13e276ec}{}\label{classOrders_1_1AutoDocking_a4501055d0e2cb4880d8d480d13e276ec}
+
+\item 
+void {\bfseries End\+State} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classOrders_1_1AutoDocking_a219027e143912c21700a4c814f194c2f}{}\label{classOrders_1_1AutoDocking_a219027e143912c21700a4c814f194c2f}
+
+\item 
+void {\bfseries Enqueue\+Port} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$, size\+\_\+t)\hypertarget{classOrders_1_1AutoDocking_a28cb733856d4d700870f152aeef88a4f}{}\label{classOrders_1_1AutoDocking_a28cb733856d4d700870f152aeef88a4f}
+
+\item 
+void {\bfseries Erase\+Orders} ()\hypertarget{classOrders_1_1AutoDocking_a2d145f9baba3322593d101a1281b6b05}{}\label{classOrders_1_1AutoDocking_a2d145f9baba3322593d101a1281b6b05}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/autodocking.\+h\item 
+cmd/ai/autodocking.\+cpp\end{DoxyCompactItemize}

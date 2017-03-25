@@ -1,0 +1,378 @@
+\hypertarget{classAudio_1_1OpenALRenderer}{}\section{Audio\+:\+:Open\+A\+L\+Renderer Class Reference}
+\label{classAudio_1_1OpenALRenderer}\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+
+
+{\ttfamily \#include $<$Open\+A\+L\+Renderer.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Open\+A\+L\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/d13/classAudio_1_1OpenALRenderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Open\+A\+L\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{dd/d80/classAudio_1_1OpenALRenderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1OpenALRenderer_a318984bd7bf639df66c9d2be1fa0b2c4}{Open\+A\+L\+Renderer} ()  throw (\+Exception)
+\item 
+virtual Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ \hyperlink{classAudio_1_1OpenALRenderer_afabd7c8e9655c9cf3c099044e9065cb3}{get\+Sound} (const std\+::string \&name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=V\+S\+File\+System\+::\+Unknown\+File, bool streaming=false)  throw (\+Exception)
+\item 
+virtual bool \hyperlink{classAudio_1_1OpenALRenderer_aab1e9a5d3f2fbfdd6da039d4adb738bb}{owns} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ sound)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_acfaec02c59fad9ef979903a1163efdc4}{attach} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Source} $>$ source)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_ab3b73edd6387db87461d63a93b95eaf9}{attach} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Listener}{Listener} $>$ listener)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_a58b5e151b4ff99d3ac581519ddee65b4}{detach} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Source} $>$ source)  throw ()
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_a4b8bea8b823c86f74b7928af75231f3e}{detach} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Listener}{Listener} $>$ listener)  throw ()
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_ada98620bc06d5bf68143689736624ade}{set\+Meter\+Distance} (Scalar distance)  throw ()
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_a9361f177b02fb8fe6b0bcda5bbfe95b2}{set\+Doppler\+Factor} (Scalar factor)  throw ()
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_afcc034c847de965fc0aa7330802e2a3c}{set\+Output\+Format} (const \hyperlink{structAudio_1_1Format}{Format} \&format)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_a69143a6869f662ed5be61221ecd21a4e}{begin\+Transaction} ()  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_a6b900a51dc34f303fede8b2210931683}{commit\+Transaction} ()  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_a4019dfda262b1093841b4b6ffcda8963}{check\+Context} ()  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALRenderer_a535403fb2b087b4b10fc2e0c2bf4884a}{init\+Context} ()  throw (\+Exception)
+\item 
+void \hyperlink{classAudio_1_1OpenALRenderer_a0ea0821f7f33c956cdde5fff7e887fe8}{setup\+Doppler\+Effect} ()  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Auto\+Ptr$<$ \hyperlink{structAudio_1_1____impl_1_1OpenAL_1_1RendererData}{\+\_\+\+\_\+impl\+::\+Open\+A\+L\+::\+Renderer\+Data} $>$ {\bfseries data}\hypertarget{classAudio_1_1OpenALRenderer_ae5f592e6093142769bebd2719aa9e899}{}\label{classAudio_1_1OpenALRenderer_ae5f592e6093142769bebd2719aa9e899}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Open\+AL \hyperlink{classAudio_1_1Renderer}{Renderer} implementation
+
+\begin{DoxyRemark}{Remarks}
+Audio renderer implementation based on Open\+AL. 
+\end{DoxyRemark}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!Open\+A\+L\+Renderer@{Open\+A\+L\+Renderer}}
+\index{Open\+A\+L\+Renderer@{Open\+A\+L\+Renderer}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{Open\+A\+L\+Renderer()}{OpenALRenderer()}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Open\+A\+L\+Renderer\+::\+Open\+A\+L\+Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1OpenALRenderer_a318984bd7bf639df66c9d2be1fa0b2c4}{}\label{classAudio_1_1OpenALRenderer_a318984bd7bf639df66c9d2be1fa0b2c4}
+Initialize the renderer with default or config-\/driven settings. 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!attach@{attach}}
+\index{attach@{attach}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{attach(\+Shared\+Ptr$<$ Source $>$ source)}{attach(SharedPtr< Source > source)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::attach (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Source} $>$}]{source}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_acfaec02c59fad9ef979903a1163efdc4}{}\label{classAudio_1_1OpenALRenderer_acfaec02c59fad9ef979903a1163efdc4}
+
+
+
+
+Attach a source to this renderer \begin{DoxyRemark}{Remarks}
+A source may only be attached to one renderer. If the source was attached already, an exception will be thrown. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Attachment may mean resource allocation. Either immediate or deferred. So it may}
+fail if resources are scarce. 
+\end{DoxyParagraph}
+
+
+Implements \hyperlink{classAudio_1_1Renderer_a665f4e39af62afd9468ab1659b8d6778}{Audio\+::\+Renderer}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!attach@{attach}}
+\index{attach@{attach}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{attach(\+Shared\+Ptr$<$ Listener $>$ listener)}{attach(SharedPtr< Listener > listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::attach (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Listener} $>$}]{listener}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_ab3b73edd6387db87461d63a93b95eaf9}{}\label{classAudio_1_1OpenALRenderer_ab3b73edd6387db87461d63a93b95eaf9}
+
+
+
+
+Attach a listener to this renderer \begin{DoxyRemark}{Remarks}
+A listener may only be attached to one renderer. If the listener was attached already, an exception will be thrown. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Attachment may mean resource allocation. Either immediate or deferred. So it may}
+fail if resources are scarce. 
+\end{DoxyParagraph}
+
+
+Implements \hyperlink{classAudio_1_1Renderer_aa653cb44aee16f2de56cfd9624e86de6}{Audio\+::\+Renderer}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!begin\+Transaction@{begin\+Transaction}}
+\index{begin\+Transaction@{begin\+Transaction}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{begin\+Transaction()}{beginTransaction()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::begin\+Transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_a69143a6869f662ed5be61221ecd21a4e}{}\label{classAudio_1_1OpenALRenderer_a69143a6869f662ed5be61221ecd21a4e}
+
+
+
+
+Begins a transaction \begin{DoxyRemark}{Remarks}
+state changes will be piled up and applied at commit. This is, though, an optional feature\+: renderers may choose not to implement it, and perform state changes immediately. In any case, the result ought to be the same. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{classAudio_1_1Renderer_a5d9a9c82271b5e7c95dc2bad45fc750c}{Audio\+::\+Renderer}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!check\+Context@{check\+Context}}
+\index{check\+Context@{check\+Context}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{check\+Context()}{checkContext()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::check\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_a4019dfda262b1093841b4b6ffcda8963}{}\label{classAudio_1_1OpenALRenderer_a4019dfda262b1093841b4b6ffcda8963}
+Makes sure the AL context is valid, creating one if necessary 
+
+Reimplemented in \hyperlink{classAudio_1_1BorrowedOpenALRenderer_a9d18fab66b1017f7e335f2e8d0325927}{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!commit\+Transaction@{commit\+Transaction}}
+\index{commit\+Transaction@{commit\+Transaction}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{commit\+Transaction()}{commitTransaction()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::commit\+Transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_a6b900a51dc34f303fede8b2210931683}{}\label{classAudio_1_1OpenALRenderer_a6b900a51dc34f303fede8b2210931683}
+
+
+
+
+\begin{DoxySeeAlso}{See also}
+begin() 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \hyperlink{classAudio_1_1Renderer_aa2e7492c80f3afa4cb310c0d08a20c62}{Audio\+::\+Renderer}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!detach@{detach}}
+\index{detach@{detach}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{detach(\+Shared\+Ptr$<$ Source $>$ source)}{detach(SharedPtr< Source > source)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::detach (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Source} $>$}]{source}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_a58b5e151b4ff99d3ac581519ddee65b4}{}\label{classAudio_1_1OpenALRenderer_a58b5e151b4ff99d3ac581519ddee65b4}
+
+
+
+
+Detach a source from this renderer. \begin{DoxyRemark}{Remarks}
+Immediately frees any allocated resources. 
+\end{DoxyRemark}
+
+
+Implements \hyperlink{classAudio_1_1Renderer_a9db43622e827ecb0ffec8809975e3d70}{Audio\+::\+Renderer}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!detach@{detach}}
+\index{detach@{detach}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{detach(\+Shared\+Ptr$<$ Listener $>$ listener)}{detach(SharedPtr< Listener > listener)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::detach (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Listener} $>$}]{listener}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_a4b8bea8b823c86f74b7928af75231f3e}{}\label{classAudio_1_1OpenALRenderer_a4b8bea8b823c86f74b7928af75231f3e}
+
+
+
+
+Detach a listener from this renderer. \begin{DoxyRemark}{Remarks}
+Immediately frees any allocated resources. 
+\end{DoxyRemark}
+
+
+Implements \hyperlink{classAudio_1_1Renderer_a9c02e21440c41266752a9f058ee5fe23}{Audio\+::\+Renderer}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!get\+Sound@{get\+Sound}}
+\index{get\+Sound@{get\+Sound}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{get\+Sound(const std\+::string \&name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=\+V\+S\+File\+System\+::\+Unknown\+File, bool streaming=false)}{getSound(const std::string &name, VSFileSystem::VSFileType type=VSFileSystem::UnknownFile, bool streaming=false)}}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<$ {\bf Sound} $>$ Audio\+::\+Open\+A\+L\+Renderer\+::get\+Sound (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type = {\ttfamily VSFileSystem\+:\+:UnknownFile}, }
+\item[{bool}]{streaming = {\ttfamily false}}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_afabd7c8e9655c9cf3c099044e9065cb3}{}\label{classAudio_1_1OpenALRenderer_afabd7c8e9655c9cf3c099044e9065cb3}
+
+
+
+
+Create a sound, from the stream of the specified name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The path of the soundfile. \\
+\hline
+{\em type} & The file type (needed by the filesystem). \\
+\hline
+{\em straeming} & If true, requests for a streaming sound -\/ one that is not loaded to memory for playback, but rather read on-\/demand during playback. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The name is the path of a soundstream as it would be passed to the \hyperlink{classAudio_1_1CodecRegistry}{Codec\+Registry}. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Streaming sounds can also be created, which depending on the renderer implementation}
+may or may not result in a different kind of sound resource. Most notably, the difference may depend on runtime-\/dependant state. For instance, it is quite reasonable that a streaming sound won\textquotesingle{}t be created if the same sound file exists in a non-\/streaming form. 
+\end{DoxyParagraph}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1CodecRegistry}{Codec\+Registry} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1Renderer_a540813191ac8b7e8fac070f15e7c1203}{Audio\+::\+Renderer}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!init\+Context@{init\+Context}}
+\index{init\+Context@{init\+Context}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{init\+Context()}{initContext()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::init\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_a535403fb2b087b4b10fc2e0c2bf4884a}{}\label{classAudio_1_1OpenALRenderer_a535403fb2b087b4b10fc2e0c2bf4884a}
+Sets expected defaults into the context \index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!owns@{owns}}
+\index{owns@{owns}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{owns(\+Shared\+Ptr$<$ Sound $>$ sound)}{owns(SharedPtr< Sound > sound)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Open\+A\+L\+Renderer\+::owns (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Sound} $>$}]{sound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_aab1e9a5d3f2fbfdd6da039d4adb738bb}{}\label{classAudio_1_1OpenALRenderer_aab1e9a5d3f2fbfdd6da039d4adb738bb}
+
+
+
+
+Return whether the specified sound has been created using this renderer or not 
+
+Implements \hyperlink{classAudio_1_1Renderer_af0626584595b61d0dd7aecbee7b33105}{Audio\+::\+Renderer}.
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!set\+Doppler\+Factor@{set\+Doppler\+Factor}}
+\index{set\+Doppler\+Factor@{set\+Doppler\+Factor}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{set\+Doppler\+Factor(\+Scalar factor)}{setDopplerFactor(Scalar factor)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::set\+Doppler\+Factor (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{factor}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_a9361f177b02fb8fe6b0bcda5bbfe95b2}{}\label{classAudio_1_1OpenALRenderer_a9361f177b02fb8fe6b0bcda5bbfe95b2}
+
+
+
+
+Sets how much the doppler effect will be accounted for. \begin{DoxyRemark}{Remarks}
+This sets a semi-\/opaque value which controls how much of the doppler effect will be simulated. All that is required is that 0 maps to fully disabled doppler effect, 1 maps to a realistic effect, in between a disimulated effect, and above 1 an exaggerated effect. The spec is purposefully vague on the specifics. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{classAudio_1_1Renderer_af8f874c06faff24928a4f7504208d353}{Audio\+::\+Renderer}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/da7/classAudio_1_1OpenALRenderer_a9361f177b02fb8fe6b0bcda5bbfe95b2_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!set\+Meter\+Distance@{set\+Meter\+Distance}}
+\index{set\+Meter\+Distance@{set\+Meter\+Distance}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{set\+Meter\+Distance(\+Scalar distance)}{setMeterDistance(Scalar distance)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::set\+Meter\+Distance (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{distance}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_ada98620bc06d5bf68143689736624ade}{}\label{classAudio_1_1OpenALRenderer_ada98620bc06d5bf68143689736624ade}
+
+
+
+
+Sets the distance in world units that represents one meter. \begin{DoxyRemark}{Remarks}
+This reference distance is required by environmental effect processing to accurately account for distance factors beyond simple gain falloff. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{classAudio_1_1Renderer_ae504ccc3aad486fd43ea5a29c4925e4b}{Audio\+::\+Renderer}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/da7/classAudio_1_1OpenALRenderer_ada98620bc06d5bf68143689736624ade_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!set\+Output\+Format@{set\+Output\+Format}}
+\index{set\+Output\+Format@{set\+Output\+Format}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{set\+Output\+Format(const Format \&format)}{setOutputFormat(const Format &format)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::set\+Output\+Format (
+\begin{DoxyParamCaption}
+\item[{const {\bf Format} \&}]{format}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALRenderer_afcc034c847de965fc0aa7330802e2a3c}{}\label{classAudio_1_1OpenALRenderer_afcc034c847de965fc0aa7330802e2a3c}
+
+
+
+
+Sets the (preferred) output format. \begin{DoxyRemark}{Remarks}
+Renderers are encouraged to set their effective output format to the closest \char`\"{}better\char`\"{} format, where better is defined as either having heigher sampling frequency, bit depth, or number of channels. The effective output format, if known, must be reflected in subsequent calls to get\+Output\+Format. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{classAudio_1_1Renderer_a7391a38b1a07158d53467d1019c741e9}{Audio\+::\+Renderer}.
+
+
+
+Reimplemented in \hyperlink{classAudio_1_1BorrowedOpenALRenderer_a67db564a97a04c1efc4840e3bd5947ad}{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/da7/classAudio_1_1OpenALRenderer_afcc034c847de965fc0aa7330802e2a3c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}!setup\+Doppler\+Effect@{setup\+Doppler\+Effect}}
+\index{setup\+Doppler\+Effect@{setup\+Doppler\+Effect}!Audio\+::\+Open\+A\+L\+Renderer@{Audio\+::\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{setup\+Doppler\+Effect()}{setupDopplerEffect()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Renderer\+::setup\+Doppler\+Effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1OpenALRenderer_a0ea0821f7f33c956cdde5fff7e887fe8}{}\label{classAudio_1_1OpenALRenderer_a0ea0821f7f33c956cdde5fff7e887fe8}
+Sets doppler effect globals into the context 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Renderer.\+h\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Renderer.\+cpp\end{DoxyCompactItemize}

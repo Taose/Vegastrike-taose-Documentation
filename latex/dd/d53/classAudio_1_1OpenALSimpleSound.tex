@@ -1,0 +1,163 @@
+\hypertarget{classAudio_1_1OpenALSimpleSound}{}\section{Audio\+:\+:Open\+A\+L\+Simple\+Sound Class Reference}
+\label{classAudio_1_1OpenALSimpleSound}\index{Audio\+::\+Open\+A\+L\+Simple\+Sound@{Audio\+::\+Open\+A\+L\+Simple\+Sound}}
+
+
+{\ttfamily \#include $<$Open\+A\+L\+Simple\+Sound.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Open\+A\+L\+Simple\+Sound\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/dd7/classAudio_1_1OpenALSimpleSound__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Open\+A\+L\+Simple\+Sound\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/d47/classAudio_1_1OpenALSimpleSound__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1OpenALSimpleSound_a86bc76d9a69435d7e20a781331f4b998}{Open\+A\+L\+Simple\+Sound} (const std\+::string \&name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=V\+S\+File\+System\+::\+Unknown\+File)  throw ()
+\item 
+A\+L\+Buffer\+Handle \hyperlink{classAudio_1_1OpenALSimpleSound_a0742c186bb9a64bd24a4bb00944817dd}{get\+Al\+Buffer} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALSimpleSound_a53277103288edb5e5815acd168d2349a}{load\+Impl} (bool wait)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1OpenALSimpleSound_a75a9fdcc97dcfa801cbb602c86402810}{unload\+Impl} ()  throw ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Open\+AL Simple \hyperlink{classAudio_1_1Sound}{Sound} implementation class
+
+\begin{DoxyRemark}{Remarks}
+This class implements simple (non-\/streaming) Open\+AL sounds. This will load the whole sound into a single Open\+AL buffer. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Sound}{Sound}, \hyperlink{classAudio_1_1SimpleSound}{Simple\+Sound} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Open\+A\+L\+Simple\+Sound@{Audio\+::\+Open\+A\+L\+Simple\+Sound}!Open\+A\+L\+Simple\+Sound@{Open\+A\+L\+Simple\+Sound}}
+\index{Open\+A\+L\+Simple\+Sound@{Open\+A\+L\+Simple\+Sound}!Audio\+::\+Open\+A\+L\+Simple\+Sound@{Audio\+::\+Open\+A\+L\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{Open\+A\+L\+Simple\+Sound(const std\+::string \&name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=\+V\+S\+File\+System\+::\+Unknown\+File)}{OpenALSimpleSound(const std::string &name, VSFileSystem::VSFileType type=VSFileSystem::UnknownFile)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Open\+A\+L\+Simple\+Sound\+::\+Open\+A\+L\+Simple\+Sound (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type = {\ttfamily VSFileSystem\+:\+:UnknownFile}}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1OpenALSimpleSound_a86bc76d9a69435d7e20a781331f4b998}{}\label{classAudio_1_1OpenALSimpleSound_a86bc76d9a69435d7e20a781331f4b998}
+Internal constructor used by derived classes 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Open\+A\+L\+Simple\+Sound@{Audio\+::\+Open\+A\+L\+Simple\+Sound}!get\+Al\+Buffer@{get\+Al\+Buffer}}
+\index{get\+Al\+Buffer@{get\+Al\+Buffer}!Audio\+::\+Open\+A\+L\+Simple\+Sound@{Audio\+::\+Open\+A\+L\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{get\+Al\+Buffer() const }{getAlBuffer() const }}]{\setlength{\rightskip}{0pt plus 5cm}A\+L\+Buffer\+Handle Audio\+::\+Open\+A\+L\+Simple\+Sound\+::get\+Al\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1OpenALSimpleSound_a0742c186bb9a64bd24a4bb00944817dd}{}\label{classAudio_1_1OpenALSimpleSound_a0742c186bb9a64bd24a4bb00944817dd}
+Package-\/private\+: the Open\+AL renderer package uses this, Y\+OU D\+ON\textquotesingle{}T 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d53/classAudio_1_1OpenALSimpleSound_a0742c186bb9a64bd24a4bb00944817dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Simple\+Sound@{Audio\+::\+Open\+A\+L\+Simple\+Sound}!load\+Impl@{load\+Impl}}
+\index{load\+Impl@{load\+Impl}!Audio\+::\+Open\+A\+L\+Simple\+Sound@{Audio\+::\+Open\+A\+L\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{load\+Impl(bool wait)}{loadImpl(bool wait)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Simple\+Sound\+::load\+Impl (
+\begin{DoxyParamCaption}
+\item[{bool}]{wait}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALSimpleSound_a53277103288edb5e5815acd168d2349a}{}\label{classAudio_1_1OpenALSimpleSound_a53277103288edb5e5815acd168d2349a}
+
+
+
+
+Load the resource \begin{DoxyNote}{Note}
+Assume it is unloaded and not loading 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classAudio_1_1Sound_a32acc8687f9c7f0741363c73fd8ff5e1}{Audio\+::\+Sound}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d53/classAudio_1_1OpenALSimpleSound_a53277103288edb5e5815acd168d2349a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d53/classAudio_1_1OpenALSimpleSound_a53277103288edb5e5815acd168d2349a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Open\+A\+L\+Simple\+Sound@{Audio\+::\+Open\+A\+L\+Simple\+Sound}!unload\+Impl@{unload\+Impl}}
+\index{unload\+Impl@{unload\+Impl}!Audio\+::\+Open\+A\+L\+Simple\+Sound@{Audio\+::\+Open\+A\+L\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{unload\+Impl()}{unloadImpl()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Open\+A\+L\+Simple\+Sound\+::unload\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1OpenALSimpleSound_a75a9fdcc97dcfa801cbb602c86402810}{}\label{classAudio_1_1OpenALSimpleSound_a75a9fdcc97dcfa801cbb602c86402810}
+
+
+
+
+Unload the resource. \begin{DoxyNote}{Note}
+Assume it is loaded 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classAudio_1_1Sound_a01bd788703f9ac9855ed6e52045f344c}{Audio\+::\+Sound}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d53/classAudio_1_1OpenALSimpleSound_a75a9fdcc97dcfa801cbb602c86402810_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Simple\+Sound.\+h\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Simple\+Sound.\+cpp\end{DoxyCompactItemize}

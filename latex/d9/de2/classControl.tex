@@ -1,0 +1,112 @@
+\hypertarget{classControl}{}\section{Control Class Reference}
+\label{classControl}\index{Control@{Control}}
+
+
+Inheritance diagram for Control\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d45/classControl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Control\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/de6/classControl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classRect}{Rect} {\bfseries rect} (void)\hypertarget{classControl_a569c1fdc6ea2f4514cf6fcec2ce40875}{}\label{classControl_a569c1fdc6ea2f4514cf6fcec2ce40875}
+
+\item 
+virtual void {\bfseries set\+Rect} (const \hyperlink{classRect}{Rect} \&r)\hypertarget{classControl_a2dadab62e6a1bcf15c3ec16db3df9346}{}\label{classControl_a2dadab62e6a1bcf15c3ec16db3df9346}
+
+\item 
+virtual bool {\bfseries hit\+Test} (const \hyperlink{classPoint}{Point} \&p)\hypertarget{classControl_acca4a39f312b22762ffe1b63186460c2}{}\label{classControl_acca4a39f312b22762ffe1b63186460c2}
+
+\item 
+virtual bool {\bfseries hidden} (void)\hypertarget{classControl_a002c9a2dfcccd6bf7a7f5b428fa88ca4}{}\label{classControl_a002c9a2dfcccd6bf7a7f5b428fa88ca4}
+
+\item 
+virtual void {\bfseries set\+Hidden} (bool h=true)\hypertarget{classControl_a0606de6ff054f80fed7f29e451a7663a}{}\label{classControl_a0606de6ff054f80fed7f29e451a7663a}
+
+\item 
+virtual const std\+::string \& {\bfseries id} (void)\hypertarget{classControl_a8721efbbb7b42f0dd36c79a76540993b}{}\label{classControl_a8721efbbb7b42f0dd36c79a76540993b}
+
+\item 
+virtual void {\bfseries set\+Id} (const std\+::string \&new\+Id)\hypertarget{classControl_a28cf75180031844cb573b2f2729438b5}{}\label{classControl_a28cf75180031844cb573b2f2729438b5}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries color} (void)\hypertarget{classControl_a14d9529c5c0d6aaf6da28cb61ce39bfb}{}\label{classControl_a14d9529c5c0d6aaf6da28cb61ce39bfb}
+
+\item 
+virtual void {\bfseries set\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classControl_acb91720cc14c817ec3982aa51ca4b6bc}{}\label{classControl_acb91720cc14c817ec3982aa51ca4b6bc}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries outline\+Color} (void)\hypertarget{classControl_adcd9ce32d0a972dfd00cf6c5c27499a8}{}\label{classControl_adcd9ce32d0a972dfd00cf6c5c27499a8}
+
+\item 
+virtual void {\bfseries set\+Outline\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classControl_ab821918402316596740cd0ad050322f3}{}\label{classControl_ab821918402316596740cd0ad050322f3}
+
+\item 
+virtual \hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries text\+Color} (void)\hypertarget{classControl_ab43ee966231a42d175e3bc75e6602776}{}\label{classControl_ab43ee966231a42d175e3bc75e6602776}
+
+\item 
+virtual void {\bfseries set\+Text\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classControl_a8291a4bed2c7d3a946cbc6a4f42d7fc2}{}\label{classControl_a8291a4bed2c7d3a946cbc6a4f42d7fc2}
+
+\item 
+virtual \hyperlink{classFont}{Font} {\bfseries font} (void)\hypertarget{classControl_a9ffe79e4fc6e2fa2c5621f3c4bb74f5b}{}\label{classControl_a9ffe79e4fc6e2fa2c5621f3c4bb74f5b}
+
+\item 
+virtual void {\bfseries set\+Font} (const \hyperlink{classFont}{Font} \&f)\hypertarget{classControl_ad16bd326ce7a1641a44e6b3408192573}{}\label{classControl_ad16bd326ce7a1641a44e6b3408192573}
+
+\item 
+virtual bool {\bfseries has\+Group\+Children} (void)\hypertarget{classControl_ad877ade9b9004ec6681e9b57adae75d2}{}\label{classControl_ad877ade9b9004ec6681e9b57adae75d2}
+
+\item 
+virtual void {\bfseries draw} (void)=0\hypertarget{classControl_a829cbf6ac6876b17801743ed05fce4d6}{}\label{classControl_a829cbf6ac6876b17801743ed05fce4d6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries draw\+Background} (void)\hypertarget{classControl_ada09253ae2b112665339ae808b018f45}{}\label{classControl_ada09253ae2b112665339ae808b018f45}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRect}{Rect} {\bfseries m\+\_\+rect}\hypertarget{classControl_a4f9c50c49ac9062273b2b883936f3607}{}\label{classControl_a4f9c50c49ac9062273b2b883936f3607}
+
+\item 
+std\+::string {\bfseries m\+\_\+id}\hypertarget{classControl_aad2890aa19203348ccaf282c2add2d1d}{}\label{classControl_aad2890aa19203348ccaf282c2add2d1d}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+color}\hypertarget{classControl_af613b0d1634729d9f8b26c93240ef3c7}{}\label{classControl_af613b0d1634729d9f8b26c93240ef3c7}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+outline\+Color}\hypertarget{classControl_a403fc50cfd7f293a85ec0200e752fc97}{}\label{classControl_a403fc50cfd7f293a85ec0200e752fc97}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+text\+Color}\hypertarget{classControl_acb58c70ff0e286d7e4c98e41389ea1fb}{}\label{classControl_acb58c70ff0e286d7e4c98e41389ea1fb}
+
+\item 
+\hyperlink{classFont}{Font} {\bfseries m\+\_\+font}\hypertarget{classControl_addfbeffbc4faaee1e00509f8e6b724e5}{}\label{classControl_addfbeffbc4faaee1e00509f8e6b724e5}
+
+\item 
+bool {\bfseries m\+\_\+hidden}\hypertarget{classControl_acc0beadb9fa738b814929ef6bcdfa39a}{}\label{classControl_acc0beadb9fa738b814929ef6bcdfa39a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/control.\+h\item 
+gui/control.\+cpp\end{DoxyCompactItemize}

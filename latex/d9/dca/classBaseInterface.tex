@@ -1,0 +1,117 @@
+\hypertarget{classBaseInterface}{}\section{Base\+Interface Class Reference}
+\label{classBaseInterface}\index{Base\+Interface@{Base\+Interface}}
+
+
+Collaboration diagram for Base\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/de4/classBaseInterface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBaseInterface_1_1Room}{Room}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Terminate} ()\hypertarget{classBaseInterface_a1e32e79a22d1848c5f4d8ded8d3411e9}{}\label{classBaseInterface_a1e32e79a22d1848c5f4d8ded8d3411e9}
+
+\item 
+void {\bfseries Goto\+Link} (int linknum)\hypertarget{classBaseInterface_ae51f0c4f5e629130c7b77d3ab5109bbd}{}\label{classBaseInterface_ae51f0c4f5e629130c7b77d3ab5109bbd}
+
+\item 
+void {\bfseries Init\+Callbacks} ()\hypertarget{classBaseInterface_afad634fbfb146eb1f2f717e1537655b0}{}\label{classBaseInterface_afad634fbfb146eb1f2f717e1537655b0}
+
+\item 
+void {\bfseries Call\+Common\+Links} (const std\+::string \&name, const std\+::string \&value)\hypertarget{classBaseInterface_a6218db7d82b68c8502873cdcdb1079cf}{}\label{classBaseInterface_a6218db7d82b68c8502873cdcdb1079cf}
+
+\item 
+void {\bfseries Load} (const char $\ast$filename, const char $\ast$time\+\_\+of\+\_\+day, const char $\ast$faction)\hypertarget{classBaseInterface_a5064c3dd44f4276d97fef696c1f0ee6f}{}\label{classBaseInterface_a5064c3dd44f4276d97fef696c1f0ee6f}
+
+\item 
+void {\bfseries Click} (int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, int button, int state)\hypertarget{classBaseInterface_a8694438607fd36b1a0a1161aa3aa55e9}{}\label{classBaseInterface_a8694438607fd36b1a0a1161aa3aa55e9}
+
+\item 
+void {\bfseries Key} (unsigned int ch, unsigned int mod, bool release, int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classBaseInterface_a575d78acd3eb80b9c92f0c2eda6b88a0}{}\label{classBaseInterface_a575d78acd3eb80b9c92f0c2eda6b88a0}
+
+\item 
+void {\bfseries Mouse\+Over} (int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classBaseInterface_a03e878227252b7d3059e7edee24b78a4}{}\label{classBaseInterface_a03e878227252b7d3059e7edee24b78a4}
+
+\item 
+{\bfseries Base\+Interface} (const char $\ast$basefile, \hyperlink{classUnit}{Unit} $\ast$base, \hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classBaseInterface_a6d36c9c516ea290b37e71f3539d58e93}{}\label{classBaseInterface_a6d36c9c516ea290b37e71f3539d58e93}
+
+\item 
+void {\bfseries Draw} ()\hypertarget{classBaseInterface_a14042b459721fc1b13e8fe56fce68976}{}\label{classBaseInterface_a14042b459721fc1b13e8fe56fce68976}
+
+\item 
+void {\bfseries set\+D\+J\+Enabled} (bool enabled)\hypertarget{classBaseInterface_a42eb58c9f0405d900ffaa8519de15ad2}{}\label{classBaseInterface_a42eb58c9f0405d900ffaa8519de15ad2}
+
+\item 
+bool {\bfseries is\+D\+J\+Enabled} () const \hypertarget{classBaseInterface_a156021313f6bc4477c0be1c1d50d3664}{}\label{classBaseInterface_a156021313f6bc4477c0be1c1d50d3664}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Click\+Win} (int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, int button, int state)\hypertarget{classBaseInterface_a19324b59032393f85ae6ab5da22dc5fc}{}\label{classBaseInterface_a19324b59032393f85ae6ab5da22dc5fc}
+
+\item 
+static void {\bfseries Passive\+Mouse\+Over\+Win} (int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classBaseInterface_a5b06f27913f0c5264d093e225d524213}{}\label{classBaseInterface_a5b06f27913f0c5264d093e225d524213}
+
+\item 
+static void {\bfseries Active\+Mouse\+Over\+Win} (int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})\hypertarget{classBaseInterface_adeab0c898b07e108a382d9f310e058c6}{}\label{classBaseInterface_adeab0c898b07e108a382d9f310e058c6}
+
+\item 
+static void {\bfseries Process\+Keyboard\+Buffer} ()\hypertarget{classBaseInterface_a89548dd65819dfae05706ea542f8ffc5}{}\label{classBaseInterface_a89548dd65819dfae05706ea542f8ffc5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries curroom}\hypertarget{classBaseInterface_ac33b060adca6c223f16e844343bc9899}{}\label{classBaseInterface_ac33b060adca6c223f16e844343bc9899}
+
+\item 
+std\+::vector$<$ \hyperlink{classBaseInterface_1_1Room}{Room} $\ast$ $>$ {\bfseries rooms}\hypertarget{classBaseInterface_ae328b79b61564e61761a9fcbb0fc02a7}{}\label{classBaseInterface_ae328b79b61564e61761a9fcbb0fc02a7}
+
+\item 
+\hyperlink{classTextPlane}{Text\+Plane} {\bfseries othtext}\hypertarget{classBaseInterface_aab9e6492e5edcdab1ccf974f6338b782}{}\label{classBaseInterface_aab9e6492e5edcdab1ccf974f6338b782}
+
+\item 
+bool {\bfseries Call\+Comp}\hypertarget{classBaseInterface_acafdf946aa1fd15825f7ec0858cc05c0}{}\label{classBaseInterface_acafdf946aa1fd15825f7ec0858cc05c0}
+
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries caller}\hypertarget{classBaseInterface_ac4f19a5632686c2e0abcdff219ce2ff7}{}\label{classBaseInterface_ac4f19a5632686c2e0abcdff219ce2ff7}
+
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries baseun}\hypertarget{classBaseInterface_ac2837f44c635a0df431d36f779e4dca3}{}\label{classBaseInterface_ac2837f44c635a0df431d36f779e4dca3}
+
+\item 
+std\+::string {\bfseries python\+\_\+kbhandler}\hypertarget{classBaseInterface_aa4cfc38aff849d46fc1682e048de2000}{}\label{classBaseInterface_aa4cfc38aff849d46fc1682e048de2000}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classBaseInterface}{Base\+Interface} $\ast$ {\bfseries Current\+Base} = N\+U\+LL\hypertarget{classBaseInterface_ac2a6fbc455c5f52dd3e3e8d15b03c6e1}{}\label{classBaseInterface_ac2a6fbc455c5f52dd3e3e8d15b03c6e1}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Room}\hypertarget{classBaseInterface_ad579dfb5bd3be0d05d8775896307d9b3}{}\label{classBaseInterface_ad579dfb5bd3be0d05d8775896307d9b3}
+
+\item 
+class {\bfseries Room\+::\+Base\+Talk}\hypertarget{classBaseInterface_a1a3ddb07dae2662cb2eca8ea742168cd}{}\label{classBaseInterface_a1a3ddb07dae2662cb2eca8ea742168cd}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/base.\+h\item 
+cmd/base\+\_\+interface.\+cpp\item 
+cmd/base\+\_\+xml.\+cpp\end{DoxyCompactItemize}

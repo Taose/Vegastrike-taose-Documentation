@@ -1,0 +1,7 @@
+<map id="Audio::Sound::unload" name="Audio::Sound::unload">
+<area shape="rect" id="node2" href="$de/d2d/classAudio_1_1Sound.html#af0eb3f71210b9edbc68dbb6dbd6c5ffa" title="Audio::Sound::isLoading" alt="" coords="419,30,581,56"/>
+<area shape="rect" id="node3" href="$de/d2d/classAudio_1_1Sound.html#ae809e61eb0fe186ad9b0baf0dcb51759" title="Audio::Sound::abortLoad" alt="" coords="203,30,368,56"/>
+<area shape="rect" id="node4" href="$de/d2d/classAudio_1_1Sound.html#aa18c8b54b681491a6346d6df9405c752" title="Audio::Sound::waitLoad" alt="" coords="205,80,365,107"/>
+<area shape="rect" id="node5" href="$de/d2d/classAudio_1_1Sound.html#aedf1e75aa5941f03832b1311409f3207" title="Audio::Sound::isLoaded" alt="" coords="205,131,365,158"/>
+<area shape="rect" id="node6" href="$de/d2d/classAudio_1_1Sound.html#a01bd788703f9ac9855ed6e52045f344c" title="Audio::Sound::unloadImpl" alt="" coords="200,182,371,208"/>
+</map>

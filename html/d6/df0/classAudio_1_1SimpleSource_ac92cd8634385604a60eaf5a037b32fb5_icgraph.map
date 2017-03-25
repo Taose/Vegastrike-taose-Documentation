@@ -1,0 +1,5 @@
+<map id="Audio::SimpleSource::notifySceneAttached" name="Audio::SimpleSource::notifySceneAttached">
+<area shape="rect" id="node2" href="$db/dde/classAudio_1_1SimpleScene.html#a3e7ce780db55bb23bebe5ee90b5c9a37" title="Audio::SimpleScene\l::notifySourcePlaying" alt="" coords="204,39,351,80"/>
+<area shape="rect" id="node3" href="$d6/df0/classAudio_1_1SimpleSource.html#a8aa133d72148aabedb8bdfa885e74b6b" title="Audio::SimpleSource\l::startPlayingImpl" alt="" coords="399,5,543,47"/>
+<area shape="rect" id="node4" href="$d6/df0/classAudio_1_1SimpleSource.html#a364dea7e215b115dee978f1d53e752fc" title="Audio::SimpleSource\l::stopPlayingImpl" alt="" coords="399,71,543,112"/>
+</map>

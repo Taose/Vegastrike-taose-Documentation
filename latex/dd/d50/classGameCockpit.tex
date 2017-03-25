@@ -1,0 +1,213 @@
+\hypertarget{classGameCockpit}{}\section{Game\+Cockpit Class Reference}
+\label{classGameCockpit}\index{Game\+Cockpit@{Game\+Cockpit}}
+
+
+Inheritance diagram for Game\+Cockpit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/ddf/classGameCockpit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Cockpit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d7b/classGameCockpit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries set\+Target\+Label} (const string \&msg)\hypertarget{classGameCockpit_aae5fc2e6199274862b1742a1520f0f3a}{}\label{classGameCockpit_aae5fc2e6199274862b1742a1520f0f3a}
+
+\item 
+virtual string {\bfseries get\+Target\+Label} ()\hypertarget{classGameCockpit_a94c8f776b17a3a2c4a30c5a2f000e56d}{}\label{classGameCockpit_a94c8f776b17a3a2c4a30c5a2f000e56d}
+
+\item 
+void {\bfseries Received\+Target\+Info} ()\hypertarget{classGameCockpit_a72ea240a0bbcac38dd9e45d8fabdcc9d}{}\label{classGameCockpit_a72ea240a0bbcac38dd9e45d8fabdcc9d}
+
+\item 
+void {\bfseries Init\+Static} ()\hypertarget{classGameCockpit_aab82f16dc5dfeb8ef8f692860df041b9}{}\label{classGameCockpit_aab82f16dc5dfeb8ef8f692860df041b9}
+
+\item 
+void {\bfseries Shake} (float amt, int level)\hypertarget{classGameCockpit_a4270bc790c68071204788278261637d2}{}\label{classGameCockpit_a4270bc790c68071204788278261637d2}
+
+\item 
+int {\bfseries Autopilot} (\hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classGameCockpit_a500b6cff2de8d35e0e81337b349088cb}{}\label{classGameCockpit_a500b6cff2de8d35e0e81337b349088cb}
+
+\item 
+void \hyperlink{classGameCockpit_af149854832503d1196ed1ddd4393c6f8}{Restore\+View\+Port} ()\hypertarget{classGameCockpit_af149854832503d1196ed1ddd4393c6f8}{}\label{classGameCockpit_af149854832503d1196ed1ddd4393c6f8}
+
+\begin{DoxyCompactList}\small\item\em Restores the view from the I\+Dentity \hyperlink{classMatrix}{Matrix} needed to draw sprites. \end{DoxyCompactList}\item 
+{\bfseries Game\+Cockpit} (const char $\ast$file, \hyperlink{classUnit}{Unit} $\ast$\hyperlink{classCockpit_a5a28bce27feff8d43de419368eb2da1c}{parent}, const std\+::string \&pilotname)\hypertarget{classGameCockpit_aad80c2889052496e01da34c7ad6d884e}{}\label{classGameCockpit_aad80c2889052496e01da34c7ad6d884e}
+
+\item 
+float \hyperlink{classGameCockpit_a5efc1a5bcdfefbab56592858a749fe3e}{Lookup\+Target\+Stat} (int \hyperlink{structstat}{stat}, \hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classGameCockpit_a5efc1a5bcdfefbab56592858a749fe3e}{}\label{classGameCockpit_a5efc1a5bcdfefbab56592858a749fe3e}
+
+\begin{DoxyCompactList}\small\item\em Looks up a particular \hyperlink{classGauge}{Gauge} stat on target unit. \end{DoxyCompactList}\item 
+float \hyperlink{classGameCockpit_a4855231f4bcdc6deb2d9e9cf26fe42de}{Lookup\+Unit\+Stat} (int \hyperlink{structstat}{stat}, \hyperlink{classUnit}{Unit} $\ast$target)\hypertarget{classGameCockpit_a4855231f4bcdc6deb2d9e9cf26fe42de}{}\label{classGameCockpit_a4855231f4bcdc6deb2d9e9cf26fe42de}
+
+\begin{DoxyCompactList}\small\item\em Looks up a particular \hyperlink{classGauge}{Gauge} stat on unit. \end{DoxyCompactList}\item 
+void \hyperlink{classGameCockpit_ac6830c42b8dab613f34a7415fd936811}{Init} (const char $\ast$file)\hypertarget{classGameCockpit_ac6830c42b8dab613f34a7415fd936811}{}\label{classGameCockpit_ac6830c42b8dab613f34a7415fd936811}
+
+\begin{DoxyCompactList}\small\item\em Loads cockpit info...just as constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classGameCockpit_a558479694454a63b1ec53f2df316e1ae}{Draw} ()\hypertarget{classGameCockpit_a558479694454a63b1ec53f2df316e1ae}{}\label{classGameCockpit_a558479694454a63b1ec53f2df316e1ae}
+
+\begin{DoxyCompactList}\small\item\em Draws \hyperlink{classCockpit}{Cockpit} then restores viewport. \end{DoxyCompactList}\item 
+void {\bfseries Upd\+Auto\+Pilot} ()\hypertarget{classGameCockpit_a5829510d1626a56f1524c388cf0629ed}{}\label{classGameCockpit_a5829510d1626a56f1524c388cf0629ed}
+
+\item 
+void \hyperlink{classGameCockpit_aeed9336123c6121fc87de959c35c1d4b}{Setup\+View\+Port} (bool clip=true)\hypertarget{classGameCockpit_aeed9336123c6121fc87de959c35c1d4b}{}\label{classGameCockpit_aeed9336123c6121fc87de959c35c1d4b}
+
+\begin{DoxyCompactList}\small\item\em Sets up the world for rendering...call before draw. \end{DoxyCompactList}\item 
+int {\bfseries get\+V\+D\+U\+Mode} (int vdunum)\hypertarget{classGameCockpit_ad40f186dcdfcf0e357fcd802ba432201}{}\label{classGameCockpit_ad40f186dcdfcf0e357fcd802ba432201}
+
+\item 
+void {\bfseries V\+D\+U\+Switch} (int vdunum)\hypertarget{classGameCockpit_a0edebaa11ecbd68fd27378e63f1d490c}{}\label{classGameCockpit_a0edebaa11ecbd68fd27378e63f1d490c}
+
+\item 
+void {\bfseries Scroll\+V\+DU} (int vdunum, int howmuch)\hypertarget{classGameCockpit_aa1aa002e5af2846d47da67135a815726}{}\label{classGameCockpit_aa1aa002e5af2846d47da67135a815726}
+
+\item 
+void {\bfseries Scroll\+All\+V\+DU} (int howmuch)\hypertarget{classGameCockpit_a78cc3470f7ab32701776bd673f62f3a9}{}\label{classGameCockpit_a78cc3470f7ab32701776bd673f62f3a9}
+
+\item 
+int {\bfseries get\+Scroll\+Offset} (unsigned int whichtype)\hypertarget{classGameCockpit_a6e0e72960ec2cdfdbeaa579c8598ce02}{}\label{classGameCockpit_a6e0e72960ec2cdfdbeaa579c8598ce02}
+
+\item 
+void {\bfseries Select\+Proper\+Camera} ()\hypertarget{classGameCockpit_a21fcb386b15f48ebf6d9a4652499e022}{}\label{classGameCockpit_a21fcb386b15f48ebf6d9a4652499e022}
+
+\item 
+void {\bfseries Eject} ()\hypertarget{classGameCockpit_a5245cf28d392efd2f8218a1dab149d40}{}\label{classGameCockpit_a5245cf28d392efd2f8218a1dab149d40}
+
+\item 
+void {\bfseries Eject\+Dock} ()\hypertarget{classGameCockpit_a6288e1d5dac45a306541afb0675deb89}{}\label{classGameCockpit_a6288e1d5dac45a306541afb0675deb89}
+
+\item 
+void {\bfseries Set\+Sound\+File} (std\+::string sound)\hypertarget{classGameCockpit_a2a4543d2fe241ae5928f2b7f4db91864}{}\label{classGameCockpit_a2a4543d2fe241ae5928f2b7f4db91864}
+
+\item 
+int {\bfseries Get\+Sound\+File} ()\hypertarget{classGameCockpit_a348f6ede9c8e7c356b15d4effc02c001}{}\label{classGameCockpit_a348f6ede9c8e7c356b15d4effc02c001}
+
+\item 
+void {\bfseries Set\+Comm\+Animation} (\hyperlink{classAnimation}{Animation} $\ast$ani, \hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classGameCockpit_a397776a478eb3fe7755b0236396e313c}{}\label{classGameCockpit_a397776a478eb3fe7755b0236396e313c}
+
+\item 
+void {\bfseries Set\+Static\+Animation} ()\hypertarget{classGameCockpit_a503a76cdb764a3e332764ed373cb2ad6}{}\label{classGameCockpit_a503a76cdb764a3e332764ed373cb2ad6}
+
+\item 
+\hyperlink{classNavigationSystem}{Navigation\+System} $\ast$ \hyperlink{classGameCockpit_a839c83cf45c2e81fd0e7268111f72ee3}{Access\+Nav\+System} ()\hypertarget{classGameCockpit_a839c83cf45c2e81fd0e7268111f72ee3}{}\label{classGameCockpit_a839c83cf45c2e81fd0e7268111f72ee3}
+
+\begin{DoxyCompactList}\small\item\em Accesses the current navigationsystem. \end{DoxyCompactList}\item 
+virtual std\+::string {\bfseries Get\+Nav\+Selected\+System} ()\hypertarget{classGameCockpit_a3935c2f78ad115d3341146ed187072d7}{}\label{classGameCockpit_a3935c2f78ad115d3341146ed187072d7}
+
+\item 
+\hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classGameCockpit_ae7f1671e3a0a16a9f95c7f731723b780}{Access\+Camera} ()\hypertarget{classGameCockpit_ae7f1671e3a0a16a9f95c7f731723b780}{}\label{classGameCockpit_ae7f1671e3a0a16a9f95c7f731723b780}
+
+\begin{DoxyCompactList}\small\item\em Accesses the current camera. \end{DoxyCompactList}\item 
+\hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classGameCockpit_aa75767422e3572f0c7e63491fc2a9d60}{Access\+Camera} (int)\hypertarget{classGameCockpit_aa75767422e3572f0c7e63491fc2a9d60}{}\label{classGameCockpit_aa75767422e3572f0c7e63491fc2a9d60}
+
+\begin{DoxyCompactList}\small\item\em Returns the passed in cam. \end{DoxyCompactList}\item 
+void \hyperlink{classGameCockpit_a2b15c1cba09cd14e9642c2282b970274}{Select\+Camera} (int)\hypertarget{classGameCockpit_a2b15c1cba09cd14e9642c2282b970274}{}\label{classGameCockpit_a2b15c1cba09cd14e9642c2282b970274}
+
+\begin{DoxyCompactList}\small\item\em Changes current camera to selected camera. \end{DoxyCompactList}\item 
+void \hyperlink{classGameCockpit_a6325d965c6ba6279596f2e6b5742b8c5}{Set\+Viewport} ()\hypertarget{classGameCockpit_a6325d965c6ba6279596f2e6b5742b8c5}{}\label{classGameCockpit_a6325d965c6ba6279596f2e6b5742b8c5}
+
+\begin{DoxyCompactList}\small\item\em G\+F\+X\+Load\+Matrix proper camera. \end{DoxyCompactList}\item 
+virtual bool {\bfseries Set\+Draw\+Nav\+System} (bool)\hypertarget{classGameCockpit_acc21b525244f307b6c991a79aeb2e369}{}\label{classGameCockpit_acc21b525244f307b6c991a79aeb2e369}
+
+\item 
+virtual bool {\bfseries Can\+Draw\+Nav\+System} ()\hypertarget{classGameCockpit_a3d4bd043a23dfaf3e97e40a2d35d6523}{}\label{classGameCockpit_a3d4bd043a23dfaf3e97e40a2d35d6523}
+
+\item 
+virtual bool {\bfseries Draw\+Nav\+System} ()\hypertarget{classGameCockpit_a89ca60f12c339c54abc4c6c456aff5de}{}\label{classGameCockpit_a89ca60f12c339c54abc4c6c456aff5de}
+
+\item 
+virtual bool {\bfseries Check\+Comm\+Animation} (\hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classGameCockpit_a5d21caeeea0be7a0f7c1cc75ce9f2fea}{}\label{classGameCockpit_a5d21caeeea0be7a0f7c1cc75ce9f2fea}
+
+\item 
+virtual void {\bfseries visit\+System} (std\+::string system\+Name)\hypertarget{classGameCockpit_a3e3405166f05f2f3475d9b0e4a1cebea}{}\label{classGameCockpit_a3e3405166f05f2f3475d9b0e4a1cebea}
+
+\item 
+void {\bfseries Auto\+Landing} ()\hypertarget{classGameCockpit_a9d482100e272fe6edf5cfcf655faa298}{}\label{classGameCockpit_a9d482100e272fe6edf5cfcf655faa298}
+
+\item 
+void {\bfseries Do\+Auto\+Landing} (\hyperlink{classUnit}{Unit} $\ast$, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classGameCockpit_ad6516aa74c7c686475b1bef498807f6d}{}\label{classGameCockpit_ad6516aa74c7c686475b1bef498807f6d}
+
+\item 
+virtual void {\bfseries Set\+Inside\+Pan\+Yaw\+Speed} (float speed)\hypertarget{classGameCockpit_a9ecfe087be123aaecc4634e86cbe4fea}{}\label{classGameCockpit_a9ecfe087be123aaecc4634e86cbe4fea}
+
+\item 
+virtual void {\bfseries Set\+Inside\+Pan\+Pitch\+Speed} (float speed)\hypertarget{classGameCockpit_aa37db680f9456f2bfd57b052e345616d}{}\label{classGameCockpit_aa37db680f9456f2bfd57b052e345616d}
+
+\item 
+bool {\bfseries Is\+Paused} () const \hypertarget{classGameCockpit_ab33b7410f7dfb368161d534613e474e7}{}\label{classGameCockpit_ab33b7410f7dfb368161d534613e474e7}
+
+\item 
+void {\bfseries On\+Pause\+Begin} ()\hypertarget{classGameCockpit_a96fd319de470514178397f6f88f3c1eb}{}\label{classGameCockpit_a96fd319de470514178397f6f88f3c1eb}
+
+\item 
+void {\bfseries On\+Pause\+End} ()\hypertarget{classGameCockpit_acc911cf89c9cd5bfaffb5c9094d20c0a}{}\label{classGameCockpit_acc911cf89c9cd5bfaffb5c9094d20c0a}
+
+\item 
+void {\bfseries On\+Dock\+End} (\hyperlink{classUnit}{Unit} $\ast$station, \hyperlink{classUnit}{Unit} $\ast$unit)\hypertarget{classGameCockpit_a69edc289d43ae27462c1abdbc9505272}{}\label{classGameCockpit_a69edc289d43ae27462c1abdbc9505272}
+
+\item 
+void {\bfseries On\+Jump\+Begin} (\hyperlink{classUnit}{Unit} $\ast$unit)\hypertarget{classGameCockpit_a97bf221652b18494320120630ba3f842}{}\label{classGameCockpit_a97bf221652b18494320120630ba3f842}
+
+\item 
+void {\bfseries On\+Jump\+End} (\hyperlink{classUnit}{Unit} $\ast$unit)\hypertarget{classGameCockpit_aa3faf6d973a33aa7af097edf3ad7811c}{}\label{classGameCockpit_aa3faf6d973a33aa7af097edf3ad7811c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Nav\+Screen} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE k)\hypertarget{classGameCockpit_a87228f7b35ea265058491157a236f7cc}{}\label{classGameCockpit_a87228f7b35ea265058491157a236f7cc}
+
+\item 
+static string {\bfseries getsoundending} (int which=0)\hypertarget{classGameCockpit_aa7d7c70c2508ff47a991e0c5854a04ea}{}\label{classGameCockpit_aa7d7c70c2508ff47a991e0c5854a04ea}
+
+\item 
+static string {\bfseries getsoundfile} (string filename)\hypertarget{classGameCockpit_a13b505fbc8e54965c0d4117cecdfafa9}{}\label{classGameCockpit_a13b505fbc8e54965c0d4117cecdfafa9}
+
+\item 
+static void {\bfseries Respawn} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classGameCockpit_a883d6f019317f4702346f88ab687f2ff}{}\label{classGameCockpit_a883d6f019317f4702346f88ab687f2ff}
+
+\item 
+static void {\bfseries Switch\+Control} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classGameCockpit_abdabfbcb31ab5bc091778b23ce033da6}{}\label{classGameCockpit_abdabfbcb31ab5bc091778b23ce033da6}
+
+\item 
+static void {\bfseries Force\+Switch\+Control} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classGameCockpit_ace03f8a4b0585deb8a115dd4914e1636}{}\label{classGameCockpit_ace03f8a4b0585deb8a115dd4914e1636}
+
+\item 
+static void {\bfseries Turret\+Control} (const \hyperlink{classKBData}{K\+B\+Data} \&, K\+B\+S\+T\+A\+TE)\hypertarget{classGameCockpit_aab8924519fe2c2429b470a89469d9cdc}{}\label{classGameCockpit_aab8924519fe2c2429b470a89469d9cdc}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries text\+Message}\hypertarget{classGameCockpit_aef8822d33319732962a6e4179c835dd6}{}\label{classGameCockpit_aef8822d33319732962a6e4179c835dd6}
+
+\item 
+bool {\bfseries editing\+Text\+Message}\hypertarget{classGameCockpit_a285c1233784801e1975ae8a3af23fa01}{}\label{classGameCockpit_a285c1233784801e1975ae8a3af23fa01}
+
+\item 
+std\+::string {\bfseries auto\+Message}\hypertarget{classGameCockpit_aa9baf9b4a4cb9506615710985ff6f37d}{}\label{classGameCockpit_aa9baf9b4a4cb9506615710985ff6f37d}
+
+\item 
+float {\bfseries auto\+Message\+Time}\hypertarget{classGameCockpit_a1869ca9acd1fe36d5049f8dbd770d551}{}\label{classGameCockpit_a1869ca9acd1fe36d5049f8dbd770d551}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/cockpit.\+h\item 
+gfx/cockpit.\+cpp\item 
+gfx/cockpit\+\_\+xml.\+cpp\end{DoxyCompactItemize}

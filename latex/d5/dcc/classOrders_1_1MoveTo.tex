@@ -1,0 +1,68 @@
+\hypertarget{classOrders_1_1MoveTo}{}\section{Orders\+:\+:Move\+To Class Reference}
+\label{classOrders_1_1MoveTo}\index{Orders\+::\+Move\+To@{Orders\+::\+Move\+To}}
+
+
+Inheritance diagram for Orders\+:\+:Move\+To\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d66/classOrders_1_1MoveTo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Orders\+:\+:Move\+To\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dd0/classOrders_1_1MoveTo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classOrders_1_1MoveTo_a91833fc64357e0af10a98587cbcfb390}{Set\+Afterburn} (bool tf)\hypertarget{classOrders_1_1MoveTo_a91833fc64357e0af10a98587cbcfb390}{}\label{classOrders_1_1MoveTo_a91833fc64357e0af10a98587cbcfb390}
+
+\begin{DoxyCompactList}\small\item\em The last\+\_\+velocity keeps track of the previous velocity so the script may determine if it has crossed over 0 this frame or not. \end{DoxyCompactList}\item 
+\hyperlink{classOrders_1_1MoveTo_a5ad0f90fb74a19d638b287e2a45debb5}{Move\+To} (const Q\+Vector \&target, bool aft, unsigned char switchbacks, bool terminating=true)\hypertarget{classOrders_1_1MoveTo_a5ad0f90fb74a19d638b287e2a45debb5}{}\label{classOrders_1_1MoveTo_a5ad0f90fb74a19d638b287e2a45debb5}
+
+\begin{DoxyCompactList}\small\item\em takes in the destination target, whether afterburners should be applied, and the ammount of accuracy (how many times it shoudl miss destination and come back) should be used \end{DoxyCompactList}\item 
+void \hyperlink{classOrders_1_1MoveTo_a3828d1174d70a6a9430a699f8e6687c8}{Set\+Dest} (const Q\+Vector \&)
+\item 
+virtual void \hyperlink{classOrders_1_1MoveTo_a582419df298cdfdcf5862364b54dcce3}{Execute} ()\hypertarget{classOrders_1_1MoveTo_a582419df298cdfdcf5862364b54dcce3}{}\label{classOrders_1_1MoveTo_a582419df298cdfdcf5862364b54dcce3}
+
+\begin{DoxyCompactList}\small\item\em The function that gets called and executes all queued suborders. \end{DoxyCompactList}\item 
+virtual string {\bfseries get\+Order\+Description} ()\hypertarget{classOrders_1_1MoveTo_aa6cf601b9c8c19f13c619629eec8d324}{}\label{classOrders_1_1MoveTo_aa6cf601b9c8c19f13c619629eec8d324}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Orders\+::\+Move\+To@{Orders\+::\+Move\+To}!Set\+Dest@{Set\+Dest}}
+\index{Set\+Dest@{Set\+Dest}!Orders\+::\+Move\+To@{Orders\+::\+Move\+To}}
+\subsubsection[{\texorpdfstring{Set\+Dest(const Q\+Vector \&)}{SetDest(const QVector &)}}]{\setlength{\rightskip}{0pt plus 5cm}void Move\+To\+::\+Set\+Dest (
+\begin{DoxyParamCaption}
+\item[{const Q\+Vector \&}]{target}
+\end{DoxyParamCaption}
+)}\hypertarget{classOrders_1_1MoveTo_a3828d1174d70a6a9430a699f8e6687c8}{}\label{classOrders_1_1MoveTo_a3828d1174d70a6a9430a699f8e6687c8}
+The Time We need to start slowing down from the now calculation. k = num simulation atoms before we slow down. m = num sim atoms till we stop R = P = 1 We know v + S$\ast$k$\ast$a-\/\+S$\ast$m$\ast$d=0 (stopped at end) m = v/(d$\ast$S)+k$\ast$a/d L = a$\ast$\+S$^\wedge$2 (k$\ast$(k+R)$\ast$.5) -\/ d$\ast$\+S$^\wedge$2 (m$\ast$(m+P)$\ast$.5) + v$\ast$(k+m)$\ast$S L = .5$\ast$a$\ast$k$^\wedge$2$\ast$\+S$^\wedge$2+.5$\ast$a$\ast$k$\ast$\+R$\ast$s$^\wedge$2 -\/ .5$\ast$d$\ast$\+S$^\wedge$2 (k$\ast$a/d + v/(d$\ast$S))$\ast$(k$\ast$a/d+v/(d$\ast$S)+P) + S$\ast$v$\ast$(v/(d$\ast$S) + k$\ast$a/d + k) L = k$^\wedge$2 (.5$\ast$a$\ast$\+S$^\wedge$2) +.5$\ast$a$\ast$k$\ast$\+R$\ast$\+S$^\wedge$2 -\/ .5$\ast$d$\ast$\+S$^\wedge$2 (k$^\wedge$2 a$^\wedge$2 / d$^\wedge$2 + 2$\ast$(k$\ast$a/d)$\ast$v/(dS) + v$^\wedge$2/(d$^\wedge$2 s$^\wedge$2) + Pk$\ast$a/d + P $\ast$ v/(d$\ast$S)) + v$^\wedge$2/d + S$\ast$v$\ast$k (a/d + 1) 0 = k$^\wedge$2 (.5$\ast$a$\ast$\+S$\ast$\+S$\ast$(1-\/a/d)) + k$\ast$\+S$\ast$( .5$\ast$\+R$\ast$a$\ast$S -\/ .5$\ast$\+P$\ast$a$\ast$\+S-\/ .5$\ast$2$\ast$a$\ast$v/d+v(1+a/d)) + v$\ast$v/d-\/.5$\ast$v$\ast$v/d-\/ P$\ast$v$\ast$\+S$\ast$.5 -\/ L 0 = (k$\ast$S)$^\wedge$2 $\ast$(.5$\ast$a$\ast$(1-\/a/d)) + k$\ast$\+S$\ast$v + v$^\wedge$2/(2d) -\/ v\+S/2 -\/L kS = -\/v (+/-\/) sqrtf (v$\ast$v-\/a$\ast$(1-\/a/d)$\ast$(v$\ast$v/d-\/v\+S-\/L))/(a$\ast$(1-\/a/d)) 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dcc/classOrders_1_1MoveTo_a3828d1174d70a6a9430a699f8e6687c8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/navigation.\+h\item 
+cmd/ai/navigation.\+cpp\end{DoxyCompactItemize}

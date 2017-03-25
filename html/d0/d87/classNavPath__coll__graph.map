@@ -1,0 +1,4 @@
+<map id="NavPath" name="NavPath">
+<area shape="rect" id="node3" href="$d6/d71/classPathNode.html" title="{PathNode\n||+ isAbsolute()\l+ isSourceable()\l+ isCurrentDependant()\l+ isTargetDependant()\l+ getRequiredPath()\l+ getDescription()\l+ initSearchQueue()\l+ isDestination()\l+ clone()\l+ PathNode()\l+ ~PathNode()\l}" alt="" coords="84,5,243,229"/>
+<area shape="rect" id="node4" href="$d2/d7d/structGFXColor.html" title="{GFXColor\n|+ r\l+ g\l+ b\l+ a\l|+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ netswap()\l+ clamp()\l}" alt="" coords="267,20,367,215"/>
+</map>

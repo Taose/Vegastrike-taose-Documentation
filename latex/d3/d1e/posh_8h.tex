@@ -1,0 +1,263 @@
+\hypertarget{posh_8h}{}\section{posh.\+h File Reference}
+\label{posh_8h}\index{posh.\+h@{posh.\+h}}
+
+
+Portable Open Source Harness header file.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d55/posh_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__OSSymbols_ga60c596449ab81cea386504ea09d26596}{P\+O\+S\+H\+\_\+\+O\+S\+\_\+\+E\+M\+B\+E\+D\+D\+ED}
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+O\+S\+\_\+\+S\+T\+R\+I\+NG}~\char`\"{}Embedded/Unknown\char`\"{}\hypertarget{posh_8h_a9fcc8b54c82b6d26fe879a26ec13a022}{}\label{posh_8h_a9fcc8b54c82b6d26fe879a26ec13a022}
+
+\item 
+\#define \hyperlink{posh_8h_a20a280accfc7054d07fa4a470dcffde0}{P\+O\+S\+H\+\_\+\+C\+D\+E\+CL}
+\item 
+\#define \hyperlink{posh_8h_ab6197da81ed81bfa16a7c5ac6e9bfaa1}{P\+O\+S\+H\+\_\+\+S\+T\+D\+C\+A\+LL}
+\item 
+\#define \hyperlink{posh_8h_a1ec18621ad9693ed0fe80bef91552030}{P\+O\+S\+H\+\_\+\+F\+A\+S\+T\+C\+A\+LL}
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+I\+M\+P\+O\+R\+T\+E\+X\+P\+O\+RT}\hypertarget{posh_8h_aa2cdb678f54dfcd32520af0d7cf481fa}{}\label{posh_8h_aa2cdb678f54dfcd32520af0d7cf481fa}
+
+\item 
+\#define \hyperlink{posh_8h_ae216315c70a1e1216a459d571eec4268}{P\+O\+S\+H\+\_\+\+P\+U\+B\+L\+I\+C\+\_\+\+A\+PI}(rtype)~extern P\+O\+S\+H\+\_\+\+I\+M\+P\+O\+R\+T\+E\+X\+P\+O\+RT rtype
+\item 
+\#define \hyperlink{group__EndianessSymbols_gaa8105a92955da94932bfe81f93420e5a}{P\+O\+S\+H\+\_\+\+B\+I\+G\+\_\+\+E\+N\+D\+I\+AN}~1
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+E\+N\+D\+I\+A\+N\+\_\+\+S\+T\+R\+I\+NG}~\char`\"{}big\char`\"{}
+\item 
+\#define \hyperlink{posh_8h_a06e7810a009b809486903fdef10f3d52}{P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT}(name,  x)~typedef int \+\_\+\+P\+O\+S\+H\+\_\+dummy\+\_\+\#\#name\mbox{[}(x) ? 1 \+: -\/1\mbox{]}
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+Big\+U16}(x)~(x)
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+Big\+U32}(x)~(x)
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+Big\+S16}(x)~(x)
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+Big\+S32}(x)~(x)
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+Little\+U16}(x)~\hyperlink{group__ByteSwapFunctions_ga401e0af0e8d08dba16164b5c8c9b3afd}{P\+O\+S\+H\+\_\+\+Swap\+U16}( x )
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+Little\+U32}(x)~\hyperlink{group__ByteSwapFunctions_ga97f53ca21ec6feab173b13693f714b27}{P\+O\+S\+H\+\_\+\+Swap\+U32}( x )
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+Little\+S16}(x)~\hyperlink{group__ByteSwapFunctions_ga0b4aa282339ed3629dd4517deb777387}{P\+O\+S\+H\+\_\+\+Swap\+S16}( x )
+\item 
+\#define {\bfseries P\+O\+S\+H\+\_\+\+Little\+S32}(x)~\hyperlink{group__ByteSwapFunctions_ga489b591bc4db4d2682be5f69cc5acb24}{P\+O\+S\+H\+\_\+\+Swap\+S32}( x )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \hyperlink{group__PoshTypes_ga3d52997a5402758b6d8cea03bb931f05}{posh\+\_\+byte\+\_\+t}
+\item 
+typedef unsigned char \hyperlink{group__PoshTypes_ga6c9edb76b9a22de1ce694739649d17ea}{posh\+\_\+u8\+\_\+t}
+\item 
+typedef signed char \hyperlink{group__PoshTypes_ga7bbad3ba2e3a2ed629142c297c31ec04}{posh\+\_\+i8\+\_\+t}
+\item 
+typedef signed char \hyperlink{group__PoshTypes_gaded1f017e9a4317ae12199921b77a39e}{posh\+\_\+s8\+\_\+t}
+\item 
+typedef unsigned short \hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t}
+\item 
+typedef short \hyperlink{group__PoshTypes_ga264eadd7cae2a9268478671773189b4a}{posh\+\_\+i16\+\_\+t}
+\item 
+typedef short \hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t}
+\item 
+typedef unsigned \hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t}
+\item 
+typedef int \hyperlink{group__PoshTypes_gad70940538f6f13aff31955da2ceaa48b}{posh\+\_\+i32\+\_\+t}
+\item 
+typedef int \hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT} (\hyperlink{group__PoshTypes_ga3d52997a5402758b6d8cea03bb931f05}{posh\+\_\+byte\+\_\+t}, sizeof(\hyperlink{group__PoshTypes_ga3d52997a5402758b6d8cea03bb931f05}{posh\+\_\+byte\+\_\+t})==1)\hypertarget{posh_8h_accc3a1807664cc82fb53d61dda1e4cd9}{}\label{posh_8h_accc3a1807664cc82fb53d61dda1e4cd9}
+
+\item 
+{\bfseries P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT} (\hyperlink{group__PoshTypes_ga7bbad3ba2e3a2ed629142c297c31ec04}{posh\+\_\+i8\+\_\+t}, sizeof(\hyperlink{group__PoshTypes_ga7bbad3ba2e3a2ed629142c297c31ec04}{posh\+\_\+i8\+\_\+t})==1)\hypertarget{posh_8h_a5355afd1f0271336abbfb02c7b6a0d85}{}\label{posh_8h_a5355afd1f0271336abbfb02c7b6a0d85}
+
+\item 
+{\bfseries P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT} (\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t}, sizeof(\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t})==2)\hypertarget{posh_8h_ad5626d901ddc6ad9b100df4f0a4df334}{}\label{posh_8h_ad5626d901ddc6ad9b100df4f0a4df334}
+
+\item 
+{\bfseries P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT} (\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t}, sizeof(\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t})==2)\hypertarget{posh_8h_a942780cf91e45fee4e3770ceac366ccf}{}\label{posh_8h_a942780cf91e45fee4e3770ceac366ccf}
+
+\item 
+{\bfseries P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT} (\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t}, sizeof(\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t})==4)\hypertarget{posh_8h_a4b33909c28365878b77e78392a533b00}{}\label{posh_8h_a4b33909c28365878b77e78392a533b00}
+
+\item 
+{\bfseries P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT} (\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t}, sizeof(\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t})==4)\hypertarget{posh_8h_ab16604ffdb9091705eacfb389f66e4d5}{}\label{posh_8h_ab16604ffdb9091705eacfb389f66e4d5}
+
+\item 
+{\bfseries P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT} (posh\+\_\+testfloat\+\_\+t, sizeof(float)==4)\hypertarget{posh_8h_a1ae6832bf7b080d6ea2c6163ea5661c2}{}\label{posh_8h_a1ae6832bf7b080d6ea2c6163ea5661c2}
+
+\item 
+{\bfseries P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT} (posh\+\_\+testdouble\+\_\+t, sizeof(double)==8)\hypertarget{posh_8h_aaa75dfae69253e08228703c00fea3391}{}\label{posh_8h_aaa75dfae69253e08228703c00fea3391}
+
+\item 
+{\bfseries P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT} (posh\+\_\+32bit\+\_\+pointer, sizeof(void $\ast$)==4)\hypertarget{posh_8h_a2963c6affd9311cfb630f19ad417f9c5}{}\label{posh_8h_a2963c6affd9311cfb630f19ad417f9c5}
+
+\item 
+const char $\ast$ \hyperlink{group__PoshFunctions_ga535671be0edadd56e44d4d3a89385ae5}{P\+O\+S\+H\+\_\+\+Get\+Arch\+String} (void)
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} \hyperlink{group__FloatingPoint_ga384e7a2791d023062bcd0fb0c56d33cf}{P\+O\+S\+H\+\_\+\+Little\+Float\+Bits} (float f)
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} \hyperlink{group__FloatingPoint_ga1eca8e7b3d6e9f4953765d2bf33b0426}{P\+O\+S\+H\+\_\+\+Big\+Float\+Bits} (float f)
+\item 
+float \hyperlink{group__FloatingPoint_gacefa578ca480f04ec24ce85f7b63634a}{P\+O\+S\+H\+\_\+\+Float\+From\+Little\+Bits} (\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} bits)
+\item 
+float \hyperlink{group__FloatingPoint_ga1556934ccc724bdf546127f4a2945b31}{P\+O\+S\+H\+\_\+\+Float\+From\+Big\+Bits} (\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} bits)
+\item 
+void \hyperlink{group__FloatingPoint_gaf99025b522ae347afdcffae40dcacb8e}{P\+O\+S\+H\+\_\+\+Double\+Bits} (double d, \hyperlink{group__PoshTypes_ga3d52997a5402758b6d8cea03bb931f05}{posh\+\_\+byte\+\_\+t} dst\mbox{[}8\mbox{]})
+\item 
+double \hyperlink{group__FloatingPoint_ga87e8b2d4f305581c96b1edb2345a5dbe}{P\+O\+S\+H\+\_\+\+Double\+From\+Bits} (const \hyperlink{group__PoshTypes_ga3d52997a5402758b6d8cea03bb931f05}{posh\+\_\+byte\+\_\+t} src\mbox{[}8\mbox{]})
+\item 
+float $\ast$ {\bfseries P\+O\+S\+H\+\_\+\+Write\+Float\+To\+Little} (void $\ast$dst, float f)
+\item 
+float $\ast$ {\bfseries P\+O\+S\+H\+\_\+\+Write\+Float\+To\+Big} (void $\ast$dst, float f)
+\item 
+float {\bfseries P\+O\+S\+H\+\_\+\+Read\+Float\+From\+Little} (const void $\ast$src)
+\item 
+float {\bfseries P\+O\+S\+H\+\_\+\+Read\+Float\+From\+Big} (const void $\ast$src)
+\item 
+double $\ast$ {\bfseries P\+O\+S\+H\+\_\+\+Write\+Double\+To\+Little} (void $\ast$dst, double d)
+\item 
+double $\ast$ {\bfseries P\+O\+S\+H\+\_\+\+Write\+Double\+To\+Big} (void $\ast$dst, double d)
+\item 
+double {\bfseries P\+O\+S\+H\+\_\+\+Read\+Double\+From\+Little} (const void $\ast$src)
+\item 
+double {\bfseries P\+O\+S\+H\+\_\+\+Read\+Double\+From\+Big} (const void $\ast$src)
+\item 
+\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} \hyperlink{group__ByteSwapFunctions_ga401e0af0e8d08dba16164b5c8c9b3afd}{P\+O\+S\+H\+\_\+\+Swap\+U16} (\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} u)
+\item 
+\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} \hyperlink{group__ByteSwapFunctions_ga0b4aa282339ed3629dd4517deb777387}{P\+O\+S\+H\+\_\+\+Swap\+S16} (\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} u)
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} \hyperlink{group__ByteSwapFunctions_ga97f53ca21ec6feab173b13693f714b27}{P\+O\+S\+H\+\_\+\+Swap\+U32} (\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} u)
+\item 
+\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} \hyperlink{group__ByteSwapFunctions_ga489b591bc4db4d2682be5f69cc5acb24}{P\+O\+S\+H\+\_\+\+Swap\+S32} (\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} u)
+\item 
+\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} $\ast$ \hyperlink{group__MemoryBuffer_gabc9ddeabcbc3696e7cbbd30d40653292}{P\+O\+S\+H\+\_\+\+Write\+U16\+To\+Little} (void $\ast$dst, \hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} value)
+\item 
+\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} $\ast$ \hyperlink{group__MemoryBuffer_ga59abb65bd711a2cc79d190ed5ebeaf87}{P\+O\+S\+H\+\_\+\+Write\+S16\+To\+Little} (void $\ast$dst, \hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} value)
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} $\ast$ \hyperlink{group__MemoryBuffer_gac0bc12452f6b9a48b61c8fec0897297c}{P\+O\+S\+H\+\_\+\+Write\+U32\+To\+Little} (void $\ast$dst, \hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} value)
+\item 
+\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} $\ast$ \hyperlink{group__MemoryBuffer_ga745f6b6dd96c185f1a63120b20cff195}{P\+O\+S\+H\+\_\+\+Write\+S32\+To\+Little} (void $\ast$dst, \hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} value)
+\item 
+\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} $\ast$ \hyperlink{group__MemoryBuffer_ga8d58963ea4443ea22f0c80552a10504c}{P\+O\+S\+H\+\_\+\+Write\+U16\+To\+Big} (void $\ast$dst, \hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} value)
+\item 
+\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} $\ast$ \hyperlink{group__MemoryBuffer_gaedbeff50ae5ab8bb235c9670d7d50e65}{P\+O\+S\+H\+\_\+\+Write\+S16\+To\+Big} (void $\ast$dst, \hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} value)
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} $\ast$ \hyperlink{group__MemoryBuffer_ga50e70604bd589ee0e31bb05ffa894025}{P\+O\+S\+H\+\_\+\+Write\+U32\+To\+Big} (void $\ast$dst, \hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} value)
+\item 
+\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} $\ast$ \hyperlink{group__MemoryBuffer_ga55857b82054acbe60119c04f5f62f0d4}{P\+O\+S\+H\+\_\+\+Write\+S32\+To\+Big} (void $\ast$dst, \hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} value)
+\item 
+\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} \hyperlink{group__MemoryBuffer_gaf1415105ce1d48d08d2b181b9f7f267e}{P\+O\+S\+H\+\_\+\+Read\+U16\+From\+Little} (const void $\ast$src)
+\item 
+\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} \hyperlink{group__MemoryBuffer_ga9eb41467ccc40d4234447d0f90014911}{P\+O\+S\+H\+\_\+\+Read\+S16\+From\+Little} (const void $\ast$src)
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} \hyperlink{group__MemoryBuffer_gacbf72e43b684db66c0087f51c9bd4967}{P\+O\+S\+H\+\_\+\+Read\+U32\+From\+Little} (const void $\ast$src)
+\item 
+\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} \hyperlink{group__MemoryBuffer_ga2e2ad299e028edd9d050d50dfa3a5575}{P\+O\+S\+H\+\_\+\+Read\+S32\+From\+Little} (const void $\ast$src)
+\item 
+\hyperlink{group__PoshTypes_ga8ef2f2264276677d018795b0ff67d486}{posh\+\_\+u16\+\_\+t} \hyperlink{group__MemoryBuffer_ga896f0a5ea23035ef39e778dbeb409d64}{P\+O\+S\+H\+\_\+\+Read\+U16\+From\+Big} (const void $\ast$src)
+\item 
+\hyperlink{group__PoshTypes_gabb2c3e11f94548b8c3bc63fbbe7c2110}{posh\+\_\+s16\+\_\+t} \hyperlink{group__MemoryBuffer_gaf642e7bebe90a0d68471b9fbc80042d2}{P\+O\+S\+H\+\_\+\+Read\+S16\+From\+Big} (const void $\ast$src)
+\item 
+\hyperlink{group__PoshTypes_ga020bf929bf912667f0fa4312d816c2e0}{posh\+\_\+u32\+\_\+t} \hyperlink{group__MemoryBuffer_ga2e4f347d47fc307e497cc9be04dd22dd}{P\+O\+S\+H\+\_\+\+Read\+U32\+From\+Big} (const void $\ast$src)
+\item 
+\hyperlink{group__PoshTypes_gaa13412fdeac2c495d0e0278bd28ac8cb}{posh\+\_\+s32\+\_\+t} \hyperlink{group__MemoryBuffer_ga28207cf0a49b8eee0fa5ad048f1d0957}{P\+O\+S\+H\+\_\+\+Read\+S32\+From\+Big} (const void $\ast$src)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Portable Open Source Harness header file. 
+
+\begin{DoxyAuthor}{Author}
+Brian Hook, \href{mailto:poshlib@poshlib.org}{\tt poshlib@poshlib.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+0 Header file for P\+O\+SH, the Portable Open Source Harness project.
+\end{DoxyVersion}
+N\+O\+TE\+: Unlike most header files, this one is designed to be included multiple times, which is why it does not have the \#ifndef/\#define preamble.
+
+P\+O\+SH relies on environment specified preprocessor symbols in order to infer as much as possible about the target O\+S/architecture and the host compiler capabilities.
+
+N\+O\+TE\+: P\+O\+SH is simple and focused. It attempts to provide basic functionality and information, but it does N\+OT attempt to emulate missing functionality. I am also not willing to make P\+O\+SH dirty and hackish to support truly ancient and/or outmoded and/or bizarre technologies such as non-\/\+A\+N\+SI compilers, systems with non-\/\+I\+E\+EE floating point formats, 16-\/bit operating systems, etc.
+
+Please refer to the accompanying H\+T\+ML documentation or visit \href{http://www.poshlib.org}{\tt http\+://www.\+poshlib.\+org} for more information on how to use P\+O\+SH. 
+
+\subsection{Macro Definition Documentation}
+\index{posh.\+h@{posh.\+h}!P\+O\+S\+H\+\_\+\+C\+D\+E\+CL@{P\+O\+S\+H\+\_\+\+C\+D\+E\+CL}}
+\index{P\+O\+S\+H\+\_\+\+C\+D\+E\+CL@{P\+O\+S\+H\+\_\+\+C\+D\+E\+CL}!posh.\+h@{posh.\+h}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+C\+D\+E\+CL}{POSH_CDECL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+O\+S\+H\+\_\+\+C\+D\+E\+CL}\hypertarget{posh_8h_a20a280accfc7054d07fa4a470dcffde0}{}\label{posh_8h_a20a280accfc7054d07fa4a470dcffde0}
+Specifies that a function should use the C calling convention. The cdecl convention passes parameters on the stack, with the caller responsible for cleaning up the stack (which in turn allows for variable argument lists). It\textquotesingle{}s marginally slower than the other calling conventions, and is the default calling convention for the C language.
+
+{\ttfamily 
+\begin{DoxyPre}
+\begin{DoxyVerb}*  extern void POSH_CDECL someFunction( const char *, ... );
+*  \end{DoxyVerb}
+
+   \end{DoxyPre}
+}
+
+{\ttfamily \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]need to get a comprehensive list of how cdecl, et. al. are specified \end{DoxyRefDesc}
+}\index{posh.\+h@{posh.\+h}!P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT@{P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT}}
+\index{P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT@{P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT}!posh.\+h@{posh.\+h}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT}{POSH_COMPILE_TIME_ASSERT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+O\+S\+H\+\_\+\+C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+S\+S\+E\+RT(
+\begin{DoxyParamCaption}
+\item[{}]{name, }
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~typedef int \+\_\+\+P\+O\+S\+H\+\_\+dummy\+\_\+\#\#name\mbox{[}(x) ? 1 \+: -\/1\mbox{]}}\hypertarget{posh_8h_a06e7810a009b809486903fdef10f3d52}{}\label{posh_8h_a06e7810a009b809486903fdef10f3d52}
+Cross-\/platform compile time assertion macro that will cause a syntax error at compile time if the assertion \textquotesingle{}x\textquotesingle{} is not true. \index{posh.\+h@{posh.\+h}!P\+O\+S\+H\+\_\+\+F\+A\+S\+T\+C\+A\+LL@{P\+O\+S\+H\+\_\+\+F\+A\+S\+T\+C\+A\+LL}}
+\index{P\+O\+S\+H\+\_\+\+F\+A\+S\+T\+C\+A\+LL@{P\+O\+S\+H\+\_\+\+F\+A\+S\+T\+C\+A\+LL}!posh.\+h@{posh.\+h}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+F\+A\+S\+T\+C\+A\+LL}{POSH_FASTCALL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+O\+S\+H\+\_\+\+F\+A\+S\+T\+C\+A\+LL}\hypertarget{posh_8h_a1ec18621ad9693ed0fe80bef91552030}{}\label{posh_8h_a1ec18621ad9693ed0fe80bef91552030}
+Specifies that a function should use the register/\char`\"{}fastcall\char`\"{} calling convention. The fastcall convention passes as many parameters as possible via registers. If there is an overflow, the remaining parameters are passed on the stack. It is the called function\textquotesingle{}s responsibility to remove clean up the stack.
+
+{\ttfamily 
+\begin{DoxyPre}
+\begin{DoxyVerb}*  extern void POSH_FASTCALL someFunction( int x, int y, int z );
+*  \end{DoxyVerb}
+
+   \end{DoxyPre}
+ }\index{posh.\+h@{posh.\+h}!P\+O\+S\+H\+\_\+\+P\+U\+B\+L\+I\+C\+\_\+\+A\+PI@{P\+O\+S\+H\+\_\+\+P\+U\+B\+L\+I\+C\+\_\+\+A\+PI}}
+\index{P\+O\+S\+H\+\_\+\+P\+U\+B\+L\+I\+C\+\_\+\+A\+PI@{P\+O\+S\+H\+\_\+\+P\+U\+B\+L\+I\+C\+\_\+\+A\+PI}!posh.\+h@{posh.\+h}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+P\+U\+B\+L\+I\+C\+\_\+\+A\+PI}{POSH_PUBLIC_API}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+O\+S\+H\+\_\+\+P\+U\+B\+L\+I\+C\+\_\+\+A\+PI(
+\begin{DoxyParamCaption}
+\item[{}]{rtype}
+\end{DoxyParamCaption}
+)~extern P\+O\+S\+H\+\_\+\+I\+M\+P\+O\+R\+T\+E\+X\+P\+O\+RT rtype}\hypertarget{posh_8h_ae216315c70a1e1216a459d571eec4268}{}\label{posh_8h_ae216315c70a1e1216a459d571eec4268}
+use as a wrapper for all publicly exported functions and data
+
+{\ttfamily {\bfseries P\+O\+S\+H\+\_\+\+P\+U\+B\+L\+I\+C\+\_\+\+A\+PI} should be used as a wrapper around any data or function return type values that are exported from a D\+LL. This macro ensures proper linkage irrespective of compiler.}
+
+{\ttfamily  Example usage\+: 
+\begin{DoxyPre}{\ttfamily 
+\begin{DoxyVerb}*   POSH_PUBLIC_API(int) functionThatReturnsInt( void );
+*   POSH_PUBLIC_API(int) globalIntVariable;
+*   \end{DoxyVerb}
+
+    }
+\end{DoxyPre}
+}\index{posh.\+h@{posh.\+h}!P\+O\+S\+H\+\_\+\+S\+T\+D\+C\+A\+LL@{P\+O\+S\+H\+\_\+\+S\+T\+D\+C\+A\+LL}}
+\index{P\+O\+S\+H\+\_\+\+S\+T\+D\+C\+A\+LL@{P\+O\+S\+H\+\_\+\+S\+T\+D\+C\+A\+LL}!posh.\+h@{posh.\+h}}
+\subsubsection[{\texorpdfstring{P\+O\+S\+H\+\_\+\+S\+T\+D\+C\+A\+LL}{POSH_STDCALL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+O\+S\+H\+\_\+\+S\+T\+D\+C\+A\+LL}\hypertarget{posh_8h_ab6197da81ed81bfa16a7c5ac6e9bfaa1}{}\label{posh_8h_ab6197da81ed81bfa16a7c5ac6e9bfaa1}
+Specifies that a function should use the P\+A\+S\+C\+A\+L/\char`\"{}stdcall\char`\"{} calling convention. The stdcall convention passes parameters on the stack, however the called function is responsible for stack cleanup. This is slightly faster than cdecl, but without the ability to handle variable argument lists. It is also the default calling convention for the Pascal language.
+
+{\ttfamily 
+\begin{DoxyPre}
+\begin{DoxyVerb}*  extern void POSH_STDCALL someFunction( void );
+*  \end{DoxyVerb}
+
+   \end{DoxyPre}
+ }

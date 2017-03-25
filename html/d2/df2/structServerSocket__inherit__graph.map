@@ -1,0 +1,5 @@
+<map id="ServerSocket" name="ServerSocket">
+<area shape="rect" id="node3" href="$d4/dec/classServerSocketTCP.html" title="{ServerSocketTCP\n||+ ServerSocketTCP()\l+ isActive()\l+ acceptNewConn()\l+ lower_selected()\l}" alt="" coords="5,476,153,597"/>
+<area shape="rect" id="node4" href="$de/db9/classServerSocketUDP.html" title="{ServerSocketUDP\n||+ ServerSocketUDP()\l+ isActive()\l+ acceptNewConn()\l+ lower_selected()\l}" alt="" coords="177,476,328,597"/>
+<area shape="rect" id="node2" href="$d1/d38/classVsnetSocketBase.html" title="{VsnetSocketBase\n|# _fd\l# _set\l|+ VsnetSocketBase()\l+ ~VsnetSocketBase()\l+ valid()\l+ get_fd()\l+ close_fd()\l+ get_socktype()\l+ set_block()\l+ set_nonblock()\l+ get_nonblock()\l+ isActive()\land 9 more...\l# child_disconnect()\l}" alt="" coords="89,5,243,259"/>
+</map>

@@ -1,0 +1,89 @@
+\hypertarget{classVsnetDownload_1_1Server_1_1Manager}{}\section{Vsnet\+Download\+:\+:Server\+:\+:Manager Class Reference}
+\label{classVsnetDownload_1_1Server_1_1Manager}\index{Vsnet\+Download\+::\+Server\+::\+Manager@{Vsnet\+Download\+::\+Server\+::\+Manager}}
+
+
+{\ttfamily \#include $<$vsnet\+\_\+dloadmgr.\+h$>$}
+
+
+
+Collaboration diagram for Vsnet\+Download\+:\+:Server\+:\+:Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d9/d8d/classVsnetDownload_1_1Server_1_1Manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Manager} (\hyperlink{classSocketSet}{Socket\+Set} \&set, const char $\ast$$\ast$local\+\_\+search\+\_\+paths)\hypertarget{classVsnetDownload_1_1Server_1_1Manager_af7888d23cb9a3ea4d2307ece74e0f9fc}{}\label{classVsnetDownload_1_1Server_1_1Manager_af7888d23cb9a3ea4d2307ece74e0f9fc}
+
+\item 
+{\bfseries Manager} (\hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{classVsnetDownload_1_1Server_1_1Manager_afe4971497a6953ae458b745220ee3007}{}\label{classVsnetDownload_1_1Server_1_1Manager_afe4971497a6953ae458b745220ee3007}
+
+\item 
+void \hyperlink{classVsnetDownload_1_1Server_1_1Manager_a13b3ea2c81edc5aa79b992921017c370}{add\+Cmd\+Download} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} sock, \hyperlink{classNetBuffer}{Net\+Buffer} \&buffer)
+\item 
+void \hyperlink{classVsnetDownload_1_1Server_1_1Manager_ac92eead82876c392edce9db03bfb053a}{clean\+Download} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} s)
+\item 
+void \hyperlink{classVsnetDownload_1_1Server_1_1Manager_ae8dab1180970773032769c9684102bf2}{lower\+\_\+check\+\_\+queues} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The download manager on the server side works in the networking thread as well. It does not catch C\+M\+D\+\_\+\+D\+O\+W\+N\+L\+O\+AD messages from the client, but it is handed these requests by Net\+Server\+::process\+Packet. It doesn\textquotesingle{}t care about the client, but only about the socket that connects the server to the client. The download manager could run in a separate process, but that would make it very difficult to manage the connection bandwidth. 
+
+\subsection{Member Function Documentation}
+\index{Vsnet\+Download\+::\+Server\+::\+Manager@{Vsnet\+Download\+::\+Server\+::\+Manager}!add\+Cmd\+Download@{add\+Cmd\+Download}}
+\index{add\+Cmd\+Download@{add\+Cmd\+Download}!Vsnet\+Download\+::\+Server\+::\+Manager@{Vsnet\+Download\+::\+Server\+::\+Manager}}
+\subsubsection[{\texorpdfstring{add\+Cmd\+Download(\+S\+O\+C\+K\+E\+T\+A\+L\+T sock, Net\+Buffer \&buffer)}{addCmdDownload(SOCKETALT sock, NetBuffer &buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vsnet\+Download\+::\+Server\+::\+Manager\+::add\+Cmd\+Download (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T\+A\+LT}}]{sock, }
+\item[{{\bf Net\+Buffer} \&}]{buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{classVsnetDownload_1_1Server_1_1Manager_a13b3ea2c81edc5aa79b992921017c370}{}\label{classVsnetDownload_1_1Server_1_1Manager_a13b3ea2c81edc5aa79b992921017c370}
+Net\+Server\+::process\+Packet calls this. \hyperlink{classNetServer}{Net\+Server} doesn\textquotesingle{}t care, but we process the \hyperlink{classNetBuffer}{Net\+Buffer} actually already in the main thread before triggering wakeup. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/db0/classVsnetDownload_1_1Server_1_1Manager_a13b3ea2c81edc5aa79b992921017c370_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Vsnet\+Download\+::\+Server\+::\+Manager@{Vsnet\+Download\+::\+Server\+::\+Manager}!clean\+Download@{clean\+Download}}
+\index{clean\+Download@{clean\+Download}!Vsnet\+Download\+::\+Server\+::\+Manager@{Vsnet\+Download\+::\+Server\+::\+Manager}}
+\subsubsection[{\texorpdfstring{clean\+Download(\+S\+O\+C\+K\+E\+T\+A\+L\+T s)}{cleanDownload(SOCKETALT s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vsnet\+Download\+::\+Server\+::\+Manager\+::clean\+Download (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T\+A\+LT}}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classVsnetDownload_1_1Server_1_1Manager_ac92eead82876c392edce9db03bfb053a}{}\label{classVsnetDownload_1_1Server_1_1Manager_ac92eead82876c392edce9db03bfb053a}
+The \hyperlink{classNetServer}{Net\+Server} must tell the download manager that a socket has been closed or is otherwise expired. \+: function needs cleanup (via mutex or private\+\_\+lower$\ast$) -\/ there is a bad race right now. \index{Vsnet\+Download\+::\+Server\+::\+Manager@{Vsnet\+Download\+::\+Server\+::\+Manager}!lower\+\_\+check\+\_\+queues@{lower\+\_\+check\+\_\+queues}}
+\index{lower\+\_\+check\+\_\+queues@{lower\+\_\+check\+\_\+queues}!Vsnet\+Download\+::\+Server\+::\+Manager@{Vsnet\+Download\+::\+Server\+::\+Manager}}
+\subsubsection[{\texorpdfstring{lower\+\_\+check\+\_\+queues()}{lower_check_queues()}}]{\setlength{\rightskip}{0pt plus 5cm}void Vsnet\+Download\+::\+Server\+::\+Manager\+::lower\+\_\+check\+\_\+queues (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classVsnetDownload_1_1Server_1_1Manager_ae8dab1180970773032769c9684102bf2}{}\label{classVsnetDownload_1_1Server_1_1Manager_ae8dab1180970773032769c9684102bf2}
+Called by \hyperlink{classSocketSet}{Socket\+Set} after each round. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/db0/classVsnetDownload_1_1Server_1_1Manager_ae8dab1180970773032769c9684102bf2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+dloadmgr.\+h\item 
+networking/lowlevel/vsnet\+\_\+dloadmgr.\+cpp\end{DoxyCompactItemize}

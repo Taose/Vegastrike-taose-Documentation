@@ -1,0 +1,64 @@
+\hypertarget{classAccountServer}{}\section{Account\+Server Class Reference}
+\label{classAccountServer}\index{Account\+Server@{Account\+Server}}
+
+
+{\ttfamily \#include $<$acctserver.\+h$>$}
+
+
+
+Collaboration diagram for Account\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{d8/d4a/classAccountServer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries start\+Msg} ()\hypertarget{classAccountServer_aa35e263aacb22a4e2620f70d8329ac9a}{}\label{classAccountServer_aa35e263aacb22a4e2620f70d8329ac9a}
+
+\item 
+void {\bfseries start} ()\hypertarget{classAccountServer_a7628cfd55af988183b9d1f29360f419a}{}\label{classAccountServer_a7628cfd55af988183b9d1f29360f419a}
+
+\item 
+void {\bfseries save} ()\hypertarget{classAccountServer_a277cf839fc049f8dad8af203b461d11e}{}\label{classAccountServer_a277cf839fc049f8dad8af203b461d11e}
+
+\item 
+void {\bfseries recv\+Msg} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} sock)\hypertarget{classAccountServer_ae2011d8f1febf26f6a43edf4e05ddcb7}{}\label{classAccountServer_ae2011d8f1febf26f6a43edf4e05ddcb7}
+
+\item 
+void {\bfseries send\+Authorized} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} sock, \hyperlink{classAccount}{Account} $\ast$acct)\hypertarget{classAccountServer_a72c7d2f749dff93bb737b2830b918937}{}\label{classAccountServer_a72c7d2f749dff93bb737b2830b918937}
+
+\item 
+void {\bfseries send\+Unauthorized} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} sock, \hyperlink{classAccount}{Account} $\ast$acct)\hypertarget{classAccountServer_aead7aed91e964baf95c4ce1889f49170}{}\label{classAccountServer_aead7aed91e964baf95c4ce1889f49170}
+
+\item 
+void {\bfseries send\+Already\+Connected} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} sock, \hyperlink{classAccount}{Account} $\ast$acct)\hypertarget{classAccountServer_ad0c6211a987a80b2b458e4201df69872}{}\label{classAccountServer_ad0c6211a987a80b2b458e4201df69872}
+
+\item 
+void {\bfseries send\+Server\+Data} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} sock, \hyperlink{classAccount}{Account} $\ast$acct)\hypertarget{classAccountServer_a29fe0df9be18acd85603263b9e6575c4}{}\label{classAccountServer_a29fe0df9be18acd85603263b9e6575c4}
+
+\item 
+void {\bfseries write\+Save} (const char $\ast$buffer, unsigned int bufferlen)\hypertarget{classAccountServer_a0dc28c294cf6c00b2e3ed65142b4be6d}{}\label{classAccountServer_a0dc28c294cf6c00b2e3ed65142b4be6d}
+
+\item 
+void {\bfseries remove\+Dead\+Sockets} ()\hypertarget{classAccountServer_afc183267a620e94f2f8cf1ace47512b2}{}\label{classAccountServer_afc183267a620e94f2f8cf1ace47512b2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that manages player accounts
+\begin{DoxyItemize}
+\item Receives authentication request packets
+\item Returns a packet with L\+O\+G\+I\+N\+\_\+\+A\+C\+C\+E\+PT or L\+O\+G\+I\+N\+\_\+\+E\+R\+R\+OR and with player name This class should also \+:
+\item manage accounts info (ships descriptions...)
+\item handle future web subscriptions 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/acctserver.\+h\item 
+networking/acctserver.\+cpp\end{DoxyCompactItemize}

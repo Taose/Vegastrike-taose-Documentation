@@ -1,0 +1,67 @@
+\hypertarget{classSingleton}{}\section{Singleton$<$ T, I\+N\+IT $>$ Class Template Reference}
+\label{classSingleton}\index{Singleton$<$ T, I\+N\+I\+T $>$@{Singleton$<$ T, I\+N\+I\+T $>$}}
+
+
+{\ttfamily \#include $<$Singleton.\+h$>$}
+
+
+
+Collaboration diagram for Singleton$<$ T, I\+N\+IT $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{d1/db6/classSingleton__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static T $\ast$ {\bfseries get\+Singleton} ()\hypertarget{classSingleton_ad01798cf984712f902272857dd9a1472}{}\label{classSingleton_ad01798cf984712f902272857dd9a1472}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{classAudio_1_1CodecRegistry}{Audio\+::\+Codec\+Registry} $\ast$ {\bfseries \+\_\+singleton\+Instance}\hypertarget{classSingleton_a5dc5b1d8e5c216952ab25aefb50bf793}{}\label{classSingleton_a5dc5b1d8e5c216952ab25aefb50bf793}
+
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{classAudio_1_1SceneManager}{Audio\+::\+Scene\+Manager} $\ast$ {\bfseries \+\_\+singleton\+Instance}\hypertarget{classSingleton_ac3d0c1904e272f9a424fc0c73ee83517}{}\label{classSingleton_ac3d0c1904e272f9a424fc0c73ee83517}
+
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{classAudio_1_1TemplateManager}{Audio\+::\+Template\+Manager} $\ast$ {\bfseries \+\_\+singleton\+Instance}\hypertarget{classSingleton_a440bda685dc1e6f43a7ade750305dc9a}{}\label{classSingleton_a440bda685dc1e6f43a7ade750305dc9a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries initialize\+Singleton} ()\hypertarget{classSingleton_aaf75cd664ac7684dea01a55dd6272532}{}\label{classSingleton_aaf75cd664ac7684dea01a55dd6272532}
+
+\item 
+static void {\bfseries deinitialize\+Singleton} ()\hypertarget{classSingleton_a2543d676ee9fa76532b6c16831d6fb53}{}\label{classSingleton_a2543d676ee9fa76532b6c16831d6fb53}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static T $\ast$ {\bfseries \+\_\+singleton\+Instance}\hypertarget{classSingleton_afe92e0fde86132dbf841d9998a83debd}{}\label{classSingleton_afe92e0fde86132dbf841d9998a83debd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename I\+N\+IT = Initialization\+Functors\+::\+Default\+Constructor$<$ T $>$$>$\\*
+class Singleton$<$ T, I\+N\+I\+T $>$}
+
+\hyperlink{classSingleton}{Singleton} template
+
+\begin{DoxyRemark}{Remarks}
+The default initialization functor can handle classes with a default constructor. If you require special initialization specify a different functor. The class is N\+OT threadsafe.
+
+You must add an extern Singleton$<$\+T,\+I\+N\+I\+T$>$\+::\+\_\+singleton\+Instance in your class implementation or linking against derived classes will fail. 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Singleton.\+h\end{DoxyCompactItemize}

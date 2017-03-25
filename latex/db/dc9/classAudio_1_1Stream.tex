@@ -1,0 +1,380 @@
+\hypertarget{classAudio_1_1Stream}{}\section{Audio\+:\+:Stream Class Reference}
+\label{classAudio_1_1Stream}\index{Audio\+::\+Stream@{Audio\+::\+Stream}}
+
+
+{\ttfamily \#include $<$Stream.\+h$>$}
+
+
+
+Collaboration diagram for Audio\+:\+:Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{de/d5f/classAudio_1_1Stream__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAudio_1_1Stream_1_1NoBufferException}{No\+Buffer\+Exception}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& \hyperlink{classAudio_1_1Stream_a5046a26c881dfda6025defa46fae5f9d}{get\+Path} () const   throw ()
+\item 
+const \hyperlink{structAudio_1_1Format}{Format} \& \hyperlink{classAudio_1_1Stream_a63ad175104f2696351cc15f7faf7d22b}{get\+Format} () const   throw ()
+\item 
+double \hyperlink{classAudio_1_1Stream_a6beb34ff928c420128104e82400d9fd3}{get\+Length} ()  throw (\+Exception)
+\item 
+unsigned int \hyperlink{classAudio_1_1Stream_afad484dadc6c02def4277a667dc05327}{read} (void $\ast$buffer, unsigned int buffer\+Size)  throw (\+Exception)
+\item 
+double \hyperlink{classAudio_1_1Stream_ab1f7f84931d20af5509c674c5c878788}{get\+Position} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Stream_a5edea4e4a4d7c7569f12bc8f2a913aa0}{seek} (double position)  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1Stream_a96b205b8b9d085ffcdd955d62171588b}{Stream} (const std\+::string \&path)  throw (\+Exception)
+\item 
+\hyperlink{structAudio_1_1Format}{Format} \& \hyperlink{classAudio_1_1Stream_aea9aa3af028096aa7657933997e266b7}{get\+Format\+Internal} ()  throw ()
+\item 
+virtual double \hyperlink{classAudio_1_1Stream_a02c5f29ebc51834724acb403a4680526}{get\+Length\+Impl} () const =0  throw (\+Exception)
+\item 
+virtual double \hyperlink{classAudio_1_1Stream_abd7c2b572f0432f22ffdcad4ca60d0f7}{get\+Position\+Impl} () const =0  throw ()
+\item 
+virtual void \hyperlink{classAudio_1_1Stream_a1e37ef0d6f53d1dd312f91413b840222}{seek\+Impl} (double position)=0  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1Stream_a9e751b39449a3cfe0aa6579cdba43e65}{get\+Buffer\+Impl} (void $\ast$\&buffer, unsigned int \&buffer\+Size)=0  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1Stream_a3efb4fa10e2a575805d9f8be9a133b6f}{next\+Buffer\+Impl} ()=0  throw (\+Exception)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1Stream}{Stream} abstract class
+
+\begin{DoxyRemark}{Remarks}
+This is the interface to all kinds of streams. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{This abstract class has but a few }
+
+\end{DoxyParagraph}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Codec}{Codec} to create \hyperlink{classAudio_1_1Stream}{Stream} instances. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!Stream@{Stream}}
+\index{Stream@{Stream}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{Stream(const std\+::string \&path)}{Stream(const std::string &path)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Stream\+::\+Stream (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1Stream_a96b205b8b9d085ffcdd955d62171588b}{}\label{classAudio_1_1Stream_a96b205b8b9d085ffcdd955d62171588b}
+Internal constructor used by derived classes 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!get\+Buffer\+Impl@{get\+Buffer\+Impl}}
+\index{get\+Buffer\+Impl@{get\+Buffer\+Impl}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Buffer\+Impl(void $\ast$\&buffer, unsigned int \&buffer\+Size)=0}{getBufferImpl(void *&buffer, unsigned int &bufferSize)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Stream\+::get\+Buffer\+Impl (
+\begin{DoxyParamCaption}
+\item[{void $\ast$\&}]{buffer, }
+\item[{unsigned int \&}]{buffer\+Size}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Stream_a9e751b39449a3cfe0aa6579cdba43e65}{}\label{classAudio_1_1Stream_a9e751b39449a3cfe0aa6579cdba43e65}
+Get the stream\textquotesingle{}s current reading buffer. \begin{DoxyRemark}{Remarks}
+This buffer is to remain valid until any stream advancement is made through seek\+Impl or next\+Buffer\+Impl, or the object gets destroyed. Repeated get\+Buffer\+Impl calls will not modify the stream, though internal state may be modified in transparent ways (allowing for lazy decoding). In short, get\+Buffer\+Impl is an idempotent member function. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Asking the buffer where next\+Buffer\+Impl() has never been called would raise}
+a No\+Buffer exception. 
+\end{DoxyParagraph}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_a9e751b39449a3cfe0aa6579cdba43e65_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!get\+Format@{get\+Format}}
+\index{get\+Format@{get\+Format}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Format() const }{getFormat() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Format}\& Audio\+::\+Stream\+::get\+Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Stream_a63ad175104f2696351cc15f7faf7d22b}{}\label{classAudio_1_1Stream_a63ad175104f2696351cc15f7faf7d22b}
+Return the format of the stream. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_a63ad175104f2696351cc15f7faf7d22b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!get\+Format\+Internal@{get\+Format\+Internal}}
+\index{get\+Format\+Internal@{get\+Format\+Internal}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Format\+Internal()}{getFormatInternal()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Format}\& Audio\+::\+Stream\+::get\+Format\+Internal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classAudio_1_1Stream_aea9aa3af028096aa7657933997e266b7}{}\label{classAudio_1_1Stream_aea9aa3af028096aa7657933997e266b7}
+Internal write access to stream format, for derived classes \index{Audio\+::\+Stream@{Audio\+::\+Stream}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Length()}{getLength()}}]{\setlength{\rightskip}{0pt plus 5cm}double Audio\+::\+Stream\+::get\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1Stream_a6beb34ff928c420128104e82400d9fd3}{}\label{classAudio_1_1Stream_a6beb34ff928c420128104e82400d9fd3}
+Return the length of the stream. \begin{DoxyRemark}{Remarks}
+This may not be an inocuous function. Some codecs can\textquotesingle{}t return the length of a file without parsing it entirely, and as such it cannot be const. So use sparingly. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_a6beb34ff928c420128104e82400d9fd3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_a6beb34ff928c420128104e82400d9fd3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!get\+Length\+Impl@{get\+Length\+Impl}}
+\index{get\+Length\+Impl@{get\+Length\+Impl}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Length\+Impl() const =0}{getLengthImpl() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Audio\+::\+Stream\+::get\+Length\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Stream_a02c5f29ebc51834724acb403a4680526}{}\label{classAudio_1_1Stream_a02c5f29ebc51834724acb403a4680526}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Stream_a6beb34ff928c420128104e82400d9fd3}{get\+Length} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_a02c5f29ebc51834724acb403a4680526_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Path() const }{getPath() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Audio\+::\+Stream\+::get\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Stream_a5046a26c881dfda6025defa46fae5f9d}{}\label{classAudio_1_1Stream_a5046a26c881dfda6025defa46fae5f9d}
+Return the path of the associated file. \index{Audio\+::\+Stream@{Audio\+::\+Stream}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Position() const }{getPosition() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Audio\+::\+Stream\+::get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1Stream_ab1f7f84931d20af5509c674c5c878788}{}\label{classAudio_1_1Stream_ab1f7f84931d20af5509c674c5c878788}
+Get the stream\textquotesingle{}s current position, in seconds 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_ab1f7f84931d20af5509c674c5c878788_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_ab1f7f84931d20af5509c674c5c878788_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!get\+Position\+Impl@{get\+Position\+Impl}}
+\index{get\+Position\+Impl@{get\+Position\+Impl}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Position\+Impl() const =0}{getPositionImpl() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Audio\+::\+Stream\+::get\+Position\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Stream_abd7c2b572f0432f22ffdcad4ca60d0f7}{}\label{classAudio_1_1Stream_abd7c2b572f0432f22ffdcad4ca60d0f7}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Stream_ab1f7f84931d20af5509c674c5c878788}{get\+Position} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_abd7c2b572f0432f22ffdcad4ca60d0f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!next\+Buffer\+Impl@{next\+Buffer\+Impl}}
+\index{next\+Buffer\+Impl@{next\+Buffer\+Impl}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{next\+Buffer\+Impl()=0}{nextBufferImpl()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Stream\+::next\+Buffer\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Stream_a3efb4fa10e2a575805d9f8be9a133b6f}{}\label{classAudio_1_1Stream_a3efb4fa10e2a575805d9f8be9a133b6f}
+Advance the stream by reading a new buffer. \begin{DoxyRemark}{Remarks}
+The data read by this member is accessible through \hyperlink{classAudio_1_1Stream_a9e751b39449a3cfe0aa6579cdba43e65}{get\+Buffer\+Impl()}. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{After a successful call to this member, get\+Buffer\+Impl will never raise}
+a No\+Buffer exception. 
+\end{DoxyParagraph}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Stream_a9e751b39449a3cfe0aa6579cdba43e65}{get\+Buffer\+Impl} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_a3efb4fa10e2a575805d9f8be9a133b6f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!read@{read}}
+\index{read@{read}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{read(void $\ast$buffer, unsigned int buffer\+Size)}{read(void *buffer, unsigned int bufferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Audio\+::\+Stream\+::read (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buffer, }
+\item[{unsigned int}]{buffer\+Size}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1Stream_afad484dadc6c02def4277a667dc05327}{}\label{classAudio_1_1Stream_afad484dadc6c02def4277a667dc05327}
+Fill the specified buffer with data from the stream, and advance. \begin{DoxyRemark}{Remarks}
+If not enough data is available, but some is, instead of throwing an End\+Of\+Stream exception the function will return the amount of data actually fetched, in bytes. If no bytes at all are available, though, and End\+Of\+Stream exception will be raised. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & a pointer to a memory buffer where to extract data. \\
+\hline
+{\em buffer\+Size} & the size of the memory area pointed to by buffer, and the maximum amount of data to be extracted from the stream, if available. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_afad484dadc6c02def4277a667dc05327_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{db/dc9/classAudio_1_1Stream_afad484dadc6c02def4277a667dc05327_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!seek@{seek}}
+\index{seek@{seek}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{seek(double position)}{seek(double position)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Stream\+::seek (
+\begin{DoxyParamCaption}
+\item[{double}]{position}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1Stream_a5edea4e4a4d7c7569f12bc8f2a913aa0}{}\label{classAudio_1_1Stream_a5edea4e4a4d7c7569f12bc8f2a913aa0}
+Set the stream\textquotesingle{}s position, in seconds \begin{DoxyRemark}{Remarks}
+The final position in the stream after this operation is not guaranteed to be as requested, but an approximation given codec limitations. The only exception being seek(0), which is guaranteed to seek to the beginning of the stream. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{db/dc9/classAudio_1_1Stream_a5edea4e4a4d7c7569f12bc8f2a913aa0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_a5edea4e4a4d7c7569f12bc8f2a913aa0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Stream@{Audio\+::\+Stream}!seek\+Impl@{seek\+Impl}}
+\index{seek\+Impl@{seek\+Impl}!Audio\+::\+Stream@{Audio\+::\+Stream}}
+\subsubsection[{\texorpdfstring{seek\+Impl(double position)=0}{seekImpl(double position)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Stream\+::seek\+Impl (
+\begin{DoxyParamCaption}
+\item[{double}]{position}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Stream_a1e37ef0d6f53d1dd312f91413b840222}{}\label{classAudio_1_1Stream_a1e37ef0d6f53d1dd312f91413b840222}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Stream_a5edea4e4a4d7c7569f12bc8f2a913aa0}{seek} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dc9/classAudio_1_1Stream_a1e37ef0d6f53d1dd312f91413b840222_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Stream.\+h\item 
+audio/Stream.\+cpp\end{DoxyCompactItemize}

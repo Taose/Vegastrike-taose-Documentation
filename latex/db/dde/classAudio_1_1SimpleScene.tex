@@ -1,0 +1,222 @@
+\hypertarget{classAudio_1_1SimpleScene}{}\section{Audio\+:\+:Simple\+Scene Class Reference}
+\label{classAudio_1_1SimpleScene}\index{Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}}
+
+
+{\ttfamily \#include $<$Simple\+Scene.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Simple\+Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d0/d7f/classAudio_1_1SimpleScene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Simple\+Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d3/d7d/classAudio_1_1SimpleScene__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Source\+Set\+::iterator {\bfseries Source\+Iterator}\hypertarget{classAudio_1_1SimpleScene_afd7ebe86e5629e69eb0789a2832a66ba}{}\label{classAudio_1_1SimpleScene_afd7ebe86e5629e69eb0789a2832a66ba}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1SimpleScene_ace78f0e17cfff95544f5cc0b7af4a37f}{Simple\+Scene} (const std\+::string \&name)  throw ()
+\item 
+virtual void \hyperlink{classAudio_1_1SimpleScene_ad9695704e2b761339a9a5cd9c4f397a6}{add} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Source} $>$ source)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1SimpleScene_a8bdf43929c24c50b0e55168d7e5ec916}{remove} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Source} $>$ source)  throw (\+Not\+Found\+Exception)
+\item 
+virtual \hyperlink{classAudio_1_1Listener}{Listener} \& \hyperlink{classAudio_1_1SimpleScene_a622b6ee2aaec922ed30059a94da1e6f6}{get\+Listener} ()  throw ()
+\item 
+virtual void \hyperlink{classAudio_1_1SimpleScene_a3e7ce780db55bb23bebe5ee90b5c9a37}{notify\+Source\+Playing} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Source} $>$ source, bool playing)  throw (\+Exception)
+\item 
+Source\+Iterator \hyperlink{classAudio_1_1SimpleScene_a2fb180eb6a9683bbf9b77d17776562e0}{get\+Active\+Sources} ()  throw ()
+\item 
+Source\+Iterator \hyperlink{classAudio_1_1SimpleScene_a937c4f1f6bf6f88a31843dcdda3a28e4}{get\+Active\+Sources\+End} ()  throw ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries attach} (\hyperlink{classAudio_1_1SimpleSource}{Simple\+Source} $\ast$source)  throw ()\hypertarget{classAudio_1_1SimpleScene_a796e76029ea72058fcbc6b9e2aed398e}{}\label{classAudio_1_1SimpleScene_a796e76029ea72058fcbc6b9e2aed398e}
+
+\item 
+void {\bfseries detach} (\hyperlink{classAudio_1_1SimpleSource}{Simple\+Source} $\ast$source)  throw ()\hypertarget{classAudio_1_1SimpleScene_ae709d8c2b5b7b13683421c6cb9b57909}{}\label{classAudio_1_1SimpleScene_ae709d8c2b5b7b13683421c6cb9b57909}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1SimpleScene}{Simple\+Scene}, basic implementation of the \hyperlink{classAudio_1_1Scene}{Scene} interface
+
+\begin{DoxyRemark}{Remarks}
+This class implements the scene interface for a basic \hyperlink{classAudio_1_1Scene}{Scene} manager. 
+\end{DoxyRemark}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}!Simple\+Scene@{Simple\+Scene}}
+\index{Simple\+Scene@{Simple\+Scene}!Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}}
+\subsubsection[{\texorpdfstring{Simple\+Scene(const std\+::string \&name)}{SimpleScene(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Simple\+Scene\+::\+Simple\+Scene (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SimpleScene_ace78f0e17cfff95544f5cc0b7af4a37f}{}\label{classAudio_1_1SimpleScene_ace78f0e17cfff95544f5cc0b7af4a37f}
+Construct a new, empty scene 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}!add@{add}}
+\index{add@{add}!Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}}
+\subsubsection[{\texorpdfstring{add(\+Shared\+Ptr$<$ Source $>$ source)}{add(SharedPtr< Source > source)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Scene\+::add (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Source} $>$}]{source}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1SimpleScene_ad9695704e2b761339a9a5cd9c4f397a6}{}\label{classAudio_1_1SimpleScene_ad9695704e2b761339a9a5cd9c4f397a6}
+
+
+
+
+Attach a source to this scene. \begin{DoxyRemark}{Remarks}
+The must be stopped. Adding a playing source is an error. 
+
+source M\+U\+ST be a \hyperlink{classAudio_1_1SimpleSource}{Simple\+Source} 
+\end{DoxyRemark}
+
+
+Implements \hyperlink{classAudio_1_1Scene_a4d817ae609f031863c5446996652e497}{Audio\+::\+Scene}.
+
+\index{Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}!get\+Active\+Sources@{get\+Active\+Sources}}
+\index{get\+Active\+Sources@{get\+Active\+Sources}!Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}}
+\subsubsection[{\texorpdfstring{get\+Active\+Sources()}{getActiveSources()}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Scene\+::\+Source\+Iterator Audio\+::\+Simple\+Scene\+::get\+Active\+Sources (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SimpleScene_a2fb180eb6a9683bbf9b77d17776562e0}{}\label{classAudio_1_1SimpleScene_a2fb180eb6a9683bbf9b77d17776562e0}
+Gets an iterator over active sources 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{db/dde/classAudio_1_1SimpleScene_a2fb180eb6a9683bbf9b77d17776562e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}!get\+Active\+Sources\+End@{get\+Active\+Sources\+End}}
+\index{get\+Active\+Sources\+End@{get\+Active\+Sources\+End}!Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}}
+\subsubsection[{\texorpdfstring{get\+Active\+Sources\+End()}{getActiveSourcesEnd()}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Scene\+::\+Source\+Iterator Audio\+::\+Simple\+Scene\+::get\+Active\+Sources\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SimpleScene_a937c4f1f6bf6f88a31843dcdda3a28e4}{}\label{classAudio_1_1SimpleScene_a937c4f1f6bf6f88a31843dcdda3a28e4}
+Gets the ending iterator of active sources 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{db/dde/classAudio_1_1SimpleScene_a937c4f1f6bf6f88a31843dcdda3a28e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}!get\+Listener@{get\+Listener}}
+\index{get\+Listener@{get\+Listener}!Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}}
+\subsubsection[{\texorpdfstring{get\+Listener()}{getListener()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Listener} \& Audio\+::\+Simple\+Scene\+::get\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1SimpleScene_a622b6ee2aaec922ed30059a94da1e6f6}{}\label{classAudio_1_1SimpleScene_a622b6ee2aaec922ed30059a94da1e6f6}
+
+
+
+
+Get the scene\textquotesingle{}s listener 
+
+Implements \hyperlink{classAudio_1_1Scene_a08c4d937457cc40a83ceb7b4cff3dd0a}{Audio\+::\+Scene}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{db/dde/classAudio_1_1SimpleScene_a622b6ee2aaec922ed30059a94da1e6f6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}!notify\+Source\+Playing@{notify\+Source\+Playing}}
+\index{notify\+Source\+Playing@{notify\+Source\+Playing}!Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}}
+\subsubsection[{\texorpdfstring{notify\+Source\+Playing(\+Shared\+Ptr$<$ Source $>$ source, bool playing)}{notifySourcePlaying(SharedPtr< Source > source, bool playing)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Scene\+::notify\+Source\+Playing (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Source} $>$}]{source, }
+\item[{bool}]{playing}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1SimpleScene_a3e7ce780db55bb23bebe5ee90b5c9a37}{}\label{classAudio_1_1SimpleScene_a3e7ce780db55bb23bebe5ee90b5c9a37}
+Notify the scene of a source that starts or stops playing. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{db/dde/classAudio_1_1SimpleScene_a3e7ce780db55bb23bebe5ee90b5c9a37_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{db/dde/classAudio_1_1SimpleScene_a3e7ce780db55bb23bebe5ee90b5c9a37_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}!remove@{remove}}
+\index{remove@{remove}!Audio\+::\+Simple\+Scene@{Audio\+::\+Simple\+Scene}}
+\subsubsection[{\texorpdfstring{remove(\+Shared\+Ptr$<$ Source $>$ source)}{remove(SharedPtr< Source > source)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Scene\+::remove (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Source} $>$}]{source}
+\end{DoxyParamCaption}
+) throw  {\bf Not\+Found\+Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1SimpleScene_a8bdf43929c24c50b0e55168d7e5ec916}{}\label{classAudio_1_1SimpleScene_a8bdf43929c24c50b0e55168d7e5ec916}
+
+
+
+
+Detach a source from this scene \begin{DoxyRemark}{Remarks}
+The source is implicitly stopped. 
+
+source M\+U\+ST be a \hyperlink{classAudio_1_1SimpleSource}{Simple\+Source} 
+\end{DoxyRemark}
+
+
+Implements \hyperlink{classAudio_1_1Scene_a725110194b195ab9260e16ca187c22ac}{Audio\+::\+Scene}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Simple\+Scene.\+h\item 
+audio/Simple\+Scene.\+cpp\end{DoxyCompactItemize}

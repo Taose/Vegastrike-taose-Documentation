@@ -1,0 +1,219 @@
+\hypertarget{IceMemoryMacros_8h}{}\section{cmd/collide2/\+Ice/\+Ice\+Memory\+Macros.h File Reference}
+\label{IceMemoryMacros_8h}\index{cmd/collide2/\+Ice/\+Ice\+Memory\+Macros.\+h@{cmd/collide2/\+Ice/\+Ice\+Memory\+Macros.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d17/IceMemoryMacros_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{IceMemoryMacros_8h_a3a81c4bd09b5d408b74a993d749de241}{S\+I\+Z\+E\+O\+F\+O\+B\+J\+E\+CT}~sizeof($\ast$this)\hypertarget{IceMemoryMacros_8h_a3a81c4bd09b5d408b74a993d749de241}{}\label{IceMemoryMacros_8h_a3a81c4bd09b5d408b74a993d749de241}
+
+\begin{DoxyCompactList}\small\item\em Gives the size of current object. Avoid some mistakes (e.\+g. \char`\"{}sizeof(this)\char`\"{}). \end{DoxyCompactList}\item 
+\#define \hyperlink{IceMemoryMacros_8h_a9ff62f50eaab6ea68926eefca68551fa}{D\+E\+L\+E\+T\+E\+S\+I\+N\+G\+LE}(x)~\{ delete x; x = \hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}; \}\hypertarget{IceMemoryMacros_8h_a9ff62f50eaab6ea68926eefca68551fa}{}\label{IceMemoryMacros_8h_a9ff62f50eaab6ea68926eefca68551fa}
+
+\begin{DoxyCompactList}\small\item\em Deletes an instance of a class. \end{DoxyCompactList}\item 
+\#define \hyperlink{IceMemoryMacros_8h_abfad001526480d0e009d8206254ac3a6}{D\+E\+L\+E\+T\+E\+A\+R\+R\+AY}(x)~\{ delete \mbox{[}$\,$\mbox{]}x; x = \hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}; \}\hypertarget{IceMemoryMacros_8h_abfad001526480d0e009d8206254ac3a6}{}\label{IceMemoryMacros_8h_abfad001526480d0e009d8206254ac3a6}
+
+\begin{DoxyCompactList}\small\item\em Deletes an array. \end{DoxyCompactList}\item 
+\#define \hyperlink{IceMemoryMacros_8h_a2bc549675ca29f733709b4656d22d52a}{S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE}(x)~if (x) \{ (x)-\/$>$Release();		(x) = \hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}; \}\hypertarget{IceMemoryMacros_8h_a2bc549675ca29f733709b4656d22d52a}{}\label{IceMemoryMacros_8h_a2bc549675ca29f733709b4656d22d52a}
+
+\begin{DoxyCompactList}\small\item\em Safe D3\+D-\/style release. \end{DoxyCompactList}\item 
+\#define \hyperlink{IceMemoryMacros_8h_a0d12f49aec1b87275a9258d9207634f6}{S\+A\+F\+E\+\_\+\+D\+E\+S\+T\+R\+U\+CT}(x)~if (x) \{ (x)-\/$>$Self\+Destruct();	(x) = \hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}; \}\hypertarget{IceMemoryMacros_8h_a0d12f49aec1b87275a9258d9207634f6}{}\label{IceMemoryMacros_8h_a0d12f49aec1b87275a9258d9207634f6}
+
+\begin{DoxyCompactList}\small\item\em Safe I\+C\+E-\/style release. \end{DoxyCompactList}\item 
+\#define {\bfseries C\+H\+E\+C\+K\+A\+L\+L\+OC}(x)~if(!x) return false;\hypertarget{IceMemoryMacros_8h_aed561daaacaae02b2e4264a5859a909e}{}\label{IceMemoryMacros_8h_aed561daaacaae02b2e4264a5859a909e}
+
+\item 
+\#define \hyperlink{IceMemoryMacros_8h_a53cc77e24f1c3dc4176b0b49ac5909c8}{S\+A\+F\+E\+\_\+\+A\+L\+L\+OC}(ptr,  type,  count)~\hyperlink{IceMemoryMacros_8h_abfad001526480d0e009d8206254ac3a6}{D\+E\+L\+E\+T\+E\+A\+R\+R\+AY}(ptr);	ptr = new type\mbox{[}count\mbox{]};	C\+H\+E\+C\+K\+A\+L\+L\+OC(ptr);\hypertarget{IceMemoryMacros_8h_a53cc77e24f1c3dc4176b0b49ac5909c8}{}\label{IceMemoryMacros_8h_a53cc77e24f1c3dc4176b0b49ac5909c8}
+
+\begin{DoxyCompactList}\small\item\em Standard allocation cycle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ void \hyperlink{IceMemoryMacros_8h_a15f9da445b1a6cc7c273b256572f2a5c}{Zero\+Memory} (void $\ast$addr, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} size)
+\item 
+inline\+\_\+ void \hyperlink{IceMemoryMacros_8h_af0d8e4e3c33f1112cf95426314181e57}{Fill\+Memory} (void $\ast$dest, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} size, \hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{ubyte} val)
+\item 
+inline\+\_\+ void \hyperlink{IceMemoryMacros_8h_adbe9c73537bee6d91904d6ccb6a84d7c}{Store\+Dwords} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$dest, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} value)
+\item 
+inline\+\_\+ void \hyperlink{IceMemoryMacros_8h_a738c2c7ff3dbc8da0bbea6a6a1f9ce4b}{Copy\+Memory} (void $\ast$dest, const void $\ast$src, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} size)
+\item 
+inline\+\_\+ void \hyperlink{IceMemoryMacros_8h_aeaf36625971736d28bb0193afd7dc47f}{Move\+Memory} (void $\ast$dest, const void $\ast$src, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains all memory macros.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}!Copy\+Memory@{Copy\+Memory}}
+\index{Copy\+Memory@{Copy\+Memory}!Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}}
+\subsubsection[{\texorpdfstring{Copy\+Memory(void $\ast$dest, const void $\ast$src, udword size)}{CopyMemory(void *dest, const void *src, udword size)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Copy\+Memory (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{dest, }
+\item[{const void $\ast$}]{src, }
+\item[{{\bf udword}}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{IceMemoryMacros_8h_a738c2c7ff3dbc8da0bbea6a6a1f9ce4b}{}\label{IceMemoryMacros_8h_a738c2c7ff3dbc8da0bbea6a6a1f9ce4b}
+Copies a buffer. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & \mbox{[}in\mbox{]} destination buffer address \\
+\hline
+{\em addr} & \mbox{[}in\mbox{]} source buffer address \\
+\hline
+{\em size} & \mbox{[}in\mbox{]} buffer length \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{IceMemoryMacros_8h_a15f9da445b1a6cc7c273b256572f2a5c}{Zero\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_af0d8e4e3c33f1112cf95426314181e57}{Fill\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_adbe9c73537bee6d91904d6ccb6a84d7c}{Store\+Dwords} 
+
+\hyperlink{IceMemoryMacros_8h_aeaf36625971736d28bb0193afd7dc47f}{Move\+Memory} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{dd/d62/IceMemoryMacros_8h_a738c2c7ff3dbc8da0bbea6a6a1f9ce4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}!Fill\+Memory@{Fill\+Memory}}
+\index{Fill\+Memory@{Fill\+Memory}!Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}}
+\subsubsection[{\texorpdfstring{Fill\+Memory(void $\ast$dest, udword size, ubyte val)}{FillMemory(void *dest, udword size, ubyte val)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Fill\+Memory (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{dest, }
+\item[{{\bf udword}}]{size, }
+\item[{{\bf ubyte}}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{IceMemoryMacros_8h_af0d8e4e3c33f1112cf95426314181e57}{}\label{IceMemoryMacros_8h_af0d8e4e3c33f1112cf95426314181e57}
+Fills a buffer with a given byte. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & \mbox{[}in\mbox{]} buffer address \\
+\hline
+{\em size} & \mbox{[}in\mbox{]} buffer length \\
+\hline
+{\em val} & \mbox{[}in\mbox{]} the byte value \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{IceMemoryMacros_8h_adbe9c73537bee6d91904d6ccb6a84d7c}{Store\+Dwords} 
+
+\hyperlink{IceMemoryMacros_8h_a15f9da445b1a6cc7c273b256572f2a5c}{Zero\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_a738c2c7ff3dbc8da0bbea6a6a1f9ce4b}{Copy\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_aeaf36625971736d28bb0193afd7dc47f}{Move\+Memory} 
+\end{DoxySeeAlso}
+\index{Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}!Move\+Memory@{Move\+Memory}}
+\index{Move\+Memory@{Move\+Memory}!Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}}
+\subsubsection[{\texorpdfstring{Move\+Memory(void $\ast$dest, const void $\ast$src, udword size)}{MoveMemory(void *dest, const void *src, udword size)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Move\+Memory (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{dest, }
+\item[{const void $\ast$}]{src, }
+\item[{{\bf udword}}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{IceMemoryMacros_8h_aeaf36625971736d28bb0193afd7dc47f}{}\label{IceMemoryMacros_8h_aeaf36625971736d28bb0193afd7dc47f}
+Moves a buffer. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & \mbox{[}in\mbox{]} destination buffer address \\
+\hline
+{\em addr} & \mbox{[}in\mbox{]} source buffer address \\
+\hline
+{\em size} & \mbox{[}in\mbox{]} buffer length \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{IceMemoryMacros_8h_a15f9da445b1a6cc7c273b256572f2a5c}{Zero\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_af0d8e4e3c33f1112cf95426314181e57}{Fill\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_adbe9c73537bee6d91904d6ccb6a84d7c}{Store\+Dwords} 
+
+\hyperlink{IceMemoryMacros_8h_a738c2c7ff3dbc8da0bbea6a6a1f9ce4b}{Copy\+Memory} 
+\end{DoxySeeAlso}
+\index{Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}!Store\+Dwords@{Store\+Dwords}}
+\index{Store\+Dwords@{Store\+Dwords}!Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}}
+\subsubsection[{\texorpdfstring{Store\+Dwords(udword $\ast$dest, udword nb, udword value)}{StoreDwords(udword *dest, udword nb, udword value)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Store\+Dwords (
+\begin{DoxyParamCaption}
+\item[{{\bf udword} $\ast$}]{dest, }
+\item[{{\bf udword}}]{nb, }
+\item[{{\bf udword}}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{IceMemoryMacros_8h_adbe9c73537bee6d91904d6ccb6a84d7c}{}\label{IceMemoryMacros_8h_adbe9c73537bee6d91904d6ccb6a84d7c}
+Fills a buffer with a given dword. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & \mbox{[}in\mbox{]} buffer address \\
+\hline
+{\em nb} & \mbox{[}in\mbox{]} number of dwords to write \\
+\hline
+{\em value} & \mbox{[}in\mbox{]} the dword value \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{IceMemoryMacros_8h_af0d8e4e3c33f1112cf95426314181e57}{Fill\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_a15f9da445b1a6cc7c273b256572f2a5c}{Zero\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_a738c2c7ff3dbc8da0bbea6a6a1f9ce4b}{Copy\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_aeaf36625971736d28bb0193afd7dc47f}{Move\+Memory} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+writes nb$\ast$4 bytes ! 
+\end{DoxyWarning}
+\index{Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}!Zero\+Memory@{Zero\+Memory}}
+\index{Zero\+Memory@{Zero\+Memory}!Ice\+Memory\+Macros.\+h@{Ice\+Memory\+Macros.\+h}}
+\subsubsection[{\texorpdfstring{Zero\+Memory(void $\ast$addr, udword size)}{ZeroMemory(void *addr, udword size)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Zero\+Memory (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{addr, }
+\item[{{\bf udword}}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{IceMemoryMacros_8h_a15f9da445b1a6cc7c273b256572f2a5c}{}\label{IceMemoryMacros_8h_a15f9da445b1a6cc7c273b256572f2a5c}
+Clears a buffer. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & \mbox{[}in\mbox{]} buffer address \\
+\hline
+{\em size} & \mbox{[}in\mbox{]} buffer length \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{IceMemoryMacros_8h_af0d8e4e3c33f1112cf95426314181e57}{Fill\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_adbe9c73537bee6d91904d6ccb6a84d7c}{Store\+Dwords} 
+
+\hyperlink{IceMemoryMacros_8h_a738c2c7ff3dbc8da0bbea6a6a1f9ce4b}{Copy\+Memory} 
+
+\hyperlink{IceMemoryMacros_8h_aeaf36625971736d28bb0193afd7dc47f}{Move\+Memory} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{dd/d62/IceMemoryMacros_8h_a15f9da445b1a6cc7c273b256572f2a5c_icgraph}
+\end{center}
+\end{figure}
+
+

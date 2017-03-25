@@ -1,0 +1,6 @@
+<map id="NearestUnitLocator" name="NearestUnitLocator">
+<area shape="rect" id="node2" href="$d2/db7/classNearestBoltLocator.html" title="{NearestBoltLocator\n||+ UnitsOnly()\l}" alt="" coords="5,248,140,325"/>
+<area shape="rect" id="node3" href="$dc/ddf/classNearestNavLocator.html" title="{NearestNavLocator\n||+ BoltsOrUnits()\l+ UnitsOnly()\l+ acquire()\l}" alt="" coords="164,233,299,340"/>
+<area shape="rect" id="node4" href="$d5/d76/classNearestNavOrCapshipLocator.html" title="{NearestNavOrCapshipLocator\n||+ BoltsOrUnits()\l+ UnitsOnly()\l+ acquire()\l}" alt="" coords="323,233,521,340"/>
+<area shape="rect" id="node5" href="$db/da4/classNearestObjectLocator.html" title="{NearestObjectLocator\n|+ isUnit\l|+ UnitsOnly()\l+ BoltsOrUnits()\l+ acquire()\l}" alt="" coords="545,233,694,340"/>
+</map>

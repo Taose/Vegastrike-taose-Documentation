@@ -1,0 +1,175 @@
+\hypertarget{classSaveGame}{}\section{Save\+Game Class Reference}
+\label{classSaveGame}\index{Save\+Game@{Save\+Game}}
+
+
+Collaboration diagram for Save\+Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{d4/d99/classSaveGame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Reload\+Pickled\+Data} ()\hypertarget{classSaveGame_ae4003bee8b361d9150968a25b24aa05c}{}\label{classSaveGame_ae4003bee8b361d9150968a25b24aa05c}
+
+\item 
+const std\+::string \& {\bfseries Get\+Callsign} () const \hypertarget{classSaveGame_a2c833649cad2f19e29434bfc03aa7c88}{}\label{classSaveGame_a2c833649cad2f19e29434bfc03aa7c88}
+
+\item 
+void {\bfseries Set\+Callsign} (const std\+::string \&cs)\hypertarget{classSaveGame_a3e1edbe7c958c0c333890f61471b6996}{}\label{classSaveGame_a3e1edbe7c958c0c333890f61471b6996}
+
+\item 
+std\+::vector$<$ float $>$ \& \hyperlink{classSaveGame_af37f324d09076344423572e357b8967f}{get\+Mission\+Data} (const std\+::string \&magic\+\_\+number)
+\item 
+const std\+::vector$<$ float $>$ \& \hyperlink{classSaveGame_ae16635250505b442290ef18aaf2556e8}{read\+Mission\+Data} (const std\+::string \&magic\+\_\+number) const 
+\item 
+unsigned int \hyperlink{classSaveGame_a9f81577bee7b100ee8be37698dbb7b8c}{get\+Mission\+Data\+Length} (const std\+::string \&magic\+\_\+number) const 
+\item 
+std\+::vector$<$ std\+::string $>$ \& \hyperlink{classSaveGame_a1a00f371a42477dac2aaf4ac88b53d71}{get\+Mission\+String\+Data} (const std\+::string \&magic\+\_\+number)
+\item 
+const std\+::vector$<$ std\+::string $>$ \& \hyperlink{classSaveGame_a06413bbcdb105df3278d0e2ca41c5299}{read\+Mission\+String\+Data} (const std\+::string \&magic\+\_\+number) const 
+\item 
+unsigned int \hyperlink{classSaveGame_aa1bf6a0d6a7bea5194b4a3e5cf03ffa4}{get\+Mission\+String\+Data\+Length} (const std\+::string \&magic\+\_\+number) const 
+\item 
+{\bfseries Save\+Game} (const std\+::string \&pilotname)\hypertarget{classSaveGame_a6a5a5282899649517d2091f4a679aabc}{}\label{classSaveGame_a6a5a5282899649517d2091f4a679aabc}
+
+\item 
+void {\bfseries Purge\+Zero\+Starships} ()\hypertarget{classSaveGame_a0e2dfa3edfb6256fa2697aa25bac498c}{}\label{classSaveGame_a0e2dfa3edfb6256fa2697aa25bac498c}
+
+\item 
+float {\bfseries Get\+Saved\+Credits} ()\hypertarget{classSaveGame_a9f4c9202b9fa9cad23bc0a9915729309}{}\label{classSaveGame_a9f4c9202b9fa9cad23bc0a9915729309}
+
+\item 
+void {\bfseries Set\+Saved\+Credits} (float)\hypertarget{classSaveGame_a0e9205e237cf87b4ba057e34ea1ae519}{}\label{classSaveGame_a0e9205e237cf87b4ba057e34ea1ae519}
+
+\item 
+void {\bfseries Set\+Player\+Location} (const Q\+Vector \&playerloc)\hypertarget{classSaveGame_abf56439cb2fd413ba871669b7c501366}{}\label{classSaveGame_abf56439cb2fd413ba871669b7c501366}
+
+\item 
+Q\+Vector {\bfseries Get\+Player\+Location} ()\hypertarget{classSaveGame_a84b3f64f60cde2f3d6800d162dba1f8b}{}\label{classSaveGame_a84b3f64f60cde2f3d6800d162dba1f8b}
+
+\item 
+void {\bfseries Set\+Star\+System} (std\+::string sys)\hypertarget{classSaveGame_aa69f23b38c156dab39b5bb7f246e29a4}{}\label{classSaveGame_aa69f23b38c156dab39b5bb7f246e29a4}
+
+\item 
+std\+::string {\bfseries Get\+Star\+System} ()\hypertarget{classSaveGame_ac2401f66699523701431d9c80ac27cb4}{}\label{classSaveGame_ac2401f66699523701431d9c80ac27cb4}
+
+\item 
+std\+::string {\bfseries Get\+Old\+Star\+System} ()\hypertarget{classSaveGame_a9182c89522ba625af414dfa8d068bfa7}{}\label{classSaveGame_a9182c89522ba625af414dfa8d068bfa7}
+
+\item 
+std\+::string {\bfseries Get\+Player\+Faction} ()\hypertarget{classSaveGame_a0e3ee067d45ce12ab7086e9e941af08d}{}\label{classSaveGame_a0e3ee067d45ce12ab7086e9e941af08d}
+
+\item 
+void {\bfseries Set\+Player\+Faction} (std\+::string faction)\hypertarget{classSaveGame_a309b7f5e49982102c10b39270db94246}{}\label{classSaveGame_a309b7f5e49982102c10b39270db94246}
+
+\item 
+std\+::string {\bfseries Write\+Saved\+Unit} (\hyperlink{structSavedUnits}{Saved\+Units} $\ast$su)\hypertarget{classSaveGame_a27c72fa953147e00ded6329f7435e535}{}\label{classSaveGame_a27c72fa953147e00ded6329f7435e535}
+
+\item 
+std\+::string {\bfseries Write\+Save\+Game} (const char $\ast$systemname, const class Q\+Vector \&Pos, float credits, std\+::vector$<$ std\+::string $>$unitname, int player\+\_\+num, std\+::string fact=\char`\"{}\char`\"{}, bool write=true)\hypertarget{classSaveGame_a5fbbfd50c8ac59ec3886c0c5fae566a9}{}\label{classSaveGame_a5fbbfd50c8ac59ec3886c0c5fae566a9}
+
+\item 
+std\+::string {\bfseries Write\+Player\+Data} (const Q\+Vector \&FP, std\+::vector$<$ std\+::string $>$unitname, const char $\ast$systemname, float credits, std\+::string fact=\char`\"{}\char`\"{})\hypertarget{classSaveGame_a726d1d03d9ca92110c70a59a92d8ce99}{}\label{classSaveGame_a726d1d03d9ca92110c70a59a92d8ce99}
+
+\item 
+std\+::string {\bfseries Write\+Dynamic\+Universe} ()\hypertarget{classSaveGame_ae8f71d86cd13a5804336a750e86f0555}{}\label{classSaveGame_ae8f71d86cd13a5804336a750e86f0555}
+
+\item 
+void {\bfseries Read\+Saved\+Packets} (char $\ast$\&buf, bool commitfaction, bool skip\+\_\+news=false, bool select\+\_\+data=false, const std\+::set$<$ std\+::string $>$ \&select\+\_\+data\+\_\+filter=std\+::set$<$ std\+::string $>$())\hypertarget{classSaveGame_aa032552a729e860cb179e148b27e3b71}{}\label{classSaveGame_aa032552a729e860cb179e148b27e3b71}
+
+\item 
+void \hyperlink{classSaveGame_a7a561bdec21674e51588acb8b02acb7a}{Add\+Unit\+To\+Save} (const char $\ast$unitname, int type, const char $\ast$faction, long address)\hypertarget{classSaveGame_a7a561bdec21674e51588acb8b02acb7a}{}\label{classSaveGame_a7a561bdec21674e51588acb8b02acb7a}
+
+\begin{DoxyCompactList}\small\item\em cast address to long (for 64 bits compatibility) \end{DoxyCompactList}\item 
+void {\bfseries Remove\+Unit\+From\+Save} (long address)\hypertarget{classSaveGame_a983bbdde0a8a94bc34e030de62d2e9fd}{}\label{classSaveGame_a983bbdde0a8a94bc34e030de62d2e9fd}
+
+\item 
+void {\bfseries Set\+Output\+File\+Name} (const std\+::string \&filename)\hypertarget{classSaveGame_a59ff4a547f172c77a0ca1ea94c3d985b}{}\label{classSaveGame_a59ff4a547f172c77a0ca1ea94c3d985b}
+
+\item 
+void {\bfseries Parse\+Save\+Game} (const std\+::string \&filename, std\+::string \&Force\+Star\+System, const std\+::string \&originalstarsystem, Q\+Vector \&pos, bool \&shouldupdatedfighter0pos, float \&credits, std\+::vector$<$ std\+::string $>$ \&originalunit, int player\+\_\+num, const std\+::string \&savestr=std\+::string(), bool read=true, bool commit\+Faction=true, bool quick\+\_\+read=false, bool skip\+\_\+news=false, bool select\+\_\+data=false, const std\+::set$<$ std\+::string $>$ \&select\+\_\+data\+\_\+filter=std\+::set$<$ std\+::string $>$())\hypertarget{classSaveGame_a49f9d61eb19af8697f5659b26eb8afeb}{}\label{classSaveGame_a49f9d61eb19af8697f5659b26eb8afeb}
+
+\item 
+void {\bfseries Load\+Saved\+Missions} ()\hypertarget{classSaveGame_a1e680ced64e79651c035fe43ce479b60}{}\label{classSaveGame_a1e680ced64e79651c035fe43ce479b60}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Save\+Game@{Save\+Game}!get\+Mission\+Data@{get\+Mission\+Data}}
+\index{get\+Mission\+Data@{get\+Mission\+Data}!Save\+Game@{Save\+Game}}
+\subsubsection[{\texorpdfstring{get\+Mission\+Data(const std\+::string \&magic\+\_\+number)}{getMissionData(const std::string &magic_number)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ float $>$ \& Save\+Game\+::get\+Mission\+Data (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{magic\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{classSaveGame_af37f324d09076344423572e357b8967f}{}\label{classSaveGame_af37f324d09076344423572e357b8967f}
+Get read-\/write access to mission data 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d93/classSaveGame_af37f324d09076344423572e357b8967f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Save\+Game@{Save\+Game}!get\+Mission\+Data\+Length@{get\+Mission\+Data\+Length}}
+\index{get\+Mission\+Data\+Length@{get\+Mission\+Data\+Length}!Save\+Game@{Save\+Game}}
+\subsubsection[{\texorpdfstring{get\+Mission\+Data\+Length(const std\+::string \&magic\+\_\+number) const }{getMissionDataLength(const std::string &magic_number) const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Save\+Game\+::get\+Mission\+Data\+Length (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{magic\+\_\+number}
+\end{DoxyParamCaption}
+) const}\hypertarget{classSaveGame_a9f81577bee7b100ee8be37698dbb7b8c}{}\label{classSaveGame_a9f81577bee7b100ee8be37698dbb7b8c}
+Get mission data length (read-\/only) \index{Save\+Game@{Save\+Game}!get\+Mission\+String\+Data@{get\+Mission\+String\+Data}}
+\index{get\+Mission\+String\+Data@{get\+Mission\+String\+Data}!Save\+Game@{Save\+Game}}
+\subsubsection[{\texorpdfstring{get\+Mission\+String\+Data(const std\+::string \&magic\+\_\+number)}{getMissionStringData(const std::string &magic_number)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ string $>$ \& Save\+Game\+::get\+Mission\+String\+Data (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{magic\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{classSaveGame_a1a00f371a42477dac2aaf4ac88b53d71}{}\label{classSaveGame_a1a00f371a42477dac2aaf4ac88b53d71}
+Get read-\/write access to mission string data 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d93/classSaveGame_a1a00f371a42477dac2aaf4ac88b53d71_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Save\+Game@{Save\+Game}!get\+Mission\+String\+Data\+Length@{get\+Mission\+String\+Data\+Length}}
+\index{get\+Mission\+String\+Data\+Length@{get\+Mission\+String\+Data\+Length}!Save\+Game@{Save\+Game}}
+\subsubsection[{\texorpdfstring{get\+Mission\+String\+Data\+Length(const std\+::string \&magic\+\_\+number) const }{getMissionStringDataLength(const std::string &magic_number) const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Save\+Game\+::get\+Mission\+String\+Data\+Length (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{magic\+\_\+number}
+\end{DoxyParamCaption}
+) const}\hypertarget{classSaveGame_aa1bf6a0d6a7bea5194b4a3e5cf03ffa4}{}\label{classSaveGame_aa1bf6a0d6a7bea5194b4a3e5cf03ffa4}
+Get mission string data length (read-\/only) \index{Save\+Game@{Save\+Game}!read\+Mission\+Data@{read\+Mission\+Data}}
+\index{read\+Mission\+Data@{read\+Mission\+Data}!Save\+Game@{Save\+Game}}
+\subsubsection[{\texorpdfstring{read\+Mission\+Data(const std\+::string \&magic\+\_\+number) const }{readMissionData(const std::string &magic_number) const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ float $>$ \& Save\+Game\+::read\+Mission\+Data (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{magic\+\_\+number}
+\end{DoxyParamCaption}
+) const}\hypertarget{classSaveGame_ae16635250505b442290ef18aaf2556e8}{}\label{classSaveGame_ae16635250505b442290ef18aaf2556e8}
+Get read-\/only access to mission data -\/ note\+: returns empty stub if key isn\textquotesingle{}t found \index{Save\+Game@{Save\+Game}!read\+Mission\+String\+Data@{read\+Mission\+String\+Data}}
+\index{read\+Mission\+String\+Data@{read\+Mission\+String\+Data}!Save\+Game@{Save\+Game}}
+\subsubsection[{\texorpdfstring{read\+Mission\+String\+Data(const std\+::string \&magic\+\_\+number) const }{readMissionStringData(const std::string &magic_number) const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ string $>$ \& Save\+Game\+::read\+Mission\+String\+Data (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{magic\+\_\+number}
+\end{DoxyParamCaption}
+) const}\hypertarget{classSaveGame_a06413bbcdb105df3278d0e2ca41c5299}{}\label{classSaveGame_a06413bbcdb105df3278d0e2ca41c5299}
+Get read-\/only access to mission string data -\/ note\+: returns empty stub if key isn\textquotesingle{}t found 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+savegame.\+h\item 
+load\+\_\+mission.\+cpp\item 
+savegame.\+cpp\end{DoxyCompactItemize}

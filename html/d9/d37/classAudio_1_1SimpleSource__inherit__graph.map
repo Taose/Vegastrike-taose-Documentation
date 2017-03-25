@@ -1,0 +1,3 @@
+<map id="Audio::SimpleSource" name="Audio::SimpleSource">
+<area shape="rect" id="node2" href="$df/d04/classAudio_1_1Source.html" title="{Audio::Source\n|+ looping\l+ attenuated\l+ relative\l+ location\l+ attributes\l+ gain\l+ soundPtr\l+ soundAttributes\l# position\l# direction\l# velocity\l# cosAngleRange\l# radius\l# pfRadiusRatios\l# referenceFreqs\l# gain\l# flags\l# lastKnownPlayingTime\l# lastKnownPlayingTimeTime\l# dirty\l|+ ~Source()\l+ getPosition()\l+ setPosition()\l+ getDirection()\l+ setDirection()\l+ getVelocity()\l+ setVelocity()\l+ getAngleRange()\l+ setAngleRange()\l+ getCosAngleRange()\land 36 more...\l# Source()\l# setLastKnownPlayingTime()\l# startPlayingImpl()\l# stopPlayingImpl()\l# isPlayingImpl()\l}" alt="" coords="5,5,201,581"/>
+</map>

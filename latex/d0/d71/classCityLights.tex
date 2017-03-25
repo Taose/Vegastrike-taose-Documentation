@@ -1,0 +1,52 @@
+\hypertarget{classCityLights}{}\section{City\+Lights Class Reference}
+\label{classCityLights}\index{City\+Lights@{City\+Lights}}
+
+
+Inheritance diagram for City\+Lights\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d1c/classCityLights__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for City\+Lights\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d21/classCityLights__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries City\+Lights} (float radius, int stacks, int slices, const char $\ast$texture, int texturewrapx, int texturewrapy, bool insideout=false, const B\+L\+E\+N\+D\+F\+U\+NC a=O\+NE, const B\+L\+E\+N\+D\+F\+U\+NC b=Z\+E\+RO, bool env\+Map=false, float rho\+\_\+min=0.\+0, float rho\+\_\+max=M\+\_\+\+PI, float theta\+\_\+min=0.\+0, float theta\+\_\+max=2 $\ast$M\+\_\+\+PI, bool inside\+\_\+out=true)\hypertarget{classCityLights_a372fb6cead57b50034ada1be4e4221a0}{}\label{classCityLights_a372fb6cead57b50034ada1be4e4221a0}
+
+\item 
+virtual void {\bfseries Process\+Draw\+Queue} (int whichpass, int which, bool zsort, const Q\+Vector \&sortctr)\hypertarget{classCityLights_a9e0a4271783bdae188bbc1192a387610}{}\label{classCityLights_a9e0a4271783bdae188bbc1192a387610}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float {\bfseries GetT} (float rho, float rho\+\_\+min, float rho\+\_\+max) const \hypertarget{classCityLights_a6fabdb95b908ed8896a6e0cc528fb27b}{}\label{classCityLights_a6fabdb95b908ed8896a6e0cc528fb27b}
+
+\item 
+virtual float {\bfseries GetS} (float theta, float theta\+\_\+min, float theta\+\_\+max) const \hypertarget{classCityLights_a13021e4d10d90d6808ac53f0904aa083}{}\label{classCityLights_a13021e4d10d90d6808ac53f0904aa083}
+
+\item 
+virtual \hyperlink{classMesh}{Mesh} $\ast$ {\bfseries Alloc\+New\+Meshes\+Each\+In\+Sizeof\+Mesh\+Space} (int num)\hypertarget{classCityLights_a998821df5af993b702742449224dc645}{}\label{classCityLights_a998821df5af993b702742449224dc645}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/sphere.\+h\item 
+gfx/sphere.\+cpp\item 
+gfx/sphere\+\_\+generic.\+cpp\item 
+gfx/sphere\+\_\+server.\+cpp\end{DoxyCompactItemize}

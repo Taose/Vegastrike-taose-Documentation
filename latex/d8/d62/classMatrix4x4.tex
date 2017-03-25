@@ -1,0 +1,249 @@
+\hypertarget{classMatrix4x4}{}\section{Matrix4x4 Class Reference}
+\label{classMatrix4x4}\index{Matrix4x4@{Matrix4x4}}
+
+
+Collaboration diagram for Matrix4x4\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{d1/dde/classMatrix4x4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classMatrix4x4_af12c3d04822f0fb2ee4e31f21117a889}{Matrix4x4} ()\hypertarget{classMatrix4x4_af12c3d04822f0fb2ee4e31f21117a889}{}\label{classMatrix4x4_af12c3d04822f0fb2ee4e31f21117a889}
+
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4_a99cc95e0b21467d1b25558aacfac7f1b}{Matrix4x4} (float m00, float m01, float m02, float m03, float m10, float m11, float m12, float m13, float m20, float m21, float m22, float m23, float m30, float m31, float m32, float m33)\hypertarget{classMatrix4x4_a99cc95e0b21467d1b25558aacfac7f1b}{}\label{classMatrix4x4_a99cc95e0b21467d1b25558aacfac7f1b}
+
+\begin{DoxyCompactList}\small\item\em Constructor from 16 values. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4_a0d1bf6d849f305966d9cd641167372b1}{Matrix4x4} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&mat)\hypertarget{classMatrix4x4_a0d1bf6d849f305966d9cd641167372b1}{}\label{classMatrix4x4_a0d1bf6d849f305966d9cd641167372b1}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4_a6f86a878ccf07228c7ae1179c3ef246d}{$\sim$\+Matrix4x4} ()\hypertarget{classMatrix4x4_a6f86a878ccf07228c7ae1179c3ef246d}{}\label{classMatrix4x4_a6f86a878ccf07228c7ae1179c3ef246d}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \& \hyperlink{classMatrix4x4_ad5090f474b46193e3a2f03f410d1800a}{Set} (float m00, float m01, float m02, float m10, float m11, float m12, float m20, float m21, float m22)\hypertarget{classMatrix4x4_ad5090f474b46193e3a2f03f410d1800a}{}\label{classMatrix4x4_ad5090f474b46193e3a2f03f410d1800a}
+
+\begin{DoxyCompactList}\small\item\em Assign values (rotation only) \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \& \hyperlink{classMatrix4x4_a13789f3a27674890fc8ca5522d899fe3}{Set} (float m00, float m01, float m02, float m03, float m10, float m11, float m12, float m13, float m20, float m21, float m22, float m23, float m30, float m31, float m32, float m33)\hypertarget{classMatrix4x4_a13789f3a27674890fc8ca5522d899fe3}{}\label{classMatrix4x4_a13789f3a27674890fc8ca5522d899fe3}
+
+\begin{DoxyCompactList}\small\item\em Assign values. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_aea9e8b9bde1c68f00f9e5629d487d17f}{Copy} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&source)\hypertarget{classMatrix4x4_aea9e8b9bde1c68f00f9e5629d487d17f}{}\label{classMatrix4x4_aea9e8b9bde1c68f00f9e5629d487d17f}
+
+\begin{DoxyCompactList}\small\item\em Copy from a \hyperlink{classMatrix4x4}{Matrix4x4}. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a341d15f2f21a815d499498fb2dfc05d4}{Get\+Row} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r, \hyperlink{classHPoint}{H\+Point} \&p) const \hypertarget{classMatrix4x4_a341d15f2f21a815d499498fb2dfc05d4}{}\label{classMatrix4x4_a341d15f2f21a815d499498fb2dfc05d4}
+
+\begin{DoxyCompactList}\small\item\em Returns a row. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a25d5b7ea8d63a5fde36eb2854d0cf1cb}{Get\+Row} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r, \hyperlink{classPoint}{Point} \&p) const \hypertarget{classMatrix4x4_a25d5b7ea8d63a5fde36eb2854d0cf1cb}{}\label{classMatrix4x4_a25d5b7ea8d63a5fde36eb2854d0cf1cb}
+
+\begin{DoxyCompactList}\small\item\em Returns a row. \end{DoxyCompactList}\item 
+inline\+\_\+ const \hyperlink{classHPoint}{H\+Point} \& \hyperlink{classMatrix4x4_a37e34d7c04a4353678634846326ba275}{Get\+Row} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r) const \hypertarget{classMatrix4x4_a37e34d7c04a4353678634846326ba275}{}\label{classMatrix4x4_a37e34d7c04a4353678634846326ba275}
+
+\begin{DoxyCompactList}\small\item\em Returns a row. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classHPoint}{H\+Point} \& \hyperlink{classMatrix4x4_a676a90f9991ea0b7ec6b544ba80af164}{Get\+Row} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r)\hypertarget{classMatrix4x4_a676a90f9991ea0b7ec6b544ba80af164}{}\label{classMatrix4x4_a676a90f9991ea0b7ec6b544ba80af164}
+
+\begin{DoxyCompactList}\small\item\em Returns a row. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a5e6eb34412992ba88352195ac93732df}{Set\+Row} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r, const \hyperlink{classHPoint}{H\+Point} \&p)\hypertarget{classMatrix4x4_a5e6eb34412992ba88352195ac93732df}{}\label{classMatrix4x4_a5e6eb34412992ba88352195ac93732df}
+
+\begin{DoxyCompactList}\small\item\em Sets a row. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a6182d58b4005e94820da408be3be75b3}{Set\+Row} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r, const \hyperlink{classPoint}{Point} \&p)\hypertarget{classMatrix4x4_a6182d58b4005e94820da408be3be75b3}{}\label{classMatrix4x4_a6182d58b4005e94820da408be3be75b3}
+
+\begin{DoxyCompactList}\small\item\em Sets a row. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a98031f98b3ceabda8bb299df1963db72}{Get\+Col} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} c, \hyperlink{classHPoint}{H\+Point} \&p) const \hypertarget{classMatrix4x4_a98031f98b3ceabda8bb299df1963db72}{}\label{classMatrix4x4_a98031f98b3ceabda8bb299df1963db72}
+
+\begin{DoxyCompactList}\small\item\em Returns a column. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_ae97452b5679c1efaa91aaf55e9d241a6}{Get\+Col} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} c, \hyperlink{classPoint}{Point} \&p) const \hypertarget{classMatrix4x4_ae97452b5679c1efaa91aaf55e9d241a6}{}\label{classMatrix4x4_ae97452b5679c1efaa91aaf55e9d241a6}
+
+\begin{DoxyCompactList}\small\item\em Returns a column. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_aac77ac4153ba1ddfc369bd93daeade2b}{Set\+Col} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} c, const \hyperlink{classHPoint}{H\+Point} \&p)\hypertarget{classMatrix4x4_aac77ac4153ba1ddfc369bd93daeade2b}{}\label{classMatrix4x4_aac77ac4153ba1ddfc369bd93daeade2b}
+
+\begin{DoxyCompactList}\small\item\em Sets a column. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a8bb482e1520341e88d505698a6cdbb9e}{Set\+Col} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} c, const \hyperlink{classPoint}{Point} \&p)\hypertarget{classMatrix4x4_a8bb482e1520341e88d505698a6cdbb9e}{}\label{classMatrix4x4_a8bb482e1520341e88d505698a6cdbb9e}
+
+\begin{DoxyCompactList}\small\item\em Sets a column. \end{DoxyCompactList}\item 
+inline\+\_\+ const \hyperlink{classHPoint}{H\+Point} \& \hyperlink{classMatrix4x4_ab4fc37881fcbff8e7338a6ee88530fe3}{Get\+Trans} () const \hypertarget{classMatrix4x4_ab4fc37881fcbff8e7338a6ee88530fe3}{}\label{classMatrix4x4_ab4fc37881fcbff8e7338a6ee88530fe3}
+
+\begin{DoxyCompactList}\small\item\em Returns the translation part of the matrix. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a7850e5ba38a89cfcc9f4aae4c1108b37}{Get\+Trans} (\hyperlink{classPoint}{Point} \&p) const \hypertarget{classMatrix4x4_a7850e5ba38a89cfcc9f4aae4c1108b37}{}\label{classMatrix4x4_a7850e5ba38a89cfcc9f4aae4c1108b37}
+
+\begin{DoxyCompactList}\small\item\em Gets the translation part of the matrix. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a6baf0a4d55ed572366ecc2d8022798a0}{Set\+Trans} (const \hyperlink{classPoint}{Point} \&p)\hypertarget{classMatrix4x4_a6baf0a4d55ed572366ecc2d8022798a0}{}\label{classMatrix4x4_a6baf0a4d55ed572366ecc2d8022798a0}
+
+\begin{DoxyCompactList}\small\item\em Sets the translation part of the matrix, from a \hyperlink{classPoint}{Point}. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a8eb35a06a0ebcc627400e28b078be014}{Set\+Trans} (const \hyperlink{classHPoint}{H\+Point} \&p)\hypertarget{classMatrix4x4_a8eb35a06a0ebcc627400e28b078be014}{}\label{classMatrix4x4_a8eb35a06a0ebcc627400e28b078be014}
+
+\begin{DoxyCompactList}\small\item\em Sets the translation part of the matrix, from a \hyperlink{classHPoint}{H\+Point}. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_ac32b709a0cdad07a3f81194cad4fa617}{Set\+Trans} (float tx, float ty, float tz)\hypertarget{classMatrix4x4_ac32b709a0cdad07a3f81194cad4fa617}{}\label{classMatrix4x4_ac32b709a0cdad07a3f81194cad4fa617}
+
+\begin{DoxyCompactList}\small\item\em Sets the translation part of the matrix, from floats. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a3b2357c0ca9ecde2ceb834fd067d2124}{Set\+Scale} (const \hyperlink{classPoint}{Point} \&p)\hypertarget{classMatrix4x4_a3b2357c0ca9ecde2ceb834fd067d2124}{}\label{classMatrix4x4_a3b2357c0ca9ecde2ceb834fd067d2124}
+
+\begin{DoxyCompactList}\small\item\em Sets the scale from a \hyperlink{classPoint}{Point}. The point is put on the diagonal. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a38e74ddf318a3fa279522cf646174daa}{Set\+Scale} (float sx, float sy, float sz)\hypertarget{classMatrix4x4_a38e74ddf318a3fa279522cf646174daa}{}\label{classMatrix4x4_a38e74ddf318a3fa279522cf646174daa}
+
+\begin{DoxyCompactList}\small\item\em Sets the scale from floats. Values are put on the diagonal. \end{DoxyCompactList}\item 
+void \hyperlink{classMatrix4x4_aaeba89274dce846ba331e1cbd7c84ecb}{Scale} (const \hyperlink{classPoint}{Point} \&p)\hypertarget{classMatrix4x4_aaeba89274dce846ba331e1cbd7c84ecb}{}\label{classMatrix4x4_aaeba89274dce846ba331e1cbd7c84ecb}
+
+\begin{DoxyCompactList}\small\item\em Scales from a \hyperlink{classPoint}{Point}. Each row is multiplied by a component. \end{DoxyCompactList}\item 
+void \hyperlink{classMatrix4x4_a693da88056c8a9a5721e99f2a3580ca2}{Scale} (float sx, float sy, float sz)\hypertarget{classMatrix4x4_a693da88056c8a9a5721e99f2a3580ca2}{}\label{classMatrix4x4_a693da88056c8a9a5721e99f2a3580ca2}
+
+\begin{DoxyCompactList}\small\item\em Scales from floats. Each row is multiplied by a value. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{classMatrix4x4_a89d980f5744d581d314dd5e56e4b0fe3}{Trace} () const \hypertarget{classMatrix4x4_a89d980f5744d581d314dd5e56e4b0fe3}{}\label{classMatrix4x4_a89d980f5744d581d314dd5e56e4b0fe3}
+
+\begin{DoxyCompactList}\small\item\em Computes the trace. The trace is the sum of the 4 diagonal components. \end{DoxyCompactList}\item 
+inline\+\_\+ float \hyperlink{classMatrix4x4_a407415d11453cffbac03bcc98671c744}{Trace3x3} () const \hypertarget{classMatrix4x4_a407415d11453cffbac03bcc98671c744}{}\label{classMatrix4x4_a407415d11453cffbac03bcc98671c744}
+
+\begin{DoxyCompactList}\small\item\em Computes the trace of the upper 3x3 matrix. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_aef42384cd995a5f1b1d7b00e4691614a}{Zero} ()\hypertarget{classMatrix4x4_aef42384cd995a5f1b1d7b00e4691614a}{}\label{classMatrix4x4_aef42384cd995a5f1b1d7b00e4691614a}
+
+\begin{DoxyCompactList}\small\item\em Clears the matrix. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{classMatrix4x4_a8161800bbc2eb0ea87a6065159cb71a5}{Identity} ()\hypertarget{classMatrix4x4_a8161800bbc2eb0ea87a6065159cb71a5}{}\label{classMatrix4x4_a8161800bbc2eb0ea87a6065159cb71a5}
+
+\begin{DoxyCompactList}\small\item\em Sets the identity matrix. \end{DoxyCompactList}\item 
+inline\+\_\+ bool \hyperlink{classMatrix4x4_aff0d23c65c1d11697b0927386b5fe291}{Is\+Identity} () const \hypertarget{classMatrix4x4_aff0d23c65c1d11697b0927386b5fe291}{}\label{classMatrix4x4_aff0d23c65c1d11697b0927386b5fe291}
+
+\begin{DoxyCompactList}\small\item\em Checks for identity. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classMatrix4x4_a04f8868b9cb0673542cd7e6dfa6c3de0}{Is\+Valid} () const \hypertarget{classMatrix4x4_a04f8868b9cb0673542cd7e6dfa6c3de0}{}\label{classMatrix4x4_a04f8868b9cb0673542cd7e6dfa6c3de0}
+
+\begin{DoxyCompactList}\small\item\em Checks matrix validity. \end{DoxyCompactList}\item 
+void \hyperlink{classMatrix4x4_af91a5889c63233947ab803f76d8c0937}{RotX} (float angle)\hypertarget{classMatrix4x4_af91a5889c63233947ab803f76d8c0937}{}\label{classMatrix4x4_af91a5889c63233947ab803f76d8c0937}
+
+\begin{DoxyCompactList}\small\item\em Sets a rotation matrix around the X axis. \end{DoxyCompactList}\item 
+void \hyperlink{classMatrix4x4_a4b10603ffbb88969b0b889f5e695800e}{RotY} (float angle)\hypertarget{classMatrix4x4_a4b10603ffbb88969b0b889f5e695800e}{}\label{classMatrix4x4_a4b10603ffbb88969b0b889f5e695800e}
+
+\begin{DoxyCompactList}\small\item\em Sets a rotation matrix around the Y axis. \end{DoxyCompactList}\item 
+void \hyperlink{classMatrix4x4_a8effac9d4e833aef88c68a50186b54fa}{RotZ} (float angle)\hypertarget{classMatrix4x4_a8effac9d4e833aef88c68a50186b54fa}{}\label{classMatrix4x4_a8effac9d4e833aef88c68a50186b54fa}
+
+\begin{DoxyCompactList}\small\item\em Sets a rotation matrix around the Z axis. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix4x4}{Matrix4x4} \& \hyperlink{classMatrix4x4_a34cb9027eb16313063f06a45835715aa}{Rot} (float angle, \hyperlink{classPoint}{Point} \&p1, \hyperlink{classPoint}{Point} \&p2)\hypertarget{classMatrix4x4_a34cb9027eb16313063f06a45835715aa}{}\label{classMatrix4x4_a34cb9027eb16313063f06a45835715aa}
+
+\begin{DoxyCompactList}\small\item\em Makes a rotation matrix about an arbitrary axis. \end{DoxyCompactList}\item 
+void \hyperlink{classMatrix4x4_a8d34646055a4572f3504d1f07a21a89e}{Transpose} ()\hypertarget{classMatrix4x4_a8d34646055a4572f3504d1f07a21a89e}{}\label{classMatrix4x4_a8d34646055a4572f3504d1f07a21a89e}
+
+\begin{DoxyCompactList}\small\item\em Transposes the matrix. \end{DoxyCompactList}\item 
+float \hyperlink{classMatrix4x4_afc8239c94e440436630123a1ac2b24df}{Co\+Factor} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} row, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} col) const \hypertarget{classMatrix4x4_afc8239c94e440436630123a1ac2b24df}{}\label{classMatrix4x4_afc8239c94e440436630123a1ac2b24df}
+
+\begin{DoxyCompactList}\small\item\em Computes a cofactor. Used for matrix inversion. \end{DoxyCompactList}\item 
+float \hyperlink{classMatrix4x4_a0c106185086895c738f6dd356096df64}{Determinant} () const \hypertarget{classMatrix4x4_a0c106185086895c738f6dd356096df64}{}\label{classMatrix4x4_a0c106185086895c738f6dd356096df64}
+
+\begin{DoxyCompactList}\small\item\em Computes the determinant of the matrix. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix4x4}{Matrix4x4} \& \hyperlink{classMatrix4x4_a0b405e13d25636b081fa88b407a9e1e8}{Invert} ()\hypertarget{classMatrix4x4_a0b405e13d25636b081fa88b407a9e1e8}{}\label{classMatrix4x4_a0b405e13d25636b081fa88b407a9e1e8}
+
+\begin{DoxyCompactList}\small\item\em Inverts the matrix. Determinant must be different from zero, else matrix can\textquotesingle{}t be inverted. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4_a0d7fc2502933e85a83490f07c1ea1be5}{operator Matrix3x3} () const \hypertarget{classMatrix4x4_a0d7fc2502933e85a83490f07c1ea1be5}{}\label{classMatrix4x4_a0d7fc2502933e85a83490f07c1ea1be5}
+
+\begin{DoxyCompactList}\small\item\em Casts a \hyperlink{classMatrix4x4}{Matrix4x4} to a \hyperlink{classMatrix3x3}{Matrix3x3}. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix4x4_a1dde2efce6464424b72d9f1dc44d26d2}{operator Quat} () const \hypertarget{classMatrix4x4_a1dde2efce6464424b72d9f1dc44d26d2}{}\label{classMatrix4x4_a1dde2efce6464424b72d9f1dc44d26d2}
+
+\begin{DoxyCompactList}\small\item\em Casts a \hyperlink{classMatrix4x4}{Matrix4x4} to a Quat. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix4x4_a37307ac629fbb3b670d54adf5edb0c2b}{operator PR} () const \hypertarget{classMatrix4x4_a37307ac629fbb3b670d54adf5edb0c2b}{}\label{classMatrix4x4_a37307ac629fbb3b670d54adf5edb0c2b}
+
+\begin{DoxyCompactList}\small\item\em Casts a \hyperlink{classMatrix4x4}{Matrix4x4} to a PR. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \hyperlink{classMatrix4x4_a8dbb55175843512fed26857e5aedbb95}{operator+} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&mat) const \hypertarget{classMatrix4x4_a8dbb55175843512fed26857e5aedbb95}{}\label{classMatrix4x4_a8dbb55175843512fed26857e5aedbb95}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} Plus = \hyperlink{classMatrix4x4}{Matrix4x4} + \hyperlink{classMatrix4x4}{Matrix4x4};. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \hyperlink{classMatrix4x4_a196ef375611a481f1f5ce644d87aae28}{operator-\/} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&mat) const \hypertarget{classMatrix4x4_a196ef375611a481f1f5ce644d87aae28}{}\label{classMatrix4x4_a196ef375611a481f1f5ce644d87aae28}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} Minus = \hyperlink{classMatrix4x4}{Matrix4x4} -\/ \hyperlink{classMatrix4x4}{Matrix4x4};. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \hyperlink{classMatrix4x4_a132acb947401a0bc2234734f7ab21d0f}{operator$\ast$} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&mat) const \hypertarget{classMatrix4x4_a132acb947401a0bc2234734f7ab21d0f}{}\label{classMatrix4x4_a132acb947401a0bc2234734f7ab21d0f}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} Mul = \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$ \hyperlink{classMatrix4x4}{Matrix4x4};. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classHPoint}{H\+Point} \hyperlink{classMatrix4x4_a8b7f21ba3d530e8bcf9185316fbfb67c}{operator$\ast$} (const \hyperlink{classHPoint}{H\+Point} \&v) const \hypertarget{classMatrix4x4_a8b7f21ba3d530e8bcf9185316fbfb67c}{}\label{classMatrix4x4_a8b7f21ba3d530e8bcf9185316fbfb67c}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classHPoint}{H\+Point} Mul = \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$ \hyperlink{classHPoint}{H\+Point};. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classPoint}{Point} \hyperlink{classMatrix4x4_a3eafefe4cd0c934439f88831f4b0864a}{operator$\ast$} (const \hyperlink{classPoint}{Point} \&v) const \hypertarget{classMatrix4x4_a3eafefe4cd0c934439f88831f4b0864a}{}\label{classMatrix4x4_a3eafefe4cd0c934439f88831f4b0864a}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classPoint}{Point} Mul = \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$ \hyperlink{classPoint}{Point};. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \hyperlink{classMatrix4x4_a809c4a13de14973308a8cabc74409990}{operator$\ast$} (float s) const \hypertarget{classMatrix4x4_a809c4a13de14973308a8cabc74409990}{}\label{classMatrix4x4_a809c4a13de14973308a8cabc74409990}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} Scale = \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$ float;. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \hyperlink{classMatrix4x4_a7409459b4e7c25164031148b290ba899}{operator/} (float s) const \hypertarget{classMatrix4x4_a7409459b4e7c25164031148b290ba899}{}\label{classMatrix4x4_a7409459b4e7c25164031148b290ba899}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} Div = \hyperlink{classMatrix4x4}{Matrix4x4} / float;. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \& \hyperlink{classMatrix4x4_a8646f6d6d1ecfd9d56f2d943056ad80d}{operator+=} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&mat)\hypertarget{classMatrix4x4_a8646f6d6d1ecfd9d56f2d943056ad80d}{}\label{classMatrix4x4_a8646f6d6d1ecfd9d56f2d943056ad80d}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} += \hyperlink{classMatrix4x4}{Matrix4x4};. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \& \hyperlink{classMatrix4x4_a95b6e7baaaa01c70666b11ba30f22dd9}{operator-\/=} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&mat)\hypertarget{classMatrix4x4_a95b6e7baaaa01c70666b11ba30f22dd9}{}\label{classMatrix4x4_a95b6e7baaaa01c70666b11ba30f22dd9}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} -\/= \hyperlink{classMatrix4x4}{Matrix4x4};. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix4x4}{Matrix4x4} \& \hyperlink{classMatrix4x4_a94fe48c8fe7bc602a382e25c9f80c5cf}{operator$\ast$=} (const \hyperlink{classMatrix4x4}{Matrix4x4} \&mat)\hypertarget{classMatrix4x4_a94fe48c8fe7bc602a382e25c9f80c5cf}{}\label{classMatrix4x4_a94fe48c8fe7bc602a382e25c9f80c5cf}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$= \hyperlink{classMatrix4x4}{Matrix4x4};. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \& \hyperlink{classMatrix4x4_a5b7cd0b32a1ed909719749a3e3835a3d}{operator$\ast$=} (float s)\hypertarget{classMatrix4x4_a5b7cd0b32a1ed909719749a3e3835a3d}{}\label{classMatrix4x4_a5b7cd0b32a1ed909719749a3e3835a3d}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$= float;. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classMatrix4x4}{Matrix4x4} \& \hyperlink{classMatrix4x4_a54eb756b6824cd30e56a669d42774b02}{operator/=} (float s)\hypertarget{classMatrix4x4_a54eb756b6824cd30e56a669d42774b02}{}\label{classMatrix4x4_a54eb756b6824cd30e56a669d42774b02}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} /= float;. \end{DoxyCompactList}\item 
+inline\+\_\+ const \hyperlink{classHPoint}{H\+Point} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int row) const \hypertarget{classMatrix4x4_a783156e0ef5e5eb7cf9a384feb60d7fb}{}\label{classMatrix4x4_a783156e0ef5e5eb7cf9a384feb60d7fb}
+
+\item 
+inline\+\_\+ \hyperlink{classHPoint}{H\+Point} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int row)\hypertarget{classMatrix4x4_a9a26b36c4fb3d9a5e23acdef378db561}{}\label{classMatrix4x4_a9a26b36c4fb3d9a5e23acdef378db561}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries m} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\hypertarget{classMatrix4x4_a5ac0f2e2731307ac872f10cfcec868cd}{}\label{classMatrix4x4_a5ac0f2e2731307ac872f10cfcec868cd}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ friend \hyperlink{classMatrix4x4}{Matrix4x4} \hyperlink{classMatrix4x4_ab3955edca55444de0746eb97b6c7e147}{operator$\ast$} (float s, const \hyperlink{classMatrix4x4}{Matrix4x4} \&mat)\hypertarget{classMatrix4x4_ab3955edca55444de0746eb97b6c7e147}{}\label{classMatrix4x4_ab3955edca55444de0746eb97b6c7e147}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} Scale = float $\ast$ \hyperlink{classMatrix4x4}{Matrix4x4};. \end{DoxyCompactList}\item 
+inline\+\_\+ friend \hyperlink{classMatrix4x4}{Matrix4x4} \hyperlink{classMatrix4x4_a07714d6be5eeb50d185286661ee092e0}{operator/} (float s, const \hyperlink{classMatrix4x4}{Matrix4x4} \&mat)\hypertarget{classMatrix4x4_a07714d6be5eeb50d185286661ee092e0}{}\label{classMatrix4x4_a07714d6be5eeb50d185286661ee092e0}
+
+\begin{DoxyCompactList}\small\item\em Operator for \hyperlink{classMatrix4x4}{Matrix4x4} Div = float / \hyperlink{classMatrix4x4}{Matrix4x4};. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix4x4_a48b3547948dc1927b8df321aa64f5516}{Invert\+P\+R\+Matrix} (\hyperlink{classMatrix4x4}{Matrix4x4} \&dest, const \hyperlink{classMatrix4x4}{Matrix4x4} \&src)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+4x4 matrix. Direct\+X-\/compliant, ie row-\/column order, ie m\mbox{[}Row\mbox{]}\mbox{[}Col\mbox{]}. Same as\+: m11 m12 m13 m14 first row. m21 m22 m23 m24 second row. m31 m32 m33 m34 third row. m41 m42 m43 m44 fourth row. Translation is (m41, m42, m43), (m14, m24, m34, m44) = (0, 0, 0, 1). Stored in memory as m11 m12 m13 m14 m21...
+
+Multiplication rules\+:
+
+\mbox{[}x\textquotesingle{}y\textquotesingle{}z\textquotesingle{}1\mbox{]} = \mbox{[}xyz1\mbox{]}\mbox{[}M\mbox{]}
+
+x\textquotesingle{} = x$\ast$m11 + y$\ast$m21 + z$\ast$m31 + m41 y\textquotesingle{} = x$\ast$m12 + y$\ast$m22 + z$\ast$m32 + m42 z\textquotesingle{} = x$\ast$m13 + y$\ast$m23 + z$\ast$m33 + m43 1\textquotesingle{} = 0 + 0 + 0 + m44
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Matrix4x4@{Matrix4x4}!Invert\+P\+R\+Matrix@{Invert\+P\+R\+Matrix}}
+\index{Invert\+P\+R\+Matrix@{Invert\+P\+R\+Matrix}!Matrix4x4@{Matrix4x4}}
+\subsubsection[{\texorpdfstring{Invert\+P\+R\+Matrix(\+Matrix4x4 \&dest, const Matrix4x4 \&src)}{InvertPRMatrix(Matrix4x4 &dest, const Matrix4x4 &src)}}]{\setlength{\rightskip}{0pt plus 5cm}Invert\+P\+R\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix4x4} \&}]{dest, }
+\item[{const {\bf Matrix4x4} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\hypertarget{classMatrix4x4_a48b3547948dc1927b8df321aa64f5516}{}\label{classMatrix4x4_a48b3547948dc1927b8df321aa64f5516}
+Inverts a PR matrix. (which only contains a rotation and a translation) This is faster and less subject to F\+PU errors than the generic inversion code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & \mbox{[}out\mbox{]} destination matrix \\
+\hline
+{\em src} & \mbox{[}in\mbox{]} source matrix \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IceMatrix4x4_8h}{Ice\+Matrix4x4.\+h}\item 
+cmd/collide2/\+Ice/\hyperlink{IceMatrix4x4_8cpp}{Ice\+Matrix4x4.\+cpp}\end{DoxyCompactItemize}

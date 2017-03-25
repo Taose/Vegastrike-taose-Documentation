@@ -1,0 +1,112 @@
+\hypertarget{classAudio_1_1Scene}{}\section{Audio\+:\+:Scene Class Reference}
+\label{classAudio_1_1Scene}\index{Audio\+::\+Scene@{Audio\+::\+Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d0/d53/classAudio_1_1Scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{dd/d1c/classAudio_1_1Scene__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& {\bfseries get\+Name} () const   throw ()\hypertarget{classAudio_1_1Scene_a6f612e2e868fbd8801a9f4f10f3ed7c5}{}\label{classAudio_1_1Scene_a6f612e2e868fbd8801a9f4f10f3ed7c5}
+
+\item 
+virtual void \hyperlink{classAudio_1_1Scene_a4d817ae609f031863c5446996652e497}{add} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Source} $>$ source)=0  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1Scene_a725110194b195ab9260e16ca187c22ac}{remove} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Source} $>$ source)=0  throw (\+Not\+Found\+Exception)
+\item 
+virtual \hyperlink{classAudio_1_1Listener}{Listener} \& \hyperlink{classAudio_1_1Scene_a08c4d937457cc40a83ceb7b4cff3dd0a}{get\+Listener} ()=0  throw ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1Scene_a4ee0e1a5d3b28c2c5a4d442818224fae}{Scene} (const std\+::string \&name)  throw ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1Scene}{Scene} abstract class
+
+\begin{DoxyRemark}{Remarks}
+This class represents a scene and the interface to manipulating them. A scene is a collection of sources and O\+NE listener. The ability to have multiple scenes (active or not) is of great use, so the possibility of a scene manager containing multiple scenes is given. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Implementations of the Scene interface is required for any given}
+\hyperlink{classAudio_1_1SceneManager}{Scene\+Manager}. In fact, it is expected that each \hyperlink{classAudio_1_1SceneManager}{Scene\+Manager} will provide its own \hyperlink{classAudio_1_1Scene}{Scene} implementation. Therefore, a concrete \hyperlink{classAudio_1_1Scene}{Scene} class can be thought of as part of a \hyperlink{classAudio_1_1SceneManager}{Scene\+Manager}\textquotesingle{}s implementation. 
+\end{DoxyParagraph}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Scene@{Audio\+::\+Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Audio\+::\+Scene@{Audio\+::\+Scene}}
+\subsubsection[{\texorpdfstring{Scene(const std\+::string \&name)}{Scene(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1Scene_a4ee0e1a5d3b28c2c5a4d442818224fae}{}\label{classAudio_1_1Scene_a4ee0e1a5d3b28c2c5a4d442818224fae}
+Internal constructor used by derived classes 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Scene@{Audio\+::\+Scene}!add@{add}}
+\index{add@{add}!Audio\+::\+Scene@{Audio\+::\+Scene}}
+\subsubsection[{\texorpdfstring{add(\+Shared\+Ptr$<$ Source $>$ source)=0}{add(SharedPtr< Source > source)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Scene\+::add (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Source} $>$}]{source}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Scene_a4d817ae609f031863c5446996652e497}{}\label{classAudio_1_1Scene_a4d817ae609f031863c5446996652e497}
+Attach a source to this scene. \begin{DoxyRemark}{Remarks}
+The must be stopped. Adding a playing source is an error. 
+\end{DoxyRemark}
+
+
+Implemented in \hyperlink{classAudio_1_1SimpleScene_ad9695704e2b761339a9a5cd9c4f397a6}{Audio\+::\+Simple\+Scene}.
+
+\index{Audio\+::\+Scene@{Audio\+::\+Scene}!get\+Listener@{get\+Listener}}
+\index{get\+Listener@{get\+Listener}!Audio\+::\+Scene@{Audio\+::\+Scene}}
+\subsubsection[{\texorpdfstring{get\+Listener()=0}{getListener()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Listener}\& Audio\+::\+Scene\+::get\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Scene_a08c4d937457cc40a83ceb7b4cff3dd0a}{}\label{classAudio_1_1Scene_a08c4d937457cc40a83ceb7b4cff3dd0a}
+Get the scene\textquotesingle{}s listener 
+
+Implemented in \hyperlink{classAudio_1_1SimpleScene_a622b6ee2aaec922ed30059a94da1e6f6}{Audio\+::\+Simple\+Scene}.
+
+\index{Audio\+::\+Scene@{Audio\+::\+Scene}!remove@{remove}}
+\index{remove@{remove}!Audio\+::\+Scene@{Audio\+::\+Scene}}
+\subsubsection[{\texorpdfstring{remove(\+Shared\+Ptr$<$ Source $>$ source)=0}{remove(SharedPtr< Source > source)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Scene\+::remove (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Source} $>$}]{source}
+\end{DoxyParamCaption}
+) throw  {\bf Not\+Found\+Exception}) \hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Scene_a725110194b195ab9260e16ca187c22ac}{}\label{classAudio_1_1Scene_a725110194b195ab9260e16ca187c22ac}
+Detach a source from this scene \begin{DoxyRemark}{Remarks}
+The source is implicitly stopped. 
+\end{DoxyRemark}
+
+
+Implemented in \hyperlink{classAudio_1_1SimpleScene_a8bdf43929c24c50b0e55168d7e5ec916}{Audio\+::\+Simple\+Scene}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Scene.\+h\item 
+audio/Scene.\+cpp\end{DoxyCompactItemize}

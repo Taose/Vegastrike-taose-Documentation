@@ -1,0 +1,8 @@
+<map id="StarSystem::AddUnit" name="StarSystem::AddUnit">
+<area shape="rect" id="node2" href="$df/dd9/classUnit.html#a0a0dbb25c02ab3e89fe8f0c818a26513" title="Unit::GetManifest" alt="" coords="223,5,349,32"/>
+<area shape="rect" id="node3" href="$d9/dba/classCockpit.html#a4315ca8cdf10b2a20a8768b35bf963f3" title="Destructs cockpit info for new loading. " alt="" coords="229,56,343,83"/>
+<area shape="rect" id="node7" href="$da/dea/classStarSystem.html#aaf122ac71cf8146b44cb10161687e8c6" title="Removes from draw list. " alt="" coords="200,107,372,133"/>
+<area shape="rect" id="node4" href="$dd/d50/classGameCockpit.html#ac6830c42b8dab613f34a7415fd936811" title="Loads cockpit info...just as constructor. " alt="" coords="568,5,696,32"/>
+<area shape="rect" id="node5" href="$d9/dba/classCockpit.html#a4203dc3421c88348938455a73b3726bd" title="Loads cockpit info...just as constructor. " alt="" coords="420,56,513,83"/>
+<area shape="rect" id="node6" href="$dd/d50/classGameCockpit.html#a558479694454a63b1ec53f2df316e1ae" title="Draws Cockpit then restores viewport. " alt="" coords="561,56,703,83"/>
+</map>

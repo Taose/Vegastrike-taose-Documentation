@@ -1,0 +1,69 @@
+\hypertarget{classStarDate}{}\section{Star\+Date Class Reference}
+\label{classStarDate}\index{Star\+Date@{Star\+Date}}
+
+
+Collaboration diagram for Star\+Date\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{d3/d67/classStarDate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Star\+Date} (double time)\hypertarget{classStarDate_aab507694ee9dbcc0de624245d18269dd}{}\label{classStarDate_aab507694ee9dbcc0de624245d18269dd}
+
+\item 
+void {\bfseries Init} (double time)\hypertarget{classStarDate_a253a5fa31268ec8bfac1ed6e0887ee8f}{}\label{classStarDate_a253a5fa31268ec8bfac1ed6e0887ee8f}
+
+\item 
+double {\bfseries Get\+Current\+Star\+Time} (int faction=0)\hypertarget{classStarDate_a18340a3d0fc4a0cfc3de8d7005820296}{}\label{classStarDate_a18340a3d0fc4a0cfc3de8d7005820296}
+
+\item 
+double {\bfseries Get\+Elapsed\+Star\+Time} (int faction=0)\hypertarget{classStarDate_aa6cf40015a241c3ee21aac95aef6f639}{}\label{classStarDate_aa6cf40015a241c3ee21aac95aef6f639}
+
+\item 
+void {\bfseries Init\+Trek} (string date)\hypertarget{classStarDate_ae5788b0dbcde99ba399cdad635735bbf}{}\label{classStarDate_ae5788b0dbcde99ba399cdad635735bbf}
+
+\item 
+string {\bfseries Get\+Trek\+Date} (int faction=0)\hypertarget{classStarDate_ad4f2e5a535371f03400d5d3e7ca5ff9d}{}\label{classStarDate_ad4f2e5a535371f03400d5d3e7ca5ff9d}
+
+\item 
+string {\bfseries Get\+Full\+Trek\+Date} (int faction=0)\hypertarget{classStarDate_ae3b3911e446f706a818c5c8f7eb818ae}{}\label{classStarDate_ae3b3911e446f706a818c5c8f7eb818ae}
+
+\item 
+string \hyperlink{classStarDate_ab966a843a62847f755c1de5fe6c7d5ec}{Convert\+Full\+Trek\+Date} (double date)
+\item 
+void {\bfseries Init\+S\+Date} (string date)\hypertarget{classStarDate_a99b4bc2ef610d5e386f8b459bbdd5862}{}\label{classStarDate_a99b4bc2ef610d5e386f8b459bbdd5862}
+
+\item 
+string {\bfseries Get\+S\+Date} (int faction=0)\hypertarget{classStarDate_aa45f582c8067053703078847ccd0721b}{}\label{classStarDate_aa45f582c8067053703078847ccd0721b}
+
+\item 
+string {\bfseries Get\+Full\+S\+Date} (int faction=0)\hypertarget{classStarDate_ad5f087ac157236c57244708ac20d8440}{}\label{classStarDate_ad5f087ac157236c57244708ac20d8440}
+
+\item 
+string {\bfseries S\+Date\+From\+Trek\+Date} (string trekdate)\hypertarget{classStarDate_a02ce91df1d9afc248619bf0cbc188f7b}{}\label{classStarDate_a02ce91df1d9afc248619bf0cbc188f7b}
+
+\item 
+string {\bfseries Trek\+Date\+From\+S\+Date} (string sdate)\hypertarget{classStarDate_ac02bc11b741d8c9ddf58c38a792396c0}{}\label{classStarDate_ac02bc11b741d8c9ddf58c38a792396c0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Star\+Date@{Star\+Date}!Convert\+Full\+Trek\+Date@{Convert\+Full\+Trek\+Date}}
+\index{Convert\+Full\+Trek\+Date@{Convert\+Full\+Trek\+Date}!Star\+Date@{Star\+Date}}
+\subsubsection[{\texorpdfstring{Convert\+Full\+Trek\+Date(double date)}{ConvertFullTrekDate(double date)}}]{\setlength{\rightskip}{0pt plus 5cm}string Star\+Date\+::\+Convert\+Full\+Trek\+Date (
+\begin{DoxyParamCaption}
+\item[{double}]{date}
+\end{DoxyParamCaption}
+)}\hypertarget{classStarDate_ab966a843a62847f755c1de5fe6c7d5ec}{}\label{classStarDate_ab966a843a62847f755c1de5fe6c7d5ec}
+The stardate format is ddd.\+hhmm\+:sec with ddd, hh, mm, sec = star day, hour, minute, seconds The second equals our terran second. The minute however has 480 seconds (H\+O\+U\+R\+S\+\_\+\+D\+IV=8) The hour has 60 minutes and the day has 100 hours 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stardate.\+h\item 
+stardate.\+cpp\end{DoxyCompactItemize}

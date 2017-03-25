@@ -1,0 +1,151 @@
+\hypertarget{classGamePlanet}{}\section{Game\+Planet Class Reference}
+\label{classGamePlanet}\index{Game\+Planet@{Game\+Planet}}
+
+
+Inheritance diagram for Game\+Planet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/d17/classGamePlanet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Planet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d7b/classGamePlanet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Add\+Fog} (const std\+::vector$<$ \hyperlink{structAtmosphericFogMesh}{Atmospheric\+Fog\+Mesh} $>$ \&, bool optical\+\_\+illusion)\hypertarget{classGamePlanet_aff000a3f42620aeac8bc55e0c3fed2f6}{}\label{classGamePlanet_aff000a3f42620aeac8bc55e0c3fed2f6}
+
+\item 
+Vector {\bfseries Add\+Space\+Elevator} (const std\+::string \&name, const std\+::string \&faction, char direction)\hypertarget{classGamePlanet_a216af9cccef5641854b97c0929b28de5}{}\label{classGamePlanet_a216af9cccef5641854b97c0929b28de5}
+
+\item 
+void {\bfseries Add\+Atmosphere} (const std\+::string \&texture, float radius, B\+L\+E\+N\+D\+F\+U\+NC blend\+Src, B\+L\+E\+N\+D\+F\+U\+NC blend\+Dst, bool inside\+\_\+out)\hypertarget{classGamePlanet_a4b0253b10241483ef464c7d19cb7c8fc}{}\label{classGamePlanet_a4b0253b10241483ef464c7d19cb7c8fc}
+
+\item 
+void {\bfseries Add\+Ring} (const std\+::string \&texture, float iradius, float oradius, const Q\+Vector \&r, const Q\+Vector \&s, int slices, int numwrapx, int numwrapy, B\+L\+E\+N\+D\+F\+U\+NC blend\+Src, B\+L\+E\+N\+D\+F\+U\+NC blend\+Dst)\hypertarget{classGamePlanet_ac3331c20bbc74cd09849d927a39aa8a5}{}\label{classGamePlanet_ac3331c20bbc74cd09849d927a39aa8a5}
+
+\item 
+void {\bfseries Add\+City} (const std\+::string \&texture, float radius, int numwrapx, int numwrapy, B\+L\+E\+N\+D\+F\+U\+NC blend\+Src, B\+L\+E\+N\+D\+F\+U\+NC blend\+Dst, bool inside\+\_\+out=false, bool reverse\+\_\+normals=true)\hypertarget{classGamePlanet_a7988915f23e112a039fca57599430211}{}\label{classGamePlanet_a7988915f23e112a039fca57599430211}
+
+\item 
+void {\bfseries Disable\+Lights} ()\hypertarget{classGamePlanet_a0dec74c274d32ffa5fe795e0ce0b4174}{}\label{classGamePlanet_a0dec74c274d32ffa5fe795e0ce0b4174}
+
+\item 
+void {\bfseries Enable\+Lights} ()\hypertarget{classGamePlanet_adb913e1407679381abdd54c0bbd938cb}{}\label{classGamePlanet_adb913e1407679381abdd54c0bbd938cb}
+
+\item 
+virtual void \hyperlink{classGamePlanet_a006a502b61472d5226bdaf0d55aff6e3}{Draw} (const \hyperlink{structTransformation}{Transformation} \&quat=identity\+\_\+transformation, const \hyperlink{classMatrix}{Matrix} \&m=identity\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Draws this unit with the transformation and matrix (should be equiv) separately. \end{DoxyCompactList}\item 
+void {\bfseries Draw\+Terrain} ()\hypertarget{classGamePlanet_a8725609d2eabde1b41fe0cb8519a2a1b}{}\label{classGamePlanet_a8725609d2eabde1b41fe0cb8519a2a1b}
+
+\item 
+virtual void {\bfseries Kill} (bool erasefromsave=false)\hypertarget{classGamePlanet_aa7d8911a448222ab8463988e633f87f8}{}\label{classGamePlanet_aa7d8911a448222ab8463988e633f87f8}
+
+\item 
+Planetary\+Transform $\ast$ {\bfseries set\+Terrain} (\hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$, float ratiox, int numwraps, float scaleatmos)\hypertarget{classGamePlanet_a94d801271ee032208cf038aff0211aca}{}\label{classGamePlanet_a94d801271ee032208cf038aff0211aca}
+
+\item 
+\hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$ {\bfseries get\+Terrain} (Planetary\+Transform $\ast$\&t)\hypertarget{classGamePlanet_a4b1f42200adede8494383df429f0038a}{}\label{classGamePlanet_a4b1f42200adede8494383df429f0038a}
+
+\item 
+void {\bfseries set\+Atmosphere} (\hyperlink{classAtmosphere}{Atmosphere} $\ast$)\hypertarget{classGamePlanet_a70e54f0b428cc59f4cbdcaebb95db708}{}\label{classGamePlanet_a70e54f0b428cc59f4cbdcaebb95db708}
+
+\item 
+\hyperlink{classAtmosphere}{Atmosphere} $\ast$ {\bfseries get\+Atmosphere} ()\hypertarget{classGamePlanet_a260a13745f0a7c5a7331e3760f280d56}{}\label{classGamePlanet_a260a13745f0a7c5a7331e3760f280d56}
+
+\item 
+void {\bfseries react\+To\+Collision} (\hyperlink{classUnit}{Unit} $\ast$smaller, const Q\+Vector \&biglocation, const Vector \&bignormal, const Q\+Vector \&smalllocation, const Vector \&smallnormal, float dist)\hypertarget{classGamePlanet_acdc71500d1d1a4d1dc2251c9235b67ac}{}\label{classGamePlanet_acdc71500d1d1a4d1dc2251c9235b67ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Process\+Terrains} ()\hypertarget{classGamePlanet_ac11fc5a8bd891764d32b366fe67ba007}{}\label{classGamePlanet_ac11fc5a8bd891764d32b366fe67ba007}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUnitCollection}{Unit\+Collection} {\bfseries satellites}\hypertarget{classGamePlanet_a6d977b354c716307a9f8c2d131e7dab7}{}\label{classGamePlanet_a6d977b354c716307a9f8c2d131e7dab7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGamePlanet_a0482bae22611a255eaa2d622d7c3be74}{Game\+Planet} ()\hypertarget{classGamePlanet_a0482bae22611a255eaa2d622d7c3be74}{}\label{classGamePlanet_a0482bae22611a255eaa2d622d7c3be74}
+
+\begin{DoxyCompactList}\small\item\em default constructor -\/ only to be called by \hyperlink{classUnitFactory}{Unit\+Factory} \end{DoxyCompactList}\item 
+\hyperlink{classGamePlanet_a60e0eb2b3e04ecc0ee48df3672a6cd8b}{Game\+Planet} (Q\+Vector x, Q\+Vector \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float vely, const Vector \&rotvel, float pos, float gravity, float radius, const std\+::string \&filename, const std\+::string \&technique, const std\+::string \&unitname, B\+L\+E\+N\+D\+F\+U\+NC blendsrc, B\+L\+E\+N\+D\+F\+U\+NC blenddst, const std\+::vector$<$ std\+::string $>$ \&dest, const Q\+Vector \&orbitcent, \hyperlink{classUnit}{Unit} $\ast$parent, const \hyperlink{structGFXMaterial}{G\+F\+X\+Material} \&ourmat, const std\+::vector$<$ \hyperlink{structGFXLightLocal}{G\+F\+X\+Light\+Local} $>$ \&, int faction, string fullname, bool inside\+\_\+out=false)\hypertarget{classGamePlanet_a60e0eb2b3e04ecc0ee48df3672a6cd8b}{}\label{classGamePlanet_a60e0eb2b3e04ecc0ee48df3672a6cd8b}
+
+\begin{DoxyCompactList}\small\item\em constructor -\/ only to be called by \hyperlink{classUnitFactory}{Unit\+Factory} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classGamePlanet_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classGamePlanet_a187c66d2d867f6265d3b0c99ffc34838}
+
+\item 
+class {\bfseries Planet\+::\+Planet\+Iterator}\hypertarget{classGamePlanet_a19c8a3f114292356a9bea4371bceb4c0}{}\label{classGamePlanet_a19c8a3f114292356a9bea4371bceb4c0}
+
+\item 
+class {\bfseries Planetary\+Orbit}\hypertarget{classGamePlanet_aa0e5d74fa4ec6dca72b358c4c600203f}{}\label{classGamePlanet_aa0e5d74fa4ec6dca72b358c4c600203f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Game\+Planet@{Game\+Planet}!Draw@{Draw}}
+\index{Draw@{Draw}!Game\+Planet@{Game\+Planet}}
+\subsubsection[{\texorpdfstring{Draw(const Transformation \&quat=identity\+\_\+transformation, const Matrix \&m=identity\+\_\+matrix)}{Draw(const Transformation &quat=identity_transformation, const Matrix &m=identity_matrix)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Planet\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transformation} \&}]{quat = {\ttfamily identity\+\_\+transformation}, }
+\item[{const {\bf Matrix} \&}]{m = {\ttfamily identity\+\_\+matrix}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGamePlanet_a006a502b61472d5226bdaf0d55aff6e3}{}\label{classGamePlanet_a006a502b61472d5226bdaf0d55aff6e3}
+
+
+Draws this unit with the transformation and matrix (should be equiv) separately. 
+
+somehow warp unit to reasonable place outisde of planet 
+
+Reimplemented from \hyperlink{classGameUnit_a86e85603e44428c44307e0e69cf42dc7}{Game\+Unit$<$ class Planet $>$}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d6a/classGamePlanet_a006a502b61472d5226bdaf0d55aff6e3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d6/d6a/classGamePlanet_a006a502b61472d5226bdaf0d55aff6e3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/planet.\+h\item 
+cmd/planet.\+cpp\end{DoxyCompactItemize}

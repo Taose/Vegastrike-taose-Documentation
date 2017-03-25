@@ -1,0 +1,6 @@
+<map id="Audio::Source::continuePlaying" name="Audio::Source::continuePlaying">
+<area shape="rect" id="node2" href="$df/d04/classAudio_1_1Source.html#aaceb400c059019233ace3b0c10206548" title="Audio::Source::isPlaying" alt="" coords="265,5,431,32"/>
+<area shape="rect" id="node4" href="$df/d04/classAudio_1_1Source.html#ab5e750c91839e53326a2d9af1d2f6575" title="Audio::Source::isActive" alt="" coords="503,85,661,112"/>
+<area shape="rect" id="node5" href="$df/d04/classAudio_1_1Source.html#a3eb1643f3fd12dc6f0d46f35136b1c64" title="Audio::Source::getWouldbe\lPlayingTime" alt="" coords="257,107,439,149"/>
+<area shape="rect" id="node3" href="$df/d04/classAudio_1_1Source.html#ab9f6505b3317358970cd16f2b1469ea9" title="Audio::Source::isPlayingImpl" alt="" coords="487,5,677,32"/>
+</map>

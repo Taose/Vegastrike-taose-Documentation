@@ -1,0 +1,49 @@
+\hypertarget{classGFXQuadList}{}\section{G\+F\+X\+Quad\+List Class Reference}
+\label{classGFXQuadList}\index{G\+F\+X\+Quad\+List@{G\+F\+X\+Quad\+List}}
+
+
+{\ttfamily \#include $<$gfxlib\+\_\+struct.\+h$>$}
+
+
+
+Collaboration diagram for G\+F\+X\+Quad\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{d0/d11/classGFXQuadList__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGFXQuadList_a7517009764979d63a89cdbe101f69477}{G\+F\+X\+Quad\+List} (G\+F\+X\+B\+O\+OL color=G\+F\+X\+F\+A\+L\+SE)\hypertarget{classGFXQuadList_a7517009764979d63a89cdbe101f69477}{}\label{classGFXQuadList_a7517009764979d63a89cdbe101f69477}
+
+\begin{DoxyCompactList}\small\item\em Creates an initial Quad List. \end{DoxyCompactList}\item 
+\hyperlink{classGFXQuadList_adb9be24cf6657dd1da29f7b404a34a37}{$\sim$\+G\+F\+X\+Quad\+List} ()\hypertarget{classGFXQuadList_adb9be24cf6657dd1da29f7b404a34a37}{}\label{classGFXQuadList_adb9be24cf6657dd1da29f7b404a34a37}
+
+\begin{DoxyCompactList}\small\item\em Trashes given quad list. \end{DoxyCompactList}\item 
+void \hyperlink{classGFXQuadList_a814cc54debab7ac7d2b2e05bfbb1331a}{Draw} ()\hypertarget{classGFXQuadList_a814cc54debab7ac7d2b2e05bfbb1331a}{}\label{classGFXQuadList_a814cc54debab7ac7d2b2e05bfbb1331a}
+
+\begin{DoxyCompactList}\small\item\em Draws all quads contained in quad list. \end{DoxyCompactList}\item 
+int \hyperlink{classGFXQuadList_a4234039736ab549085f2697f48d9f7f7}{Add\+Quad} (const \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$vertices, const \hyperlink{structGFXColorVertex}{G\+F\+X\+Color\+Vertex} $\ast$colors=0)\hypertarget{classGFXQuadList_a4234039736ab549085f2697f48d9f7f7}{}\label{classGFXQuadList_a4234039736ab549085f2697f48d9f7f7}
+
+\begin{DoxyCompactList}\small\item\em Adds quad to quad list, an integer indicating number that should be used to henceforth Mod it or delete it. \end{DoxyCompactList}\item 
+void \hyperlink{classGFXQuadList_a1e173f5e74832aabba2db50c09036c2a}{Del\+Quad} (int which)\hypertarget{classGFXQuadList_a1e173f5e74832aabba2db50c09036c2a}{}\label{classGFXQuadList_a1e173f5e74832aabba2db50c09036c2a}
+
+\begin{DoxyCompactList}\small\item\em Removes quad from Quad list. \end{DoxyCompactList}\item 
+void \hyperlink{classGFXQuadList_a85921ff68b8dc0a06b15a022d0518204}{Mod\+Quad} (int which, const \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$vertices, float alpha=-\/1)\hypertarget{classGFXQuadList_a85921ff68b8dc0a06b15a022d0518204}{}\label{classGFXQuadList_a85921ff68b8dc0a06b15a022d0518204}
+
+\begin{DoxyCompactList}\small\item\em modifies quad in quad list to contain new vertices and color information \end{DoxyCompactList}\item 
+void {\bfseries Mod\+Quad} (int which, const \hyperlink{structGFXColorVertex}{G\+F\+X\+Color\+Vertex} $\ast$vertices)\hypertarget{classGFXQuadList_a233d88906363229e81d35b0b699f6705}{}\label{classGFXQuadList_a233d88906363229e81d35b0b699f6705}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Meant to be a huge list of individual quads (like light maps) that need to be resizable, etc all to be drawn at once.... nice on GL \+:-\/) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfxlib\+\_\+struct.\+h\item 
+gldrv/gl\+\_\+quad\+\_\+list.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,3 @@
+<map id="GameUniverse" name="GameUniverse">
+<area shape="rect" id="node2" href="$dc/dce/classUniverse.html" title="{Universe\n|+ current_stardate\l+ star_system\l# galaxy\l# current_cockpit\l# cockpit\l# active_star_system\l# script_system\l# is_server\l# network_lock\l|+ netLock()\l+ netLocked()\l+ isServer()\l+ isPlayerStarship()\l+ isPlayerStarshipVoid()\l+ whichPlayerStarship()\l+ AccessCockpit()\l+ AccessCockpit()\l+ CurrentCockpit()\l+ AccessCamera()\land 43 more...\l}" alt="" coords="6,5,169,347"/>
+</map>

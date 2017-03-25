@@ -1,0 +1,95 @@
+\hypertarget{classGameBuilding}{}\section{Game\+Building Class Reference}
+\label{classGameBuilding}\index{Game\+Building@{Game\+Building}}
+
+
+Inheritance diagram for Game\+Building\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d8/dbc/classGameBuilding__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Building\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/da2/classGameBuilding__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classGameBuilding_a41b1af4a3b09603e76b52cf7f7617482}{Update\+Physics2} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{structTransformation}{Transformation} \&oldtranssmat, const Vector \&, float difficulty, const \hyperlink{classMatrix}{Matrix} \&, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em returns true if jump possible even if not taken \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Game\+Building} (\hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$parent, bool vehicle, const char $\ast$filename, bool Sub\+Unit, int faction, const std\+::string \&unit\+Modifications=std\+::string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL)\hypertarget{classGameBuilding_a7db26f5eb02c970c93759d16eb2d96db}{}\label{classGameBuilding_a7db26f5eb02c970c93759d16eb2d96db}
+
+\item 
+{\bfseries Game\+Building} (\hyperlink{classTerrain}{Terrain} $\ast$parent, bool vehicle, const char $\ast$filename, bool Sub\+Unit, int faction, const std\+::string \&unit\+Modifications=std\+::string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL)\hypertarget{classGameBuilding_a18ae0cbbceb986ff6814f81973276693}{}\label{classGameBuilding_a18ae0cbbceb986ff6814f81973276693}
+
+\item 
+\hyperlink{classGameBuilding_a8340c9b640c90ecd757b713e8ca110ed}{Game\+Building} ()\hypertarget{classGameBuilding_a8340c9b640c90ecd757b713e8ca110ed}{}\label{classGameBuilding_a8340c9b640c90ecd757b713e8ca110ed}
+
+\begin{DoxyCompactList}\small\item\em default constructor forbidden \end{DoxyCompactList}\item 
+\hyperlink{classGameBuilding_ac4642b0e05ad56e639aa9178f3b437bc}{Game\+Building} (const \hyperlink{classBuilding}{Building} \&)\hypertarget{classGameBuilding_ac4642b0e05ad56e639aa9178f3b437bc}{}\label{classGameBuilding_ac4642b0e05ad56e639aa9178f3b437bc}
+
+\begin{DoxyCompactList}\small\item\em copy constructor forbidden \end{DoxyCompactList}\item 
+\hyperlink{classGameBuilding}{Game\+Building} \& \hyperlink{classGameBuilding_a1e427732e0bb577d631803c04c912aca}{operator=} (const \hyperlink{classBuilding}{Building} \&)\hypertarget{classGameBuilding_a1e427732e0bb577d631803c04c912aca}{}\label{classGameBuilding_a1e427732e0bb577d631803c04c912aca}
+
+\begin{DoxyCompactList}\small\item\em assignment operator forbidden \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classGameBuilding_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classGameBuilding_a187c66d2d867f6265d3b0c99ffc34838}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Game\+Building@{Game\+Building}!Update\+Physics2@{Update\+Physics2}}
+\index{Update\+Physics2@{Update\+Physics2}!Game\+Building@{Game\+Building}}
+\subsubsection[{\texorpdfstring{Update\+Physics2(const Transformation \&trans, const Transformation \&oldtranssmat, const Vector \&, float difficulty, const Matrix \&, const Vector \&\+Cumulative\+Velocity, bool Resolve\+Last, Unit\+Collection $\ast$uc=\+N\+U\+L\+L)}{UpdatePhysics2(const Transformation &trans, const Transformation &oldtranssmat, const Vector &, float difficulty, const Matrix &, const Vector &CumulativeVelocity, bool ResolveLast, UnitCollection *uc=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Building\+::\+Update\+Physics2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transformation} \&}]{trans, }
+\item[{const {\bf Transformation} \&}]{old\+\_\+physical\+\_\+state, }
+\item[{const Vector \&}]{accel, }
+\item[{float}]{difficulty, }
+\item[{const {\bf Matrix} \&}]{transmat, }
+\item[{const Vector \&}]{Cumulative\+Velocity, }
+\item[{bool}]{Resolve\+Last, }
+\item[{{\bf Unit\+Collection} $\ast$}]{uc = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGameBuilding_a41b1af4a3b09603e76b52cf7f7617482}{}\label{classGameBuilding_a41b1af4a3b09603e76b52cf7f7617482}
+
+
+returns true if jump possible even if not taken 
+
+Updates physics given unit space transformations and if this is the last physics frame in the current gfx frame 
+
+Reimplemented from \hyperlink{classGameUnit_af229f9e649c3dcf2f7a94082e070cc2b}{Game\+Unit$<$ Building $>$}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d4a/classGameBuilding_a41b1af4a3b09603e76b52cf7f7617482_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/building.\+h\item 
+cmd/building.\+cpp\end{DoxyCompactItemize}

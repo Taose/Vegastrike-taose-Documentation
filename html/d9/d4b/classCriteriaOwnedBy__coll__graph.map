@@ -1,0 +1,4 @@
+<map id="CriteriaOwnedBy" name="CriteriaOwnedBy">
+<area shape="rect" id="node2" href="$d2/de0/classCriteriaLeaf.html" title="{CriteriaLeaf\n||+ unhook()\l+ getChildren()\l+ clone()\l+ CriteriaLeaf()\l+ ~CriteriaLeaf()\l}" alt="" coords="67,277,185,413"/>
+<area shape="rect" id="node3" href="$df/d68/classCriteriaNode.html" title="{CriteriaNode\n||+ isDestination()\l+ getDescription()\l+ getText()\l+ unhook()\l+ getChildren()\l+ clone()\l+ CriteriaNode()\l+ ~CriteriaNode()\l+ setParent()\l+ getParent()\l}" alt="" coords="5,5,132,215"/>
+</map>

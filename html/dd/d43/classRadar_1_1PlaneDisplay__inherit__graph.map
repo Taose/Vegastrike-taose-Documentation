@@ -1,0 +1,4 @@
+<map id="Radar::PlaneDisplay" name="Radar::PlaneDisplay">
+<area shape="rect" id="node2" href="$d8/d33/classRadar_1_1DualDisplayBase.html" title="{Radar::DualDisplayBase\n|# leftRadar\l# rightRadar\l# isPaused\l# randomEngine\l# randomDistribution\l# randomGenerator\l|+ DualDisplayBase()\l+ OnPauseBegin()\l+ OnPauseEnd()\l# Jitter()\l# Jitter()\l}" alt="" coords="5,219,172,428"/>
+<area shape="rect" id="node3" href="$db/df2/classRadar_1_1Display.html" title="{Radar::Display\n||+ ~Display()\l+ Draw()\l+ OnDockEnd()\l+ OnJumpBegin()\l+ OnJumpEnd()\l+ OnPauseBegin()\l+ OnPauseEnd()\l}" alt="" coords="24,5,153,171"/>
+</map>

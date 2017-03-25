@@ -1,0 +1,5 @@
+<map id="BaseInterface::Room::BaseText" name="BaseInterface::Room::BaseText">
+<area shape="rect" id="node2" href="$df/db7/classBaseInterface_1_1Room_1_1BaseObj.html" title="{BaseInterface::Room\l::BaseObj\n|+ index\l|+ Draw()\l+ ~BaseObj()\l+ BaseObj()\l}" alt="" coords="5,336,152,457"/>
+<area shape="rect" id="node3" href="$d1/d49/classTextPlane.html" title="{TextPlane\n||+ TextPlane()\l+ ~TextPlane()\l+ SetPos()\l+ SetCharSize()\l+ GetCharSize()\l+ GetPos()\l+ SetSize()\l+ GetSize()\l+ Draw()\l+ Draw()\l+ SetText()\l+ GetText()\l}" alt="" coords="176,277,293,516"/>
+<area shape="rect" id="node4" href="$d2/d7d/structGFXColor.html" title="{GFXColor\n|+ r\l+ g\l+ b\l+ a\l|+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ GFXColor()\l+ netswap()\l+ clamp()\l}" alt="" coords="185,5,285,200"/>
+</map>

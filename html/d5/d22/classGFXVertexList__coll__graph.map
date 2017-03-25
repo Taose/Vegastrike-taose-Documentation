@@ -1,0 +1,6 @@
+<map id="GFXVertexList" name="GFXVertexList">
+<area shape="rect" id="node2" href="$de/dac/unionGFXVertexList_1_1VDAT.html" title="Vertices and colors stored. " alt="" coords="85,512,237,589"/>
+<area shape="rect" id="node3" href="$d6/d21/structGFXVertex.html" title="Vertex, Normal, Texture, and (deprecated) Environment Mapping T2F_N3F_V3F format. ..." alt="" coords="5,5,149,435"/>
+<area shape="rect" id="node4" href="$d2/dd1/structGFXColorVertex.html" title="This vertex is used for the interleaved array argument for color based arrays T2F_C4F_N3F_V3F. " alt="" coords="173,20,317,420"/>
+<area shape="rect" id="node5" href="$d0/dd1/unionGFXVertexList_1_1INDEX.html" title="{GFXVertexList::INDEX\n|+ b\l+ s\l+ i\l|+ INDEX()\l}" alt="" coords="262,497,421,604"/>
+</map>

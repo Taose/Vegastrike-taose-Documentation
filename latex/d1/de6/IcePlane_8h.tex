@@ -1,0 +1,86 @@
+\hypertarget{IcePlane_8h}{}\section{cmd/collide2/\+Ice/\+Ice\+Plane.h File Reference}
+\label{IcePlane_8h}\index{cmd/collide2/\+Ice/\+Ice\+Plane.\+h@{cmd/collide2/\+Ice/\+Ice\+Plane.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d0a/IcePlane_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classPlane}{Plane}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries P\+L\+A\+N\+E\+\_\+\+E\+P\+S\+I\+L\+ON}~(1.\+0e-\/7f)\hypertarget{IcePlane_8h_a6c1f30bf8a08975a931cd2b8b66a4c20}{}\label{IcePlane_8h_a6c1f30bf8a08975a931cd2b8b66a4c20}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+I\+C\+E\+P\+L\+A\+N\+E\+\_\+\+H\+\_\+\+\_\+}\hypertarget{Opcode_8h_ad01adbfc405db00f6204cc81db5c2918}{}\label{Opcode_8h_ad01adbfc405db00f6204cc81db5c2918}
+
+\item 
+\#define {\bfseries P\+L\+A\+N\+E\+\_\+\+E\+P\+S\+I\+L\+ON}~(1.\+0e-\/7f)\hypertarget{Opcode_8h_a6c1f30bf8a08975a931cd2b8b66a4c20}{}\label{Opcode_8h_a6c1f30bf8a08975a931cd2b8b66a4c20}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ void \hyperlink{IcePlane_8h_abfa394140ea3521e4bfcada2906c6a9b}{Transform\+Plane} (\hyperlink{classPlane}{Plane} \&transformed, const \hyperlink{classPlane}{Plane} \&plane, const \hyperlink{classMatrix4x4}{Matrix4x4} \&transform)
+\item 
+inline\+\_\+ void \hyperlink{IcePlane_8h_a0163d63775cace83ce78e2aa7d568d15}{Transform\+Plane} (\hyperlink{classPlane}{Plane} \&plane, const \hyperlink{classMatrix4x4}{Matrix4x4} \&transform)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for planes.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April, 4, 2000 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Ice\+Plane.\+h@{Ice\+Plane.\+h}!Transform\+Plane@{Transform\+Plane}}
+\index{Transform\+Plane@{Transform\+Plane}!Ice\+Plane.\+h@{Ice\+Plane.\+h}}
+\subsubsection[{\texorpdfstring{Transform\+Plane(\+Plane \&transformed, const Plane \&plane, const Matrix4x4 \&transform)}{TransformPlane(Plane &transformed, const Plane &plane, const Matrix4x4 &transform)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Transform\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf Plane} \&}]{transformed, }
+\item[{const {\bf Plane} \&}]{plane, }
+\item[{const {\bf Matrix4x4} \&}]{transform}
+\end{DoxyParamCaption}
+)}\hypertarget{IcePlane_8h_abfa394140ea3521e4bfcada2906c6a9b}{}\label{IcePlane_8h_abfa394140ea3521e4bfcada2906c6a9b}
+Transforms a plane by a 4x4 matrix. Same as \hyperlink{classPlane}{Plane} $\ast$ \hyperlink{classMatrix4x4}{Matrix4x4} operator, but faster. 
+\begin{DoxyParams}{Parameters}
+{\em transformed} & \mbox{[}out\mbox{]} transformed plane \\
+\hline
+{\em plane} & \mbox{[}in\mbox{]} source plane \\
+\hline
+{\em transform} & \mbox{[}in\mbox{]} transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+the plane normal must be unit-\/length 
+\end{DoxyWarning}
+\index{Ice\+Plane.\+h@{Ice\+Plane.\+h}!Transform\+Plane@{Transform\+Plane}}
+\index{Transform\+Plane@{Transform\+Plane}!Ice\+Plane.\+h@{Ice\+Plane.\+h}}
+\subsubsection[{\texorpdfstring{Transform\+Plane(\+Plane \&plane, const Matrix4x4 \&transform)}{TransformPlane(Plane &plane, const Matrix4x4 &transform)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Transform\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf Plane} \&}]{plane, }
+\item[{const {\bf Matrix4x4} \&}]{transform}
+\end{DoxyParamCaption}
+)}\hypertarget{IcePlane_8h_a0163d63775cace83ce78e2aa7d568d15}{}\label{IcePlane_8h_a0163d63775cace83ce78e2aa7d568d15}
+Transforms a plane by a 4x4 matrix. Same as \hyperlink{classPlane}{Plane} $\ast$ \hyperlink{classMatrix4x4}{Matrix4x4} operator, but faster. 
+\begin{DoxyParams}{Parameters}
+{\em plane} & \mbox{[}in/out\mbox{]} source plane (transformed on return) \\
+\hline
+{\em transform} & \mbox{[}in\mbox{]} transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+the plane normal must be unit-\/length 
+\end{DoxyWarning}

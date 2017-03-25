@@ -1,0 +1,4 @@
+<map id="StarVlist" name="StarVlist">
+<area shape="rect" id="node2" href="$d4/dcd/classPointStarVlist.html" title="{PointStarVlist\n||+ PointStarVlist()\l+ ~PointStarVlist()\l+ BeginDrawState()\l+ Draw()\l+ EndDrawState()\l}" alt="" coords="5,314,143,450"/>
+<area shape="rect" id="node3" href="$d7/d2e/classSpriteStarVlist.html" title="{SpriteStarVlist\n||+ SpriteStarVlist()\l+ ~SpriteStarVlist()\l+ NumTextures()\l+ BeginDrawState()\l+ Draw()\l+ EndDrawState()\l}" alt="" coords="167,307,304,457"/>
+</map>

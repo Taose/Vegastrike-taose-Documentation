@@ -1,0 +1,373 @@
+\hypertarget{classBaseComputer}{}\section{Base\+Computer Class Reference}
+\label{classBaseComputer}\index{Base\+Computer@{Base\+Computer}}
+
+
+Inheritance diagram for Base\+Computer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/df3/classBaseComputer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+Computer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d68/classBaseComputer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBaseComputer_1_1BuyUpgradeOperation}{Buy\+Upgrade\+Operation}
+\item 
+class \hyperlink{classBaseComputer_1_1LoadSaveQuitConfirm}{Load\+Save\+Quit\+Confirm}
+\item 
+class \hyperlink{classBaseComputer_1_1SellUpgradeOperation}{Sell\+Upgrade\+Operation}
+\item 
+struct \hyperlink{structBaseComputer_1_1TransactionList}{Transaction\+List}
+\item 
+class \hyperlink{classBaseComputer_1_1UpgradeOperation}{Upgrade\+Operation}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Display\+Mode} \{ \\*
+{\bfseries C\+A\+R\+GO} =0, 
+{\bfseries U\+P\+G\+R\+A\+DE}, 
+{\bfseries S\+H\+I\+P\+\_\+\+D\+E\+A\+L\+ER}, 
+{\bfseries M\+I\+S\+S\+I\+O\+NS}, 
+\\*
+{\bfseries N\+E\+WS}, 
+{\bfseries I\+N\+FO}, 
+{\bfseries L\+O\+A\+D\+S\+A\+VE}, 
+{\bfseries N\+E\+T\+W\+O\+RK}, 
+\\*
+{\bfseries D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+U\+NT}, 
+{\bfseries N\+U\+L\+L\+\_\+\+D\+I\+S\+P\+L\+AY} =D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+U\+NT
+ \}\hypertarget{classBaseComputer_a46b20885af5c38f328ac62bae4eda2b2}{}\label{classBaseComputer_a46b20885af5c38f328ac62bae4eda2b2}
+
+\item 
+enum {\bfseries Transaction\+Type} \{ \\*
+{\bfseries B\+U\+Y\+\_\+\+C\+A\+R\+GO}, 
+{\bfseries S\+E\+L\+L\+\_\+\+C\+A\+R\+GO}, 
+{\bfseries B\+U\+Y\+\_\+\+U\+P\+G\+R\+A\+DE}, 
+{\bfseries S\+E\+L\+L\+\_\+\+U\+P\+G\+R\+A\+DE}, 
+\\*
+{\bfseries B\+U\+Y\+\_\+\+S\+H\+IP}, 
+{\bfseries A\+C\+C\+E\+P\+T\+\_\+\+M\+I\+S\+S\+I\+ON}, 
+{\bfseries N\+U\+L\+L\+\_\+\+T\+R\+A\+N\+S\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classBaseComputer_ac8054536252a650d63430dbf97c12440}{}\label{classBaseComputer_ac8054536252a650d63430dbf97c12440}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries init} (void)\hypertarget{classBaseComputer_a81278559755088477f77daf01017520c}{}\label{classBaseComputer_a81278559755088477f77daf01017520c}
+
+\item 
+virtual void {\bfseries run} (void)\hypertarget{classBaseComputer_ae63bce240508339475df4bb1e6753c43}{}\label{classBaseComputer_ae63bce240508339475df4bb1e6753c43}
+
+\item 
+virtual void {\bfseries draw} (void)\hypertarget{classBaseComputer_aa754d56026e404463303ec3b77d06322}{}\label{classBaseComputer_aa754d56026e404463303ec3b77d06322}
+
+\item 
+{\bfseries Base\+Computer} (\hyperlink{classUnit}{Unit} $\ast$player, \hyperlink{classUnit}{Unit} $\ast$base, const vector$<$ Display\+Mode $>$ \&modes)\hypertarget{classBaseComputer_ad2ecf0f07ac5f7cbaa4f0cbd12c46304}{}\label{classBaseComputer_ad2ecf0f07ac5f7cbaa4f0cbd12c46304}
+
+\item 
+void {\bfseries update\+Transaction\+Controls} (const \hyperlink{classCargo}{Cargo} \&item, bool skip\+First\+Category=false)\hypertarget{classBaseComputer_a2cbe05f8a30b96bf0407556634a44d38}{}\label{classBaseComputer_a2cbe05f8a30b96bf0407556634a44d38}
+
+\item 
+void {\bfseries update\+Transaction\+Controls\+For\+Selection} (\hyperlink{structBaseComputer_1_1TransactionList}{Transaction\+List} $\ast$list)\hypertarget{classBaseComputer_aacc46a9d7455d7ad84e2305f92fcb53f}{}\label{classBaseComputer_aacc46a9d7455d7ad84e2305f92fcb53f}
+
+\item 
+void {\bfseries load\+Ship\+Dealer\+Controls} (void)\hypertarget{classBaseComputer_a3c3b6f2df5c294a133e401056151e04a}{}\label{classBaseComputer_a3c3b6f2df5c294a133e401056151e04a}
+
+\item 
+void {\bfseries second\+Stage\+Join\+Game} (void)\hypertarget{classBaseComputer_a7f43594474c0b4e4ffdfabdbd0200449}{}\label{classBaseComputer_a7f43594474c0b4e4ffdfabdbd0200449}
+
+\item 
+void {\bfseries finalize\+Join\+Game} (int launch\+Ship=0)\hypertarget{classBaseComputer_a190d7a201b1ad64405fcfebe6a1c93a7}{}\label{classBaseComputer_a190d7a201b1ad64405fcfebe6a1c93a7}
+
+\item 
+void {\bfseries finalize\+Net\+Save\+Game} (void)\hypertarget{classBaseComputer_a4617f47f675531c706097e87b2085b53}{}\label{classBaseComputer_a4617f47f675531c706097e87b2085b53}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries m\+\_\+player}\hypertarget{classBaseComputer_a9fe5bf690700e885393bcaa9f9143e22}{}\label{classBaseComputer_a9fe5bf690700e885393bcaa9f9143e22}
+
+\item 
+\hyperlink{classUnitContainer}{Unit\+Container} {\bfseries m\+\_\+base}\hypertarget{classBaseComputer_a7efa5d8b56ef32eea1217e572853fc6b}{}\label{classBaseComputer_a7efa5d8b56ef32eea1217e572853fc6b}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries dirty} = 0\hypertarget{classBaseComputer_a9c5238be605fc4cdbb6d4993de1d028e}{}\label{classBaseComputer_a9c5238be605fc4cdbb6d4993de1d028e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries news\+Picker\+Changed\+Selection} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a1c12c0535b19bbd0619ff6c418ef673c}{}\label{classBaseComputer_a1c12c0535b19bbd0619ff6c418ef673c}
+
+\item 
+bool {\bfseries load\+Save\+Picker\+Changed\+Selection} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a92115302861f81e89e6784dd7d45f422}{}\label{classBaseComputer_a92115302861f81e89e6784dd7d45f422}
+
+\item 
+bool {\bfseries picker\+Changed\+Selection} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a2785ba846aabf71b7ee00a115ad3ef51}{}\label{classBaseComputer_a2785ba846aabf71b7ee00a115ad3ef51}
+
+\item 
+bool {\bfseries buy\+Cargo} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a278960c1622fc83812773f88d3513d31}{}\label{classBaseComputer_a278960c1622fc83812773f88d3513d31}
+
+\item 
+bool {\bfseries buy10\+Cargo} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_ab774c11c83238da7c53264ad482d9d1d}{}\label{classBaseComputer_ab774c11c83238da7c53264ad482d9d1d}
+
+\item 
+bool {\bfseries buy\+All\+Cargo} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a70a576ad472cea8ef8300fb461066090}{}\label{classBaseComputer_a70a576ad472cea8ef8300fb461066090}
+
+\item 
+bool {\bfseries sell\+Cargo} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_aaad6521ed2972f0d40d518e60f97d4a8}{}\label{classBaseComputer_aaad6521ed2972f0d40d518e60f97d4a8}
+
+\item 
+bool {\bfseries sell10\+Cargo} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a680a84e37aa7e964206ceda6e12e5d93}{}\label{classBaseComputer_a680a84e37aa7e964206ceda6e12e5d93}
+
+\item 
+bool {\bfseries sell\+All\+Cargo} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a695f970095047a0b00c72a135dafa713}{}\label{classBaseComputer_a695f970095047a0b00c72a135dafa713}
+
+\item 
+bool {\bfseries buy\+Upgrade} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_aab6f7a84bc37e3cec8286ee9c0480ebf}{}\label{classBaseComputer_aab6f7a84bc37e3cec8286ee9c0480ebf}
+
+\item 
+bool {\bfseries sell\+Upgrade} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_ada0cac1d69aac3d83a2c85a0aa3d75ea}{}\label{classBaseComputer_ada0cac1d69aac3d83a2c85a0aa3d75ea}
+
+\item 
+bool {\bfseries fix\+Upgrade} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a97bde2f7e9fa2c513c276724a877572a}{}\label{classBaseComputer_a97bde2f7e9fa2c513c276724a877572a}
+
+\item 
+bool {\bfseries buy\+Ship} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a1ba06d82b330baf81a1951a0c270abbf}{}\label{classBaseComputer_a1ba06d82b330baf81a1951a0c270abbf}
+
+\item 
+bool {\bfseries sell\+Ship} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a8d196667a632331c33fc7cb3e6c68c27}{}\label{classBaseComputer_a8d196667a632331c33fc7cb3e6c68c27}
+
+\item 
+bool {\bfseries accept\+Mission} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_add00aa647096102fff62c71829148ae7}{}\label{classBaseComputer_add00aa647096102fff62c71829148ae7}
+
+\item 
+bool {\bfseries action\+Confirmed\+Load\+Game} ()\hypertarget{classBaseComputer_a59e5bbe4c5078698c14c1f96dcc81b0a}{}\label{classBaseComputer_a59e5bbe4c5078698c14c1f96dcc81b0a}
+
+\item 
+bool {\bfseries action\+Load\+Game} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a2d4c1d252006c7bf952d6e925c092416}{}\label{classBaseComputer_a2d4c1d252006c7bf952d6e925c092416}
+
+\item 
+bool {\bfseries action\+Confirmed\+Save\+Game} ()\hypertarget{classBaseComputer_ab9ccc33edc6592ce03daf1821902d27f}{}\label{classBaseComputer_ab9ccc33edc6592ce03daf1821902d27f}
+
+\item 
+bool {\bfseries action\+Save\+Game} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_accc295ba41aea6e10a3593917040e9be}{}\label{classBaseComputer_accc295ba41aea6e10a3593917040e9be}
+
+\item 
+bool {\bfseries action\+New\+Game} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_acd69dbc42a6252b83abb9b7dfcaf122a}{}\label{classBaseComputer_acd69dbc42a6252b83abb9b7dfcaf122a}
+
+\item 
+bool {\bfseries action\+Confirmed\+Quit\+Game} ()\hypertarget{classBaseComputer_aeb25eb7f477787c6c64480be32fd2287}{}\label{classBaseComputer_aeb25eb7f477787c6c64480be32fd2287}
+
+\item 
+bool {\bfseries action\+Quit\+Game} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a20b70c6e2eda424758b7a7856489ad2d}{}\label{classBaseComputer_a20b70c6e2eda424758b7a7856489ad2d}
+
+\item 
+bool {\bfseries action\+Net\+Save\+Game} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a9b5845bea7c544a129fb527b4a592666}{}\label{classBaseComputer_a9b5845bea7c544a129fb527b4a592666}
+
+\item 
+bool {\bfseries action\+Net\+Die} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a693ece38704367916902e933cd0f9a9a}{}\label{classBaseComputer_a693ece38704367916902e933cd0f9a9a}
+
+\item 
+bool {\bfseries action\+Join\+Game} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_aaee38a47be407994c16ecbc278ba8f4d}{}\label{classBaseComputer_aaee38a47be407994c16ecbc278ba8f4d}
+
+\item 
+bool {\bfseries action\+Show\+Account\+Menu} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_ac6159b611281c82a1117255503149dd3}{}\label{classBaseComputer_ac6159b611281c82a1117255503149dd3}
+
+\item 
+bool {\bfseries action\+Show\+Server\+Menu} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a893846ef8fde9720d7bb6a1f60de3bbd}{}\label{classBaseComputer_a893846ef8fde9720d7bb6a1f60de3bbd}
+
+\item 
+bool {\bfseries action\+Done} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_aa92ebba95fa7f590bd88240efdd7a283}{}\label{classBaseComputer_aa92ebba95fa7f590bd88240efdd7a283}
+
+\item 
+bool {\bfseries show\+Player\+Info} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a9f9435b8ecd4d719045d3c604fc496a2}{}\label{classBaseComputer_a9f9435b8ecd4d719045d3c604fc496a2}
+
+\item 
+bool {\bfseries show\+Ship\+Stats} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a06de780101cc2c1eb186d29f08ae38ae}{}\label{classBaseComputer_a06de780101cc2c1eb186d29f08ae38ae}
+
+\item 
+bool {\bfseries change\+To\+Cargo\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a65138f7b859a042d537fe561f2e6a433}{}\label{classBaseComputer_a65138f7b859a042d537fe561f2e6a433}
+
+\item 
+bool {\bfseries change\+To\+Upgrade\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_aad88e1caf1ba132ab6a1bcae10a4cbd3}{}\label{classBaseComputer_aad88e1caf1ba132ab6a1bcae10a4cbd3}
+
+\item 
+bool {\bfseries change\+To\+Ship\+Dealer\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_ace1f19cc0fa070b4dcda744eb47af304}{}\label{classBaseComputer_ace1f19cc0fa070b4dcda744eb47af304}
+
+\item 
+bool {\bfseries change\+To\+News\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a48030ef509e2062080b5d28630a0d100}{}\label{classBaseComputer_a48030ef509e2062080b5d28630a0d100}
+
+\item 
+bool {\bfseries change\+To\+Missions\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a4adc22a8464e3132c81adc35cd246337}{}\label{classBaseComputer_a4adc22a8464e3132c81adc35cd246337}
+
+\item 
+bool {\bfseries change\+To\+Info\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a24894bbfc883d2ab1c49fc11ca23cdc8}{}\label{classBaseComputer_a24894bbfc883d2ab1c49fc11ca23cdc8}
+
+\item 
+bool {\bfseries change\+To\+Load\+Save\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a3f3597bd8c98b4eabf9a92d28609a89e}{}\label{classBaseComputer_a3f3597bd8c98b4eabf9a92d28609a89e}
+
+\item 
+bool {\bfseries change\+To\+Network\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a08dbbfd13945c886705a0b45066a9d4a}{}\label{classBaseComputer_a08dbbfd13945c886705a0b45066a9d4a}
+
+\item 
+void {\bfseries show\+Network\+Status} (bool show=true)\hypertarget{classBaseComputer_a5b7b516dae3c591fa59d058f2a0acdf4}{}\label{classBaseComputer_a5b7b516dae3c591fa59d058f2a0acdf4}
+
+\item 
+bool {\bfseries hide\+Network\+Status} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classBaseComputer_a9b9fbad335800145aa255025b7dcad57}{}\label{classBaseComputer_a9b9fbad335800145aa255025b7dcad57}
+
+\item 
+void {\bfseries recalc\+Title} (void)\hypertarget{classBaseComputer_a7a2a0b0e78adc2355e4fa7336faba3c2}{}\label{classBaseComputer_a7a2a0b0e78adc2355e4fa7336faba3c2}
+
+\item 
+void {\bfseries refresh} (void)\hypertarget{classBaseComputer_ab487bf5b2d8964f502867eea6d79c738}{}\label{classBaseComputer_ab487bf5b2d8964f502867eea6d79c738}
+
+\item 
+bool {\bfseries is\+Transaction\+OK} (const \hyperlink{classCargo}{Cargo} \&original\+Item, Transaction\+Type trans\+Type, int quantity=1)\hypertarget{classBaseComputer_ac65cdbcc59139a38ed323998b45ce3cb}{}\label{classBaseComputer_ac65cdbcc59139a38ed323998b45ce3cb}
+
+\item 
+\hyperlink{classSimplePickerCell}{Simple\+Picker\+Cell} $\ast$ {\bfseries create\+Category\+Cell} (\hyperlink{classSimplePickerCells}{Simple\+Picker\+Cells} \&cells, const string \&category, bool skip\+First\+Category)\hypertarget{classBaseComputer_aa4efee9fb1cc70be3276d4f89d4c5c5d}{}\label{classBaseComputer_aa4efee9fb1cc70be3276d4f89d4c5c5d}
+
+\item 
+void {\bfseries load\+List\+Picker} (\hyperlink{structBaseComputer_1_1TransactionList}{Transaction\+List} \&list, \hyperlink{classSimplePicker}{Simple\+Picker} \&picker, Transaction\+Type trans\+Type, bool skip\+First\+Category=false)\hypertarget{classBaseComputer_a10f2eed9eabfd46084503f3d90d2ff9d}{}\label{classBaseComputer_a10f2eed9eabfd46084503f3d90d2ff9d}
+
+\item 
+bool {\bfseries scroll\+To\+Item} (\hyperlink{classPicker}{Picker} $\ast$picker, const \hyperlink{classCargo}{Cargo} \&item, bool select, bool skip\+First\+Category)\hypertarget{classBaseComputer_ab7d4200c207eefef5a612fa90008ac35}{}\label{classBaseComputer_ab7d4200c207eefef5a612fa90008ac35}
+
+\item 
+void {\bfseries hide\+Commit\+Controls} (void)\hypertarget{classBaseComputer_adc92718fdcc36321e6a18d5e8b758879}{}\label{classBaseComputer_adc92718fdcc36321e6a18d5e8b758879}
+
+\item 
+void {\bfseries configure\+Cargo\+Commit\+Controls} (const \hyperlink{classCargo}{Cargo} \&item, Transaction\+Type trans)\hypertarget{classBaseComputer_aca1491a8f5fc75d8f61ef0d6361e6a84}{}\label{classBaseComputer_aca1491a8f5fc75d8f61ef0d6361e6a84}
+
+\item 
+bool {\bfseries configure\+Upgrade\+Commit\+Controls} (const \hyperlink{classCargo}{Cargo} \&item, Transaction\+Type trans)\hypertarget{classBaseComputer_a65967ac5cb95cf30e9cb27050545f2e5}{}\label{classBaseComputer_a65967ac5cb95cf30e9cb27050545f2e5}
+
+\item 
+void {\bfseries reset\+Transaction\+Lists} (void)\hypertarget{classBaseComputer_af7ae9f28684435578a2ff543d203dfcd}{}\label{classBaseComputer_af7ae9f28684435578a2ff543d203dfcd}
+
+\item 
+void {\bfseries load\+Cargo\+Controls} (void)\hypertarget{classBaseComputer_ae4e5a8f2dd6eec8d637fabf517d4318c}{}\label{classBaseComputer_ae4e5a8f2dd6eec8d637fabf517d4318c}
+
+\item 
+bool {\bfseries buy\+Selected\+Cargo} (int requested\+Quantity)\hypertarget{classBaseComputer_a91d8f2540ee5af3c528fb727419c5f56}{}\label{classBaseComputer_a91d8f2540ee5af3c528fb727419c5f56}
+
+\item 
+int {\bfseries max\+Quantity\+For\+Player} (const \hyperlink{classCargo}{Cargo} \&item, int suggested\+Quantity)\hypertarget{classBaseComputer_ab3e33112ed06a29322d44b79773e1ad0}{}\label{classBaseComputer_ab3e33112ed06a29322d44b79773e1ad0}
+
+\item 
+bool {\bfseries sell\+Selected\+Cargo} (int requested\+Quantity)\hypertarget{classBaseComputer_abb68056b076a55e97d5ef24439ef3284}{}\label{classBaseComputer_abb68056b076a55e97d5ef24439ef3284}
+
+\item 
+void {\bfseries load\+News\+Controls} (void)\hypertarget{classBaseComputer_a8cf0bbd4d696718181c38f4750b6c888}{}\label{classBaseComputer_a8cf0bbd4d696718181c38f4750b6c888}
+
+\item 
+void {\bfseries load\+Load\+Save\+Controls} (void)\hypertarget{classBaseComputer_a632e70dd4a23db04a51ae0351c48943b}{}\label{classBaseComputer_a632e70dd4a23db04a51ae0351c48943b}
+
+\item 
+void {\bfseries load\+Network\+Controls} (void)\hypertarget{classBaseComputer_a828650b1f00213913e417d73ce6c8ec3}{}\label{classBaseComputer_a828650b1f00213913e417d73ce6c8ec3}
+
+\item 
+void {\bfseries load\+Missions\+Controls} (void)\hypertarget{classBaseComputer_afcfd0c3a9a27a80d832b0c75ce0ffeb2}{}\label{classBaseComputer_afcfd0c3a9a27a80d832b0c75ce0ffeb2}
+
+\item 
+void {\bfseries load\+Upgrade\+Controls} (void)\hypertarget{classBaseComputer_a15c9d7c1c0a7b379a626d3b0b79f1c94}{}\label{classBaseComputer_a15c9d7c1c0a7b379a626d3b0b79f1c94}
+
+\item 
+void {\bfseries load\+Buy\+Upgrade\+Controls} (void)\hypertarget{classBaseComputer_a63aee2005518d0c0d8f0117760a69345}{}\label{classBaseComputer_a63aee2005518d0c0d8f0117760a69345}
+
+\item 
+void {\bfseries load\+Sell\+Upgrade\+Controls} (void)\hypertarget{classBaseComputer_a28d4ca790825dc8f234d9355e3cabe6b}{}\label{classBaseComputer_a28d4ca790825dc8f234d9355e3cabe6b}
+
+\item 
+\hyperlink{classCargo}{Cargo} $\ast$ {\bfseries selected\+Item} (void)\hypertarget{classBaseComputer_a64b15707950676d6927c6ad283fad09d}{}\label{classBaseComputer_a64b15707950676d6927c6ad283fad09d}
+
+\item 
+void {\bfseries switch\+To\+Controls} (Display\+Mode mode)\hypertarget{classBaseComputer_a549fd1082bbb4a4f5bb8b1acaa6ef601}{}\label{classBaseComputer_a549fd1082bbb4a4f5bb8b1acaa6ef601}
+
+\item 
+void {\bfseries create\+Mode\+Buttons} (void)\hypertarget{classBaseComputer_acfd057efb3cce6c4b9afc7da6b038b8b}{}\label{classBaseComputer_acfd057efb3cce6c4b9afc7da6b038b8b}
+
+\item 
+void {\bfseries create\+Controls} (void)\hypertarget{classBaseComputer_ac6d733e909b5d1888ece62aa5854904b}{}\label{classBaseComputer_ac6d733e909b5d1888ece62aa5854904b}
+
+\item 
+void {\bfseries construct\+Controls} (void)\hypertarget{classBaseComputer_af9a09bcfe22916238a109aa1aa9525d4}{}\label{classBaseComputer_af9a09bcfe22916238a109aa1aa9525d4}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries get\+Color\+For\+Group} (std\+::string id)\hypertarget{classBaseComputer_ac2894f89ad578a5fedce6863756b9e10}{}\label{classBaseComputer_ac2894f89ad578a5fedce6863756b9e10}
+
+\item 
+void {\bfseries load\+Master\+List} (\hyperlink{classUnit}{Unit} $\ast$un, const vector$<$ string $>$ \&filterthis, const vector$<$ string $>$ \&invfilterthis, bool removezero, \hyperlink{structBaseComputer_1_1TransactionList}{Transaction\+List} \&list)\hypertarget{classBaseComputer_abdd1f7b98a60587511eaa69b0b5d5d93}{}\label{classBaseComputer_abdd1f7b98a60587511eaa69b0b5d5d93}
+
+\item 
+void {\bfseries load\+Missions\+Master\+List} (\hyperlink{structBaseComputer_1_1TransactionList}{Transaction\+List} \&list)\hypertarget{classBaseComputer_a149395e44842d01524f083a3e254484a}{}\label{classBaseComputer_a149395e44842d01524f083a3e254484a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ Display\+Mode $>$ {\bfseries m\+\_\+display\+Modes}\hypertarget{classBaseComputer_af669cf865fe3ae8071039860df17cbd6}{}\label{classBaseComputer_af669cf865fe3ae8071039860df17cbd6}
+
+\item 
+Display\+Mode {\bfseries m\+\_\+current\+Display}\hypertarget{classBaseComputer_a1e2489aa3ef2c936b1ecf4b9be79a154}{}\label{classBaseComputer_a1e2489aa3ef2c936b1ecf4b9be79a154}
+
+\item 
+\hyperlink{structBaseComputer_1_1TransactionList}{Transaction\+List} {\bfseries m\+\_\+trans\+List1}\hypertarget{classBaseComputer_af7335d4ef2009079e707f3e8486266ef}{}\label{classBaseComputer_af7335d4ef2009079e707f3e8486266ef}
+
+\item 
+\hyperlink{structBaseComputer_1_1TransactionList}{Transaction\+List} {\bfseries m\+\_\+trans\+List2}\hypertarget{classBaseComputer_abc7239a3a44d21316ac689fde130aa08}{}\label{classBaseComputer_abc7239a3a44d21316ac689fde130aa08}
+
+\item 
+\hyperlink{structBaseComputer_1_1TransactionList}{Transaction\+List} $\ast$ {\bfseries m\+\_\+selected\+List}\hypertarget{classBaseComputer_a0781ab4a51a8a88656c846d546733e5c}{}\label{classBaseComputer_a0781ab4a51a8a88656c846d546733e5c}
+
+\item 
+\hyperlink{classControl}{Control} $\ast$ {\bfseries m\+\_\+mode\+Groups} \mbox{[}D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+U\+NT\mbox{]}\hypertarget{classBaseComputer_a5e378ba1683d4ff9f4e9fd9b49adbcf9}{}\label{classBaseComputer_a5e378ba1683d4ff9f4e9fd9b49adbcf9}
+
+\item 
+bool {\bfseries m\+\_\+playing\+Muzak}\hypertarget{classBaseComputer_a56c452eeaf66faf7810ded591a1d7bfe}{}\label{classBaseComputer_a56c452eeaf66faf7810ded591a1d7bfe}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Wctl\+Base$<$ Base\+Computer $>$}\hypertarget{classBaseComputer_a35a31bef0cac4e1f63f0eebf2eb04339}{}\label{classBaseComputer_a35a31bef0cac4e1f63f0eebf2eb04339}
+
+\item 
+class {\bfseries Load\+Save\+Quit\+Confirm}\hypertarget{classBaseComputer_aed32c38334cb910334c7d6a575ee28fc}{}\label{classBaseComputer_aed32c38334cb910334c7d6a575ee28fc}
+
+\item 
+class {\bfseries Upgrade\+Operation}\hypertarget{classBaseComputer_a3a75291c12bd401f9ccc200a44064e1a}{}\label{classBaseComputer_a3a75291c12bd401f9ccc200a44064e1a}
+
+\item 
+class {\bfseries Buy\+Upgrade\+Operation}\hypertarget{classBaseComputer_a80ccf2bfc6b8a2525fc5754a5133dd5b}{}\label{classBaseComputer_a80ccf2bfc6b8a2525fc5754a5133dd5b}
+
+\item 
+class {\bfseries Sell\+Upgrade\+Operation}\hypertarget{classBaseComputer_a1534467de6680b2f31d34cb1a0863ae7}{}\label{classBaseComputer_a1534467de6680b2f31d34cb1a0863ae7}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/basecomputer.\+h\item 
+cmd/basecomputer.\+cpp\end{DoxyCompactItemize}

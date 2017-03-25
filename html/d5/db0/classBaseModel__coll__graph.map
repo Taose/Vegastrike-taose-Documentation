@@ -1,0 +1,6 @@
+<map id="BaseModel" name="BaseModel">
+<area shape="rect" id="node2" href="$d1/d93/classAABBOptimizedTree.html" title="{AABBOptimizedTree\n|# mNbNodes\l|+ AABBOptimizedTree()\l+ ~AABBOptimizedTree()\l+ Build()\l+ Refit()\l+ Walk()\l+ GetUsedBytes()\l+ GetNbNodes()\l}" alt="" coords="5,264,176,429"/>
+<area shape="rect" id="node3" href="$d7/d48/classMeshInterface.html" title="{MeshInterface\n||+ MeshInterface()\l+ ~MeshInterface()\l+ GetNbTriangles()\l+ GetNbVertices()\l+ SetNbTriangles()\l+ SetNbVertices()\l+ SetPointers()\l+ GetTris()\l+ GetVerts()\l+ GetTriangle()\l+ RemapClient()\l+ IsValid()\l+ CheckTopology()\l}" alt="" coords="200,220,333,473"/>
+<area shape="rect" id="node4" href="$d5/d14/classAABBTree.html" title="{AABBTree\n||+ AABBTree()\l+ ~AABBTree()\l+ Build()\l+ Release()\l+ GetIndices()\l+ GetNbNodes()\l+ IsComplete()\l+ ComputeDepth()\l+ GetUsedBytes()\l+ Walk()\l+ Refit()\l+ Refit2()\l}" alt="" coords="357,227,488,466"/>
+<area shape="rect" id="node5" href="$da/d38/classAABBTreeNode.html" title="{AABBTreeNode\n|# mNodePrimitives\l# mNbPrimitives\l|+ GetPrimitives()\l+ GetNbPrimitives()\l# Split()\l# Subdivide()\l# _BuildHierarchy()\l# _Refit()\l}" alt="" coords="353,5,492,171"/>
+</map>

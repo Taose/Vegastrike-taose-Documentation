@@ -1,0 +1,114 @@
+\hypertarget{classFSM}{}\section{F\+SM Class Reference}
+\label{classFSM}\index{F\+SM@{F\+SM}}
+
+
+Collaboration diagram for F\+SM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{dc/d55/classFSM__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structFSM_1_1Node}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Stop\+All\+Sounds} (unsigned char sex)\hypertarget{classFSM_a0f74c42b778d479e60cd20f6e1091d87}{}\label{classFSM_a0f74c42b778d479e60cd20f6e1091d87}
+
+\item 
+{\bfseries F\+SM} (const std\+::string \&filename)\hypertarget{classFSM_afdea01bdf64def509ac34f004298af14}{}\label{classFSM_afdea01bdf64def509ac34f004298af14}
+
+\item 
+void {\bfseries Load\+X\+ML} (const char $\ast$factionfile)\hypertarget{classFSM_a8aae87a68d2e37808f5bf2dad882885e}{}\label{classFSM_a8aae87a68d2e37808f5bf2dad882885e}
+
+\item 
+void {\bfseries begin\+Element} (const string \&name, const \hyperlink{classXMLSupport_1_1AttributeList}{Attribute\+List} attributes)\hypertarget{classFSM_a3f5336fe3273dfd270e9963a10e082cf}{}\label{classFSM_a3f5336fe3273dfd270e9963a10e082cf}
+
+\item 
+std\+::string {\bfseries Get\+Edges\+String} (unsigned int curstate)\hypertarget{classFSM_a1361b0ff3ed433629eea598c73ee0d05}{}\label{classFSM_a1361b0ff3ed433629eea598c73ee0d05}
+
+\item 
+float {\bfseries get\+Delta\+Relation} (int prevstate, unsigned int curstate) const \hypertarget{classFSM_a2cb1e52d17cd6cdb3b287b76bcaf1ae7}{}\label{classFSM_a2cb1e52d17cd6cdb3b287b76bcaf1ae7}
+
+\item 
+int {\bfseries get\+Comm\+Message\+Mood} (int curstate, float mood, float randomresponsefactor, float relationship) const \hypertarget{classFSM_a2545d8c581a19bf567404a4a4bd68e31}{}\label{classFSM_a2545d8c581a19bf567404a4a4bd68e31}
+
+\item 
+int {\bfseries get\+Default\+State} (float relationship) const \hypertarget{classFSM_a4c615f9aad4634a9a2dc15ae37e9c177}{}\label{classFSM_a4c615f9aad4634a9a2dc15ae37e9c177}
+
+\item 
+int {\bfseries Get\+Un\+Dock\+Node} () const \hypertarget{classFSM_a2d1c6ae118d02cf557f75b6044f64ad1}{}\label{classFSM_a2d1c6ae118d02cf557f75b6044f64ad1}
+
+\item 
+int {\bfseries Get\+Fail\+Dock\+Node} () const \hypertarget{classFSM_a73aa82135d7c337e29c3c6610b4e4fe6}{}\label{classFSM_a73aa82135d7c337e29c3c6610b4e4fe6}
+
+\item 
+int {\bfseries Get\+Dock\+Node} () const \hypertarget{classFSM_a21bef925b6ccc4f90015206743868f89}{}\label{classFSM_a21bef925b6ccc4f90015206743868f89}
+
+\item 
+int {\bfseries Get\+Able\+To\+Dock\+Node} () const \hypertarget{classFSM_ae7cc500372ae077f481fec372758582e}{}\label{classFSM_ae7cc500372ae077f481fec372758582e}
+
+\item 
+int {\bfseries Get\+Un\+Able\+To\+Dock\+Node} () const \hypertarget{classFSM_ade8a8554f8906acd4398d1994f53757f}{}\label{classFSM_ade8a8554f8906acd4398d1994f53757f}
+
+\item 
+int {\bfseries Get\+Yes\+Node} () const \hypertarget{classFSM_afc36ea0c689227f08934c29ef83c4aa1}{}\label{classFSM_afc36ea0c689227f08934c29ef83c4aa1}
+
+\item 
+int {\bfseries Get\+No\+Node} () const \hypertarget{classFSM_a18167f1a56c1077a63c9ef86f009e9f9}{}\label{classFSM_a18167f1a56c1077a63c9ef86f009e9f9}
+
+\item 
+int {\bfseries Get\+Hit\+Node} () const \hypertarget{classFSM_ae458c0d2ef859475e583d561293cc8ce}{}\label{classFSM_ae458c0d2ef859475e583d561293cc8ce}
+
+\item 
+int {\bfseries Get\+Damaged\+Node} () const \hypertarget{classFSM_aa0c3c9efc7f14efc0ca856056b3c642b}{}\label{classFSM_aa0c3c9efc7f14efc0ca856056b3c642b}
+
+\item 
+int {\bfseries Get\+Dealt\+Damage\+Node} () const \hypertarget{classFSM_a8b78c6bdf064406967c2bdc1bc2f3867}{}\label{classFSM_a8b78c6bdf064406967c2bdc1bc2f3867}
+
+\item 
+int {\bfseries Get\+Score\+Kill\+Node} () const \hypertarget{classFSM_ab992c0c3c9ff1cd00145d5c8cd9a5234}{}\label{classFSM_ab992c0c3c9ff1cd00145d5c8cd9a5234}
+
+\item 
+int {\bfseries Get\+Request\+Land\+Node} () const \hypertarget{classFSM_a83be690775e2075dedbc3e467a6b0865}{}\label{classFSM_a83be690775e2075dedbc3e467a6b0865}
+
+\item 
+int {\bfseries Get\+Contraband\+Initiate\+Node} () const \hypertarget{classFSM_a5c063c3c11b7ea9682b29ffce531cd12}{}\label{classFSM_a5c063c3c11b7ea9682b29ffce531cd12}
+
+\item 
+int {\bfseries Get\+Contraband\+Un\+Detected\+Node} () const \hypertarget{classFSM_a9147c9400d1be87613b8394c9ecd9fc2}{}\label{classFSM_a9147c9400d1be87613b8394c9ecd9fc2}
+
+\item 
+int {\bfseries Get\+Contraband\+Detected\+Node} () const \hypertarget{classFSM_ab1efa5cf561b7ca3bc0ce669a107da5e}{}\label{classFSM_ab1efa5cf561b7ca3bc0ce669a107da5e}
+
+\item 
+int {\bfseries Get\+Contraband\+Wobbly\+Node} () const \hypertarget{classFSM_a96f881cd947555baac3c734430b36e0f}{}\label{classFSM_a96f881cd947555baac3c734430b36e0f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries begin\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{classFSM_adc708200edf172ff393ba8adbbc681ac}{}\label{classFSM_adc708200edf172ff393ba8adbbc681ac}
+
+\item 
+static void {\bfseries end\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name)\hypertarget{classFSM_aebc6f0a0cb99a8474c0d237f940f18f9}{}\label{classFSM_aebc6f0a0cb99a8474c0d237f940f18f9}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{structFSM_1_1Node}{Node} $>$ {\bfseries nodes}\hypertarget{classFSM_aaa486eabf885207fc51ddce4675c44df}{}\label{classFSM_aaa486eabf885207fc51ddce4675c44df}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/communication.\+h\item 
+cmd/ai/communication.\+cpp\item 
+cmd/ai/communication\+\_\+xml.\+cpp\end{DoxyCompactItemize}

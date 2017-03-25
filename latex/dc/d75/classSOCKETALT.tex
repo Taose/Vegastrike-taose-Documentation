@@ -1,0 +1,112 @@
+\hypertarget{classSOCKETALT}{}\section{S\+O\+C\+K\+E\+T\+A\+LT Class Reference}
+\label{classSOCKETALT}\index{S\+O\+C\+K\+E\+T\+A\+LT@{S\+O\+C\+K\+E\+T\+A\+LT}}
+
+
+Collaboration diagram for S\+O\+C\+K\+E\+T\+A\+LT\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d6/d04/classSOCKETALT__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSOCKETALT_1_1CompareLt}{Compare\+Lt}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+O\+C\+K\+E\+T\+A\+LT} (const \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&orig)\hypertarget{classSOCKETALT_a4b99c62a277fdc22e00d149488d8974c}{}\label{classSOCKETALT_a4b99c62a277fdc22e00d149488d8974c}
+
+\item 
+{\bfseries S\+O\+C\+K\+E\+T\+A\+LT} (\hyperlink{classVsnetSocket}{Vsnet\+Socket} $\ast$sock)\hypertarget{classSOCKETALT_a8b5226c263f82c2c904bee7eb2779096}{}\label{classSOCKETALT_a8b5226c263f82c2c904bee7eb2779096}
+
+\item 
+{\bfseries S\+O\+C\+K\+E\+T\+A\+LT} (int sock, bool mode, const \hyperlink{structAddressIP}{Address\+IP} \&remote\+\_\+ip, \hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{classSOCKETALT_a393423f6cedcbc19c43fe10589de49ef}{}\label{classSOCKETALT_a393423f6cedcbc19c43fe10589de49ef}
+
+\item 
+\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \& {\bfseries operator=} (const \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&orig)\hypertarget{classSOCKETALT_aca1b9d7cd5d85bfafdb9bdda819161cf}{}\label{classSOCKETALT_aca1b9d7cd5d85bfafdb9bdda819161cf}
+
+\item 
+int {\bfseries get\+\_\+fd} () const \hypertarget{classSOCKETALT_a1772f111ed5b171091dc3c2ea46b0003}{}\label{classSOCKETALT_a1772f111ed5b171091dc3c2ea46b0003}
+
+\item 
+bool {\bfseries valid} () const \hypertarget{classSOCKETALT_ac9ea3e0fa7f9e51953f802e690c3936d}{}\label{classSOCKETALT_ac9ea3e0fa7f9e51953f802e690c3936d}
+
+\item 
+bool {\bfseries is\+Tcp} () const \hypertarget{classSOCKETALT_a4839a4fa5017186ca5e3e03f546ae0d4}{}\label{classSOCKETALT_a4839a4fa5017186ca5e3e03f546ae0d4}
+
+\item 
+int {\bfseries queue\+Len} (int pri)\hypertarget{classSOCKETALT_a10fd844ebd3bb03522b663ac63311dfa}{}\label{classSOCKETALT_a10fd844ebd3bb03522b663ac63311dfa}
+
+\item 
+int {\bfseries opt\+Payload\+Size} () const \hypertarget{classSOCKETALT_a4e7cb093b57876d47b3bf11f2842555f}{}\label{classSOCKETALT_a4e7cb093b57876d47b3bf11f2842555f}
+
+\item 
+bool {\bfseries is\+Active} ()\hypertarget{classSOCKETALT_a90e13486280f85c9a6d1d3eb21a8f1c3}{}\label{classSOCKETALT_a90e13486280f85c9a6d1d3eb21a8f1c3}
+
+\item 
+int {\bfseries sendbuf} (\hyperlink{classPacket}{Packet} $\ast$packet, const \hyperlink{structAddressIP}{Address\+IP} $\ast$to, int pcktflags)\hypertarget{classSOCKETALT_afc8ce31d28f5e0a7f5ac14eeb4f72431}{}\label{classSOCKETALT_afc8ce31d28f5e0a7f5ac14eeb4f72431}
+
+\item 
+bool {\bfseries set\+\_\+nonblock} ()\hypertarget{classSOCKETALT_a1b164a7f253b893f5a16792d65a098ba}{}\label{classSOCKETALT_a1b164a7f253b893f5a16792d65a098ba}
+
+\item 
+bool {\bfseries set\+\_\+block} ()\hypertarget{classSOCKETALT_a3e53d4e62e6fe210dbeaa014ee2133cd}{}\label{classSOCKETALT_a3e53d4e62e6fe210dbeaa014ee2133cd}
+
+\item 
+int {\bfseries recvbuf} (\hyperlink{classPacket}{Packet} $\ast$p, \hyperlink{structAddressIP}{Address\+IP} $\ast$ipadr)\hypertarget{classSOCKETALT_ad9aed444072280a467432597aae9af7c}{}\label{classSOCKETALT_ad9aed444072280a467432597aae9af7c}
+
+\item 
+void {\bfseries disconnect} (const char $\ast$s)\hypertarget{classSOCKETALT_a29b35c54a1a76ab77892f2ed7ed0b442}{}\label{classSOCKETALT_a29b35c54a1a76ab77892f2ed7ed0b442}
+
+\item 
+bool {\bfseries same\+Address} (const \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&l) const \hypertarget{classSOCKETALT_a77f4bec3ac14b1518b90651e27748b61}{}\label{classSOCKETALT_a77f4bec3ac14b1518b90651e27748b61}
+
+\item 
+bool {\bfseries lower\+Address} (const \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&l) const \hypertarget{classSOCKETALT_aea16708352723a0d61fcd3c1a422597e}{}\label{classSOCKETALT_aea16708352723a0d61fcd3c1a422597e}
+
+\item 
+void {\bfseries add\+To\+Set} (\hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{classSOCKETALT_afcb332c1cfe2307a2a28b606b9c9e1a7}{}\label{classSOCKETALT_afcb332c1cfe2307a2a28b606b9c9e1a7}
+
+\item 
+void {\bfseries set\+Set} (\hyperlink{classSocketSet}{Socket\+Set} $\ast$set)\hypertarget{classSOCKETALT_ae1f78ebf1a9def92d697394614b82890}{}\label{classSOCKETALT_ae1f78ebf1a9def92d697394614b82890}
+
+\item 
+const \hyperlink{structAddressIP}{Address\+IP} \& {\bfseries get\+Remote\+Address} () const \hypertarget{classSOCKETALT_a9d62c4e4439ac3d80be8600c46fe4370}{}\label{classSOCKETALT_a9d62c4e4439ac3d80be8600c46fe4370}
+
+\item 
+bool {\bfseries set\+Remote\+Address} (const \hyperlink{structAddressIP}{Address\+IP} \&)\hypertarget{classSOCKETALT_a4db7c599bc74aa4291a2453bdf27cac2}{}\label{classSOCKETALT_a4db7c599bc74aa4291a2453bdf27cac2}
+
+\item 
+const \hyperlink{structAddressIP}{Address\+IP} \& {\bfseries get\+Local\+Address} () const \hypertarget{classSOCKETALT_a2ec44a9ae1415da80adb2871789db120}{}\label{classSOCKETALT_a2ec44a9ae1415da80adb2871789db120}
+
+\item 
+bool {\bfseries set\+Local\+Address} (const \hyperlink{structAddressIP}{Address\+IP} \&)\hypertarget{classSOCKETALT_ae34147888af075f98b20efc548f1efa8}{}\label{classSOCKETALT_ae34147888af075f98b20efc548f1efa8}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSOCKETALT_a1501d9e28f48d093461da1163dab2e4e}{Compare\+Lt}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&ostr, const \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&s)\hypertarget{classSOCKETALT_a13242afe5455ac9062215324c49002dc}{}\label{classSOCKETALT_a13242afe5455ac9062215324c49002dc}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&l, const \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} \&r)\hypertarget{classSOCKETALT_ac9203057d1c079db34e68517ece6eb5f}{}\label{classSOCKETALT_ac9203057d1c079db34e68517ece6eb5f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{S\+O\+C\+K\+E\+T\+A\+LT@{S\+O\+C\+K\+E\+T\+A\+LT}!Compare\+Lt@{Compare\+Lt}}
+\index{Compare\+Lt@{Compare\+Lt}!S\+O\+C\+K\+E\+T\+A\+LT@{S\+O\+C\+K\+E\+T\+A\+LT}}
+\subsubsection[{\texorpdfstring{Compare\+Lt}{CompareLt}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Compare\+Lt}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classSOCKETALT_a1501d9e28f48d093461da1163dab2e4e}{}\label{classSOCKETALT_a1501d9e28f48d093461da1163dab2e4e}
+Required by the download manager achieve a sorting of sockets. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+socket.\+h\item 
+networking/lowlevel/vsnet\+\_\+socket.\+cpp\end{DoxyCompactItemize}

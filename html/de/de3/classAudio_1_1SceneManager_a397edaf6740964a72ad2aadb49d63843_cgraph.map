@@ -1,0 +1,6 @@
+<map id="Audio::SceneManager::activationPhaseImpl" name="Audio::SceneManager::activationPhaseImpl">
+<area shape="rect" id="node2" href="$db/dde/classAudio_1_1SimpleScene.html#a622b6ee2aaec922ed30059a94da1e6f6" title="Audio::SimpleScene\l::getListener" alt="" coords="225,5,365,47"/>
+<area shape="rect" id="node3" href="$db/dde/classAudio_1_1SimpleScene.html#a2fb180eb6a9683bbf9b77d17776562e0" title="Audio::SimpleScene\l::getActiveSources" alt="" coords="225,71,365,112"/>
+<area shape="rect" id="node4" href="$db/dde/classAudio_1_1SimpleScene.html#a937c4f1f6bf6f88a31843dcdda3a28e4" title="Audio::SimpleScene\l::getActiveSourcesEnd" alt="" coords="217,136,373,177"/>
+<area shape="rect" id="node5" href="$db/de1/classAudio_1_1Listener.html#abb791ce5606438ac120e97cb92e91380" title="Audio::Listener::getPosition" alt="" coords="204,202,387,229"/>
+</map>

@@ -1,0 +1,371 @@
+\hypertarget{classAudio_1_1SoundBuffer}{}\section{Audio\+:\+:Sound\+Buffer Class Reference}
+\label{classAudio_1_1SoundBuffer}\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+
+
+{\ttfamily \#include $<$Sound\+Buffer.\+h$>$}
+
+
+
+Collaboration diagram for Audio\+:\+:Sound\+Buffer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{d0/d79/classAudio_1_1SoundBuffer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1SoundBuffer_a7ee5dea6d25edde63367906605c343a3}{Sound\+Buffer} ()  throw ()
+\item 
+\hyperlink{classAudio_1_1SoundBuffer_a8147b306d37589176c8dd5a971ea4ab8}{Sound\+Buffer} (unsigned int capacity, const \hyperlink{structAudio_1_1Format}{Format} \&format)  throw (\+Out\+Of\+Memory\+Exception)
+\item 
+\hyperlink{classAudio_1_1SoundBuffer_ab74bc6e8116beb9629646a24cfd8bd93}{Sound\+Buffer} (const \hyperlink{classAudio_1_1SoundBuffer}{Sound\+Buffer} \&other)  throw (\+Out\+Of\+Memory\+Exception)
+\item 
+void \hyperlink{classAudio_1_1SoundBuffer_a330ca69d99d6e39d83a419bc7d580b57}{reserve} (unsigned int capacity)  throw (\+Out\+Of\+Memory\+Exception)
+\item 
+void \hyperlink{classAudio_1_1SoundBuffer_a593491238df1c985a96c805eff2fa752}{reserve} (unsigned int capacity, const \hyperlink{structAudio_1_1Format}{Format} \&format)  throw (\+Out\+Of\+Memory\+Exception)
+\item 
+unsigned int \hyperlink{classAudio_1_1SoundBuffer_af4d32175623442e285d28a3649c950c8}{get\+Byte\+Capacity} () const   throw ()
+\item 
+unsigned int \hyperlink{classAudio_1_1SoundBuffer_af505e2ae8e292b03fb373b72388ee290}{get\+Sample\+Capacity} () const   throw ()
+\item 
+unsigned int \hyperlink{classAudio_1_1SoundBuffer_a88a1a46b15593999f0a288ba691fac54}{get\+Used\+Bytes} () const   throw ()
+\item 
+void $\ast$ \hyperlink{classAudio_1_1SoundBuffer_acef90321df3cb0dbe97259b3f9cd6d2c}{get\+Buffer} ()  throw ()
+\item 
+const void $\ast$ \hyperlink{classAudio_1_1SoundBuffer_ad672704d517e3b3b842880049fbbb104}{get\+Buffer} () const   throw ()
+\item 
+const \hyperlink{structAudio_1_1Format}{Format} \& \hyperlink{classAudio_1_1SoundBuffer_a773e0f5a006541ae134dc6bbc56e1005}{get\+Format} () const 
+\item 
+void \hyperlink{classAudio_1_1SoundBuffer_a9fdc4ec0d25a341e2f59a1cd26fb5b18}{set\+Format} (const \hyperlink{structAudio_1_1Format}{Format} \&new\+Format)  throw ()
+\item 
+void \hyperlink{classAudio_1_1SoundBuffer_a03ebbf6341feeb181b83c9a8283301d8}{set\+Used\+Bytes} (unsigned int used)  throw ()
+\item 
+unsigned int \hyperlink{classAudio_1_1SoundBuffer_a3e6c9dbe854b6c538cf9c730e8818a94}{get\+Sample\+Count} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1SoundBuffer_ab3b882f2f49e9a6361677fa949b4f715}{reformat} (const \hyperlink{structAudio_1_1Format}{Format} \&new\+Format)  throw (\+Exception)
+\item 
+\hyperlink{classAudio_1_1SoundBuffer}{Sound\+Buffer} \& \hyperlink{classAudio_1_1SoundBuffer_a26b0a191447c9f1e2558a528160ca1e7}{operator=} (const \hyperlink{classAudio_1_1SoundBuffer}{Sound\+Buffer} \&other)  throw (\+Out\+Of\+Memory\+Exception)
+\item 
+void \hyperlink{classAudio_1_1SoundBuffer_ac79d65c98187412b6c9bd727a14385fb}{swap} (\hyperlink{classAudio_1_1SoundBuffer}{Sound\+Buffer} \&other)  throw ()
+\item 
+void \hyperlink{classAudio_1_1SoundBuffer_a30de6438a4df9edfa9deb6f211cbc2d1}{optimize} ()  throw ()
+\item 
+void {\bfseries clear} ()\hypertarget{classAudio_1_1SoundBuffer_a5d6c4b64108c47be57ffac8316f0eb2e}{}\label{classAudio_1_1SoundBuffer_a5d6c4b64108c47be57ffac8316f0eb2e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1Sound}{Sound} Buffer class
+
+\begin{DoxyRemark}{Remarks}
+This class represents a buffer for sound data. Though codecs usually treat samples as raw bytes in some uninteresting (for the api) format, renderers don\textquotesingle{}t have that luxury. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{This class encapsulates buffers and associates a format to them,}
+allowing for the implementation of format conversion (should it be needed). 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{At this point no conversion is supported, and requiring such}
+a conversion would raise a \hyperlink{classAudio_1_1NotImplementedException}{Not\+Implemented\+Exception}. 
+\end{DoxyParagraph}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!Sound\+Buffer@{Sound\+Buffer}}
+\index{Sound\+Buffer@{Sound\+Buffer}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{Sound\+Buffer()}{SoundBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Sound\+Buffer\+::\+Sound\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SoundBuffer_a7ee5dea6d25edde63367906605c343a3}{}\label{classAudio_1_1SoundBuffer_a7ee5dea6d25edde63367906605c343a3}
+Create an empty buffer (zero capacity, default format) \index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!Sound\+Buffer@{Sound\+Buffer}}
+\index{Sound\+Buffer@{Sound\+Buffer}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{Sound\+Buffer(unsigned int capacity, const Format \&format)}{SoundBuffer(unsigned int capacity, const Format &format)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Sound\+Buffer\+::\+Sound\+Buffer (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{capacity, }
+\item[{const {\bf Format} \&}]{format}
+\end{DoxyParamCaption}
+) throw  {\bf Out\+Of\+Memory\+Exception}) }\hypertarget{classAudio_1_1SoundBuffer_a8147b306d37589176c8dd5a971ea4ab8}{}\label{classAudio_1_1SoundBuffer_a8147b306d37589176c8dd5a971ea4ab8}
+Create a buffer of specified sample capacity and format 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d6/d0a/classAudio_1_1SoundBuffer_a8147b306d37589176c8dd5a971ea4ab8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!Sound\+Buffer@{Sound\+Buffer}}
+\index{Sound\+Buffer@{Sound\+Buffer}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{Sound\+Buffer(const Sound\+Buffer \&other)}{SoundBuffer(const SoundBuffer &other)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Sound\+Buffer\+::\+Sound\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sound\+Buffer} \&}]{other}
+\end{DoxyParamCaption}
+) throw  {\bf Out\+Of\+Memory\+Exception}) }\hypertarget{classAudio_1_1SoundBuffer_ab74bc6e8116beb9629646a24cfd8bd93}{}\label{classAudio_1_1SoundBuffer_ab74bc6e8116beb9629646a24cfd8bd93}
+Create a copy of the other buffer \begin{DoxyRemark}{Remarks}
+Only used bytes will be copied. 
+\end{DoxyRemark}
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!get\+Buffer@{get\+Buffer}}
+\index{get\+Buffer@{get\+Buffer}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Buffer()}{getBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Audio\+::\+Sound\+Buffer\+::get\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SoundBuffer_acef90321df3cb0dbe97259b3f9cd6d2c}{}\label{classAudio_1_1SoundBuffer_acef90321df3cb0dbe97259b3f9cd6d2c}
+Get write access to the buffer 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0a/classAudio_1_1SoundBuffer_acef90321df3cb0dbe97259b3f9cd6d2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!get\+Buffer@{get\+Buffer}}
+\index{get\+Buffer@{get\+Buffer}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Buffer() const }{getBuffer() const }}]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ Audio\+::\+Sound\+Buffer\+::get\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SoundBuffer_ad672704d517e3b3b842880049fbbb104}{}\label{classAudio_1_1SoundBuffer_ad672704d517e3b3b842880049fbbb104}
+Get read access to the buffer \index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!get\+Byte\+Capacity@{get\+Byte\+Capacity}}
+\index{get\+Byte\+Capacity@{get\+Byte\+Capacity}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Byte\+Capacity() const }{getByteCapacity() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Audio\+::\+Sound\+Buffer\+::get\+Byte\+Capacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SoundBuffer_af4d32175623442e285d28a3649c950c8}{}\label{classAudio_1_1SoundBuffer_af4d32175623442e285d28a3649c950c8}
+Get a buffer\textquotesingle{}s byte capacity \index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!get\+Format@{get\+Format}}
+\index{get\+Format@{get\+Format}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Format() const }{getFormat() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Format}\& Audio\+::\+Sound\+Buffer\+::get\+Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SoundBuffer_a773e0f5a006541ae134dc6bbc56e1005}{}\label{classAudio_1_1SoundBuffer_a773e0f5a006541ae134dc6bbc56e1005}
+Get the buffer\textquotesingle{}s format \index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!get\+Sample\+Capacity@{get\+Sample\+Capacity}}
+\index{get\+Sample\+Capacity@{get\+Sample\+Capacity}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Sample\+Capacity() const }{getSampleCapacity() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Audio\+::\+Sound\+Buffer\+::get\+Sample\+Capacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SoundBuffer_af505e2ae8e292b03fb373b72388ee290}{}\label{classAudio_1_1SoundBuffer_af505e2ae8e292b03fb373b72388ee290}
+Get a buffer\textquotesingle{}s sample capacity \begin{DoxyRemark}{Remarks}
+Frame capacity actually, which is not the same for multichannel formats. 
+\end{DoxyRemark}
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!get\+Sample\+Count@{get\+Sample\+Count}}
+\index{get\+Sample\+Count@{get\+Sample\+Count}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Sample\+Count() const }{getSampleCount() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Audio\+::\+Sound\+Buffer\+::get\+Sample\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SoundBuffer_a3e6c9dbe854b6c538cf9c730e8818a94}{}\label{classAudio_1_1SoundBuffer_a3e6c9dbe854b6c538cf9c730e8818a94}
+Get a buffer\textquotesingle{}s sample capacity for a certain format 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d6/d0a/classAudio_1_1SoundBuffer_a3e6c9dbe854b6c538cf9c730e8818a94_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!get\+Used\+Bytes@{get\+Used\+Bytes}}
+\index{get\+Used\+Bytes@{get\+Used\+Bytes}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Used\+Bytes() const }{getUsedBytes() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Audio\+::\+Sound\+Buffer\+::get\+Used\+Bytes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SoundBuffer_a88a1a46b15593999f0a288ba691fac54}{}\label{classAudio_1_1SoundBuffer_a88a1a46b15593999f0a288ba691fac54}
+Get the portion of the buffer actually used for holding useful data 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0a/classAudio_1_1SoundBuffer_a88a1a46b15593999f0a288ba691fac54_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{operator=(const Sound\+Buffer \&other)}{operator=(const SoundBuffer &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\+Buffer} \& Audio\+::\+Sound\+Buffer\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sound\+Buffer} \&}]{other}
+\end{DoxyParamCaption}
+) throw  {\bf Out\+Of\+Memory\+Exception}) }\hypertarget{classAudio_1_1SoundBuffer_a26b0a191447c9f1e2558a528160ca1e7}{}\label{classAudio_1_1SoundBuffer_a26b0a191447c9f1e2558a528160ca1e7}
+Copy the given buffer as if Sound\+Buffer(buffer) was called 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d6/d0a/classAudio_1_1SoundBuffer_a26b0a191447c9f1e2558a528160ca1e7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!optimize@{optimize}}
+\index{optimize@{optimize}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{optimize()}{optimize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Sound\+Buffer\+::optimize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SoundBuffer_a30de6438a4df9edfa9deb6f211cbc2d1}{}\label{classAudio_1_1SoundBuffer_a30de6438a4df9edfa9deb6f211cbc2d1}
+Free extra memory allocated 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0a/classAudio_1_1SoundBuffer_a30de6438a4df9edfa9deb6f211cbc2d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!reformat@{reformat}}
+\index{reformat@{reformat}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{reformat(const Format \&new\+Format)}{reformat(const Format &newFormat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Sound\+Buffer\+::reformat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Format} \&}]{new\+Format}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1SoundBuffer_ab3b882f2f49e9a6361677fa949b4f715}{}\label{classAudio_1_1SoundBuffer_ab3b882f2f49e9a6361677fa949b4f715}
+Reformat the samples in the buffer without reallocating if possible (inplace) \begin{DoxyRemark}{Remarks}
+If the new format requires more bytes than the buffer\textquotesingle{}s byte capacity, reallocation will be unavoidable. However, if the same buffer is used for conversion of several packets, subsequent operations on same-\/sized packets will not require such a reallocation, since if the new format requires less bytes only the used bytes count will be modified leaving the same byte capacity. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d6/d0a/classAudio_1_1SoundBuffer_ab3b882f2f49e9a6361677fa949b4f715_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!reserve@{reserve}}
+\index{reserve@{reserve}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{reserve(unsigned int capacity)}{reserve(unsigned int capacity)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Sound\+Buffer\+::reserve (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{capacity}
+\end{DoxyParamCaption}
+) throw  {\bf Out\+Of\+Memory\+Exception}) }\hypertarget{classAudio_1_1SoundBuffer_a330ca69d99d6e39d83a419bc7d580b57}{}\label{classAudio_1_1SoundBuffer_a330ca69d99d6e39d83a419bc7d580b57}
+Set a buffer\textquotesingle{}s capacity. 
+\begin{DoxyParams}{Parameters}
+{\em capacity} & The buffer\textquotesingle{}s capacity in bytes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Destroys the current data in the buffer. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0a/classAudio_1_1SoundBuffer_a330ca69d99d6e39d83a419bc7d580b57_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!reserve@{reserve}}
+\index{reserve@{reserve}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{reserve(unsigned int capacity, const Format \&format)}{reserve(unsigned int capacity, const Format &format)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Sound\+Buffer\+::reserve (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{capacity, }
+\item[{const {\bf Format} \&}]{format}
+\end{DoxyParamCaption}
+) throw  {\bf Out\+Of\+Memory\+Exception}) }\hypertarget{classAudio_1_1SoundBuffer_a593491238df1c985a96c805eff2fa752}{}\label{classAudio_1_1SoundBuffer_a593491238df1c985a96c805eff2fa752}
+Set a buffer\textquotesingle{}s capacity and format. 
+\begin{DoxyParams}{Parameters}
+{\em capacity} & The buffer\textquotesingle{}s capacity in samples (or frames) for \textquotesingle{}format\textquotesingle{} \\
+\hline
+{\em format} & The new format associated to the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Destroys the current data in the buffer. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d6/d0a/classAudio_1_1SoundBuffer_a593491238df1c985a96c805eff2fa752_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!set\+Format@{set\+Format}}
+\index{set\+Format@{set\+Format}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{set\+Format(const Format \&new\+Format)}{setFormat(const Format &newFormat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Sound\+Buffer\+::set\+Format (
+\begin{DoxyParamCaption}
+\item[{const {\bf Format} \&}]{new\+Format}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SoundBuffer_a9fdc4ec0d25a341e2f59a1cd26fb5b18}{}\label{classAudio_1_1SoundBuffer_a9fdc4ec0d25a341e2f59a1cd26fb5b18}
+Set the format of the stream mantaining the capacity yet destroying all current data \index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!set\+Used\+Bytes@{set\+Used\+Bytes}}
+\index{set\+Used\+Bytes@{set\+Used\+Bytes}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{set\+Used\+Bytes(unsigned int used)}{setUsedBytes(unsigned int used)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Sound\+Buffer\+::set\+Used\+Bytes (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{used}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SoundBuffer_a03ebbf6341feeb181b83c9a8283301d8}{}\label{classAudio_1_1SoundBuffer_a03ebbf6341feeb181b83c9a8283301d8}
+Set the portion of the buffer actually used for holding useful data 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0a/classAudio_1_1SoundBuffer_a03ebbf6341feeb181b83c9a8283301d8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}!swap@{swap}}
+\index{swap@{swap}!Audio\+::\+Sound\+Buffer@{Audio\+::\+Sound\+Buffer}}
+\subsubsection[{\texorpdfstring{swap(\+Sound\+Buffer \&other)}{swap(SoundBuffer &other)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Sound\+Buffer\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\+Buffer} \&}]{other}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SoundBuffer_ac79d65c98187412b6c9bd727a14385fb}{}\label{classAudio_1_1SoundBuffer_ac79d65c98187412b6c9bd727a14385fb}
+Swap buffer contents and format It\textquotesingle{}s an inherently quick operation, since it only swaps pointers and descriptors. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0a/classAudio_1_1SoundBuffer_ac79d65c98187412b6c9bd727a14385fb_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Sound\+Buffer.\+h\item 
+audio/Sound\+Buffer.\+cpp\end{DoxyCompactItemize}

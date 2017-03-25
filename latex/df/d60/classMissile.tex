@@ -1,0 +1,101 @@
+\hypertarget{classMissile}{}\section{Missile Class Reference}
+\label{classMissile}\index{Missile@{Missile}}
+
+
+Inheritance diagram for Missile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/d12/classMissile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Missile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d62/classMissile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Discharge} ()\hypertarget{classMissile_a8bdc5391e720476ccb8160cf47ce0079}{}\label{classMissile_a8bdc5391e720476ccb8160cf47ce0079}
+
+\item 
+virtual enum clsptr {\bfseries is\+Unit} () const \hypertarget{classMissile_a379f7cb23e9c802881d1edb9d78f00db}{}\label{classMissile_a379f7cb23e9c802881d1edb9d78f00db}
+
+\item 
+virtual void {\bfseries Kill} (bool erase\+From\+Save=true)\hypertarget{classMissile_ac8f63ed4b6e46aa63ede952618ba572f}{}\label{classMissile_ac8f63ed4b6e46aa63ede952618ba572f}
+
+\item 
+virtual void {\bfseries react\+To\+Collision} (\hyperlink{classUnit}{Unit} $\ast$smaller, const Q\+Vector \&biglocation, const Vector \&bignormal, const Q\+Vector \&smalllocation, const Vector \&smallnormal, float dist)\hypertarget{classMissile_a1a092f2f60e4f7024a1835572d7ddcbf}{}\label{classMissile_a1a092f2f60e4f7024a1835572d7ddcbf}
+
+\item 
+virtual void {\bfseries Update\+Physics2} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{structTransformation}{Transformation} \&old\+\_\+physical\+\_\+state, const Vector \&accel, float difficulty, const \hyperlink{classMatrix}{Matrix} \&transmat, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc=N\+U\+LL)\hypertarget{classMissile_a64c44acf26daf2b89bf6aac46b9d6571}{}\label{classMissile_a64c44acf26daf2b89bf6aac46b9d6571}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Missile} (std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$m, bool b, int i)\hypertarget{classMissile_a191b38af3f6b87211492271b58dfb080}{}\label{classMissile_a191b38af3f6b87211492271b58dfb080}
+
+\item 
+virtual float {\bfseries Explosion\+Radius} ()\hypertarget{classMissile_af711385bdb2f8b4e638c223e8936e90c}{}\label{classMissile_af711385bdb2f8b4e638c223e8936e90c}
+
+\item 
+\hyperlink{classMissile_accc89835fd62c418ee6af881287fc781}{Missile} (const char $\ast$filename, int faction, const string \&modifications, const float damage, float phasedamage, float time, float radialeffect, float radmult, float detonation\+\_\+radius)\hypertarget{classMissile_accc89835fd62c418ee6af881287fc781}{}\label{classMissile_accc89835fd62c418ee6af881287fc781}
+
+\begin{DoxyCompactList}\small\item\em constructor only to be called by \hyperlink{classUnitFactory}{Unit\+Factory} \end{DoxyCompactList}\item 
+void {\bfseries Init\+Missile} (float ptime, const float pdamage, float pphasedamage, float pradial\+\_\+effect, float pradial\+\_\+multiplier, float pdetonation\+\_\+radius, bool pdischarged, signed char pretarget)\hypertarget{classMissile_a62cb8b72decaef5ccec45554baa97c56}{}\label{classMissile_a62cb8b72decaef5ccec45554baa97c56}
+
+\item 
+\hyperlink{classMissile_aa5ce8791a8e7ebd4ea0afab390b73a1a}{Missile} ()\hypertarget{classMissile_aa5ce8791a8e7ebd4ea0afab390b73a1a}{}\label{classMissile_aa5ce8791a8e7ebd4ea0afab390b73a1a}
+
+\begin{DoxyCompactList}\small\item\em default constructor forbidden \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries time}\hypertarget{classMissile_a59f31a10ac802d7d23988923c88cde91}{}\label{classMissile_a59f31a10ac802d7d23988923c88cde91}
+
+\item 
+float {\bfseries damage}\hypertarget{classMissile_ad9476062fa33135b2f03562db4bfa365}{}\label{classMissile_ad9476062fa33135b2f03562db4bfa365}
+
+\item 
+float {\bfseries phasedamage}\hypertarget{classMissile_ae250b31575ba72c7b6cc75fb79f8c7b3}{}\label{classMissile_ae250b31575ba72c7b6cc75fb79f8c7b3}
+
+\item 
+float {\bfseries radial\+\_\+effect}\hypertarget{classMissile_ab114576ad448b1e9ef8ba30a7b632887}{}\label{classMissile_ab114576ad448b1e9ef8ba30a7b632887}
+
+\item 
+float {\bfseries radial\+\_\+multiplier}\hypertarget{classMissile_af359a2637e2a3a5400664deea00cb668}{}\label{classMissile_af359a2637e2a3a5400664deea00cb668}
+
+\item 
+float {\bfseries detonation\+\_\+radius}\hypertarget{classMissile_a7939a3b1c707f22ef9373f08d7e8f5ad}{}\label{classMissile_a7939a3b1c707f22ef9373f08d7e8f5ad}
+
+\item 
+bool {\bfseries discharged}\hypertarget{classMissile_ac31c22b38b0891b7b3351e9d44573250}{}\label{classMissile_ac31c22b38b0891b7b3351e9d44573250}
+
+\item 
+bool {\bfseries had\+\_\+target}\hypertarget{classMissile_ab3a80f00f724c6697a287e255f224c57}{}\label{classMissile_ab3a80f00f724c6697a287e255f224c57}
+
+\item 
+signed char {\bfseries retarget}\hypertarget{classMissile_af4398b0dd1be7baad7a9ef58eb2968a9}{}\label{classMissile_af4398b0dd1be7baad7a9ef58eb2968a9}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classMissile_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classMissile_a187c66d2d867f6265d3b0c99ffc34838}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/missile\+\_\+generic.\+h\item 
+cmd/missile\+\_\+generic.\+cpp\end{DoxyCompactItemize}

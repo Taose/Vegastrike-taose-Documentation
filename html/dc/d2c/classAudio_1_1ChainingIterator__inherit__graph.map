@@ -1,0 +1,3 @@
+<map id="Audio::ChainingIterator&lt; _It1, _It2 &gt;" name="Audio::ChainingIterator&lt; _It1, _It2 &gt;">
+<area shape="rect" id="node2" href="$d6/da0/classAudio_1_1VirtualIterator.html" title="{Audio::VirtualIterator\l\&lt; _It1::value_type, _It1\l::reference_type, _It1::\lpointer_type \&gt;\n||+ VirtualIterator()\l+ ~VirtualIterator()\l+ operator*()\l+ operator&#45;\&gt;()\l+ operator++()\l+ operator&#45;&#45;()\l+ clone()\l+ eos()\l+ sos()\l+ get()\l+ getPtr()\l+ next()\l+ prev()\l}" alt="" coords="7,160,164,457"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MixedPrediction" name="MixedPrediction">
+<area shape="rect" id="node2" href="$d4/d86/classCubicSplinePrediction.html" title="{CubicSplinePrediction\n||+ InitInterpolation()\l+ InterpolatePosition()\l+ InterpolateOrientation()\l}" alt="" coords="5,365,172,472"/>
+<area shape="rect" id="node3" href="$d2/dd2/classPrediction.html" title="{Prediction\n|# A0\l# B\l# A1\l# A2\l# A3\l# VA\l# VB\l# AA\l# AB\l# OA\l# OB\l# deltatime\l|+ Prediction()\l+ ~Prediction()\l+ InitInterpolation()\l+ InterpolatePosition()\l+ InterpolateOrientation()\l+ Interpolate()\l}" alt="" coords="100,5,267,317"/>
+<area shape="rect" id="node4" href="$d9/d29/classLinearPrediction.html" title="{LinearPrediction\n||+ InterpolatePosition()\l+ InterpolateOrientation()\l+ Interpolate()\l}" alt="" coords="196,365,363,472"/>
+</map>

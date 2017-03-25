@@ -1,0 +1,82 @@
+\hypertarget{structAddressIP}{}\section{Address\+IP Struct Reference}
+\label{structAddressIP}\index{Address\+IP@{Address\+IP}}
+
+
+Inheritance diagram for Address\+IP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{d2/d8e/structAddressIP__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Address\+IP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{d3/dd1/structAddressIP__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Address\+IP} (const \hyperlink{structAddressIP}{Address\+IP} \&orig)\hypertarget{structAddressIP_aacf78d7cc01060985b9c6fd1b6090c3c}{}\label{structAddressIP_aacf78d7cc01060985b9c6fd1b6090c3c}
+
+\item 
+{\bfseries Address\+IP} (const sockaddr\+\_\+in \&orig)\hypertarget{structAddressIP_a4dc9acdb8099790e91e46dd7216feb38}{}\label{structAddressIP_a4dc9acdb8099790e91e46dd7216feb38}
+
+\item 
+{\bfseries Address\+IP} (const \hyperlink{structAddressIP}{Address\+IP} \&orig, unsigned short port)\hypertarget{structAddressIP_ae87a8a25f38db58ef4229bdbf0b31872}{}\label{structAddressIP_ae87a8a25f38db58ef4229bdbf0b31872}
+
+\item 
+{\bfseries Address\+IP} (const char $\ast$address, unsigned short port)\hypertarget{structAddressIP_a8d0d4bb01b6cec7692b6deb3046b205e}{}\label{structAddressIP_a8d0d4bb01b6cec7692b6deb3046b205e}
+
+\item 
+\hyperlink{structAddressIP}{Address\+IP} \& {\bfseries operator=} (const \hyperlink{structAddressIP}{Address\+IP} \&orig)\hypertarget{structAddressIP_aedc23850a45c7d06d59af9985efe2103}{}\label{structAddressIP_aedc23850a45c7d06d59af9985efe2103}
+
+\item 
+\hyperlink{structAddressIP}{Address\+IP} \& {\bfseries operator=} (const sockaddr\+\_\+in \&orig)\hypertarget{structAddressIP_a9812d56d8c0ac4662f329374d0394256}{}\label{structAddressIP_a9812d56d8c0ac4662f329374d0394256}
+
+\item 
+void \hyperlink{structAddressIP_a0fda8148a8bd707be92114cf27df7780}{dump} ()\hypertarget{structAddressIP_a0fda8148a8bd707be92114cf27df7780}{}\label{structAddressIP_a0fda8148a8bd707be92114cf27df7780}
+
+\begin{DoxyCompactList}\small\item\em print ip\+:port to stdout \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{structAddressIP_a07b7880ac5c27ce1791ddaf20d6503ce}{ipadr} () const 
+\item 
+unsigned long {\bfseries inaddr} () const \hypertarget{structAddressIP_ae445286f71691d07444290e2234d818a}{}\label{structAddressIP_ae445286f71691d07444290e2234d818a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&ostr, const \hyperlink{structAddressIP}{Address\+IP} \&adr)\hypertarget{structAddressIP_a05fa57176cf1daf76e8592133fdeef17}{}\label{structAddressIP_a05fa57176cf1daf76e8592133fdeef17}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{structAddressIP}{Address\+IP} \&l, const \hyperlink{structAddressIP}{Address\+IP} \&r)\hypertarget{structAddressIP_a3b2a683b645607824fac826151fe8850}{}\label{structAddressIP_a3b2a683b645607824fac826151fe8850}
+
+\item 
+bool {\bfseries operator!=} (const \hyperlink{structAddressIP}{Address\+IP} \&l, const \hyperlink{structAddressIP}{Address\+IP} \&r)\hypertarget{structAddressIP_a3de31f96a0c3c42c24aded3b29fc994c}{}\label{structAddressIP_a3de31f96a0c3c42c24aded3b29fc994c}
+
+\item 
+bool {\bfseries operator$<$} (const \hyperlink{structAddressIP}{Address\+IP} \&l, const \hyperlink{structAddressIP}{Address\+IP} \&r)\hypertarget{structAddressIP_a99bb049b44df108225eae18870b0ee42}{}\label{structAddressIP_a99bb049b44df108225eae18870b0ee42}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Address\+IP@{Address\+IP}!ipadr@{ipadr}}
+\index{ipadr@{ipadr}!Address\+IP@{Address\+IP}}
+\subsubsection[{\texorpdfstring{ipadr() const }{ipadr() const }}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Address\+I\+P\+::ipadr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{structAddressIP_a07b7880ac5c27ce1791ddaf20d6503ce}{}\label{structAddressIP_a07b7880ac5c27ce1791ddaf20d6503ce}
+note that this string is temporary and should not be used for anything but debug output. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+address.\+h\item 
+networking/lowlevel/vsnet\+\_\+address.\+cpp\end{DoxyCompactItemize}

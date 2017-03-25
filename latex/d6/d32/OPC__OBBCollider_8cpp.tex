@@ -1,0 +1,96 @@
+\hypertarget{OPC__OBBCollider_8cpp}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+O\+B\+B\+Collider.cpp File Reference}
+\label{OPC__OBBCollider_8cpp}\index{cmd/collide2/\+O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp@{cmd/collide2/\+O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp}}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Box\+Box\+Overlap.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Tri\+Box\+Overlap.\+h\char`\"{}}\\*
+Include dependency graph for O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d97/OPC__OBBCollider_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}(prim\+\_\+index,  flag)
+\item 
+\#define \hyperlink{OPC__OBBCollider_8cpp_a990dc2490e34718e02a6ef9de0dd5625}{O\+B\+B\+\_\+\+P\+R\+IM}(prim\+\_\+index,  flag)
+\begin{DoxyCompactList}\small\item\em O\+B\+B-\/triangle test. \end{DoxyCompactList}\item 
+\#define {\bfseries T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+BB}(center,  extents)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for an \hyperlink{classOBB}{O\+BB} collider.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January, 1st, 2002 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp}!O\+B\+B\+\_\+\+P\+R\+IM@{O\+B\+B\+\_\+\+P\+R\+IM}}
+\index{O\+B\+B\+\_\+\+P\+R\+IM@{O\+B\+B\+\_\+\+P\+R\+IM}!O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{O\+B\+B\+\_\+\+P\+R\+IM}{OBB_PRIM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+B\+B\+\_\+\+P\+R\+IM(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__OBBCollider_8cpp_a990dc2490e34718e02a6ef9de0dd5625}{}\label{OPC__OBBCollider_8cpp_a990dc2490e34718e02a6ef9de0dd5625}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Request vertices from the app */}                                         \(\backslash\)
+    VertexPointers VP;  mIMesh->GetTriangle(VP, prim\_index);                    \(\backslash\)
+    \textcolor{comment}{/* Transform them in a common space */}                                      
+      \hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{\(\backslash\)}
+\hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{    TransformPoint}(mLeafVerts[0], *VP.Vertex[0], mRModelToBox, mTModelToBox);    
+      \hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{\(\backslash\)}
+\hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{    TransformPoint}(mLeafVerts[1], *VP.Vertex[1], mRModelToBox, mTModelToBox);    
+      \hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{\(\backslash\)}
+\hyperlink{OPC__Common_8h_a4b5e8a34f49bd26c70933a7742fa0d03}{    TransformPoint}(mLeafVerts[2], *VP.Vertex[2], mRModelToBox, mTModelToBox);    \(\backslash\)
+    \textcolor{comment}{/* Perform triangle-box overlap test */}                                     \(\backslash\)
+    if(TriBoxOverlap())                                                         \(\backslash\)
+    \{                                                                           \(\backslash\)
+        SET\_CONTACT(prim\_index, flag)                                           \(\backslash\)
+    \}
+\end{DoxyCode}
+
+
+O\+B\+B-\/triangle test. 
+
+\index{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp}!S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}}
+\index{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}!O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT}{SET_CONTACT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+C\+O\+N\+T\+A\+CT(
+\begin{DoxyParamCaption}
+\item[{}]{prim\+\_\+index, }
+\item[{}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__OBBCollider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}{}\label{OPC__OBBCollider_8cpp_ab7d7b766d378c91e7379a3b182f0e94f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Set contact status */}                                                    \(\backslash\)
+    mFlags |= flag;                                                             \(\backslash\)
+    mTouchedPrimitives->Add(prim\_index);
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp}!T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+BB@{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+BB}}
+\index{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+BB@{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+BB}!O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp@{O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+BB}{TEST_BOX_IN_OBB}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+S\+T\+\_\+\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+BB(
+\begin{DoxyParamCaption}
+\item[{}]{center, }
+\item[{}]{extents}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__OBBCollider_8cpp_acc8ae422bbbfae1f5b381a72f25a66df}{}\label{OPC__OBBCollider_8cpp_acc8ae422bbbfae1f5b381a72f25a66df}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(OBBContainsBox(center, extents))     \(\backslash\)
+    \{                                       \(\backslash\)
+        \textcolor{comment}{/* Set contact status */}            \(\backslash\)
+        mFlags |= \hyperlink{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca53e8ef89e9c1f26e6f7a8c6ced5a8089}{OPC\_CONTACT};               \(\backslash\)
+        \_Dump(node);                        \(\backslash\)
+        return;                             \(\backslash\)
+    \}
+\end{DoxyCode}

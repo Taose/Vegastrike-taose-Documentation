@@ -1,0 +1,394 @@
+\hypertarget{classAudio_1_1Listener}{}\section{Audio\+:\+:Listener Class Reference}
+\label{classAudio_1_1Listener}\index{Audio\+::\+Listener@{Audio\+::\+Listener}}
+
+
+{\ttfamily \#include $<$Listener.\+h$>$}
+
+
+
+Collaboration diagram for Audio\+:\+:Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{dd/dab/classAudio_1_1Listener__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structAudio_1_1Listener_1_1Dirty}{Dirty}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1Listener_a56b63285e0b3204991b956e505ebd23a}{Listener} ()  throw ()
+\item 
+\hyperlink{classAudio_1_1TVector3}{L\+Vector3} \hyperlink{classAudio_1_1Listener_abb791ce5606438ac120e97cb92e91380}{get\+Position} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_a74df3bb4c33cf9df4838f55608a4b24c}{set\+Position} (\hyperlink{classAudio_1_1TVector3}{L\+Vector3} x)  throw ()
+\item 
+\hyperlink{classAudio_1_1TVector3}{Vector3} \hyperlink{classAudio_1_1Listener_aab24702d7fddb1c225075c75fb49dff2}{get\+At\+Direction} () const   throw ()
+\item 
+\hyperlink{classAudio_1_1TVector3}{Vector3} \hyperlink{classAudio_1_1Listener_ac6fc56432c523d2a311c16fcc2bcbcad}{get\+Up\+Direction} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_a67556d14e2035e4627b2d0d6addb41e7}{set\+Orientation} (\hyperlink{classAudio_1_1TVector3}{Vector3} at, \hyperlink{classAudio_1_1TVector3}{Vector3} up)  throw ()
+\item 
+\hyperlink{classAudio_1_1TVector3}{Vector3} \hyperlink{classAudio_1_1Listener_aae6ef5039b3444ca418db198b6b1f290}{get\+Velocity} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_a3729356cacd581c643909e6f5f279860}{set\+Velocity} (\hyperlink{classAudio_1_1TVector3}{Vector3} x)  throw ()
+\item 
+\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ \hyperlink{classAudio_1_1Listener_adcf4167277f42219b2ae59bb8f14ef52}{get\+Angle\+Range} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_a92d326feeb8a349d933fd5932cb57342}{set\+Angle\+Range} (\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ r)  throw ()
+\item 
+\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ \hyperlink{classAudio_1_1Listener_af819c59c53186afc0608bc71943bca6f}{get\+Cos\+Angle\+Range} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_a40cd01b70493dc2cfb6ac7ecfd22cef5}{set\+Cos\+Angle\+Range} (\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ r)  throw ()
+\item 
+Scalar \hyperlink{classAudio_1_1Listener_a6a1b505e48441318cbe29ee81ea754dd}{get\+Radius} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_a19d236eca43919b879f4452536bff3e2}{set\+Radius} (Scalar r)  throw ()
+\item 
+Scalar \hyperlink{classAudio_1_1Listener_a4c38ceb9c99863207044dbae002bbe8e}{get\+Gain} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_ad35f55b40ad8e2ae430923618284c4de}{set\+Gain} (Scalar g)  throw ()
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1RenderableListener}{Renderable\+Listener} $>$ \hyperlink{classAudio_1_1Listener_a04f05258f172ec4e25dee2f14ab8662a}{get\+Renderable} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_a4460b39956073a48833e730ae34e7b38}{set\+Renderable} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1RenderableListener}{Renderable\+Listener} $>$ ptr)  throw ()
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1UserData}{User\+Data} $>$ \hyperlink{classAudio_1_1Listener_a9b6d76b31eb0fe7f5b234bbfe98c3908}{get\+User\+Data} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_af119eadcadc057f00402c13aa757220a}{set\+User\+Data} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1UserData}{User\+Data} $>$ ptr)  throw ()
+\item 
+void \hyperlink{classAudio_1_1Listener_a141c18f3bba8e9bf87f99197af98fc19}{update} (int flags)  throw ()
+\item 
+\hyperlink{classAudio_1_1TVector3}{Vector3} \hyperlink{classAudio_1_1Listener_a2a76a3a01e7ebbe5c4c6ab256c274ad1}{to\+Local\+Direction} (\hyperlink{classAudio_1_1TVector3}{Vector3} dir) const   throw ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structAudio_1_1Listener_1_1Dirty}{Audio\+::\+Listener\+::\+Dirty} {\bfseries dirty}\hypertarget{classAudio_1_1Listener_ad619e0529b365f8036b0a48807c0436d}{}\label{classAudio_1_1Listener_ad619e0529b365f8036b0a48807c0436d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1Listener}{Listener} class
+
+\begin{DoxyRemark}{Remarks}
+This class represents a scene listener. Its interface is quite simple. It\textquotesingle{}s possible that scene managers (scenes) will provide their own implementation. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{This class is not abstract, its interface is simple enough so that Listener}
+acts both as interface and basic implementation. 
+\end{DoxyParagraph}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!Listener@{Listener}}
+\index{Listener@{Listener}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{Listener()}{Listener()}}]{\setlength{\rightskip}{0pt plus 5cm}Listener\+::\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1Listener_a56b63285e0b3204991b956e505ebd23a}{}\label{classAudio_1_1Listener_a56b63285e0b3204991b956e505ebd23a}
+Construct a default listener with default parameters 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+Angle\+Range@{get\+Angle\+Range}}
+\index{get\+Angle\+Range@{get\+Angle\+Range}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+Angle\+Range() const }{getAngleRange() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Range}$<$ Scalar $>$ Listener\+::get\+Angle\+Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1Listener_adcf4167277f42219b2ae59bb8f14ef52}{}\label{classAudio_1_1Listener_adcf4167277f42219b2ae59bb8f14ef52}
+Return the listener\textquotesingle{}s minimum/maximum perception angle \begin{DoxyRemark}{Remarks}
+A listener\textquotesingle{}s sound perception may be directional or omnidirectional. Perception will be full within minimum directional drift. Further drift will attenuate the sound until it reaches maximum attenuation by the maximum perception angle. Notice that maximum attenuation may not be full silence. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de1/classAudio_1_1Listener_adcf4167277f42219b2ae59bb8f14ef52_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+At\+Direction@{get\+At\+Direction}}
+\index{get\+At\+Direction@{get\+At\+Direction}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+At\+Direction() const }{getAtDirection() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Audio\+::\+Listener\+::get\+At\+Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_aab24702d7fddb1c225075c75fb49dff2}{}\label{classAudio_1_1Listener_aab24702d7fddb1c225075c75fb49dff2}
+Return the listener\textquotesingle{}s front direction \index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+Cos\+Angle\+Range@{get\+Cos\+Angle\+Range}}
+\index{get\+Cos\+Angle\+Range@{get\+Cos\+Angle\+Range}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+Cos\+Angle\+Range() const }{getCosAngleRange() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Range}$<$Scalar$>$ Audio\+::\+Listener\+::get\+Cos\+Angle\+Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_af819c59c53186afc0608bc71943bca6f}{}\label{classAudio_1_1Listener_af819c59c53186afc0608bc71943bca6f}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Listener_adcf4167277f42219b2ae59bb8f14ef52}{get\+Angle\+Range} 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+This version returns cosine-\/angles rather than radians, much quicker 
+\end{DoxyRemark}
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+Gain@{get\+Gain}}
+\index{get\+Gain@{get\+Gain}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+Gain() const }{getGain() const }}]{\setlength{\rightskip}{0pt plus 5cm}Scalar Audio\+::\+Listener\+::get\+Gain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a4c38ceb9c99863207044dbae002bbe8e}{}\label{classAudio_1_1Listener_a4c38ceb9c99863207044dbae002bbe8e}
+Get the listener\textquotesingle{}s gain \index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+Position() const }{getPosition() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+Vector3} Audio\+::\+Listener\+::get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_abb791ce5606438ac120e97cb92e91380}{}\label{classAudio_1_1Listener_abb791ce5606438ac120e97cb92e91380}
+Return the listener\textquotesingle{}s central position in 3D space 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de1/classAudio_1_1Listener_abb791ce5606438ac120e97cb92e91380_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+Radius() const }{getRadius() const }}]{\setlength{\rightskip}{0pt plus 5cm}Scalar Audio\+::\+Listener\+::get\+Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a6a1b505e48441318cbe29ee81ea754dd}{}\label{classAudio_1_1Listener_a6a1b505e48441318cbe29ee81ea754dd}
+Get the listener\textquotesingle{}s radius \index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+Renderable@{get\+Renderable}}
+\index{get\+Renderable@{get\+Renderable}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+Renderable() const }{getRenderable() const }}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<${\bf Renderable\+Listener}$>$ Audio\+::\+Listener\+::get\+Renderable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a04f05258f172ec4e25dee2f14ab8662a}{}\label{classAudio_1_1Listener_a04f05258f172ec4e25dee2f14ab8662a}
+Get renderer-\/specific data associated (and destroyed) with this sound source 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de1/classAudio_1_1Listener_a04f05258f172ec4e25dee2f14ab8662a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+Up\+Direction@{get\+Up\+Direction}}
+\index{get\+Up\+Direction@{get\+Up\+Direction}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+Up\+Direction() const }{getUpDirection() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Audio\+::\+Listener\+::get\+Up\+Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_ac6fc56432c523d2a311c16fcc2bcbcad}{}\label{classAudio_1_1Listener_ac6fc56432c523d2a311c16fcc2bcbcad}
+Return the listener\textquotesingle{}s up direction \index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+User\+Data@{get\+User\+Data}}
+\index{get\+User\+Data@{get\+User\+Data}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+User\+Data() const }{getUserData() const }}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<${\bf User\+Data}$>$ Audio\+::\+Listener\+::get\+User\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a9b6d76b31eb0fe7f5b234bbfe98c3908}{}\label{classAudio_1_1Listener_a9b6d76b31eb0fe7f5b234bbfe98c3908}
+Get user-\/specific data associated (and destroyed) with this listener \index{Audio\+::\+Listener@{Audio\+::\+Listener}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{get\+Velocity() const }{getVelocity() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Audio\+::\+Listener\+::get\+Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_aae6ef5039b3444ca418db198b6b1f290}{}\label{classAudio_1_1Listener_aae6ef5039b3444ca418db198b6b1f290}
+Return the listener\textquotesingle{}s velocity \index{Audio\+::\+Listener@{Audio\+::\+Listener}!set\+Angle\+Range@{set\+Angle\+Range}}
+\index{set\+Angle\+Range@{set\+Angle\+Range}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{set\+Angle\+Range(\+Range$<$ Scalar $>$ r)}{setAngleRange(Range< Scalar > r)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listener\+::set\+Angle\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}$<$ Scalar $>$}]{r}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1Listener_a92d326feeb8a349d933fd5932cb57342}{}\label{classAudio_1_1Listener_a92d326feeb8a349d933fd5932cb57342}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Listener_adcf4167277f42219b2ae59bb8f14ef52}{get\+Angle\+Range} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de1/classAudio_1_1Listener_a92d326feeb8a349d933fd5932cb57342_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!set\+Cos\+Angle\+Range@{set\+Cos\+Angle\+Range}}
+\index{set\+Cos\+Angle\+Range@{set\+Cos\+Angle\+Range}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{set\+Cos\+Angle\+Range(\+Range$<$ Scalar $>$ r)}{setCosAngleRange(Range< Scalar > r)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Listener\+::set\+Cos\+Angle\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}$<$ Scalar $>$}]{r}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a40cd01b70493dc2cfb6ac7ecfd22cef5}{}\label{classAudio_1_1Listener_a40cd01b70493dc2cfb6ac7ecfd22cef5}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Listener_adcf4167277f42219b2ae59bb8f14ef52}{get\+Angle\+Range} 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+This version takes cosine-\/angles rather than radians, much quicker 
+\end{DoxyRemark}
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!set\+Gain@{set\+Gain}}
+\index{set\+Gain@{set\+Gain}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{set\+Gain(\+Scalar g)}{setGain(Scalar g)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Listener\+::set\+Gain (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{g}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_ad35f55b40ad8e2ae430923618284c4de}{}\label{classAudio_1_1Listener_ad35f55b40ad8e2ae430923618284c4de}
+Set the listener\textquotesingle{}s gain \index{Audio\+::\+Listener@{Audio\+::\+Listener}!set\+Orientation@{set\+Orientation}}
+\index{set\+Orientation@{set\+Orientation}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{set\+Orientation(\+Vector3 at, Vector3 up)}{setOrientation(Vector3 at, Vector3 up)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Listener\+::set\+Orientation (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{at, }
+\item[{{\bf Vector3}}]{up}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a67556d14e2035e4627b2d0d6addb41e7}{}\label{classAudio_1_1Listener_a67556d14e2035e4627b2d0d6addb41e7}
+Set the listener\textquotesingle{}s orientation \index{Audio\+::\+Listener@{Audio\+::\+Listener}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{set\+Position(\+L\+Vector3 x)}{setPosition(LVector3 x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Listener\+::set\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+Vector3}}]{x}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a74df3bb4c33cf9df4838f55608a4b24c}{}\label{classAudio_1_1Listener_a74df3bb4c33cf9df4838f55608a4b24c}
+Set the listener\textquotesingle{}s central position in 3D space \index{Audio\+::\+Listener@{Audio\+::\+Listener}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{set\+Radius(\+Scalar r)}{setRadius(Scalar r)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Listener\+::set\+Radius (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{r}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a19d236eca43919b879f4452536bff3e2}{}\label{classAudio_1_1Listener_a19d236eca43919b879f4452536bff3e2}
+Set the listener\textquotesingle{}s radius \index{Audio\+::\+Listener@{Audio\+::\+Listener}!set\+Renderable@{set\+Renderable}}
+\index{set\+Renderable@{set\+Renderable}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{set\+Renderable(\+Shared\+Ptr$<$ Renderable\+Listener $>$ ptr)}{setRenderable(SharedPtr< RenderableListener > ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Listener\+::set\+Renderable (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Renderable\+Listener} $>$}]{ptr}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a4460b39956073a48833e730ae34e7b38}{}\label{classAudio_1_1Listener_a4460b39956073a48833e730ae34e7b38}
+Set renderer-\/specific data to be associated (and destroyed) with this sound source \index{Audio\+::\+Listener@{Audio\+::\+Listener}!set\+User\+Data@{set\+User\+Data}}
+\index{set\+User\+Data@{set\+User\+Data}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{set\+User\+Data(\+Shared\+Ptr$<$ User\+Data $>$ ptr)}{setUserData(SharedPtr< UserData > ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Listener\+::set\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf User\+Data} $>$}]{ptr}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_af119eadcadc057f00402c13aa757220a}{}\label{classAudio_1_1Listener_af119eadcadc057f00402c13aa757220a}
+Set user-\/specific data to be associated (and destroyed) with this listener 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de1/classAudio_1_1Listener_af119eadcadc057f00402c13aa757220a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{set\+Velocity(\+Vector3 x)}{setVelocity(Vector3 x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Listener\+::set\+Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{x}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Listener_a3729356cacd581c643909e6f5f279860}{}\label{classAudio_1_1Listener_a3729356cacd581c643909e6f5f279860}
+Set the listener\textquotesingle{}s velocity 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de1/classAudio_1_1Listener_a3729356cacd581c643909e6f5f279860_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!to\+Local\+Direction@{to\+Local\+Direction}}
+\index{to\+Local\+Direction@{to\+Local\+Direction}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{to\+Local\+Direction(\+Vector3 dir) const }{toLocalDirection(Vector3 dir) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Listener\+::to\+Local\+Direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{dir}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1Listener_a2a76a3a01e7ebbe5c4c6ab256c274ad1}{}\label{classAudio_1_1Listener_a2a76a3a01e7ebbe5c4c6ab256c274ad1}
+Return the direction \textquotesingle{}dir\textquotesingle{} in a local coordinate system centered at the listener\textquotesingle{}s position, with the -\/Z axis pointing forward, +X pointing rightward and +Y pointing upwards (the Open\+GL way). \begin{DoxyNote}{Note}
+The attributes used are those set during the last \hyperlink{classAudio_1_1Listener_a141c18f3bba8e9bf87f99197af98fc19}{update()} 
+
+The behavior is unspecified if there was no previous call to \hyperlink{classAudio_1_1Listener_a141c18f3bba8e9bf87f99197af98fc19}{update()}. 
+\end{DoxyNote}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de1/classAudio_1_1Listener_a2a76a3a01e7ebbe5c4c6ab256c274ad1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Listener@{Audio\+::\+Listener}!update@{update}}
+\index{update@{update}!Audio\+::\+Listener@{Audio\+::\+Listener}}
+\subsubsection[{\texorpdfstring{update(int flags)}{update(int flags)}}]{\setlength{\rightskip}{0pt plus 5cm}void Listener\+::update (
+\begin{DoxyParamCaption}
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1Listener_a141c18f3bba8e9bf87f99197af98fc19}{}\label{classAudio_1_1Listener_a141c18f3bba8e9bf87f99197af98fc19}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1RenderableListener_aed1e3ef1f4a64b6225288b67b0a33cd1}{Renderable\+Listener\+::update} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & see Renderable\+Listener\+::\+Update\+Flags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+It\textquotesingle{}s not just a convenience, the abstract listener has to update its internal dirty flags and other things as well. 
+\end{DoxyNote}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de1/classAudio_1_1Listener_a141c18f3bba8e9bf87f99197af98fc19_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/de1/classAudio_1_1Listener_a141c18f3bba8e9bf87f99197af98fc19_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Listener.\+h\item 
+audio/Listener.\+cpp\end{DoxyCompactItemize}

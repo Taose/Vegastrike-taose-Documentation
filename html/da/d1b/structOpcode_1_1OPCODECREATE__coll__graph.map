@@ -1,0 +1,4 @@
+<map id="Opcode::OPCODECREATE" name="Opcode::OPCODECREATE">
+<area shape="rect" id="node2" href="$d5/d8a/structOpcode_1_1BuildSettings.html" title="Simple wrapper around build&#45;related settings [Opcode 1.3]. " alt="" coords="5,86,157,178"/>
+<area shape="rect" id="node3" href="$d3/d7c/classOpcode_1_1MeshInterface.html" title="{Opcode::MeshInterface\n||+ MeshInterface()\l+ ~MeshInterface()\l+ GetNbTriangles()\l+ GetNbVertices()\l+ SetNbTriangles()\l+ SetNbVertices()\l+ SetCallback()\l+ GetUserData()\l+ GetCallback()\l+ GetTriangle()\l+ RemapClient()\l+ IsValid()\l+ CheckTopology()\l}" alt="" coords="182,5,341,259"/>
+</map>

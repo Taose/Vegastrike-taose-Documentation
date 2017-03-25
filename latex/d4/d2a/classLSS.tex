@@ -1,0 +1,122 @@
+\hypertarget{classLSS}{}\section{L\+SS Class Reference}
+\label{classLSS}\index{L\+SS@{L\+SS}}
+
+
+Inheritance diagram for L\+SS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{d7/dae/classLSS__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for L\+SS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/dfa/classLSS__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classLSS_a53df3c09d262024f461a2ee1f433b06c}{L\+SS} ()\hypertarget{classLSS_a53df3c09d262024f461a2ee1f433b06c}{}\label{classLSS_a53df3c09d262024f461a2ee1f433b06c}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classLSS_a171dd4bfc67cfd04f11bd22dd17fd536}{L\+SS} (const \hyperlink{classSegment}{Segment} \&seg, float radius)\hypertarget{classLSS_a171dd4bfc67cfd04f11bd22dd17fd536}{}\label{classLSS_a171dd4bfc67cfd04f11bd22dd17fd536}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classLSS_a044a4572cf4e2ff4b684e235ed87ffa0}{$\sim$\+L\+SS} ()\hypertarget{classLSS_a044a4572cf4e2ff4b684e235ed87ffa0}{}\label{classLSS_a044a4572cf4e2ff4b684e235ed87ffa0}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classLSS_a23bc306ab630c6badb301409562774ea}{Compute\+O\+BB} (\hyperlink{classOBB}{O\+BB} \&box)
+\item 
+inline\+\_\+ bool \hyperlink{classLSS_a52a11bc4815694cf9c8740ee4b1ba17b}{Contains} (const \hyperlink{classPoint}{Point} \&pt) const 
+\item 
+inline\+\_\+ bool \hyperlink{classLSS_a0937e7c07a6da4cae750d02a8b164499}{Contains} (const \hyperlink{classSphere}{Sphere} \&sphere)
+\item 
+inline\+\_\+ bool \hyperlink{classLSS_a60a0d4b412b9c1fe88e57cfd2e81d044}{Contains} (const \hyperlink{classLSS}{L\+SS} \&lss)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classLSS_ad0c14a88b4dd17e7df3de6ff53c89fa9}{m\+Radius}\hypertarget{classLSS_ad0c14a88b4dd17e7df3de6ff53c89fa9}{}\label{classLSS_ad0c14a88b4dd17e7df3de6ff53c89fa9}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSphere}{Sphere} radius. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{L\+SS@{L\+SS}!Compute\+O\+BB@{Compute\+O\+BB}}
+\index{Compute\+O\+BB@{Compute\+O\+BB}!L\+SS@{L\+SS}}
+\subsubsection[{\texorpdfstring{Compute\+O\+B\+B(\+O\+B\+B \&box)}{ComputeOBB(OBB &box)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+::\+Compute\+O\+BB (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+BB} \&}]{box}
+\end{DoxyParamCaption}
+)}\hypertarget{classLSS_a23bc306ab630c6badb301409562774ea}{}\label{classLSS_a23bc306ab630c6badb301409562774ea}
+Computes an \hyperlink{classOBB}{O\+BB} surrounding the \hyperlink{classLSS}{L\+SS}. 
+\begin{DoxyParams}{Parameters}
+{\em box} & \mbox{[}out\mbox{]} the \hyperlink{classOBB}{O\+BB} \\
+\hline
+\end{DoxyParams}
+\index{L\+SS@{L\+SS}!Contains@{Contains}}
+\index{Contains@{Contains}!L\+SS@{L\+SS}}
+\subsubsection[{\texorpdfstring{Contains(const Point \&pt) const }{Contains(const Point &pt) const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool L\+S\+S\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classLSS_a52a11bc4815694cf9c8740ee4b1ba17b}{}\label{classLSS_a52a11bc4815694cf9c8740ee4b1ba17b}
+Tests if a point is contained within the \hyperlink{classLSS}{L\+SS}. 
+\begin{DoxyParams}{Parameters}
+{\em pt} & \mbox{[}in\mbox{]} the point to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if inside the \hyperlink{classLSS}{L\+SS} 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+point and \hyperlink{classLSS}{L\+SS} must be in same space 
+\end{DoxyWarning}
+\index{L\+SS@{L\+SS}!Contains@{Contains}}
+\index{Contains@{Contains}!L\+SS@{L\+SS}}
+\subsubsection[{\texorpdfstring{Contains(const Sphere \&sphere)}{Contains(const Sphere &sphere)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool L\+S\+S\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sphere} \&}]{sphere}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classLSS_a0937e7c07a6da4cae750d02a8b164499}{}\label{classLSS_a0937e7c07a6da4cae750d02a8b164499}
+Tests if a sphere is contained within the \hyperlink{classLSS}{L\+SS}. 
+\begin{DoxyParams}{Parameters}
+{\em sphere} & \mbox{[}in\mbox{]} the sphere to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if inside the \hyperlink{classLSS}{L\+SS} 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+sphere and \hyperlink{classLSS}{L\+SS} must be in same space 
+\end{DoxyWarning}
+\index{L\+SS@{L\+SS}!Contains@{Contains}}
+\index{Contains@{Contains}!L\+SS@{L\+SS}}
+\subsubsection[{\texorpdfstring{Contains(const L\+S\+S \&lss)}{Contains(const LSS &lss)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool L\+S\+S\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\+SS} \&}]{lss}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classLSS_a60a0d4b412b9c1fe88e57cfd2e81d044}{}\label{classLSS_a60a0d4b412b9c1fe88e57cfd2e81d044}
+Tests if an \hyperlink{classLSS}{L\+SS} is contained within the \hyperlink{classLSS}{L\+SS}. 
+\begin{DoxyParams}{Parameters}
+{\em lss} & \mbox{[}in\mbox{]} the \hyperlink{classLSS}{L\+SS} to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if inside the \hyperlink{classLSS}{L\+SS} 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+both \hyperlink{classLSS}{L\+SS} must be in same space 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IceLSS_8h}{Ice\+L\+S\+S.\+h}\end{DoxyCompactItemize}

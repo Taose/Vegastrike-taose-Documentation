@@ -1,0 +1,92 @@
+\hypertarget{classAnimation}{}\section{Animation Class Reference}
+\label{classAnimation}\index{Animation@{Animation}}
+
+
+Inheritance diagram for Animation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/dc2/classAnimation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d1f/classAnimation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Animation} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} $\ast$f, bool Rep=0, float priority=.\+1, enum F\+I\+L\+T\+ER ismipmapped=M\+I\+P\+M\+AP, bool camorient=false, bool appear\+\_\+near\+\_\+by\+\_\+radius=false, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col=\hyperlink{structGFXColor}{G\+F\+X\+Color}(1, 1, 1, 1))\hypertarget{classAnimation_a1f8bed06ba7b54aa27f302fadd5e690d}{}\label{classAnimation_a1f8bed06ba7b54aa27f302fadd5e690d}
+
+\item 
+{\bfseries Animation} (const char $\ast$, bool Rep=0, float priority=.\+1, enum F\+I\+L\+T\+ER ismipmapped=M\+I\+P\+M\+AP, bool camorient=false, bool appear\+\_\+near\+\_\+by\+\_\+radius=false, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col=\hyperlink{structGFXColor}{G\+F\+X\+Color}(1, 1, 1, 1))\hypertarget{classAnimation_abda07a4a066899801020e014b02b7acd}{}\label{classAnimation_abda07a4a066899801020e014b02b7acd}
+
+\item 
+void {\bfseries Draw} ()\hypertarget{classAnimation_a708aaadcc89b683ae349666cbe9e27df}{}\label{classAnimation_a708aaadcc89b683ae349666cbe9e27df}
+
+\item 
+void {\bfseries Set\+Face\+Cam} (bool face)\hypertarget{classAnimation_ae6f7a577f9be5f531d7ac799ce8ba960}{}\label{classAnimation_ae6f7a577f9be5f531d7ac799ce8ba960}
+
+\item 
+void {\bfseries Set\+Interpolate} (bool interp)\hypertarget{classAnimation_ac73eff7ff26a2269b636d3f7d129402a}{}\label{classAnimation_ac73eff7ff26a2269b636d3f7d129402a}
+
+\item 
+bool {\bfseries Calculate\+Orientation} (\hyperlink{classMatrix}{Matrix} \&result)\hypertarget{classAnimation_a1c5d290bc76c761ed4edc6787db90eb5}{}\label{classAnimation_a1c5d290bc76c761ed4edc6787db90eb5}
+
+\item 
+void {\bfseries Draw\+Now} (const \hyperlink{classMatrix}{Matrix} \&final\+\_\+orientation)\hypertarget{classAnimation_aec7c3f5f295780a1640f721868e3288c}{}\label{classAnimation_aec7c3f5f295780a1640f721868e3288c}
+
+\item 
+void {\bfseries Draw\+No\+Transform} (bool cross=true, bool blendoption=false)\hypertarget{classAnimation_abe31bddf26a2a9ea9b796524271b2ef3}{}\label{classAnimation_abe31bddf26a2a9ea9b796524271b2ef3}
+
+\item 
+void {\bfseries Draw\+As\+V\+S\+Sprite} (class \hyperlink{classVSSprite}{V\+S\+Sprite} $\ast$spr)\hypertarget{classAnimation_a233b7936ab9edf6fbfc77c2d02884f60}{}\label{classAnimation_a233b7936ab9edf6fbfc77c2d02884f60}
+
+\item 
+void {\bfseries Set\+Dimensions} (float wid, float hei)\hypertarget{classAnimation_a7b40ccd4044dd8d22e0d0316941f0c28}{}\label{classAnimation_a7b40ccd4044dd8d22e0d0316941f0c28}
+
+\item 
+void {\bfseries Get\+Dimensions} (float \&wid, float \&hei)\hypertarget{classAnimation_a8f13ee7fc4e2fe9ca7f379031e5e3170}{}\label{classAnimation_a8f13ee7fc4e2fe9ca7f379031e5e3170}
+
+\item 
+Q\+Vector {\bfseries Position} ()\hypertarget{classAnimation_ad6a22c1d0955b39d57a6a078bb9a5e0a}{}\label{classAnimation_ad6a22c1d0955b39d57a6a078bb9a5e0a}
+
+\item 
+void {\bfseries Set\+Position} (const Q\+Vector \&)\hypertarget{classAnimation_a52400e63423ebdd95212cce589f9d396}{}\label{classAnimation_a52400e63423ebdd95212cce589f9d396}
+
+\item 
+void {\bfseries Set\+Orientation} (const Vector \&p, const Vector \&q, const Vector \&r)\hypertarget{classAnimation_a61296590598c512ce0c23ae4c8a28337}{}\label{classAnimation_a61296590598c512ce0c23ae4c8a28337}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Process\+Draw\+Queue} (std\+::vector$<$ \hyperlink{classAnimation}{Animation} $\ast$ $>$ \&, float)\hypertarget{classAnimation_a56a07af49c37f8c27416925bedb5808c}{}\label{classAnimation_a56a07af49c37f8c27416925bedb5808c}
+
+\item 
+static void {\bfseries Process\+Draw\+Queue} ()\hypertarget{classAnimation_af455263b6b23701dce7a2407163e3718}{}\label{classAnimation_af455263b6b23701dce7a2407163e3718}
+
+\item 
+static bool {\bfseries Needs\+Process\+Draw\+Queue} ()\hypertarget{classAnimation_a3d1e91b8d8c791e442d96fd26443e317}{}\label{classAnimation_a3d1e91b8d8c791e442d96fd26443e317}
+
+\item 
+static void {\bfseries Process\+Far\+Draw\+Queue} (float)\hypertarget{classAnimation_abc9e911a591570dd3faee42ea1f931dc}{}\label{classAnimation_abc9e911a591570dd3faee42ea1f931dc}
+
+\item 
+static bool {\bfseries Needs\+Process\+Far\+Draw\+Queue} ()\hypertarget{classAnimation_a16fecba0e8d3c584ad7e9eba8afadd8d}{}\label{classAnimation_a16fecba0e8d3c584ad7e9eba8afadd8d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/animation.\+h\item 
+gfx/animation.\+cpp\end{DoxyCompactItemize}

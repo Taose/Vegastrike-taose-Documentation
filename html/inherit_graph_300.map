@@ -1,0 +1,46 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d5/d6b/classOrder.html" title="Order" alt="" coords="5,360,60,387"/>
+<area shape="rect" id="node2" href="$d1/d9d/classAIScript.html" title="AIScript" alt="" coords="171,5,241,32"/>
+<area shape="rect" id="node3" href="$d2/d04/classCloakFor.html" title="CloakFor" alt="" coords="169,56,243,83"/>
+<area shape="rect" id="node4" href="$d2/dc8/classCommunicatingAI.html" title="this class is meant to be inherited by AI wishing to process comm messages " alt="" coords="143,107,269,133"/>
+<area shape="rect" id="node8" href="$d1/d70/classFireKeyboard.html" title="FireKeyboard" alt="" coords="157,157,255,184"/>
+<area shape="rect" id="node9" href="$d1/dde/classOrders_1_1AutoDocking.html" title="Orders::AutoDocking" alt="" coords="134,208,278,235"/>
+<area shape="rect" id="node10" href="$d7/d06/classOrders_1_1ChangeHeading.html" title="Orders::ChangeHeading" alt="" coords="125,259,287,285"/>
+<area shape="rect" id="node19" href="$d5/dcd/classOrders_1_1ExecuteFor.html" title="Executes another order for a number of seconds. " alt="" coords="138,309,274,336"/>
+<area shape="rect" id="node20" href="$df/de6/classOrders_1_1FireAllYouGot.html" title="Orders::FireAllYouGot" alt="" coords="131,360,281,387"/>
+<area shape="rect" id="node21" href="$d8/d09/classOrders_1_1Join.html" title="Orders::Join" alt="" coords="159,411,253,437"/>
+<area shape="rect" id="node22" href="$db/d90/classOrders_1_1MatchAngularVelocity.html" title="Orders::MatchAngularVelocity" alt="" coords="108,461,304,488"/>
+<area shape="rect" id="node36" href="$d5/d03/classOrders_1_1MatchLinearVelocity.html" title="Orders::MatchLinearVelocity" alt="" coords="113,512,299,539"/>
+<area shape="rect" id="node37" href="$da/dc8/classOrders_1_1MatchRoll.html" title="Orders::MatchRoll" alt="" coords="142,563,270,589"/>
+<area shape="rect" id="node38" href="$d5/dcc/classOrders_1_1MoveTo.html" title="Orders::MoveTo" alt="" coords="148,613,264,640"/>
+<area shape="rect" id="node43" href="$d3/dbc/classOrders_1_1Sequence.html" title="Orders::Sequence" alt="" coords="143,664,269,691"/>
+<area shape="rect" id="node44" href="$dc/de8/classPlanetaryOrbit.html" title="PlanetaryOrbit" alt="" coords="153,715,259,741"/>
+<area shape="rect" id="node5" href="$d0/d73/classOrders_1_1FireAt.html" title="Orders::FireAt" alt="" coords="385,107,489,133"/>
+<area shape="rect" id="node6" href="$d9/d86/classOrders_1_1AggressiveAI.html" title="Orders::AggressiveAI" alt="" coords="585,107,731,133"/>
+<area shape="rect" id="node7" href="$d5/da1/classOrders_1_1Ikarus.html" title="Orders::Ikarus" alt="" coords="803,107,909,133"/>
+<area shape="rect" id="node11" href="$d1/df2/classOrders_1_1AutoLongHaul.html" title="Orders::AutoLongHaul" alt="" coords="361,183,512,209"/>
+<area shape="rect" id="node12" href="$d7/def/classOrders_1_1FaceDirection.html" title="Orders::FaceDirection" alt="" coords="361,233,512,260"/>
+<area shape="rect" id="node13" href="$df/d43/classOrders_1_1FaceTarget.html" title="Orders::FaceTarget" alt="" coords="369,284,504,311"/>
+<area shape="rect" id="node14" href="$d2/d49/classOrders_1_1FaceTargetITTS.html" title="Orders::FaceTargetITTS" alt="" coords="355,335,519,361"/>
+<area shape="rect" id="node15" href="$d3/d25/classOrders_1_1FacePerpendicular.html" title="Orders::FacePerpendicular" alt="" coords="569,247,747,273"/>
+<area shape="rect" id="node16" href="$dd/db2/classOrders_1_1LoopAround.html" title="Orders::LoopAround" alt="" coords="589,297,727,324"/>
+<area shape="rect" id="node17" href="$dc/dc5/classOrders_1_1LoopAroundAgro.html" title="Orders::LoopAroundAgro" alt="" coords="575,348,741,375"/>
+<area shape="rect" id="node18" href="$d8/d4d/classOrders_1_1TurretAI.html" title="Orders::TurretAI" alt="" coords="600,399,716,425"/>
+<area shape="rect" id="node23" href="$d8/de9/classOrders_1_1MatchVelocity.html" title="Orders::MatchVelocity" alt="" coords="361,461,513,488"/>
+<area shape="rect" id="node24" href="$d4/dd2/classFlyByWire.html" title="FlyByWire" alt="" coords="617,461,699,488"/>
+<area shape="rect" id="node25" href="$d4/da2/classAImissionScript.html" title="AImissionScript" alt="" coords="799,372,913,399"/>
+<area shape="rect" id="node33" href="$da/de9/classEvadeLeftRightC.html" title="EvadeLeftRightC" alt="" coords="795,461,917,488"/>
+<area shape="rect" id="node34" href="$db/deb/classFlyByKeyboard.html" title="FlyByKeyboard" alt="" coords="801,537,911,564"/>
+<area shape="rect" id="node26" href="$d2/d4e/classAIFlyToJumppoint.html" title="AIFlyToJumppoint" alt="" coords="984,195,1112,221"/>
+<area shape="rect" id="node27" href="$da/d9c/classAIFlyToWaypoint.html" title="AIFlyToWaypoint" alt="" coords="987,245,1109,272"/>
+<area shape="rect" id="node28" href="$de/d1b/classAIFlyToWaypointDefend.html" title="AIFlyToWaypointDefend" alt="" coords="965,296,1131,323"/>
+<area shape="rect" id="node29" href="$d9/d34/classAIOrderList.html" title="AIOrderList" alt="" coords="1004,347,1092,373"/>
+<area shape="rect" id="node30" href="$da/dee/classAIPatrol.html" title="AIPatrol" alt="" coords="1013,397,1083,424"/>
+<area shape="rect" id="node31" href="$d6/df1/classAIPatrolDefend.html" title="AIPatrolDefend" alt="" coords="993,448,1103,475"/>
+<area shape="rect" id="node32" href="$d2/dce/classAISuperiority.html" title="AISuperiority" alt="" coords="999,499,1097,525"/>
+<area shape="rect" id="node35" href="$d0/d34/classFlyByJoystick.html" title="FlyByJoystick" alt="" coords="995,549,1101,576"/>
+<area shape="rect" id="node39" href="$df/dfb/classFlyTo.html" title="FlyTo" alt="" coords="409,537,464,564"/>
+<area shape="rect" id="node40" href="$de/d6e/classOrders_1_1DockingOps.html" title="Orders::DockingOps" alt="" coords="366,588,507,615"/>
+<area shape="rect" id="node41" href="$d6/dde/classOrders_1_1FormUp.html" title="Orders::FormUp" alt="" coords="379,639,495,665"/>
+<area shape="rect" id="node42" href="$d8/da6/classOrders_1_1FormUpToOwner.html" title="Orders::FormUpToOwner" alt="" coords="352,689,521,716"/>
+</map>

@@ -1,0 +1,463 @@
+\hypertarget{classOpcode_1_1RayCollider}{}\section{Opcode\+:\+:Ray\+Collider Class Reference}
+\label{classOpcode_1_1RayCollider}\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+
+
+Inheritance diagram for Opcode\+:\+:Ray\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d1c/classOpcode_1_1RayCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Opcode\+:\+:Ray\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/d76/classOpcode_1_1RayCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1RayCollider_a541dfc80f2a2e1475bddbf686a3b0090}{Ray\+Collider} ()
+\item 
+virtual \hyperlink{classOpcode_1_1RayCollider_ac8ff51bee4566173003732f89655b00f}{$\sim$\+Ray\+Collider} ()
+\item 
+bool \hyperlink{classOpcode_1_1RayCollider_a164bc0ce6313621e1bcc5a57381defc0}{Collide} (const \hyperlink{classOpcode_1_1Ray}{Ray} \&world\+\_\+ray, const \hyperlink{classOpcode_1_1Model}{Model} \&model, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$world=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$cache=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool \hyperlink{classOpcode_1_1RayCollider_a3d7b11c7f23bdf96e2743da044088f7a}{Collide} (const \hyperlink{classOpcode_1_1Ray}{Ray} \&world\+\_\+ray, const \hyperlink{classOpcode_1_1AABBTree}{A\+A\+B\+B\+Tree} $\ast$tree, \hyperlink{classContainer}{Container} \&box\+\_\+indices)
+\item 
+inline\+\_\+ void \hyperlink{classOpcode_1_1RayCollider_a188b5c843205ed0100acb9d94f04f143}{Set\+Culling} (bool flag)
+\item 
+inline\+\_\+ void \hyperlink{classOpcode_1_1RayCollider_ae52ff080cbb19fbd4d4c5c25017571d5}{Set\+Max\+Dist} (float max\+\_\+dist=\hyperlink{IceTypes_8h_afb31aa2d196755fb259d43a03c18c9d7}{M\+A\+X\+\_\+\+F\+L\+O\+AT})
+\item 
+inline\+\_\+ void {\bfseries Set\+Hit\+Callback} (Hit\+Callback cb)\hypertarget{classOpcode_1_1RayCollider_aa161fb92d3e7a3d8061b98721f5c0727}{}\label{classOpcode_1_1RayCollider_aa161fb92d3e7a3d8061b98721f5c0727}
+
+\item 
+inline\+\_\+ void {\bfseries Set\+User\+Data} (void $\ast$user\+\_\+data)\hypertarget{classOpcode_1_1RayCollider_a805937e53124f874d007666989e61932}{}\label{classOpcode_1_1RayCollider_a805937e53124f874d007666989e61932}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1RayCollider_a2be7669a1fbace82a69b4cc0c204099d}{Get\+Nb\+Ray\+B\+V\+Tests} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1RayCollider_aeb7f2ed47d0703aaef0656f75f4f8d04}{Get\+Nb\+Ray\+Prim\+Tests} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1RayCollider_a762b2261cd0bdfea03e9b284c9d3005f}{Get\+Nb\+Intersections} () const 
+\item 
+\hyperlink{classOpcode_1_1RayCollider_aa091e73343223239d6a8a8e2b9ae9f65}{override} (\hyperlink{classOpcode_1_1Collider}{Collider}) const char $\ast$\hyperlink{classOpcode_1_1Collider_a9099aa79f7b57fe4018f37e967cc6be5}{Validate\+Settings}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_a28bde613a20d7ea5e5c35cf15dca8fe2}{\+\_\+\+Segment\+Stab} (const \hyperlink{classOpcode_1_1AABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_a23f794feebb071e7452aaa9dde4a3ca0}{\+\_\+\+Segment\+Stab} (const \hyperlink{classOpcode_1_1AABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_a698d20424736b8815d73c3d6484a4cb4}{\+\_\+\+Segment\+Stab} (const \hyperlink{classOpcode_1_1AABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_a7443465674a4cbe25624334505225ddd}{\+\_\+\+Segment\+Stab} (const \hyperlink{classOpcode_1_1AABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_a5bba90be44ff9c54ee9fc8ee6f66166d}{\+\_\+\+Segment\+Stab} (const \hyperlink{classOpcode_1_1AABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$node, \hyperlink{classContainer}{Container} \&box\+\_\+indices)
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_a94e3758f40ce3b19ce649c8a2c85f3ad}{\+\_\+\+Ray\+Stab} (const \hyperlink{classOpcode_1_1AABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_adeb4a3ed0e9e7fc7f1e0253dcd84b24c}{\+\_\+\+Ray\+Stab} (const \hyperlink{classOpcode_1_1AABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_a2835165217934080ee7d539d504f99ff}{\+\_\+\+Ray\+Stab} (const \hyperlink{classOpcode_1_1AABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_a9c024f82fff85b1cdbfaab39db03ace7}{\+\_\+\+Ray\+Stab} (const \hyperlink{classOpcode_1_1AABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1RayCollider_a25a46381bd2d1c242dffb7c49a4d4bd6}{\+\_\+\+Ray\+Stab} (const \hyperlink{classOpcode_1_1AABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$node, \hyperlink{classContainer}{Container} \&box\+\_\+indices)
+\item 
+inline\+\_\+ bool {\bfseries Ray\+A\+A\+B\+B\+Overlap} (const \hyperlink{classOpcode_1_1Point}{Point} \&center, const \hyperlink{classOpcode_1_1Point}{Point} \&extents)\hypertarget{classOpcode_1_1RayCollider_abec25c20a43ae532bb94b586983d4cc3}{}\label{classOpcode_1_1RayCollider_abec25c20a43ae532bb94b586983d4cc3}
+
+\item 
+inline\+\_\+ bool {\bfseries Segment\+A\+A\+B\+B\+Overlap} (const \hyperlink{classOpcode_1_1Point}{Point} \&center, const \hyperlink{classOpcode_1_1Point}{Point} \&extents)\hypertarget{classOpcode_1_1RayCollider_a222ad01c5cf5db3c4375c69150cf9d3f}{}\label{classOpcode_1_1RayCollider_a222ad01c5cf5db3c4375c69150cf9d3f}
+
+\item 
+inline\+\_\+ bool {\bfseries Ray\+Tri\+Overlap} (const \hyperlink{classOpcode_1_1Point}{Point} \&vert0, const \hyperlink{classOpcode_1_1Point}{Point} \&vert1, const \hyperlink{classOpcode_1_1Point}{Point} \&vert2)\hypertarget{classOpcode_1_1RayCollider_a834e181c28caf748cbf758a742c39fca}{}\label{classOpcode_1_1RayCollider_a834e181c28caf748cbf758a742c39fca}
+
+\item 
+bool \hyperlink{classOpcode_1_1RayCollider_a4a4564d6b6243209c278566a768c49ec}{Init\+Query} (const \hyperlink{classOpcode_1_1Ray}{Ray} \&world\+\_\+ray, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$world=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$face\+\_\+id=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1Point}{Point} \hyperlink{classOpcode_1_1RayCollider_ac1750049204e5c0dd3055f9474c87688}{m\+Origin}\hypertarget{classOpcode_1_1RayCollider_ac1750049204e5c0dd3055f9474c87688}{}\label{classOpcode_1_1RayCollider_ac1750049204e5c0dd3055f9474c87688}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1Ray}{Ray} origin. \end{DoxyCompactList}\item 
+\hyperlink{classOpcode_1_1Point}{Point} \hyperlink{classOpcode_1_1RayCollider_a8b0070110ab3b4c7ef9e35095b6d98cd}{m\+Dir}\hypertarget{classOpcode_1_1RayCollider_a8b0070110ab3b4c7ef9e35095b6d98cd}{}\label{classOpcode_1_1RayCollider_a8b0070110ab3b4c7ef9e35095b6d98cd}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1Ray}{Ray} direction (normalized) \end{DoxyCompactList}\item 
+\hyperlink{classOpcode_1_1Point}{Point} \hyperlink{classOpcode_1_1RayCollider_aeb7be35fd7e2edcdc836091a66222a09}{m\+F\+Dir}\hypertarget{classOpcode_1_1RayCollider_aeb7be35fd7e2edcdc836091a66222a09}{}\label{classOpcode_1_1RayCollider_aeb7be35fd7e2edcdc836091a66222a09}
+
+\begin{DoxyCompactList}\small\item\em fabsf(m\+Dir) \end{DoxyCompactList}\item 
+\hyperlink{classOpcode_1_1Point}{Point} {\bfseries m\+Data}\hypertarget{classOpcode_1_1RayCollider_a941d97b53976d9e5a2e8900342a478aa}{}\label{classOpcode_1_1RayCollider_a941d97b53976d9e5a2e8900342a478aa}
+
+\item 
+\hyperlink{classOpcode_1_1Point}{Point} {\bfseries m\+Data2}\hypertarget{classOpcode_1_1RayCollider_aaa0646302fc7d8c19d2574e7cacefd21}{}\label{classOpcode_1_1RayCollider_aaa0646302fc7d8c19d2574e7cacefd21}
+
+\item 
+\hyperlink{classOpcode_1_1CollisionFace}{Collision\+Face} \hyperlink{classOpcode_1_1RayCollider_ac79c1067f61c9f2ec28a7dc0b80140ae}{m\+Stabbed\+Face}\hypertarget{classOpcode_1_1RayCollider_ac79c1067f61c9f2ec28a7dc0b80140ae}{}\label{classOpcode_1_1RayCollider_ac79c1067f61c9f2ec28a7dc0b80140ae}
+
+\begin{DoxyCompactList}\small\item\em Current stabbed face. \end{DoxyCompactList}\item 
+Hit\+Callback \hyperlink{classOpcode_1_1RayCollider_a4094aa1cd7a8c202fb53e5e9b4c064e0}{m\+Hit\+Callback}\hypertarget{classOpcode_1_1RayCollider_a4094aa1cd7a8c202fb53e5e9b4c064e0}{}\label{classOpcode_1_1RayCollider_a4094aa1cd7a8c202fb53e5e9b4c064e0}
+
+\begin{DoxyCompactList}\small\item\em Callback used to record a hit. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classOpcode_1_1RayCollider_a3c171bf56dc6168e69543cf9976c76ee}{m\+User\+Data}\hypertarget{classOpcode_1_1RayCollider_a3c171bf56dc6168e69543cf9976c76ee}{}\label{classOpcode_1_1RayCollider_a3c171bf56dc6168e69543cf9976c76ee}
+
+\begin{DoxyCompactList}\small\item\em User-\/defined data. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1RayCollider_abae4b4f04a6f1ca5f31503cd9be235a0}{m\+Nb\+Ray\+B\+V\+Tests}\hypertarget{classOpcode_1_1RayCollider_abae4b4f04a6f1ca5f31503cd9be235a0}{}\label{classOpcode_1_1RayCollider_abae4b4f04a6f1ca5f31503cd9be235a0}
+
+\begin{DoxyCompactList}\small\item\em Number of Ray-\/\+BV tests. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1RayCollider_a3ba73ce8509a639a5fea11aa5d41d2d7}{m\+Nb\+Ray\+Prim\+Tests}\hypertarget{classOpcode_1_1RayCollider_a3ba73ce8509a639a5fea11aa5d41d2d7}{}\label{classOpcode_1_1RayCollider_a3ba73ce8509a639a5fea11aa5d41d2d7}
+
+\begin{DoxyCompactList}\small\item\em Number of Ray-\/\+Primitive tests. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1RayCollider_aafbcdad77ecb4271a16b996fc85b7116}{m\+Nb\+Intersections}\hypertarget{classOpcode_1_1RayCollider_aafbcdad77ecb4271a16b996fc85b7116}{}\label{classOpcode_1_1RayCollider_aafbcdad77ecb4271a16b996fc85b7116}
+
+\begin{DoxyCompactList}\small\item\em Number of valid intersections. \end{DoxyCompactList}\item 
+\hyperlink{classOpcode_1_1Point}{Point} {\bfseries m\+Center\+Coeff}\hypertarget{classOpcode_1_1RayCollider_aeff05d1c1dfb173af69e0cabab877c1b}{}\label{classOpcode_1_1RayCollider_aeff05d1c1dfb173af69e0cabab877c1b}
+
+\item 
+\hyperlink{classOpcode_1_1Point}{Point} {\bfseries m\+Extents\+Coeff}\hypertarget{classOpcode_1_1RayCollider_af3827b8d282cc740f090d1f12b8b1f74}{}\label{classOpcode_1_1RayCollider_af3827b8d282cc740f090d1f12b8b1f74}
+
+\item 
+float \hyperlink{classOpcode_1_1RayCollider_a2522fccf7434c7d4981a5287e1f3cb9b}{m\+Max\+Dist}\hypertarget{classOpcode_1_1RayCollider_a2522fccf7434c7d4981a5287e1f3cb9b}{}\label{classOpcode_1_1RayCollider_a2522fccf7434c7d4981a5287e1f3cb9b}
+
+\begin{DoxyCompactList}\small\item\em Valid segment on the ray. \end{DoxyCompactList}\item 
+bool \hyperlink{classOpcode_1_1RayCollider_abd5c7f03b56aeee56aaf0ac47b0bd6a0}{m\+Culling}\hypertarget{classOpcode_1_1RayCollider_abd5c7f03b56aeee56aaf0ac47b0bd6a0}{}\label{classOpcode_1_1RayCollider_abd5c7f03b56aeee56aaf0ac47b0bd6a0}
+
+\begin{DoxyCompactList}\small\item\em Stab culled faces or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!Ray\+Collider@{Ray\+Collider}}
+\index{Ray\+Collider@{Ray\+Collider}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Ray\+Collider()}{RayCollider()}}]{\setlength{\rightskip}{0pt plus 5cm}Ray\+Collider\+::\+Ray\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1RayCollider_a541dfc80f2a2e1475bddbf686a3b0090}{}\label{classOpcode_1_1RayCollider_a541dfc80f2a2e1475bddbf686a3b0090}
+Constructor. \index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!````~Ray\+Collider@{$\sim$\+Ray\+Collider}}
+\index{````~Ray\+Collider@{$\sim$\+Ray\+Collider}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{$\sim$\+Ray\+Collider()}{~RayCollider()}}]{\setlength{\rightskip}{0pt plus 5cm}Ray\+Collider\+::$\sim$\+Ray\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classOpcode_1_1RayCollider_ac8ff51bee4566173003732f89655b00f}{}\label{classOpcode_1_1RayCollider_ac8ff51bee4566173003732f89655b00f}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}}
+\index{\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Ray\+Stab(const A\+A\+B\+B\+Collision\+Node $\ast$node)}{_RayStab(const AABBCollisionNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Ray\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a94e3758f40ce3b19ce649c8a2c85f3ad}{}\label{classOpcode_1_1RayCollider_a94e3758f40ce3b19ce649c8a2c85f3ad}
+Recursive stabbing query for normal \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}}
+\index{\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Ray\+Stab(const A\+A\+B\+B\+No\+Leaf\+Node $\ast$node)}{_RayStab(const AABBNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Ray\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_adeb4a3ed0e9e7fc7f1e0253dcd84b24c}{}\label{classOpcode_1_1RayCollider_adeb4a3ed0e9e7fc7f1e0253dcd84b24c}
+Recursive stabbing query for no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}}
+\index{\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Ray\+Stab(const A\+A\+B\+B\+Quantized\+Node $\ast$node)}{_RayStab(const AABBQuantizedNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Ray\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a2835165217934080ee7d539d504f99ff}{}\label{classOpcode_1_1RayCollider_a2835165217934080ee7d539d504f99ff}
+Recursive stabbing query for quantized \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}}
+\index{\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Ray\+Stab(const A\+A\+B\+B\+Quantized\+No\+Leaf\+Node $\ast$node)}{_RayStab(const AABBQuantizedNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Ray\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a9c024f82fff85b1cdbfaab39db03ace7}{}\label{classOpcode_1_1RayCollider_a9c024f82fff85b1cdbfaab39db03ace7}
+Recursive stabbing query for quantized no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}}
+\index{\+\_\+\+Ray\+Stab@{\+\_\+\+Ray\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Ray\+Stab(const A\+A\+B\+B\+Tree\+Node $\ast$node, Container \&box\+\_\+indices)}{_RayStab(const AABBTreeNode *node, Container &box_indices)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Ray\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Tree\+Node} $\ast$}]{node, }
+\item[{{\bf Container} \&}]{box\+\_\+indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a25a46381bd2d1c242dffb7c49a4d4bd6}{}\label{classOpcode_1_1RayCollider_a25a46381bd2d1c242dffb7c49a4d4bd6}
+Recursive stabbing query for vanilla \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+{\em box\+\_\+indices} & \mbox{[}out\mbox{]} indices of stabbed boxes \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}}
+\index{\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Segment\+Stab(const A\+A\+B\+B\+Collision\+Node $\ast$node)}{_SegmentStab(const AABBCollisionNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Segment\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a28bde613a20d7ea5e5c35cf15dca8fe2}{}\label{classOpcode_1_1RayCollider_a28bde613a20d7ea5e5c35cf15dca8fe2}
+Recursive stabbing query for normal \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}}
+\index{\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Segment\+Stab(const A\+A\+B\+B\+No\+Leaf\+Node $\ast$node)}{_SegmentStab(const AABBNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Segment\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a23f794feebb071e7452aaa9dde4a3ca0}{}\label{classOpcode_1_1RayCollider_a23f794feebb071e7452aaa9dde4a3ca0}
+Recursive stabbing query for no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}}
+\index{\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Segment\+Stab(const A\+A\+B\+B\+Quantized\+Node $\ast$node)}{_SegmentStab(const AABBQuantizedNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Segment\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a698d20424736b8815d73c3d6484a4cb4}{}\label{classOpcode_1_1RayCollider_a698d20424736b8815d73c3d6484a4cb4}
+Recursive stabbing query for quantized \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}}
+\index{\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Segment\+Stab(const A\+A\+B\+B\+Quantized\+No\+Leaf\+Node $\ast$node)}{_SegmentStab(const AABBQuantizedNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Segment\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a7443465674a4cbe25624334505225ddd}{}\label{classOpcode_1_1RayCollider_a7443465674a4cbe25624334505225ddd}
+Recursive stabbing query for quantized no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}}
+\index{\+\_\+\+Segment\+Stab@{\+\_\+\+Segment\+Stab}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Segment\+Stab(const A\+A\+B\+B\+Tree\+Node $\ast$node, Container \&box\+\_\+indices)}{_SegmentStab(const AABBTreeNode *node, Container &box_indices)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ray\+Collider\+::\+\_\+\+Segment\+Stab (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Tree\+Node} $\ast$}]{node, }
+\item[{{\bf Container} \&}]{box\+\_\+indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a5bba90be44ff9c54ee9fc8ee6f66166d}{}\label{classOpcode_1_1RayCollider_a5bba90be44ff9c54ee9fc8ee6f66166d}
+Recursive stabbing query for vanilla \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+{\em box\+\_\+indices} & \mbox{[}out\mbox{]} indices of stabbed boxes \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(const Ray \&world\+\_\+ray, const Model \&model, const Matrix4x4 $\ast$world=null, udword $\ast$cache=null)}{Collide(const Ray &world_ray, const Model &model, const Matrix4x4 *world=null, udword *cache=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Ray\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{world\+\_\+ray, }
+\item[{const {\bf Model} \&}]{model, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world = {\ttfamily {\bf null}}, }
+\item[{{\bf udword} $\ast$}]{cache = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1RayCollider_a164bc0ce6313621e1bcc5a57381defc0}{}\label{classOpcode_1_1RayCollider_a164bc0ce6313621e1bcc5a57381defc0}
+Generic stabbing query for generic O\+P\+C\+O\+DE models. After the call, access the results\+:
+\begin{DoxyItemize}
+\item with \hyperlink{classOpcode_1_1Collider_a7d8c3e6a85be417ac7505930f14f141c}{Get\+Contact\+Status()}
+\item in the user-\/provided destination array
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em world\+\_\+ray} & \mbox{[}in\mbox{]} stabbing ray in world space \\
+\hline
+{\em model} & \mbox{[}in\mbox{]} Opcode model to collide with \\
+\hline
+{\em world} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+{\em cache} & \mbox{[}in\mbox{]} a possibly cached face index, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(const Ray \&world\+\_\+ray, const A\+A\+B\+B\+Tree $\ast$tree, Container \&box\+\_\+indices)}{Collide(const Ray &world_ray, const AABBTree *tree, Container &box_indices)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Ray\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{world\+\_\+ray, }
+\item[{const {\bf A\+A\+B\+B\+Tree} $\ast$}]{tree, }
+\item[{{\bf Container} \&}]{box\+\_\+indices}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1RayCollider_a3d7b11c7f23bdf96e2743da044088f7a}{}\label{classOpcode_1_1RayCollider_a3d7b11c7f23bdf96e2743da044088f7a}
+Stabbing query for vanilla \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em world\+\_\+ray} & \mbox{[}in\mbox{]} stabbing ray in world space \\
+\hline
+{\em tree} & \mbox{[}in\mbox{]} \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} tree \\
+\hline
+{\em box\+\_\+indices} & \mbox{[}out\mbox{]} indices of stabbed boxes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!Get\+Nb\+Intersections@{Get\+Nb\+Intersections}}
+\index{Get\+Nb\+Intersections@{Get\+Nb\+Intersections}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Intersections() const }{GetNbIntersections() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Opcode\+::\+Ray\+Collider\+::\+Get\+Nb\+Intersections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1RayCollider_a762b2261cd0bdfea03e9b284c9d3005f}{}\label{classOpcode_1_1RayCollider_a762b2261cd0bdfea03e9b284c9d3005f}
+Stats\+: gets the number of intersection found after a collision query. Can be used for in/out tests. \begin{DoxySeeAlso}{See also}
+\hyperlink{classOpcode_1_1RayCollider_a2be7669a1fbace82a69b4cc0c204099d}{Get\+Nb\+Ray\+B\+V\+Tests()} 
+
+\hyperlink{classOpcode_1_1RayCollider_aeb7f2ed47d0703aaef0656f75f4f8d04}{Get\+Nb\+Ray\+Prim\+Tests()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of valid intersections during last query 
+\end{DoxyReturn}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!Get\+Nb\+Ray\+B\+V\+Tests@{Get\+Nb\+Ray\+B\+V\+Tests}}
+\index{Get\+Nb\+Ray\+B\+V\+Tests@{Get\+Nb\+Ray\+B\+V\+Tests}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Ray\+B\+V\+Tests() const }{GetNbRayBVTests() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Opcode\+::\+Ray\+Collider\+::\+Get\+Nb\+Ray\+B\+V\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1RayCollider_a2be7669a1fbace82a69b4cc0c204099d}{}\label{classOpcode_1_1RayCollider_a2be7669a1fbace82a69b4cc0c204099d}
+Stats\+: gets the number of Ray-\/\+BV overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{classOpcode_1_1RayCollider_aeb7f2ed47d0703aaef0656f75f4f8d04}{Get\+Nb\+Ray\+Prim\+Tests()} 
+
+\hyperlink{classOpcode_1_1RayCollider_a762b2261cd0bdfea03e9b284c9d3005f}{Get\+Nb\+Intersections()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of Ray-\/\+BV tests performed during last query 
+\end{DoxyReturn}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!Get\+Nb\+Ray\+Prim\+Tests@{Get\+Nb\+Ray\+Prim\+Tests}}
+\index{Get\+Nb\+Ray\+Prim\+Tests@{Get\+Nb\+Ray\+Prim\+Tests}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Ray\+Prim\+Tests() const }{GetNbRayPrimTests() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Opcode\+::\+Ray\+Collider\+::\+Get\+Nb\+Ray\+Prim\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1RayCollider_aeb7f2ed47d0703aaef0656f75f4f8d04}{}\label{classOpcode_1_1RayCollider_aeb7f2ed47d0703aaef0656f75f4f8d04}
+Stats\+: gets the number of Ray-\/\+Triangle overlap tests after a collision query. \begin{DoxySeeAlso}{See also}
+\hyperlink{classOpcode_1_1RayCollider_a2be7669a1fbace82a69b4cc0c204099d}{Get\+Nb\+Ray\+B\+V\+Tests()} 
+
+\hyperlink{classOpcode_1_1RayCollider_a762b2261cd0bdfea03e9b284c9d3005f}{Get\+Nb\+Intersections()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the number of Ray-\/\+Triangle tests performed during last query 
+\end{DoxyReturn}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!Init\+Query@{Init\+Query}}
+\index{Init\+Query@{Init\+Query}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Init\+Query(const Ray \&world\+\_\+ray, const Matrix4x4 $\ast$world=null, udword $\ast$face\+\_\+id=null)}{InitQuery(const Ray &world_ray, const Matrix4x4 *world=null, udword *face_id=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Ray\+Collider\+::\+Init\+Query (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ray} \&}]{world\+\_\+ray, }
+\item[{const {\bf Matrix4x4} $\ast$}]{world = {\ttfamily {\bf null}}, }
+\item[{{\bf udword} $\ast$}]{face\+\_\+id = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1RayCollider_a4a4564d6b6243209c278566a768c49ec}{}\label{classOpcode_1_1RayCollider_a4a4564d6b6243209c278566a768c49ec}
+Initializes a stabbing query \+:
+\begin{DoxyItemize}
+\item reset stats \& contact status
+\item compute ray in local space
+\item check temporal coherence
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em world\+\_\+ray} & \mbox{[}in\mbox{]} stabbing ray in world space \\
+\hline
+{\em world} & \mbox{[}in\mbox{]} object\textquotesingle{}s world matrix, or null \\
+\hline
+{\em face\+\_\+id} & \mbox{[}in\mbox{]} index of previously stabbed triangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if we can return immediately 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrix must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!override@{override}}
+\index{override@{override}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{override(\+Collider) const char $\ast$\+Validate\+Settings()}{override(Collider) const char *ValidateSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}Opcode\+::\+Ray\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classOpcode_1_1RayCollider_aa091e73343223239d6a8a8e2b9ae9f65}{}\label{classOpcode_1_1RayCollider_aa091e73343223239d6a8a8e2b9ae9f65}
+Validates current settings. You should call this method after all the settings and callbacks have been defined for a collider. \begin{DoxyReturn}{Returns}
+null if everything is ok, else a string describing the problem 
+\end{DoxyReturn}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!Set\+Culling@{Set\+Culling}}
+\index{Set\+Culling@{Set\+Culling}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Set\+Culling(bool flag)}{SetCulling(bool flag)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Opcode\+::\+Ray\+Collider\+::\+Set\+Culling (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1RayCollider_a188b5c843205ed0100acb9d94f04f143}{}\label{classOpcode_1_1RayCollider_a188b5c843205ed0100acb9d94f04f143}
+Settings\+: enable or disable backface culling. 
+\begin{DoxyParams}{Parameters}
+{\em flag} & \mbox{[}in\mbox{]} true to enable backface culling \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Set\+Closest\+Hit(bool flag) 
+
+\hyperlink{classOpcode_1_1RayCollider_ae52ff080cbb19fbd4d4c5c25017571d5}{Set\+Max\+Dist(float max\+\_\+dist)} 
+
+Set\+Destination(\+Stabbed\+Faces$\ast$ sf) 
+\end{DoxySeeAlso}
+\index{Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}!Set\+Max\+Dist@{Set\+Max\+Dist}}
+\index{Set\+Max\+Dist@{Set\+Max\+Dist}!Opcode\+::\+Ray\+Collider@{Opcode\+::\+Ray\+Collider}}
+\subsubsection[{\texorpdfstring{Set\+Max\+Dist(float max\+\_\+dist=\+M\+A\+X\+\_\+\+F\+L\+O\+A\+T)}{SetMaxDist(float max_dist=MAX_FLOAT)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Opcode\+::\+Ray\+Collider\+::\+Set\+Max\+Dist (
+\begin{DoxyParamCaption}
+\item[{float}]{max\+\_\+dist = {\ttfamily {\bf M\+A\+X\+\_\+\+F\+L\+O\+AT}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOpcode_1_1RayCollider_ae52ff080cbb19fbd4d4c5c25017571d5}{}\label{classOpcode_1_1RayCollider_ae52ff080cbb19fbd4d4c5c25017571d5}
+Settings\+: sets the higher distance bound. 
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+dist} & \mbox{[}in\mbox{]} higher distance bound. Default = maximal value, for ray queries (else segment) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Set\+Closest\+Hit(bool flag) 
+
+\hyperlink{classOpcode_1_1RayCollider_a188b5c843205ed0100acb9d94f04f143}{Set\+Culling(bool flag)} 
+
+Set\+Destination(\+Stabbed\+Faces$\ast$ sf) 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\hyperlink{OPC__RayCollider_8cpp}{O\+P\+C\+\_\+\+Ray\+Collider.\+cpp}\end{DoxyCompactItemize}

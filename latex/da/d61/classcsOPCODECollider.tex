@@ -1,0 +1,60 @@
+\hypertarget{classcsOPCODECollider}{}\section{cs\+O\+P\+C\+O\+D\+E\+Collider Class Reference}
+\label{classcsOPCODECollider}\index{cs\+O\+P\+C\+O\+D\+E\+Collider@{cs\+O\+P\+C\+O\+D\+E\+Collider}}
+
+
+Collaboration diagram for cs\+O\+P\+C\+O\+D\+E\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{d8/d9a/classcsOPCODECollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries cs\+O\+P\+C\+O\+D\+E\+Collider} (const std\+::vector$<$ \hyperlink{structmesh__polygon}{mesh\+\_\+polygon} $>$ \&polygons)\hypertarget{classcsOPCODECollider_a63c5a546f8e7ed4b1f9eabf97494cefc}{}\label{classcsOPCODECollider_a63c5a546f8e7ed4b1f9eabf97494cefc}
+
+\item 
+int {\bfseries Get\+Collider\+Type} () const \hypertarget{classcsOPCODECollider_a3045f0d0f715db5c21a02a67329ec9a5}{}\label{classcsOPCODECollider_a3045f0d0f715db5c21a02a67329ec9a5}
+
+\item 
+bool {\bfseries ray\+Collide} (const \hyperlink{classOpcode_1_1Ray}{Opcode\+::\+Ray} \&boltbeam, Vector \&norm, float \&distance)\hypertarget{classcsOPCODECollider_ad95e4cb6a70eaf8b8b1179fd4a0c1385}{}\label{classcsOPCODECollider_ad95e4cb6a70eaf8b8b1179fd4a0c1385}
+
+\item 
+bool {\bfseries Collide} (\hyperlink{classcsOPCODECollider}{cs\+O\+P\+C\+O\+D\+E\+Collider} \&p\+Other\+Collider, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} $\ast$p\+This\+Transform=0, const \hyperlink{classcsReversibleTransform}{cs\+Reversible\+Transform} $\ast$p\+Other\+Transform=0)\hypertarget{classcsOPCODECollider_ab295d71cd436ef322062a5f2bf455a2b}{}\label{classcsOPCODECollider_ab295d71cd436ef322062a5f2bf455a2b}
+
+\item 
+void {\bfseries Set\+One\+Hit\+Only} (bool fh)\hypertarget{classcsOPCODECollider_acf5c3709fa89ffa08b979f26398419b8}{}\label{classcsOPCODECollider_acf5c3709fa89ffa08b979f26398419b8}
+
+\item 
+bool {\bfseries Get\+One\+Hit\+Only} () const \hypertarget{classcsOPCODECollider_a0822b34c63d6e85c7a2e11ab3e9a9299}{}\label{classcsOPCODECollider_a0822b34c63d6e85c7a2e11ab3e9a9299}
+
+\item 
+float {\bfseries Get\+Radius} () const \hypertarget{classcsOPCODECollider_a2175fb62e2291f7b7f0802e8484abf84}{}\label{classcsOPCODECollider_a2175fb62e2291f7b7f0802e8484abf84}
+
+\item 
+Vector {\bfseries get\+Vertex} (unsigned int which) const \hypertarget{classcsOPCODECollider_a646b8b87cc296f790cb7bb91c117189a}{}\label{classcsOPCODECollider_a646b8b87cc296f790cb7bb91c117189a}
+
+\item 
+unsigned int {\bfseries get\+Num\+Vertex} () const \hypertarget{classcsOPCODECollider_a3e635c61cd40245eb779cb81b5b658c6}{}\label{classcsOPCODECollider_a3e635c61cd40245eb779cb81b5b658c6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structcsCollisionPair}{cs\+Collision\+Pair} $\ast$ {\bfseries Get\+Collisions} ()\hypertarget{classcsOPCODECollider_a521fa2626ffc384ae47ddbc5426135dc}{}\label{classcsOPCODECollider_a521fa2626ffc384ae47ddbc5426135dc}
+
+\item 
+static void {\bfseries Reset\+Collision\+Pairs} ()\hypertarget{classcsOPCODECollider_a235d48cf9ff05c26b62edae6ed9a3090}{}\label{classcsOPCODECollider_a235d48cf9ff05c26b62edae6ed9a3090}
+
+\item 
+static size\+\_\+t {\bfseries Get\+Collision\+Pair\+Count} ()\hypertarget{classcsOPCODECollider_a43b9d13b5036508c1213f59437787aa7}{}\label{classcsOPCODECollider_a43b9d13b5036508c1213f59437787aa7}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/C\+Sopcodecollider.\+h\item 
+cmd/collide2/C\+Sopcodecollider.\+cpp\end{DoxyCompactItemize}

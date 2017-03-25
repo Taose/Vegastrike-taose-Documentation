@@ -1,0 +1,4 @@
+<map id="Audio::Stream::read" name="Audio::Stream::read">
+<area shape="rect" id="node2" href="$db/dc9/classAudio_1_1Stream.html#a9e751b39449a3cfe0aa6579cdba43e65" title="Audio::Stream::getBufferImpl" alt="" coords="196,5,387,32"/>
+<area shape="rect" id="node3" href="$db/dc9/classAudio_1_1Stream.html#a3efb4fa10e2a575805d9f8be9a133b6f" title="Audio::Stream::nextBufferImpl" alt="" coords="192,56,391,83"/>
+</map>

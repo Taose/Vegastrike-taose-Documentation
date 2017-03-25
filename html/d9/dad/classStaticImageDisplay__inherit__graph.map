@@ -1,0 +1,4 @@
+<map id="StaticImageDisplay" name="StaticImageDisplay">
+<area shape="rect" id="node2" href="$d9/de2/classControl.html" title="{Control\n|# m_rect\l# m_id\l# m_color\l# m_outlineColor\l# m_textColor\l# m_font\l# m_hidden\l|+ rect()\l+ setRect()\l+ hitTest()\l+ hidden()\l+ setHidden()\l+ id()\l+ setId()\l+ color()\l+ setColor()\l+ outlineColor()\land 9 more...\l# drawBackground()\l}" alt="" coords="18,321,157,648"/>
+<area shape="rect" id="node3" href="$d0/d0c/classEventResponder.html" title="{EventResponder\n|# m_modal\l# m_commandTarget\l|+ processCommand()\l+ processKeyDown()\l+ processKeyUp()\l+ processMouseDown()\l+ processUnfocus()\l+ processMouseUp()\l+ processMouseMove()\l+ processMouseDrag()\l+ sendCommand()\l+ setCommandTarget()\l+ setModal()\l+ EventResponder()\l+ ~EventResponder()\l}" alt="" coords="7,5,168,273"/>
+</map>

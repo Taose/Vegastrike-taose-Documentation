@@ -1,0 +1,10 @@
+<map id="Audio::OpenALRenderableSource::attachALBuffers" name="Audio::OpenALRenderableSource::attachALBuffers">
+<area shape="rect" id="node2" href="$df/dc7/classAudio_1_1OpenALRenderableSource.html#a531f21334659ceb3325ec8de98e319b9" title="Audio::OpenALRenderableSource\l::getALSource" alt="" coords="271,136,488,177"/>
+<area shape="rect" id="node3" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#ae36b0a35ef74abeeab14cf7fcf6229d9" title="Audio::OpenALRenderableStreaming\lSource::startPlayingImpl" alt="" coords="536,5,771,47"/>
+<area shape="rect" id="node5" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#aac8b7fe4f344431d68725a4d723a4f4b" title="Audio::OpenALRenderableStreaming\lSource::isPlayingImpl" alt="" coords="536,71,771,112"/>
+<area shape="rect" id="node6" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#ac887a3ca11f25abd42fa07086516d461" title="Audio::OpenALRenderableStreaming\lSource::getPlayingTimeImpl" alt="" coords="536,136,771,177"/>
+<area shape="rect" id="node7" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#ac484b12b9e263efb396efbb40ea8bf77" title="Audio::OpenALRenderableStreaming\lSource::updateImpl" alt="" coords="536,201,771,243"/>
+<area shape="rect" id="node8" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#aee3a50bc65b04822fa8470a8f7c0bfc0" title="Audio::OpenALRenderableStreaming\lSource::queueALBuffers" alt="" coords="536,267,771,308"/>
+<area shape="rect" id="node4" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#a499d1e14bf34896dfe3c690229c85fd6" title="Audio::OpenALRenderableStreaming\lSource::shouldBePlaying" alt="" coords="819,104,1053,145"/>
+<area shape="rect" id="node9" href="$d8/dcb/classAudio_1_1OpenALRenderableStreamingSource.html#a09174b0d9f46c5c02d5ed62c5dee2b35" title="Audio::OpenALRenderableStreaming\lSource::getALSource" alt="" coords="819,267,1053,308"/>
+</map>

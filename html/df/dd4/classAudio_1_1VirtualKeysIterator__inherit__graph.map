@@ -1,0 +1,4 @@
+<map id="Audio::VirtualKeysIterator&lt; _It &gt;" name="Audio::VirtualKeysIterator&lt; _It &gt;">
+<area shape="rect" id="node2" href="$d4/d64/classAudio_1_1VirtualMappingIterator.html" title="{Audio::VirtualMappingIterator\l\&lt; _It, _It::value_type::first_type \&gt;\n|# it\l|+ VirtualMappingIterator()\l+ VirtualMappingIterator()\l+ VirtualMappingIterator()\l+ operator++()\l+ operator&#45;&#45;()\l+ eos()\l+ sos()\l}" alt="" coords="5,535,223,715"/>
+<area shape="rect" id="node3" href="$d6/da0/classAudio_1_1VirtualIterator.html" title="{Audio::VirtualIterator\l\&lt; _It::value_type::first\l_type, _It::value_type::\lfirst_type &amp;, _It::value\l_type::first_type * \&gt;\n||+ VirtualIterator()\l+ ~VirtualIterator()\l+ operator*()\l+ operator&#45;\&gt;()\l+ operator++()\l+ operator&#45;&#45;()\l+ clone()\l+ eos()\l+ sos()\l+ get()\l+ getPtr()\l+ next()\l+ prev()\l}" alt="" coords="36,175,192,487"/>
+</map>

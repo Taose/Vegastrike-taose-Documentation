@@ -1,0 +1,4 @@
+<map id="NullPrediction" name="NullPrediction">
+<area shape="rect" id="node2" href="$d2/dd2/classPrediction.html" title="{Prediction\n|# A0\l# B\l# A1\l# A2\l# A3\l# VA\l# VB\l# AA\l# AB\l# deltatime\l|+ Prediction()\l+ ~Prediction()\l+ InitInterpolation()\l+ InterpolatePosition()\l+ InterpolateOrientation()\l+ Interpolate()\l}" alt="" coords="5,321,172,604"/>
+<area shape="rect" id="node3" href="$dc/dc7/structQuaternion.html" title="{Quaternion\n|+ s\l+ v\l|+ Quaternion()\l+ Quaternion()\l+ Conjugate()\l+ netswap()\l+ Magnitude()\l+ operator*()\l+ operator*=()\l+ Normalize()\l+ to_matrix()\l+ from_vectors()\l+ from_axis_angle()\l}" alt="" coords="20,5,157,244"/>
+</map>

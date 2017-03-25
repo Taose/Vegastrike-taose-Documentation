@@ -1,0 +1,220 @@
+\hypertarget{classNetBuffer}{}\section{Net\+Buffer Class Reference}
+\label{classNetBuffer}\index{Net\+Buffer@{Net\+Buffer}}
+
+
+Collaboration diagram for Net\+Buffer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{dc/d26/classNetBuffer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Net\+Buffer} (int bufsize)\hypertarget{classNetBuffer_a5b440891def188415372af6359ec4553}{}\label{classNetBuffer_a5b440891def188415372af6359ec4553}
+
+\item 
+\hyperlink{classNetBuffer_a3ca55615a9e66d75c51c81f864cf3703}{Net\+Buffer} (const char $\ast$buf, int bufsize)
+\item 
+void {\bfseries Reset} ()\hypertarget{classNetBuffer_acc7365ad41b606281438dee5bcbb6f47}{}\label{classNetBuffer_acc7365ad41b606281438dee5bcbb6f47}
+
+\item 
+Obj\+Serial {\bfseries version} ()\hypertarget{classNetBuffer_ad52dcc41a6ec3b88c7e7bdcd312fa1e8}{}\label{classNetBuffer_ad52dcc41a6ec3b88c7e7bdcd312fa1e8}
+
+\item 
+void {\bfseries set\+Version} (Obj\+Serial ver)\hypertarget{classNetBuffer_a5a1c1d6180a65dbe0f3d4627db528c87}{}\label{classNetBuffer_a5a1c1d6180a65dbe0f3d4627db528c87}
+
+\item 
+char $\ast$ {\bfseries get\+Data} ()\hypertarget{classNetBuffer_ac147dd4d44f43cabf3d6d611cafabbee}{}\label{classNetBuffer_ac147dd4d44f43cabf3d6d611cafabbee}
+
+\item 
+unsigned int {\bfseries get\+Offset} () const \hypertarget{classNetBuffer_a905a6cde91daa3e7fe58509c714000ce}{}\label{classNetBuffer_a905a6cde91daa3e7fe58509c714000ce}
+
+\item 
+void {\bfseries resize\+Buffer} (unsigned int newsize)\hypertarget{classNetBuffer_a84d5ca1c0ca266fa061bc0c70110167f}{}\label{classNetBuffer_a84d5ca1c0ca266fa061bc0c70110167f}
+
+\item 
+bool {\bfseries check\+Buffer} (int len, const char $\ast$fun)\hypertarget{classNetBuffer_a648eedc85dbe0fdc1421da1ec702e888}{}\label{classNetBuffer_a648eedc85dbe0fdc1421da1ec702e888}
+
+\item 
+void {\bfseries add\+Client\+State} (\hyperlink{classClientState}{Client\+State} cs)\hypertarget{classNetBuffer_a64e6ba4fcbc517c8fd5d444dca082e54}{}\label{classNetBuffer_a64e6ba4fcbc517c8fd5d444dca082e54}
+
+\item 
+\hyperlink{classClientState}{Client\+State} {\bfseries get\+Client\+State} ()\hypertarget{classNetBuffer_acd33d2e0832eb325b175214cfb10f1b1}{}\label{classNetBuffer_acd33d2e0832eb325b175214cfb10f1b1}
+
+\item 
+void {\bfseries add\+Vector} (Vector v)\hypertarget{classNetBuffer_a510f84c0c179ff623eea5aef635c8e1a}{}\label{classNetBuffer_a510f84c0c179ff623eea5aef635c8e1a}
+
+\item 
+Vector {\bfseries get\+Vector} ()\hypertarget{classNetBuffer_aa1805d8f430a9220c1e94fc33bad3d38}{}\label{classNetBuffer_aa1805d8f430a9220c1e94fc33bad3d38}
+
+\item 
+void {\bfseries add\+Q\+Vector} (Q\+Vector v)\hypertarget{classNetBuffer_a28e4f8a2dd204c56f72df9ca7afdd82e}{}\label{classNetBuffer_a28e4f8a2dd204c56f72df9ca7afdd82e}
+
+\item 
+Q\+Vector {\bfseries get\+Q\+Vector} ()\hypertarget{classNetBuffer_a0e922b8bca3a45a1da14e2ce022fd6d4}{}\label{classNetBuffer_a0e922b8bca3a45a1da14e2ce022fd6d4}
+
+\item 
+void {\bfseries add\+Color} (\hyperlink{structGFXColor}{G\+F\+X\+Color} col)\hypertarget{classNetBuffer_ad9f8bad69fafb4a96e582b448375d933}{}\label{classNetBuffer_ad9f8bad69fafb4a96e582b448375d933}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries get\+Color} ()\hypertarget{classNetBuffer_ad9850a4d6fc6c4326a354fc40f67f41f}{}\label{classNetBuffer_ad9850a4d6fc6c4326a354fc40f67f41f}
+
+\item 
+void {\bfseries add\+Matrix} (\hyperlink{classMatrix}{Matrix} m)\hypertarget{classNetBuffer_a1e7b670d5a189c403678e12995e50223}{}\label{classNetBuffer_a1e7b670d5a189c403678e12995e50223}
+
+\item 
+\hyperlink{classMatrix}{Matrix} {\bfseries get\+Matrix} ()\hypertarget{classNetBuffer_a9ce2b6cc1a20aa1b0902569ca535515b}{}\label{classNetBuffer_a9ce2b6cc1a20aa1b0902569ca535515b}
+
+\item 
+void {\bfseries add\+Quaternion} (\hyperlink{structQuaternion}{Quaternion} quat)\hypertarget{classNetBuffer_ae94fe528e2e15bdd11ac3d3d35b15255}{}\label{classNetBuffer_ae94fe528e2e15bdd11ac3d3d35b15255}
+
+\item 
+\hyperlink{structQuaternion}{Quaternion} {\bfseries get\+Quaternion} ()\hypertarget{classNetBuffer_a56fc22a596c7f50069ed0a2443e54d02}{}\label{classNetBuffer_a56fc22a596c7f50069ed0a2443e54d02}
+
+\item 
+void {\bfseries add\+Transformation} (\hyperlink{structTransformation}{Transformation} trans)\hypertarget{classNetBuffer_aab18d5f304c7c90e5f61c352279dfa68}{}\label{classNetBuffer_aab18d5f304c7c90e5f61c352279dfa68}
+
+\item 
+\hyperlink{structTransformation}{Transformation} {\bfseries get\+Transformation} ()\hypertarget{classNetBuffer_a09ba1b57cc91baa897a0eab1081c032e}{}\label{classNetBuffer_a09ba1b57cc91baa897a0eab1081c032e}
+
+\item 
+void {\bfseries add\+Shield} (const \hyperlink{structShield}{Shield} \&shield)\hypertarget{classNetBuffer_a4195f299415e2096fd0f9a4b04e77ffa}{}\label{classNetBuffer_a4195f299415e2096fd0f9a4b04e77ffa}
+
+\item 
+\hyperlink{structShield}{Shield} {\bfseries get\+Shield} ()\hypertarget{classNetBuffer_a7ea511048bfe1d55e04888db0617859f}{}\label{classNetBuffer_a7ea511048bfe1d55e04888db0617859f}
+
+\item 
+void {\bfseries add\+Armor} (const \hyperlink{structArmor}{Armor} \&armor)\hypertarget{classNetBuffer_a0d5dc17c560885619e4e4ab2cafbd5ea}{}\label{classNetBuffer_a0d5dc17c560885619e4e4ab2cafbd5ea}
+
+\item 
+\hyperlink{structArmor}{Armor} {\bfseries get\+Armor} ()\hypertarget{classNetBuffer_a24ac522013904bfb72e084b2bff69e35}{}\label{classNetBuffer_a24ac522013904bfb72e084b2bff69e35}
+
+\item 
+void {\bfseries add\+Serial} (Obj\+Serial serial)\hypertarget{classNetBuffer_ab568f922de1392b01a3db48ef2236451}{}\label{classNetBuffer_ab568f922de1392b01a3db48ef2236451}
+
+\item 
+Obj\+Serial {\bfseries get\+Serial} ()\hypertarget{classNetBuffer_a8721d2a6277f820dcc31500842c8e623}{}\label{classNetBuffer_a8721d2a6277f820dcc31500842c8e623}
+
+\item 
+void {\bfseries add\+Float} (float f)\hypertarget{classNetBuffer_afeac92c272b7b08fff4ecae72b5f35a0}{}\label{classNetBuffer_afeac92c272b7b08fff4ecae72b5f35a0}
+
+\item 
+float {\bfseries get\+Float} ()\hypertarget{classNetBuffer_a6c8e0fa66368aaf6149680f9dfb0e5c0}{}\label{classNetBuffer_a6c8e0fa66368aaf6149680f9dfb0e5c0}
+
+\item 
+void {\bfseries add\+Float8} (float f)\hypertarget{classNetBuffer_af7741fbcd016f946a71539e761d648b5}{}\label{classNetBuffer_af7741fbcd016f946a71539e761d648b5}
+
+\item 
+float {\bfseries get\+Float8} ()\hypertarget{classNetBuffer_a4a5ac3869b35749b76a89d679e81fc21}{}\label{classNetBuffer_a4a5ac3869b35749b76a89d679e81fc21}
+
+\item 
+void {\bfseries add\+Double} (double d)\hypertarget{classNetBuffer_a3484e3d10b216b5b499c291011614aa3}{}\label{classNetBuffer_a3484e3d10b216b5b499c291011614aa3}
+
+\item 
+double {\bfseries get\+Double} ()\hypertarget{classNetBuffer_a84ee078631d5e033518743f591d97e1e}{}\label{classNetBuffer_a84ee078631d5e033518743f591d97e1e}
+
+\item 
+void {\bfseries add\+Short} (unsigned short s)\hypertarget{classNetBuffer_a9ba4b9355817dcdb945c03df0a86fa26}{}\label{classNetBuffer_a9ba4b9355817dcdb945c03df0a86fa26}
+
+\item 
+unsigned short {\bfseries get\+Short} ()\hypertarget{classNetBuffer_a752e20bef4e1e11719fa353796972654}{}\label{classNetBuffer_a752e20bef4e1e11719fa353796972654}
+
+\item 
+void {\bfseries add\+Int32} (int i)\hypertarget{classNetBuffer_abef0d96762703cf045ba2769594551b8}{}\label{classNetBuffer_abef0d96762703cf045ba2769594551b8}
+
+\item 
+int {\bfseries get\+Int32} ()\hypertarget{classNetBuffer_a0d23d27cec27e65dc718ae053ce2240a}{}\label{classNetBuffer_a0d23d27cec27e65dc718ae053ce2240a}
+
+\item 
+void {\bfseries add\+U\+Int32} (unsigned int i)\hypertarget{classNetBuffer_af68c8cc814bc0139448b2b11ebd80fb6}{}\label{classNetBuffer_af68c8cc814bc0139448b2b11ebd80fb6}
+
+\item 
+unsigned int {\bfseries get\+U\+Int32} ()\hypertarget{classNetBuffer_ac54e550b7f3fbecf671be175f69c99f2}{}\label{classNetBuffer_ac54e550b7f3fbecf671be175f69c99f2}
+
+\item 
+void {\bfseries add\+Char} (char c)\hypertarget{classNetBuffer_afefd6e80995d63a5569c8f3af3dc5218}{}\label{classNetBuffer_afefd6e80995d63a5569c8f3af3dc5218}
+
+\item 
+char {\bfseries get\+Char} ()\hypertarget{classNetBuffer_ad93cb4a5a21c6a655b8e3e9f23ed250a}{}\label{classNetBuffer_ad93cb4a5a21c6a655b8e3e9f23ed250a}
+
+\item 
+void {\bfseries add\+Type} (unsigned char t)\hypertarget{classNetBuffer_aedf3747afe7b154d3ea6ddad36eedd5a}{}\label{classNetBuffer_aedf3747afe7b154d3ea6ddad36eedd5a}
+
+\item 
+bool {\bfseries check\+Type} (unsigned char t)\hypertarget{classNetBuffer_a0ad0d69163cb5e58646b91372c493564}{}\label{classNetBuffer_a0ad0d69163cb5e58646b91372c493564}
+
+\item 
+unsigned char {\bfseries get\+Type} ()\hypertarget{classNetBuffer_a1725ac740cebc7fa2bea789fda734d17}{}\label{classNetBuffer_a1725ac740cebc7fa2bea789fda734d17}
+
+\item 
+void {\bfseries add\+Buffer} (const unsigned char $\ast$buf, int bufsize)\hypertarget{classNetBuffer_ac91c16d31d08db4a4e437a3301c3c1de}{}\label{classNetBuffer_ac91c16d31d08db4a4e437a3301c3c1de}
+
+\item 
+unsigned char $\ast$ {\bfseries ext\+Add\+Buffer} (int bufsize)\hypertarget{classNetBuffer_aa657ec9a2903dafc7538f29a325630ce}{}\label{classNetBuffer_aa657ec9a2903dafc7538f29a325630ce}
+
+\item 
+unsigned char $\ast$ {\bfseries get\+Buffer} (int offt)\hypertarget{classNetBuffer_a0bf475e835b2b8d9f5d9a5553c3e0a45}{}\label{classNetBuffer_a0bf475e835b2b8d9f5d9a5553c3e0a45}
+
+\item 
+void {\bfseries add\+String} (const string \&str)\hypertarget{classNetBuffer_a04877f36950f426cdddac031d2882c26}{}\label{classNetBuffer_a04877f36950f426cdddac031d2882c26}
+
+\item 
+string {\bfseries get\+String} ()\hypertarget{classNetBuffer_a0a9e31eb20e1c312dda8c3378a130b16}{}\label{classNetBuffer_a0a9e31eb20e1c312dda8c3378a130b16}
+
+\item 
+\hyperlink{structGFXMaterial}{G\+F\+X\+Material} {\bfseries get\+G\+F\+X\+Material} ()\hypertarget{classNetBuffer_a421fdf3cbb9ce7116f23b2e06fe741cf}{}\label{classNetBuffer_a421fdf3cbb9ce7116f23b2e06fe741cf}
+
+\item 
+void {\bfseries add\+G\+F\+X\+Material} (const \hyperlink{structGFXMaterial}{G\+F\+X\+Material} \&mat)\hypertarget{classNetBuffer_acf50d785c70cd335df80f2536f5b954a}{}\label{classNetBuffer_acf50d785c70cd335df80f2536f5b954a}
+
+\item 
+\hyperlink{classGFXLight}{G\+F\+X\+Light} {\bfseries get\+G\+F\+X\+Light} ()\hypertarget{classNetBuffer_a6f2b42ade6c49d8d2baee98a09445d18}{}\label{classNetBuffer_a6f2b42ade6c49d8d2baee98a09445d18}
+
+\item 
+void {\bfseries add\+G\+F\+X\+Light} (const \hyperlink{classGFXLight}{G\+F\+X\+Light} \&light)\hypertarget{classNetBuffer_a7261de2026576126b4281bfb252d21f6}{}\label{classNetBuffer_a7261de2026576126b4281bfb252d21f6}
+
+\item 
+\hyperlink{structGFXLightLocal}{G\+F\+X\+Light\+Local} {\bfseries get\+G\+F\+X\+Light\+Local} ()\hypertarget{classNetBuffer_a1ff91eedaf9667a71b3468eb162cef0b}{}\label{classNetBuffer_a1ff91eedaf9667a71b3468eb162cef0b}
+
+\item 
+void {\bfseries add\+G\+F\+X\+Light\+Local} (const \hyperlink{structGFXLightLocal}{G\+F\+X\+Light\+Local} \&light)\hypertarget{classNetBuffer_a9fbf33238470ff2f1b01f4dab43688f9}{}\label{classNetBuffer_a9fbf33238470ff2f1b01f4dab43688f9}
+
+\item 
+unsigned int {\bfseries get\+Data\+Length} ()\hypertarget{classNetBuffer_a70930126889da762c1a6f7ea26177646}{}\label{classNetBuffer_a70930126889da762c1a6f7ea26177646}
+
+\item 
+unsigned int {\bfseries get\+Size} ()\hypertarget{classNetBuffer_ab5211d0b217ee830f1729441428907c0}{}\label{classNetBuffer_ab5211d0b217ee830f1729441428907c0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Net\+Buffer@{Net\+Buffer}!Net\+Buffer@{Net\+Buffer}}
+\index{Net\+Buffer@{Net\+Buffer}!Net\+Buffer@{Net\+Buffer}}
+\subsubsection[{\texorpdfstring{Net\+Buffer(const char $\ast$buf, int bufsize)}{NetBuffer(const char *buf, int bufsize)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+Buffer\+::\+Net\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{buf, }
+\item[{int}]{bufsize}
+\end{DoxyParamCaption}
+)}\hypertarget{classNetBuffer_a3ca55615a9e66d75c51c81f864cf3703}{}\label{classNetBuffer_a3ca55615a9e66d75c51c81f864cf3703}
+If there is a platform where b in the call Vsnet\+O\+S\+S\+::memcpy(a,b,c) must be char$\ast$ instead of const char$\ast$ or const void$\ast$, that systems header files are badly broken. That requirement must be a lie. If you have that, implement an ifdef in Vsnet\+O\+S\+S\+::\+Vsnet\+O\+S\+S\+::memcpy 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d1e/classNetBuffer_a3ca55615a9e66d75c51c81f864cf3703_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/netbuffer.\+h\item 
+networking/lowlevel/netbuffer.\+cpp\end{DoxyCompactItemize}

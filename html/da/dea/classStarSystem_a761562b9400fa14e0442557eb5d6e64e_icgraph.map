@@ -1,0 +1,8 @@
+<map id="StarSystem::Update" name="StarSystem::Update">
+<area shape="rect" id="node2" href="$d9/dba/classCockpit.html#a77661eaba99c97a4bcb0192adaee01be" title="Draws Cockpit then restores viewport. " alt="" coords="239,5,345,32"/>
+<area shape="rect" id="node5" href="$da/dea/classStarSystem.html#a4c1430d5d251a5cd8d51e1818e819309" title="Requeues the unit so that it is simulated ASAP. " alt="" coords="195,56,389,83"/>
+<area shape="rect" id="node6" href="$dc/dce/classUniverse.html#a0c93df0a193723c26f031fa81cde3b2a" title="Wrapper function for Star System. " alt="" coords="207,107,377,133"/>
+<area shape="rect" id="node7" href="$dc/dce/classUniverse.html#a18722326f55b37627846cb7652b4dfff" title="Begins a scene. " alt="" coords="221,157,363,184"/>
+<area shape="rect" id="node3" href="$d5/d38/classGameStarSystem.html#a22a64a77861767b3503b7c6b5ab0b786" title="GameStarSystem::Draw" alt="" coords="437,5,603,32"/>
+<area shape="rect" id="node4" href="$d5/d38/classGameStarSystem.html#a08724f59ce670c81fd5c43aef06401c1" title="activates the light map texture " alt="" coords="651,5,849,32"/>
+</map>

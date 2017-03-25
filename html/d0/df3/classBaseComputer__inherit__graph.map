@@ -1,0 +1,4 @@
+<map id="BaseComputer" name="BaseComputer">
+<area shape="rect" id="node2" href="$dd/d66/classWctlBase.html" title="{WctlBase\&lt; BaseComputer \&gt;\n|# WctlCommandTable\l|+ processWindowCommand()\l}" alt="" coords="27,248,222,325"/>
+<area shape="rect" id="node3" href="$d4/d72/classWindowController.html" title="{WindowController\n|# m_window\l# m_deleteOnWindowClose\l|+ init()\l+ run()\l+ draw()\l+ window()\l+ setWindow()\l+ processWindowCommand()\l+ WindowController()\l+ ~WindowController()\l}" alt="" coords="27,5,222,200"/>
+</map>

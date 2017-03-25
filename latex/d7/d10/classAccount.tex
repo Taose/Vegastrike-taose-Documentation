@@ -1,0 +1,108 @@
+\hypertarget{classAccount}{}\section{Account Class Reference}
+\label{classAccount}\index{Account@{Account}}
+
+
+Collaboration diagram for Account\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{dd/d1d/classAccount__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries account\+\_\+type} \{ {\bfseries U\+N\+K\+N\+O\+WN}, 
+{\bfseries P\+L\+A\+Y\+ER}, 
+{\bfseries A\+D\+M\+IN}
+ \}\hypertarget{classAccount_ae50212ba656822f3c77cfdb3da7f55ae}{}\label{classAccount_ae50212ba656822f3c77cfdb3da7f55ae}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Account} (char $\ast$scallsign, char $\ast$spasswd)\hypertarget{classAccount_afa290b91d18c6c9f661a292ff77c7bde}{}\label{classAccount_afa290b91d18c6c9f661a292ff77c7bde}
+
+\item 
+{\bfseries Account} (string scallsign, string spasswd)\hypertarget{classAccount_ae2826dad6955d31b8c760633dc0d59f6}{}\label{classAccount_ae2826dad6955d31b8c760633dc0d59f6}
+
+\item 
+void {\bfseries display} ()\hypertarget{classAccount_a8c06d6472944250620d378f253e1ddc2}{}\label{classAccount_a8c06d6472944250620d378f253e1ddc2}
+
+\item 
+short {\bfseries is\+New} ()\hypertarget{classAccount_a737ff10ba79d624122d95b4e3fb87c14}{}\label{classAccount_a737ff10ba79d624122d95b4e3fb87c14}
+
+\item 
+void {\bfseries set\+Is\+New} (int new1)\hypertarget{classAccount_a572b5a2dfb1e3009e997ec5b9d12c623}{}\label{classAccount_a572b5a2dfb1e3009e997ec5b9d12c623}
+
+\item 
+Obj\+Serial {\bfseries get\+Serial} ()\hypertarget{classAccount_a6dea5a7c5301f8961c6d42b6989ba4a6}{}\label{classAccount_a6dea5a7c5301f8961c6d42b6989ba4a6}
+
+\item 
+void {\bfseries set\+Serial} (Obj\+Serial sernum)\hypertarget{classAccount_ad9e4761efb80300d87b70993b615c4f7}{}\label{classAccount_ad9e4761efb80300d87b70993b615c4f7}
+
+\item 
+\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} {\bfseries get\+Socket} ()\hypertarget{classAccount_a4cc8bca03e7af60534727869dbe22d5c}{}\label{classAccount_a4cc8bca03e7af60534727869dbe22d5c}
+
+\item 
+void {\bfseries set\+Socket} (\hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} sck)\hypertarget{classAccount_a67946e2c30e3951b186f891ab30c1ffc}{}\label{classAccount_a67946e2c30e3951b186f891ab30c1ffc}
+
+\item 
+void {\bfseries set} (char $\ast$scallsign, char $\ast$spasswd)\hypertarget{classAccount_aee502d02abe842502cb4a657a549e9f1}{}\label{classAccount_aee502d02abe842502cb4a657a549e9f1}
+
+\item 
+void {\bfseries set} (string scallsign, string spasswd)\hypertarget{classAccount_a95a3ebcb5ded95f5c58804a082b51f1d}{}\label{classAccount_a95a3ebcb5ded95f5c58804a082b51f1d}
+
+\item 
+int {\bfseries compare\+Name} (char $\ast$str)\hypertarget{classAccount_ab9870c176b8c4c960f55b82ac55ecc3a}{}\label{classAccount_ab9870c176b8c4c960f55b82ac55ecc3a}
+
+\item 
+int {\bfseries compare\+Pass} (char $\ast$str)\hypertarget{classAccount_a83eaa1917e70158dd1994cbede67a090}{}\label{classAccount_a83eaa1917e70158dd1994cbede67a090}
+
+\item 
+int {\bfseries compare\+Name} (string str)\hypertarget{classAccount_a65cb1613fc76da6e28dd466d974afd6e}{}\label{classAccount_a65cb1613fc76da6e28dd466d974afd6e}
+
+\item 
+int {\bfseries compare\+Pass} (string str)\hypertarget{classAccount_a4cd679ea4b42d9aa6f8ff5a092b52201}{}\label{classAccount_a4cd679ea4b42d9aa6f8ff5a092b52201}
+
+\item 
+bool {\bfseries is\+Connected} ()\hypertarget{classAccount_ac0a8311d399d9a50a3e9953307dac913}{}\label{classAccount_ac0a8311d399d9a50a3e9953307dac913}
+
+\item 
+int {\bfseries retry\+Connected\+Count} ()\hypertarget{classAccount_aba8b0af89cb9c452d5895bf3b1597281}{}\label{classAccount_aba8b0af89cb9c452d5895bf3b1597281}
+
+\item 
+void {\bfseries set\+Connected} (bool mode)\hypertarget{classAccount_a2797301ff3be0d6cf0d9d30e08be57de}{}\label{classAccount_a2797301ff3be0d6cf0d9d30e08be57de}
+
+\item 
+void {\bfseries inc\+Connected} ()\hypertarget{classAccount_a2e23c5821710c8b6007d38ee056c75f5}{}\label{classAccount_a2e23c5821710c8b6007d38ee056c75f5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum Account\+::account\+\_\+type {\bfseries type}\hypertarget{classAccount_a58f7265a1c5cecaf34b188e980024553}{}\label{classAccount_a58f7265a1c5cecaf34b188e980024553}
+
+\item 
+F\+I\+LE $\ast$ {\bfseries fp}\hypertarget{classAccount_acd680cbae733b4b883de67ee13e4b465}{}\label{classAccount_acd680cbae733b4b883de67ee13e4b465}
+
+\item 
+string {\bfseries callsign}\hypertarget{classAccount_a00f21aacaca2fce3d18ee364cff58123}{}\label{classAccount_a00f21aacaca2fce3d18ee364cff58123}
+
+\item 
+string {\bfseries passwd}\hypertarget{classAccount_a1e6ade1b68755a397540b3239d47deb6}{}\label{classAccount_a1e6ade1b68755a397540b3239d47deb6}
+
+\item 
+string {\bfseries serverip}\hypertarget{classAccount_a3d72233d4c604857ac3c033fd8a39184}{}\label{classAccount_a3d72233d4c604857ac3c033fd8a39184}
+
+\item 
+string {\bfseries serverport}\hypertarget{classAccount_a46e91749eaff2c6d089559caf3452e2a}{}\label{classAccount_a46e91749eaff2c6d089559caf3452e2a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/accountsxml.\+h\item 
+networking/accountsxml.\+cpp\end{DoxyCompactItemize}

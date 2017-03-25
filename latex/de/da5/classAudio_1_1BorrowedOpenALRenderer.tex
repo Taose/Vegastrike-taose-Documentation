@@ -1,0 +1,120 @@
+\hypertarget{classAudio_1_1BorrowedOpenALRenderer}{}\section{Audio\+:\+:Borrowed\+Open\+A\+L\+Renderer Class Reference}
+\label{classAudio_1_1BorrowedOpenALRenderer}\index{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer@{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer}}
+
+
+{\ttfamily \#include $<$Borrowed\+Open\+A\+L\+Renderer.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Borrowed\+Open\+A\+L\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d52/classAudio_1_1BorrowedOpenALRenderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Borrowed\+Open\+A\+L\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d12/classAudio_1_1BorrowedOpenALRenderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1BorrowedOpenALRenderer_a450cc345a7d4a9571fbc70090753def6}{Borrowed\+Open\+A\+L\+Renderer} (A\+L\+Cdevice $\ast$device=0, A\+L\+Ccontext $\ast$context=0)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1BorrowedOpenALRenderer_a67db564a97a04c1efc4840e3bd5947ad}{set\+Output\+Format} (const \hyperlink{structAudio_1_1Format}{Format} \&format)  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAudio_1_1BorrowedOpenALRenderer_a9d18fab66b1017f7e335f2e8d0325927}{check\+Context} ()  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Hooks up the renderer to an already-\/existing Open\+AL context
+
+\begin{DoxyRemark}{Remarks}
+If you\textquotesingle{}re already using Open\+AL in a standard fashion, you can still benefit from the scene graph provided by the Audio library by initializing the Open\+AL renderer through this method. The default constructor will assume the current Open\+AL context has been previously initialized and hook up to that context. 
+\end{DoxyRemark}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer@{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer}!Borrowed\+Open\+A\+L\+Renderer@{Borrowed\+Open\+A\+L\+Renderer}}
+\index{Borrowed\+Open\+A\+L\+Renderer@{Borrowed\+Open\+A\+L\+Renderer}!Audio\+::\+Borrowed\+Open\+A\+L\+Renderer@{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{Borrowed\+Open\+A\+L\+Renderer(\+A\+L\+Cdevice $\ast$device=0, A\+L\+Ccontext $\ast$context=0)}{BorrowedOpenALRenderer(ALCdevice *device=0, ALCcontext *context=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Borrowed\+Open\+A\+L\+Renderer\+::\+Borrowed\+Open\+A\+L\+Renderer (
+\begin{DoxyParamCaption}
+\item[{A\+L\+Cdevice $\ast$}]{device = {\ttfamily 0}, }
+\item[{A\+L\+Ccontext $\ast$}]{context = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1BorrowedOpenALRenderer_a450cc345a7d4a9571fbc70090753def6}{}\label{classAudio_1_1BorrowedOpenALRenderer_a450cc345a7d4a9571fbc70090753def6}
+Hooks up the renderer to an already-\/existing Open\+AL context
+
+\begin{DoxyRemark}{Remarks}
+If you\textquotesingle{}re already using Open\+AL in a standard fashion, you can still benefit from the scene graph provided by the Audio library by initializing the Open\+AL renderer through this method. If any parameter was passed as null, it will be retrieved from the current Open\+AL context (which must have been previously initialized)
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The Open\+AL device associated to this context \\
+\hline
+{\em context} & The Open\+AL context associated to this renderer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer@{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer}!check\+Context@{check\+Context}}
+\index{check\+Context@{check\+Context}!Audio\+::\+Borrowed\+Open\+A\+L\+Renderer@{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{check\+Context()}{checkContext()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Borrowed\+Open\+A\+L\+Renderer\+::check\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1BorrowedOpenALRenderer_a9d18fab66b1017f7e335f2e8d0325927}{}\label{classAudio_1_1BorrowedOpenALRenderer_a9d18fab66b1017f7e335f2e8d0325927}
+Makes sure the AL context is valid, creating one if necessary 
+
+Reimplemented from \hyperlink{classAudio_1_1OpenALRenderer_a4019dfda262b1093841b4b6ffcda8963}{Audio\+::\+Open\+A\+L\+Renderer}.
+
+\index{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer@{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer}!set\+Output\+Format@{set\+Output\+Format}}
+\index{set\+Output\+Format@{set\+Output\+Format}!Audio\+::\+Borrowed\+Open\+A\+L\+Renderer@{Audio\+::\+Borrowed\+Open\+A\+L\+Renderer}}
+\subsubsection[{\texorpdfstring{set\+Output\+Format(const Format \&format)}{setOutputFormat(const Format &format)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Borrowed\+Open\+A\+L\+Renderer\+::set\+Output\+Format (
+\begin{DoxyParamCaption}
+\item[{const {\bf Format} \&}]{format}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAudio_1_1BorrowedOpenALRenderer_a67db564a97a04c1efc4840e3bd5947ad}{}\label{classAudio_1_1BorrowedOpenALRenderer_a67db564a97a04c1efc4840e3bd5947ad}
+
+
+
+
+Sets the (preferred) output format. \begin{DoxyRemark}{Remarks}
+Renderers are encouraged to set their effective output format to the closest \char`\"{}better\char`\"{} format, where better is defined as either having heigher sampling frequency, bit depth, or number of channels. The effective output format, if known, must be reflected in subsequent calls to get\+Output\+Format. 
+\end{DoxyRemark}
+
+
+Reimplemented from \hyperlink{classAudio_1_1OpenALRenderer_afcc034c847de965fc0aa7330802e2a3c}{Audio\+::\+Open\+A\+L\+Renderer}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/da5/classAudio_1_1BorrowedOpenALRenderer_a67db564a97a04c1efc4840e3bd5947ad_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/renderers/\+Open\+A\+L/Borrowed\+Open\+A\+L\+Renderer.\+h\item 
+audio/renderers/\+Open\+A\+L/Open\+A\+L\+Renderer.\+cpp\end{DoxyCompactItemize}

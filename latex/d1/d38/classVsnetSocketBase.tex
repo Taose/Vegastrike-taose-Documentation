@@ -1,0 +1,125 @@
+\hypertarget{classVsnetSocketBase}{}\section{Vsnet\+Socket\+Base Class Reference}
+\label{classVsnetSocketBase}\index{Vsnet\+Socket\+Base@{Vsnet\+Socket\+Base}}
+
+
+Inheritance diagram for Vsnet\+Socket\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dee/classVsnetSocketBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Vsnet\+Socket\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/d72/classVsnetSocketBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Vsnet\+Socket\+Base} (int fd, const char $\ast$socktype, \hyperlink{classSocketSet}{Socket\+Set} \&set)\hypertarget{classVsnetSocketBase_a1b78b4ea04bc43574bdfbd04a814644a}{}\label{classVsnetSocketBase_a1b78b4ea04bc43574bdfbd04a814644a}
+
+\item 
+bool {\bfseries valid} () const \hypertarget{classVsnetSocketBase_aae7b86d039df5f82073bd9d3dbfa4023}{}\label{classVsnetSocketBase_aae7b86d039df5f82073bd9d3dbfa4023}
+
+\item 
+int {\bfseries get\+\_\+fd} () const \hypertarget{classVsnetSocketBase_a36fb61c75bd7f2829c1ef1029164e4de}{}\label{classVsnetSocketBase_a36fb61c75bd7f2829c1ef1029164e4de}
+
+\item 
+int {\bfseries close\+\_\+fd} ()\hypertarget{classVsnetSocketBase_a26ed8f0eb674a345ba211796b6b8c4f7}{}\label{classVsnetSocketBase_a26ed8f0eb674a345ba211796b6b8c4f7}
+
+\item 
+const char $\ast$ {\bfseries get\+\_\+socktype} () const \hypertarget{classVsnetSocketBase_aaa22c9c10b5342d1b6f70929227a6c6f}{}\label{classVsnetSocketBase_aaa22c9c10b5342d1b6f70929227a6c6f}
+
+\item 
+bool {\bfseries set\+\_\+block} ()\hypertarget{classVsnetSocketBase_a2f21e531a9e4aa3e643fd56139f4bea2}{}\label{classVsnetSocketBase_a2f21e531a9e4aa3e643fd56139f4bea2}
+
+\item 
+bool {\bfseries set\+\_\+nonblock} ()\hypertarget{classVsnetSocketBase_aee210a68a5496ee0a40670577e321cd8}{}\label{classVsnetSocketBase_aee210a68a5496ee0a40670577e321cd8}
+
+\item 
+bool {\bfseries get\+\_\+nonblock} () const \hypertarget{classVsnetSocketBase_ae904301fde81c2b8c103e3548f2d248b}{}\label{classVsnetSocketBase_ae904301fde81c2b8c103e3548f2d248b}
+
+\item 
+virtual bool {\bfseries is\+Active} ()=0\hypertarget{classVsnetSocketBase_aca4505713ad35145d24268fdfaa0f563}{}\label{classVsnetSocketBase_aca4505713ad35145d24268fdfaa0f563}
+
+\item 
+void {\bfseries disconnect} (const char $\ast$s)\hypertarget{classVsnetSocketBase_a7f64ea321fe9e39af21648b5169d2241}{}\label{classVsnetSocketBase_a7f64ea321fe9e39af21648b5169d2241}
+
+\item 
+virtual bool {\bfseries lower\+\_\+selected} (int datalen=-\/1)=0\hypertarget{classVsnetSocketBase_a54fe726485cdcc7e2fd9dcb5d736e8fd}{}\label{classVsnetSocketBase_a54fe726485cdcc7e2fd9dcb5d736e8fd}
+
+\item 
+virtual bool {\bfseries need\+\_\+test\+\_\+writable} ()\hypertarget{classVsnetSocketBase_a3a444b80c83b5212f8c77665332fbb82}{}\label{classVsnetSocketBase_a3a444b80c83b5212f8c77665332fbb82}
+
+\item 
+virtual bool {\bfseries write\+\_\+on\+\_\+negative} ()\hypertarget{classVsnetSocketBase_a9805a3950951b10b14c7bda6f6bd260e}{}\label{classVsnetSocketBase_a9805a3950951b10b14c7bda6f6bd260e}
+
+\item 
+virtual int {\bfseries get\+\_\+write\+\_\+fd} () const \hypertarget{classVsnetSocketBase_aa9132a48faae9d343ff9e10c9dab6a04}{}\label{classVsnetSocketBase_aa9132a48faae9d343ff9e10c9dab6a04}
+
+\item 
+virtual int {\bfseries lower\+\_\+sendbuf} ()\hypertarget{classVsnetSocketBase_a0e9813917184651a305cea5bb415354f}{}\label{classVsnetSocketBase_a0e9813917184651a305cea5bb415354f}
+
+\item 
+virtual void \hyperlink{classVsnetSocketBase_a0f72c451d0fb66744af779637382b0b2}{lower\+\_\+clean\+\_\+sendbuf} ()
+\item 
+virtual bool {\bfseries is\+Ready\+To\+Send} (fd\+\_\+set $\ast$)\hypertarget{classVsnetSocketBase_a2dae38617f2cdcd3319fc24e56f994f2}{}\label{classVsnetSocketBase_a2dae38617f2cdcd3319fc24e56f994f2}
+
+\item 
+void {\bfseries set\+Set} (\hyperlink{classSocketSet}{Socket\+Set} $\ast$set)\hypertarget{classVsnetSocketBase_a1a5a995758d1530b5163eddc8b22bbba}{}\label{classVsnetSocketBase_a1a5a995758d1530b5163eddc8b22bbba}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries child\+\_\+disconnect} (const char $\ast$s)\hypertarget{classVsnetSocketBase_a87a358d06f8df6f125e6f351d240d132}{}\label{classVsnetSocketBase_a87a358d06f8df6f125e6f351d240d132}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+fd}\hypertarget{classVsnetSocketBase_abc99e7b276e0f3a2bf2ae25244043377}{}\label{classVsnetSocketBase_abc99e7b276e0f3a2bf2ae25244043377}
+
+\item 
+\hyperlink{classSocketSet}{Socket\+Set} $\ast$ {\bfseries \+\_\+set}\hypertarget{classVsnetSocketBase_a98d25e8bb49a0eda2f270fe5ed09eaa2}{}\label{classVsnetSocketBase_a98d25e8bb49a0eda2f270fe5ed09eaa2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Vsnet\+Socket\+Base@{Vsnet\+Socket\+Base}!lower\+\_\+clean\+\_\+sendbuf@{lower\+\_\+clean\+\_\+sendbuf}}
+\index{lower\+\_\+clean\+\_\+sendbuf@{lower\+\_\+clean\+\_\+sendbuf}!Vsnet\+Socket\+Base@{Vsnet\+Socket\+Base}}
+\subsubsection[{\texorpdfstring{lower\+\_\+clean\+\_\+sendbuf()}{lower_clean_sendbuf()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Vsnet\+Socket\+Base\+::lower\+\_\+clean\+\_\+sendbuf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classVsnetSocketBase_a0f72c451d0fb66744af779637382b0b2}{}\label{classVsnetSocketBase_a0f72c451d0fb66744af779637382b0b2}
+Called when we noticed that the primary file descriptor is closed but data remains in the send queue. 
+
+Reimplemented in \hyperlink{classVsnetTCPSocket_a402b9a9cf439bfb0bcde7a94b9436dd7}{Vsnet\+T\+C\+P\+Socket}, and \hyperlink{classVsnetHTTPSocket_a3303afe2d40b785929bf6b5bdeb1a42d}{Vsnet\+H\+T\+T\+P\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{d1/d38/classVsnetSocketBase_a0f72c451d0fb66744af779637382b0b2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+socketbase.\+h\item 
+networking/lowlevel/vsnet\+\_\+socketbase.\+cpp\end{DoxyCompactItemize}

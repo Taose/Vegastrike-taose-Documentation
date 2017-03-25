@@ -1,0 +1,306 @@
+\hypertarget{classAudio_1_1SimpleSound}{}\section{Audio\+:\+:Simple\+Sound Class Reference}
+\label{classAudio_1_1SimpleSound}\index{Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}}
+
+
+{\ttfamily \#include $<$Simple\+Sound.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Simple\+Sound\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d2c/classAudio_1_1SimpleSound__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Simple\+Sound\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d40/classAudio_1_1SimpleSound__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+S\+File\+System\+::\+V\+S\+File\+Type \hyperlink{classAudio_1_1SimpleSound_a6d9df2525400aee9b21eebdbe4392d52}{get\+Type} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1SimpleSound_af847f302e1bf8c39d5626752c76ee400}{Simple\+Sound} (const std\+::string \&name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=V\+S\+File\+System\+::\+Unknown\+File, bool streaming=false)  throw ()
+\item 
+bool \hyperlink{classAudio_1_1SimpleSound_aa3afde47046eefb4ea193aa13c24aee4}{is\+Stream\+Loaded} () const 
+\item 
+void \hyperlink{classAudio_1_1SimpleSound_a07f1ea79c9208ea7a79b4b42f186d0a0}{load\+Stream} ()  throw (\+Exception)
+\item 
+void \hyperlink{classAudio_1_1SimpleSound_ab913f6768fc1bff17c78deec94e3375d}{close\+Stream} ()  throw (\+Resource\+Not\+Loaded\+Exception)
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1Stream}{Stream} $>$ \hyperlink{classAudio_1_1SimpleSound_add557853513a4a92d0874606033ef039}{get\+Stream} () const   throw (\+Resource\+Not\+Loaded\+Exception)
+\item 
+void \hyperlink{classAudio_1_1SimpleSound_a392851954fb6abb90a942ce5054fb649}{read\+Buffer} (\hyperlink{classAudio_1_1SoundBuffer}{Sound\+Buffer} \&buffer)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1SimpleSound_a21e84a0a9ece8abce078fb316845e32f}{abort\+Load} ()  throw ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Simple \hyperlink{classAudio_1_1Sound}{Sound} abstract class
+
+\begin{DoxyRemark}{Remarks}
+This partial implementation implements foreground loading of files using the codec registry. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{No background loading is implemented, meaning all requests for load, }
+even with wait=false, are processed in the foreground. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{There\textquotesingle{}s a possibility for streaming given the packetized pulling}
+architecture. Renderers are not required to pull all packets from the stream, and access to the \hyperlink{classAudio_1_1Stream}{Stream} object is also provided for seeking back and forth. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Renderers still have to override (un)load\+Impl() and abort\+Load(). }
+This refinement merely adds supporting methods for implementing them. 
+\end{DoxyParagraph}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Sound}{Sound}, Background\+Loading\+Sound 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}!Simple\+Sound@{Simple\+Sound}}
+\index{Simple\+Sound@{Simple\+Sound}!Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{Simple\+Sound(const std\+::string \&name, V\+S\+File\+System\+::\+V\+S\+File\+Type type=\+V\+S\+File\+System\+::\+Unknown\+File, bool streaming=false)}{SimpleSound(const std::string &name, VSFileSystem::VSFileType type=VSFileSystem::UnknownFile, bool streaming=false)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Simple\+Sound\+::\+Simple\+Sound (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type = {\ttfamily VSFileSystem\+:\+:UnknownFile}, }
+\item[{bool}]{streaming = {\ttfamily false}}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1SimpleSound_af847f302e1bf8c39d5626752c76ee400}{}\label{classAudio_1_1SimpleSound_af847f302e1bf8c39d5626752c76ee400}
+Internal constructor used by derived classes 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}!abort\+Load@{abort\+Load}}
+\index{abort\+Load@{abort\+Load}!Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{abort\+Load()}{abortLoad()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Sound\+::abort\+Load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1SimpleSound_a21e84a0a9ece8abce078fb316845e32f}{}\label{classAudio_1_1SimpleSound_a21e84a0a9ece8abce078fb316845e32f}
+
+
+
+
+Abort an in-\/progress background load procedure \begin{DoxyNote}{Note}
+Although no exceptions should be risen, the abort request may not be carried out for various reasons. The caller should check that on return by calling \hyperlink{classAudio_1_1Sound_aedf1e75aa5941f03832b1311409f3207}{is\+Loaded()} / \hyperlink{classAudio_1_1Sound_af0eb3f71210b9edbc68dbb6dbd6c5ffa}{is\+Loading()}. 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classAudio_1_1Sound_ae809e61eb0fe186ad9b0baf0dcb51759}{Audio\+::\+Sound}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_a21e84a0a9ece8abce078fb316845e32f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}!close\+Stream@{close\+Stream}}
+\index{close\+Stream@{close\+Stream}!Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{close\+Stream()}{closeStream()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Sound\+::close\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Resource\+Not\+Loaded\+Exception}) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1SimpleSound_ab913f6768fc1bff17c78deec94e3375d}{}\label{classAudio_1_1SimpleSound_ab913f6768fc1bff17c78deec94e3375d}
+Uninitialize the stream \begin{DoxyRemark}{Remarks}
+Calling this when \hyperlink{classAudio_1_1SimpleSound_aa3afde47046eefb4ea193aa13c24aee4}{is\+Stream\+Loaded()} returns false will raise an \hyperlink{classAudio_1_1ResourceNotLoadedException}{Resource\+Not\+Loaded\+Exception}. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_ab913f6768fc1bff17c78deec94e3375d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_ab913f6768fc1bff17c78deec94e3375d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}!get\+Stream@{get\+Stream}}
+\index{get\+Stream@{get\+Stream}!Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{get\+Stream() const }{getStream() const }}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<$ {\bf Stream} $>$ Audio\+::\+Simple\+Sound\+::get\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  {\bf Resource\+Not\+Loaded\+Exception}) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1SimpleSound_add557853513a4a92d0874606033ef039}{}\label{classAudio_1_1SimpleSound_add557853513a4a92d0874606033ef039}
+Get a pointer to the stream \begin{DoxyRemark}{Remarks}
+Calling this when \hyperlink{classAudio_1_1SimpleSound_aa3afde47046eefb4ea193aa13c24aee4}{is\+Stream\+Loaded()} returns false will raise an \hyperlink{classAudio_1_1ResourceNotLoadedException}{Resource\+Not\+Loaded\+Exception}. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_add557853513a4a92d0874606033ef039_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_add557853513a4a92d0874606033ef039_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{get\+Type() const }{getType() const }}]{\setlength{\rightskip}{0pt plus 5cm}V\+S\+File\+System\+::\+V\+S\+File\+Type Audio\+::\+Simple\+Sound\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1SimpleSound_a6d9df2525400aee9b21eebdbe4392d52}{}\label{classAudio_1_1SimpleSound_a6d9df2525400aee9b21eebdbe4392d52}
+V\+S\+File\+System File type 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_a6d9df2525400aee9b21eebdbe4392d52_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}!is\+Stream\+Loaded@{is\+Stream\+Loaded}}
+\index{is\+Stream\+Loaded@{is\+Stream\+Loaded}!Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{is\+Stream\+Loaded() const }{isStreamLoaded() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Simple\+Sound\+::is\+Stream\+Loaded (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classAudio_1_1SimpleSound_aa3afde47046eefb4ea193aa13c24aee4}{}\label{classAudio_1_1SimpleSound_aa3afde47046eefb4ea193aa13c24aee4}
+Do we have an open stream? 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_aa3afde47046eefb4ea193aa13c24aee4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_aa3afde47046eefb4ea193aa13c24aee4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}!load\+Stream@{load\+Stream}}
+\index{load\+Stream@{load\+Stream}!Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{load\+Stream()}{loadStream()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Sound\+::load\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1SimpleSound_a07f1ea79c9208ea7a79b4b42f186d0a0}{}\label{classAudio_1_1SimpleSound_a07f1ea79c9208ea7a79b4b42f186d0a0}
+Initialize the stream. \begin{DoxyRemark}{Remarks}
+Calling this when the stream has already been initialized will raise an Reasource\+Already\+Loaded\+Exception. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_a07f1ea79c9208ea7a79b4b42f186d0a0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_a07f1ea79c9208ea7a79b4b42f186d0a0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}!read\+Buffer@{read\+Buffer}}
+\index{read\+Buffer@{read\+Buffer}!Audio\+::\+Simple\+Sound@{Audio\+::\+Simple\+Sound}}
+\subsubsection[{\texorpdfstring{read\+Buffer(\+Sound\+Buffer \&buffer)}{readBuffer(SoundBuffer &buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Sound\+::read\+Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\+Buffer} \&}]{buffer}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1SimpleSound_a392851954fb6abb90a942ce5054fb649}{}\label{classAudio_1_1SimpleSound_a392851954fb6abb90a942ce5054fb649}
+Read from the stream into the buffer \begin{DoxyRemark}{Remarks}
+Will throw \hyperlink{classAudio_1_1EndOfStreamException}{End\+Of\+Stream\+Exception} when the end of the stream is reached. Any other exception is probably fatal. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_a392851954fb6abb90a942ce5054fb649_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d49/classAudio_1_1SimpleSound_a392851954fb6abb90a942ce5054fb649_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Simple\+Sound.\+h\item 
+audio/Simple\+Sound.\+cpp\end{DoxyCompactItemize}

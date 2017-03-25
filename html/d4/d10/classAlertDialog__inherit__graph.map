@@ -1,0 +1,5 @@
+<map id="AlertDialog" name="AlertDialog">
+<area shape="rect" id="node2" href="$d2/d2f/classQuestionDialog.html" title="{QuestionDialog\n|# m_deleteWindow\l|+ initControls()\l+ init()\l+ run()\l+ QuestionDialog()\l+ ~QuestionDialog()\l}" alt="" coords="33,491,172,627"/>
+<area shape="rect" id="node3" href="$d4/d09/classModalDialog.html" title="{ModalDialog\n|# m_callbackId\l# m_callback\l# m_result\l|+ setCallback()\l+ init()\l+ run()\l+ processWindowCommand()\l+ modalFinished()\l+ ModalDialog()\l+ ~ModalDialog()\l}" alt="" coords="5,248,200,443"/>
+<area shape="rect" id="node4" href="$d4/d72/classWindowController.html" title="{WindowController\n|# m_window\l# m_deleteOnWindowClose\l|+ init()\l+ run()\l+ draw()\l+ window()\l+ setWindow()\l+ processWindowCommand()\l+ WindowController()\l+ ~WindowController()\l}" alt="" coords="5,5,200,200"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="LSS" name="LSS">
+<area shape="rect" id="node2" href="$d8/ddc/classSegment.html" title="{Segment\n||+ Segment()\l+ Segment()\l+ Segment()\l+ ~Segment()\l+ GetOrigin()\l+ ComputeDirection()\l+ ComputeDirection()\l+ ComputeLength()\l+ ComputeSquareLength()\l+ SetOriginDirection()\l+ ComputePoint()\l+ SquareDistance()\l+ Distance()\l}" alt="" coords="18,336,193,589"/>
+<area shape="rect" id="node3" href="$dc/d4f/classPoint.html" title="{Point\n|+ x\l+ y\l+ z\l|+ Point()\l+ Point()\l+ Point()\l+ Point()\l+ ~Point()\l+ Zero()\l+ SetPlusInfinity()\l+ SetMinusInfinity()\l+ PositiveUnitRandomVector()\l+ UnitRandomVector()\land 91 more...\l}" alt="" coords="5,5,205,259"/>
+</map>

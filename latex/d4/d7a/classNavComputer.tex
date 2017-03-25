@@ -1,0 +1,295 @@
+\hypertarget{classNavComputer}{}\section{Nav\+Computer Class Reference}
+\label{classNavComputer}\index{Nav\+Computer@{Nav\+Computer}}
+
+
+Inheritance diagram for Nav\+Computer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d9f/classNavComputer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Nav\+Computer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dc9/classNavComputer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classNavComputer_1_1RenameConfirm}{Rename\+Confirm}
+\item 
+struct \hyperlink{structNavComputer_1_1WctlTableEntry}{Wctl\+Table\+Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Display\+Mode} \{ {\bfseries L\+I\+ST} =0, 
+{\bfseries E\+D\+IT}, 
+{\bfseries D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+U\+NT}, 
+{\bfseries N\+U\+L\+L\+\_\+\+D\+I\+S\+P\+L\+AY} =D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+U\+NT
+ \}\hypertarget{classNavComputer_a593aa0f75480f6991ce37c5c2d8101bc}{}\label{classNavComputer_a593aa0f75480f6991ce37c5c2d8101bc}
+
+\item 
+enum {\bfseries Selector\+Mode} \{ \\*
+{\bfseries T\+A\+R\+G\+ET} =0, 
+{\bfseries C\+R\+I\+T\+E\+R\+IA}, 
+{\bfseries C\+H\+A\+IN}, 
+{\bfseries S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+U\+NT}, 
+\\*
+{\bfseries N\+U\+L\+L\+\_\+\+S\+E\+L\+E\+C\+T\+OR} =S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+U\+NT
+ \}\hypertarget{classNavComputer_ae1dc79f81832020b19860c72dd4d614a}{}\label{classNavComputer_ae1dc79f81832020b19860c72dd4d614a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries init} (void)\hypertarget{classNavComputer_ab09327086f01fc1074c2403914e74136}{}\label{classNavComputer_ab09327086f01fc1074c2403914e74136}
+
+\item 
+virtual void {\bfseries run} (void)\hypertarget{classNavComputer_aac15e7488df1bb85a2a5a59004d9ad36}{}\label{classNavComputer_aac15e7488df1bb85a2a5a59004d9ad36}
+
+\item 
+virtual bool {\bfseries process\+Window\+Command} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_aaad243f263d0476c298b07115c177881}{}\label{classNavComputer_aaad243f263d0476c298b07115c177881}
+
+\item 
+{\bfseries Nav\+Computer} (\hyperlink{classNavigationSystem}{Navigation\+System} $\ast$navsystem)\hypertarget{classNavComputer_a930862c42eb45d628766ef5feca3a7b7}{}\label{classNavComputer_a930862c42eb45d628766ef5feca3a7b7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef bool(Nav\+Computer\+::$\ast$ {\bfseries W\+Ctl\+Handler}) (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a5a9abd8c557b8d7c72d986c752b869ba}{}\label{classNavComputer_a5a9abd8c557b8d7c72d986c752b869ba}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries get\+Color\+For\+Group} (std\+::string id)\hypertarget{classNavComputer_ad21250cc40795edc3b70071245d0571b}{}\label{classNavComputer_ad21250cc40795edc3b70071245d0571b}
+
+\item 
+void {\bfseries create\+Controls} (void)\hypertarget{classNavComputer_aacd4306672132991bc99692529fd92ee}{}\label{classNavComputer_aacd4306672132991bc99692529fd92ee}
+
+\item 
+void {\bfseries construct\+Controls} (void)\hypertarget{classNavComputer_a01501661a3e6087f50c67a1dd26429c8}{}\label{classNavComputer_a01501661a3e6087f50c67a1dd26429c8}
+
+\item 
+bool {\bfseries toggle\+Visibility} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_ad71cca7e036d5b809a53b76cd1b68b46}{}\label{classNavComputer_ad71cca7e036d5b809a53b76cd1b68b46}
+
+\item 
+bool {\bfseries change\+To\+List\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a12be3059a1fb51a8dd53cceb8b1e86eb}{}\label{classNavComputer_a12be3059a1fb51a8dd53cceb8b1e86eb}
+
+\item 
+bool {\bfseries change\+To\+Edit\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a398e29a4743d284517d8f6463e0dfa2a}{}\label{classNavComputer_a398e29a4743d284517d8f6463e0dfa2a}
+
+\item 
+bool {\bfseries change\+To\+Target\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a376db1d050d9f4bfbd313dbf7bbe3378}{}\label{classNavComputer_a376db1d050d9f4bfbd313dbf7bbe3378}
+
+\item 
+bool {\bfseries change\+To\+Criteria\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a373944b38994e8e34286b510d7823e06}{}\label{classNavComputer_a373944b38994e8e34286b510d7823e06}
+
+\item 
+bool {\bfseries change\+To\+Chain\+Mode} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a4160e1e071621007d2a7ed95fa3bb8d1}{}\label{classNavComputer_a4160e1e071621007d2a7ed95fa3bb8d1}
+
+\item 
+void {\bfseries recalc\+Title} (void)\hypertarget{classNavComputer_adf4d1b79fdc9721951d9191cf7a92daa}{}\label{classNavComputer_adf4d1b79fdc9721951d9191cf7a92daa}
+
+\item 
+void {\bfseries switch\+To\+Major\+Controls} (Display\+Mode mode)\hypertarget{classNavComputer_accc971bdc375706f9e56fa0e5e37c5eb}{}\label{classNavComputer_accc971bdc375706f9e56fa0e5e37c5eb}
+
+\item 
+void {\bfseries switch\+To\+Minor\+Controls} (Selector\+Mode mode)\hypertarget{classNavComputer_a22eb0541f56ec32eb9a62a957b3a925d}{}\label{classNavComputer_a22eb0541f56ec32eb9a62a957b3a925d}
+
+\item 
+void {\bfseries load\+Path\+Lister} ()\hypertarget{classNavComputer_a3793d30f6641583a69bf774f9c3a4168}{}\label{classNavComputer_a3793d30f6641583a69bf774f9c3a4168}
+
+\item 
+void {\bfseries load\+Chain\+Lister} ()\hypertarget{classNavComputer_a0a5d78f642a3d40fd7e5805f20f2d65a}{}\label{classNavComputer_a0a5d78f642a3d40fd7e5805f20f2d65a}
+
+\item 
+void {\bfseries load\+Criteria\+Lister} ()\hypertarget{classNavComputer_a26aebabb99ba7ee951de1d9a36b73897}{}\label{classNavComputer_a26aebabb99ba7ee951de1d9a36b73897}
+
+\item 
+void {\bfseries load\+Criteria\+Picker\+Cell} (\hyperlink{classSimplePicker}{Simple\+Picker} $\ast$picker, \hyperlink{classValuedPickerCell}{Valued\+Picker\+Cell}$<$ \hyperlink{classCriteriaNode}{Criteria\+Node} $\ast$ $>$ $\ast$parent, \hyperlink{classCriteriaNode}{Criteria\+Node} $\ast$node)\hypertarget{classNavComputer_a9efe8e9515b07f390de2ce7496fab92f}{}\label{classNavComputer_a9efe8e9515b07f390de2ce7496fab92f}
+
+\item 
+void {\bfseries load\+Absolute\+Button} ()\hypertarget{classNavComputer_ab6f52ed088d3bb8488365aa177c3f68a}{}\label{classNavComputer_ab6f52ed088d3bb8488365aa177c3f68a}
+
+\item 
+bool {\bfseries set\+Current\+Node} (\hyperlink{classPathNode}{Path\+Node} $\ast$source=N\+U\+LL)\hypertarget{classNavComputer_abc51ec41f805fb0db0b30399f9f04b7e}{}\label{classNavComputer_abc51ec41f805fb0db0b30399f9f04b7e}
+
+\item 
+void {\bfseries update\+Description} ()\hypertarget{classNavComputer_abe1cf9d4d1f9ba7aca323bf917ba5d23}{}\label{classNavComputer_abe1cf9d4d1f9ba7aca323bf917ba5d23}
+
+\item 
+void {\bfseries update\+Node\+Description} ()\hypertarget{classNavComputer_a07232db5c05a1692573c048a753eebda}{}\label{classNavComputer_a07232db5c05a1692573c048a753eebda}
+
+\item 
+bool {\bfseries path\+Lister\+Changed\+Selection} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_aebb435de8162d2a4fe36f3ca90445260}{}\label{classNavComputer_aebb435de8162d2a4fe36f3ca90445260}
+
+\item 
+bool {\bfseries chain\+Lister\+Changed\+Selection} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a02cbc01531c98e9140cea9d86efba3fb}{}\label{classNavComputer_a02cbc01531c98e9140cea9d86efba3fb}
+
+\item 
+bool {\bfseries action\+Add} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a20aad8b24a8197cbf114a85753b49284}{}\label{classNavComputer_a20aad8b24a8197cbf114a85753b49284}
+
+\item 
+bool {\bfseries action\+Show\+Path} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_aff6a514813a72256ffcaf495abf97b02}{}\label{classNavComputer_aff6a514813a72256ffcaf495abf97b02}
+
+\item 
+bool {\bfseries action\+Rename} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_afd3bea40f076540ccee66bc337c2f312}{}\label{classNavComputer_afd3bea40f076540ccee66bc337c2f312}
+
+\item 
+bool {\bfseries action\+Remove} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a3387be309adc8cd7479168bf5cee7ec0}{}\label{classNavComputer_a3387be309adc8cd7479168bf5cee7ec0}
+
+\item 
+bool {\bfseries action\+Show\+All} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a1121b84de1b40e876bd4e325acd437d2}{}\label{classNavComputer_a1121b84de1b40e876bd4e325acd437d2}
+
+\item 
+bool {\bfseries action\+Show\+None} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_adf763b917fb88ddb976f0126aa518b46}{}\label{classNavComputer_adf763b917fb88ddb976f0126aa518b46}
+
+\item 
+bool {\bfseries action\+Source} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a3b34a85b2afb960b55259975df0c8ac1}{}\label{classNavComputer_a3b34a85b2afb960b55259975df0c8ac1}
+
+\item 
+bool {\bfseries action\+Destination} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a3d24cb7cecc2d24fc93eb716f52e5a96}{}\label{classNavComputer_a3d24cb7cecc2d24fc93eb716f52e5a96}
+
+\item 
+bool {\bfseries action\+Apply} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_adbefb3cd9096e8363dd4ceacd7c6e3a5}{}\label{classNavComputer_adbefb3cd9096e8363dd4ceacd7c6e3a5}
+
+\item 
+bool {\bfseries action\+Current} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a4b79bb521082adb453bcdf3d78529ba5}{}\label{classNavComputer_a4b79bb521082adb453bcdf3d78529ba5}
+
+\item 
+bool {\bfseries action\+Target} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_acfe9e3f507bae9964b3d38c84640c52b}{}\label{classNavComputer_acfe9e3f507bae9964b3d38c84640c52b}
+
+\item 
+bool {\bfseries action\+Absolute} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_aa498c8a4d9e6c7945b076c98141b67fc}{}\label{classNavComputer_aa498c8a4d9e6c7945b076c98141b67fc}
+
+\item 
+bool {\bfseries action\+And} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a2e62dced2ffe39924e05bd55ba2aacb7}{}\label{classNavComputer_a2e62dced2ffe39924e05bd55ba2aacb7}
+
+\item 
+bool {\bfseries action\+Or} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a9c5e7ad19c69d7018cc11ece992229a4}{}\label{classNavComputer_a9c5e7ad19c69d7018cc11ece992229a4}
+
+\item 
+bool {\bfseries action\+Not} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a3c7e833dfcb7e00720ba1b7761d890a3}{}\label{classNavComputer_a3c7e833dfcb7e00720ba1b7761d890a3}
+
+\item 
+bool {\bfseries action\+Remove\+Criteria} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_ae52d7c05ce2dfdc81b700d22ef5d5687}{}\label{classNavComputer_ae52d7c05ce2dfdc81b700d22ef5d5687}
+
+\item 
+bool {\bfseries action\+Chain} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classNavComputer_a41a487dbdd330be24092bcac5469deab}{}\label{classNavComputer_a41a487dbdd330be24092bcac5469deab}
+
+\item 
+void {\bfseries action\+Rename\+Confirmed} (std\+::string name)\hypertarget{classNavComputer_a2b5fa608c8cca56562781d41aa719d91}{}\label{classNavComputer_a2b5fa608c8cca56562781d41aa719d91}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNavigationSystem}{Navigation\+System} $\ast$ {\bfseries navsys}\hypertarget{classNavComputer_a6c46ba6b7ddc47a36c3ecacaada60a0f}{}\label{classNavComputer_a6c46ba6b7ddc47a36c3ecacaada60a0f}
+
+\item 
+\hyperlink{classPathManager}{Path\+Manager} $\ast$ {\bfseries pathman}\hypertarget{classNavComputer_ac101d4007a746985f898f36352f5839b}{}\label{classNavComputer_ac101d4007a746985f898f36352f5839b}
+
+\item 
+\hyperlink{classNavPath}{Nav\+Path} $\ast$ {\bfseries current\+Path}\hypertarget{classNavComputer_ab7fa47da321c5218a2b6915f70bdd103}{}\label{classNavComputer_ab7fa47da321c5218a2b6915f70bdd103}
+
+\item 
+\hyperlink{classPathNode}{Path\+Node} $\ast$ {\bfseries current\+Node}\hypertarget{classNavComputer_a104ba3e9fdd6af417da5de5d33a50632}{}\label{classNavComputer_a104ba3e9fdd6af417da5de5d33a50632}
+
+\item 
+bool {\bfseries criteria}\hypertarget{classNavComputer_a403eea1ff25d9d5e976d956a6b578350}{}\label{classNavComputer_a403eea1ff25d9d5e976d956a6b578350}
+
+\item 
+bool {\bfseries m\+\_\+visible}\hypertarget{classNavComputer_a6f9c1216073e0c200c453688e44581e5}{}\label{classNavComputer_a6f9c1216073e0c200c453688e44581e5}
+
+\item 
+vector$<$ Display\+Mode $>$ {\bfseries m\+\_\+display\+Modes}\hypertarget{classNavComputer_a06ab33513307af09a510a768d449d2cc}{}\label{classNavComputer_a06ab33513307af09a510a768d449d2cc}
+
+\item 
+vector$<$ Selector\+Mode $>$ {\bfseries m\+\_\+selector\+Modes}\hypertarget{classNavComputer_a43262d6052cb11d8e18f10e16e40f40c}{}\label{classNavComputer_a43262d6052cb11d8e18f10e16e40f40c}
+
+\item 
+Display\+Mode {\bfseries m\+\_\+current\+Display}\hypertarget{classNavComputer_a8554e076f1468ab1588998fd07f3afe1}{}\label{classNavComputer_a8554e076f1468ab1588998fd07f3afe1}
+
+\item 
+Selector\+Mode {\bfseries m\+\_\+current\+Selector}\hypertarget{classNavComputer_a9dd2729e547b1d3ffc38a8c3f21418c5}{}\label{classNavComputer_a9dd2729e547b1d3ffc38a8c3f21418c5}
+
+\item 
+\hyperlink{classControl}{Control} $\ast$ {\bfseries m\+\_\+display\+Mode\+Groups} \mbox{[}D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+U\+NT\mbox{]}\hypertarget{classNavComputer_a571a978407bb6a1edad09b48d8eb73b6}{}\label{classNavComputer_a571a978407bb6a1edad09b48d8eb73b6}
+
+\item 
+\hyperlink{classControl}{Control} $\ast$ {\bfseries m\+\_\+selector\+Mode\+Groups} \mbox{[}S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+U\+NT\mbox{]}\hypertarget{classNavComputer_a0196c9d3ab567241404e2fb301fce572}{}\label{classNavComputer_a0196c9d3ab567241404e2fb301fce572}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{structNavComputer_1_1WctlTableEntry}{Wctl\+Table\+Entry} {\bfseries Wctl\+Command\+Table} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Rename\+Confirm}\hypertarget{classNavComputer_af981907308362ca528c71c2cfed752ef}{}\label{classNavComputer_af981907308362ca528c71c2cfed752ef}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{Nav\+Computer@{Nav\+Computer}!Wctl\+Command\+Table@{Wctl\+Command\+Table}}
+\index{Wctl\+Command\+Table@{Wctl\+Command\+Table}!Nav\+Computer@{Nav\+Computer}}
+\subsubsection[{\texorpdfstring{Wctl\+Command\+Table}{WctlCommandTable}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Nav\+Computer\+::\+Wctl\+Table\+Entry} Nav\+Computer\+::\+Wctl\+Command\+Table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classNavComputer_a2ee3c121b860befd7d33b38ae9a80647}{}\label{classNavComputer_a2ee3c121b860befd7d33b38ae9a80647}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Visible"},
+                                 \textcolor{stringliteral}{""},
+                                 &NavComputer::toggleVisibility ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Picker::NewSelection"},
+                                 \textcolor{stringliteral}{"PathLister"},
+                                 &NavComputer::pathListerChangedSelection ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( displayModeInfo[LIST].command, \textcolor{stringliteral}{""}, &
+      NavComputer::changeToListMode ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( displayModeInfo[EDIT].command, \textcolor{stringliteral}{""}, &
+      NavComputer::changeToEditMode ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( selectorModeInfo[TARGET].command, \textcolor{stringliteral}{""}, &
+      NavComputer::changeToTargetMode ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( selectorModeInfo[CRITERIA].command, \textcolor{stringliteral}{""}, &
+      NavComputer::changeToCriteriaMode ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( selectorModeInfo[CHAIN].command, \textcolor{stringliteral}{""}, &
+      NavComputer::changeToChainMode ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Add"}, \textcolor{stringliteral}{""}, &NavComputer::actionAdd ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"ShowPath"}, \textcolor{stringliteral}{""}, &NavComputer::actionShowPath ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Rename"}, \textcolor{stringliteral}{""}, &NavComputer::actionRename ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Remove"}, \textcolor{stringliteral}{""}, &NavComputer::actionRemove ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"ShowAll"}, \textcolor{stringliteral}{""}, &NavComputer::actionShowAll ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"ShowNone"}, \textcolor{stringliteral}{""}, &NavComputer::actionShowNone ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Source"}, \textcolor{stringliteral}{""}, &NavComputer::actionSource ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Destination"}, \textcolor{stringliteral}{""}, &
+      NavComputer::actionDestination ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Target"}, \textcolor{stringliteral}{""}, &NavComputer::actionTarget ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Current"}, \textcolor{stringliteral}{""}, &NavComputer::actionCurrent ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Absolute"}, \textcolor{stringliteral}{""}, &NavComputer::actionAbsolute ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"And"}, \textcolor{stringliteral}{""}, &NavComputer::actionAnd ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Or"}, \textcolor{stringliteral}{""}, &NavComputer::actionOr ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Not"}, \textcolor{stringliteral}{""}, &NavComputer::actionNot ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"RemoveCriteria"}, \textcolor{stringliteral}{""}, &
+      NavComputer::actionRemoveCriteria ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{"Chain"}, \textcolor{stringliteral}{""}, &NavComputer::actionChain ),
+    \hyperlink{structNavComputer_1_1WctlTableEntry}{NavComputer::WctlTableEntry}( \textcolor{stringliteral}{""}, \textcolor{stringliteral}{""}, NULL )
+\}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/nav/navcomputer.\+h\item 
+gfx/nav/navcomputer.\+cpp\end{DoxyCompactItemize}

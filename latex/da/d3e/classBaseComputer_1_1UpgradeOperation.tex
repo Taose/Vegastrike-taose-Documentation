@@ -1,0 +1,88 @@
+\hypertarget{classBaseComputer_1_1UpgradeOperation}{}\section{Base\+Computer\+:\+:Upgrade\+Operation Class Reference}
+\label{classBaseComputer_1_1UpgradeOperation}\index{Base\+Computer\+::\+Upgrade\+Operation@{Base\+Computer\+::\+Upgrade\+Operation}}
+
+
+Inheritance diagram for Base\+Computer\+:\+:Upgrade\+Operation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d53/classBaseComputer_1_1UpgradeOperation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+Computer\+:\+:Upgrade\+Operation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d04/classBaseComputer_1_1UpgradeOperation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Upgrade\+Operation} (\hyperlink{classBaseComputer}{Base\+Computer} \&p)\hypertarget{classBaseComputer_1_1UpgradeOperation_a4c3f30557d04e07a023d8af4dae33747}{}\label{classBaseComputer_1_1UpgradeOperation_a4c3f30557d04e07a023d8af4dae33747}
+
+\item 
+bool {\bfseries common\+Init} (void)\hypertarget{classBaseComputer_1_1UpgradeOperation_ad2d32883d463540dd33423be92076cb4}{}\label{classBaseComputer_1_1UpgradeOperation_ad2d32883d463540dd33423be92076cb4}
+
+\item 
+void {\bfseries finish} (void)\hypertarget{classBaseComputer_1_1UpgradeOperation_aa264e4643eba9cbc8b9e99e45a949474}{}\label{classBaseComputer_1_1UpgradeOperation_aa264e4643eba9cbc8b9e99e45a949474}
+
+\item 
+bool {\bfseries end\+Init} (void)\hypertarget{classBaseComputer_1_1UpgradeOperation_a375aace6487d3eba77418ed8b7da6078}{}\label{classBaseComputer_1_1UpgradeOperation_a375aace6487d3eba77418ed8b7da6078}
+
+\item 
+bool {\bfseries got\+Selected\+Mount} (int index)\hypertarget{classBaseComputer_1_1UpgradeOperation_a7bad45e7f2a63291050f4e8e8b845350}{}\label{classBaseComputer_1_1UpgradeOperation_a7bad45e7f2a63291050f4e8e8b845350}
+
+\item 
+bool {\bfseries got\+Selected\+Turret} (int index)\hypertarget{classBaseComputer_1_1UpgradeOperation_a16a5c3b429f3d196de364347d094c129}{}\label{classBaseComputer_1_1UpgradeOperation_a16a5c3b429f3d196de364347d094c129}
+
+\item 
+void {\bfseries update\+UI} (void)\hypertarget{classBaseComputer_1_1UpgradeOperation_aae2d44196d2d146395ceb63585445754}{}\label{classBaseComputer_1_1UpgradeOperation_aae2d44196d2d146395ceb63585445754}
+
+\item 
+virtual bool {\bfseries check\+Transaction} (void)=0\hypertarget{classBaseComputer_1_1UpgradeOperation_afdcb0fb34eed13e8273110f0d5864f65}{}\label{classBaseComputer_1_1UpgradeOperation_afdcb0fb34eed13e8273110f0d5864f65}
+
+\item 
+virtual void {\bfseries conclude\+Transaction} (void)=0\hypertarget{classBaseComputer_1_1UpgradeOperation_a08575faae1f64c00f9d40b1b9ab82852}{}\label{classBaseComputer_1_1UpgradeOperation_a08575faae1f64c00f9d40b1b9ab82852}
+
+\item 
+virtual void {\bfseries select\+Mount} (void)=0\hypertarget{classBaseComputer_1_1UpgradeOperation_a7a2698187cc90e2339717a3de38a994a}{}\label{classBaseComputer_1_1UpgradeOperation_a7a2698187cc90e2339717a3de38a994a}
+
+\item 
+virtual void {\bfseries show\+Turret\+Picker} (void)\hypertarget{classBaseComputer_1_1UpgradeOperation_a444ae348f5c07cda9d92e005508d8ee5}{}\label{classBaseComputer_1_1UpgradeOperation_a444ae348f5c07cda9d92e005508d8ee5}
+
+\item 
+virtual void {\bfseries modal\+Dialog\+Result} (const std\+::string \&id, int result, \hyperlink{classWindowController}{Window\+Controller} \&controller)\hypertarget{classBaseComputer_1_1UpgradeOperation_a4bee30c0d6428df0595c9131464c5184}{}\label{classBaseComputer_1_1UpgradeOperation_a4bee30c0d6428df0595c9131464c5184}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBaseComputer}{Base\+Computer} \& {\bfseries m\+\_\+parent}\hypertarget{classBaseComputer_1_1UpgradeOperation_acfb00ccb205585c154c9ab84756458b7}{}\label{classBaseComputer_1_1UpgradeOperation_acfb00ccb205585c154c9ab84756458b7}
+
+\item 
+const \hyperlink{classUnit}{Unit} $\ast$ {\bfseries m\+\_\+new\+Part}\hypertarget{classBaseComputer_1_1UpgradeOperation_a864af08ca00d2ef1bdfec956af634597}{}\label{classBaseComputer_1_1UpgradeOperation_a864af08ca00d2ef1bdfec956af634597}
+
+\item 
+\hyperlink{classCargo}{Cargo} {\bfseries m\+\_\+part}\hypertarget{classBaseComputer_1_1UpgradeOperation_af5d9e5c52d19830a83f1200f72773693}{}\label{classBaseComputer_1_1UpgradeOperation_af5d9e5c52d19830a83f1200f72773693}
+
+\item 
+int {\bfseries m\+\_\+selected\+Mount}\hypertarget{classBaseComputer_1_1UpgradeOperation_a14f8c15f9a405b63bac3fc7608c406c9}{}\label{classBaseComputer_1_1UpgradeOperation_a14f8c15f9a405b63bac3fc7608c406c9}
+
+\item 
+int {\bfseries m\+\_\+selected\+Turret}\hypertarget{classBaseComputer_1_1UpgradeOperation_aa183e1285ffdec3c36025bc2c8196ea3}{}\label{classBaseComputer_1_1UpgradeOperation_aa183e1285ffdec3c36025bc2c8196ea3}
+
+\item 
+\hyperlink{classCargo}{Cargo} {\bfseries m\+\_\+selected\+Item}\hypertarget{classBaseComputer_1_1UpgradeOperation_a33acdc4af46c10ea81a72c4f88e7a2ba}{}\label{classBaseComputer_1_1UpgradeOperation_a33acdc4af46c10ea81a72c4f88e7a2ba}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/basecomputer.\+cpp\end{DoxyCompactItemize}

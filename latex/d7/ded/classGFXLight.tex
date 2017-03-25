@@ -1,0 +1,111 @@
+\hypertarget{classGFXLight}{}\section{G\+F\+X\+Light Class Reference}
+\label{classGFXLight}\index{G\+F\+X\+Light@{G\+F\+X\+Light}}
+
+
+Holds all information for a single light object.  
+
+
+
+
+{\ttfamily \#include $<$gfxlib\+\_\+struct.\+h$>$}
+
+
+
+Inheritance diagram for G\+F\+X\+Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dc/d1c/classGFXLight__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+F\+X\+Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{d5/df1/classGFXLight__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries G\+F\+X\+Light} (const bool enabled, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&\hyperlink{classGFXLight_a334e846aa90e15b6bf371f6fed258134}{vect}, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&diffuse=\hyperlink{structGFXColor}{G\+F\+X\+Color}(0, 0, 0, 1), const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&specular=\hyperlink{structGFXColor}{G\+F\+X\+Color}(0, 0, 0, 1), const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&ambient=\hyperlink{structGFXColor}{G\+F\+X\+Color}(0, 0, 0, 1), const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&attenuate=\hyperlink{structGFXColor}{G\+F\+X\+Color}(1, 0, 0), const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&direction=\hyperlink{structGFXColor}{G\+F\+X\+Color}(0, 0, 0), float exp=0.\+0f, float cutoff=180.\+0f, float size=0.\+0f)\hypertarget{classGFXLight_a17a6184ecae3ab7af6f5c1059d172df7}{}\label{classGFXLight_a17a6184ecae3ab7af6f5c1059d172df7}
+
+\item 
+void {\bfseries Set\+Properties} (enum L\+I\+G\+H\+T\+\_\+\+T\+A\+R\+G\+ET, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&color)\hypertarget{classGFXLight_a684875e057cf732b2ce45b9f4359fb64}{}\label{classGFXLight_a684875e057cf732b2ce45b9f4359fb64}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries Get\+Properties} (enum L\+I\+G\+H\+T\+\_\+\+T\+A\+R\+G\+ET) const \hypertarget{classGFXLight_a64c35244526b9717db771824ec3c5fac}{}\label{classGFXLight_a64c35244526b9717db771824ec3c5fac}
+
+\item 
+void {\bfseries set\+Size} (float size\+\_\+)\hypertarget{classGFXLight_abd907fd75c0375cc851f1aaaad54f169}{}\label{classGFXLight_abd907fd75c0375cc851f1aaaad54f169}
+
+\item 
+float {\bfseries get\+Size} () const \hypertarget{classGFXLight_a2bf690c26ee9e5d2792054195bdc703e}{}\label{classGFXLight_a2bf690c26ee9e5d2792054195bdc703e}
+
+\item 
+Vector {\bfseries get\+Position} () const \hypertarget{classGFXLight_a0ad7ac117d42a5982eb30ef384e59dd9}{}\label{classGFXLight_a0ad7ac117d42a5982eb30ef384e59dd9}
+
+\item 
+void {\bfseries disable} ()\hypertarget{classGFXLight_a0892a9f2586fc8a0f0e161a901c2c474}{}\label{classGFXLight_a0892a9f2586fc8a0f0e161a901c2c474}
+
+\item 
+void {\bfseries enable} ()\hypertarget{classGFXLight_aa87d0d648313c5e4acac94f5217c698b}{}\label{classGFXLight_aa87d0d648313c5e4acac94f5217c698b}
+
+\item 
+bool {\bfseries attenuated} () const \hypertarget{classGFXLight_af6552bf56ab40bc07c1b745de243556e}{}\label{classGFXLight_af6552bf56ab40bc07c1b745de243556e}
+
+\item 
+void {\bfseries apply\+\_\+attenuate} (bool attenuated)\hypertarget{classGFXLight_a25d9b6576e5a2326592c17906ae74c87}{}\label{classGFXLight_a25d9b6576e5a2326592c17906ae74c87}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classGFXLight_a4ff967e8c7144289a11061d4dc218aaa}{target}\hypertarget{classGFXLight_a4ff967e8c7144289a11061d4dc218aaa}{}\label{classGFXLight_a4ff967e8c7144289a11061d4dc218aaa}
+
+\begin{DoxyCompactList}\small\item\em physical GL light its saved in \end{DoxyCompactList}\item 
+float \hyperlink{classGFXLight_a334e846aa90e15b6bf371f6fed258134}{vect} \mbox{[}3\mbox{]}\hypertarget{classGFXLight_a334e846aa90e15b6bf371f6fed258134}{}\label{classGFXLight_a334e846aa90e15b6bf371f6fed258134}
+
+\begin{DoxyCompactList}\small\item\em last is w for positional, otherwise 3 for spec \end{DoxyCompactList}\item 
+int {\bfseries options}\hypertarget{classGFXLight_ad91c4852eba52fbfb19e728823d52e8e}{}\label{classGFXLight_ad91c4852eba52fbfb19e728823d52e8e}
+
+\item 
+float {\bfseries diffuse} \mbox{[}4\mbox{]}\hypertarget{classGFXLight_a82e6da308249544633c4058c2c85bd05}{}\label{classGFXLight_a82e6da308249544633c4058c2c85bd05}
+
+\item 
+float {\bfseries specular} \mbox{[}4\mbox{]}\hypertarget{classGFXLight_aeee7c49491dd59cee202955548d75027}{}\label{classGFXLight_aeee7c49491dd59cee202955548d75027}
+
+\item 
+float {\bfseries ambient} \mbox{[}4\mbox{]}\hypertarget{classGFXLight_ac18426f44d69e865b4e7a44062926feb}{}\label{classGFXLight_ac18426f44d69e865b4e7a44062926feb}
+
+\item 
+float {\bfseries attenuate} \mbox{[}3\mbox{]}\hypertarget{classGFXLight_ae83bd33b1073616fd4c8ab499aad36f5}{}\label{classGFXLight_ae83bd33b1073616fd4c8ab499aad36f5}
+
+\item 
+float {\bfseries direction} \mbox{[}3\mbox{]}\hypertarget{classGFXLight_aced62f24b249c6ecac4bf99f14811b98}{}\label{classGFXLight_aced62f24b249c6ecac4bf99f14811b98}
+
+\item 
+float {\bfseries exp}\hypertarget{classGFXLight_ad9f3d780508b6b78918e42a9825ba677}{}\label{classGFXLight_ad9f3d780508b6b78918e42a9825ba677}
+
+\item 
+float {\bfseries cutoff}\hypertarget{classGFXLight_adc12f745ecff220e997c7158a5b42e91}{}\label{classGFXLight_adc12f745ecff220e997c7158a5b42e91}
+
+\item 
+float {\bfseries size}\hypertarget{classGFXLight_aaeaa2245ea4a6807bade07602589bbc9}{}\label{classGFXLight_aaeaa2245ea4a6807bade07602589bbc9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds all information for a single light object. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfxlib\+\_\+struct.\+h\item 
+gfxlib\+\_\+struct\+\_\+server.\+cpp\item 
+gldrv/gl\+\_\+light.\+cpp\item 
+libserver.\+cpp\end{DoxyCompactItemize}

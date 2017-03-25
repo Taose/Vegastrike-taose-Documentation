@@ -1,0 +1,4 @@
+<map id="Audio::OpenALSimpleSound" name="Audio::OpenALSimpleSound">
+<area shape="rect" id="node2" href="$d0/d49/classAudio_1_1SimpleSound.html" title="{Audio::SimpleSound\n||+ ~SimpleSound()\l+ getType()\l# SimpleSound()\l# isStreamLoaded()\l# loadStream()\l# closeStream()\l# getStream()\l# readBuffer()\l# abortLoad()\l}" alt="" coords="29,336,169,531"/>
+<area shape="rect" id="node3" href="$de/d2d/classAudio_1_1Sound.html" title="{Audio::Sound\n|# flags\l|+ ~Sound()\l+ getName()\l+ getFormat()\l+ isLoaded()\l+ isLoading()\l+ isStreaming()\l+ load()\l+ unload()\l# Sound()\l# getFormat()\l# onLoaded()\l# waitLoad()\l# loadImpl()\l# abortLoad()\l# unloadImpl()\l}" alt="" coords="43,5,154,288"/>
+</map>

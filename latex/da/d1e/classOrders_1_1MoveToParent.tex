@@ -1,0 +1,37 @@
+\hypertarget{classOrders_1_1MoveToParent}{}\section{Orders\+:\+:Move\+To\+Parent Class Reference}
+\label{classOrders_1_1MoveToParent}\index{Orders\+::\+Move\+To\+Parent@{Orders\+::\+Move\+To\+Parent}}
+
+
+{\ttfamily \#include $<$navigation.\+h$>$}
+
+
+
+Collaboration diagram for Orders\+:\+:Move\+To\+Parent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{df/dd6/classOrders_1_1MoveToParent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set\+Afterburn} (bool tf)\hypertarget{classOrders_1_1MoveToParent_a19f35742de6393dcd2100da0af5e892a}{}\label{classOrders_1_1MoveToParent_a19f35742de6393dcd2100da0af5e892a}
+
+\item 
+{\bfseries Move\+To\+Parent} (bool aft, unsigned char switchbacks, bool terminating=true)\hypertarget{classOrders_1_1MoveToParent_a26e12c6fb539e8b5bb0d59d2081fbe03}{}\label{classOrders_1_1MoveToParent_a26e12c6fb539e8b5bb0d59d2081fbe03}
+
+\item 
+bool {\bfseries Execute} (\hyperlink{classUnit}{Unit} $\ast$parent, const Q\+Vector \&targetlocation)\hypertarget{classOrders_1_1MoveToParent_acc9b628ca268b6dd93815a99dfcfd7b7}{}\label{classOrders_1_1MoveToParent_acc9b628ca268b6dd93815a99dfcfd7b7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The moveto order attempts to calculate the best way to apply thrust (within the computer bound limits) to get a starship to place B and stopped. It uses an integral of acceleration and velocity over time to solve for time when to decelerate. Is inaccurate within 1 physics frame, and must use switchbacks and then once they have been met sets terminating X,Y, and Z to figure out how many switchbacks it has made , missing the target and coming back over it. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/navigation.\+h\item 
+cmd/ai/navigation.\+cpp\end{DoxyCompactItemize}

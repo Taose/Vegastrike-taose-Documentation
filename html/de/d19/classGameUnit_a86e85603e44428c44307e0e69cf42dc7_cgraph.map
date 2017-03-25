@@ -1,0 +1,12 @@
+<map id="GameUnit::Draw" name="GameUnit::Draw">
+<area shape="rect" id="node2" href="$de/d19/classGameUnit.html#af6ee1a18d0294030c1dda77e88c2b19a" title="Begin and continue explosion. " alt="" coords="213,5,349,32"/>
+<area shape="rect" id="node3" href="$dc/dce/classUniverse.html#ab8fbc57c0ea2c21172e5e21945884a0a" title="returns active star system " alt="" coords="436,31,623,57"/>
+<area shape="rect" id="node4" href="$dc/dce/classUniverse.html#a04a32ac804354ce7074bd8db0efe5386" title="Wrapper function for Star System. " alt="" coords="195,107,367,133"/>
+<area shape="rect" id="node5" href="$de/d19/classGameUnit.html#a3628587fb593c58ad5179801c35bf63b" title="Holds temporary values for inter&#45;function XML communication Saves deprecated restr info..." alt="" coords="203,157,359,184"/>
+<area shape="rect" id="node6" href="$da/dea/classStarSystem.html#a9400f0ededdd5d0450ec27dc27401659" title="Gets the current simulation frame. " alt="" coords="189,209,372,250"/>
+<area shape="rect" id="node7" href="$d9/dba/classCockpit.html#ad5ebe898866c1fc287b37aec2bb180d7" title="Sets up the world for rendering...call before draw. " alt="" coords="199,275,362,301"/>
+<area shape="rect" id="node8" href="$d9/d5e/classMesh.html#a3381b5fa09794ad27c5824ca8b8a5710" title="returns the radial size of this " alt="" coords="483,351,575,377"/>
+<area shape="rect" id="node9" href="$d9/d5e/classMesh.html#a951d49f48a9fa1a4ef287373eb5d0425" title="Draws lod pixel wide mesh at Transformation LATER. " alt="" coords="234,376,327,403"/>
+<area shape="rect" id="node10" href="$df/df2/classTechnique_1_1Pass.html#a7be8c00e393ea93239b056796ea1cd56" title="Technique::Pass::getNumShader\lParams" alt="" coords="173,427,388,469"/>
+<area shape="rect" id="node11" href="$df/df2/classTechnique_1_1Pass.html#a2915dcb141fb598be0753470d9f3161a" title="Technique::Pass::getShader\lParam" alt="" coords="187,493,374,534"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="RText" name="RText">
+<area shape="rect" id="node2" href="$d9/d07/classcommandI.html" title="{commandI\n|+ console\l+ immortal\l|+ ~commandI()\l+ commandI()\l+ getmenumode()\l+ help()\l+ addCommand()\l+ remCommand()\l+ remCommand()\l+ dummy()\l+ prompt()\l+ pcommands()\land 10 more...\l+ keypress()\l}" alt="" coords="19,292,143,545"/>
+<area shape="rect" id="node3" href="$d1/d94/classmmoc.html" title="{mmoc\n|+ cmd\l+ cl\l+ csay\l|+ getStatus()\l+ mmoc()\l+ getSocket()\l+ connectTo()\l+ negotiate()\l+ listenThread()\l+ createThread()\l+ send()\l+ send()\l+ ParseBinaryData()\l+ ParseMovement()\l+ ParseRemoteInput()\l+ conoutf()\l+ close()\l}" alt="" coords="5,593,156,891"/>
+</map>

@@ -1,0 +1,191 @@
+\hypertarget{classAnimatedTexture}{}\section{Animated\+Texture Class Reference}
+\label{classAnimatedTexture}\index{Animated\+Texture@{Animated\+Texture}}
+
+
+Inheritance diagram for Animated\+Texture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/de7/classAnimatedTexture__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animated\+Texture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/dcb/classAnimatedTexture__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries set\+Time} (double tim)\hypertarget{classAnimatedTexture_a558ce2245ecf8fc5463a8298420b8c8c}{}\label{classAnimatedTexture_a558ce2245ecf8fc5463a8298420b8c8c}
+
+\item 
+virtual double {\bfseries cur\+Time} () const \hypertarget{classAnimatedTexture_a6c2d647576a5f4c059f3dc6d1f8a870e}{}\label{classAnimatedTexture_a6c2d647576a5f4c059f3dc6d1f8a870e}
+
+\item 
+virtual unsigned int {\bfseries num\+Frames} () const \hypertarget{classAnimatedTexture_ac4f3e26cb52fb042f59009b24568a4be}{}\label{classAnimatedTexture_ac4f3e26cb52fb042f59009b24568a4be}
+
+\item 
+virtual float {\bfseries frames\+Per\+Second} () const \hypertarget{classAnimatedTexture_a28bb6af6c208b95232f0654ccbab7a82}{}\label{classAnimatedTexture_a28bb6af6c208b95232f0654ccbab7a82}
+
+\item 
+virtual unsigned int {\bfseries num\+Layers} () const \hypertarget{classAnimatedTexture_af7b0216ac1c15db825341dd5f28e9966}{}\label{classAnimatedTexture_af7b0216ac1c15db825341dd5f28e9966}
+
+\item 
+virtual unsigned int {\bfseries num\+Passes} () const \hypertarget{classAnimatedTexture_a98660b168299099ce75d7573b7b7f7af}{}\label{classAnimatedTexture_a98660b168299099ce75d7573b7b7f7af}
+
+\item 
+virtual bool {\bfseries can\+Multi\+Pass} () const \hypertarget{classAnimatedTexture_a4d87874e7689db3d59a869fa79ab7b25}{}\label{classAnimatedTexture_a4d87874e7689db3d59a869fa79ab7b25}
+
+\item 
+virtual bool {\bfseries const\+Frame\+Rate} () const \hypertarget{classAnimatedTexture_af6f526ff5b55694cac785a5a5ae8086d}{}\label{classAnimatedTexture_af6f526ff5b55694cac785a5a5ae8086d}
+
+\item 
+{\bfseries Animated\+Texture} (int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}, enum F\+I\+L\+T\+ER imm, bool detailtexture=false)\hypertarget{classAnimatedTexture_a845be43d145fa8e2d5a08d2a7de9a48c}{}\label{classAnimatedTexture_a845be43d145fa8e2d5a08d2a7de9a48c}
+
+\item 
+{\bfseries Animated\+Texture} (const char $\ast$file, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}, enum F\+I\+L\+T\+ER imm, bool detailtexture=false)\hypertarget{classAnimatedTexture_a367812df19c6bf462c19d63cea5d4c44}{}\label{classAnimatedTexture_a367812df19c6bf462c19d63cea5d4c44}
+
+\item 
+{\bfseries Animated\+Texture} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} \&openedfile, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}, enum F\+I\+L\+T\+ER imm, bool detailtexture=false)\hypertarget{classAnimatedTexture_aac18eaa3d1acabf45bd0dce210781876}{}\label{classAnimatedTexture_aac18eaa3d1acabf45bd0dce210781876}
+
+\item 
+void {\bfseries Load} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} \&f, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}, enum F\+I\+L\+T\+ER ismipmapped, bool detailtex=false)\hypertarget{classAnimatedTexture_aecd10d6ff9927da3e2248bec89e862fa}{}\label{classAnimatedTexture_aecd10d6ff9927da3e2248bec89e862fa}
+
+\item 
+void {\bfseries Load\+Ani} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} \&f, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}, enum F\+I\+L\+T\+ER ismipmapped, bool detailtex=false)\hypertarget{classAnimatedTexture_a6072aa83242801ace718d65e5d3e866d}{}\label{classAnimatedTexture_a6072aa83242801ace718d65e5d3e866d}
+
+\item 
+void {\bfseries Load\+Video\+Source} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} \&f)\hypertarget{classAnimatedTexture_ac97c0b40d46a2a058b31213a2c720490}{}\label{classAnimatedTexture_ac97c0b40d46a2a058b31213a2c720490}
+
+\item 
+virtual void {\bfseries Load\+Frame} (int num)\hypertarget{classAnimatedTexture_aec78d972c6094ae112100f48a4c90b7c}{}\label{classAnimatedTexture_aec78d972c6094ae112100f48a4c90b7c}
+
+\item 
+void {\bfseries Destroy} ()\hypertarget{classAnimatedTexture_a8c6b85b8d2b0ca80a2e764370d09e7bb}{}\label{classAnimatedTexture_a8c6b85b8d2b0ca80a2e764370d09e7bb}
+
+\item 
+virtual const \hyperlink{classTexture}{Texture} $\ast$ {\bfseries Original} () const \hypertarget{classAnimatedTexture_ac320629705f48e781cf10d33051c584c}{}\label{classAnimatedTexture_ac320629705f48e781cf10d33051c584c}
+
+\item 
+virtual \hyperlink{classTexture}{Texture} $\ast$ {\bfseries Original} ()\hypertarget{classAnimatedTexture_afb5e12178bf3a357c71589a9ebdcd47b}{}\label{classAnimatedTexture_afb5e12178bf3a357c71589a9ebdcd47b}
+
+\item 
+virtual \hyperlink{classTexture}{Texture} $\ast$ {\bfseries Clone} ()\hypertarget{classAnimatedTexture_a1b3456591e8c283d1e270046eed0b0e8}{}\label{classAnimatedTexture_a1b3456591e8c283d1e270046eed0b0e8}
+
+\item 
+virtual void \hyperlink{classAnimatedTexture_a73d20cd3d934f3b2eb96ea26b04bdd2b}{Make\+Active} ()\hypertarget{classAnimatedTexture_a73d20cd3d934f3b2eb96ea26b04bdd2b}{}\label{classAnimatedTexture_a73d20cd3d934f3b2eb96ea26b04bdd2b}
+
+\begin{DoxyCompactList}\small\item\em Binds the texture in the G\+FX library. \end{DoxyCompactList}\item 
+virtual void {\bfseries Make\+Active} (int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage})\hypertarget{classAnimatedTexture_ae2be6dc0632b85df1aaa14a799aa1058}{}\label{classAnimatedTexture_ae2be6dc0632b85df1aaa14a799aa1058}
+
+\item 
+virtual void {\bfseries Make\+Active} (int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}, int pass)\hypertarget{classAnimatedTexture_a11ddc79e84b632dc3ab94c74d5c497cd}{}\label{classAnimatedTexture_a11ddc79e84b632dc3ab94c74d5c497cd}
+
+\item 
+bool {\bfseries Setup\+Pass} (int pass, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}, const enum B\+L\+E\+N\+D\+F\+U\+NC src, const enum B\+L\+E\+N\+D\+F\+U\+NC dst)\hypertarget{classAnimatedTexture_aa07386b71f3a0a8250428f7ca39ec110}{}\label{classAnimatedTexture_aa07386b71f3a0a8250428f7ca39ec110}
+
+\item 
+bool {\bfseries Setup\+Pass} (int pass, const enum B\+L\+E\+N\+D\+F\+U\+NC src, const enum B\+L\+E\+N\+D\+F\+U\+NC dst)\hypertarget{classAnimatedTexture_a16c352fddeda2d9e92463d214b1eaad8}{}\label{classAnimatedTexture_a16c352fddeda2d9e92463d214b1eaad8}
+
+\item 
+void {\bfseries Set\+Interpolate\+Frames} (bool set)\hypertarget{classAnimatedTexture_ab79712f21eefa3a16e4cb81fca8db83b}{}\label{classAnimatedTexture_ab79712f21eefa3a16e4cb81fca8db83b}
+
+\item 
+void {\bfseries Set\+Interpolate\+T\+Coord} (bool set)\hypertarget{classAnimatedTexture_a2f6bca7fc8c6fa33031b1ba7d23804f5}{}\label{classAnimatedTexture_a2f6bca7fc8c6fa33031b1ba7d23804f5}
+
+\item 
+void {\bfseries Set\+Loop\+Interp} (bool set)\hypertarget{classAnimatedTexture_aa7262cafdcbaa01452760636f639a138}{}\label{classAnimatedTexture_aa7262cafdcbaa01452760636f639a138}
+
+\item 
+void {\bfseries Set\+Loop} (bool set)\hypertarget{classAnimatedTexture_a2892f58a12b381441c639e02b04f19e2}{}\label{classAnimatedTexture_a2892f58a12b381441c639e02b04f19e2}
+
+\item 
+bool {\bfseries Get\+Interpolate\+Frames} () const \hypertarget{classAnimatedTexture_ae10388214c77fb483a28d954d69430eb}{}\label{classAnimatedTexture_ae10388214c77fb483a28d954d69430eb}
+
+\item 
+bool {\bfseries Get\+Interpolate\+T\+Coord} () const \hypertarget{classAnimatedTexture_a5c0f8bc1f34a0716684f85ec3674a472}{}\label{classAnimatedTexture_a5c0f8bc1f34a0716684f85ec3674a472}
+
+\item 
+bool {\bfseries Get\+Loop\+Interp} () const \hypertarget{classAnimatedTexture_a606a524fc362770aa09cdd2be1d0685b}{}\label{classAnimatedTexture_a606a524fc362770aa09cdd2be1d0685b}
+
+\item 
+bool {\bfseries Get\+Loop} () const \hypertarget{classAnimatedTexture_a9e3856afd613935e7a29a66d78dc5dad}{}\label{classAnimatedTexture_a9e3856afd613935e7a29a66d78dc5dad}
+
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Audio\+::\+Source} $>$ {\bfseries Get\+Time\+Source} () const \hypertarget{classAnimatedTexture_ac76ac7a07d3e61d1370c9571e6773414}{}\label{classAnimatedTexture_ac76ac7a07d3e61d1370c9571e6773414}
+
+\item 
+void {\bfseries Set\+Time\+Source} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Source}{Audio\+::\+Source} $>$ source)\hypertarget{classAnimatedTexture_a08c64b9ea089718b357d1b33b79aa3ca}{}\label{classAnimatedTexture_a08c64b9ea089718b357d1b33b79aa3ca}
+
+\item 
+void {\bfseries Clear\+Time\+Source} ()\hypertarget{classAnimatedTexture_a864400a47c00eecc5401a81bf9efb678}{}\label{classAnimatedTexture_a864400a47c00eecc5401a81bf9efb678}
+
+\item 
+void {\bfseries Reset} ()\hypertarget{classAnimatedTexture_a97b4a32b3eaad1200ff90bc349010004}{}\label{classAnimatedTexture_a97b4a32b3eaad1200ff90bc349010004}
+
+\item 
+bool {\bfseries Done} () const \hypertarget{classAnimatedTexture_a9e7f52346b339a6dc8af58ffa5d995fd}{}\label{classAnimatedTexture_a9e7f52346b339a6dc8af58ffa5d995fd}
+
+\item 
+virtual bool \hyperlink{classAnimatedTexture_aabb88a6db6ca3df2c1b7c46814cec39e}{Load\+Success} ()\hypertarget{classAnimatedTexture_aabb88a6db6ca3df2c1b7c46814cec39e}{}\label{classAnimatedTexture_aabb88a6db6ca3df2c1b7c46814cec39e}
+
+\begin{DoxyCompactList}\small\item\em If the texture has loaded properly returns true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Update\+All\+Physics} ()\hypertarget{classAnimatedTexture_a6c94693cdb8e5b26ebfa0531689a7c38}{}\label{classAnimatedTexture_a6c94693cdb8e5b26ebfa0531689a7c38}
+
+\item 
+static void {\bfseries Update\+All\+Frame} ()\hypertarget{classAnimatedTexture_a14ec56b5c3cca0f6d66bcf79355edb2a}{}\label{classAnimatedTexture_a14ec56b5c3cca0f6d66bcf79355edb2a}
+
+\item 
+static \hyperlink{classAnimatedTexture}{Animated\+Texture} $\ast$ {\bfseries Create\+Video\+Texture} (const std\+::string \&fname, int \hyperlink{classTexture_aa38999434f9fcf409ca20b4523852b7b}{stage}=0, enum F\+I\+L\+T\+ER ismipmapped=B\+I\+L\+I\+N\+E\+AR, bool detailtex=false)\hypertarget{classAnimatedTexture_a4732c7e13b8a2bb78f656e5549ee4469}{}\label{classAnimatedTexture_a4732c7e13b8a2bb78f656e5549ee4469}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries numframes}\hypertarget{classAnimatedTexture_a48e2e0187b14b06aee186888964f2c3a}{}\label{classAnimatedTexture_a48e2e0187b14b06aee186888964f2c3a}
+
+\item 
+float {\bfseries timeperframe}\hypertarget{classAnimatedTexture_a067439be8034018648ed504ae7095225}{}\label{classAnimatedTexture_a067439be8034018648ed504ae7095225}
+
+\item 
+unsigned int {\bfseries active}\hypertarget{classAnimatedTexture_adf61c8d1d11053a915ecc6e08fc376e1}{}\label{classAnimatedTexture_adf61c8d1d11053a915ecc6e08fc376e1}
+
+\item 
+unsigned int {\bfseries nextactive}\hypertarget{classAnimatedTexture_a2f3541dd35caab396d2d2cb2369bc490}{}\label{classAnimatedTexture_a2f3541dd35caab396d2d2cb2369bc490}
+
+\item 
+float {\bfseries active\+\_\+fraction}\hypertarget{classAnimatedTexture_a5e70f6afcd062664158d6d55fee3e619}{}\label{classAnimatedTexture_a5e70f6afcd062664158d6d55fee3e619}
+
+\item 
+double {\bfseries curtime}\hypertarget{classAnimatedTexture_a9674676c28309943c8069cdbe2154a5d}{}\label{classAnimatedTexture_a9674676c28309943c8069cdbe2154a5d}
+
+\item 
+double {\bfseries lastcurtime}\hypertarget{classAnimatedTexture_a5efe18125725ae9acfbfb3fc569fdcf7}{}\label{classAnimatedTexture_a5efe18125725ae9acfbfb3fc569fdcf7}
+
+\item 
+double {\bfseries lastrealtime}\hypertarget{classAnimatedTexture_ab0ca5366f585dc2769f9792afba6cb8b}{}\label{classAnimatedTexture_ab0ca5366f585dc2769f9792afba6cb8b}
+
+\item 
+bool {\bfseries constframerate}\hypertarget{classAnimatedTexture_a4e1f0a55ee2a2f079253a855408686ca}{}\label{classAnimatedTexture_a4e1f0a55ee2a2f079253a855408686ca}
+
+\item 
+bool {\bfseries done}\hypertarget{classAnimatedTexture_a391420aa952276bef770835d05c284c6}{}\label{classAnimatedTexture_a391420aa952276bef770835d05c284c6}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/ani\+\_\+texture.\+h\item 
+gfx/ani\+\_\+texture.\+cpp\end{DoxyCompactItemize}

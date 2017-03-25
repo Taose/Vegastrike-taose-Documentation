@@ -1,0 +1,291 @@
+\hypertarget{classGameUnit}{}\section{Game\+Unit$<$ Unit\+Type $>$ Class Template Reference}
+\label{classGameUnit}\index{Game\+Unit$<$ Unit\+Type $>$@{Game\+Unit$<$ Unit\+Type $>$}}
+
+
+{\ttfamily \#include $<$unit.\+h$>$}
+
+
+
+Inheritance diagram for Game\+Unit$<$ Unit\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d0/d33/classGameUnit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Unit$<$ Unit\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d5/dcc/classGameUnit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Game\+Unit} (int dummy)\hypertarget{classGameUnit_a1ddc1efd7c3eba118c7868034c899728}{}\label{classGameUnit_a1ddc1efd7c3eba118c7868034c899728}
+
+\item 
+{\bfseries Game\+Unit} (std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$ \&meshes, bool Subunit, int faction)\hypertarget{classGameUnit_a58fc738959d3f4e71e59c25067270b2e}{}\label{classGameUnit_a58fc738959d3f4e71e59c25067270b2e}
+
+\item 
+{\bfseries Game\+Unit} (const char $\ast$filename, bool Sub\+Unit, int faction, std\+::string customized\+Unit=std\+::string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$flightgroup=N\+U\+LL, int fg\+\_\+subnumber=0, std\+::string $\ast$netxml=N\+U\+LL)\hypertarget{classGameUnit_a2aa84f611c884a6f1ac87e4a061f4925}{}\label{classGameUnit_a2aa84f611c884a6f1ac87e4a061f4925}
+
+\item 
+int {\bfseries nummesh} () const \hypertarget{classGameUnit_a67751db2fb9132df43051ff4c87c78f8}{}\label{classGameUnit_a67751db2fb9132df43051ff4c87c78f8}
+
+\item 
+\hyperlink{structUnitImages}{Unit\+Images}$<$ void $>$ \& \hyperlink{classGameUnit_a679b72aede6566ee76857ef32996c6dd}{Get\+Image\+Information} ()
+\item 
+bool {\bfseries Request\+Clearance} (\hyperlink{classUnit}{Unit} $\ast$dockingunit)\hypertarget{classGameUnit_a2ff601b8abe0e6bc009a92a6f2af35e5}{}\label{classGameUnit_a2ff601b8abe0e6bc009a92a6f2af35e5}
+
+\item 
+void \hyperlink{classGameUnit_adfdc7375e26693445e6f99212b9e1ffd}{Upgrade\+Interface} (\hyperlink{classUnit}{Unit} $\ast$base)\hypertarget{classGameUnit_adfdc7375e26693445e6f99212b9e1ffd}{}\label{classGameUnit_adfdc7375e26693445e6f99212b9e1ffd}
+
+\begin{DoxyCompactList}\small\item\em Loads a user interface for the user to upgrade his ship. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classGameUnit_a0bb5b3a42edc611db6f059886ad56445}{Cloak} (bool cloak)\hypertarget{classGameUnit_a0bb5b3a42edc611db6f059886ad56445}{}\label{classGameUnit_a0bb5b3a42edc611db6f059886ad56445}
+
+\begin{DoxyCompactList}\small\item\em The name (type) of this unit shouldn\textquotesingle{}t be public. \end{DoxyCompactList}\item 
+void \hyperlink{classGameUnit_ab589dae4fc04c31898c7bf23e6f8cb46}{Split} (int level)
+\item 
+void {\bfseries Fix\+Gauges} ()\hypertarget{classGameUnit_a0526b5472cf9a1776baa694e1e127d89}{}\label{classGameUnit_a0526b5472cf9a1776baa694e1e127d89}
+
+\item 
+void \hyperlink{classGameUnit_a3737ac418f41325367169998f7131202}{Update\+Hud\+Matrix} (int whichcam)\hypertarget{classGameUnit_a3737ac418f41325367169998f7131202}{}\label{classGameUnit_a3737ac418f41325367169998f7131202}
+
+\begin{DoxyCompactList}\small\item\em Sets the camera to be within this unit. \end{DoxyCompactList}\item 
+\hyperlink{classVSSprite}{V\+S\+Sprite} $\ast$ \hyperlink{classGameUnit_af8a022384d903e6549b217fa5410b3e0}{get\+Hud\+Image} () const \hypertarget{classGameUnit_af8a022384d903e6549b217fa5410b3e0}{}\label{classGameUnit_af8a022384d903e6549b217fa5410b3e0}
+
+\begin{DoxyCompactList}\small\item\em What\textquotesingle{}s the Hud\+Image of this unit. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classGameUnit_a86e85603e44428c44307e0e69cf42dc7}{Draw} (const \hyperlink{structTransformation}{Transformation} \&quat, const \hyperlink{classMatrix}{Matrix} \&m)
+\begin{DoxyCompactList}\small\item\em Draws this unit with the transformation and matrix (should be equiv) separately. \end{DoxyCompactList}\item 
+virtual void {\bfseries Draw} (const \hyperlink{structTransformation}{Transformation} \&quat)\hypertarget{classGameUnit_ae6f888087ba2d006da70f51cffb6066d}{}\label{classGameUnit_ae6f888087ba2d006da70f51cffb6066d}
+
+\item 
+virtual void {\bfseries Draw} ()\hypertarget{classGameUnit_ab482c73133174c5d2593af5b54adfa1b}{}\label{classGameUnit_ab482c73133174c5d2593af5b54adfa1b}
+
+\item 
+virtual void {\bfseries Draw\+Now} (const \hyperlink{classMatrix}{Matrix} \&m, float lod=1000000000)\hypertarget{classGameUnit_ac499f6361446eed9eb43b6153a9e0924}{}\label{classGameUnit_ac499f6361446eed9eb43b6153a9e0924}
+
+\item 
+virtual void {\bfseries Draw\+Now} ()\hypertarget{classGameUnit_a5c29dcffb82f4ae08dd763568504413e}{}\label{classGameUnit_a5c29dcffb82f4ae08dd763568504413e}
+
+\item 
+void \hyperlink{classGameUnit_a1b65655a514df6cb21ae9cbf45994bc5}{add\+Halo} (const char $\ast$filename, const Q\+Vector \&loc, const Vector \&size, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&col, std\+::string halo\+\_\+type, float halo\+\_\+speed)\hypertarget{classGameUnit_a1b65655a514df6cb21ae9cbf45994bc5}{}\label{classGameUnit_a1b65655a514df6cb21ae9cbf45994bc5}
+
+\begin{DoxyCompactList}\small\item\em Deprecated. \end{DoxyCompactList}\item 
+virtual void {\bfseries apply\+Technique\+Overrides} (const std\+::map$<$ std\+::string, std\+::string $>$ \&overrides)\hypertarget{classGameUnit_a7b7fa6f2683b6e4b356eb7b0b771abd6}{}\label{classGameUnit_a7b7fa6f2683b6e4b356eb7b0b771abd6}
+
+\item 
+bool \hyperlink{classGameUnit_abe09b07b8312b8d04502645f3908b126}{Transfer\+Unit\+To\+System} (unsigned int which\+Jump\+Queue, \hyperlink{classStarSystem}{Star\+System} $\ast$\&previously\+Active\+Star\+System, bool Do\+Sight\+And\+Sound)
+\item 
+bool \hyperlink{classGameUnit_af6ee1a18d0294030c1dda77e88c2b19a}{Explode} (bool draw, float timeit)\hypertarget{classGameUnit_af6ee1a18d0294030c1dda77e88c2b19a}{}\label{classGameUnit_af6ee1a18d0294030c1dda77e88c2b19a}
+
+\begin{DoxyCompactList}\small\item\em Begin and continue explosion. \end{DoxyCompactList}\item 
+bool \hyperlink{classGameUnit_a870fb65b0287bce27c3af657447a4c7b}{query\+Frustum} (double frustum\mbox{[}6\mbox{]}\mbox{[}4\mbox{]}) const 
+\item 
+$\ast$bool \hyperlink{classGameUnit_ac19d313642f33c5173a7622b2ea297d5}{query\+Sphere\+Click\+List} (int, int, float err, \hyperlink{classCamera}{Camera} $\ast$active\+Cam)
+\item 
+virtual void \hyperlink{classGameUnit_af229f9e649c3dcf2f7a94082e070cc2b}{Update\+Physics2} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{structTransformation}{Transformation} \&old\+\_\+physical\+\_\+state, const Vector \&accel, float difficulty, const \hyperlink{classMatrix}{Matrix} \&transmat, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em returns true if jump possible even if not taken \end{DoxyCompactList}\item 
+void \hyperlink{classGameUnit_a4ac3e06ce64c3515ab8c4264087d1ae4}{Thrust} (const Vector \&amt, bool afterburn=false)\hypertarget{classGameUnit_a4ac3e06ce64c3515ab8c4264087d1ae4}{}\label{classGameUnit_a4ac3e06ce64c3515ab8c4264087d1ae4}
+
+\begin{DoxyCompactList}\small\item\em Thrusts by ammt and clamps accordingly (afterburn or not) \end{DoxyCompactList}\item 
+Vector \hyperlink{classGameUnit_a8d1ce6d41ee6a8504ac4f84f2e2f1ce3}{Resolve\+Forces} (const \hyperlink{structTransformation}{Transformation} \&, const \hyperlink{classMatrix}{Matrix} \&)\hypertarget{classGameUnit_a8d1ce6d41ee6a8504ac4f84f2e2f1ce3}{}\label{classGameUnit_a8d1ce6d41ee6a8504ac4f84f2e2f1ce3}
+
+\begin{DoxyCompactList}\small\item\em Resolves forces of given unit on a physics frame. \end{DoxyCompactList}\item 
+virtual void {\bfseries Armor\+Damage\+Sound} (const Vector \&pnt)\hypertarget{classGameUnit_aaebef7534f3ee00576cb1a83eda9f2b6}{}\label{classGameUnit_aaebef7534f3ee00576cb1a83eda9f2b6}
+
+\item 
+virtual void {\bfseries Hull\+Damage\+Sound} (const Vector \&pnt)\hypertarget{classGameUnit_a054312c6b9f9056634c1872fc4816f3f}{}\label{classGameUnit_a054312c6b9f9056634c1872fc4816f3f}
+
+\item 
+float \hyperlink{classGameUnit_aa6d15ec47e4141670f2a70475c5ff496}{Deal\+Damage\+To\+Shield} (const Vector \&pnt, float \&Damage)\hypertarget{classGameUnit_aa6d15ec47e4141670f2a70475c5ff496}{}\label{classGameUnit_aa6d15ec47e4141670f2a70475c5ff496}
+
+\begin{DoxyCompactList}\small\item\em applies damage from the given pnt to the shield, and returns \% damage applied and applies lighitn \end{DoxyCompactList}\item 
+bool {\bfseries Upgrade\+Sub\+Units} (const \hyperlink{classUnit}{Unit} $\ast$up, int subunitoffset, bool touchme, bool downgrade, int \&numave, double \&percentage)\hypertarget{classGameUnit_a3d1173ec336a4744643d69305f0236fc}{}\label{classGameUnit_a3d1173ec336a4744643d69305f0236fc}
+
+\item 
+double {\bfseries Upgrade} (const std\+::string \&file, int mountoffset, int subunitoffset, bool force, bool loop\+\_\+through\+\_\+mounts)\hypertarget{classGameUnit_ab4c5ed89df4936dea673718a31039ce1}{}\label{classGameUnit_ab4c5ed89df4936dea673718a31039ce1}
+
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classGameUnit_a3628587fb593c58ad5179801c35bf63b}{Warp\+Matrix} (const \hyperlink{classMatrix}{Matrix} \&ctm) const \hypertarget{classGameUnit_a3628587fb593c58ad5179801c35bf63b}{}\label{classGameUnit_a3628587fb593c58ad5179801c35bf63b}
+
+\begin{DoxyCompactList}\small\item\em Holds temporary values for inter-\/function X\+ML communication Saves deprecated restr info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries sparkle\+\_\+accum}\hypertarget{classGameUnit_a39a31c3ecb63c6bacb97d860119b8933}{}\label{classGameUnit_a39a31c3ecb63c6bacb97d860119b8933}
+
+\item 
+std\+::auto\+\_\+ptr$<$ \hyperlink{classHaloSystem}{Halo\+System} $>$ {\bfseries phalos}\hypertarget{classGameUnit_a9c4ecfc212b033d0a24d459bb21d98b5}{}\label{classGameUnit_a9c4ecfc212b033d0a24d459bb21d98b5}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classGameUnit_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classGameUnit_a187c66d2d867f6265d3b0c99ffc34838}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Unit\+Type$>$\\*
+class Game\+Unit$<$ Unit\+Type $>$}
+
+\hyperlink{classGameUnit}{Game\+Unit} contains any physical object that may collide with something And may be physically affected by forces. Units are assumed to have various damage and explode when they are dead. Units may have any number of weapons which, themselves may be units the aistate indicates how the unit will behave in the upcoming phys frame 
+
+\subsection{Member Function Documentation}
+\index{Game\+Unit@{Game\+Unit}!Draw@{Draw}}
+\index{Draw@{Draw}!Game\+Unit@{Game\+Unit}}
+\subsubsection[{\texorpdfstring{Draw(const Transformation \&quat, const Matrix \&m)}{Draw(const Transformation &quat, const Matrix &m)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Unit\+Type $>$ void {\bf Game\+Unit}$<$ Unit\+Type $>$\+::Draw (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transformation} \&}]{quat, }
+\item[{const {\bf Matrix} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGameUnit_a86e85603e44428c44307e0e69cf42dc7}{}\label{classGameUnit_a86e85603e44428c44307e0e69cf42dc7}
+
+
+Draws this unit with the transformation and matrix (should be equiv) separately. 
+
+this is the final, smoothly calculated cam 
+
+Reimplemented in \hyperlink{classAtmosphereHalo_a22e0efeb28321a7341756554d4dc0167}{Atmosphere\+Halo}, and \hyperlink{classGamePlanet_a006a502b61472d5226bdaf0d55aff6e3}{Game\+Planet}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d19/classGameUnit_a86e85603e44428c44307e0e69cf42dc7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d19/classGameUnit_a86e85603e44428c44307e0e69cf42dc7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Game\+Unit@{Game\+Unit}!Get\+Image\+Information@{Get\+Image\+Information}}
+\index{Get\+Image\+Information@{Get\+Image\+Information}!Game\+Unit@{Game\+Unit}}
+\subsubsection[{\texorpdfstring{Get\+Image\+Information()}{GetImageInformation()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Unit\+Type$>$ {\bf Unit\+Images}$<$ void $>$\& {\bf Game\+Unit}$<$ Unit\+Type $>$\+::Get\+Image\+Information (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classGameUnit_a679b72aede6566ee76857ef32996c6dd}{}\label{classGameUnit_a679b72aede6566ee76857ef32996c6dd}
+fils in corner\+\_\+min,corner\+\_\+max and radial\+\_\+size returns -\/1 if unit cannot dock, otherwise returns which dock it can dock at \index{Game\+Unit@{Game\+Unit}!query\+Frustum@{query\+Frustum}}
+\index{query\+Frustum@{query\+Frustum}!Game\+Unit@{Game\+Unit}}
+\subsubsection[{\texorpdfstring{query\+Frustum(double frustum[6][4]) const }{queryFrustum(double frustum[6][4]) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Unit\+Type $>$ bool {\bf Game\+Unit}$<$ Unit\+Type $>$\+::query\+Frustum (
+\begin{DoxyParamCaption}
+\item[{double}]{frustum\mbox{[}6\mbox{]}\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classGameUnit_a870fb65b0287bce27c3af657447a4c7b}{}\label{classGameUnit_a870fb65b0287bce27c3af657447a4c7b}
+Updates the collide Queue with any possible change in sectors Queries if this unit is within a given frustum \index{Game\+Unit@{Game\+Unit}!query\+Sphere\+Click\+List@{query\+Sphere\+Click\+List}}
+\index{query\+Sphere\+Click\+List@{query\+Sphere\+Click\+List}!Game\+Unit@{Game\+Unit}}
+\subsubsection[{\texorpdfstring{query\+Sphere\+Click\+List(int, int, float err, Camera $\ast$active\+Cam)}{querySphereClickList(int, int, float err, Camera *activeCam)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Unit\+Type $>$ bool {\bf Game\+Unit}$<$ Unit\+Type $>$\+::query\+Sphere\+Click\+List (
+\begin{DoxyParamCaption}
+\item[{int}]{mouseX, }
+\item[{int}]{mouseY, }
+\item[{float}]{err, }
+\item[{{\bf Camera} $\ast$}]{active\+Cam}
+\end{DoxyParamCaption}
+)}\hypertarget{classGameUnit_ac19d313642f33c5173a7622b2ea297d5}{}\label{classGameUnit_ac19d313642f33c5173a7622b2ea297d5}
+Queries the bounding sphere with a duo of mouse coordinates that project to the center of a ship and compare with a sphere...pretty fast 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d19/classGameUnit_ac19d313642f33c5173a7622b2ea297d5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Game\+Unit@{Game\+Unit}!Split@{Split}}
+\index{Split@{Split}!Game\+Unit@{Game\+Unit}}
+\subsubsection[{\texorpdfstring{Split(int level)}{Split(int level)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Unit\+Type $>$ void {\bf Game\+Unit}$<$ Unit\+Type $>$\+::Split (
+\begin{DoxyParamCaption}
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)}\hypertarget{classGameUnit_ab589dae4fc04c31898c7bf23e6f8cb46}{}\label{classGameUnit_ab589dae4fc04c31898c7bf23e6f8cb46}
+Process all meshes to be deleted Split this mesh with into 2$^\wedge$level submeshes at arbitrary planes \index{Game\+Unit@{Game\+Unit}!Transfer\+Unit\+To\+System@{Transfer\+Unit\+To\+System}}
+\index{Transfer\+Unit\+To\+System@{Transfer\+Unit\+To\+System}!Game\+Unit@{Game\+Unit}}
+\subsubsection[{\texorpdfstring{Transfer\+Unit\+To\+System(unsigned int which\+Jump\+Queue, Star\+System $\ast$\&previously\+Active\+Star\+System, bool Do\+Sight\+And\+Sound)}{TransferUnitToSystem(unsigned int whichJumpQueue, StarSystem *&previouslyActiveStarSystem, bool DoSightAndSound)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Unit\+Type $>$ bool {\bf Game\+Unit}$<$ Unit\+Type $>$\+::Transfer\+Unit\+To\+System (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{which\+Jump\+Queue, }
+\item[{{\bf Star\+System} $\ast$\&}]{previously\+Active\+Star\+System, }
+\item[{bool}]{Do\+Sight\+And\+Sound}
+\end{DoxyParamCaption}
+)}\hypertarget{classGameUnit_abe09b07b8312b8d04502645f3908b126}{}\label{classGameUnit_abe09b07b8312b8d04502645f3908b126}
+eradicating from system, leaving no trace 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d19/classGameUnit_abe09b07b8312b8d04502645f3908b126_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Game\+Unit@{Game\+Unit}!Update\+Physics2@{Update\+Physics2}}
+\index{Update\+Physics2@{Update\+Physics2}!Game\+Unit@{Game\+Unit}}
+\subsubsection[{\texorpdfstring{Update\+Physics2(const Transformation \&trans, const Transformation \&old\+\_\+physical\+\_\+state, const Vector \&accel, float difficulty, const Matrix \&transmat, const Vector \&\+Cumulative\+Velocity, bool Resolve\+Last, Unit\+Collection $\ast$uc=\+N\+U\+L\+L)}{UpdatePhysics2(const Transformation &trans, const Transformation &old_physical_state, const Vector &accel, float difficulty, const Matrix &transmat, const Vector &CumulativeVelocity, bool ResolveLast, UnitCollection *uc=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Unit\+Type $>$ void {\bf Game\+Unit}$<$ Unit\+Type $>$\+::Update\+Physics2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Transformation} \&}]{trans, }
+\item[{const {\bf Transformation} \&}]{old\+\_\+physical\+\_\+state, }
+\item[{const Vector \&}]{accel, }
+\item[{float}]{difficulty, }
+\item[{const {\bf Matrix} \&}]{transmat, }
+\item[{const Vector \&}]{Cumulative\+Velocity, }
+\item[{bool}]{Resolve\+Last, }
+\item[{{\bf Unit\+Collection} $\ast$}]{uc = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGameUnit_af229f9e649c3dcf2f7a94082e070cc2b}{}\label{classGameUnit_af229f9e649c3dcf2f7a94082e070cc2b}
+
+
+returns true if jump possible even if not taken 
+
+Updates physics given unit space transformations and if this is the last physics frame in the current gfx frame 
+
+Reimplemented in \hyperlink{classGameMissile_ab82fd3b8a814694c8df124d637bc9a45}{Game\+Missile}, \hyperlink{classGameBuilding_a41b1af4a3b09603e76b52cf7f7617482}{Game\+Building}, \hyperlink{classGameAsteroid_a7bc503988abf7084187034a723a08aed}{Game\+Asteroid}, and \hyperlink{classGameNebula_a3028dccb3764fba45b25990d1a31d8bb}{Game\+Nebula}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d19/classGameUnit_af229f9e649c3dcf2f7a94082e070cc2b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/unit.\+h\item 
+cmd/unit.\+cpp\item 
+cmd/unit\+\_\+click.\+h\item 
+cmd/unit\+\_\+customize.\+h\item 
+cmd/unit\+\_\+damage.\+h\item 
+cmd/unit\+\_\+jump.\+h\item 
+cmd/unit\+\_\+physics.\+h\end{DoxyCompactItemize}

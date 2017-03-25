@@ -1,0 +1,52 @@
+\hypertarget{classAudio_1_1CorruptStreamException}{}\section{Audio\+:\+:Corrupt\+Stream\+Exception Class Reference}
+\label{classAudio_1_1CorruptStreamException}\index{Audio\+::\+Corrupt\+Stream\+Exception@{Audio\+::\+Corrupt\+Stream\+Exception}}
+
+
+{\ttfamily \#include $<$Exceptions.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Corrupt\+Stream\+Exception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{dd/dfb/classAudio_1_1CorruptStreamException__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Corrupt\+Stream\+Exception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{dc/d3f/classAudio_1_1CorruptStreamException__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Corrupt\+Stream\+Exception} (const \hyperlink{classAudio_1_1CorruptStreamException}{Corrupt\+Stream\+Exception} \&other)\hypertarget{classAudio_1_1CorruptStreamException_adcc63f9d6b65e0814c0087eee73a5670}{}\label{classAudio_1_1CorruptStreamException_adcc63f9d6b65e0814c0087eee73a5670}
+
+\item 
+{\bfseries Corrupt\+Stream\+Exception} (bool \+\_\+fatal)\hypertarget{classAudio_1_1CorruptStreamException_a741478b32a7a39490346105e59a87ade}{}\label{classAudio_1_1CorruptStreamException_a741478b32a7a39490346105e59a87ade}
+
+\item 
+bool {\bfseries is\+Fatal} () const \hypertarget{classAudio_1_1CorruptStreamException_aeb76cc1fcb088fbfb2000cacea2679e3}{}\label{classAudio_1_1CorruptStreamException_aeb76cc1fcb088fbfb2000cacea2679e3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Corrupt-\/\+Stream exception \begin{DoxyRemark}{Remarks}
+thrown when a corruption in an already open and seemingly correct stream is found. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{It is possible that implementations may recover from this. If so, a second attempt}
+at reading may or may not fail. Recoverability is reported by is\+Fatal(). Notice that recoverable corruption means only that an attempt to recover is possible, not that the attempt will succeed. 
+\end{DoxyParagraph}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/Exceptions.\+h\end{DoxyCompactItemize}

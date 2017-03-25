@@ -1,0 +1,61 @@
+\hypertarget{OPC__Collider_8h}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Collider.h File Reference}
+\label{OPC__Collider_8h}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Collider.\+h@{cmd/collide2/\+O\+P\+C\+\_\+\+Collider.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d40/OPC__Collider_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classCollider}{Collider}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00c}{Collision\+Flag} \{ \\*
+\hyperlink{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca3409cef33bc1f71f3e384396b1e2456f}{O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT} = (1$<$$<$0), 
+\hyperlink{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca237ec44ccf8af9d5e1b7e3348980709f}{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE} = (1$<$$<$1), 
+\hyperlink{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca53e8ef89e9c1f26e6f7a8c6ced5a8089}{O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT} = (1$<$$<$2), 
+\hyperlink{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00cabd7188dc308687a5543a0899f4868ff4}{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT} = (1$<$$<$3), 
+\\*
+\hyperlink{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00caf56b0fe170ef795012062f5fed43fce6}{O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS} = (1$<$$<$4), 
+{\bfseries O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+C\+T\+\_\+\+F\+O\+U\+ND} = O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT $\vert$ O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT, 
+{\bfseries O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+N\+T\+A\+CT} = O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT $\vert$ O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT, 
+{\bfseries O\+P\+C\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+RD} = 0x7fffffff
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains base collider class.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June, 2, 2001 
+\end{DoxyDate}
+
+
+\subsection{Enumeration Type Documentation}
+\index{O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}!Collision\+Flag@{Collision\+Flag}}
+\index{Collision\+Flag@{Collision\+Flag}!O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}}
+\subsubsection[{\texorpdfstring{Collision\+Flag}{CollisionFlag}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Collision\+Flag}}\hypertarget{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00c}{}\label{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00c}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT}!O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}}\index{O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}!O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT}}\item[{\em 
+O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT\hypertarget{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca3409cef33bc1f71f3e384396b1e2456f}{}\label{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca3409cef33bc1f71f3e384396b1e2456f}
+}]Report all contacts (false) or only first one (true) \index{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE@{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE}!O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}}\index{O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}!O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE@{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE}}\item[{\em 
+O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE\hypertarget{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca237ec44ccf8af9d5e1b7e3348980709f}{}\label{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca237ec44ccf8af9d5e1b7e3348980709f}
+}]Use temporal coherence or not. \index{O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT@{O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT}!O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}}\index{O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}!O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT@{O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT}}\item[{\em 
+O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT\hypertarget{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca53e8ef89e9c1f26e6f7a8c6ced5a8089}{}\label{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00ca53e8ef89e9c1f26e6f7a8c6ced5a8089}
+}]Final contact status after a collision query. \index{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT@{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT}!O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}}\index{O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}!O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT@{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT}}\item[{\em 
+O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT\hypertarget{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00cabd7188dc308687a5543a0899f4868ff4}{}\label{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00cabd7188dc308687a5543a0899f4868ff4}
+}]There has been an early exit due to temporal coherence. \index{O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS@{O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS}!O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}}\index{O\+P\+C\+\_\+\+Collider.\+h@{O\+P\+C\+\_\+\+Collider.\+h}!O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS@{O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS}}\item[{\em 
+O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS\hypertarget{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00caf56b0fe170ef795012062f5fed43fce6}{}\label{OPC__Collider_8h_aa0a6a642c921502d9b50230e256bc00caf56b0fe170ef795012062f5fed43fce6}
+}]Keep or discard primitive-\/bv tests in leaf nodes (volume-\/mesh queries) \end{description}
+\end{Desc}

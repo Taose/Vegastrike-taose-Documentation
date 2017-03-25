@@ -1,0 +1,100 @@
+\hypertarget{classGalaxyXML_1_1SGalaxy}{}\section{Galaxy\+X\+ML\+:\+:S\+Galaxy Class Reference}
+\label{classGalaxyXML_1_1SGalaxy}\index{Galaxy\+X\+M\+L\+::\+S\+Galaxy@{Galaxy\+X\+M\+L\+::\+S\+Galaxy}}
+
+
+Inheritance diagram for Galaxy\+X\+ML\+:\+:S\+Galaxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{de/d4d/classGalaxyXML_1_1SGalaxy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Galaxy\+X\+ML\+:\+:S\+Galaxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{d7/df6/classGalaxyXML_1_1SGalaxy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+Galaxy} (const char $\ast$configfile)\hypertarget{classGalaxyXML_1_1SGalaxy_a56fdcfd4fe6e9c849b1b5a5d6d75bd4e}{}\label{classGalaxyXML_1_1SGalaxy_a56fdcfd4fe6e9c849b1b5a5d6d75bd4e}
+
+\item 
+{\bfseries S\+Galaxy} (const \hyperlink{classGalaxyXML_1_1SGalaxy}{S\+Galaxy} \&g)\hypertarget{classGalaxyXML_1_1SGalaxy_a26e6c751be70af67ede9c138243e4dba}{}\label{classGalaxyXML_1_1SGalaxy_a26e6c751be70af67ede9c138243e4dba}
+
+\item 
+void {\bfseries write\+Galaxy} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} \&f) const \hypertarget{classGalaxyXML_1_1SGalaxy_a77bc06c6448d4e5fdb7ea9ee3e535a90}{}\label{classGalaxyXML_1_1SGalaxy_a77bc06c6448d4e5fdb7ea9ee3e535a90}
+
+\item 
+void {\bfseries write\+Sector} (\hyperlink{classVSFileSystem_1_1VSFile}{V\+S\+File\+System\+::\+V\+S\+File} \&f, int tabs, const string \&sector\+Type, \hyperlink{classGalaxyXML_1_1SGalaxy}{S\+Galaxy} $\ast$planet\+\_\+types) const \hypertarget{classGalaxyXML_1_1SGalaxy_a82285a3d77b63eac9f0193aa3e0ce8e5}{}\label{classGalaxyXML_1_1SGalaxy_a82285a3d77b63eac9f0193aa3e0ce8e5}
+
+\item 
+void {\bfseries process\+Galaxy} (const string \&sys)\hypertarget{classGalaxyXML_1_1SGalaxy_ac0200458e3954c66ceeff1c1f90af778}{}\label{classGalaxyXML_1_1SGalaxy_ac0200458e3954c66ceeff1c1f90af778}
+
+\item 
+void {\bfseries process\+System} (const string \&sys, const Q\+Vector \&suggested\+\_\+coordinates)\hypertarget{classGalaxyXML_1_1SGalaxy_a14b4e1054d8f6544c4e899bc25ec00c2}{}\label{classGalaxyXML_1_1SGalaxy_a14b4e1054d8f6544c4e899bc25ec00c2}
+
+\item 
+const string \& {\bfseries get\+Variable} (const std\+::vector$<$ string $>$ \&section, const string \&name, const string \&default\+\_\+value) const \hypertarget{classGalaxyXML_1_1SGalaxy_acf167ef8d20954425857ec3576bedc1e}{}\label{classGalaxyXML_1_1SGalaxy_acf167ef8d20954425857ec3576bedc1e}
+
+\item 
+const string \& {\bfseries get\+Rand\+System} (const string \&section, const string \&default\+\_\+value) const \hypertarget{classGalaxyXML_1_1SGalaxy_a46191adbdb5bd25e80ecada9996967a2}{}\label{classGalaxyXML_1_1SGalaxy_a46191adbdb5bd25e80ecada9996967a2}
+
+\item 
+const string \& {\bfseries get\+Variable} (const string \&section, const string \&name, const string \&defaultvalue) const \hypertarget{classGalaxyXML_1_1SGalaxy_a654c5e2c492b29ec14e2c91b8d5f7ea6}{}\label{classGalaxyXML_1_1SGalaxy_a654c5e2c492b29ec14e2c91b8d5f7ea6}
+
+\item 
+const string \& {\bfseries get\+Variable} (const string \&section, const string \&subsection, const string \&name, const string \&defaultvalue) const \hypertarget{classGalaxyXML_1_1SGalaxy_adbf884cb28a2acae56ecd340ddad8e51}{}\label{classGalaxyXML_1_1SGalaxy_adbf884cb28a2acae56ecd340ddad8e51}
+
+\item 
+bool {\bfseries set\+Variable} (const string \&section, const string \&name, const string \&value)\hypertarget{classGalaxyXML_1_1SGalaxy_a1f8b42597f2ae4363a9a4847ea8c7569}{}\label{classGalaxyXML_1_1SGalaxy_a1f8b42597f2ae4363a9a4847ea8c7569}
+
+\item 
+bool {\bfseries set\+Variable} (const string \&section, const string \&subsection, const string \&name, const string \&value)\hypertarget{classGalaxyXML_1_1SGalaxy_a9360392564b3f644747f8dc722ecf74a}{}\label{classGalaxyXML_1_1SGalaxy_a9360392564b3f644747f8dc722ecf74a}
+
+\item 
+void {\bfseries add\+Section} (const std\+::vector$<$ string $>$ \&section)\hypertarget{classGalaxyXML_1_1SGalaxy_a2c39436467d294d95bca1e70698bb2e7}{}\label{classGalaxyXML_1_1SGalaxy_a2c39436467d294d95bca1e70698bb2e7}
+
+\item 
+void {\bfseries set\+Variable} (const std\+::vector$<$ string $>$ \&section, const string \&name, const string \&value)\hypertarget{classGalaxyXML_1_1SGalaxy_ae00847c017232569775323f313443da9}{}\label{classGalaxyXML_1_1SGalaxy_ae00847c017232569775323f313443da9}
+
+\item 
+\hyperlink{classGalaxyXML_1_1SubHeirarchy}{Sub\+Heirarchy} \& {\bfseries get\+Heirarchy} ()\hypertarget{classGalaxyXML_1_1SGalaxy_a7ce6a5767fb6932fb4e3082b2f93b9a2}{}\label{classGalaxyXML_1_1SGalaxy_a7ce6a5767fb6932fb4e3082b2f93b9a2}
+
+\item 
+const std\+::string \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const std\+::string \&s) const \hypertarget{classGalaxyXML_1_1SGalaxy_a47bd0d3c4df4527d17dca2592d09af44}{}\label{classGalaxyXML_1_1SGalaxy_a47bd0d3c4df4527d17dca2592d09af44}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGalaxyXML_1_1SGalaxy}{S\+Galaxy} \& {\bfseries operator=} (const \hyperlink{classGalaxyXML_1_1SGalaxy}{S\+Galaxy} \&a)\hypertarget{classGalaxyXML_1_1SGalaxy_acf09e58104f1d589a38d32e6cf1c5ec2}{}\label{classGalaxyXML_1_1SGalaxy_acf09e58104f1d589a38d32e6cf1c5ec2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classGalaxyXML_1_1SubHeirarchy}{Sub\+Heirarchy} $\ast$ {\bfseries subheirarchy}\hypertarget{classGalaxyXML_1_1SGalaxy_a677f23ba13edeacf87bbf4fc11503dc5}{}\label{classGalaxyXML_1_1SGalaxy_a677f23ba13edeacf87bbf4fc11503dc5}
+
+\item 
+String\+Map {\bfseries data}\hypertarget{classGalaxyXML_1_1SGalaxy_ae9a4911ec6f53fe7888224828f7137d0}{}\label{classGalaxyXML_1_1SGalaxy_ae9a4911ec6f53fe7888224828f7137d0}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Galaxy}\hypertarget{classGalaxyXML_1_1SGalaxy_a2c4c66e3124e82df3ee97b475b281940}{}\label{classGalaxyXML_1_1SGalaxy_a2c4c66e3124e82df3ee97b475b281940}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+galaxy\+\_\+xml.\+h\item 
+galaxy\+\_\+xml.\+cpp\end{DoxyCompactItemize}

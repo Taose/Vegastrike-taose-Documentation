@@ -1,0 +1,79 @@
+\hypertarget{classBuilding}{}\section{Building Class Reference}
+\label{classBuilding}\index{Building@{Building}}
+
+
+Inheritance diagram for Building\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d1e/classBuilding__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Building\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d9f/classBuilding__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionBuilding_1_1Buildingparent}{Buildingparent}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual enum clsptr {\bfseries is\+Unit} () const \hypertarget{classBuilding_aa0c11e297f1bf5c6c46a0e3c79caca94}{}\label{classBuilding_aa0c11e297f1bf5c6c46a0e3c79caca94}
+
+\item 
+virtual void {\bfseries Update\+Physics2} (const \hyperlink{structTransformation}{Transformation} \&trans, const \hyperlink{structTransformation}{Transformation} \&old\+\_\+physical\+\_\+state, const Vector \&accel, float difficulty, const \hyperlink{classMatrix}{Matrix} \&transmat, const Vector \&Cumulative\+Velocity, bool Resolve\+Last, \hyperlink{classUnitCollection}{Unit\+Collection} $\ast$uc=N\+U\+LL)\hypertarget{classBuilding_a07f0a403144b48f3050c1e8e889d1adb}{}\label{classBuilding_a07f0a403144b48f3050c1e8e889d1adb}
+
+\item 
+bool {\bfseries ownz} (void $\ast$parent)\hypertarget{classBuilding_ac10dc9561fc9d6bdf986d7c8113e16c2}{}\label{classBuilding_ac10dc9561fc9d6bdf986d7c8113e16c2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Building} (\hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$parent, bool vehicle, const char $\ast$filename, bool Sub\+Unit, int faction, const std\+::string \&unit\+Modifications=std\+::string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL)\hypertarget{classBuilding_a87165e4cf8b2b36d33e2f076295b4473}{}\label{classBuilding_a87165e4cf8b2b36d33e2f076295b4473}
+
+\item 
+{\bfseries Building} (\hyperlink{classTerrain}{Terrain} $\ast$parent, bool vehicle, const char $\ast$filename, bool Sub\+Unit, int faction, const std\+::string \&unit\+Modifications=std\+::string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL)\hypertarget{classBuilding_a712e95b78d1096e73a613b724571957e}{}\label{classBuilding_a712e95b78d1096e73a613b724571957e}
+
+\item 
+{\bfseries Building} (std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$m, bool b, int i)\hypertarget{classBuilding_a66fd6dff6ffa0e44fcf95a4188718283}{}\label{classBuilding_a66fd6dff6ffa0e44fcf95a4188718283}
+
+\item 
+\hyperlink{classBuilding_ab570ec0a203ee621f9f522c678a147d9}{Building} ()\hypertarget{classBuilding_ab570ec0a203ee621f9f522c678a147d9}{}\label{classBuilding_ab570ec0a203ee621f9f522c678a147d9}
+
+\begin{DoxyCompactList}\small\item\em default constructor forbidden \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionBuilding_1_1Buildingparent}{Building\+::\+Buildingparent} {\bfseries parent}\hypertarget{classBuilding_a8774aeaa16ac2efc6aeda222ae46cdde}{}\label{classBuilding_a8774aeaa16ac2efc6aeda222ae46cdde}
+
+\item 
+bool {\bfseries continuous}\hypertarget{classBuilding_a4851130d70d11031001956ff4349bc6b}{}\label{classBuilding_a4851130d70d11031001956ff4349bc6b}
+
+\item 
+bool {\bfseries vehicle}\hypertarget{classBuilding_ab798aa517373319d2ea18cc140894389}{}\label{classBuilding_ab798aa517373319d2ea18cc140894389}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Unit\+Factory}\hypertarget{classBuilding_a187c66d2d867f6265d3b0c99ffc34838}{}\label{classBuilding_a187c66d2d867f6265d3b0c99ffc34838}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/building\+\_\+generic.\+h\item 
+cmd/building\+\_\+generic.\+cpp\end{DoxyCompactItemize}

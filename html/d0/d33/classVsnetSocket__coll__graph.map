@@ -1,0 +1,6 @@
+<map id="VsnetSocket" name="VsnetSocket">
+<area shape="rect" id="node2" href="$d1/d38/classVsnetSocketBase.html" title="{VsnetSocketBase\n|# _fd\l|+ VsnetSocketBase()\l+ ~VsnetSocketBase()\l+ valid()\l+ get_fd()\l+ close_fd()\l+ get_socktype()\l+ set_block()\l+ set_nonblock()\l+ get_nonblock()\l+ isActive()\land 9 more...\l# child_disconnect()\l}" alt="" coords="15,521,169,760"/>
+<area shape="rect" id="node3" href="$d8/d83/classSocketSet.html" title="{SocketSet\n||+ SocketSet()\l+ ~SocketSet()\l+ addDownloadManager()\l+ addDownloadManager()\l+ set()\l+ unset()\l+ wait()\l+ add_pending()\l+ rem_pending()\l+ waste_time()\l+ run()\l+ wakeup()\l+ predestroy()\l}" alt="" coords="5,205,176,459"/>
+<area shape="rect" id="node4" href="$d4/dda/classVSThread.html" title="{VSThread\n||+ VSThread()\l+ ~VSThread()\l+ start()\l+ join()\l+ run()\l+ init()\l}" alt="" coords="37,5,145,156"/>
+<area shape="rect" id="node5" href="$d1/dc1/structAddressIP.html" title="{AddressIP\n||+ AddressIP()\l+ AddressIP()\l+ AddressIP()\l+ AddressIP()\l+ AddressIP()\l+ operator=()\l+ operator=()\l+ dump()\l+ ipadr()\l+ inaddr()\l}" alt="" coords="195,536,298,745"/>
+</map>

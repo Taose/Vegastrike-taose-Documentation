@@ -1,0 +1,4 @@
+<map id="quadcornerdata" name="quadcornerdata">
+<area shape="rect" id="node2" href="$d6/dad/classquadsquare.html" title="{quadsquare\n|+ Error\l+ MinY\l+ MaxY\l+ EnabledFlags\l+ SubEnabledCount\l+ Static\l+ Dirty\l|+ quadsquare()\l+ ~quadsquare()\l+ AddHeightMap()\l+ AddHeightMapAux()\l+ StaticCullData()\l+ RecomputeErrorAndLighting()\l+ CountNodes()\l+ Update()\l+ Render()\l+ GetHeight()\l+ MakeLightness()\l+ SetCurrentTerrain()\l}" alt="" coords="79,204,284,531"/>
+<area shape="rect" id="node3" href="$d3/d9a/structVertInfo.html" title="{VertInfo\n|+ Y\l+ Tex\l+ Rem\l+ vertindex\l|+ SetTex()\l+ GetTex()\l}" alt="" coords="21,5,107,141"/>
+</map>

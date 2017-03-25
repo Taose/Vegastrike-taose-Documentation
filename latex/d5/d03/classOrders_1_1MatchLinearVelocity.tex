@@ -1,0 +1,96 @@
+\hypertarget{classOrders_1_1MatchLinearVelocity}{}\section{Orders\+:\+:Match\+Linear\+Velocity Class Reference}
+\label{classOrders_1_1MatchLinearVelocity}\index{Orders\+::\+Match\+Linear\+Velocity@{Orders\+::\+Match\+Linear\+Velocity}}
+
+
+{\ttfamily \#include $<$flybywire.\+h$>$}
+
+
+
+Inheritance diagram for Orders\+:\+:Match\+Linear\+Velocity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{d4/dea/classOrders_1_1MatchLinearVelocity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Orders\+:\+:Match\+Linear\+Velocity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/db0/classOrders_1_1MatchLinearVelocity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Match\+Linear\+Velocity} (const Vector \&desired, bool Local, bool afterburner, bool fini=true)\hypertarget{classOrders_1_1MatchLinearVelocity_a380071cb1e0fb5edc76f7bde736e7cbd}{}\label{classOrders_1_1MatchLinearVelocity_a380071cb1e0fb5edc76f7bde736e7cbd}
+
+\item 
+void \hyperlink{classOrders_1_1MatchLinearVelocity_a242ae819e1ca6b0625a1866cdd54d21e}{Execute} ()
+\item 
+void {\bfseries Set\+Desired\+Velocity} (const Vector \&desired, bool Local)\hypertarget{classOrders_1_1MatchLinearVelocity_a426806f09c317ebff7bfaaeecf76805c}{}\label{classOrders_1_1MatchLinearVelocity_a426806f09c317ebff7bfaaeecf76805c}
+
+\item 
+void {\bfseries Set\+Afterburn} (bool use\+\_\+afterburn)\hypertarget{classOrders_1_1MatchLinearVelocity_a80101fe6086f11baf04fcb7e61dec708}{}\label{classOrders_1_1MatchLinearVelocity_a80101fe6086f11baf04fcb7e61dec708}
+
+\item 
+virtual std\+::string {\bfseries get\+Order\+Description} ()\hypertarget{classOrders_1_1MatchLinearVelocity_ade10adb9defd8dc5517884f3458eddf3}{}\label{classOrders_1_1MatchLinearVelocity_ade10adb9defd8dc5517884f3458eddf3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector \hyperlink{classOrders_1_1MatchLinearVelocity_a07032cadaa53c404682880a3bfcbaf82}{desired\+\_\+velocity}\hypertarget{classOrders_1_1MatchLinearVelocity_a07032cadaa53c404682880a3bfcbaf82}{}\label{classOrders_1_1MatchLinearVelocity_a07032cadaa53c404682880a3bfcbaf82}
+
+\begin{DoxyCompactList}\small\item\em werld space... generally r$\ast$speed or local space \end{DoxyCompactList}\item 
+bool \hyperlink{classOrders_1_1MatchLinearVelocity_abc2e0e14fce0e308cf72baaacc12dafd}{Local\+Velocity}\hypertarget{classOrders_1_1MatchLinearVelocity_abc2e0e14fce0e308cf72baaacc12dafd}{}\label{classOrders_1_1MatchLinearVelocity_abc2e0e14fce0e308cf72baaacc12dafd}
+
+\begin{DoxyCompactList}\small\item\em specified in Local or World coordinates \end{DoxyCompactList}\item 
+bool {\bfseries willfinish}\hypertarget{classOrders_1_1MatchLinearVelocity_a06be86ec3cc2d76c381e66daf20d2172}{}\label{classOrders_1_1MatchLinearVelocity_a06be86ec3cc2d76c381e66daf20d2172}
+
+\item 
+bool {\bfseries afterburn}\hypertarget{classOrders_1_1MatchLinearVelocity_a9dc25fd04a37ce5bcc26fe6921eeb4cf}{}\label{classOrders_1_1MatchLinearVelocity_a9dc25fd04a37ce5bcc26fe6921eeb4cf}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class attempts to match a given Linear velocity given a desired velocity That velocity can be local (\char`\"{}all ahead full\char`\"{}) or in world space (\char`\"{}lets fire thrusters towards planet\char`\"{}) 
+
+\subsection{Member Function Documentation}
+\index{Orders\+::\+Match\+Linear\+Velocity@{Orders\+::\+Match\+Linear\+Velocity}!Execute@{Execute}}
+\index{Execute@{Execute}!Orders\+::\+Match\+Linear\+Velocity@{Orders\+::\+Match\+Linear\+Velocity}}
+\subsubsection[{\texorpdfstring{Execute()}{Execute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Match\+Linear\+Velocity\+::\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classOrders_1_1MatchLinearVelocity_a242ae819e1ca6b0625a1866cdd54d21e}{}\label{classOrders_1_1MatchLinearVelocity_a242ae819e1ca6b0625a1866cdd54d21e}
+don\textquotesingle{}t need to clamp thrust since the Thrust does it for you
+
+caution might change 
+
+Reimplemented from \hyperlink{classOrder_abcab68df8e1fdb17cad57307cea7966f}{Order}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d03/classOrders_1_1MatchLinearVelocity_a242ae819e1ca6b0625a1866cdd54d21e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/flybywire.\+h\item 
+cmd/ai/flybywire.\+cpp\end{DoxyCompactItemize}

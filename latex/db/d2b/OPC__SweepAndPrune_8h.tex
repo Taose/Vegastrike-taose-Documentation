@@ -1,0 +1,50 @@
+\hypertarget{OPC__SweepAndPrune_8h}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Sweep\+And\+Prune.h File Reference}
+\label{OPC__SweepAndPrune_8h}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+h@{cmd/collide2/\+O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dc9/OPC__SweepAndPrune_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSAP__PairData}{S\+A\+P\+\_\+\+Pair\+Data}
+\item 
+class \hyperlink{classSweepAndPrune}{Sweep\+And\+Prune}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}($\ast$ \hyperlink{OPC__SweepAndPrune_8h_a4609c7fbc34f117277b8b563bfb2d582}{Pair\+Callback}) (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} id0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} id1, void $\ast$user\+\_\+data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains an implementation of the sweep-\/and-\/prune algorithm (moved from Z-\/\+Collide)
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January, 29, 2000 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\index{O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+h@{O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+h}!Pair\+Callback@{Pair\+Callback}}
+\index{Pair\+Callback@{Pair\+Callback}!O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+h@{O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+h}}
+\subsubsection[{\texorpdfstring{Pair\+Callback}{PairCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf B\+O\+OL}($\ast$ Pair\+Callback) ({\bf udword} id0, {\bf udword} id1, void $\ast$user\+\_\+data)}\hypertarget{OPC__SweepAndPrune_8h_a4609c7fbc34f117277b8b563bfb2d582}{}\label{OPC__SweepAndPrune_8h_a4609c7fbc34f117277b8b563bfb2d582}
+User-\/callback, called by O\+P\+C\+O\+DE for each colliding pairs. 
+\begin{DoxyParams}{Parameters}
+{\em id0} & \mbox{[}in\mbox{]} id of colliding object \\
+\hline
+{\em id1} & \mbox{[}in\mbox{]} id of colliding object \\
+\hline
+{\em user\+\_\+data} & \mbox{[}in\mbox{]} user-\/defined data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE to continue enumeration 
+\end{DoxyReturn}

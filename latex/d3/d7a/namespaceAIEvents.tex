@@ -1,0 +1,82 @@
+\hypertarget{namespaceAIEvents}{}\section{A\+I\+Events Namespace Reference}
+\label{namespaceAIEvents}\index{A\+I\+Events@{A\+I\+Events}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structAIEvents_1_1AIEvresult}{A\+I\+Evresult}
+\begin{DoxyCompactList}\small\item\em A struct indicating an event that may or may not be executed. \end{DoxyCompactList}\item 
+struct \hyperlink{structAIEvents_1_1ElemAttrMap}{Elem\+Attr\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries General\+A\+I\+Event\+Begin} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{namespaceAIEvents_adc5735397c3ba97b815e3659f9d83d99}{}\label{namespaceAIEvents_adc5735397c3ba97b815e3659f9d83d99}
+
+\item 
+void {\bfseries General\+A\+I\+Event\+End} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name)\hypertarget{namespaceAIEvents_a319830e1c00ebfdb54b9719c226bdefd}{}\label{namespaceAIEvents_a319830e1c00ebfdb54b9719c226bdefd}
+
+\item 
+void {\bfseries Load\+AI} (const char $\ast$filename, \hyperlink{structAIEvents_1_1ElemAttrMap}{Elem\+Attr\+Map} \&result, const string \&faction)\hypertarget{namespaceAIEvents_a3979facd17d551e2c70c29389912754d}{}\label{namespaceAIEvents_a3979facd17d551e2c70c29389912754d}
+
+\item 
+void {\bfseries Load\+AI} (const char $\ast$filename, \hyperlink{structAIEvents_1_1ElemAttrMap}{Elem\+Attr\+Map} \&result, const std\+::string \&faction)\hypertarget{namespaceAIEvents_a0356629e34574db2d7273a53c521994c}{}\label{namespaceAIEvents_a0356629e34574db2d7273a53c521994c}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bfseries A\+I\+U\+N\+K\+N\+O\+WN} = 0\hypertarget{namespaceAIEvents_aa18e9f19a00c8e5349afd46345f0d8b3}{}\label{namespaceAIEvents_aa18e9f19a00c8e5349afd46345f0d8b3}
+
+\item 
+const int {\bfseries A\+I\+M\+IN} = 1\hypertarget{namespaceAIEvents_a30cd747e2af24ac18f55a20a1cffe512}{}\label{namespaceAIEvents_a30cd747e2af24ac18f55a20a1cffe512}
+
+\item 
+const int {\bfseries A\+I\+M\+AX} = 2\hypertarget{namespaceAIEvents_a9d10fd91d32808d4fddd0de471b7c82a}{}\label{namespaceAIEvents_a9d10fd91d32808d4fddd0de471b7c82a}
+
+\item 
+const int {\bfseries A\+I\+S\+C\+R\+I\+PT} = 3\hypertarget{namespaceAIEvents_a053c46b604990deaa76d4afb5c025303}{}\label{namespaceAIEvents_a053c46b604990deaa76d4afb5c025303}
+
+\item 
+const int {\bfseries A\+I\+N\+OT} = 4\hypertarget{namespaceAIEvents_aa088167e7e6bd56b73927dc3ff28b93e}{}\label{namespaceAIEvents_aa088167e7e6bd56b73927dc3ff28b93e}
+
+\item 
+const int {\bfseries T\+I\+M\+E\+IT} = 5\hypertarget{namespaceAIEvents_a225f9031106522e7144ecb18252e7a15}{}\label{namespaceAIEvents_a225f9031106522e7144ecb18252e7a15}
+
+\item 
+const int {\bfseries O\+B\+E\+D\+I\+E\+N\+CE} = 6\hypertarget{namespaceAIEvents_a872d85a12033a8af8dbf10715762bd7a}{}\label{namespaceAIEvents_a872d85a12033a8af8dbf10715762bd7a}
+
+\item 
+const int {\bfseries T\+I\+M\+E\+T\+O\+I\+N\+T\+E\+R\+R\+U\+PT} = 7\hypertarget{namespaceAIEvents_a7eef2147d184201a3c7067571be358bb}{}\label{namespaceAIEvents_a7eef2147d184201a3c7067571be358bb}
+
+\item 
+const int {\bfseries P\+R\+I\+O\+R\+I\+TY} = 8\hypertarget{namespaceAIEvents_a28261e9fa671fc2517c2cc695e4c8d5e}{}\label{namespaceAIEvents_a28261e9fa671fc2517c2cc695e4c8d5e}
+
+\item 
+const \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{X\+M\+L\+Support\+::\+Enum\+Map\+::\+Pair} {\bfseries A\+Iattribute\+\_\+names} \mbox{[}$\,$\mbox{]}
+\item 
+const \hyperlink{classXMLSupport_1_1EnumMap}{X\+M\+L\+Support\+::\+Enum\+Map} {\bfseries attr\+\_\+map} (A\+Iattribute\+\_\+names, 9)\hypertarget{namespaceAIEvents_ad2483ea87557a04acd8bd74b7931ce7b}{}\label{namespaceAIEvents_ad2483ea87557a04acd8bd74b7931ce7b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+General namespace that does nothing on its own, but Deals with the parsing of an X\+ML file tha tcontains a number of event \char`\"{}if\char`\"{} statements Each statement can have a minimum, max value and a \char`\"{}not\char`\"{} flag to invert it and the type references the enum in the class using this one, and is eventually only used for the \char`\"{}not\char`\"{} tag 
+
+\subsection{Variable Documentation}
+\index{A\+I\+Events@{A\+I\+Events}!A\+Iattribute\+\_\+names@{A\+Iattribute\+\_\+names}}
+\index{A\+Iattribute\+\_\+names@{A\+Iattribute\+\_\+names}!A\+I\+Events@{A\+I\+Events}}
+\subsubsection[{\texorpdfstring{A\+Iattribute\+\_\+names}{AIattribute_names}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\+M\+L\+Support\+::\+Enum\+Map\+::\+Pair} A\+I\+Events\+::\+A\+Iattribute\+\_\+names\mbox{[}$\,$\mbox{]}}\hypertarget{namespaceAIEvents_a3e13e5faa015783773d98b7ce06353ab}{}\label{namespaceAIEvents_a3e13e5faa015783773d98b7ce06353ab}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"UNKNOWN"},         AIUNKNOWN ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"min"},             AIMIN ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"max"},             AIMAX ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"not"},             AINOT ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"Script"},          AISCRIPT ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"time"},            TIMEIT ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"obedience"},       OBEDIENCE ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"timetointerrupt"}, TIMETOINTERRUPT ),
+    \hyperlink{structXMLSupport_1_1EnumMap_1_1Pair}{EnumMap::Pair}( \textcolor{stringliteral}{"priority"},        PRIORITY )
+\}
+\end{DoxyCode}

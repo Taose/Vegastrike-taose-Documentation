@@ -1,0 +1,3 @@
+<map id="StarSystem" name="StarSystem">
+<area shape="rect" id="node2" href="$d5/d38/classGameStarSystem.html" title="{GameStarSystem\n||+ ~GameStarSystem()\l+ GameStarSystem()\l+ getBackground()\l+ activateLightMap()\l+ getLightMap()\l+ getTerrain()\l+ numTerrain()\l+ getContTerrain()\l+ numContTerrain()\l+ getClickList()\land 8 more...\l+ DrawJumpStars()\l}" alt="" coords="47,615,202,853"/>
+</map>

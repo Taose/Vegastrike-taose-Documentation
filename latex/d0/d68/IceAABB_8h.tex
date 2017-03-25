@@ -1,0 +1,156 @@
+\hypertarget{IceAABB_8h}{}\section{cmd/collide2/\+Ice/\+Ice\+A\+A\+BB.h File Reference}
+\label{IceAABB_8h}\index{cmd/collide2/\+Ice/\+Ice\+A\+A\+B\+B.\+h@{cmd/collide2/\+Ice/\+Ice\+A\+A\+B\+B.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d90/IceAABB_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAABB}{A\+A\+BB}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{IceAABB_8h_a12b5698bbc253e959063afaf3aa1707e}{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}
+\begin{DoxyCompactList}\small\item\em Declarations of type-\/independent methods (most of them implemented in the .cpp) \end{DoxyCompactList}\item 
+\#define {\bfseries \+\_\+\+\_\+\+I\+C\+E\+A\+A\+B\+B\+\_\+\+H\+\_\+\+\_\+}\hypertarget{Opcode_8h_abdb36a1fa7a2fea79b021d7b8f7030bb}{}\label{Opcode_8h_abdb36a1fa7a2fea79b021d7b8f7030bb}
+
+\item 
+\#define {\bfseries A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{IceAABB_8h_ad287412e3ebc30d8e6b8e660e5c8ab25}{A\+A\+B\+B\+Type} \{ \hyperlink{IceAABB_8h_ad287412e3ebc30d8e6b8e660e5c8ab25ad676099f5a5141cb80af526c5bf5b24b}{A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER} = 0, 
+\hyperlink{IceAABB_8h_ad287412e3ebc30d8e6b8e660e5c8ab25ad3facf229976af27d628f778023441f2}{A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE} = 1, 
+{\bfseries A\+A\+B\+B\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+RD} = 0x7fffffff
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ void {\bfseries Compute\+Min\+Max} (const \hyperlink{classPoint}{Point} \&p, \hyperlink{classPoint}{Point} \&min, \hyperlink{classPoint}{Point} \&max)\hypertarget{IceAABB_8h_a5bff79e62e1bafc4f904ff1232013fb6}{}\label{IceAABB_8h_a5bff79e62e1bafc4f904ff1232013fb6}
+
+\item 
+inline\+\_\+ void {\bfseries Compute\+A\+A\+BB} (\hyperlink{classAABB}{A\+A\+BB} \&aabb, const \hyperlink{classPoint}{Point} $\ast$list, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+pts)\hypertarget{IceAABB_8h_ab3181abdc5c522af51ce0a7fcc50f6d3}{}\label{IceAABB_8h_ab3181abdc5c522af51ce0a7fcc50f6d3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains A\+A\+B\+B-\/related code. (axis-\/aligned bounding box)
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+January, 13, 2000 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}!A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS@{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}}
+\index{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS@{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}!Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}}
+\subsubsection[{\texorpdfstring{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}{AABB_COMMON_METHODS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}\hypertarget{Opcode_8h_a12b5698bbc253e959063afaf3aa1707e}{}\label{Opcode_8h_a12b5698bbc253e959063afaf3aa1707e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{classAABB}{AABB}&           Add(\textcolor{keyword}{const} \hyperlink{classAABB}{AABB}& aabb);                                                                                  
+      \(\backslash\)
+            float           MakeCube(\hyperlink{classAABB}{AABB}& cube)                                                                            \textcolor{keyword}{
+      const};   \(\backslash\)
+            void            MakeSphere(\hyperlink{classSphere}{Sphere}& sphere)                                                                        \textcolor{keyword}{
+      const};   \(\backslash\)
+            const \hyperlink{IceTypes_8h_ae1e823357de7a263f2ed95e66b14e66c}{sbyte}*   ComputeOutline(\textcolor{keyword}{const} \hyperlink{classPoint}{Point}& local\_eye, 
+      \hyperlink{IceTypes_8h_a1459338e4e102e56fead3b10918f15dd}{sdword}& num)                                              \textcolor{keyword}{const};  \(\backslash\)
+            float           ComputeBoxArea(\textcolor{keyword}{const} \hyperlink{classPoint}{Point}& eye, \textcolor{keyword}{const} 
+      \hyperlink{classMatrix4x4}{Matrix4x4}& mat, \textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} height, \hyperlink{IceTypes_8h_a1459338e4e102e56fead3b10918f15dd}{sdword}& num)  \textcolor{keyword}{const};  \(\backslash\)
+            bool            IsInside(\textcolor{keyword}{const} \hyperlink{classAABB}{AABB}& box)                                                                       \textcolor{keyword}{
+      const};   \(\backslash\)
+            bool            ComputePlanes(\hyperlink{classPlane}{Plane}* planes)                                                                   \textcolor{keyword}{
+      const};   \(\backslash\)
+            bool            ComputePoints(\hyperlink{classPoint}{Point}* pts)                                                                      \textcolor{keyword}{
+      const};   \(\backslash\)
+            const \hyperlink{classPoint}{Point}*   GetVertexNormals()                                                                              \textcolor{keyword}{
+      const};   \(\backslash\)
+            const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword}* GetEdges()                                                                                      \textcolor{keyword}{
+      const};   \(\backslash\)
+            const \hyperlink{classPoint}{Point}*   GetEdgeNormals()                                                                                \textcolor{keyword}{
+      const};   \(\backslash\)
+    inline\_ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{BOOL}            ContainsPoint(\textcolor{keyword}{const} \hyperlink{classPoint}{Point}& p)                                                                  \textcolor{keyword}{
+      const}    \(\backslash\)
+                            \{                                                                                                       
+      \(\backslash\)
+                                if(p.x > GetMax(0) || p.x < GetMin(0)) return FALSE;                                                
+      \(\backslash\)
+                                if(p.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} > GetMax(1) || p.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} < GetMin(1)) return FALSE;                                              
+      \(\backslash\)
+                                if(p.z > GetMax(2) || p.z < GetMin(2)) return FALSE;                                                
+      \(\backslash\)
+                                return TRUE;                                                                                        
+      \(\backslash\)
+                            \}
+\end{DoxyCode}
+\index{Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}!A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS@{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}}
+\index{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS@{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}!Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}}
+\subsubsection[{\texorpdfstring{A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}{AABB_COMMON_METHODS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+A\+B\+B\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+T\+H\+O\+DS}\hypertarget{IceAABB_8h_a12b5698bbc253e959063afaf3aa1707e}{}\label{IceAABB_8h_a12b5698bbc253e959063afaf3aa1707e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{classAABB}{AABB}&           Add(\textcolor{keyword}{const} \hyperlink{classAABB}{AABB}& aabb);                                                                                  
+      \(\backslash\)
+            float           MakeCube(\hyperlink{classAABB}{AABB}& cube)                                                                            \textcolor{keyword}{
+      const};   \(\backslash\)
+            void            MakeSphere(\hyperlink{classSphere}{Sphere}& sphere)                                                                        \textcolor{keyword}{
+      const};   \(\backslash\)
+            const \hyperlink{IceTypes_8h_ae1e823357de7a263f2ed95e66b14e66c}{sbyte}*   ComputeOutline(\textcolor{keyword}{const} \hyperlink{classPoint}{Point}& local\_eye, 
+      \hyperlink{IceTypes_8h_a1459338e4e102e56fead3b10918f15dd}{sdword}& num)                                              \textcolor{keyword}{const};  \(\backslash\)
+            float           ComputeBoxArea(\textcolor{keyword}{const} \hyperlink{classPoint}{Point}& eye, \textcolor{keyword}{const} 
+      \hyperlink{classMatrix4x4}{Matrix4x4}& mat, \textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} height, \hyperlink{IceTypes_8h_a1459338e4e102e56fead3b10918f15dd}{sdword}& num)  \textcolor{keyword}{const};  \(\backslash\)
+            bool            IsInside(\textcolor{keyword}{const} \hyperlink{classAABB}{AABB}& box)                                                                       \textcolor{keyword}{
+      const};   \(\backslash\)
+            bool            ComputePlanes(\hyperlink{classPlane}{Plane}* planes)                                                                   \textcolor{keyword}{
+      const};   \(\backslash\)
+            bool            ComputePoints(\hyperlink{classPoint}{Point}* pts)                                                                      \textcolor{keyword}{
+      const};   \(\backslash\)
+            const \hyperlink{classPoint}{Point}*   GetVertexNormals()                                                                              \textcolor{keyword}{
+      const};   \(\backslash\)
+            const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword}* GetEdges()                                                                                      \textcolor{keyword}{
+      const};   \(\backslash\)
+            const \hyperlink{classPoint}{Point}*   GetEdgeNormals()                                                                                \textcolor{keyword}{
+      const};   \(\backslash\)
+    inline\_ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{BOOL}            ContainsPoint(\textcolor{keyword}{const} \hyperlink{classPoint}{Point}& p)                                                                  \textcolor{keyword}{
+      const}    \(\backslash\)
+                            \{                                                                                                       
+      \(\backslash\)
+                                if(p.x > GetMax(0) || p.x < GetMin(0)) return FALSE;                                                
+      \(\backslash\)
+                                if(p.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} > GetMax(1) || p.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} < GetMin(1)) return FALSE;                                              
+      \(\backslash\)
+                                if(p.z > GetMax(2) || p.z < GetMin(2)) return FALSE;                                                
+      \(\backslash\)
+                                return TRUE;                                                                                        
+      \(\backslash\)
+                            \}
+\end{DoxyCode}
+
+
+Declarations of type-\/independent methods (most of them implemented in the .cpp) 
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}!A\+A\+B\+B\+Type@{A\+A\+B\+B\+Type}}
+\index{A\+A\+B\+B\+Type@{A\+A\+B\+B\+Type}!Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}}
+\subsubsection[{\texorpdfstring{A\+A\+B\+B\+Type}{AABBType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf A\+A\+B\+B\+Type}}\hypertarget{IceAABB_8h_ad287412e3ebc30d8e6b8e660e5c8ab25}{}\label{IceAABB_8h_ad287412e3ebc30d8e6b8e660e5c8ab25}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER@{A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER}!Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}}\index{Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}!A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER@{A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER}}\item[{\em 
+A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER\hypertarget{IceAABB_8h_ad287412e3ebc30d8e6b8e660e5c8ab25ad676099f5a5141cb80af526c5bf5b24b}{}\label{IceAABB_8h_ad287412e3ebc30d8e6b8e660e5c8ab25ad676099f5a5141cb80af526c5bf5b24b}
+}]\hyperlink{classAABB}{A\+A\+BB} used for rendering. Not visible == not rendered. \index{A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE@{A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE}!Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}}\index{Ice\+A\+A\+B\+B.\+h@{Ice\+A\+A\+B\+B.\+h}!A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE@{A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE}}\item[{\em 
+A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE\hypertarget{IceAABB_8h_ad287412e3ebc30d8e6b8e660e5c8ab25ad3facf229976af27d628f778023441f2}{}\label{IceAABB_8h_ad287412e3ebc30d8e6b8e660e5c8ab25ad3facf229976af27d628f778023441f2}
+}]\hyperlink{classAABB}{A\+A\+BB} used for dynamic updates. Not visible == not updated. \end{description}
+\end{Desc}

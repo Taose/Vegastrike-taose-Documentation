@@ -1,0 +1,74 @@
+\hypertarget{OPC__TreeBuilders_8h}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Tree\+Builders.h File Reference}
+\label{OPC__TreeBuilders_8h}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Tree\+Builders.\+h@{cmd/collide2/\+O\+P\+C\+\_\+\+Tree\+Builders.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dd4/OPC__TreeBuilders_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structBuildSettings}{Build\+Settings}
+\begin{DoxyCompactList}\small\item\em Simple wrapper around build-\/related settings \mbox{[}Opcode 1.\+3\mbox{]}. \end{DoxyCompactList}\item 
+class \hyperlink{classAABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder}
+\item 
+class \hyperlink{classAABBTreeOfVerticesBuilder}{A\+A\+B\+B\+Tree\+Of\+Vertices\+Builder}
+\item 
+class \hyperlink{classAABBTreeOfAABBsBuilder}{A\+A\+B\+B\+Tree\+Of\+A\+A\+B\+Bs\+Builder}
+\item 
+class \hyperlink{classAABBTreeOfTrianglesBuilder}{A\+A\+B\+B\+Tree\+Of\+Triangles\+Builder}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327a}{Splitting\+Rules} \{ \\*
+\hyperlink{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aa83dece3e5611e5a24767d046d5fd288c}{S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS} = (1$<$$<$0), 
+\hyperlink{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aa42cd4490da7c91120d62377a596a0824}{S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS} = (1$<$$<$1), 
+\hyperlink{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aaaef8eead09f69d7511438fdfd8fa1a3e}{S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS} = (1$<$$<$2), 
+\hyperlink{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aae1bc5940da88e4821c256372424b6096}{S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED} = (1$<$$<$3), 
+\\*
+\hyperlink{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aab62e3a5ffde3e353b9da071b2cae5f42}{S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY} = (1$<$$<$4), 
+\hyperlink{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aad0ac3504e925b9451a7ba7e6e91fc975}{S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER} = (1$<$$<$5), 
+{\bfseries S\+P\+L\+I\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+RD} = 0x7fffffff
+ \}\begin{DoxyCompactList}\small\item\em Tree splitting rules. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for tree builders.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Enumeration Type Documentation}
+\index{O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}!Splitting\+Rules@{Splitting\+Rules}}
+\index{Splitting\+Rules@{Splitting\+Rules}!O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}}
+\subsubsection[{\texorpdfstring{Splitting\+Rules}{SplittingRules}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Splitting\+Rules}}\hypertarget{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327a}{}\label{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327a}
+
+
+Tree splitting rules. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS@{S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS}!O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}}\index{O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}!S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS@{S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS\hypertarget{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aa83dece3e5611e5a24767d046d5fd288c}{}\label{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aa83dece3e5611e5a24767d046d5fd288c}
+}]Split along the largest axis. \index{S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS@{S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS}!O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}}\index{O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}!S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS@{S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS\hypertarget{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aa42cd4490da7c91120d62377a596a0824}{}\label{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aa42cd4490da7c91120d62377a596a0824}
+}]Splatter primitive centers (Quick\+C\+D-\/style) \index{S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS@{S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS}!O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}}\index{O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}!S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS@{S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS\hypertarget{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aaaef8eead09f69d7511438fdfd8fa1a3e}{}\label{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aaaef8eead09f69d7511438fdfd8fa1a3e}
+}]Try largest axis, then second, then last. \index{S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED@{S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED}!O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}}\index{O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}!S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED@{S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED\hypertarget{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aae1bc5940da88e4821c256372424b6096}{}\label{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aae1bc5940da88e4821c256372424b6096}
+}]Try to keep a well-\/balanced tree. \index{S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY@{S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY}!O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}}\index{O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}!S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY@{S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY\hypertarget{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aab62e3a5ffde3e353b9da071b2cae5f42}{}\label{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aab62e3a5ffde3e353b9da071b2cae5f42}
+}]Arbitrary 50-\/50 split. \index{S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER@{S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER}!O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}}\index{O\+P\+C\+\_\+\+Tree\+Builders.\+h@{O\+P\+C\+\_\+\+Tree\+Builders.\+h}!S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER@{S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER\hypertarget{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aad0ac3504e925b9451a7ba7e6e91fc975}{}\label{OPC__TreeBuilders_8h_a057ea7a644067050d95284df0640327aad0ac3504e925b9451a7ba7e6e91fc975}
+}]Split at geometric center (else split in the middle) \end{description}
+\end{Desc}

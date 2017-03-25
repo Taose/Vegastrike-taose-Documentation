@@ -1,0 +1,719 @@
+\hypertarget{Opcode_8h}{}\section{cmd/collide2/\+Opcode.h File Reference}
+\label{Opcode_8h}\index{cmd/collide2/\+Opcode.\+h@{cmd/collide2/\+Opcode.\+h}}
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Ice\+Hook.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Random.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Revisited\+Radix.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Utils.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Container.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Pairs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Axes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Point.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+H\+Point.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Matrix3x3.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Matrix4x4.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Plane.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Ray.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Indexed\+Triangle.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Triangle.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Trilist.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+A\+A\+B\+B.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+O\+B\+B.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Bounding\+Sphere.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+Segment.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ice/\+Ice\+L\+S\+S.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Settings.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Common.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Mesh\+Interface.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Tree\+Builders.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Optimized\+Tree.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Base\+Model.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Model.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Hybrid\+Model.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Collider.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Volume\+Collider.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Tree\+Collider.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Ray\+Collider.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Sphere\+Collider.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+O\+B\+B\+Collider.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+A\+A\+B\+B\+Collider.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+L\+S\+S\+Collider.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Planes\+Collider.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Picking.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Box\+Pruning.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+P\+C\+\_\+\+Sweep\+And\+Prune.\+h\char`\"{}}\\*
+Include dependency graph for Opcode.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d39/Opcode_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d01/Opcode_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpcode_1_1Axes}{Opcode\+::\+Axes}
+\item 
+class \hyperlink{classOpcode_1_1Point}{Opcode\+::\+Point}
+\item 
+class \hyperlink{classOpcode_1_1HPoint}{Opcode\+::\+H\+Point}
+\item 
+class \hyperlink{classOpcode_1_1Matrix3x3}{Opcode\+::\+Matrix3x3}
+\item 
+class \hyperlink{classOpcode_1_1Matrix4x4}{Opcode\+::\+Matrix4x4}
+\item 
+class \hyperlink{classOpcode_1_1Plane}{Opcode\+::\+Plane}
+\item 
+class \hyperlink{classOpcode_1_1Ray}{Opcode\+::\+Ray}
+\item 
+class \hyperlink{classOpcode_1_1IndexedTriangle}{Opcode\+::\+Indexed\+Triangle}
+\item 
+class \hyperlink{classOpcode_1_1Triangle}{Opcode\+::\+Triangle}
+\item 
+class \hyperlink{classOpcode_1_1TriList}{Opcode\+::\+Tri\+List}
+\item 
+class \hyperlink{classOpcode_1_1TriangleList}{Opcode\+::\+Triangle\+List}
+\item 
+class \hyperlink{classOpcode_1_1AABB}{Opcode\+::\+A\+A\+BB}
+\item 
+class \hyperlink{classOpcode_1_1OBB}{Opcode\+::\+O\+BB}
+\item 
+class \hyperlink{classOpcode_1_1Sphere}{Opcode\+::\+Sphere}
+\item 
+class \hyperlink{classOpcode_1_1Segment}{Opcode\+::\+Segment}
+\item 
+class \hyperlink{classOpcode_1_1LSS}{Opcode\+::\+L\+SS}
+\item 
+class \hyperlink{classOpcode_1_1CollisionAABB}{Opcode\+::\+Collision\+A\+A\+BB}
+\item 
+class \hyperlink{classOpcode_1_1QuantizedAABB}{Opcode\+::\+Quantized\+A\+A\+BB}
+\item 
+struct \hyperlink{structOpcode_1_1VertexPointers}{Opcode\+::\+Vertex\+Pointers}
+\item 
+class \hyperlink{classOpcode_1_1MeshInterface}{Opcode\+::\+Mesh\+Interface}
+\item 
+struct \hyperlink{structOpcode_1_1BuildSettings}{Opcode\+::\+Build\+Settings}
+\begin{DoxyCompactList}\small\item\em Simple wrapper around build-\/related settings \mbox{[}Opcode 1.\+3\mbox{]}. \end{DoxyCompactList}\item 
+class \hyperlink{classOpcode_1_1AABBTreeBuilder}{Opcode\+::\+A\+A\+B\+B\+Tree\+Builder}
+\item 
+class \hyperlink{classOpcode_1_1AABBTreeOfVerticesBuilder}{Opcode\+::\+A\+A\+B\+B\+Tree\+Of\+Vertices\+Builder}
+\item 
+class \hyperlink{classOpcode_1_1AABBTreeOfAABBsBuilder}{Opcode\+::\+A\+A\+B\+B\+Tree\+Of\+A\+A\+B\+Bs\+Builder}
+\item 
+class \hyperlink{classOpcode_1_1AABBTreeOfTrianglesBuilder}{Opcode\+::\+A\+A\+B\+B\+Tree\+Of\+Triangles\+Builder}
+\item 
+class \hyperlink{classOpcode_1_1AABBTreeNode}{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}
+\item 
+class \hyperlink{classOpcode_1_1AABBTree}{Opcode\+::\+A\+A\+B\+B\+Tree}
+\item 
+class \hyperlink{classOpcode_1_1AABBCollisionNode}{Opcode\+::\+A\+A\+B\+B\+Collision\+Node}
+\item 
+class \hyperlink{classOpcode_1_1AABBQuantizedNode}{Opcode\+::\+A\+A\+B\+B\+Quantized\+Node}
+\item 
+class \hyperlink{classOpcode_1_1AABBNoLeafNode}{Opcode\+::\+A\+A\+B\+B\+No\+Leaf\+Node}
+\item 
+class \hyperlink{classOpcode_1_1AABBQuantizedNoLeafNode}{Opcode\+::\+A\+A\+B\+B\+Quantized\+No\+Leaf\+Node}
+\item 
+class \hyperlink{classOpcode_1_1AABBOptimizedTree}{Opcode\+::\+A\+A\+B\+B\+Optimized\+Tree}
+\item 
+class \hyperlink{classOpcode_1_1AABBCollisionTree}{Opcode\+::\+A\+A\+B\+B\+Collision\+Tree}
+\item 
+class \hyperlink{classOpcode_1_1AABBNoLeafTree}{Opcode\+::\+A\+A\+B\+B\+No\+Leaf\+Tree}
+\item 
+class \hyperlink{classOpcode_1_1AABBQuantizedTree}{Opcode\+::\+A\+A\+B\+B\+Quantized\+Tree}
+\item 
+class \hyperlink{classOpcode_1_1AABBQuantizedNoLeafTree}{Opcode\+::\+A\+A\+B\+B\+Quantized\+No\+Leaf\+Tree}
+\item 
+struct \hyperlink{structOpcode_1_1OPCODECREATE}{Opcode\+::\+O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+TE}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1Model}{Model} creation structure. \end{DoxyCompactList}\item 
+class \hyperlink{classOpcode_1_1BaseModel}{Opcode\+::\+Base\+Model}
+\item 
+class \hyperlink{classOpcode_1_1Model}{Opcode\+::\+Model}
+\item 
+struct \hyperlink{structOpcode_1_1LeafTriangles}{Opcode\+::\+Leaf\+Triangles}
+\begin{DoxyCompactList}\small\item\em Leaf descriptor. \end{DoxyCompactList}\item 
+class \hyperlink{classOpcode_1_1HybridModel}{Opcode\+::\+Hybrid\+Model}
+\item 
+class \hyperlink{classOpcode_1_1Collider}{Opcode\+::\+Collider}
+\item 
+struct \hyperlink{structOpcode_1_1VolumeCache}{Opcode\+::\+Volume\+Cache}
+\item 
+class \hyperlink{classOpcode_1_1VolumeCollider}{Opcode\+::\+Volume\+Collider}
+\item 
+struct \hyperlink{structOpcode_1_1BVTCache}{Opcode\+::\+B\+V\+T\+Cache}
+\item 
+class \hyperlink{classOpcode_1_1AABBTreeCollider}{Opcode\+::\+A\+A\+B\+B\+Tree\+Collider}
+\item 
+class \hyperlink{classOpcode_1_1CollisionFace}{Opcode\+::\+Collision\+Face}
+\item 
+class \hyperlink{classOpcode_1_1CollisionFaces}{Opcode\+::\+Collision\+Faces}
+\item 
+class \hyperlink{classOpcode_1_1RayCollider}{Opcode\+::\+Ray\+Collider}
+\item 
+struct \hyperlink{structOpcode_1_1SphereCache}{Opcode\+::\+Sphere\+Cache}
+\item 
+class \hyperlink{classOpcode_1_1SphereCollider}{Opcode\+::\+Sphere\+Collider}
+\item 
+class \hyperlink{classOpcode_1_1HybridSphereCollider}{Opcode\+::\+Hybrid\+Sphere\+Collider}
+\item 
+struct \hyperlink{structOpcode_1_1OBBCache}{Opcode\+::\+O\+B\+B\+Cache}
+\item 
+class \hyperlink{classOpcode_1_1OBBCollider}{Opcode\+::\+O\+B\+B\+Collider}
+\item 
+class \hyperlink{classOpcode_1_1HybridOBBCollider}{Opcode\+::\+Hybrid\+O\+B\+B\+Collider}
+\item 
+struct \hyperlink{structOpcode_1_1AABBCache}{Opcode\+::\+A\+A\+B\+B\+Cache}
+\item 
+class \hyperlink{classOpcode_1_1AABBCollider}{Opcode\+::\+A\+A\+B\+B\+Collider}
+\item 
+class \hyperlink{classOpcode_1_1HybridAABBCollider}{Opcode\+::\+Hybrid\+A\+A\+B\+B\+Collider}
+\item 
+struct \hyperlink{structOpcode_1_1LSSCache}{Opcode\+::\+L\+S\+S\+Cache}
+\item 
+class \hyperlink{classOpcode_1_1LSSCollider}{Opcode\+::\+L\+S\+S\+Collider}
+\item 
+class \hyperlink{classOpcode_1_1HybridLSSCollider}{Opcode\+::\+Hybrid\+L\+S\+S\+Collider}
+\item 
+struct \hyperlink{structOpcode_1_1PlanesCache}{Opcode\+::\+Planes\+Cache}
+\item 
+class \hyperlink{classOpcode_1_1PlanesCollider}{Opcode\+::\+Planes\+Collider}
+\item 
+class \hyperlink{classOpcode_1_1HybridPlanesCollider}{Opcode\+::\+Hybrid\+Planes\+Collider}
+\item 
+class \hyperlink{classOpcode_1_1SAP__PairData}{Opcode\+::\+S\+A\+P\+\_\+\+Pair\+Data}
+\item 
+class \hyperlink{classOpcode_1_1SweepAndPrune}{Opcode\+::\+Sweep\+And\+Prune}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{Opcode_8h_a237855c81ad1e9211ee80e7daf3cbbb2}{Opcode\+::\+Request\+Callback}) (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} triangle\+\_\+index, \hyperlink{structVertexPointers}{Vertex\+Pointers} \&triangle, void $\ast$user\+\_\+data)
+\item 
+typedef void($\ast$ {\bfseries Opcode\+::\+Culling\+Callback}) (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+primitives, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$node\+\_\+primitives, \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} need\+\_\+clipping, void $\ast$user\+\_\+data)\hypertarget{Opcode_8h_ab22db8fad6ec977f4569533dd19f2275}{}\label{Opcode_8h_ab22db8fad6ec977f4569533dd19f2275}
+
+\item 
+typedef bool($\ast$ \hyperlink{Opcode_8h_a6b6995ddc8adf677a0f744729e11044f}{Opcode\+::\+Walking\+Callback}) (const \hyperlink{classAABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$current, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} depth, void $\ast$user\+\_\+data)
+\item 
+typedef bool($\ast$ {\bfseries Opcode\+::\+Generic\+Walking\+Callback}) (const void $\ast$current, void $\ast$user\+\_\+data)\hypertarget{Opcode_8h_ac76403ba62a2c8efc1ec083d8ec40b74}{}\label{Opcode_8h_ac76403ba62a2c8efc1ec083d8ec40b74}
+
+\item 
+typedef void($\ast$ \hyperlink{Opcode_8h_a8efe34babac3c3c2afefd46f7bbf34d0}{Opcode\+::\+Hit\+Callback}) (const \hyperlink{classCollisionFace}{Collision\+Face} \&hit, void $\ast$user\+\_\+data)
+\item 
+typedef Cull\+Mode($\ast$ {\bfseries Opcode\+::\+Cull\+Mode\+Callback}) (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} triangle\+\_\+index, void $\ast$user\+\_\+data)\hypertarget{Opcode_8h_adc54229195e6f49b5e19405609b71147}{}\label{Opcode_8h_adc54229195e6f49b5e19405609b71147}
+
+\item 
+typedef \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}($\ast$ \hyperlink{Opcode_8h_aabc99e46da6d41e77cf73f9a907f939b}{Opcode\+::\+Pair\+Callback}) (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} id0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} id1, void $\ast$user\+\_\+data)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Point\+Component} \{ \\*
+{\bfseries \+\_\+X} = 0, 
+{\bfseries \+\_\+Y} = 1, 
+{\bfseries \+\_\+Z} = 2, 
+{\bfseries \+\_\+W} = 3, 
+\\*
+{\bfseries \+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+RD} = 0x7fffffff
+ \}\hypertarget{Opcode_8h_ab07490b252011bb94935deff1331e2f5}{}\label{Opcode_8h_ab07490b252011bb94935deff1331e2f5}
+
+\item 
+enum {\bfseries Axis\+Order} \{ \\*
+{\bfseries A\+X\+E\+S\+\_\+\+X\+YZ} = (\+\_\+X)$\vert$(\+\_\+Y$<$$<$2)$\vert$(\+\_\+Z$<$$<$4), 
+{\bfseries A\+X\+E\+S\+\_\+\+X\+ZY} = (\+\_\+X)$\vert$(\+\_\+Z$<$$<$2)$\vert$(\+\_\+Y$<$$<$4), 
+{\bfseries A\+X\+E\+S\+\_\+\+Y\+XZ} = (\+\_\+Y)$\vert$(\+\_\+X$<$$<$2)$\vert$(\+\_\+Z$<$$<$4), 
+{\bfseries A\+X\+E\+S\+\_\+\+Y\+ZX} = (\+\_\+Y)$\vert$(\+\_\+Z$<$$<$2)$\vert$(\+\_\+X$<$$<$4), 
+\\*
+{\bfseries A\+X\+E\+S\+\_\+\+Z\+XY} = (\+\_\+Z)$\vert$(\+\_\+X$<$$<$2)$\vert$(\+\_\+Y$<$$<$4), 
+{\bfseries A\+X\+E\+S\+\_\+\+Z\+YX} = (\+\_\+Z)$\vert$(\+\_\+Y$<$$<$2)$\vert$(\+\_\+X$<$$<$4), 
+{\bfseries A\+X\+E\+S\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+RD} = 0x7fffffff
+ \}\hypertarget{Opcode_8h_a88cc0ee10f94284d6e9a156bbfcb4313}{}\label{Opcode_8h_a88cc0ee10f94284d6e9a156bbfcb4313}
+
+\item 
+enum \hyperlink{Opcode_8h_a608a2f93617737a513782e86824d427d}{Opcode\+::\+Part\+Val} \{ \\*
+\hyperlink{Opcode_8h_a608a2f93617737a513782e86824d427da2ce4768de02fd37889cb9327d65dd39a}{Opcode\+::\+T\+R\+I\+\_\+\+M\+I\+N\+U\+S\+\_\+\+S\+P\+A\+CE} = 0, 
+\hyperlink{Opcode_8h_a608a2f93617737a513782e86824d427daa2ce9ca1691915b1ce1b1284c25cc65f}{Opcode\+::\+T\+R\+I\+\_\+\+P\+L\+U\+S\+\_\+\+S\+P\+A\+CE} = 1, 
+\hyperlink{Opcode_8h_a608a2f93617737a513782e86824d427daad3df5c670c3b9bea552923a70a6151d}{Opcode\+::\+T\+R\+I\+\_\+\+I\+N\+T\+E\+R\+S\+E\+CT} = 2, 
+\hyperlink{Opcode_8h_a608a2f93617737a513782e86824d427da410203af15550ed4119f848d1fc781e0}{Opcode\+::\+T\+R\+I\+\_\+\+O\+N\+\_\+\+P\+L\+A\+NE} = 3, 
+\\*
+{\bfseries T\+R\+I\+\_\+\+F\+O\+R\+C\+E\+D\+W\+O\+RD} = 0x7fffffff
+ \}
+\item 
+enum \hyperlink{Opcode_8h_ad19ae633d55631fcba86cce907fd296d}{Opcode\+::\+A\+A\+B\+B\+Type} \{ \hyperlink{Opcode_8h_ad19ae633d55631fcba86cce907fd296daa4e02d6aeff5f8469f96a329aa6169a2}{Opcode\+::\+A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER} = 0, 
+\hyperlink{Opcode_8h_ad19ae633d55631fcba86cce907fd296da48c1068b0c089834cae68996b50551af}{Opcode\+::\+A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE} = 1, 
+{\bfseries A\+A\+B\+B\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+RD} = 0x7fffffff
+ \}
+\item 
+enum {\bfseries B\+Sphere\+Method} \{ {\bfseries B\+S\+\_\+\+N\+O\+NE}, 
+{\bfseries B\+S\+\_\+\+G\+E\+MS}, 
+{\bfseries B\+S\+\_\+\+M\+I\+N\+I\+B\+A\+LL}, 
+{\bfseries B\+S\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+RD} = 0x7fffffff
+ \}\hypertarget{Opcode_8h_a387a307ff5f0368b1ffec85f80126e96}{}\label{Opcode_8h_a387a307ff5f0368b1ffec85f80126e96}
+
+\item 
+enum \hyperlink{Opcode_8h_ae628a0b48e300294096ceb0962c059db}{Opcode\+::\+Splitting\+Rules} \{ \\*
+\hyperlink{Opcode_8h_ae628a0b48e300294096ceb0962c059dba7c6a6356c154dd264b36a6e583990149}{Opcode\+::\+S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS} = (1$<$$<$0), 
+\hyperlink{Opcode_8h_ae628a0b48e300294096ceb0962c059dba8466a502d784d2d2cc01697e027de106}{Opcode\+::\+S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS} = (1$<$$<$1), 
+\hyperlink{Opcode_8h_ae628a0b48e300294096ceb0962c059dbaad38fd6595627bd7ed8b3316885f9e01}{Opcode\+::\+S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS} = (1$<$$<$2), 
+\hyperlink{Opcode_8h_ae628a0b48e300294096ceb0962c059dba479c801713cba57ab7d5046fcd6e2499}{Opcode\+::\+S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED} = (1$<$$<$3), 
+\\*
+\hyperlink{Opcode_8h_ae628a0b48e300294096ceb0962c059dbaef886846b9b3cfc5f1b033788cd60901}{Opcode\+::\+S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY} = (1$<$$<$4), 
+\hyperlink{Opcode_8h_ae628a0b48e300294096ceb0962c059dbafc3910dedfdd61746441591871b6b102}{Opcode\+::\+S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER} = (1$<$$<$5), 
+{\bfseries S\+P\+L\+I\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+RD} = 0x7fffffff
+ \}\begin{DoxyCompactList}\small\item\em Tree splitting rules. \end{DoxyCompactList}
+\item 
+enum \hyperlink{Opcode_8h_aa635d05ec7f768e76b46592a0f7535df}{Opcode\+::\+Model\+Flag} \{ \hyperlink{Opcode_8h_aa635d05ec7f768e76b46592a0f7535dfa69b983cfaab1392be9ede578e64dca46}{Opcode\+::\+O\+P\+C\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+ED} = (1$<$$<$0), 
+\hyperlink{Opcode_8h_aa635d05ec7f768e76b46592a0f7535dfa839680dfd8afdd76263d5da7d378d0b0}{Opcode\+::\+O\+P\+C\+\_\+\+N\+O\+\_\+\+L\+E\+AF} = (1$<$$<$1), 
+\hyperlink{Opcode_8h_aa635d05ec7f768e76b46592a0f7535dfadd83a9e4fe99728084f35a93892b6b91}{Opcode\+::\+O\+P\+C\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+N\+O\+DE} = (1$<$$<$2)
+ \}
+\item 
+enum \hyperlink{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79}{Opcode\+::\+Collision\+Flag} \{ \\*
+\hyperlink{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a0920da128132cff959809c66cafd73a6}{Opcode\+::\+O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT} = (1$<$$<$0), 
+\hyperlink{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a8556dcf8e21e26c98e0cfd6bb949e07a}{Opcode\+::\+O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE} = (1$<$$<$1), 
+\hyperlink{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a422d94fe97deb4f7d799cf3402bd4eea}{Opcode\+::\+O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT} = (1$<$$<$2), 
+\hyperlink{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a58de81ecd7997dd98a6b6a4dc14c7c51}{Opcode\+::\+O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT} = (1$<$$<$3), 
+\\*
+\hyperlink{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a46046bb7709056019d6ce55e2c3ceb33}{Opcode\+::\+O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS} = (1$<$$<$4), 
+{\bfseries O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+C\+T\+\_\+\+F\+O\+U\+ND} = O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT $\vert$ O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT, 
+{\bfseries O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+N\+T\+A\+CT} = O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT $\vert$ O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT, 
+{\bfseries O\+P\+C\+\_\+\+F\+O\+R\+C\+E\+\_\+\+D\+W\+O\+RD} = 0x7fffffff
+ \}
+\item 
+enum {\bfseries Cull\+Mode} \{ {\bfseries C\+U\+L\+L\+M\+O\+D\+E\+\_\+\+N\+O\+NE} = 0, 
+{\bfseries C\+U\+L\+L\+M\+O\+D\+E\+\_\+\+CW} = 1, 
+{\bfseries C\+U\+L\+L\+M\+O\+D\+E\+\_\+\+C\+CW} = 2
+ \}\hypertarget{Opcode_8h_ab0881d789c7970f51d9a0e6c73665368}{}\label{Opcode_8h_ab0881d789c7970f51d9a0e6c73665368}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+F\+U\+N\+C\+T\+I\+ON I\+C\+E\+M\+A\+T\+H\+S\+\_\+\+A\+PI void {\bfseries Opcode\+::\+Normalize1} (\hyperlink{classPoint}{Point} \&a)\hypertarget{Opcode_8h_a9a0147b40f81485591dc938f86cd3eee}{}\label{Opcode_8h_a9a0147b40f81485591dc938f86cd3eee}
+
+\item 
+F\+U\+N\+C\+T\+I\+ON I\+C\+E\+M\+A\+T\+H\+S\+\_\+\+A\+PI void {\bfseries Opcode\+::\+Normalize2} (\hyperlink{classPoint}{Point} \&a)\hypertarget{Opcode_8h_af6c9f1a881fe2911b349698da3b96942}{}\label{Opcode_8h_af6c9f1a881fe2911b349698da3b96942}
+
+\item 
+inline\+\_\+ void \hyperlink{Opcode_8h_ab3fe098024b86b4cdd1aae5fe9d9765c}{Opcode\+::\+Transform\+Point4x3} (\hyperlink{classPoint}{Point} \&dest, const \hyperlink{classPoint}{Point} \&source, const \hyperlink{classMatrix4x4}{Matrix4x4} \&rot)\hypertarget{Opcode_8h_ab3fe098024b86b4cdd1aae5fe9d9765c}{}\label{Opcode_8h_ab3fe098024b86b4cdd1aae5fe9d9765c}
+
+\begin{DoxyCompactList}\small\item\em Quickly rotates \& translates a vector, using the 4x3 part of a 4x4 matrix. \end{DoxyCompactList}\item 
+inline\+\_\+ void \hyperlink{Opcode_8h_a5e8a1fde5d55616618d6e95669423900}{Opcode\+::\+Transform\+Point3x3} (\hyperlink{classPoint}{Point} \&dest, const \hyperlink{classPoint}{Point} \&source, const \hyperlink{classMatrix4x4}{Matrix4x4} \&rot)\hypertarget{Opcode_8h_a5e8a1fde5d55616618d6e95669423900}{}\label{Opcode_8h_a5e8a1fde5d55616618d6e95669423900}
+
+\begin{DoxyCompactList}\small\item\em Quickly rotates a vector, using the 3x3 part of a 4x4 matrix. \end{DoxyCompactList}\item 
+void {\bfseries Opcode\+::\+Invert\+P\+R\+Matrix} (\hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} \&dest, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} \&src)\hypertarget{Opcode_8h_a4cee4bcdc8f2d55e2b7a0b870b57c857}{}\label{Opcode_8h_a4cee4bcdc8f2d55e2b7a0b870b57c857}
+
+\item 
+inline\+\_\+ void \hyperlink{Opcode_8h_a107558544112ff4730d11851b38c51f0}{Opcode\+::\+Transform\+Plane} (\hyperlink{classPlane}{Plane} \&transformed, const \hyperlink{classPlane}{Plane} \&plane, const \hyperlink{classMatrix4x4}{Matrix4x4} \&transform)
+\item 
+inline\+\_\+ void \hyperlink{Opcode_8h_a711f95bc363d7b169f96ead11b60f35e}{Opcode\+::\+Transform\+Plane} (\hyperlink{classPlane}{Plane} \&plane, const \hyperlink{classMatrix4x4}{Matrix4x4} \&transform)
+\item 
+inline\+\_\+ void {\bfseries Opcode\+::\+Compute\+Reflexion\+Vector} (\hyperlink{classPoint}{Point} \&reflected, const \hyperlink{classPoint}{Point} \&incoming\+\_\+dir, const \hyperlink{classPoint}{Point} \&outward\+\_\+normal)\hypertarget{Opcode_8h_a84cb522b7b2253a3177fbe13bc841e94}{}\label{Opcode_8h_a84cb522b7b2253a3177fbe13bc841e94}
+
+\item 
+inline\+\_\+ void {\bfseries Opcode\+::\+Compute\+Reflexion\+Vector} (\hyperlink{classPoint}{Point} \&reflected, const \hyperlink{classPoint}{Point} \&source, const \hyperlink{classPoint}{Point} \&impact, const \hyperlink{classPoint}{Point} \&normal)\hypertarget{Opcode_8h_a274ef29e8ceb430239ec89719721c366}{}\label{Opcode_8h_a274ef29e8ceb430239ec89719721c366}
+
+\item 
+inline\+\_\+ void {\bfseries Opcode\+::\+Decompose\+Vector} (\hyperlink{classPoint}{Point} \&normal\+\_\+compo, \hyperlink{classPoint}{Point} \&tangent\+\_\+compo, const \hyperlink{classPoint}{Point} \&outward\+\_\+dir, const \hyperlink{classPoint}{Point} \&outward\+\_\+normal)\hypertarget{Opcode_8h_a9c2acb76c298d5b34b3888eb15107934}{}\label{Opcode_8h_a9c2acb76c298d5b34b3888eb15107934}
+
+\item 
+inline\+\_\+ void \hyperlink{Opcode_8h_acf3627c26479377bfe77e9245b949247}{Opcode\+::\+Compute\+Local\+Direction} (\hyperlink{classPoint}{Point} \&local\+\_\+dir, const \hyperlink{classPoint}{Point} \&world\+\_\+dir, const \hyperlink{classMatrix4x4}{Matrix4x4} \&world)
+\item 
+inline\+\_\+ void \hyperlink{Opcode_8h_abe5d73b2a271f3b3773285d803b9919b}{Opcode\+::\+Compute\+Local\+Point} (\hyperlink{classPoint}{Point} \&local\+\_\+pt, const \hyperlink{classPoint}{Point} \&world\+\_\+pt, const \hyperlink{classMatrix4x4}{Matrix4x4} \&world)
+\item 
+inline\+\_\+ void \hyperlink{Opcode_8h_a8fba2e97ee4cf5599297fba2016a14e1}{Opcode\+::\+Compute\+Local\+Ray} (\hyperlink{classRay}{Ray} \&local\+\_\+ray, const \hyperlink{classRay}{Ray} \&world\+\_\+ray, const \hyperlink{classMatrix4x4}{Matrix4x4} \&world)
+\item 
+inline\+\_\+ void {\bfseries Opcode\+::\+Compute\+Min\+Max} (const \hyperlink{classPoint}{Point} \&p, \hyperlink{classPoint}{Point} \&min, \hyperlink{classPoint}{Point} \&max)\hypertarget{Opcode_8h_a8e3b8d1887ee2c28f0b2cdd04ab029e0}{}\label{Opcode_8h_a8e3b8d1887ee2c28f0b2cdd04ab029e0}
+
+\item 
+inline\+\_\+ void {\bfseries Opcode\+::\+Compute\+A\+A\+BB} (\hyperlink{classAABB}{A\+A\+BB} \&aabb, const \hyperlink{classPoint}{Point} $\ast$list, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+pts)\hypertarget{Opcode_8h_a65094fdb5fa35d0405c82711e8c5f961}{}\label{Opcode_8h_a65094fdb5fa35d0405c82711e8c5f961}
+
+\item 
+inline\+\_\+ void \hyperlink{Opcode_8h_a57dfd751976925a76336ad46ecd5c25e}{Opcode\+::\+Transform\+Point} (\hyperlink{classPoint}{Point} \&dest, const \hyperlink{classPoint}{Point} \&source, const \hyperlink{classMatrix3x3}{Matrix3x3} \&rot, const \hyperlink{classPoint}{Point} \&trans)\hypertarget{Opcode_8h_a57dfd751976925a76336ad46ecd5c25e}{}\label{Opcode_8h_a57dfd751976925a76336ad46ecd5c25e}
+
+\begin{DoxyCompactList}\small\item\em Quickly rotates \& translates a vector. \end{DoxyCompactList}\item 
+bool {\bfseries Opcode\+::\+Setup\+All\+Hits} (\hyperlink{classRayCollider}{Ray\+Collider} \&collider, \hyperlink{classCollisionFaces}{Collision\+Faces} \&contacts)\hypertarget{OPC__Picking_8cpp_a101d1e344e9b2a1e65ff01210b93b16e}{}\label{OPC__Picking_8cpp_a101d1e344e9b2a1e65ff01210b93b16e}
+
+\item 
+bool {\bfseries Opcode\+::\+Setup\+Closest\+Hit} (\hyperlink{classRayCollider}{Ray\+Collider} \&collider, \hyperlink{classCollisionFace}{Collision\+Face} \&closest\+\_\+contact)\hypertarget{OPC__Picking_8cpp_a17b097c108b1541bcc0a9b4a80c40fb9}{}\label{OPC__Picking_8cpp_a17b097c108b1541bcc0a9b4a80c40fb9}
+
+\item 
+bool {\bfseries Opcode\+::\+Setup\+Shadow\+Feeler} (\hyperlink{classRayCollider}{Ray\+Collider} \&collider)\hypertarget{OPC__Picking_8cpp_a1a9e2397cc5c094536ebcf21a180d924}{}\label{OPC__Picking_8cpp_a1a9e2397cc5c094536ebcf21a180d924}
+
+\item 
+bool {\bfseries Opcode\+::\+Setup\+In\+Out\+Test} (\hyperlink{classRayCollider}{Ray\+Collider} \&collider)\hypertarget{OPC__Picking_8cpp_a00340cba16ed6034ef1a614fbd9d732c}{}\label{OPC__Picking_8cpp_a00340cba16ed6034ef1a614fbd9d732c}
+
+\item 
+bool {\bfseries Opcode\+::\+Picking} (\hyperlink{classCollisionFace}{Collision\+Face} \&picked\+\_\+face, const \hyperlink{classRay}{Ray} \&world\+\_\+ray, const \hyperlink{classModel}{Model} \&model, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$world, float min\+\_\+dist, float max\+\_\+dist, const \hyperlink{classPoint}{Point} \&view\+\_\+point, Cull\+Mode\+Callback callback, void $\ast$user\+\_\+data)\hypertarget{OPC__Picking_8cpp_a51458e5066b0eca2c34891e6ed4087c1}{}\label{OPC__Picking_8cpp_a51458e5066b0eca2c34891e6ed4087c1}
+
+\item 
+F\+U\+N\+C\+T\+I\+ON O\+P\+C\+O\+D\+E\+\_\+\+A\+PI bool \hyperlink{Opcode_8h_a1cef5c571309332ab0b5b4aada4c636a}{Opcode\+::\+Complete\+Box\+Pruning} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb, const \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} $\ast$$\ast$array, \hyperlink{classPairs}{Pairs} \&pairs, const \hyperlink{classOpcode_1_1Axes}{Axes} \&axes)
+\item 
+F\+U\+N\+C\+T\+I\+ON O\+P\+C\+O\+D\+E\+\_\+\+A\+PI bool \hyperlink{Opcode_8h_a09e090583a1ae4778c86863373d1dcdd}{Opcode\+::\+Bipartite\+Box\+Pruning} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb0, const \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} $\ast$$\ast$array0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb1, const \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} $\ast$$\ast$array1, \hyperlink{classPairs}{Pairs} \&pairs, const \hyperlink{classOpcode_1_1Axes}{Axes} \&axes)
+\item 
+F\+U\+N\+C\+T\+I\+ON O\+P\+C\+O\+D\+E\+\_\+\+A\+PI bool \hyperlink{Opcode_8h_add9d48289fde81a9c7b364ab2d1d7e9c}{Opcode\+::\+Brute\+Force\+Complete\+Box\+Test} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb, const \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} $\ast$$\ast$array, \hyperlink{classPairs}{Pairs} \&pairs)
+\item 
+F\+U\+N\+C\+T\+I\+ON O\+P\+C\+O\+D\+E\+\_\+\+A\+PI bool \hyperlink{Opcode_8h_a41c46a5eb47ab0e3946e08c45dea5c0e}{Opcode\+::\+Brute\+Force\+Bipartite\+Box\+Test} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb0, const \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} $\ast$$\ast$array0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb1, const \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} $\ast$$\ast$array1, \hyperlink{classPairs}{Pairs} \&pairs)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const float {\bfseries Opcode\+::\+E\+P\+S\+I\+L\+O\+N2} = 1.\+0e-\/20f\hypertarget{Opcode_8h_a3cb6c898b2c6631e4417c6c80081ff9e}{}\label{Opcode_8h_a3cb6c898b2c6631e4417c6c80081ff9e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main file for Opcode.\+dll.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\index{Opcode.\+h@{Opcode.\+h}!Hit\+Callback@{Hit\+Callback}}
+\index{Hit\+Callback@{Hit\+Callback}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Hit\+Callback}{HitCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ Opcode\+::\+Hit\+Callback) (const {\bf Collision\+Face} \&hit, void $\ast$user\+\_\+data)}\hypertarget{Opcode_8h_file_a8efe34babac3c3c2afefd46f7bbf34d0}{}\label{Opcode_8h_file_a8efe34babac3c3c2afefd46f7bbf34d0}
+User-\/callback, called by O\+P\+C\+O\+DE to record a hit. 
+\begin{DoxyParams}{Parameters}
+{\em hit} & \mbox{[}in\mbox{]} current hit \\
+\hline
+{\em user\+\_\+data} & \mbox{[}in\mbox{]} user-\/defined data from Set\+Callback() \\
+\hline
+\end{DoxyParams}
+\index{Opcode.\+h@{Opcode.\+h}!Pair\+Callback@{Pair\+Callback}}
+\index{Pair\+Callback@{Pair\+Callback}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Pair\+Callback}{PairCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf B\+O\+OL}($\ast$ Opcode\+::\+Pair\+Callback) ({\bf udword} id0, {\bf udword} id1, void $\ast$user\+\_\+data)}\hypertarget{Opcode_8h_file_aabc99e46da6d41e77cf73f9a907f939b}{}\label{Opcode_8h_file_aabc99e46da6d41e77cf73f9a907f939b}
+User-\/callback, called by O\+P\+C\+O\+DE for each colliding pairs. 
+\begin{DoxyParams}{Parameters}
+{\em id0} & \mbox{[}in\mbox{]} id of colliding object \\
+\hline
+{\em id1} & \mbox{[}in\mbox{]} id of colliding object \\
+\hline
+{\em user\+\_\+data} & \mbox{[}in\mbox{]} user-\/defined data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE to continue enumeration 
+\end{DoxyReturn}
+\index{Opcode.\+h@{Opcode.\+h}!Request\+Callback@{Request\+Callback}}
+\index{Request\+Callback@{Request\+Callback}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Request\+Callback}{RequestCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ Opcode\+::\+Request\+Callback) ({\bf udword} triangle\+\_\+index, {\bf Vertex\+Pointers} \&triangle, void $\ast$user\+\_\+data)}\hypertarget{Opcode_8h_file_a237855c81ad1e9211ee80e7daf3cbbb2}{}\label{Opcode_8h_file_a237855c81ad1e9211ee80e7daf3cbbb2}
+User-\/callback, called by O\+P\+C\+O\+DE to request vertices from the app. 
+\begin{DoxyParams}{Parameters}
+{\em triangle\+\_\+index} & \mbox{[}in\mbox{]} face index for which the system is requesting the vertices \\
+\hline
+{\em triangle} & \mbox{[}out\mbox{]} triangle\textquotesingle{}s vertices (must be provided by the user) \\
+\hline
+{\em user\+\_\+data} & \mbox{[}in\mbox{]} user-\/defined data from Set\+Callback() \\
+\hline
+\end{DoxyParams}
+\index{Opcode.\+h@{Opcode.\+h}!Walking\+Callback@{Walking\+Callback}}
+\index{Walking\+Callback@{Walking\+Callback}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Walking\+Callback}{WalkingCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ Opcode\+::\+Walking\+Callback) (const {\bf A\+A\+B\+B\+Tree\+Node} $\ast$current, {\bf udword} depth, void $\ast$user\+\_\+data)}\hypertarget{Opcode_8h_file_a6b6995ddc8adf677a0f744729e11044f}{}\label{Opcode_8h_file_a6b6995ddc8adf677a0f744729e11044f}
+User-\/callback, called for each node by the walking code. 
+\begin{DoxyParams}{Parameters}
+{\em current} & \mbox{[}in\mbox{]} current node \\
+\hline
+{\em depth} & \mbox{[}in\mbox{]} current node\textquotesingle{}s depth \\
+\hline
+{\em user\+\_\+data} & \mbox{[}in\mbox{]} user-\/defined data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true to recurse through children, else false to bypass them 
+\end{DoxyReturn}
+
+
+\subsection{Enumeration Type Documentation}
+\index{Opcode.\+h@{Opcode.\+h}!A\+A\+B\+B\+Type@{A\+A\+B\+B\+Type}}
+\index{A\+A\+B\+B\+Type@{A\+A\+B\+B\+Type}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{A\+A\+B\+B\+Type}{AABBType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Opcode\+::\+A\+A\+B\+B\+Type}}\hypertarget{Opcode_8h_file_ad19ae633d55631fcba86cce907fd296d}{}\label{Opcode_8h_file_ad19ae633d55631fcba86cce907fd296d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER@{A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER@{A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER}}\item[{\em 
+A\+A\+B\+B\+\_\+\+R\+E\+N\+D\+ER\hypertarget{Opcode_8h_ad19ae633d55631fcba86cce907fd296daa4e02d6aeff5f8469f96a329aa6169a2}{}\label{Opcode_8h_ad19ae633d55631fcba86cce907fd296daa4e02d6aeff5f8469f96a329aa6169a2}
+}]\hyperlink{classOpcode_1_1AABB}{A\+A\+BB} used for rendering. Not visible == not rendered. \index{A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE@{A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE@{A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE}}\item[{\em 
+A\+A\+B\+B\+\_\+\+U\+P\+D\+A\+TE\hypertarget{Opcode_8h_ad19ae633d55631fcba86cce907fd296da48c1068b0c089834cae68996b50551af}{}\label{Opcode_8h_ad19ae633d55631fcba86cce907fd296da48c1068b0c089834cae68996b50551af}
+}]\hyperlink{classOpcode_1_1AABB}{A\+A\+BB} used for dynamic updates. Not visible == not updated. \end{description}
+\end{Desc}
+\index{Opcode.\+h@{Opcode.\+h}!Collision\+Flag@{Collision\+Flag}}
+\index{Collision\+Flag@{Collision\+Flag}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Collision\+Flag}{CollisionFlag}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Opcode\+::\+Collision\+Flag}}\hypertarget{Opcode_8h_file_ae387123eb59035210cb3b5e0eec64d79}{}\label{Opcode_8h_file_ae387123eb59035210cb3b5e0eec64d79}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT@{O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT}}\item[{\em 
+O\+P\+C\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+N\+T\+A\+CT\hypertarget{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a0920da128132cff959809c66cafd73a6}{}\label{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a0920da128132cff959809c66cafd73a6}
+}]Report all contacts (false) or only first one (true) \index{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE@{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE@{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE}}\item[{\em 
+O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+C\+O\+H\+E\+R\+E\+N\+CE\hypertarget{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a8556dcf8e21e26c98e0cfd6bb949e07a}{}\label{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a8556dcf8e21e26c98e0cfd6bb949e07a}
+}]Use temporal coherence or not. \index{O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT@{O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT@{O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT}}\item[{\em 
+O\+P\+C\+\_\+\+C\+O\+N\+T\+A\+CT\hypertarget{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a422d94fe97deb4f7d799cf3402bd4eea}{}\label{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a422d94fe97deb4f7d799cf3402bd4eea}
+}]Final contact status after a collision query. \index{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT@{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT@{O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT}}\item[{\em 
+O\+P\+C\+\_\+\+T\+E\+M\+P\+O\+R\+A\+L\+\_\+\+H\+IT\hypertarget{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a58de81ecd7997dd98a6b6a4dc14c7c51}{}\label{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a58de81ecd7997dd98a6b6a4dc14c7c51}
+}]There has been an early exit due to temporal coherence. \index{O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS@{O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS@{O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS}}\item[{\em 
+O\+P\+C\+\_\+\+N\+O\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+E\+S\+TS\hypertarget{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a46046bb7709056019d6ce55e2c3ceb33}{}\label{Opcode_8h_ae387123eb59035210cb3b5e0eec64d79a46046bb7709056019d6ce55e2c3ceb33}
+}]Keep or discard primitive-\/bv tests in leaf nodes (volume-\/mesh queries) \end{description}
+\end{Desc}
+\index{Opcode.\+h@{Opcode.\+h}!Model\+Flag@{Model\+Flag}}
+\index{Model\+Flag@{Model\+Flag}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Model\+Flag}{ModelFlag}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Opcode\+::\+Model\+Flag}}\hypertarget{Opcode_8h_file_aa635d05ec7f768e76b46592a0f7535df}{}\label{Opcode_8h_file_aa635d05ec7f768e76b46592a0f7535df}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{O\+P\+C\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+ED@{O\+P\+C\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+ED}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!O\+P\+C\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+ED@{O\+P\+C\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+ED}}\item[{\em 
+O\+P\+C\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+ED\hypertarget{Opcode_8h_aa635d05ec7f768e76b46592a0f7535dfa69b983cfaab1392be9ede578e64dca46}{}\label{Opcode_8h_aa635d05ec7f768e76b46592a0f7535dfa69b983cfaab1392be9ede578e64dca46}
+}]Compressed/uncompressed tree. \index{O\+P\+C\+\_\+\+N\+O\+\_\+\+L\+E\+AF@{O\+P\+C\+\_\+\+N\+O\+\_\+\+L\+E\+AF}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!O\+P\+C\+\_\+\+N\+O\+\_\+\+L\+E\+AF@{O\+P\+C\+\_\+\+N\+O\+\_\+\+L\+E\+AF}}\item[{\em 
+O\+P\+C\+\_\+\+N\+O\+\_\+\+L\+E\+AF\hypertarget{Opcode_8h_aa635d05ec7f768e76b46592a0f7535dfa839680dfd8afdd76263d5da7d378d0b0}{}\label{Opcode_8h_aa635d05ec7f768e76b46592a0f7535dfa839680dfd8afdd76263d5da7d378d0b0}
+}]Leaf/\+No\+Leaf tree. \index{O\+P\+C\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+N\+O\+DE@{O\+P\+C\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+N\+O\+DE}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!O\+P\+C\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+N\+O\+DE@{O\+P\+C\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+N\+O\+DE}}\item[{\em 
+O\+P\+C\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+N\+O\+DE\hypertarget{Opcode_8h_aa635d05ec7f768e76b46592a0f7535dfadd83a9e4fe99728084f35a93892b6b91}{}\label{Opcode_8h_aa635d05ec7f768e76b46592a0f7535dfadd83a9e4fe99728084f35a93892b6b91}
+}]Special case for 1-\/node models. \end{description}
+\end{Desc}
+\index{Opcode.\+h@{Opcode.\+h}!Part\+Val@{Part\+Val}}
+\index{Part\+Val@{Part\+Val}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Part\+Val}{PartVal}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Opcode\+::\+Part\+Val}}\hypertarget{Opcode_8h_file_a608a2f93617737a513782e86824d427d}{}\label{Opcode_8h_file_a608a2f93617737a513782e86824d427d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\+R\+I\+\_\+\+M\+I\+N\+U\+S\+\_\+\+S\+P\+A\+CE@{T\+R\+I\+\_\+\+M\+I\+N\+U\+S\+\_\+\+S\+P\+A\+CE}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!T\+R\+I\+\_\+\+M\+I\+N\+U\+S\+\_\+\+S\+P\+A\+CE@{T\+R\+I\+\_\+\+M\+I\+N\+U\+S\+\_\+\+S\+P\+A\+CE}}\item[{\em 
+T\+R\+I\+\_\+\+M\+I\+N\+U\+S\+\_\+\+S\+P\+A\+CE\hypertarget{Opcode_8h_a608a2f93617737a513782e86824d427da2ce4768de02fd37889cb9327d65dd39a}{}\label{Opcode_8h_a608a2f93617737a513782e86824d427da2ce4768de02fd37889cb9327d65dd39a}
+}]\hyperlink{classOpcode_1_1Triangle}{Triangle} is in the negative space. \index{T\+R\+I\+\_\+\+P\+L\+U\+S\+\_\+\+S\+P\+A\+CE@{T\+R\+I\+\_\+\+P\+L\+U\+S\+\_\+\+S\+P\+A\+CE}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!T\+R\+I\+\_\+\+P\+L\+U\+S\+\_\+\+S\+P\+A\+CE@{T\+R\+I\+\_\+\+P\+L\+U\+S\+\_\+\+S\+P\+A\+CE}}\item[{\em 
+T\+R\+I\+\_\+\+P\+L\+U\+S\+\_\+\+S\+P\+A\+CE\hypertarget{Opcode_8h_a608a2f93617737a513782e86824d427daa2ce9ca1691915b1ce1b1284c25cc65f}{}\label{Opcode_8h_a608a2f93617737a513782e86824d427daa2ce9ca1691915b1ce1b1284c25cc65f}
+}]\hyperlink{classOpcode_1_1Triangle}{Triangle} is in the positive space. \index{T\+R\+I\+\_\+\+I\+N\+T\+E\+R\+S\+E\+CT@{T\+R\+I\+\_\+\+I\+N\+T\+E\+R\+S\+E\+CT}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!T\+R\+I\+\_\+\+I\+N\+T\+E\+R\+S\+E\+CT@{T\+R\+I\+\_\+\+I\+N\+T\+E\+R\+S\+E\+CT}}\item[{\em 
+T\+R\+I\+\_\+\+I\+N\+T\+E\+R\+S\+E\+CT\hypertarget{Opcode_8h_a608a2f93617737a513782e86824d427daad3df5c670c3b9bea552923a70a6151d}{}\label{Opcode_8h_a608a2f93617737a513782e86824d427daad3df5c670c3b9bea552923a70a6151d}
+}]\hyperlink{classOpcode_1_1Triangle}{Triangle} intersects plane. \index{T\+R\+I\+\_\+\+O\+N\+\_\+\+P\+L\+A\+NE@{T\+R\+I\+\_\+\+O\+N\+\_\+\+P\+L\+A\+NE}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!T\+R\+I\+\_\+\+O\+N\+\_\+\+P\+L\+A\+NE@{T\+R\+I\+\_\+\+O\+N\+\_\+\+P\+L\+A\+NE}}\item[{\em 
+T\+R\+I\+\_\+\+O\+N\+\_\+\+P\+L\+A\+NE\hypertarget{Opcode_8h_a608a2f93617737a513782e86824d427da410203af15550ed4119f848d1fc781e0}{}\label{Opcode_8h_a608a2f93617737a513782e86824d427da410203af15550ed4119f848d1fc781e0}
+}]\hyperlink{classOpcode_1_1Triangle}{Triangle} and plane are coplanar. \end{description}
+\end{Desc}
+\index{Opcode.\+h@{Opcode.\+h}!Splitting\+Rules@{Splitting\+Rules}}
+\index{Splitting\+Rules@{Splitting\+Rules}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Splitting\+Rules}{SplittingRules}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Opcode\+::\+Splitting\+Rules}}\hypertarget{Opcode_8h_file_ae628a0b48e300294096ceb0962c059db}{}\label{Opcode_8h_file_ae628a0b48e300294096ceb0962c059db}
+
+
+Tree splitting rules. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS@{S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS@{S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+L\+A\+R\+G\+E\+S\+T\+\_\+\+A\+X\+IS\hypertarget{Opcode_8h_ae628a0b48e300294096ceb0962c059dba7c6a6356c154dd264b36a6e583990149}{}\label{Opcode_8h_ae628a0b48e300294096ceb0962c059dba7c6a6356c154dd264b36a6e583990149}
+}]Split along the largest axis. \index{S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS@{S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS@{S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+S\+P\+L\+A\+T\+T\+E\+R\+\_\+\+P\+O\+I\+N\+TS\hypertarget{Opcode_8h_ae628a0b48e300294096ceb0962c059dba8466a502d784d2d2cc01697e027de106}{}\label{Opcode_8h_ae628a0b48e300294096ceb0962c059dba8466a502d784d2d2cc01697e027de106}
+}]Splatter primitive centers (Quick\+C\+D-\/style) \index{S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS@{S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS@{S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+B\+E\+S\+T\+\_\+\+A\+X\+IS\hypertarget{Opcode_8h_ae628a0b48e300294096ceb0962c059dbaad38fd6595627bd7ed8b3316885f9e01}{}\label{Opcode_8h_ae628a0b48e300294096ceb0962c059dbaad38fd6595627bd7ed8b3316885f9e01}
+}]Try largest axis, then second, then last. \index{S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED@{S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED@{S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+B\+A\+L\+A\+N\+C\+ED\hypertarget{Opcode_8h_ae628a0b48e300294096ceb0962c059dba479c801713cba57ab7d5046fcd6e2499}{}\label{Opcode_8h_ae628a0b48e300294096ceb0962c059dba479c801713cba57ab7d5046fcd6e2499}
+}]Try to keep a well-\/balanced tree. \index{S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY@{S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY@{S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+F\+I\+F\+TY\hypertarget{Opcode_8h_ae628a0b48e300294096ceb0962c059dbaef886846b9b3cfc5f1b033788cd60901}{}\label{Opcode_8h_ae628a0b48e300294096ceb0962c059dbaef886846b9b3cfc5f1b033788cd60901}
+}]Arbitrary 50-\/50 split. \index{S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER@{S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER}!Opcode.\+h@{Opcode.\+h}}\index{Opcode.\+h@{Opcode.\+h}!S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER@{S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER}}\item[{\em 
+S\+P\+L\+I\+T\+\_\+\+G\+E\+O\+M\+\_\+\+C\+E\+N\+T\+ER\hypertarget{Opcode_8h_ae628a0b48e300294096ceb0962c059dbafc3910dedfdd61746441591871b6b102}{}\label{Opcode_8h_ae628a0b48e300294096ceb0962c059dbafc3910dedfdd61746441591871b6b102}
+}]Split at geometric center (else split in the middle) \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{Opcode.\+h@{Opcode.\+h}!Bipartite\+Box\+Pruning@{Bipartite\+Box\+Pruning}}
+\index{Bipartite\+Box\+Pruning@{Bipartite\+Box\+Pruning}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Bipartite\+Box\+Pruning(udword nb0, const A\+A\+B\+B $\ast$$\ast$array0, udword nb1, const A\+A\+B\+B $\ast$$\ast$array1, Pairs \&pairs, const Axes \&axes)}{BipartiteBoxPruning(udword nb0, const AABB **array0, udword nb1, const AABB **array1, Pairs &pairs, const Axes &axes)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Opcode\+::\+Bipartite\+Box\+Pruning (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{nb0, }
+\item[{const {\bf A\+A\+BB} $\ast$$\ast$}]{array0, }
+\item[{{\bf udword}}]{nb1, }
+\item[{const {\bf A\+A\+BB} $\ast$$\ast$}]{array1, }
+\item[{{\bf Pairs} \&}]{pairs, }
+\item[{const {\bf Axes} \&}]{axes}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_file_a09e090583a1ae4778c86863373d1dcdd}{}\label{Opcode_8h_file_a09e090583a1ae4778c86863373d1dcdd}
+Bipartite box pruning. Returns a list of overlapping pairs of boxes, each box of the pair belongs to a different set. 
+\begin{DoxyParams}{Parameters}
+{\em nb0} & \mbox{[}in\mbox{]} number of boxes in the first set \\
+\hline
+{\em array0} & \mbox{[}in\mbox{]} array of boxes for the first set \\
+\hline
+{\em nb1} & \mbox{[}in\mbox{]} number of boxes in the second set \\
+\hline
+{\em array1} & \mbox{[}in\mbox{]} array of boxes for the second set \\
+\hline
+{\em pairs} & \mbox{[}out\mbox{]} array of overlapping pairs \\
+\hline
+{\em axes} & \mbox{[}in\mbox{]} projection order (0,2,1 is often best) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success. 
+\end{DoxyReturn}
+\index{Opcode.\+h@{Opcode.\+h}!Brute\+Force\+Bipartite\+Box\+Test@{Brute\+Force\+Bipartite\+Box\+Test}}
+\index{Brute\+Force\+Bipartite\+Box\+Test@{Brute\+Force\+Bipartite\+Box\+Test}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Brute\+Force\+Bipartite\+Box\+Test(udword nb0, const A\+A\+B\+B $\ast$$\ast$array0, udword nb1, const A\+A\+B\+B $\ast$$\ast$array1, Pairs \&pairs)}{BruteForceBipartiteBoxTest(udword nb0, const AABB **array0, udword nb1, const AABB **array1, Pairs &pairs)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Opcode\+::\+Brute\+Force\+Bipartite\+Box\+Test (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{nb0, }
+\item[{const {\bf A\+A\+BB} $\ast$$\ast$}]{array0, }
+\item[{{\bf udword}}]{nb1, }
+\item[{const {\bf A\+A\+BB} $\ast$$\ast$}]{array1, }
+\item[{{\bf Pairs} \&}]{pairs}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_file_a41c46a5eb47ab0e3946e08c45dea5c0e}{}\label{Opcode_8h_file_a41c46a5eb47ab0e3946e08c45dea5c0e}
+Brute-\/force bipartite box pruning. Returns a list of overlapping pairs of boxes, each box of the pair belongs to a different set. 
+\begin{DoxyParams}{Parameters}
+{\em nb0} & \mbox{[}in\mbox{]} number of boxes in the first set \\
+\hline
+{\em array0} & \mbox{[}in\mbox{]} array of boxes for the first set \\
+\hline
+{\em nb1} & \mbox{[}in\mbox{]} number of boxes in the second set \\
+\hline
+{\em array1} & \mbox{[}in\mbox{]} array of boxes for the second set \\
+\hline
+{\em pairs} & \mbox{[}out\mbox{]} array of overlapping pairs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success. 
+\end{DoxyReturn}
+\index{Opcode.\+h@{Opcode.\+h}!Brute\+Force\+Complete\+Box\+Test@{Brute\+Force\+Complete\+Box\+Test}}
+\index{Brute\+Force\+Complete\+Box\+Test@{Brute\+Force\+Complete\+Box\+Test}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Brute\+Force\+Complete\+Box\+Test(udword nb, const A\+A\+B\+B $\ast$$\ast$array, Pairs \&pairs)}{BruteForceCompleteBoxTest(udword nb, const AABB **array, Pairs &pairs)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Opcode\+::\+Brute\+Force\+Complete\+Box\+Test (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{nb, }
+\item[{const {\bf A\+A\+BB} $\ast$$\ast$}]{array, }
+\item[{{\bf Pairs} \&}]{pairs}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_file_add9d48289fde81a9c7b364ab2d1d7e9c}{}\label{Opcode_8h_file_add9d48289fde81a9c7b364ab2d1d7e9c}
+Complete box pruning. Returns a list of overlapping pairs of boxes, each box of the pair belongs to the same set. 
+\begin{DoxyParams}{Parameters}
+{\em nb} & \mbox{[}in\mbox{]} number of boxes \\
+\hline
+{\em array} & \mbox{[}in\mbox{]} array of boxes \\
+\hline
+{\em pairs} & \mbox{[}out\mbox{]} array of overlapping pairs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success. 
+\end{DoxyReturn}
+\index{Opcode.\+h@{Opcode.\+h}!Complete\+Box\+Pruning@{Complete\+Box\+Pruning}}
+\index{Complete\+Box\+Pruning@{Complete\+Box\+Pruning}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Complete\+Box\+Pruning(udword nb, const A\+A\+B\+B $\ast$$\ast$array, Pairs \&pairs, const Axes \&axes)}{CompleteBoxPruning(udword nb, const AABB **array, Pairs &pairs, const Axes &axes)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Opcode\+::\+Complete\+Box\+Pruning (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{nb, }
+\item[{const {\bf A\+A\+BB} $\ast$$\ast$}]{array, }
+\item[{{\bf Pairs} \&}]{pairs, }
+\item[{const {\bf Axes} \&}]{axes}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_file_a1cef5c571309332ab0b5b4aada4c636a}{}\label{Opcode_8h_file_a1cef5c571309332ab0b5b4aada4c636a}
+Complete box pruning. Returns a list of overlapping pairs of boxes, each box of the pair belongs to the same set. 
+\begin{DoxyParams}{Parameters}
+{\em nb} & \mbox{[}in\mbox{]} number of boxes \\
+\hline
+{\em array} & \mbox{[}in\mbox{]} array of boxes \\
+\hline
+{\em pairs} & \mbox{[}out\mbox{]} array of overlapping pairs \\
+\hline
+{\em axes} & \mbox{[}in\mbox{]} projection order (0,2,1 is often best) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success. 
+\end{DoxyReturn}
+\index{Opcode.\+h@{Opcode.\+h}!Compute\+Local\+Direction@{Compute\+Local\+Direction}}
+\index{Compute\+Local\+Direction@{Compute\+Local\+Direction}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Compute\+Local\+Direction(\+Point \&local\+\_\+dir, const Point \&world\+\_\+dir, const Matrix4x4 \&world)}{ComputeLocalDirection(Point &local_dir, const Point &world_dir, const Matrix4x4 &world)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Opcode\+::\+Compute\+Local\+Direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{local\+\_\+dir, }
+\item[{const {\bf Point} \&}]{world\+\_\+dir, }
+\item[{const {\bf Matrix4x4} \&}]{world}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_file_acf3627c26479377bfe77e9245b949247}{}\label{Opcode_8h_file_acf3627c26479377bfe77e9245b949247}
+Transforms a direction vector from world space to local space 
+\begin{DoxyParams}{Parameters}
+{\em local\+\_\+dir} & \mbox{[}out\mbox{]} direction vector in local space \\
+\hline
+{\em world\+\_\+dir} & \mbox{[}in\mbox{]} direction vector in world space \\
+\hline
+{\em world} & \mbox{[}in\mbox{]} world transform \\
+\hline
+\end{DoxyParams}
+\index{Opcode.\+h@{Opcode.\+h}!Compute\+Local\+Point@{Compute\+Local\+Point}}
+\index{Compute\+Local\+Point@{Compute\+Local\+Point}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Compute\+Local\+Point(\+Point \&local\+\_\+pt, const Point \&world\+\_\+pt, const Matrix4x4 \&world)}{ComputeLocalPoint(Point &local_pt, const Point &world_pt, const Matrix4x4 &world)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Opcode\+::\+Compute\+Local\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} \&}]{local\+\_\+pt, }
+\item[{const {\bf Point} \&}]{world\+\_\+pt, }
+\item[{const {\bf Matrix4x4} \&}]{world}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_file_abe5d73b2a271f3b3773285d803b9919b}{}\label{Opcode_8h_file_abe5d73b2a271f3b3773285d803b9919b}
+Transforms a position vector from world space to local space 
+\begin{DoxyParams}{Parameters}
+{\em local\+\_\+pt} & \mbox{[}out\mbox{]} position vector in local space \\
+\hline
+{\em world\+\_\+pt} & \mbox{[}in\mbox{]} position vector in world space \\
+\hline
+{\em world} & \mbox{[}in\mbox{]} world transform \\
+\hline
+\end{DoxyParams}
+\index{Opcode.\+h@{Opcode.\+h}!Compute\+Local\+Ray@{Compute\+Local\+Ray}}
+\index{Compute\+Local\+Ray@{Compute\+Local\+Ray}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Compute\+Local\+Ray(\+Ray \&local\+\_\+ray, const Ray \&world\+\_\+ray, const Matrix4x4 \&world)}{ComputeLocalRay(Ray &local_ray, const Ray &world_ray, const Matrix4x4 &world)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Opcode\+::\+Compute\+Local\+Ray (
+\begin{DoxyParamCaption}
+\item[{{\bf Ray} \&}]{local\+\_\+ray, }
+\item[{const {\bf Ray} \&}]{world\+\_\+ray, }
+\item[{const {\bf Matrix4x4} \&}]{world}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_file_a8fba2e97ee4cf5599297fba2016a14e1}{}\label{Opcode_8h_file_a8fba2e97ee4cf5599297fba2016a14e1}
+Transforms a ray from world space to local space 
+\begin{DoxyParams}{Parameters}
+{\em local\+\_\+ray} & \mbox{[}out\mbox{]} ray in local space \\
+\hline
+{\em world\+\_\+ray} & \mbox{[}in\mbox{]} ray in world space \\
+\hline
+{\em world} & \mbox{[}in\mbox{]} world transform \\
+\hline
+\end{DoxyParams}
+\index{Opcode.\+h@{Opcode.\+h}!Transform\+Plane@{Transform\+Plane}}
+\index{Transform\+Plane@{Transform\+Plane}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Transform\+Plane(\+Plane \&transformed, const Plane \&plane, const Matrix4x4 \&transform)}{TransformPlane(Plane &transformed, const Plane &plane, const Matrix4x4 &transform)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Opcode\+::\+Transform\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf Plane} \&}]{transformed, }
+\item[{const {\bf Plane} \&}]{plane, }
+\item[{const {\bf Matrix4x4} \&}]{transform}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_file_a107558544112ff4730d11851b38c51f0}{}\label{Opcode_8h_file_a107558544112ff4730d11851b38c51f0}
+Transforms a plane by a 4x4 matrix. Same as \hyperlink{classOpcode_1_1Plane}{Plane} $\ast$ \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} operator, but faster. 
+\begin{DoxyParams}{Parameters}
+{\em transformed} & \mbox{[}out\mbox{]} transformed plane \\
+\hline
+{\em plane} & \mbox{[}in\mbox{]} source plane \\
+\hline
+{\em transform} & \mbox{[}in\mbox{]} transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+the plane normal must be unit-\/length 
+\end{DoxyWarning}
+\index{Opcode.\+h@{Opcode.\+h}!Transform\+Plane@{Transform\+Plane}}
+\index{Transform\+Plane@{Transform\+Plane}!Opcode.\+h@{Opcode.\+h}}
+\subsubsection[{\texorpdfstring{Transform\+Plane(\+Plane \&plane, const Matrix4x4 \&transform)}{TransformPlane(Plane &plane, const Matrix4x4 &transform)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Opcode\+::\+Transform\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf Plane} \&}]{plane, }
+\item[{const {\bf Matrix4x4} \&}]{transform}
+\end{DoxyParamCaption}
+)}\hypertarget{Opcode_8h_file_a711f95bc363d7b169f96ead11b60f35e}{}\label{Opcode_8h_file_a711f95bc363d7b169f96ead11b60f35e}
+Transforms a plane by a 4x4 matrix. Same as \hyperlink{classOpcode_1_1Plane}{Plane} $\ast$ \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} operator, but faster. 
+\begin{DoxyParams}{Parameters}
+{\em plane} & \mbox{[}in/out\mbox{]} source plane (transformed on return) \\
+\hline
+{\em transform} & \mbox{[}in\mbox{]} transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+the plane normal must be unit-\/length 
+\end{DoxyWarning}

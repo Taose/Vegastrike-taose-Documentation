@@ -1,0 +1,73 @@
+\hypertarget{classeasyDomFactory}{}\section{easy\+Dom\+Factory$<$ dom\+Node\+Type $>$ Class Template Reference}
+\label{classeasyDomFactory}\index{easy\+Dom\+Factory$<$ dom\+Node\+Type $>$@{easy\+Dom\+Factory$<$ dom\+Node\+Type $>$}}
+
+
+Collaboration diagram for easy\+Dom\+Factory$<$ dom\+Node\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d65/classeasyDomFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeasyDomFactory_1_1easyDomFactoryXML}{easy\+Dom\+Factory\+X\+ML}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries get\+Color} (char $\ast$name, float color\mbox{[}4\mbox{]})\hypertarget{classeasyDomFactory_a2ee4a61364d6891caf5f600a506270db}{}\label{classeasyDomFactory_a2ee4a61364d6891caf5f600a506270db}
+
+\item 
+char $\ast$ {\bfseries get\+Variable} (char $\ast$section, char $\ast$name)\hypertarget{classeasyDomFactory_a572ca37a3ef70969d289bbc8daddeb3c}{}\label{classeasyDomFactory_a572ca37a3ef70969d289bbc8daddeb3c}
+
+\item 
+void {\bfseries c\+\_\+alike\+\_\+to\+\_\+xml} (const char $\ast$filename)\hypertarget{classeasyDomFactory_a50dfdbde0252ba77493370f8a02b1722}{}\label{classeasyDomFactory_a50dfdbde0252ba77493370f8a02b1722}
+
+\item 
+dom\+Node\+Type $\ast$ {\bfseries Load\+X\+ML} (const char $\ast$filename)\hypertarget{classeasyDomFactory_a94e57295429bf3afdfb2cb3a096501d8}{}\label{classeasyDomFactory_a94e57295429bf3afdfb2cb3a096501d8}
+
+\item 
+dom\+Node\+Type $\ast$ {\bfseries Load\+Calike} (const char $\ast$filename)\hypertarget{classeasyDomFactory_afecb6103b2fa7e0a25ae02f6560f55c7}{}\label{classeasyDomFactory_afecb6103b2fa7e0a25ae02f6560f55c7}
+
+\item 
+void {\bfseries do\+Text\+Buffer} ()\hypertarget{classeasyDomFactory_a9a12778b23a93196658415a9ec1c9fe4}{}\label{classeasyDomFactory_a9a12778b23a93196658415a9ec1c9fe4}
+
+\item 
+void {\bfseries begin\+Element} (const string \&name, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{classeasyDomFactory_a9c8a2ae3d673c61f85a200214bb846cc}{}\label{classeasyDomFactory_a9c8a2ae3d673c61f85a200214bb846cc}
+
+\item 
+void {\bfseries end\+Element} (const string \&name)\hypertarget{classeasyDomFactory_ae176e5701a331924085fc59d237c5366}{}\label{classeasyDomFactory_ae176e5701a331924085fc59d237c5366}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries char\+Handler} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$s, int len)\hypertarget{classeasyDomFactory_a49fbf125db12ac26420ce190aa914da5}{}\label{classeasyDomFactory_a49fbf125db12ac26420ce190aa914da5}
+
+\item 
+static void {\bfseries begin\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{classeasyDomFactory_ac1c745ddee5f5cdbf238b78dd8ae6769}{}\label{classeasyDomFactory_ac1c745ddee5f5cdbf238b78dd8ae6769}
+
+\item 
+static void {\bfseries end\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name)\hypertarget{classeasyDomFactory_a7537d4e6cb2e509e1f188abf9b5cb1bb}{}\label{classeasyDomFactory_a7537d4e6cb2e509e1f188abf9b5cb1bb}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structeasyDomFactory_1_1easyDomFactoryXML}{easy\+Dom\+Factory\+::easy\+Dom\+Factory\+X\+ML} $\ast$ {\bfseries xml}\hypertarget{classeasyDomFactory_a960bfb4852ec72f92c9759299ed8a26a}{}\label{classeasyDomFactory_a960bfb4852ec72f92c9759299ed8a26a}
+
+\item 
+stack$<$ dom\+Node\+Type $\ast$ $>$ {\bfseries nodestack}\hypertarget{classeasyDomFactory_a6117323a04bafc6d04729b1a61775a18}{}\label{classeasyDomFactory_a6117323a04bafc6d04729b1a61775a18}
+
+\item 
+dom\+Node\+Type $\ast$ {\bfseries topnode}\hypertarget{classeasyDomFactory_a2ed304f8aa44c995266abb8289ed8c70}{}\label{classeasyDomFactory_a2ed304f8aa44c995266abb8289ed8c70}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+easydom.\+h\end{DoxyCompactItemize}

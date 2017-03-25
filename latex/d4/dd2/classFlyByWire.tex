@@ -1,0 +1,126 @@
+\hypertarget{classFlyByWire}{}\section{Fly\+By\+Wire Class Reference}
+\label{classFlyByWire}\index{Fly\+By\+Wire@{Fly\+By\+Wire}}
+
+
+{\ttfamily \#include $<$flybywire.\+h$>$}
+
+
+
+Inheritance diagram for Fly\+By\+Wire\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dde/classFlyByWire__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fly\+By\+Wire\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d12/classFlyByWire__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Switch\+Flight\+Mode} ()\hypertarget{classFlyByWire_af9250cf7eafb904f21574990d5c18bbb}{}\label{classFlyByWire_af9250cf7eafb904f21574990d5c18bbb}
+
+\item 
+void \hyperlink{classFlyByWire_a2eb3522f0b4c44f01d60c26e58e99970}{Thrust\+Right} (float percent)\hypertarget{classFlyByWire_a2eb3522f0b4c44f01d60c26e58e99970}{}\label{classFlyByWire_a2eb3522f0b4c44f01d60c26e58e99970}
+
+\begin{DoxyCompactList}\small\item\em Turns on or off velocity resolution. \end{DoxyCompactList}\item 
+void {\bfseries Thrust\+Up} (float percent)\hypertarget{classFlyByWire_a7f42f95122ce1140fff6c35977e398b4}{}\label{classFlyByWire_a7f42f95122ce1140fff6c35977e398b4}
+
+\item 
+void {\bfseries Thrust\+Front} (float percent)\hypertarget{classFlyByWire_a0964410d899a57570177986f729035b6}{}\label{classFlyByWire_a0964410d899a57570177986f729035b6}
+
+\item 
+void {\bfseries Direct\+Thrust\+Right} (float percent)\hypertarget{classFlyByWire_acc553e7ce408bf5ca1d333d232f8830f}{}\label{classFlyByWire_acc553e7ce408bf5ca1d333d232f8830f}
+
+\item 
+void {\bfseries Direct\+Thrust\+Up} (float percent)\hypertarget{classFlyByWire_af7155f932bb00a0967edaf8cd2d5f709}{}\label{classFlyByWire_af7155f932bb00a0967edaf8cd2d5f709}
+
+\item 
+void {\bfseries Direct\+Thrust\+Front} (float percent)\hypertarget{classFlyByWire_a80d37467a1489e74fe30764c2f5d4079}{}\label{classFlyByWire_a80d37467a1489e74fe30764c2f5d4079}
+
+\item 
+void {\bfseries Shelton\+Slide} (bool onoff)\hypertarget{classFlyByWire_a4534776da46c3f1cdb186e4a1c53a370}{}\label{classFlyByWire_a4534776da46c3f1cdb186e4a1c53a370}
+
+\item 
+void {\bfseries Inertial\+Flight} (bool onoff)\hypertarget{classFlyByWire_a978a1fbd8062b6b9712b5a145aedacac}{}\label{classFlyByWire_a978a1fbd8062b6b9712b5a145aedacac}
+
+\item 
+bool {\bfseries Inertial\+Flight} () const \hypertarget{classFlyByWire_a6e7b6d2b30bf89221550478c064196f6}{}\label{classFlyByWire_a6e7b6d2b30bf89221550478c064196f6}
+
+\item 
+bool {\bfseries Inertial\+Flight\+Enable} () const \hypertarget{classFlyByWire_a39fe7199c12e3caf0e73b6dd2ce26fc1}{}\label{classFlyByWire_a39fe7199c12e3caf0e73b6dd2ce26fc1}
+
+\item 
+void \hyperlink{classFlyByWire_a02e54abfef72087848790346b31e1ee4}{Stop} (float percentage)\hypertarget{classFlyByWire_a02e54abfef72087848790346b31e1ee4}{}\label{classFlyByWire_a02e54abfef72087848790346b31e1ee4}
+
+\begin{DoxyCompactList}\small\item\em Stops... sets desired velocity to 0. \end{DoxyCompactList}\item 
+void \hyperlink{classFlyByWire_a322551d7199efa744babab4ada6634a4}{Right} (float percentage)\hypertarget{classFlyByWire_a322551d7199efa744babab4ada6634a4}{}\label{classFlyByWire_a322551d7199efa744babab4ada6634a4}
+
+\begin{DoxyCompactList}\small\item\em pass in the percentage of the turn they were turnin right. -\/age indicates left \end{DoxyCompactList}\item 
+void \hyperlink{classFlyByWire_a95f789458a0e84048eb1c5f5a8c4f063}{Up} (float percentage)\hypertarget{classFlyByWire_a95f789458a0e84048eb1c5f5a8c4f063}{}\label{classFlyByWire_a95f789458a0e84048eb1c5f5a8c4f063}
+
+\begin{DoxyCompactList}\small\item\em pass in the percentage of the turn they were turning up \end{DoxyCompactList}\item 
+void {\bfseries Roll\+Right} (float percentage)\hypertarget{classFlyByWire_a7ccdbe972b502f304ccff07813cecd09}{}\label{classFlyByWire_a7ccdbe972b502f304ccff07813cecd09}
+
+\item 
+void \hyperlink{classFlyByWire_a09437ec17ae996e175aa4d5a1a76e713}{Afterburn} (float percentage)\hypertarget{classFlyByWire_a09437ec17ae996e175aa4d5a1a76e713}{}\label{classFlyByWire_a09437ec17ae996e175aa4d5a1a76e713}
+
+\begin{DoxyCompactList}\small\item\em Specifies match speed to use afterbuner and gives in higher velocity. \end{DoxyCompactList}\item 
+void \hyperlink{classFlyByWire_a70540d9a99dcebafa3515d54ebce76c3}{Match\+Speed} (const Vector \&velocity)\hypertarget{classFlyByWire_a70540d9a99dcebafa3515d54ebce76c3}{}\label{classFlyByWire_a70540d9a99dcebafa3515d54ebce76c3}
+
+\begin{DoxyCompactList}\small\item\em matches set\+\_\+speed to this velocity\textquotesingle{}s magnitude \end{DoxyCompactList}\item 
+void \hyperlink{classFlyByWire_a355b7129a48a80633858e1b22a36d5b8}{Accel} (float percentage)\hypertarget{classFlyByWire_a355b7129a48a80633858e1b22a36d5b8}{}\label{classFlyByWire_a355b7129a48a80633858e1b22a36d5b8}
+
+\begin{DoxyCompactList}\small\item\em negative is decel... 0 = nothing \end{DoxyCompactList}\item 
+void \hyperlink{classFlyByWire_aad45982f30b6a60845992fde8d4e0751}{Execute} ()\hypertarget{classFlyByWire_aad45982f30b6a60845992fde8d4e0751}{}\label{classFlyByWire_aad45982f30b6a60845992fde8d4e0751}
+
+\begin{DoxyCompactList}\small\item\em The function that gets called and executes all queued suborders. \end{DoxyCompactList}\item 
+virtual std\+::string {\bfseries get\+Order\+Description} ()\hypertarget{classFlyByWire_a79dc98cd05ef198e40b45308fdd871fd}{}\label{classFlyByWire_a79dc98cd05ef198e40b45308fdd871fd}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector {\bfseries Desired\+Shift\+Velocity}\hypertarget{classFlyByWire_a0613fc81986fb77ce6df328d68145201}{}\label{classFlyByWire_a0613fc81986fb77ce6df328d68145201}
+
+\item 
+Vector {\bfseries Direct\+Thrust}\hypertarget{classFlyByWire_a0753a76934bad3f22ccc6758a76ab5c3}{}\label{classFlyByWire_a0753a76934bad3f22ccc6758a76ab5c3}
+
+\item 
+bool \hyperlink{classFlyByWire_ab4d7371aa25c9714effd69abaf4595f2}{sheltonslide}\hypertarget{classFlyByWire_ab4d7371aa25c9714effd69abaf4595f2}{}\label{classFlyByWire_ab4d7371aa25c9714effd69abaf4595f2}
+
+\begin{DoxyCompactList}\small\item\em If shelton slide, do not have the computer match linear. \end{DoxyCompactList}\item 
+bool {\bfseries controltype}\hypertarget{classFlyByWire_ae113d29bc358d047ff657cfa52507ae4}{}\label{classFlyByWire_ae113d29bc358d047ff657cfa52507ae4}
+
+\item 
+bool {\bfseries inertial\+\_\+flight\+\_\+model}\hypertarget{classFlyByWire_affd1a8888199f1deb3b5531979f8a512}{}\label{classFlyByWire_affd1a8888199f1deb3b5531979f8a512}
+
+\item 
+bool {\bfseries inertial\+\_\+flight\+\_\+enable}\hypertarget{classFlyByWire_adb29bbf8bbd933a99acf00d858b3eb87}{}\label{classFlyByWire_adb29bbf8bbd933a99acf00d858b3eb87}
+
+\item 
+bool {\bfseries stolen\+\_\+setspeed}\hypertarget{classFlyByWire_a0006e4dbddb9c9ac966c9a6951b5525c}{}\label{classFlyByWire_a0006e4dbddb9c9ac966c9a6951b5525c}
+
+\item 
+float {\bfseries stolen\+\_\+setspeed\+\_\+value}\hypertarget{classFlyByWire_a15747b2d6555e33ff7af0f820553dfa3}{}\label{classFlyByWire_a15747b2d6555e33ff7af0f820553dfa3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class uses a parent\textquotesingle{}s computer struct to set the appropriate desired linear and angular velocity based on what the user input may be 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/flybywire.\+h\item 
+cmd/ai/flybywire.\+cpp\end{DoxyCompactItemize}

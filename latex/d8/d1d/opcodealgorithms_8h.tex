@@ -1,0 +1,116 @@
+\hypertarget{opcodealgorithms_8h}{}\section{cmd/collide2/opcodealgorithms.h File Reference}
+\label{opcodealgorithms_8h}\index{cmd/collide2/opcodealgorithms.\+h@{cmd/collide2/opcodealgorithms.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{df/d01/opcodealgorithms_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+N\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+M\+E\+T\+H\+OD void \hyperlink{opcodealgorithms_8h_a9c120886d102ae86c087e459a5aa8aa7}{C\+S\+::\+Swap} (T \&a, T \&b)
+\item 
+{\footnotesize template$<$class T , class Fn $>$ }\\C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+N\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+M\+E\+T\+H\+OD Fn \& \hyperlink{opcodealgorithms_8h_adb936c81514863b8850974cc9ecba29e}{C\+S\+::\+For\+Each} (T it, Fn \&Func)
+\item 
+{\footnotesize template$<$class T , class Fn $>$ }\\C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+N\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+M\+E\+T\+H\+OD Fn \& \hyperlink{opcodealgorithms_8h_a0ea93121f1007138cff02f1f3eab8774}{C\+S\+::\+For\+Each} (T $\ast$start, T $\ast$end, Fn \&Func)
+\item 
+{\footnotesize template$<$class T , class Fn , class P $>$ }\\C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+N\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+M\+E\+T\+H\+OD Fn \& \hyperlink{opcodealgorithms_8h_af4de90b2ae1d1b5d33e90ab43c5ad228}{C\+S\+::\+For\+Each} (T it, Fn \&Func, P \&p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+General Algorithms 
+
+\subsection{Function Documentation}
+\index{opcodealgorithms.\+h@{opcodealgorithms.\+h}!For\+Each@{For\+Each}}
+\index{For\+Each@{For\+Each}!opcodealgorithms.\+h@{opcodealgorithms.\+h}}
+\subsubsection[{\texorpdfstring{For\+Each(\+T it, Fn \&\+Func)}{ForEach(T it, Fn &Func)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class Fn $>$ C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+N\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+M\+E\+T\+H\+OD Fn\& C\+S\+::\+For\+Each (
+\begin{DoxyParamCaption}
+\item[{T}]{it, }
+\item[{Fn \&}]{Func}
+\end{DoxyParamCaption}
+)}\hypertarget{opcodealgorithms_8h_file_adb936c81514863b8850974cc9ecba29e}{}\label{opcodealgorithms_8h_file_adb936c81514863b8850974cc9ecba29e}
+Iterate over all elements in the iterator and perform operation given by Func. 
+\begin{DoxyCode}
+csArray<int> anArray;
+anArray.Push (1);
+anArray.Push (4);
+\hyperlink{opcodealgorithms_8h_adb936c81514863b8850974cc9ecba29e}{ForEach} (anArray.GetIterator (), OurFunctor ());
+\end{DoxyCode}
+ 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{d8/d1d/opcodealgorithms_8h_adb936c81514863b8850974cc9ecba29e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{d8/d1d/opcodealgorithms_8h_adb936c81514863b8850974cc9ecba29e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{opcodealgorithms.\+h@{opcodealgorithms.\+h}!For\+Each@{For\+Each}}
+\index{For\+Each@{For\+Each}!opcodealgorithms.\+h@{opcodealgorithms.\+h}}
+\subsubsection[{\texorpdfstring{For\+Each(\+T $\ast$start, T $\ast$end, Fn \&\+Func)}{ForEach(T *start, T *end, Fn &Func)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class Fn $>$ C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+N\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+M\+E\+T\+H\+OD Fn\& C\+S\+::\+For\+Each (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{start, }
+\item[{T $\ast$}]{end, }
+\item[{Fn \&}]{Func}
+\end{DoxyParamCaption}
+)}\hypertarget{opcodealgorithms_8h_file_a0ea93121f1007138cff02f1f3eab8774}{}\label{opcodealgorithms_8h_file_a0ea93121f1007138cff02f1f3eab8774}
+Iterate over all elements in the list and perform operation given by Func. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{d8/d1d/opcodealgorithms_8h_a0ea93121f1007138cff02f1f3eab8774_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{opcodealgorithms.\+h@{opcodealgorithms.\+h}!For\+Each@{For\+Each}}
+\index{For\+Each@{For\+Each}!opcodealgorithms.\+h@{opcodealgorithms.\+h}}
+\subsubsection[{\texorpdfstring{For\+Each(\+T it, Fn \&\+Func, P \&p)}{ForEach(T it, Fn &Func, P &p)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class Fn , class P $>$ C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+N\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+M\+E\+T\+H\+OD Fn\& C\+S\+::\+For\+Each (
+\begin{DoxyParamCaption}
+\item[{T}]{it, }
+\item[{Fn \&}]{Func, }
+\item[{P \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{opcodealgorithms_8h_file_af4de90b2ae1d1b5d33e90ab43c5ad228}{}\label{opcodealgorithms_8h_file_af4de90b2ae1d1b5d33e90ab43c5ad228}
+Iterate over all elements in the iterator and perform operation given by Func. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{d8/d1d/opcodealgorithms_8h_af4de90b2ae1d1b5d33e90ab43c5ad228_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{opcodealgorithms.\+h@{opcodealgorithms.\+h}!Swap@{Swap}}
+\index{Swap@{Swap}!opcodealgorithms.\+h@{opcodealgorithms.\+h}}
+\subsubsection[{\texorpdfstring{Swap(\+T \&a, T \&b)}{Swap(T &a, T &b)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ C\+S\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+N\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+M\+E\+T\+H\+OD void C\+S\+::\+Swap (
+\begin{DoxyParamCaption}
+\item[{T \&}]{a, }
+\item[{T \&}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{opcodealgorithms_8h_file_a9c120886d102ae86c087e459a5aa8aa7}{}\label{opcodealgorithms_8h_file_a9c120886d102ae86c087e459a5aa8aa7}
+Swap two elements 

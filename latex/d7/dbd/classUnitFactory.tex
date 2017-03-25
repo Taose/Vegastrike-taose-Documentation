@@ -1,0 +1,125 @@
+\hypertarget{classUnitFactory}{}\section{Unit\+Factory Class Reference}
+\label{classUnitFactory}\index{Unit\+Factory@{Unit\+Factory}}
+
+
+Collaboration diagram for Unit\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d6e/classUnitFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classUnit}{Unit} $\ast$ {\bfseries get\+Master\+Part\+List} ()\hypertarget{classUnitFactory_af2d4b0bcc7622d5a13d9d7c258824413}{}\label{classUnitFactory_af2d4b0bcc7622d5a13d9d7c258824413}
+
+\item 
+static \hyperlink{classUnit}{Unit} $\ast$ {\bfseries create\+Unit} ()\hypertarget{classUnitFactory_ab307ecd81c1373a307069277a8234fb3}{}\label{classUnitFactory_ab307ecd81c1373a307069277a8234fb3}
+
+\item 
+static \hyperlink{classUnit}{Unit} $\ast$ {\bfseries create\+Unit} (const char $\ast$filename, bool Sub\+Unit, int faction, std\+::string customized\+Unit=string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$flightgroup=N\+U\+LL, int fg\+\_\+subnumber=0, string $\ast$netxml=N\+U\+LL, Obj\+Serial netcreate=0)\hypertarget{classUnitFactory_a2fe94bbc13a5cf6c4fc6c0346d304df0}{}\label{classUnitFactory_a2fe94bbc13a5cf6c4fc6c0346d304df0}
+
+\item 
+static \hyperlink{classUnit}{Unit} $\ast$ {\bfseries create\+Server\+Side\+Unit} (const char $\ast$filename, bool Sub\+Unit, int faction, std\+::string customized\+Unit=string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$flightgroup=N\+U\+LL, int fg\+\_\+subnumber=0)\hypertarget{classUnitFactory_a0cb0ef3b44384da5253a67b266435d2a}{}\label{classUnitFactory_a0cb0ef3b44384da5253a67b266435d2a}
+
+\item 
+static \hyperlink{classUnit}{Unit} $\ast$ {\bfseries create\+Unit} (std\+::vector$<$ \hyperlink{classMesh}{Mesh} $\ast$ $>$ \&meshes, bool Subunit, int faction)\hypertarget{classUnitFactory_a1454bfb0c4d94a35ade9fe6d127dba4e}{}\label{classUnitFactory_a1454bfb0c4d94a35ade9fe6d127dba4e}
+
+\item 
+static \hyperlink{classNebula}{Nebula} $\ast$ {\bfseries create\+Nebula} (const char $\ast$unitfile, bool SubU, int faction, \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL, int fg\+\_\+snumber=0, Obj\+Serial netcreate=0)\hypertarget{classUnitFactory_a97806bdb5f5a559d2bfb80b8539167ff}{}\label{classUnitFactory_a97806bdb5f5a559d2bfb80b8539167ff}
+
+\item 
+static \hyperlink{classMissile}{Missile} $\ast$ {\bfseries create\+Missile} (const char $\ast$filename, int faction, const string \&modifications, const float damage, float phasedamage, float time, float radialeffect, float radmult, float detonation\+\_\+radius, Obj\+Serial netcreate=0)\hypertarget{classUnitFactory_a3621db6385d03ba6d3f9d5d5719b0ed3}{}\label{classUnitFactory_a3621db6385d03ba6d3f9d5d5719b0ed3}
+
+\item 
+static \hyperlink{classPlanet}{Planet} $\ast$ {\bfseries create\+Planet} ()\hypertarget{classUnitFactory_ada4e217d2d9c6bcb749e7716689ed96c}{}\label{classUnitFactory_ada4e217d2d9c6bcb749e7716689ed96c}
+
+\item 
+static \hyperlink{classPlanet}{Planet} $\ast$ {\bfseries create\+Planet} (Q\+Vector x, Q\+Vector \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float vely, const Vector \&rotvel, float pos, float gravity, float radius, const std\+::string \&filename, const std\+::string \&technique, const std\+::string \&unitname, B\+L\+E\+N\+D\+F\+U\+NC blendsrc, B\+L\+E\+N\+D\+F\+U\+NC blenddst, const vector$<$ string $>$ \&dest, const Q\+Vector \&orbitcent, \hyperlink{classUnit}{Unit} $\ast$parent, const \hyperlink{structGFXMaterial}{G\+F\+X\+Material} \&ourmat, const std\+::vector$<$ \hyperlink{structGFXLightLocal}{G\+F\+X\+Light\+Local} $>$ \&ligh, int faction, string fullname, bool inside\+\_\+out=false, Obj\+Serial netcreate=0)\hypertarget{classUnitFactory_a30d450eca3e19251fe06d1c079b95139}{}\label{classUnitFactory_a30d450eca3e19251fe06d1c079b95139}
+
+\item 
+static \hyperlink{classEnhancement}{Enhancement} $\ast$ {\bfseries create\+Enhancement} (const char $\ast$filename, int faction, const string \&modifications, \hyperlink{classFlightgroup}{Flightgroup} $\ast$flightgrp=N\+U\+LL, int fg\+\_\+subnumber=0)\hypertarget{classUnitFactory_a47ea935cdb7901c49a3a6f3460f02baf}{}\label{classUnitFactory_a47ea935cdb7901c49a3a6f3460f02baf}
+
+\item 
+static \hyperlink{classBuilding}{Building} $\ast$ {\bfseries create\+Building} (\hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$parent, bool vehicle, const char $\ast$filename, bool Sub\+Unit, int faction, const std\+::string \&unit\+Modifications=std\+::string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL)\hypertarget{classUnitFactory_a806dcd4d145fd6269cfbab7779467046}{}\label{classUnitFactory_a806dcd4d145fd6269cfbab7779467046}
+
+\item 
+static \hyperlink{classBuilding}{Building} $\ast$ {\bfseries create\+Building} (\hyperlink{classTerrain}{Terrain} $\ast$parent, bool vehicle, const char $\ast$filename, bool Sub\+Unit, int faction, const std\+::string \&unit\+Modifications=std\+::string(\char`\"{}\char`\"{}), \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL)\hypertarget{classUnitFactory_ac0016124083d287ab9e9ba178854568c}{}\label{classUnitFactory_ac0016124083d287ab9e9ba178854568c}
+
+\item 
+static \hyperlink{classAsteroid}{Asteroid} $\ast$ {\bfseries create\+Asteroid} (const char $\ast$filename, int faction, \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg=N\+U\+LL, int fg\+\_\+snumber=0, float difficulty=.\+01, Obj\+Serial netcreate=0)\hypertarget{classUnitFactory_ab13d4427c3a7f1bd2e776b6a5e5ec567}{}\label{classUnitFactory_ab13d4427c3a7f1bd2e776b6a5e5ec567}
+
+\item 
+static \hyperlink{classTerrain}{Terrain} $\ast$ {\bfseries create\+Terrain} (const char $\ast$file, Vector scale, float position, float radius, \hyperlink{classMatrix}{Matrix} \&t)\hypertarget{classUnitFactory_a791eae9a9b1c5d8d01dad0d24b4c3eaf}{}\label{classUnitFactory_a791eae9a9b1c5d8d01dad0d24b4c3eaf}
+
+\item 
+static \hyperlink{classContinuousTerrain}{Continuous\+Terrain} $\ast$ {\bfseries create\+Continuous\+Terrain} (const char $\ast$file, Vector scale, float position, \hyperlink{classMatrix}{Matrix} \&t)\hypertarget{classUnitFactory_a2bf0c220f013aafd96518059126f0180}{}\label{classUnitFactory_a2bf0c220f013aafd96518059126f0180}
+
+\item 
+static void {\bfseries add\+Unit\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, const string \&filename, const string \&name, const string \&fullname, bool Sub\+Unit, int faction, std\+::string customized\+Unit, const \hyperlink{classClientState}{Client\+State} \&curr\+\_\+state, \hyperlink{classFlightgroup}{Flightgroup} $\ast$flightgroup, int fg\+\_\+subnumber, string $\ast$netxml, Obj\+Serial netcreate)\hypertarget{classUnitFactory_a0c5cdfa16e34a3840145b14b9263ad81}{}\label{classUnitFactory_a0c5cdfa16e34a3840145b14b9263ad81}
+
+\item 
+static void {\bfseries add\+Unit\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, const \hyperlink{classUnit}{Unit} $\ast$un, string $\ast$netxml=N\+U\+LL)\hypertarget{classUnitFactory_ab830a1e7a741ce6f8c32783b353a98f6}{}\label{classUnitFactory_ab830a1e7a741ce6f8c32783b353a98f6}
+
+\item 
+static \hyperlink{classUnit}{Unit} $\ast$ {\bfseries parse\+Unit\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf)\hypertarget{classUnitFactory_a26e5a2bdbbc9b9e1cfe1969fefa00416}{}\label{classUnitFactory_a26e5a2bdbbc9b9e1cfe1969fefa00416}
+
+\item 
+static void {\bfseries add\+Planet\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, Q\+Vector x, Q\+Vector \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float vely, const Vector \&rotvel, float pos, float gravity, float radius, const char $\ast$filename, B\+L\+E\+N\+D\+F\+U\+NC sr, B\+L\+E\+N\+D\+F\+U\+NC ds, const vector$<$ string $>$ \&dest, const Q\+Vector \&orbitcent, \hyperlink{classUnit}{Unit} $\ast$parent, const \hyperlink{structGFXMaterial}{G\+F\+X\+Material} \&ourmat, const std\+::vector$<$ \hyperlink{structGFXLightLocal}{G\+F\+X\+Light\+Local} $>$ \&ligh, int faction, string fullname, bool inside\+\_\+out, Obj\+Serial netcreate)\hypertarget{classUnitFactory_a3eeb791edf9648138d8823302330c534}{}\label{classUnitFactory_a3eeb791edf9648138d8823302330c534}
+
+\item 
+static \hyperlink{classPlanet}{Planet} $\ast$ {\bfseries parse\+Planet\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf)\hypertarget{classUnitFactory_ae8970f2f67c6d508f5babc81b9561450}{}\label{classUnitFactory_ae8970f2f67c6d508f5babc81b9561450}
+
+\item 
+static void {\bfseries add\+Nebula\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, const char $\ast$unitfile, bool SubU, int faction, \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg, int fg\+\_\+snumber, Obj\+Serial netcreate)\hypertarget{classUnitFactory_a00ae7ad25a5c70d7dce7269023076462}{}\label{classUnitFactory_a00ae7ad25a5c70d7dce7269023076462}
+
+\item 
+static void {\bfseries add\+Nebula\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, const \hyperlink{classNebula}{Nebula} $\ast$neb)\hypertarget{classUnitFactory_a28a67a6e6c63c21123448e1e0c2abd4c}{}\label{classUnitFactory_a28a67a6e6c63c21123448e1e0c2abd4c}
+
+\item 
+static \hyperlink{classNebula}{Nebula} $\ast$ {\bfseries parse\+Nebula\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf)\hypertarget{classUnitFactory_a25a0a90658ac97ff80507ea3628e2aca}{}\label{classUnitFactory_a25a0a90658ac97ff80507ea3628e2aca}
+
+\item 
+static void {\bfseries add\+Missile\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, const string \&filename, const string \&name, const string \&fullname, int faction, const string \&modifications, const \hyperlink{classClientState}{Client\+State} \&curr\+\_\+state, const float damage, float phasedamage, float time, float radialeffect, float radmult, float detonation\+\_\+radius, Obj\+Serial netcreate)\hypertarget{classUnitFactory_ab0b49925df88c1843a8ef1eff364974c}{}\label{classUnitFactory_ab0b49925df88c1843a8ef1eff364974c}
+
+\item 
+static void {\bfseries add\+Missile\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, const \hyperlink{classMissile}{Missile} $\ast$mis)\hypertarget{classUnitFactory_a1931bc1e6bfbba621ae6539871b8d2e6}{}\label{classUnitFactory_a1931bc1e6bfbba621ae6539871b8d2e6}
+
+\item 
+static \hyperlink{classMissile}{Missile} $\ast$ {\bfseries parse\+Missile\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf)\hypertarget{classUnitFactory_ab01a90f5e4d8ac4f1650dc21161ee070}{}\label{classUnitFactory_ab01a90f5e4d8ac4f1650dc21161ee070}
+
+\item 
+static void {\bfseries add\+Asteroid\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, const char $\ast$filename, int faction, \hyperlink{classFlightgroup}{Flightgroup} $\ast$fg, int fg\+\_\+snumber, float difficulty, Obj\+Serial netcreate)\hypertarget{classUnitFactory_a07f80b39da2d8217fa0ce510f1163fbc}{}\label{classUnitFactory_a07f80b39da2d8217fa0ce510f1163fbc}
+
+\item 
+static void {\bfseries add\+Asteroid\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, const \hyperlink{classAsteroid}{Asteroid} $\ast$ast)\hypertarget{classUnitFactory_aac8d695a04399c7b5ca39762ba2075ee}{}\label{classUnitFactory_aac8d695a04399c7b5ca39762ba2075ee}
+
+\item 
+static \hyperlink{classAsteroid}{Asteroid} $\ast$ {\bfseries parse\+Asteroid\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf)\hypertarget{classUnitFactory_aeb38ab78e4c2a781d46b8bbae59ec00f}{}\label{classUnitFactory_aeb38ab78e4c2a781d46b8bbae59ec00f}
+
+\item 
+static void {\bfseries add\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, const \hyperlink{classUnit}{Unit} $\ast$un, bool allow\+System\+Types, string $\ast$netxml=N\+U\+LL)\hypertarget{classUnitFactory_a7e81aee11df90accce23ff8e2aad3938}{}\label{classUnitFactory_a7e81aee11df90accce23ff8e2aad3938}
+
+\item 
+static void {\bfseries end\+Buffer} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf)\hypertarget{classUnitFactory_a8f36d0fdf6f11e63c33c53cc4b29a4c2}{}\label{classUnitFactory_a8f36d0fdf6f11e63c33c53cc4b29a4c2}
+
+\item 
+static void {\bfseries broadcast\+Unit} (\hyperlink{classUnit}{Unit} $\ast$un, unsigned short zone)\hypertarget{classUnitFactory_a61245840e01d503a14f556edb88f52b3}{}\label{classUnitFactory_a61245840e01d503a14f556edb88f52b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classUnit}{Unit} $\ast$ {\bfseries \+\_\+master\+Part\+List} = N\+U\+LL\hypertarget{classUnitFactory_a4eb3456f731bf0db77aef6c7d831c18e}{}\label{classUnitFactory_a4eb3456f731bf0db77aef6c7d831c18e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/unit\+\_\+factory.\+h\item 
+cmd/unit\+\_\+factory.\+cpp\item 
+cmd/unit\+\_\+factory\+\_\+generic.\+cpp\item 
+cmd/unit\+\_\+factory\+\_\+server.\+cpp\end{DoxyCompactItemize}

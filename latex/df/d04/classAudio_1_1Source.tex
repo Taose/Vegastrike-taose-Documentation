@@ -1,0 +1,1203 @@
+\hypertarget{classAudio_1_1Source}{}\section{Audio\+:\+:Source Class Reference}
+\label{classAudio_1_1Source}\index{Audio\+::\+Source@{Audio\+::\+Source}}
+
+
+{\ttfamily \#include $<$Source.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d3/d72/classAudio_1_1Source__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/dab/classAudio_1_1Source__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1TVector3}{L\+Vector3} \hyperlink{classAudio_1_1Source_ada024d8c7c5e4c5927efda2963fe81c4}{get\+Position} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a28235d6ef6e97308dcc9d89cf57764e5}{set\+Position} (\hyperlink{classAudio_1_1TVector3}{L\+Vector3} x)  throw ()
+\item 
+\hyperlink{classAudio_1_1TVector3}{Vector3} \hyperlink{classAudio_1_1Source_ab302e1c0c516ec4b153018dbed37f0ac}{get\+Direction} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a1c0210656f9b416696448b1b5363240b}{set\+Direction} (\hyperlink{classAudio_1_1TVector3}{Vector3} x)  throw ()
+\item 
+\hyperlink{classAudio_1_1TVector3}{Vector3} \hyperlink{classAudio_1_1Source_afa2dc0a120dcdd989562ebb2b0782a4c}{get\+Velocity} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a8f2056253c08414944ae0debfb409d19}{set\+Velocity} (\hyperlink{classAudio_1_1TVector3}{Vector3} x)  throw ()
+\item 
+\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ \hyperlink{classAudio_1_1Source_a6143b8a9b5e9e14dd0ef7e3c9280cd8f}{get\+Angle\+Range} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a640e04e4d0d3e84f595592856c24d13e}{set\+Angle\+Range} (\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ r)  throw ()
+\item 
+\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ \hyperlink{classAudio_1_1Source_a3800ac08153c803fb6c631272341b6aa}{get\+Cos\+Angle\+Range} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a94ee7967af61a3b25ca6a78afc0d23f7}{set\+Cos\+Angle\+Range} (\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ r)  throw ()
+\item 
+Scalar \hyperlink{classAudio_1_1Source_a028c3f64f311a04ca08c7c09c38fe168}{get\+Radius} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a1aed580fb8be11d68b208177a75e88d4}{set\+Radius} (Scalar r)  throw ()
+\item 
+\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ \hyperlink{classAudio_1_1Source_a7af76debc465b08de34bcecb8e56a8b4}{get\+Per\+Frequency\+Radius\+Ratios} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_ad6dd130e4af3ea5a7710928e0d542747}{set\+Per\+Frequency\+Radius\+Ratios} (\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ val)  throw ()
+\item 
+\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ \hyperlink{classAudio_1_1Source_a5358425f1485df421aa010b42b59f553}{get\+Reference\+Freqs} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a3455464edef39c958b987fe45ca78371}{set\+Reference\+Freqs} (\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ val)  throw ()
+\item 
+Scalar \hyperlink{classAudio_1_1Source_adeaed3a4bbaaf6d60dd09e372d8e21e6}{get\+Gain} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a441db1be3a7072842e1a6643b65331d6}{set\+Gain} (Scalar g)  throw ()
+\item 
+bool \hyperlink{classAudio_1_1Source_aeafbb7052aea35fbfdbba9f81a4ebb2c}{is\+Looping} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a22dc52afab942aad5182511f6d669145}{set\+Looping} (bool loop)  throw ()
+\item 
+bool \hyperlink{classAudio_1_1Source_a62b43d5edb723e8297f5ad4878271175}{is\+Attenuated} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a55180fb909ec9950143b9b82e159a23a}{set\+Attenuated} (bool attenuated)  throw ()
+\item 
+bool \hyperlink{classAudio_1_1Source_a56cfa694bccbfac0a7adc232750ae3fe}{is\+Relative} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a99ae629edea3dcda748d56cc5a48b40c}{set\+Relative} (bool relative)  throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a4a6604d3195d16bdfc53b85a98c60f4d}{start\+Playing} (Timestamp start=0)  throw (\+Exception)
+\item 
+void \hyperlink{classAudio_1_1Source_a91de7bc95ce5c4cfc0d7050215829373}{stop\+Playing} ()  throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a06ed7c319ab1dd40bad9629f6065012d}{pause\+Playing} ()  throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a65ce708851ffb9435948c3dfd6c891a0}{continue\+Playing} ()  throw (\+Exception)
+\item 
+bool \hyperlink{classAudio_1_1Source_aaceb400c059019233ace3b0c10206548}{is\+Playing} () const   throw ()
+\item 
+bool \hyperlink{classAudio_1_1Source_ab5e750c91839e53326a2d9af1d2f6575}{is\+Active} () const   throw ()
+\item 
+Timestamp \hyperlink{classAudio_1_1Source_a4096dd64ab51c7f98831be31c3dea77d}{get\+Playing\+Time} () const   throw ()
+\item 
+Timestamp \hyperlink{classAudio_1_1Source_a3eb1643f3fd12dc6f0d46f35136b1c64}{get\+Wouldbe\+Playing\+Time} () const   throw ()
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1RenderableSource}{Renderable\+Source} $>$ \hyperlink{classAudio_1_1Source_a694cc1bc15662a99fe81ec6861138191}{get\+Renderable} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a4bbbbb104024c91bf9f6317417b95d41}{set\+Renderable} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1RenderableSource}{Renderable\+Source} $>$ ptr)  throw ()
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1UserData}{User\+Data} $>$ \hyperlink{classAudio_1_1Source_ac54fccdaeee22b1d2608e9c15c4cd664}{get\+User\+Data\+Ptr} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_afb7ed5e9e1e062d31e768e8bbce77ca0}{set\+User\+Data\+Long} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1UserData}{User\+Data} $>$ ptr)  throw ()
+\item 
+long \hyperlink{classAudio_1_1Source_afcce60125b2185a146da6babb5754129}{get\+User\+Data\+Long} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_aef3f3d75b25de879d324bf4405691d9b}{set\+User\+Data\+Long} (long data)  throw ()
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1SourceListener}{Source\+Listener} $>$ \hyperlink{classAudio_1_1Source_a85357fe197446a435269b0c52ed5b1d1}{get\+Source\+Listener} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_abcd9836d57cf4bbe0dd774467b5cc010}{set\+Source\+Listener} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1SourceListener}{Source\+Listener} $>$ ptr)  throw ()
+\item 
+Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ \hyperlink{classAudio_1_1Source_ad429e1b3013169bad7583dcc88f38ec9}{get\+Sound} () const   throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_a48a9992621c4825b28552c381b449b8d}{set\+Sound} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ ptr)  throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_acfd8ea3281104dbfe90a6ffcc8af9c2c}{update\+Renderable} (int flags, const \hyperlink{classAudio_1_1Listener}{Listener} \&scene\+Listener)  throw ()
+\item 
+void \hyperlink{classAudio_1_1Source_aa5bf151683c32dd60fea4c75e6176102}{seek} (Timestamp time)  throw (\+Exception)
+\item 
+void \hyperlink{classAudio_1_1Source_a17f973fb4f46e3e489b770a49e3186fa}{\+\_\+notify\+Playing} ()  throw ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1Source_ad2d141a6ef474cf20f3bddce2eead392}{Source} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ sound, bool looping=false)  throw ()
+\item 
+Timestamp \hyperlink{classAudio_1_1Source_a80bb4782218d1ea593ce3f1db3bfbf58}{set\+Last\+Known\+Playing\+Time} (Timestamp timestamp)  throw ()
+\item 
+virtual void \hyperlink{classAudio_1_1Source_ac0ae6f4f2c2e568a18bf3627b755922e}{start\+Playing\+Impl} (Timestamp start)=0  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1Source_ac91bbbcdfac9f75e31143ed8ce721f64}{stop\+Playing\+Impl} ()=0  throw (\+Exception)
+\item 
+virtual bool \hyperlink{classAudio_1_1Source_ab9f6505b3317358970cd16f2b1469ea9}{is\+Playing\+Impl} () const =0  throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1TVector3}{L\+Vector3} {\bfseries position}\hypertarget{classAudio_1_1Source_a0e6586f8f49003f1e81e4ebe8d029eb9}{}\label{classAudio_1_1Source_a0e6586f8f49003f1e81e4ebe8d029eb9}
+
+\item 
+\hyperlink{classAudio_1_1TVector3}{Vector3} {\bfseries direction}\hypertarget{classAudio_1_1Source_ac33c1c24a3cc7a442490b0911a941852}{}\label{classAudio_1_1Source_ac33c1c24a3cc7a442490b0911a941852}
+
+\item 
+\hyperlink{classAudio_1_1TVector3}{Vector3} {\bfseries velocity}\hypertarget{classAudio_1_1Source_a8cdbf9671d013f5f56b9bf1b7490c58f}{}\label{classAudio_1_1Source_a8cdbf9671d013f5f56b9bf1b7490c58f}
+
+\item 
+\hyperlink{structAudio_1_1Range}{Range}$<$ Scalar $>$ {\bfseries cos\+Angle\+Range}\hypertarget{classAudio_1_1Source_a0e670ea587b7ff929ee5aa37a30bf805}{}\label{classAudio_1_1Source_a0e670ea587b7ff929ee5aa37a30bf805}
+
+\item 
+Scalar {\bfseries radius}\hypertarget{classAudio_1_1Source_af238275de344ded2a0a79dbf2220c952}{}\label{classAudio_1_1Source_af238275de344ded2a0a79dbf2220c952}
+
+\item 
+\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ {\bfseries pf\+Radius\+Ratios}\hypertarget{classAudio_1_1Source_a0a5a2b7ecca049f8dc3cfe689a0cb5a0}{}\label{classAudio_1_1Source_a0a5a2b7ecca049f8dc3cfe689a0cb5a0}
+
+\item 
+\hyperlink{structAudio_1_1PerFrequency}{Per\+Frequency}$<$ Scalar $>$ {\bfseries reference\+Freqs}\hypertarget{classAudio_1_1Source_a546216a7242928a7fe0a8f52a70201f6}{}\label{classAudio_1_1Source_a546216a7242928a7fe0a8f52a70201f6}
+
+\item 
+Scalar {\bfseries gain}\hypertarget{classAudio_1_1Source_aa3926e24aa91425060814457276ed2ee}{}\label{classAudio_1_1Source_aa3926e24aa91425060814457276ed2ee}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int {\bfseries looping}: 1\\
+\>int {\bfseries attenuated}: 1\\
+\>int {\bfseries relative}: 1\\
+\} {\bfseries flags}\hypertarget{classAudio_1_1Source_a4308f26b7f97b065521b171636b44b9a}{}\label{classAudio_1_1Source_a4308f26b7f97b065521b171636b44b9a}
+\\
+
+\end{tabbing}\item 
+Timestamp {\bfseries last\+Known\+Playing\+Time}\hypertarget{classAudio_1_1Source_ad7757b04c8c80ebf219f3b52248df0e1}{}\label{classAudio_1_1Source_ad7757b04c8c80ebf219f3b52248df0e1}
+
+\item 
+Timestamp {\bfseries last\+Known\+Playing\+Time\+Time}\hypertarget{classAudio_1_1Source_a0673500e6d3e5d49cfcea04ddfbb70bc}{}\label{classAudio_1_1Source_a0673500e6d3e5d49cfcea04ddfbb70bc}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int \hyperlink{classAudio_1_1Source_a62620a6925b35c7053801dc1535f7c53}{location}: 1\\
+\>int \hyperlink{classAudio_1_1Source_a8d5db6cbade9b073c204a734ee921301}{attributes}: 1\\
+\>int \hyperlink{classAudio_1_1Source_a928154355511c1c7495f122b30dd6f6c}{gain}: 1\\
+\>int \hyperlink{classAudio_1_1Source_a5382b8eba7691dfd979af332789c6de4}{soundPtr}: 1\\
+\>int \hyperlink{classAudio_1_1Source_ad9042cc6660db973cc4dd9239bd2265f}{soundAttributes}: 1\\
+\} \hyperlink{classAudio_1_1Source_aa98d50cb698da93fa46833f3ffadc209}{dirty}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1Source}{Source} abstract class
+
+\begin{DoxyRemark}{Remarks}
+This is the interface to all kinds of audio sources. This base class implements the majority of the functions required for sources, specific implementations need only provide a handful of functions (impl functions) that keep their associated scene managers up to speed. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Renderer-\/specific implementation goes through Renderable\+Source s}
+attached to the abstract \hyperlink{classAudio_1_1Source}{Source}. Renderers are responsible for attaching \hyperlink{classAudio_1_1RenderableSource}{Renderable\+Source} s to abstract Sources as necessary. Many implementation functions (as play/stop/get\+Playing\+Time) go through those renderer-\/specific interfaces. 
+\end{DoxyParagraph}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Source@{Audio\+::\+Source}!Source@{Source}}
+\index{Source@{Source}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{Source(\+Shared\+Ptr$<$ Sound $>$ sound, bool looping=false)}{Source(SharedPtr< Sound > sound, bool looping=false)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Source\+::\+Source (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Sound} $>$}]{sound, }
+\item[{bool}]{looping = {\ttfamily false}}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1Source_ad2d141a6ef474cf20f3bddce2eead392}{}\label{classAudio_1_1Source_ad2d141a6ef474cf20f3bddce2eead392}
+Internal constructor used by derived classes 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Source@{Audio\+::\+Source}!\+\_\+notify\+Playing@{\+\_\+notify\+Playing}}
+\index{\+\_\+notify\+Playing@{\+\_\+notify\+Playing}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{\+\_\+notify\+Playing()}{_notifyPlaying()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::\+\_\+notify\+Playing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1Source_a17f973fb4f46e3e489b770a49e3186fa}{}\label{classAudio_1_1Source_a17f973fb4f46e3e489b770a49e3186fa}
+Notifies source listeners (if any) that the source has begun actually playing.
+
+\begin{DoxyRemark}{Remarks}
+Usually, listener notifications are automatic. In the case of rendering start (actual playing), it\textquotesingle{}s not as easy, since the renderer and scene manager have ultimate control over it. It\textquotesingle{}s the renderer\textquotesingle{}s responsability, thus, to fire this notification event when it\textquotesingle{}s begun rendering. All other events take place immediately, so they\textquotesingle{}re automatically handled by \hyperlink{classAudio_1_1Source}{Source}\textquotesingle{}s implementation. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a17f973fb4f46e3e489b770a49e3186fa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!continue\+Playing@{continue\+Playing}}
+\index{continue\+Playing@{continue\+Playing}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{continue\+Playing()}{continuePlaying()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::continue\+Playing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1Source_a65ce708851ffb9435948c3dfd6c891a0}{}\label{classAudio_1_1Source_a65ce708851ffb9435948c3dfd6c891a0}
+Continue playing a source \begin{DoxyRemark}{Remarks}
+If the source is playing but inactive, continue playing. Otherwise, do nothing. 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_a06ed7c319ab1dd40bad9629f6065012d}{pause\+Playing} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a65ce708851ffb9435948c3dfd6c891a0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a65ce708851ffb9435948c3dfd6c891a0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Angle\+Range@{get\+Angle\+Range}}
+\index{get\+Angle\+Range@{get\+Angle\+Range}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Angle\+Range() const }{getAngleRange() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Range}$<$ Scalar $>$ Audio\+::\+Source\+::get\+Angle\+Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1Source_a6143b8a9b5e9e14dd0ef7e3c9280cd8f}{}\label{classAudio_1_1Source_a6143b8a9b5e9e14dd0ef7e3c9280cd8f}
+Return the source\textquotesingle{}s minimum/maximum propagation angle \begin{DoxyRemark}{Remarks}
+\hyperlink{classAudio_1_1Sound}{Sound} will fully propagate in directions within minimum directional drift. Further drift will attenuate the sound until it (practically) disappears by the maximum propagation angle. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a6143b8a9b5e9e14dd0ef7e3c9280cd8f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Cos\+Angle\+Range@{get\+Cos\+Angle\+Range}}
+\index{get\+Cos\+Angle\+Range@{get\+Cos\+Angle\+Range}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Cos\+Angle\+Range() const }{getCosAngleRange() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Range}$<$Scalar$>$ Audio\+::\+Source\+::get\+Cos\+Angle\+Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a3800ac08153c803fb6c631272341b6aa}{}\label{classAudio_1_1Source_a3800ac08153c803fb6c631272341b6aa}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_a6143b8a9b5e9e14dd0ef7e3c9280cd8f}{get\+Angle\+Range} 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+This version returns cosine-\/angles rather than radians, much quicker 
+\end{DoxyRemark}
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Direction@{get\+Direction}}
+\index{get\+Direction@{get\+Direction}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Direction() const }{getDirection() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Audio\+::\+Source\+::get\+Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_ab302e1c0c516ec4b153018dbed37f0ac}{}\label{classAudio_1_1Source_ab302e1c0c516ec4b153018dbed37f0ac}
+Return the source\textquotesingle{}s main propagation direction 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_ab302e1c0c516ec4b153018dbed37f0ac_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Gain@{get\+Gain}}
+\index{get\+Gain@{get\+Gain}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Gain() const }{getGain() const }}]{\setlength{\rightskip}{0pt plus 5cm}Scalar Audio\+::\+Source\+::get\+Gain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_adeaed3a4bbaaf6d60dd09e372d8e21e6}{}\label{classAudio_1_1Source_adeaed3a4bbaaf6d60dd09e372d8e21e6}
+Get the source\textquotesingle{}s main gain 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_adeaed3a4bbaaf6d60dd09e372d8e21e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Per\+Frequency\+Radius\+Ratios@{get\+Per\+Frequency\+Radius\+Ratios}}
+\index{get\+Per\+Frequency\+Radius\+Ratios@{get\+Per\+Frequency\+Radius\+Ratios}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Per\+Frequency\+Radius\+Ratios() const }{getPerFrequencyRadiusRatios() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Per\+Frequency}$<$Scalar$>$ Audio\+::\+Source\+::get\+Per\+Frequency\+Radius\+Ratios (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a7af76debc465b08de34bcecb8e56a8b4}{}\label{classAudio_1_1Source_a7af76debc465b08de34bcecb8e56a8b4}
+Get the source\textquotesingle{}s frequency-\/dependant radius ratios \begin{DoxyRemark}{Remarks}
+\hyperlink{classAudio_1_1Sound}{Sound} propagation goes different for low and high frequencies than for others. \hyperlink{classAudio_1_1Sound}{Sound} creation does too -\/ this specifies the ratio of a source\textquotesingle{}s volume that is generating high/low frequency vibrations. This will affect propagation of those frequencies over distance. 
+\end{DoxyRemark}
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Playing\+Time@{get\+Playing\+Time}}
+\index{get\+Playing\+Time@{get\+Playing\+Time}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Playing\+Time() const }{getPlayingTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}Timestamp Audio\+::\+Source\+::get\+Playing\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1Source_a4096dd64ab51c7f98831be31c3dea77d}{}\label{classAudio_1_1Source_a4096dd64ab51c7f98831be31c3dea77d}
+Get the playing position of a playing or paused source 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a4096dd64ab51c7f98831be31c3dea77d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a4096dd64ab51c7f98831be31c3dea77d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Position() const }{getPosition() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+Vector3} Audio\+::\+Source\+::get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_ada024d8c7c5e4c5927efda2963fe81c4}{}\label{classAudio_1_1Source_ada024d8c7c5e4c5927efda2963fe81c4}
+Return the source\textquotesingle{}s central position in 3D space 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_ada024d8c7c5e4c5927efda2963fe81c4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Radius() const }{getRadius() const }}]{\setlength{\rightskip}{0pt plus 5cm}Scalar Audio\+::\+Source\+::get\+Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a028c3f64f311a04ca08c7c09c38fe168}{}\label{classAudio_1_1Source_a028c3f64f311a04ca08c7c09c38fe168}
+Get the source\textquotesingle{}s radius 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a028c3f64f311a04ca08c7c09c38fe168_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Reference\+Freqs@{get\+Reference\+Freqs}}
+\index{get\+Reference\+Freqs@{get\+Reference\+Freqs}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Reference\+Freqs() const }{getReferenceFreqs() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Per\+Frequency}$<$Scalar$>$ Audio\+::\+Source\+::get\+Reference\+Freqs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a5358425f1485df421aa010b42b59f553}{}\label{classAudio_1_1Source_a5358425f1485df421aa010b42b59f553}
+Get the source\textquotesingle{}s refernece frequencies \index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Renderable@{get\+Renderable}}
+\index{get\+Renderable@{get\+Renderable}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Renderable() const }{getRenderable() const }}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<${\bf Renderable\+Source}$>$ Audio\+::\+Source\+::get\+Renderable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a694cc1bc15662a99fe81ec6861138191}{}\label{classAudio_1_1Source_a694cc1bc15662a99fe81ec6861138191}
+Get renderer-\/specific data associated (and destroyed) with this sound source 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a694cc1bc15662a99fe81ec6861138191_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Sound@{get\+Sound}}
+\index{get\+Sound@{get\+Sound}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Sound() const }{getSound() const }}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<${\bf Sound}$>$ Audio\+::\+Source\+::get\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_ad429e1b3013169bad7583dcc88f38ec9}{}\label{classAudio_1_1Source_ad429e1b3013169bad7583dcc88f38ec9}
+Get the associated sound stream 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_ad429e1b3013169bad7583dcc88f38ec9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Source\+Listener@{get\+Source\+Listener}}
+\index{get\+Source\+Listener@{get\+Source\+Listener}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Source\+Listener() const }{getSourceListener() const }}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<${\bf Source\+Listener}$>$ Audio\+::\+Source\+::get\+Source\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a85357fe197446a435269b0c52ed5b1d1}{}\label{classAudio_1_1Source_a85357fe197446a435269b0c52ed5b1d1}
+Get an event listener associated with this sound source \index{Audio\+::\+Source@{Audio\+::\+Source}!get\+User\+Data\+Long@{get\+User\+Data\+Long}}
+\index{get\+User\+Data\+Long@{get\+User\+Data\+Long}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+User\+Data\+Long() const }{getUserDataLong() const }}]{\setlength{\rightskip}{0pt plus 5cm}long Audio\+::\+Source\+::get\+User\+Data\+Long (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_afcce60125b2185a146da6babb5754129}{}\label{classAudio_1_1Source_afcce60125b2185a146da6babb5754129}
+Get user-\/specific data associated with this sound source 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_afcce60125b2185a146da6babb5754129_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+User\+Data\+Ptr@{get\+User\+Data\+Ptr}}
+\index{get\+User\+Data\+Ptr@{get\+User\+Data\+Ptr}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+User\+Data\+Ptr() const }{getUserDataPtr() const }}]{\setlength{\rightskip}{0pt plus 5cm}Shared\+Ptr$<${\bf User\+Data}$>$ Audio\+::\+Source\+::get\+User\+Data\+Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_ac54fccdaeee22b1d2608e9c15c4cd664}{}\label{classAudio_1_1Source_ac54fccdaeee22b1d2608e9c15c4cd664}
+Get user-\/specific data associated (and destroyed) with this sound source \index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Velocity() const }{getVelocity() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Audio\+::\+Source\+::get\+Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_afa2dc0a120dcdd989562ebb2b0782a4c}{}\label{classAudio_1_1Source_afa2dc0a120dcdd989562ebb2b0782a4c}
+Return the source\textquotesingle{}s velocity 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_afa2dc0a120dcdd989562ebb2b0782a4c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!get\+Wouldbe\+Playing\+Time@{get\+Wouldbe\+Playing\+Time}}
+\index{get\+Wouldbe\+Playing\+Time@{get\+Wouldbe\+Playing\+Time}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{get\+Wouldbe\+Playing\+Time() const }{getWouldbePlayingTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}Timestamp Audio\+::\+Source\+::get\+Wouldbe\+Playing\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1Source_a3eb1643f3fd12dc6f0d46f35136b1c64}{}\label{classAudio_1_1Source_a3eb1643f3fd12dc6f0d46f35136b1c64}
+Get the playing position of a playing or paused source. For a paused source, extrapolate from the last known playing time and elapsed time since the measurement was done. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a3eb1643f3fd12dc6f0d46f35136b1c64_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a3eb1643f3fd12dc6f0d46f35136b1c64_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!is\+Active@{is\+Active}}
+\index{is\+Active@{is\+Active}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{is\+Active() const }{isActive() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Source\+::is\+Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1Source_ab5e750c91839e53326a2d9af1d2f6575}{}\label{classAudio_1_1Source_ab5e750c91839e53326a2d9af1d2f6575}
+Is the attached renderable playing this source? 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_ab5e750c91839e53326a2d9af1d2f6575_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!is\+Attenuated@{is\+Attenuated}}
+\index{is\+Attenuated@{is\+Attenuated}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{is\+Attenuated() const }{isAttenuated() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Source\+::is\+Attenuated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a62b43d5edb723e8297f5ad4878271175}{}\label{classAudio_1_1Source_a62b43d5edb723e8297f5ad4878271175}
+Is the source using distance attenuation? 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a62b43d5edb723e8297f5ad4878271175_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!is\+Looping@{is\+Looping}}
+\index{is\+Looping@{is\+Looping}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{is\+Looping() const }{isLooping() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Source\+::is\+Looping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_aeafbb7052aea35fbfdbba9f81a4ebb2c}{}\label{classAudio_1_1Source_aeafbb7052aea35fbfdbba9f81a4ebb2c}
+Is the source in looping mode? 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_aeafbb7052aea35fbfdbba9f81a4ebb2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!is\+Playing@{is\+Playing}}
+\index{is\+Playing@{is\+Playing}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{is\+Playing() const }{isPlaying() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Source\+::is\+Playing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1Source_aaceb400c059019233ace3b0c10206548}{}\label{classAudio_1_1Source_aaceb400c059019233ace3b0c10206548}
+Is the source still playing? 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_aaceb400c059019233ace3b0c10206548_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_aaceb400c059019233ace3b0c10206548_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!is\+Playing\+Impl@{is\+Playing\+Impl}}
+\index{is\+Playing\+Impl@{is\+Playing\+Impl}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{is\+Playing\+Impl() const =0}{isPlayingImpl() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Audio\+::\+Source\+::is\+Playing\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Source_ab9f6505b3317358970cd16f2b1469ea9}{}\label{classAudio_1_1Source_ab9f6505b3317358970cd16f2b1469ea9}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_aaceb400c059019233ace3b0c10206548}{is\+Playing}. 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classAudio_1_1SimpleSource_ae5971c20ed378c1886bf66d7b5d82699}{Audio\+::\+Simple\+Source}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_ab9f6505b3317358970cd16f2b1469ea9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!is\+Relative@{is\+Relative}}
+\index{is\+Relative@{is\+Relative}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{is\+Relative() const }{isRelative() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Source\+::is\+Relative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a56cfa694bccbfac0a7adc232750ae3fe}{}\label{classAudio_1_1Source_a56cfa694bccbfac0a7adc232750ae3fe}
+Is the source\textquotesingle{}s position always relative to the root listener? \begin{DoxyRemark}{Remarks}
+Relative sources are useful for interphase sounds, music, comm streams, and all those sources which are not anchored to a real 3D object, but rather to the listener itself. 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a56cfa694bccbfac0a7adc232750ae3fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!pause\+Playing@{pause\+Playing}}
+\index{pause\+Playing@{pause\+Playing}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{pause\+Playing()}{pausePlaying()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::pause\+Playing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1Source_a06ed7c319ab1dd40bad9629f6065012d}{}\label{classAudio_1_1Source_a06ed7c319ab1dd40bad9629f6065012d}
+Pause a playing source \begin{DoxyRemark}{Remarks}
+If the source is active, make it inactive. Otherwise, do nothing. Playing state is not changed, but the attached renderable is stopped. This is useful to free up resources. A later call to \hyperlink{classAudio_1_1Source_a65ce708851ffb9435948c3dfd6c891a0}{continue\+Playing()} undoes this, and playing resumes as if the source hadn\textquotesingle{}t been stopped (at get\+Would\+Be\+Playing\+Time). 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+get\+Would\+Be\+Playing\+Time 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a06ed7c319ab1dd40bad9629f6065012d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a06ed7c319ab1dd40bad9629f6065012d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!seek@{seek}}
+\index{seek@{seek}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{seek(\+Timestamp time)}{seek(Timestamp time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::seek (
+\begin{DoxyParamCaption}
+\item[{Timestamp}]{time}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1Source_aa5bf151683c32dd60fea4c75e6176102}{}\label{classAudio_1_1Source_aa5bf151683c32dd60fea4c75e6176102}
+Seek to the specified position \begin{DoxyNote}{Note}
+It may not be supported by the renderer on all sources. Streaming sources are guaranteed to perform a rough seek on a best effort basis, meaning the effective time after the seek may be off a bit, and the process may be costly. Seeking in non-\/streaming sources may not be supported at all. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classAudio_1_1EndOfStreamException}{End\+Of\+Stream\+Exception}} & if you try to seek past the end \\
+\hline
+\end{DoxyExceptions}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_aa5bf151683c32dd60fea4c75e6176102_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{df/d04/classAudio_1_1Source_aa5bf151683c32dd60fea4c75e6176102_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Angle\+Range@{set\+Angle\+Range}}
+\index{set\+Angle\+Range@{set\+Angle\+Range}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Angle\+Range(\+Range$<$ Scalar $>$ r)}{setAngleRange(Range< Scalar > r)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Angle\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}$<$ Scalar $>$}]{r}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1Source_a640e04e4d0d3e84f595592856c24d13e}{}\label{classAudio_1_1Source_a640e04e4d0d3e84f595592856c24d13e}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_a6143b8a9b5e9e14dd0ef7e3c9280cd8f}{get\+Angle\+Range} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a640e04e4d0d3e84f595592856c24d13e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Attenuated@{set\+Attenuated}}
+\index{set\+Attenuated@{set\+Attenuated}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Attenuated(bool attenuated)}{setAttenuated(bool attenuated)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Attenuated (
+\begin{DoxyParamCaption}
+\item[{bool}]{attenuated}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a55180fb909ec9950143b9b82e159a23a}{}\label{classAudio_1_1Source_a55180fb909ec9950143b9b82e159a23a}
+Set whether the source uses distance attenuation \index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Cos\+Angle\+Range@{set\+Cos\+Angle\+Range}}
+\index{set\+Cos\+Angle\+Range@{set\+Cos\+Angle\+Range}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Cos\+Angle\+Range(\+Range$<$ Scalar $>$ r)}{setCosAngleRange(Range< Scalar > r)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Cos\+Angle\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}$<$ Scalar $>$}]{r}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a94ee7967af61a3b25ca6a78afc0d23f7}{}\label{classAudio_1_1Source_a94ee7967af61a3b25ca6a78afc0d23f7}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_a6143b8a9b5e9e14dd0ef7e3c9280cd8f}{get\+Angle\+Range} 
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+This version takes cosine-\/angles rather than radians, much quicker 
+\end{DoxyRemark}
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Direction@{set\+Direction}}
+\index{set\+Direction@{set\+Direction}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Direction(\+Vector3 x)}{setDirection(Vector3 x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{x}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a1c0210656f9b416696448b1b5363240b}{}\label{classAudio_1_1Source_a1c0210656f9b416696448b1b5363240b}
+Set the source\textquotesingle{}s main propagation direction 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a1c0210656f9b416696448b1b5363240b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Gain@{set\+Gain}}
+\index{set\+Gain@{set\+Gain}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Gain(\+Scalar g)}{setGain(Scalar g)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Gain (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{g}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a441db1be3a7072842e1a6643b65331d6}{}\label{classAudio_1_1Source_a441db1be3a7072842e1a6643b65331d6}
+Set the source\textquotesingle{}s main gain \index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Last\+Known\+Playing\+Time@{set\+Last\+Known\+Playing\+Time}}
+\index{set\+Last\+Known\+Playing\+Time@{set\+Last\+Known\+Playing\+Time}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Last\+Known\+Playing\+Time(\+Timestamp timestamp)}{setLastKnownPlayingTime(Timestamp timestamp)}}]{\setlength{\rightskip}{0pt plus 5cm}Timestamp Audio\+::\+Source\+::set\+Last\+Known\+Playing\+Time (
+\begin{DoxyParamCaption}
+\item[{Timestamp}]{timestamp}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1Source_a80bb4782218d1ea593ce3f1db3bfbf58}{}\label{classAudio_1_1Source_a80bb4782218d1ea593ce3f1db3bfbf58}
+Set the last known playing time, update the measurement timestamp as well. \begin{DoxyReturn}{Returns}
+the parameter, for chaining. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a80bb4782218d1ea593ce3f1db3bfbf58_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Looping@{set\+Looping}}
+\index{set\+Looping@{set\+Looping}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Looping(bool loop)}{setLooping(bool loop)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Looping (
+\begin{DoxyParamCaption}
+\item[{bool}]{loop}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a22dc52afab942aad5182511f6d669145}{}\label{classAudio_1_1Source_a22dc52afab942aad5182511f6d669145}
+Set the source\textquotesingle{}s looping mode \index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Per\+Frequency\+Radius\+Ratios@{set\+Per\+Frequency\+Radius\+Ratios}}
+\index{set\+Per\+Frequency\+Radius\+Ratios@{set\+Per\+Frequency\+Radius\+Ratios}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Per\+Frequency\+Radius\+Ratios(\+Per\+Frequency$<$ Scalar $>$ val)}{setPerFrequencyRadiusRatios(PerFrequency< Scalar > val)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Per\+Frequency\+Radius\+Ratios (
+\begin{DoxyParamCaption}
+\item[{{\bf Per\+Frequency}$<$ Scalar $>$}]{val}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_ad6dd130e4af3ea5a7710928e0d542747}{}\label{classAudio_1_1Source_ad6dd130e4af3ea5a7710928e0d542747}
+Set the source\textquotesingle{}s frequency-\/dependant radius ratios \begin{DoxySeeAlso}{See also}
+get\+Radius\+Ratios 
+\end{DoxySeeAlso}
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Position(\+L\+Vector3 x)}{setPosition(LVector3 x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+Vector3}}]{x}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a28235d6ef6e97308dcc9d89cf57764e5}{}\label{classAudio_1_1Source_a28235d6ef6e97308dcc9d89cf57764e5}
+Set the source\textquotesingle{}s central position in 3D space 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a28235d6ef6e97308dcc9d89cf57764e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Radius(\+Scalar r)}{setRadius(Scalar r)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Radius (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{r}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a1aed580fb8be11d68b208177a75e88d4}{}\label{classAudio_1_1Source_a1aed580fb8be11d68b208177a75e88d4}
+Set the source\textquotesingle{}s radius \index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Reference\+Freqs@{set\+Reference\+Freqs}}
+\index{set\+Reference\+Freqs@{set\+Reference\+Freqs}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Reference\+Freqs(\+Per\+Frequency$<$ Scalar $>$ val)}{setReferenceFreqs(PerFrequency< Scalar > val)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Reference\+Freqs (
+\begin{DoxyParamCaption}
+\item[{{\bf Per\+Frequency}$<$ Scalar $>$}]{val}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a3455464edef39c958b987fe45ca78371}{}\label{classAudio_1_1Source_a3455464edef39c958b987fe45ca78371}
+Set the source\textquotesingle{}s reference frequencies \index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Relative@{set\+Relative}}
+\index{set\+Relative@{set\+Relative}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Relative(bool relative)}{setRelative(bool relative)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Relative (
+\begin{DoxyParamCaption}
+\item[{bool}]{relative}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a99ae629edea3dcda748d56cc5a48b40c}{}\label{classAudio_1_1Source_a99ae629edea3dcda748d56cc5a48b40c}
+Set whether the source\textquotesingle{}s position is always relative to the root listener. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a99ae629edea3dcda748d56cc5a48b40c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Renderable@{set\+Renderable}}
+\index{set\+Renderable@{set\+Renderable}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Renderable(\+Shared\+Ptr$<$ Renderable\+Source $>$ ptr)}{setRenderable(SharedPtr< RenderableSource > ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Renderable (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Renderable\+Source} $>$}]{ptr}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1Source_a4bbbbb104024c91bf9f6317417b95d41}{}\label{classAudio_1_1Source_a4bbbbb104024c91bf9f6317417b95d41}
+Set renderer-\/specific data to be associated (and destroyed) with this sound source 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a4bbbbb104024c91bf9f6317417b95d41_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Sound@{set\+Sound}}
+\index{set\+Sound@{set\+Sound}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Sound(\+Shared\+Ptr$<$ Sound $>$ ptr)}{setSound(SharedPtr< Sound > ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Sound (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Sound} $>$}]{ptr}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a48a9992621c4825b28552c381b449b8d}{}\label{classAudio_1_1Source_a48a9992621c4825b28552c381b449b8d}
+Set the associated sound stream -\/ Only for Scene\+Managers to call 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a48a9992621c4825b28552c381b449b8d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Source\+Listener@{set\+Source\+Listener}}
+\index{set\+Source\+Listener@{set\+Source\+Listener}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Source\+Listener(\+Shared\+Ptr$<$ Source\+Listener $>$ ptr)}{setSourceListener(SharedPtr< SourceListener > ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Source\+Listener (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Source\+Listener} $>$}]{ptr}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_abcd9836d57cf4bbe0dd774467b5cc010}{}\label{classAudio_1_1Source_abcd9836d57cf4bbe0dd774467b5cc010}
+Set an event listener to be associated with this sound source \index{Audio\+::\+Source@{Audio\+::\+Source}!set\+User\+Data\+Long@{set\+User\+Data\+Long}}
+\index{set\+User\+Data\+Long@{set\+User\+Data\+Long}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+User\+Data\+Long(\+Shared\+Ptr$<$ User\+Data $>$ ptr)}{setUserDataLong(SharedPtr< UserData > ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+User\+Data\+Long (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf User\+Data} $>$}]{ptr}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_afb7ed5e9e1e062d31e768e8bbce77ca0}{}\label{classAudio_1_1Source_afb7ed5e9e1e062d31e768e8bbce77ca0}
+Set user-\/specific data to be associated (and destroyed) with this sound source \index{Audio\+::\+Source@{Audio\+::\+Source}!set\+User\+Data\+Long@{set\+User\+Data\+Long}}
+\index{set\+User\+Data\+Long@{set\+User\+Data\+Long}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+User\+Data\+Long(long data)}{setUserDataLong(long data)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+User\+Data\+Long (
+\begin{DoxyParamCaption}
+\item[{long}]{data}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_aef3f3d75b25de879d324bf4405691d9b}{}\label{classAudio_1_1Source_aef3f3d75b25de879d324bf4405691d9b}
+Get user-\/specific data associated with this sound source \index{Audio\+::\+Source@{Audio\+::\+Source}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{set\+Velocity(\+Vector3 x)}{setVelocity(Vector3 x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::set\+Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{x}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAudio_1_1Source_a8f2056253c08414944ae0debfb409d19}{}\label{classAudio_1_1Source_a8f2056253c08414944ae0debfb409d19}
+Set the source\textquotesingle{}s velocity 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a8f2056253c08414944ae0debfb409d19_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a8f2056253c08414944ae0debfb409d19_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!start\+Playing@{start\+Playing}}
+\index{start\+Playing@{start\+Playing}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{start\+Playing(\+Timestamp start=0)}{startPlaying(Timestamp start=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::start\+Playing (
+\begin{DoxyParamCaption}
+\item[{Timestamp}]{start = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) }\hypertarget{classAudio_1_1Source_a4a6604d3195d16bdfc53b85a98c60f4d}{}\label{classAudio_1_1Source_a4a6604d3195d16bdfc53b85a98c60f4d}
+Play the source 
+\begin{DoxyParams}{Parameters}
+{\em start} & an optional timestamp to start playing from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Rewind and play from the beginning. If the source is playing, it is reset. May not take effect immediately. 
+\end{DoxyRemark}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a4a6604d3195d16bdfc53b85a98c60f4d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a4a6604d3195d16bdfc53b85a98c60f4d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!start\+Playing\+Impl@{start\+Playing\+Impl}}
+\index{start\+Playing\+Impl@{start\+Playing\+Impl}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{start\+Playing\+Impl(\+Timestamp start)=0}{startPlayingImpl(Timestamp start)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Source\+::start\+Playing\+Impl (
+\begin{DoxyParamCaption}
+\item[{Timestamp}]{start}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Source_ac0ae6f4f2c2e568a18bf3627b755922e}{}\label{classAudio_1_1Source_ac0ae6f4f2c2e568a18bf3627b755922e}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_a4a6604d3195d16bdfc53b85a98c60f4d}{start\+Playing} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The starting position. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classAudio_1_1SimpleSource_a8aa133d72148aabedb8bdfa885e74b6b}{Audio\+::\+Simple\+Source}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_ac0ae6f4f2c2e568a18bf3627b755922e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!stop\+Playing@{stop\+Playing}}
+\index{stop\+Playing@{stop\+Playing}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{stop\+Playing()}{stopPlaying()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::stop\+Playing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1Source_a91de7bc95ce5c4cfc0d7050215829373}{}\label{classAudio_1_1Source_a91de7bc95ce5c4cfc0d7050215829373}
+Stop a playing source \begin{DoxyRemark}{Remarks}
+If the source is playing, stop it. Otherwise, do nothing. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Remembers the playing time so that a call to get\+Wouldbe\+Playing\+Time can}
+return the correct time. 
+\end{DoxyParagraph}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a91de7bc95ce5c4cfc0d7050215829373_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_a91de7bc95ce5c4cfc0d7050215829373_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!stop\+Playing\+Impl@{stop\+Playing\+Impl}}
+\index{stop\+Playing\+Impl@{stop\+Playing\+Impl}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{stop\+Playing\+Impl()=0}{stopPlayingImpl()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Audio\+::\+Source\+::stop\+Playing\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classAudio_1_1Source_ac91bbbcdfac9f75e31143ed8ce721f64}{}\label{classAudio_1_1Source_ac91bbbcdfac9f75e31143ed8ce721f64}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_a91de7bc95ce5c4cfc0d7050215829373}{stop\+Playing}. 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classAudio_1_1SimpleSource_a364dea7e215b115dee978f1d53e752fc}{Audio\+::\+Simple\+Source}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_ac91bbbcdfac9f75e31143ed8ce721f64_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Source@{Audio\+::\+Source}!update\+Renderable@{update\+Renderable}}
+\index{update\+Renderable@{update\+Renderable}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{update\+Renderable(int flags, const Listener \&scene\+Listener)}{updateRenderable(int flags, const Listener &sceneListener)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Source\+::update\+Renderable (
+\begin{DoxyParamCaption}
+\item[{int}]{flags, }
+\item[{const {\bf Listener} \&}]{scene\+Listener}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1Source_acfd8ea3281104dbfe90a6ffcc8af9c2c}{}\label{classAudio_1_1Source_acfd8ea3281104dbfe90a6ffcc8af9c2c}
+Convenience function to update the attached renderable, if present, and active. 
+\begin{DoxyParams}{Parameters}
+{\em flags} & see Renderable\+Source\+::\+Update\+Flags \\
+\hline
+{\em scene\+Listener} & the listener to which this source is associated \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d04/classAudio_1_1Source_acfd8ea3281104dbfe90a6ffcc8af9c2c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Audio\+::\+Source@{Audio\+::\+Source}!attributes@{attributes}}
+\index{attributes@{attributes}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{attributes}{attributes}}]{\setlength{\rightskip}{0pt plus 5cm}int Audio\+::\+Source\+::attributes}\hypertarget{classAudio_1_1Source_a8d5db6cbade9b073c204a734ee921301}{}\label{classAudio_1_1Source_a8d5db6cbade9b073c204a734ee921301}
+min/max angle, radius, pf radius ratios, reference freqs, attenuation \index{Audio\+::\+Source@{Audio\+::\+Source}!dirty@{dirty}}
+\index{dirty@{dirty}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{dirty}{dirty}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   Audio\+::\+Source\+::dirty\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAudio_1_1Source_aa98d50cb698da93fa46833f3ffadc209}{}\label{classAudio_1_1Source_aa98d50cb698da93fa46833f3ffadc209}
+Notify implementations after position and/or attributes changes \begin{DoxyRemark}{Remarks}
+Implementations use the \char`\"{}dirty\char`\"{} member struct to precisely know and track what changed and what didn\textquotesingle{}t. Call reset() when synchronized. 
+\end{DoxyRemark}
+\index{Audio\+::\+Source@{Audio\+::\+Source}!gain@{gain}}
+\index{gain@{gain}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{gain}{gain}}]{\setlength{\rightskip}{0pt plus 5cm}int Audio\+::\+Source\+::gain}\hypertarget{classAudio_1_1Source_a928154355511c1c7495f122b30dd6f6c}{}\label{classAudio_1_1Source_a928154355511c1c7495f122b30dd6f6c}
+gain \index{Audio\+::\+Source@{Audio\+::\+Source}!location@{location}}
+\index{location@{location}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{location}{location}}]{\setlength{\rightskip}{0pt plus 5cm}int Audio\+::\+Source\+::location}\hypertarget{classAudio_1_1Source_a62620a6925b35c7053801dc1535f7c53}{}\label{classAudio_1_1Source_a62620a6925b35c7053801dc1535f7c53}
+position, velocity \& direction \index{Audio\+::\+Source@{Audio\+::\+Source}!sound\+Attributes@{sound\+Attributes}}
+\index{sound\+Attributes@{sound\+Attributes}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{sound\+Attributes}{soundAttributes}}]{\setlength{\rightskip}{0pt plus 5cm}int Audio\+::\+Source\+::sound\+Attributes}\hypertarget{classAudio_1_1Source_ad9042cc6660db973cc4dd9239bd2265f}{}\label{classAudio_1_1Source_ad9042cc6660db973cc4dd9239bd2265f}
+looping \index{Audio\+::\+Source@{Audio\+::\+Source}!sound\+Ptr@{sound\+Ptr}}
+\index{sound\+Ptr@{sound\+Ptr}!Audio\+::\+Source@{Audio\+::\+Source}}
+\subsubsection[{\texorpdfstring{sound\+Ptr}{soundPtr}}]{\setlength{\rightskip}{0pt plus 5cm}int Audio\+::\+Source\+::sound\+Ptr}\hypertarget{classAudio_1_1Source_a5382b8eba7691dfd979af332789c6de4}{}\label{classAudio_1_1Source_a5382b8eba7691dfd979af332789c6de4}
+sound\+Ptr 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Source.\+h\item 
+audio/Source.\+cpp\end{DoxyCompactItemize}

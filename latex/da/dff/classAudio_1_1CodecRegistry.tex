@@ -1,0 +1,189 @@
+\hypertarget{classAudio_1_1CodecRegistry}{}\section{Audio\+:\+:Codec\+Registry Class Reference}
+\label{classAudio_1_1CodecRegistry}\index{Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}}
+
+
+{\ttfamily \#include $<$Codec\+Registry.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Codec\+Registry\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{d7/d7b/classAudio_1_1CodecRegistry__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Codec\+Registry\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{d3/dfc/classAudio_1_1CodecRegistry__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1CodecRegistry_a0b1fc60fc8571c6d0d13b17cc49091f3}{Codec\+Registry} ()  throw ()
+\item 
+void \hyperlink{classAudio_1_1CodecRegistry_adf1e05e89721942b570f0537607302a7}{add} (\hyperlink{classAudio_1_1Codec}{Codec} $\ast$codec, int priority=0)  throw ()
+\item 
+void \hyperlink{classAudio_1_1CodecRegistry_abf72b91e3cfe71074275d8dfde204765}{remove} (\hyperlink{classAudio_1_1Codec}{Codec} $\ast$codec)  throw ()
+\item 
+\hyperlink{classAudio_1_1Codec}{Codec} $\ast$ \hyperlink{classAudio_1_1CodecRegistry_a13ce976bea9061df6d985a7d4856249b}{find\+By\+Name} (const std\+::string \&name) const   throw (\+Codec\+Not\+Found\+Exception)
+\item 
+\hyperlink{classAudio_1_1Codec}{Codec} $\ast$ \hyperlink{classAudio_1_1CodecRegistry_a8deaea0aa8d872195d2aa18916b17af7}{find\+By\+File} (const std\+::string \&path, V\+S\+File\+System\+::\+V\+S\+File\+Type type=V\+S\+File\+System\+::\+Unknown\+File) const   throw (\+Codec\+Not\+Found\+Exception)
+\item 
+\hyperlink{classAudio_1_1Stream}{Stream} $\ast$ \hyperlink{classAudio_1_1CodecRegistry_aa5632e436185ad839fe32a588794cea8}{open} (const std\+::string \&path, V\+S\+File\+System\+::\+V\+S\+File\+Type type=V\+S\+File\+System\+::\+Unknown\+File) const   throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1Codec}{Codec} registry class.
+
+\begin{DoxyRemark}{Remarks}
+Use it to manage codec implementations. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{It handles codec factories and manages resolving file-\/to-\/codec associations.}
+
+\end{DoxyParagraph}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Codec}{Codec} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}!Codec\+Registry@{Codec\+Registry}}
+\index{Codec\+Registry@{Codec\+Registry}!Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}}
+\subsubsection[{\texorpdfstring{Codec\+Registry()}{CodecRegistry()}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Codec\+Registry\+::\+Codec\+Registry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1CodecRegistry_a0b1fc60fc8571c6d0d13b17cc49091f3}{}\label{classAudio_1_1CodecRegistry_a0b1fc60fc8571c6d0d13b17cc49091f3}
+Construct an empty registry \begin{DoxyRemark}{Remarks}
+End-\/users of the class shouldn\textquotesingle{}t be using this. Singletons need it 
+\end{DoxyRemark}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{da/dff/classAudio_1_1CodecRegistry_a0b1fc60fc8571c6d0d13b17cc49091f3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}!add@{add}}
+\index{add@{add}!Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}}
+\subsubsection[{\texorpdfstring{add(\+Codec $\ast$codec, int priority=0)}{add(Codec *codec, int priority=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Codec\+Registry\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Codec} $\ast$}]{codec, }
+\item[{int}]{priority = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1CodecRegistry_adf1e05e89721942b570f0537607302a7}{}\label{classAudio_1_1CodecRegistry_adf1e05e89721942b570f0537607302a7}
+Add a codec to the registry \begin{DoxyRemark}{Remarks}
+You may add a codec multiple times if you wish. The class guarantees that any further call will be a no-\/op. Previos priority will still apply. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em codec} & The codec to be added to the registry. \\
+\hline
+\end{DoxyParams}
+\index{Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}!find\+By\+File@{find\+By\+File}}
+\index{find\+By\+File@{find\+By\+File}!Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}}
+\subsubsection[{\texorpdfstring{find\+By\+File(const std\+::string \&path, V\+S\+File\+System\+::\+V\+S\+File\+Type type=\+V\+S\+File\+System\+::\+Unknown\+File) const }{findByFile(const std::string &path, VSFileSystem::VSFileType type=VSFileSystem::UnknownFile) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Codec} $\ast$ Audio\+::\+Codec\+Registry\+::find\+By\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type = {\ttfamily VSFileSystem\+:\+:UnknownFile}}
+\end{DoxyParamCaption}
+) const throw  {\bf Codec\+Not\+Found\+Exception}) }\hypertarget{classAudio_1_1CodecRegistry_a8deaea0aa8d872195d2aa18916b17af7}{}\label{classAudio_1_1CodecRegistry_a8deaea0aa8d872195d2aa18916b17af7}
+Find a codec that can handle the file. \begin{DoxyReturn}{Returns}
+A codec instance that can handle the specified file (ie\+: can\+Handle() returns true). It will never return null. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+If there\textquotesingle{}s more than one codec that can handle the file, the one with the higher priority will be returned. Notice that it can\textquotesingle{}t be assured that the codec will be able to open the file, so be prepared to handle failures further down the road. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Instead of returning null, if a codec of such characteristics cannot be found, }
+an Codec\+Not\+Found exception is risen. 
+\end{DoxyParagraph}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{da/dff/classAudio_1_1CodecRegistry_a8deaea0aa8d872195d2aa18916b17af7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}!find\+By\+Name@{find\+By\+Name}}
+\index{find\+By\+Name@{find\+By\+Name}!Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}}
+\subsubsection[{\texorpdfstring{find\+By\+Name(const std\+::string \&name) const }{findByName(const std::string &name) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Codec} $\ast$ Audio\+::\+Codec\+Registry\+::find\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const throw  {\bf Codec\+Not\+Found\+Exception}) }\hypertarget{classAudio_1_1CodecRegistry_a13ce976bea9061df6d985a7d4856249b}{}\label{classAudio_1_1CodecRegistry_a13ce976bea9061df6d985a7d4856249b}
+Find a codec by its name \begin{DoxyReturn}{Returns}
+A codec instance named by the specified name, never null. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+If there\textquotesingle{}s more than one codec with the same name, any one of them is returned. Not even necessarily the same each time. So avoid adding conflicting codecs. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{Instead of returning null, if a codec of such characteristics cannot be found, }
+a Codec\+Not\+Found exception is risen. 
+\end{DoxyParagraph}
+\index{Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}!open@{open}}
+\index{open@{open}!Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}}
+\subsubsection[{\texorpdfstring{open(const std\+::string \&path, V\+S\+File\+System\+::\+V\+S\+File\+Type type=\+V\+S\+File\+System\+::\+Unknown\+File) const }{open(const std::string &path, VSFileSystem::VSFileType type=VSFileSystem::UnknownFile) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stream} $\ast$ Audio\+::\+Codec\+Registry\+::open (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{V\+S\+File\+System\+::\+V\+S\+File\+Type}]{type = {\ttfamily VSFileSystem\+:\+:UnknownFile}}
+\end{DoxyParamCaption}
+) const throw  {\bf Exception}) }\hypertarget{classAudio_1_1CodecRegistry_aa5632e436185ad839fe32a588794cea8}{}\label{classAudio_1_1CodecRegistry_aa5632e436185ad839fe32a588794cea8}
+Open the specified file with a suitable codec. \begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1CodecRegistry_a8deaea0aa8d872195d2aa18916b17af7}{find\+By\+File} 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{da/dff/classAudio_1_1CodecRegistry_aa5632e436185ad839fe32a588794cea8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}!remove@{remove}}
+\index{remove@{remove}!Audio\+::\+Codec\+Registry@{Audio\+::\+Codec\+Registry}}
+\subsubsection[{\texorpdfstring{remove(\+Codec $\ast$codec)}{remove(Codec *codec)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Codec\+Registry\+::remove (
+\begin{DoxyParamCaption}
+\item[{{\bf Codec} $\ast$}]{codec}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1CodecRegistry_abf72b91e3cfe71074275d8dfde204765}{}\label{classAudio_1_1CodecRegistry_abf72b91e3cfe71074275d8dfde204765}
+Remove a codec from the registry \begin{DoxyRemark}{Remarks}
+If the codec had already been removed, this is a no-\/op. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em codec} & The codec to be removed from the registry. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Codec\+Registry.\+h\item 
+audio/Codec\+Registry.\+cpp\end{DoxyCompactItemize}

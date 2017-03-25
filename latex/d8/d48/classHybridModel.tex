@@ -1,0 +1,155 @@
+\hypertarget{classHybridModel}{}\section{Hybrid\+Model Class Reference}
+\label{classHybridModel}\index{Hybrid\+Model@{Hybrid\+Model}}
+
+
+Inheritance diagram for Hybrid\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{d4/d1a/classHybridModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hybrid\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d3c/classHybridModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHybridModel_aa59380d7035b6ba66ee39247de24609e}{override} (\hyperlink{classBaseModel}{Base\+Model}) bool \hyperlink{classBaseModel_ab2692ac2ec9c0c8c452d73f3a0bd341b}{Build}(const \hyperlink{structOPCODECREATE}{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+TE} \&create)
+\item 
+\hyperlink{classHybridModel_aad99f00881d448709249cf5959dd1f3a}{override} (\hyperlink{classBaseModel}{Base\+Model}) \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classBaseModel_a714251e9cd861e4e304f5740c75a5b74}{Get\+Used\+Bytes}() const 
+\item 
+\hyperlink{classHybridModel_ab624c7cb773f7dd2c614fe9b8c00d02a}{override} (\hyperlink{classBaseModel}{Base\+Model}) bool \hyperlink{classBaseModel_a5776072914754d8ba95856d27ce24a6d}{Refit}()
+\item 
+inline\+\_\+ const \hyperlink{structLeafTriangles}{Leaf\+Triangles} $\ast$ \hyperlink{classHybridModel_ae7c97d3ab7a1656125593cfdd641bebe}{Get\+Leaf\+Triangles} () const 
+\item 
+inline\+\_\+ const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{classHybridModel_a641aa5899ef8db31d9d18cbdf8ca50b7}{Get\+Indices} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An hybrid collision model.
+
+The problem \+:
+
+Opcode really shines for mesh-\/mesh collision, especially when meshes are deeply overlapping (it typically outperforms R\+A\+P\+ID in those cases).
+
+Unfortunately this is not the typical scenario in games.
+
+For close-\/proximity cases, especially for volume-\/mesh queries, it\textquotesingle{}s relatively easy to run faster than Opcode, that suffers from a relatively high setup time.
+
+In particular, Opcode\textquotesingle{}s \char`\"{}vanilla\char`\"{} trees in those cases -\/can-\/ run faster. They can also use -\/less-\/ memory than the optimized ones, when you let the system stop at $\sim$10 triangles / leaf for example (i.\+e. when you don\textquotesingle{}t use \char`\"{}complete\char`\"{} trees). However, those trees tend to fragment memory quite a lot, increasing cache misses \+: since they\textquotesingle{}re not \char`\"{}complete\char`\"{}, we can\textquotesingle{}t predict the final number of nodes and we have to allocate nodes on-\/the-\/fly. For the same reasons we can\textquotesingle{}t use Opcode\textquotesingle{}s \char`\"{}optimized\char`\"{} trees here, since they rely on a known layout to perform the \char`\"{}optimization\char`\"{}.
+
+Hybrid trees \+:
+
+Hybrid trees try to combine best of both worlds \+:
+
+
+\begin{DoxyItemize}
+\item they use a maximum limit of 16 triangles/leaf. \char`\"{}16\char`\"{} is used so that we\textquotesingle{}ll be able to save the number of triangles using 4 bits only.
+\item they\textquotesingle{}re still \char`\"{}complete\char`\"{} trees thanks to a two-\/passes building phase. First we create a \char`\"{}vanilla\char`\"{} A\+A\+B\+B-\/tree with Opcode, limited to 16 triangles/leaf. Then we create a {\itshape second} vanilla tree, this time using the leaves of the first one. The trick is \+: this second tree is now \char`\"{}complete\char`\"{}... so we can further transform it into an Opcode\textquotesingle{}s optimized tree.
+\item then we run the collision queries on that standard Opcode tree. The only difference is that leaf nodes contain indices to leaf nodes of another tree. Also, we have to skip all primitive tests in Opcode optimized trees, since our leaves don\textquotesingle{}t contain triangles anymore.
+\item finally, for each collided leaf, we simply loop through 16 triangles max, and collide them with the bounding volume used in the query (we only support volume-\/vs-\/mesh queries here, not mesh-\/vs-\/mesh)
+\end{DoxyItemize}
+
+All of that is wrapped in this \char`\"{}hybrid model\char`\"{} that contains the minimal data required for this to work. It\textquotesingle{}s a mix between old \char`\"{}vanilla\char`\"{} trees, and old \char`\"{}optimized\char`\"{} trees.
+
+Extra advantages\+:
+
+
+\begin{DoxyItemize}
+\item If we use them for dynamic models, we\textquotesingle{}re left with a very small number of leaf nodes to refit. It might be a bit faster since we have less nodes to write back.
+\item In rigid body simulation, using temporal coherence and sleeping objects greatly reduce the actual influence of one tree over another (i.\+e. the speed difference is often invisible). So memory is really the key element to consider, and in this regard hybrid trees are just better.
+\end{DoxyItemize}
+
+Information to take home\+:
+\begin{DoxyItemize}
+\item they use less ram
+\item they\textquotesingle{}re not slower (they\textquotesingle{}re faster or slower depending on cases, overall there\textquotesingle{}s no significant difference {\itshape as long as objects don\textquotesingle{}t interpenetrate too much} -\/ in which case Opcode\textquotesingle{}s optimized trees are still notably faster)
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May, 18, 2003 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Hybrid\+Model@{Hybrid\+Model}!Get\+Indices@{Get\+Indices}}
+\index{Get\+Indices@{Get\+Indices}!Hybrid\+Model@{Hybrid\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Indices() const }{GetIndices() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ const {\bf udword}$\ast$ Hybrid\+Model\+::\+Get\+Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classHybridModel_a641aa5899ef8db31d9d18cbdf8ca50b7}{}\label{classHybridModel_a641aa5899ef8db31d9d18cbdf8ca50b7}
+Gets array of indices. \begin{DoxyReturn}{Returns}
+array of indices 
+\end{DoxyReturn}
+\index{Hybrid\+Model@{Hybrid\+Model}!Get\+Leaf\+Triangles@{Get\+Leaf\+Triangles}}
+\index{Get\+Leaf\+Triangles@{Get\+Leaf\+Triangles}!Hybrid\+Model@{Hybrid\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Leaf\+Triangles() const }{GetLeafTriangles() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ const {\bf Leaf\+Triangles}$\ast$ Hybrid\+Model\+::\+Get\+Leaf\+Triangles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classHybridModel_ae7c97d3ab7a1656125593cfdd641bebe}{}\label{classHybridModel_ae7c97d3ab7a1656125593cfdd641bebe}
+Gets array of triangles. \begin{DoxyReturn}{Returns}
+array of triangles 
+\end{DoxyReturn}
+\index{Hybrid\+Model@{Hybrid\+Model}!override@{override}}
+\index{override@{override}!Hybrid\+Model@{Hybrid\+Model}}
+\subsubsection[{\texorpdfstring{override(\+Base\+Model) bool Build(const O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E \&create)}{override(BaseModel) bool Build(const OPCODECREATE &create)}}]{\setlength{\rightskip}{0pt plus 5cm}Hybrid\+Model\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Model}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classHybridModel_aa59380d7035b6ba66ee39247de24609e}{}\label{classHybridModel_aa59380d7035b6ba66ee39247de24609e}
+Builds a collision model. 
+\begin{DoxyParams}{Parameters}
+{\em create} & \mbox{[}in\mbox{]} model creation structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Hybrid\+Model@{Hybrid\+Model}!override@{override}}
+\index{override@{override}!Hybrid\+Model@{Hybrid\+Model}}
+\subsubsection[{\texorpdfstring{override(\+Base\+Model) udword Get\+Used\+Bytes() const }{override(BaseModel) udword GetUsedBytes() const }}]{\setlength{\rightskip}{0pt plus 5cm}Hybrid\+Model\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Model}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classHybridModel_aad99f00881d448709249cf5959dd1f3a}{}\label{classHybridModel_aad99f00881d448709249cf5959dd1f3a}
+Gets the number of bytes used by the tree. \begin{DoxyReturn}{Returns}
+amount of bytes used 
+\end{DoxyReturn}
+\index{Hybrid\+Model@{Hybrid\+Model}!override@{override}}
+\index{override@{override}!Hybrid\+Model@{Hybrid\+Model}}
+\subsubsection[{\texorpdfstring{override(\+Base\+Model) bool Refit()}{override(BaseModel) bool Refit()}}]{\setlength{\rightskip}{0pt plus 5cm}Hybrid\+Model\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Model}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classHybridModel_ab624c7cb773f7dd2c614fe9b8c00d02a}{}\label{classHybridModel_ab624c7cb773f7dd2c614fe9b8c00d02a}
+Refits the collision model. This can be used to handle dynamic meshes. Usage is\+:
+\begin{DoxyEnumerate}
+\item modify your mesh vertices (keep the topology constant!)
+\item refit the tree (call this method) \begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+
+\end{DoxyEnumerate}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__HybridModel_8h}{O\+P\+C\+\_\+\+Hybrid\+Model.\+h}\end{DoxyCompactItemize}

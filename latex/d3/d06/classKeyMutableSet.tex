@@ -1,0 +1,71 @@
+\hypertarget{classKeyMutableSet}{}\section{Key\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$ Class Template Reference}
+\label{classKeyMutableSet}\index{Key\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$@{Key\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$}}
+
+
+{\ttfamily \#include $<$key\+\_\+mutable\+\_\+set.\+h$>$}
+
+
+
+Inheritance diagram for Key\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{d9/d0e/classKeyMutableSet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Key\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{d5/dea/classKeyMutableSet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classKeyMutableSet_ad5f9c40826ad03b154076abcff2392eb}{check\+Set} ()\hypertarget{classKeyMutableSet_ad5f9c40826ad03b154076abcff2392eb}{}\label{classKeyMutableSet_ad5f9c40826ad03b154076abcff2392eb}
+
+\begin{DoxyCompactList}\small\item\em This just checks the order of the set for testing purposes.. \end{DoxyCompactList}\item 
+void \hyperlink{classKeyMutableSet_a89124ba6689e3b0ae9ddf37ee0f7b6d8}{change\+Key} (typename S\+U\+P\+E\+R\+::iterator \&iter, const T \&new\+Key, typename S\+U\+P\+E\+R\+::iterator \&templess, typename S\+U\+P\+E\+R\+::iterator \&rettempmore)
+\begin{DoxyCompactList}\small\item\em Given an iterator you can alter that iterator\textquotesingle{}s key to be the one passed in. \end{DoxyCompactList}\item 
+S\+U\+P\+E\+R\+::iterator {\bfseries insert} (const T \&new\+Key, typename S\+U\+P\+E\+R\+::iterator hint)\hypertarget{classKeyMutableSet_aaa02c428589f8277c63b98e86a7dfe6e}{}\label{classKeyMutableSet_aaa02c428589f8277c63b98e86a7dfe6e}
+
+\item 
+S\+U\+P\+E\+R\+::iterator {\bfseries insert} (const T \&new\+Key)\hypertarget{classKeyMutableSet_a65773fd4224797225b120c383fe115ec}{}\label{classKeyMutableSet_a65773fd4224797225b120c383fe115ec}
+
+\item 
+S\+U\+P\+E\+R\+::iterator {\bfseries change\+Key} (typename S\+U\+P\+E\+R\+::iterator iter, const T \&new\+Key)\hypertarget{classKeyMutableSet_a3533764d6280754fa8a56a97ddc55b36}{}\label{classKeyMutableSet_a3533764d6280754fa8a56a97ddc55b36}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, class \+\_\+\+Compare = std\+::less$<$ Mutable\+Shell$<$ T $>$ $>$$>$\\*
+class Key\+Mutable\+Set$<$ T, \+\_\+\+Compare $>$}
+
+This set inherits from the S\+TL multiset, with a slight variation\+: The value is nonconst--that means you are allowed to change things but must not alter the key. This set inherits from the S\+TL multiset, with a slight variation\+: You are allowed to update the key of a particular iterator that you have obtained. Note\+: T is the type that each element is pointing to. 
+
+\subsection{Member Function Documentation}
+\index{Key\+Mutable\+Set@{Key\+Mutable\+Set}!change\+Key@{change\+Key}}
+\index{change\+Key@{change\+Key}!Key\+Mutable\+Set@{Key\+Mutable\+Set}}
+\subsubsection[{\texorpdfstring{change\+Key(typename S\+U\+P\+E\+R\+::iterator \&iter, const T \&new\+Key, typename S\+U\+P\+E\+R\+::iterator \&templess, typename S\+U\+P\+E\+R\+::iterator \&rettempmore)}{changeKey(typename SUPER::iterator &iter, const T &newKey, typename SUPER::iterator &templess, typename SUPER::iterator &rettempmore)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class \+\_\+\+Compare  = std\+::less$<$ Mutable\+Shell$<$ T $>$ $>$$>$ void {\bf Key\+Mutable\+Set}$<$ T, \+\_\+\+Compare $>$\+::change\+Key (
+\begin{DoxyParamCaption}
+\item[{typename S\+U\+P\+E\+R\+::iterator \&}]{iter, }
+\item[{const T \&}]{new\+Key, }
+\item[{typename S\+U\+P\+E\+R\+::iterator \&}]{templess, }
+\item[{typename S\+U\+P\+E\+R\+::iterator \&}]{rettempmore}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classKeyMutableSet_a89124ba6689e3b0ae9ddf37ee0f7b6d8}{}\label{classKeyMutableSet_a89124ba6689e3b0ae9ddf37ee0f7b6d8}
+
+
+Given an iterator you can alter that iterator\textquotesingle{}s key to be the one passed in. 
+
+The type must have a function called change\+Key(const Key \&new\+Key) that changes its key to the specified new key. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/key\+\_\+mutable\+\_\+set.\+h\end{DoxyCompactItemize}

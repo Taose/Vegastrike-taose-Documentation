@@ -1,0 +1,189 @@
+\hypertarget{classOrder}{}\section{Order Class Reference}
+\label{classOrder}\index{Order@{Order}}
+
+
+Inheritance diagram for Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d82/classOrder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/de0/classOrder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classOrder_a80a61490751da4a4bf90ac2e6c8f4fde}{O\+R\+D\+E\+R\+T\+Y\+P\+ES} \{ \\*
+{\bfseries M\+O\+V\+E\+M\+E\+NT} =1, 
+{\bfseries F\+A\+C\+I\+NG} =2, 
+{\bfseries W\+E\+A\+P\+ON} =4, 
+{\bfseries C\+L\+O\+A\+K\+I\+NG} =8, 
+\\*
+{\bfseries A\+L\+L\+T\+Y\+P\+ES} =(1$\vert$2$\vert$4$\vert$8)
+ \}\hypertarget{classOrder_a80a61490751da4a4bf90ac2e6c8f4fde}{}\label{classOrder_a80a61490751da4a4bf90ac2e6c8f4fde}
+\begin{DoxyCompactList}\small\item\em The varieties of order types M\+O\+V\+E\+M\+E\+NT,F\+A\+C\+I\+NG, and W\+E\+A\+P\+ON orders may not be mutually executed (lest one engine goes left, the other right) \end{DoxyCompactList}
+\item 
+enum {\bfseries S\+U\+B\+O\+R\+D\+E\+R\+T\+Y\+P\+ES} \{ {\bfseries S\+L\+O\+C\+A\+T\+I\+ON} =1, 
+{\bfseries S\+T\+A\+R\+G\+ET} =2, 
+{\bfseries S\+S\+E\+LF} =4
+ \}\hypertarget{classOrder_aff553248af119551df442907bd95cfa0}{}\label{classOrder_aff553248af119551df442907bd95cfa0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOrder_abd08710d8a7cf1c550fddd4e01622fbc}{Choose\+Target} ()\hypertarget{classOrder_abd08710d8a7cf1c550fddd4e01622fbc}{}\label{classOrder_abd08710d8a7cf1c550fddd4e01622fbc}
+
+\begin{DoxyCompactList}\small\item\em this function calls the destructor (needs to be overridden for python; \end{DoxyCompactList}\item 
+virtual bool {\bfseries Pursue\+Target} (\hyperlink{classUnit}{Unit} $\ast$, bool isleader)\hypertarget{classOrder_a5e0eab34af62a89d4302ff0d0d5bdd92}{}\label{classOrder_a5e0eab34af62a89d4302ff0d0d5bdd92}
+
+\item 
+void \hyperlink{classOrder_a7a4d1d31225ccecd47ddb02b5b3c6bc1}{Clear\+Messages} ()\hypertarget{classOrder_a7a4d1d31225ccecd47ddb02b5b3c6bc1}{}\label{classOrder_a7a4d1d31225ccecd47ddb02b5b3c6bc1}
+
+\begin{DoxyCompactList}\small\item\em clears the messasges of this order \end{DoxyCompactList}\item 
+\hyperlink{classOrder_a7b6a660b03708ed5b4e1c4a6dc2a664a}{Order} ()\hypertarget{classOrder_a7b6a660b03708ed5b4e1c4a6dc2a664a}{}\label{classOrder_a7b6a660b03708ed5b4e1c4a6dc2a664a}
+
+\begin{DoxyCompactList}\small\item\em The default constructor setting everything to N\+U\+LL and no dependency on order. \end{DoxyCompactList}\item 
+\hyperlink{classOrder_a8232331d477be2b8f7d0ac0ec252c26c}{Order} (int \hyperlink{classOrder_a66fec15be8c023a4b1b0a976eeeee266}{type}, int subtype)\hypertarget{classOrder_a8232331d477be2b8f7d0ac0ec252c26c}{}\label{classOrder_a8232331d477be2b8f7d0ac0ec252c26c}
+
+\begin{DoxyCompactList}\small\item\em The constructor that specifies what order dependencies this order has. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classOrder_ac8ad5611591d43e5716d4cfb34e24bbb}{Destroy} ()\hypertarget{classOrder_ac8ad5611591d43e5716d4cfb34e24bbb}{}\label{classOrder_ac8ad5611591d43e5716d4cfb34e24bbb}
+
+\begin{DoxyCompactList}\small\item\em The virutal function that unrefs all memory then calls Destruct () which takes care of unreffing this or calling delete on this. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classOrder_abcab68df8e1fdb17cad57307cea7966f}{Execute} ()\hypertarget{classOrder_abcab68df8e1fdb17cad57307cea7966f}{}\label{classOrder_abcab68df8e1fdb17cad57307cea7966f}
+
+\begin{DoxyCompactList}\small\item\em The function that gets called and executes all queued suborders. \end{DoxyCompactList}\item 
+\hyperlink{classOrder}{Order} $\ast$ \hyperlink{classOrder_aeb3ab2de81765654ae2dc02da565b11e}{query\+Type} (unsigned int \hyperlink{classOrder_a66fec15be8c023a4b1b0a976eeeee266}{type})\hypertarget{classOrder_aeb3ab2de81765654ae2dc02da565b11e}{}\label{classOrder_aeb3ab2de81765654ae2dc02da565b11e}
+
+\begin{DoxyCompactList}\small\item\em returns a pointer to the first order that may be bitwised ored with that type \end{DoxyCompactList}\item 
+\hyperlink{classOrder}{Order} $\ast$ \hyperlink{classOrder_adb6026a4fe5a4c51808bb8c66e2fcc21}{query\+Any} (unsigned int \hyperlink{classOrder_a66fec15be8c023a4b1b0a976eeeee266}{type})\hypertarget{classOrder_adb6026a4fe5a4c51808bb8c66e2fcc21}{}\label{classOrder_adb6026a4fe5a4c51808bb8c66e2fcc21}
+
+\begin{DoxyCompactList}\small\item\em returns a pointer to the first order that may be bitwise ored with any type \end{DoxyCompactList}\item 
+void \hyperlink{classOrder_ad1bf0e4f383e125ec90aab70fcd54f11}{erase\+Type} (unsigned int \hyperlink{classOrder_a66fec15be8c023a4b1b0a976eeeee266}{type})\hypertarget{classOrder_ad1bf0e4f383e125ec90aab70fcd54f11}{}\label{classOrder_ad1bf0e4f383e125ec90aab70fcd54f11}
+
+\begin{DoxyCompactList}\small\item\em Erases all orders that bitwise OR with that type. \end{DoxyCompactList}\item 
+bool \hyperlink{classOrder_a465da9fcb9219e1821010ba493f0f3a7}{Attach\+Order} (\hyperlink{classUnit}{Unit} $\ast$targets)\hypertarget{classOrder_a465da9fcb9219e1821010ba493f0f3a7}{}\label{classOrder_a465da9fcb9219e1821010ba493f0f3a7}
+
+\begin{DoxyCompactList}\small\item\em Attaches a group of targets to this order (used for strategery-\/type games) \end{DoxyCompactList}\item 
+bool \hyperlink{classOrder_a52251564ef45c20c2495a9157a986764}{Attach\+Order} (Q\+Vector target)\hypertarget{classOrder_a52251564ef45c20c2495a9157a986764}{}\label{classOrder_a52251564ef45c20c2495a9157a986764}
+
+\begin{DoxyCompactList}\small\item\em Attaches a navigation point to this order. \end{DoxyCompactList}\item 
+bool \hyperlink{classOrder_a51a620970adb996b52659848e121eb37}{Attach\+Self\+Order} (\hyperlink{classUnit}{Unit} $\ast$targets)\hypertarget{classOrder_a51a620970adb996b52659848e121eb37}{}\label{classOrder_a51a620970adb996b52659848e121eb37}
+
+\begin{DoxyCompactList}\small\item\em Attaches a group (form up) to this order. \end{DoxyCompactList}\item 
+\hyperlink{classOrder}{Order} $\ast$ \hyperlink{classOrder_a904c86a9f67cb49d4a84514f75d861f2}{Enqueue\+Order} (\hyperlink{classOrder}{Order} $\ast$ord)\hypertarget{classOrder_a904c86a9f67cb49d4a84514f75d861f2}{}\label{classOrder_a904c86a9f67cb49d4a84514f75d861f2}
+
+\begin{DoxyCompactList}\small\item\em Enqueues another order that will be executed (in parallel perhaps) when next void \hyperlink{classOrder_abcab68df8e1fdb17cad57307cea7966f}{Execute()} is called. \end{DoxyCompactList}\item 
+\hyperlink{classOrder}{Order} $\ast$ \hyperlink{classOrder_a948afe3ce512837ab89a014953de843d}{Replace\+Order} (\hyperlink{classOrder}{Order} $\ast$ord)\hypertarget{classOrder_a948afe3ce512837ab89a014953de843d}{}\label{classOrder_a948afe3ce512837ab89a014953de843d}
+
+\begin{DoxyCompactList}\small\item\em Replaces the first order of that type in the order queue. \end{DoxyCompactList}\item 
+bool {\bfseries Done} ()\hypertarget{classOrder_ac6c566229592abf91060681c2392e3d2}{}\label{classOrder_ac6c566229592abf91060681c2392e3d2}
+
+\item 
+int {\bfseries get\+Type} ()\hypertarget{classOrder_aae6cb78b6f9eb67238ad2394244dadba}{}\label{classOrder_aae6cb78b6f9eb67238ad2394244dadba}
+
+\item 
+int {\bfseries get\+Sub\+Type} ()\hypertarget{classOrder_af4f410e366cc6496b5bbd2fcc1578619}{}\label{classOrder_af4f410e366cc6496b5bbd2fcc1578619}
+
+\item 
+virtual void \hyperlink{classOrder_a3b6f372e416a4207e8e7ac2d6a0c4b31}{Set\+Parent} (\hyperlink{classUnit}{Unit} $\ast$parent1)\hypertarget{classOrder_a3b6f372e416a4207e8e7ac2d6a0c4b31}{}\label{classOrder_a3b6f372e416a4207e8e7ac2d6a0c4b31}
+
+\begin{DoxyCompactList}\small\item\em Sets the parent of this \hyperlink{classUnit}{Unit}. Any virtual functions must call this one. \end{DoxyCompactList}\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries Get\+Parent} () const \hypertarget{classOrder_a564a861fecaf28898452e041da1cc9df}{}\label{classOrder_a564a861fecaf28898452e041da1cc9df}
+
+\item 
+virtual void \hyperlink{classOrder_a446aaf1fe8549a930b572bf1c9ed84d2}{Communicate} (const class \hyperlink{classCommunicationMessage}{Communication\+Message} \&c)\hypertarget{classOrder_a446aaf1fe8549a930b572bf1c9ed84d2}{}\label{classOrder_a446aaf1fe8549a930b572bf1c9ed84d2}
+
+\begin{DoxyCompactList}\small\item\em Sends a communication message from the \hyperlink{classUnit}{Unit} (encapulated in c) to this unit. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classOrder_a321debaa992d6f8db3f3d22c35fbb933}{Process\+Comm\+Message} (class \hyperlink{classCommunicationMessage}{Communication\+Message} \&c)\hypertarget{classOrder_a321debaa992d6f8db3f3d22c35fbb933}{}\label{classOrder_a321debaa992d6f8db3f3d22c35fbb933}
+
+\begin{DoxyCompactList}\small\item\em processes a single message...generally called by the Messages() func \end{DoxyCompactList}\item 
+virtual void \hyperlink{classOrder_abcc39777edfc62e73c01832e10bf8d4c}{Process\+Communication\+Messages} (float Comm\+Repsonse\+Time, bool Remove\+Message\+Processed)\hypertarget{classOrder_abcc39777edfc62e73c01832e10bf8d4c}{}\label{classOrder_abcc39777edfc62e73c01832e10bf8d4c}
+
+\begin{DoxyCompactList}\small\item\em responds (or does not) to certain messages in the message queue \end{DoxyCompactList}\item 
+\hyperlink{classOrder}{Order} $\ast$ \hyperlink{classOrder_a09265ddf450a9c0213fd9ac3013ebe8d}{find\+Order} (\hyperlink{classOrder}{Order} $\ast$ord)\hypertarget{classOrder_a09265ddf450a9c0213fd9ac3013ebe8d}{}\label{classOrder_a09265ddf450a9c0213fd9ac3013ebe8d}
+
+\begin{DoxyCompactList}\small\item\em return pointer to order or N\+U\+LL if not found \end{DoxyCompactList}\item 
+void \hyperlink{classOrder_a8ec639f0190e686e94191fe5657bb979}{erase\+Order} (\hyperlink{classOrder}{Order} $\ast$ord)\hypertarget{classOrder_a8ec639f0190e686e94191fe5657bb979}{}\label{classOrder_a8ec639f0190e686e94191fe5657bb979}
+
+\begin{DoxyCompactList}\small\item\em erase that order from the list \end{DoxyCompactList}\item 
+\hyperlink{classOrder}{Order} $\ast$ \hyperlink{classOrder_a339faab4bd479c78418228436f4107b5}{Enqueue\+Order\+First} (\hyperlink{classOrder}{Order} $\ast$ord)\hypertarget{classOrder_a339faab4bd479c78418228436f4107b5}{}\label{classOrder_a339faab4bd479c78418228436f4107b5}
+
+\begin{DoxyCompactList}\small\item\em enqueue order as first order \end{DoxyCompactList}\item 
+virtual olist\+\_\+t $\ast$ \hyperlink{classOrder_aa1f91340af1329d81161bf66e1fb62fe}{get\+Order\+List} ()\hypertarget{classOrder_aa1f91340af1329d81161bf66e1fb62fe}{}\label{classOrder_aa1f91340af1329d81161bf66e1fb62fe}
+
+\begin{DoxyCompactList}\small\item\em returns the orderlist (N\+U\+LL for orders that haven\textquotesingle{}t got any) \end{DoxyCompactList}\item 
+virtual void {\bfseries Adjust\+Relation\+To} (\hyperlink{classUnit}{Unit} $\ast$un, float factor)\hypertarget{classOrder_a6d80f534d3fdf1c04d0d5f7a3e543d7c}{}\label{classOrder_a6d80f534d3fdf1c04d0d5f7a3e543d7c}
+
+\item 
+virtual std\+::string {\bfseries get\+Order\+Description} ()\hypertarget{classOrder_a8c9c2918c9f47461f55ec1e455599125}{}\label{classOrder_a8c9c2918c9f47461f55ec1e455599125}
+
+\item 
+\hyperlink{classOrder}{Order} $\ast$ \hyperlink{classOrder_a7f655c6ca6ea6795c20ae342824fb75e}{find\+Order\+List} ()\hypertarget{classOrder_a7f655c6ca6ea6795c20ae342824fb75e}{}\label{classOrder_a7f655c6ca6ea6795c20ae342824fb75e}
+
+\begin{DoxyCompactList}\small\item\em searches the suborders recursively for the first order that has an orderlist \end{DoxyCompactList}\item 
+std\+::string {\bfseries create\+Full\+Order\+Description} (int level=0)\hypertarget{classOrder_a8663aff64fb7b19585b5f332791b01c5}{}\label{classOrder_a8663aff64fb7b19585b5f332791b01c5}
+
+\item 
+void {\bfseries set\+Action\+String} (std\+::string astring)\hypertarget{classOrder_a87306db3bab82f437e1c6345fa2a8550}{}\label{classOrder_a87306db3bab82f437e1c6345fa2a8550}
+
+\item 
+std\+::string {\bfseries get\+Action\+String} ()\hypertarget{classOrder_a823c32fd0bd44fd713d90f140bbc6b95}{}\label{classOrder_a823c32fd0bd44fd713d90f140bbc6b95}
+
+\item 
+virtual float {\bfseries get\+Mood} ()\hypertarget{classOrder_a14efc20460cbef5c6ff75f27785df9fe}{}\label{classOrder_a14efc20460cbef5c6ff75f27785df9fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOrder_ad30c31d3ceddd4f4019009203b927fc1}{Destructor} ()\hypertarget{classOrder_ad30c31d3ceddd4f4019009203b927fc1}{}\label{classOrder_ad30c31d3ceddd4f4019009203b927fc1}
+
+\begin{DoxyCompactList}\small\item\em changes the local relation of this unit to another...may inform superiors about \char`\"{}good\char`\"{} or bad! behavior depending on the AI \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ \hyperlink{classOrder_a57548b2476945f89ac22fafa4cb5863b}{parent}\hypertarget{classOrder_a57548b2476945f89ac22fafa4cb5863b}{}\label{classOrder_a57548b2476945f89ac22fafa4cb5863b}
+
+\begin{DoxyCompactList}\small\item\em The unit this order is attached to. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classOrder_a66fec15be8c023a4b1b0a976eeeee266}{type}\hypertarget{classOrder_a66fec15be8c023a4b1b0a976eeeee266}{}\label{classOrder_a66fec15be8c023a4b1b0a976eeeee266}
+
+\begin{DoxyCompactList}\small\item\em The bit code (from O\+R\+D\+E\+R\+T\+Y\+P\+ES) that this order is (for parallel execution) \end{DoxyCompactList}\item 
+unsigned int {\bfseries subtype}\hypertarget{classOrder_ae3dfacf5550249e7218ce5f37b9433ef}{}\label{classOrder_ae3dfacf5550249e7218ce5f37b9433ef}
+
+\item 
+bool \hyperlink{classOrder_ab14f52031cd06d9877534bf102fe8d81}{done}\hypertarget{classOrder_ab14f52031cd06d9877534bf102fe8d81}{}\label{classOrder_ab14f52031cd06d9877534bf102fe8d81}
+
+\begin{DoxyCompactList}\small\item\em Whether or not this order is done. \end{DoxyCompactList}\item 
+\hyperlink{classUnitContainer}{Unit\+Container} \hyperlink{classOrder_a2069d9fa5fdda8416f69e2c28a65d6ea}{group}\hypertarget{classOrder_a2069d9fa5fdda8416f69e2c28a65d6ea}{}\label{classOrder_a2069d9fa5fdda8416f69e2c28a65d6ea}
+
+\begin{DoxyCompactList}\small\item\em If this order applies to a group of units (as in form up with this group) \end{DoxyCompactList}\item 
+Q\+Vector \hyperlink{classOrder_ab5b522145d83e77da31d164f3d82057d}{targetlocation}\hypertarget{classOrder_ab5b522145d83e77da31d164f3d82057d}{}\label{classOrder_ab5b522145d83e77da31d164f3d82057d}
+
+\begin{DoxyCompactList}\small\item\em If this order applies to a physical location in world space. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classOrder}{Order} $\ast$ $>$ \hyperlink{classOrder_a860bba0b8b346702e826bda4a6ea3ded}{suborders}\hypertarget{classOrder_a860bba0b8b346702e826bda4a6ea3ded}{}\label{classOrder_a860bba0b8b346702e826bda4a6ea3ded}
+
+\begin{DoxyCompactList}\small\item\em The queue of suborders that will be executed in parallel according to bit code. \end{DoxyCompactList}\item 
+std\+::list$<$ class \hyperlink{classCommunicationMessage}{Communication\+Message} $\ast$ $>$ \hyperlink{classOrder_a878e1a44eec9a58170a9dd7b2daa1b24}{messagequeue}\hypertarget{classOrder_a878e1a44eec9a58170a9dd7b2daa1b24}{}\label{classOrder_a878e1a44eec9a58170a9dd7b2daa1b24}
+
+\begin{DoxyCompactList}\small\item\em a bunch of communications that have not been answered Communication\+Messages are actually containing reference to a nice Finite State Machine that can allow a player to have a reasonable conversation with an AI \end{DoxyCompactList}\item 
+std\+::string {\bfseries actionstring}\hypertarget{classOrder_a22c46a36e7fbf3cfbb4efd1b31dc5844}{}\label{classOrder_a22c46a36e7fbf3cfbb4efd1b31dc5844}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/ai/order.\+h\item 
+cmd/ai/order.\+cpp\item 
+cmd/ai/order\+\_\+comm.\+cpp\end{DoxyCompactItemize}

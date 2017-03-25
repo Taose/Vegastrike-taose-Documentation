@@ -1,0 +1,94 @@
+\hypertarget{classAudio_1_1VirtualIterator}{}\section{Audio\+:\+:Virtual\+Iterator$<$ \+\_\+T, \+\_\+\+Rt, \+\_\+\+Pt $>$ Class Template Reference}
+\label{classAudio_1_1VirtualIterator}\index{Audio\+::\+Virtual\+Iterator$<$ \+\_\+\+T, \+\_\+\+Rt, \+\_\+\+Pt $>$@{Audio\+::\+Virtual\+Iterator$<$ \+\_\+\+T, \+\_\+\+Rt, \+\_\+\+Pt $>$}}
+
+
+{\ttfamily \#include $<$Virtual\+Iterator.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Virtual\+Iterator$<$ \+\_\+T, \+\_\+\+Rt, \+\_\+\+Pt $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d3c/classAudio_1_1VirtualIterator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Virtual\+Iterator$<$ \+\_\+T, \+\_\+\+Rt, \+\_\+\+Pt $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{d6/d7a/classAudio_1_1VirtualIterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+T {\bfseries value\+\_\+type}\hypertarget{classAudio_1_1VirtualIterator_ae90331c5a8af46115c4a2366a7786de4}{}\label{classAudio_1_1VirtualIterator_ae90331c5a8af46115c4a2366a7786de4}
+
+\item 
+typedef \+\_\+\+Rt {\bfseries reference\+\_\+type}\hypertarget{classAudio_1_1VirtualIterator_ab437c79a5e631491fe40c01c51a09f44}{}\label{classAudio_1_1VirtualIterator_ab437c79a5e631491fe40c01c51a09f44}
+
+\item 
+typedef \+\_\+\+Pt {\bfseries pointer\+\_\+type}\hypertarget{classAudio_1_1VirtualIterator_a9ffbfddf2560442e70d2b3a75fe929c8}{}\label{classAudio_1_1VirtualIterator_a9ffbfddf2560442e70d2b3a75fe929c8}
+
+\item 
+typedef \hyperlink{classAudio_1_1VirtualIterator}{Virtual\+Iterator}$<$ \+\_\+T, \+\_\+\+Rt, \+\_\+\+Pt $>$ {\bfseries iterator\+\_\+type}\hypertarget{classAudio_1_1VirtualIterator_ac9d1d449a981525311c19d8698e6b843}{}\label{classAudio_1_1VirtualIterator_ac9d1d449a981525311c19d8698e6b843}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual reference\+\_\+type {\bfseries operator$\ast$} ()=0\hypertarget{classAudio_1_1VirtualIterator_ae88c50723b392a9bc6b993417fafee7e}{}\label{classAudio_1_1VirtualIterator_ae88c50723b392a9bc6b993417fafee7e}
+
+\item 
+virtual pointer\+\_\+type {\bfseries operator-\/$>$} ()=0\hypertarget{classAudio_1_1VirtualIterator_aa980497ff51034766e146f4739c82dd6}{}\label{classAudio_1_1VirtualIterator_aa980497ff51034766e146f4739c82dd6}
+
+\item 
+virtual \hyperlink{classAudio_1_1VirtualIterator}{iterator\+\_\+type} \& {\bfseries operator++} ()=0\hypertarget{classAudio_1_1VirtualIterator_a75a5588676ce2e65c188e2656d900a00}{}\label{classAudio_1_1VirtualIterator_a75a5588676ce2e65c188e2656d900a00}
+
+\item 
+virtual \hyperlink{classAudio_1_1VirtualIterator}{iterator\+\_\+type} \& {\bfseries operator-\/-\/} ()=0\hypertarget{classAudio_1_1VirtualIterator_ada9940d97febb217e4e1c0ab78a32986}{}\label{classAudio_1_1VirtualIterator_ada9940d97febb217e4e1c0ab78a32986}
+
+\item 
+virtual Shared\+Ptr$<$ \hyperlink{classAudio_1_1VirtualIterator}{iterator\+\_\+type} $>$ {\bfseries clone} () const =0\hypertarget{classAudio_1_1VirtualIterator_a9c3dd6554fec1f49bb34a62ab494fa63}{}\label{classAudio_1_1VirtualIterator_a9c3dd6554fec1f49bb34a62ab494fa63}
+
+\item 
+virtual bool \hyperlink{classAudio_1_1VirtualIterator_ae9dc26121331a0e63ed223d60b4c98c9}{eos} () const =0\hypertarget{classAudio_1_1VirtualIterator_ae9dc26121331a0e63ed223d60b4c98c9}{}\label{classAudio_1_1VirtualIterator_ae9dc26121331a0e63ed223d60b4c98c9}
+
+\begin{DoxyCompactList}\small\item\em End-\/of-\/sequence. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classAudio_1_1VirtualIterator_a854d31e0f65cbb208ba6090924ff2499}{sos} () const =0\hypertarget{classAudio_1_1VirtualIterator_a854d31e0f65cbb208ba6090924ff2499}{}\label{classAudio_1_1VirtualIterator_a854d31e0f65cbb208ba6090924ff2499}
+
+\begin{DoxyCompactList}\small\item\em Start-\/of-\/sequence. \end{DoxyCompactList}\item 
+reference\+\_\+type {\bfseries get} ()\hypertarget{classAudio_1_1VirtualIterator_a0eab4313cefa891448dcc5ff0aa0a84f}{}\label{classAudio_1_1VirtualIterator_a0eab4313cefa891448dcc5ff0aa0a84f}
+
+\item 
+pointer\+\_\+type {\bfseries get\+Ptr} ()\hypertarget{classAudio_1_1VirtualIterator_adab80af4061c31ec8079174fd97dd9d1}{}\label{classAudio_1_1VirtualIterator_adab80af4061c31ec8079174fd97dd9d1}
+
+\item 
+\hyperlink{classAudio_1_1VirtualIterator}{iterator\+\_\+type} \& {\bfseries next} ()\hypertarget{classAudio_1_1VirtualIterator_a842aeb1422e73b6d301a7f36105d9951}{}\label{classAudio_1_1VirtualIterator_a842aeb1422e73b6d301a7f36105d9951}
+
+\item 
+\hyperlink{classAudio_1_1VirtualIterator}{iterator\+\_\+type} \& {\bfseries prev} ()\hypertarget{classAudio_1_1VirtualIterator_ae2f9f09a6830b3e079110f2c7343a9b3}{}\label{classAudio_1_1VirtualIterator_ae2f9f09a6830b3e079110f2c7343a9b3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+T, class \+\_\+\+Rt = \+\_\+\+T\&, class \+\_\+\+Pt = \+\_\+\+T$\ast$$>$\\*
+class Audio\+::\+Virtual\+Iterator$<$ \+\_\+\+T, \+\_\+\+Rt, \+\_\+\+Pt $>$}
+
+Used to derive virtual iterator types \begin{DoxyRemark}{Remarks}
+Since all operators are virtual, it is recommended not to use these iterators for iterating through large collections... 
+\end{DoxyRemark}
+\begin{DoxyNote}{Note}
+By necessity, due to design constraints, no postfix increment/decrement operators are defined\+: those don\textquotesingle{}t get along with virtuality. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+audio/Virtual\+Iterator.\+h\end{DoxyCompactItemize}

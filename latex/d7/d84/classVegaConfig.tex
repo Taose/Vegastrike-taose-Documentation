@@ -1,0 +1,160 @@
+\hypertarget{classVegaConfig}{}\section{Vega\+Config Class Reference}
+\label{classVegaConfig}\index{Vega\+Config@{Vega\+Config}}
+
+
+Inheritance diagram for Vega\+Config\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/dc0/classVegaConfig__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Vega\+Config\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d3c/classVegaConfig__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Vega\+Config} (const char $\ast$configfile)\hypertarget{classVegaConfig_a4e867874b9cedf3b3a150886ac90013e}{}\label{classVegaConfig_a4e867874b9cedf3b3a150886ac90013e}
+
+\item 
+void {\bfseries get\+Color} (\hyperlink{classconfigNode}{config\+Node} $\ast$node, string name, float color\mbox{[}4\mbox{]}, bool have\+\_\+color=false)\hypertarget{classVegaConfig_a4b01315822eda31cdb3a6a7dc3c83ef8}{}\label{classVegaConfig_a4b01315822eda31cdb3a6a7dc3c83ef8}
+
+\item 
+void {\bfseries get\+Color} (string section, string name, float color\mbox{[}4\mbox{]}, bool have\+\_\+color=false)\hypertarget{classVegaConfig_ad4837e7929e7c514b60131a1a7651788}{}\label{classVegaConfig_ad4837e7929e7c514b60131a1a7651788}
+
+\item 
+void {\bfseries geth\+Color} (string section, string name, float color\mbox{[}4\mbox{]}, int hexcolor)\hypertarget{classVegaConfig_a9e2b38827c3e0bad4714e25138384cf7}{}\label{classVegaConfig_a9e2b38827c3e0bad4714e25138384cf7}
+
+\item 
+void {\bfseries get\+Color} (string name, float color\mbox{[}4\mbox{]}, bool have\+\_\+color=false)\hypertarget{classVegaConfig_abdd7d4d59f103f603985be44316b5de0}{}\label{classVegaConfig_abdd7d4d59f103f603985be44316b5de0}
+
+\item 
+string {\bfseries get\+Variable} (string section, string name, string defaultvalue)\hypertarget{classVegaConfig_a42510bd3f6901f46c6de0684386c3747}{}\label{classVegaConfig_a42510bd3f6901f46c6de0684386c3747}
+
+\item 
+string {\bfseries get\+Variable} (string section, string subsection, string name, string defaultvalue)\hypertarget{classVegaConfig_a0d58134c5c2a8bb422d961fbfdca92ad}{}\label{classVegaConfig_a0d58134c5c2a8bb422d961fbfdca92ad}
+
+\item 
+\hyperlink{classconfigNode}{config\+Node} $\ast$ {\bfseries find\+Section} (string section, \hyperlink{classconfigNode}{config\+Node} $\ast$startnode)\hypertarget{classVegaConfig_a1932e1b234067d64ceb3a94ab419702e}{}\label{classVegaConfig_a1932e1b234067d64ceb3a94ab419702e}
+
+\item 
+\hyperlink{classconfigNode}{config\+Node} $\ast$ {\bfseries find\+Entry} (string name, \hyperlink{classconfigNode}{config\+Node} $\ast$startnode)\hypertarget{classVegaConfig_ac42983588449284b5bac4b72daab2c8d}{}\label{classVegaConfig_ac42983588449284b5bac4b72daab2c8d}
+
+\item 
+void {\bfseries set\+Variable} (\hyperlink{classconfigNode}{config\+Node} $\ast$entry, string value)\hypertarget{classVegaConfig_ad93a452d691a9e052434867154580220}{}\label{classVegaConfig_ad93a452d691a9e052434867154580220}
+
+\item 
+bool {\bfseries set\+Variable} (string section, string name, string value)\hypertarget{classVegaConfig_a97ac748fff002ed6464313a34fc30ace}{}\label{classVegaConfig_a97ac748fff002ed6464313a34fc30ace}
+
+\item 
+bool {\bfseries set\+Variable} (string section, string subsection, string name, string value)\hypertarget{classVegaConfig_a306e73cd17fb1e671c900871e2fce324}{}\label{classVegaConfig_a306e73cd17fb1e671c900871e2fce324}
+
+\item 
+\hyperlink{classeasyDomNode}{easy\+Dom\+Node} $\ast$ {\bfseries Variables} ()\hypertarget{classVegaConfig_ae3c267ae9b1e801762b2aba480206f38}{}\label{classVegaConfig_ae3c267ae9b1e801762b2aba480206f38}
+
+\item 
+virtual void {\bfseries bind\+Keys} ()\hypertarget{classVegaConfig_aa8895dbeaa521e5fc3747b4b7ab86108}{}\label{classVegaConfig_aa8895dbeaa521e5fc3747b4b7ab86108}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries axis\+\_\+axis} \mbox{[}M\+A\+X\+\_\+\+A\+X\+IS\mbox{]}\hypertarget{classVegaConfig_a24785fedf7e609d10b0f6ea62540c96f}{}\label{classVegaConfig_a24785fedf7e609d10b0f6ea62540c96f}
+
+\item 
+int {\bfseries axis\+\_\+joy} \mbox{[}M\+A\+X\+\_\+\+A\+X\+IS\mbox{]}\hypertarget{classVegaConfig_ad63927bf6afb981ce398162b1612a98f}{}\label{classVegaConfig_ad63927bf6afb981ce398162b1612a98f}
+
+\item 
+bool {\bfseries axis\+\_\+inverse} \mbox{[}M\+A\+X\+\_\+\+A\+X\+IS\mbox{]}\hypertarget{classVegaConfig_a90e516ff978739a5e5262b04ae8ea14a}{}\label{classVegaConfig_a90e516ff978739a5e5262b04ae8ea14a}
+
+\item 
+float {\bfseries hatswitch} \mbox{[}M\+A\+X\+\_\+\+H\+A\+T\+S\+W\+I\+T\+C\+H\+ES\mbox{]}\mbox{[}M\+A\+X\+\_\+\+V\+A\+L\+U\+ES\mbox{]}\hypertarget{classVegaConfig_a7b4f206e5e6d67b3df39872049400214}{}\label{classVegaConfig_a7b4f206e5e6d67b3df39872049400214}
+
+\item 
+float {\bfseries hatswitch\+\_\+margin} \mbox{[}M\+A\+X\+\_\+\+H\+A\+T\+S\+W\+I\+T\+C\+H\+ES\mbox{]}\hypertarget{classVegaConfig_a2267baabc15de27c7818d194508c8d27}{}\label{classVegaConfig_a2267baabc15de27c7818d194508c8d27}
+
+\item 
+int {\bfseries hatswitch\+\_\+axis} \mbox{[}M\+A\+X\+\_\+\+H\+A\+T\+S\+W\+I\+T\+C\+H\+ES\mbox{]}\hypertarget{classVegaConfig_af1a100931c6a584ca9f84cb10144bc00}{}\label{classVegaConfig_af1a100931c6a584ca9f84cb10144bc00}
+
+\item 
+int {\bfseries hatswitch\+\_\+joystick} \mbox{[}M\+A\+X\+\_\+\+H\+A\+T\+S\+W\+I\+T\+C\+H\+ES\mbox{]}\hypertarget{classVegaConfig_a1201233e07117f8b30a48432d7ce2a0a}{}\label{classVegaConfig_a1201233e07117f8b30a48432d7ce2a0a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries get\+Variable} (\hyperlink{classconfigNode}{config\+Node} $\ast$section, string name, string defaultval)\hypertarget{classVegaConfig_a2c31731523e3a95116bd8ec9cfd15e48}{}\label{classVegaConfig_a2c31731523e3a95116bd8ec9cfd15e48}
+
+\item 
+bool {\bfseries check\+Config} (\hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_a9f6fe82bf6bb25975edfad56319d86d2}{}\label{classVegaConfig_a9f6fe82bf6bb25975edfad56319d86d2}
+
+\item 
+void {\bfseries do\+Variables} (\hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_a9e9306e28c0889e906674b1875c977fe}{}\label{classVegaConfig_a9e9306e28c0889e906674b1875c977fe}
+
+\item 
+void {\bfseries check\+Section} (\hyperlink{classconfigNode}{config\+Node} $\ast$node, enum section\+\_\+t section\+\_\+type)\hypertarget{classVegaConfig_a4c7e939f59ccbcf2bee09d864ebee939}{}\label{classVegaConfig_a4c7e939f59ccbcf2bee09d864ebee939}
+
+\item 
+void {\bfseries check\+Var} (\hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_ab5090ff07c6d7a3f51c8e8c0f9310381}{}\label{classVegaConfig_ab5090ff07c6d7a3f51c8e8c0f9310381}
+
+\item 
+void {\bfseries do\+Section} (string prefix, \hyperlink{classconfigNode}{config\+Node} $\ast$node, enum section\+\_\+t section\+\_\+type)\hypertarget{classVegaConfig_abc3baaa604eeb839940aea70dc9a1ebe}{}\label{classVegaConfig_abc3baaa604eeb839940aea70dc9a1ebe}
+
+\item 
+void {\bfseries do\+Var} (string prefix, \hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_ad5b0cc5182c0ae3340417e79a117a3cb}{}\label{classVegaConfig_ad5b0cc5182c0ae3340417e79a117a3cb}
+
+\item 
+void {\bfseries do\+Colors} (\hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_ae33e8359931c62bcfd8d62ee728cf816}{}\label{classVegaConfig_ae33e8359931c62bcfd8d62ee728cf816}
+
+\item 
+bool {\bfseries check\+Color} (string prefix, \hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_ac1522359d6e4646fb7d8ec5a59f152c2}{}\label{classVegaConfig_ac1522359d6e4646fb7d8ec5a59f152c2}
+
+\item 
+virtual void {\bfseries do\+Bindings} (\hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_a3767c08c8e4d3ee76b3e8efdbecf72da}{}\label{classVegaConfig_a3767c08c8e4d3ee76b3e8efdbecf72da}
+
+\item 
+virtual void {\bfseries check\+Bind} (\hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_ac8af87d480a0214246be3cd470ed3279}{}\label{classVegaConfig_ac8af87d480a0214246be3cd470ed3279}
+
+\item 
+virtual void {\bfseries do\+Axis} (\hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_a118134a2a5c58876f3cd898184c13e56}{}\label{classVegaConfig_a118134a2a5c58876f3cd898184c13e56}
+
+\item 
+virtual void {\bfseries check\+Hatswitch} (int nr, \hyperlink{classconfigNode}{config\+Node} $\ast$node)\hypertarget{classVegaConfig_aaa57ad84c33e186fcc5a411fc3b5b501}{}\label{classVegaConfig_aaa57ad84c33e186fcc5a411fc3b5b501}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classconfigNode}{config\+Node} $\ast$ {\bfseries variables}\hypertarget{classVegaConfig_a05db44e2db823172b35971142a6018f0}{}\label{classVegaConfig_a05db44e2db823172b35971142a6018f0}
+
+\item 
+\hyperlink{classconfigNode}{config\+Node} $\ast$ {\bfseries bindings}\hypertarget{classVegaConfig_a4b8650566ebb1b396ba9382993192a9e}{}\label{classVegaConfig_a4b8650566ebb1b396ba9382993192a9e}
+
+\item 
+\hyperlink{classconfigNode}{config\+Node} $\ast$ {\bfseries colors}\hypertarget{classVegaConfig_ab58dba1881aa22e850d34493d2bfa0d2}{}\label{classVegaConfig_ab58dba1881aa22e850d34493d2bfa0d2}
+
+\item 
+map$<$ string, string $>$ {\bfseries map\+\_\+variables}\hypertarget{classVegaConfig_ad6b391af6c230c6fcf0904db35225e00}{}\label{classVegaConfig_ad6b391af6c230c6fcf0904db35225e00}
+
+\item 
+map$<$ string, \hyperlink{classvColor}{v\+Color} $>$ {\bfseries map\+\_\+colors}\hypertarget{classVegaConfig_a56dc87359750169ff752e30c73debe37}{}\label{classVegaConfig_a56dc87359750169ff752e30c73debe37}
+
+\item 
+int {\bfseries hs\+\_\+value\+\_\+index}\hypertarget{classVegaConfig_a4f6c2accec317c79b9015760625e90f3}{}\label{classVegaConfig_a4f6c2accec317c79b9015760625e90f3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+configxml.\+h\item 
+configxml.\+cpp\end{DoxyCompactItemize}

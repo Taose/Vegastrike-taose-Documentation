@@ -1,0 +1,6 @@
+<map id="Audio::Source" name="Audio::Source">
+<area shape="rect" id="node2" href="$d1/da8/classAudio_1_1TVector3.html" title="{Audio::TVector3\&lt; Scalar \&gt;\n|+ x\l+ y\l+ z\l|+ TVector3()\l+ TVector3()\l+ TVector3()\l+ TVector3()\l+ operator=()\l+ operator+=()\l+ operator&#45;=()\l+ operator*=()\l+ operator*=()\l+ operator/=()\land 18 more...\l}" alt="" coords="5,5,183,259"/>
+<area shape="rect" id="node3" href="$d7/d35/structAudio_1_1PerFrequency.html" title="{Audio::PerFrequency\l\&lt; Scalar \&gt;\n|+ lf\l+ hf\l|+ PerFrequency()\l}" alt="" coords="207,79,351,185"/>
+<area shape="rect" id="node4" href="$d1/da8/classAudio_1_1TVector3.html" title="{Audio::TVector3\&lt; LScalar \&gt;\n|+ x\l+ y\l+ z\l|+ TVector3()\l+ TVector3()\l+ TVector3()\l+ TVector3()\l+ operator=()\l+ operator+=()\l+ operator&#45;=()\l+ operator*=()\l+ operator*=()\l+ operator/=()\land 18 more...\l}" alt="" coords="375,5,559,259"/>
+<area shape="rect" id="node5" href="$dd/d86/structAudio_1_1Range.html" title="{Audio::Range\&lt; Scalar \&gt;\n|+ min\l+ max\l|+ Range()\l+ span()\l+ phase()\l}" alt="" coords="583,71,746,193"/>
+</map>

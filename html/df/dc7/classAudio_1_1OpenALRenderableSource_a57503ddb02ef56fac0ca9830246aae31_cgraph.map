@@ -1,0 +1,11 @@
+<map id="Audio::OpenALRenderableSource::updateImpl" name="Audio::OpenALRenderableSource::updateImpl">
+<area shape="rect" id="node2" href="$df/d04/classAudio_1_1Source.html#a62b43d5edb723e8297f5ad4878271175" title="Audio::Source::isAttenuated" alt="" coords="279,5,464,32"/>
+<area shape="rect" id="node3" href="$df/d04/classAudio_1_1Source.html#a028c3f64f311a04ca08c7c09c38fe168" title="Audio::Source::getRadius" alt="" coords="286,56,457,83"/>
+<area shape="rect" id="node4" href="$df/d04/classAudio_1_1Source.html#a6143b8a9b5e9e14dd0ef7e3c9280cd8f" title="Audio::Source::getAngleRange" alt="" coords="271,107,472,133"/>
+<area shape="rect" id="node5" href="$df/d04/classAudio_1_1Source.html#a56cfa694bccbfac0a7adc232750ae3fe" title="Audio::Source::isRelative" alt="" coords="286,157,457,184"/>
+<area shape="rect" id="node6" href="$df/d04/classAudio_1_1Source.html#aeafbb7052aea35fbfdbba9f81a4ebb2c" title="Audio::Source::isLooping" alt="" coords="288,208,455,235"/>
+<area shape="rect" id="node7" href="$df/d04/classAudio_1_1Source.html#adeaed3a4bbaaf6d60dd09e372d8e21e6" title="Audio::Source::getGain" alt="" coords="293,259,450,285"/>
+<area shape="rect" id="node8" href="$df/d04/classAudio_1_1Source.html#ada024d8c7c5e4c5927efda2963fe81c4" title="Audio::Source::getPosition" alt="" coords="283,309,460,336"/>
+<area shape="rect" id="node9" href="$df/d04/classAudio_1_1Source.html#afa2dc0a120dcdd989562ebb2b0782a4c" title="Audio::Source::getVelocity" alt="" coords="283,360,460,387"/>
+<area shape="rect" id="node10" href="$df/d04/classAudio_1_1Source.html#ab302e1c0c516ec4b153018dbed37f0ac" title="Audio::Source::getDirection" alt="" coords="280,411,463,437"/>
+</map>

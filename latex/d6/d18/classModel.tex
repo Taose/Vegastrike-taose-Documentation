@@ -1,0 +1,149 @@
+\hypertarget{classModel}{}\section{Model Class Reference}
+\label{classModel}\index{Model@{Model}}
+
+
+Inheritance diagram for Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{de/d52/classModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/dfb/classModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classModel_a89b90791569d00d04d75ef6ad3aba336}{override} (\hyperlink{classBaseModel}{Base\+Model}) bool \hyperlink{classBaseModel_ab2692ac2ec9c0c8c452d73f3a0bd341b}{Build}(const \hyperlink{structOPCODECREATE}{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+TE} \&create)
+\item 
+\hyperlink{classModel_a044b13eee3f98b4417597bd657ab4911}{override} (\hyperlink{classBaseModel}{Base\+Model}) \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classBaseModel_a714251e9cd861e4e304f5740c75a5b74}{Get\+Used\+Bytes}() const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The main collision wrapper, for all trees. Supported trees are\+:
+\begin{DoxyItemize}
+\item Normal trees (2$\ast$\+N-\/1 nodes, full size)
+\item No-\/leaf trees (N-\/1 nodes, full size)
+\item Quantized trees (2$\ast$\+N-\/1 nodes, half size)
+\item Quantized no-\/leaf trees (N-\/1 nodes, half size)
+\end{DoxyItemize}
+
+Usage\+:
+
+1) Create a static mesh interface using callbacks or pointers. (see \hyperlink{OPC__MeshInterface_8cpp}{O\+P\+C\+\_\+\+Mesh\+Interface.\+cpp}). Keep it around in your app, since a pointer to this interface is saved internally and used until you release the collision structures.
+
+2) Build a \hyperlink{classModel}{Model} using a creation structure\+:
+
+
+\begin{DoxyCode}
+\hyperlink{classModel}{Model} Sample;
+
+\hyperlink{structOPCODECREATE}{OPCODECREATE} OPCC;
+OPCC.IMesh          = ...;
+OPCC.Rules          = ...;
+OPCC.NoLeaf         = ...;
+OPCC.Quantized      = ...;
+OPCC.KeepOriginal   = ...;
+\textcolor{keywordtype}{bool} Status = Sample.\hyperlink{classBaseModel_ab2692ac2ec9c0c8c452d73f3a0bd341b}{Build}(OPCC);
+\end{DoxyCode}
+
+
+3) Create a tree collider and set it up\+:
+
+
+\begin{DoxyCode}
+\hyperlink{classAABBTreeCollider}{AABBTreeCollider} TC;
+TC.\hyperlink{classCollider_a106bfa35e6d203dfdb27a291b9fab01a}{SetFirstContact}(...);
+TC.\hyperlink{classAABBTreeCollider_af9ae98fa5e9b721069a0dd4122754deb}{SetFullBoxBoxTest}(...);
+TC.\hyperlink{classAABBTreeCollider_a4aa21d13a55b5874783b227f95ae967f}{SetFullPrimBoxTest}(...);
+TC.\hyperlink{classCollider_a66fdf6157bf0159578723f3ed66f6e3f}{SetTemporalCoherence}(...);
+\end{DoxyCode}
+
+
+4) Perform a collision query
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Setup cache}
+\textcolor{keyword}{static} \hyperlink{structBVTCache}{BVTCache} ColCache;
+ColCache.\hyperlink{structBVTCache_a69f8d5a7613435e6c58a6816ecd15e0a}{Model0} = &Model0;
+ColCache.\hyperlink{structBVTCache_a092159126dbd147d9488f881e675fea0}{Model1} = &Model1;
+
+\textcolor{comment}{// Collision query}
+\textcolor{keywordtype}{bool} IsOk = TC.\hyperlink{classAABBTreeCollider_a2e7e3213e9d863cc88c10efc808708ba}{Collide}(ColCache, World0, World1);
+
+\textcolor{comment}{// Get collision status => if true, objects overlap}
+\hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{BOOL} Status = TC.\hyperlink{classCollider_a64a73882d4f167a6175658f014868f66}{GetContactStatus}();
+
+\textcolor{comment}{// Number of colliding pairs and list of pairs}
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} NbPairs = TC.\hyperlink{classAABBTreeCollider_a8b070ba9da290af5bbc187298870f00b}{GetNbPairs}();
+\textcolor{keyword}{const} \hyperlink{structPair}{Pair}* p = TC.\hyperlink{classAABBTreeCollider_a1a65b30029d7d0b3e9a4dfe204b3e660}{GetPairs}()
+\end{DoxyCode}
+
+
+5) Stats
+
+
+\begin{DoxyCode}
+Model0.GetUsedBytes()   = number of bytes used \textcolor{keywordflow}{for} \textcolor{keyword}{this} collision tree
+TC.\hyperlink{classAABBTreeCollider_a23f2a701706c6c900d64bc44105a828e}{GetNbBVBVTests}()     = number of BV-BV overlap tests performed during last query
+TC.\hyperlink{classAABBTreeCollider_a11b71bcccec8a69ab8332f7f268caab7}{GetNbPrimPrimTests}() = number of \hyperlink{classTriangle}{Triangle}-\hyperlink{classTriangle}{Triangle} overlap tests 
+      performed during last query
+TC.\hyperlink{classAABBTreeCollider_a46918d4c878c578c37f7ac5c6c96cd09}{GetNbBVPrimTests}()   = number of \hyperlink{classTriangle}{Triangle}-BV overlap tests performed during last
+       query
+\end{DoxyCode}
+
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Model@{Model}!override@{override}}
+\index{override@{override}!Model@{Model}}
+\subsubsection[{\texorpdfstring{override(\+Base\+Model) bool Build(const O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E \&create)}{override(BaseModel) bool Build(const OPCODECREATE &create)}}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Model}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classModel_a89b90791569d00d04d75ef6ad3aba336}{}\label{classModel_a89b90791569d00d04d75ef6ad3aba336}
+Builds a collision model. 
+\begin{DoxyParams}{Parameters}
+{\em create} & \mbox{[}in\mbox{]} model creation structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Model@{Model}!override@{override}}
+\index{override@{override}!Model@{Model}}
+\subsubsection[{\texorpdfstring{override(\+Base\+Model) udword Get\+Used\+Bytes() const }{override(BaseModel) udword GetUsedBytes() const }}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Model}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classModel_a044b13eee3f98b4417597bd657ab4911}{}\label{classModel_a044b13eee3f98b4417597bd657ab4911}
+Gets the number of bytes used by the tree. \begin{DoxyReturn}{Returns}
+amount of bytes used 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__Model_8h}{O\+P\+C\+\_\+\+Model.\+h}\end{DoxyCompactItemize}

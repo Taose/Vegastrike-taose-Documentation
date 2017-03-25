@@ -1,0 +1,197 @@
+\hypertarget{classPlanesCollider}{}\section{Planes\+Collider Class Reference}
+\label{classPlanesCollider}\index{Planes\+Collider@{Planes\+Collider}}
+
+
+Inheritance diagram for Planes\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/dc3/classPlanesCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Planes\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d8b/classPlanesCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classPlanesCollider_aa5a7c2fb04b8842f5df317dfc3c15df6}{Collide} (\hyperlink{structPlanesCache}{Planes\+Cache} \&cache, const \hyperlink{classPlane}{Plane} $\ast$planes, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+planes, const \hyperlink{classModel}{Model} \&model, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+inline\+\_\+ bool {\bfseries Collide} (\hyperlink{structPlanesCache}{Planes\+Cache} \&cache, const \hyperlink{classOBB}{O\+BB} \&box, const \hyperlink{classModel}{Model} \&model, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$worldb=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})\hypertarget{classPlanesCollider_ae87b837a86f69b493a507333ed2f81dc}{}\label{classPlanesCollider_ae87b837a86f69b493a507333ed2f81dc}
+
+\item 
+\hyperlink{classPlanesCollider_a1d94337aeabee2429274f5c333d08dfa}{override} (\hyperlink{classCollider}{Collider}) const char $\ast$\hyperlink{classCollider_a225d4861b2184336433894174c6e3e2d}{Validate\+Settings}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries \+\_\+\+Collide} (const \hyperlink{classAABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)\hypertarget{classPlanesCollider_afe02fe2d147e793bbeab7a9eb89bed2b}{}\label{classPlanesCollider_afe02fe2d147e793bbeab7a9eb89bed2b}
+
+\item 
+void {\bfseries \+\_\+\+Collide} (const \hyperlink{classAABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)\hypertarget{classPlanesCollider_a2fe298e87efaba35deff6e4ad7a56da0}{}\label{classPlanesCollider_a2fe298e87efaba35deff6e4ad7a56da0}
+
+\item 
+void {\bfseries \+\_\+\+Collide} (const \hyperlink{classAABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)\hypertarget{classPlanesCollider_a405bf739ddac7a191edee9a8e438bc8a}{}\label{classPlanesCollider_a405bf739ddac7a191edee9a8e438bc8a}
+
+\item 
+void {\bfseries \+\_\+\+Collide} (const \hyperlink{classAABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)\hypertarget{classPlanesCollider_aface806a10833333a7e0473d7b30767b}{}\label{classPlanesCollider_aface806a10833333a7e0473d7b30767b}
+
+\item 
+void {\bfseries \+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classAABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)\hypertarget{classPlanesCollider_ac449d61fe5762a288103ec40c8bf72ce}{}\label{classPlanesCollider_ac449d61fe5762a288103ec40c8bf72ce}
+
+\item 
+void {\bfseries \+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classAABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)\hypertarget{classPlanesCollider_a63ae4b22dbfe779be74ca3bd60dd512a}{}\label{classPlanesCollider_a63ae4b22dbfe779be74ca3bd60dd512a}
+
+\item 
+void {\bfseries \+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classAABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)\hypertarget{classPlanesCollider_a2c3e44827c703c4e97e224533c0b030c}{}\label{classPlanesCollider_a2c3e44827c703c4e97e224533c0b030c}
+
+\item 
+void {\bfseries \+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classAABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} clip\+\_\+mask)\hypertarget{classPlanesCollider_a3b4960caf24415388d68e458225bf4db}{}\label{classPlanesCollider_a3b4960caf24415388d68e458225bf4db}
+
+\item 
+inline\+\_\+ bool \hyperlink{classPlanesCollider_a2980988c2e5d05ce5b458779a312c875}{Planes\+A\+A\+B\+B\+Overlap} (const \hyperlink{classPoint}{Point} \&center, const \hyperlink{classPoint}{Point} \&extents, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&out\+\_\+clip\+\_\+mask, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} in\+\_\+clip\+\_\+mask)
+\item 
+inline\+\_\+ bool \hyperlink{classPlanesCollider_ae9134f553dbd39863f10e4b649fdb090}{Planes\+Tri\+Overlap} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} in\+\_\+clip\+\_\+mask)
+\item 
+bool {\bfseries Init\+Query} (\hyperlink{structPlanesCache}{Planes\+Cache} \&cache, const \hyperlink{classPlane}{Plane} $\ast$planes, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb\+\_\+planes, const \hyperlink{classMatrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})\hypertarget{classPlanesCollider_a1d103b95a7eff849473aa7906d6b6f54}{}\label{classPlanesCollider_a1d103b95a7eff849473aa7906d6b6f54}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries m\+Nb\+Planes}\hypertarget{classPlanesCollider_ada2d9d9d4f1ae3a3a3a09d6fcfc8ab75}{}\label{classPlanesCollider_ada2d9d9d4f1ae3a3a3a09d6fcfc8ab75}
+
+\item 
+\hyperlink{classPlane}{Plane} $\ast$ {\bfseries m\+Planes}\hypertarget{classPlanesCollider_ad31d6c1211dabb827ffcd59af1e14a25}{}\label{classPlanesCollider_ad31d6c1211dabb827ffcd59af1e14a25}
+
+\item 
+\hyperlink{structVertexPointers}{Vertex\+Pointers} {\bfseries m\+VP}\hypertarget{classPlanesCollider_a3b4884a9474c29da9b95c20ebeee0840}{}\label{classPlanesCollider_a3b4884a9474c29da9b95c20ebeee0840}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains a Planes-\/vs-\/tree collider.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+January, 1st, 2002 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Planes\+Collider@{Planes\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!Planes\+Collider@{Planes\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(\+Planes\+Cache \&cache, const Plane $\ast$planes, udword nb\+\_\+planes, const Model \&model, const Matrix4x4 $\ast$worldm=null)}{Collide(PlanesCache &cache, const Plane *planes, udword nb_planes, const Model &model, const Matrix4x4 *worldm=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Planes\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf Planes\+Cache} \&}]{cache, }
+\item[{const {\bf Plane} $\ast$}]{planes, }
+\item[{{\bf udword}}]{nb\+\_\+planes, }
+\item[{const {\bf Model} \&}]{model, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classPlanesCollider_aa5a7c2fb04b8842f5df317dfc3c15df6}{}\label{classPlanesCollider_aa5a7c2fb04b8842f5df317dfc3c15df6}
+Generic collision query for generic O\+P\+C\+O\+DE models. After the call, access the results\+:
+\begin{DoxyItemize}
+\item with \hyperlink{classCollider_a64a73882d4f167a6175658f014868f66}{Get\+Contact\+Status()}
+\item with \hyperlink{classVolumeCollider_a274b51032b2c2e4394b1cc9308fa8d71}{Get\+Nb\+Touched\+Primitives()}
+\item with \hyperlink{classVolumeCollider_afca0d34cb9f4aa27537a4bfd03fe40d9}{Get\+Touched\+Primitives()}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} a planes cache \\
+\hline
+{\em planes} & \mbox{[}in\mbox{]} list of planes in world space \\
+\hline
+{\em nb\+\_\+planes} & \mbox{[}in\mbox{]} number of planes \\
+\hline
+{\em model} & \mbox{[}in\mbox{]} Opcode model to collide with \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Planes\+Collider@{Planes\+Collider}!override@{override}}
+\index{override@{override}!Planes\+Collider@{Planes\+Collider}}
+\subsubsection[{\texorpdfstring{override(\+Collider) const char $\ast$\+Validate\+Settings()}{override(Collider) const char *ValidateSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}Planes\+Collider\+::override (
+\begin{DoxyParamCaption}
+\item[{{\bf Collider}}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classPlanesCollider_a1d94337aeabee2429274f5c333d08dfa}{}\label{classPlanesCollider_a1d94337aeabee2429274f5c333d08dfa}
+Validates current settings. You should call this method after all the settings and callbacks have been defined for a collider. \begin{DoxyReturn}{Returns}
+null if everything is ok, else a string describing the problem 
+\end{DoxyReturn}
+\index{Planes\+Collider@{Planes\+Collider}!Planes\+A\+A\+B\+B\+Overlap@{Planes\+A\+A\+B\+B\+Overlap}}
+\index{Planes\+A\+A\+B\+B\+Overlap@{Planes\+A\+A\+B\+B\+Overlap}!Planes\+Collider@{Planes\+Collider}}
+\subsubsection[{\texorpdfstring{Planes\+A\+A\+B\+B\+Overlap(const Point \&center, const Point \&extents, udword \&out\+\_\+clip\+\_\+mask, udword in\+\_\+clip\+\_\+mask)}{PlanesAABBOverlap(const Point &center, const Point &extents, udword &out_clip_mask, udword in_clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool Planes\+Collider\+::\+Planes\+A\+A\+B\+B\+Overlap (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{center, }
+\item[{const {\bf Point} \&}]{extents, }
+\item[{{\bf udword} \&}]{out\+\_\+clip\+\_\+mask, }
+\item[{{\bf udword}}]{in\+\_\+clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classPlanesCollider_a2980988c2e5d05ce5b458779a312c875}{}\label{classPlanesCollider_a2980988c2e5d05ce5b458779a312c875}
+Planes-\/\+A\+A\+BB overlap test.
+\begin{DoxyItemize}
+\item original code by Ville Miettinen, from Umbra/d\+P\+VS (released on the G\+D-\/\+Algorithms mailing list)
+\item almost used \char`\"{}as-\/is\char`\"{}, I even left the comments (hence the frustum-\/related notes)
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & \mbox{[}in\mbox{]} box center \\
+\hline
+{\em extents} & \mbox{[}in\mbox{]} box extents \\
+\hline
+{\em out\+\_\+clip\+\_\+mask} & \mbox{[}out\mbox{]} bitmask for active planes \\
+\hline
+{\em in\+\_\+clip\+\_\+mask} & \mbox{[}in\mbox{]} bitmask for active planes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if boxes overlap planes 
+\end{DoxyReturn}
+\index{Planes\+Collider@{Planes\+Collider}!Planes\+Tri\+Overlap@{Planes\+Tri\+Overlap}}
+\index{Planes\+Tri\+Overlap@{Planes\+Tri\+Overlap}!Planes\+Collider@{Planes\+Collider}}
+\subsubsection[{\texorpdfstring{Planes\+Tri\+Overlap(udword in\+\_\+clip\+\_\+mask)}{PlanesTriOverlap(udword in_clip_mask)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool Planes\+Collider\+::\+Planes\+Tri\+Overlap (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{in\+\_\+clip\+\_\+mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classPlanesCollider_ae9134f553dbd39863f10e4b649fdb090}{}\label{classPlanesCollider_ae9134f553dbd39863f10e4b649fdb090}
+Planes-\/triangle overlap test. 
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+clip\+\_\+mask} & \mbox{[}in\mbox{]} bitmask for active planes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if triangle overlap planes 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+T\+H\+IS IS A C\+O\+N\+S\+E\+R\+V\+A\+T\+I\+VE T\+E\+ST !! Some triangles will be returned as intersecting, while they\textquotesingle{}re not! 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__PlanesCollider_8h}{O\+P\+C\+\_\+\+Planes\+Collider.\+h}\item 
+cmd/collide2/O\+P\+C\+\_\+\+Planes\+A\+A\+B\+B\+Overlap.\+h\item 
+cmd/collide2/O\+P\+C\+\_\+\+Planes\+Tri\+Overlap.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="GalaxyXML::Galaxy" name="GalaxyXML::Galaxy">
+<area shape="rect" id="node2" href="$d3/d41/classGalaxyXML_1_1SGalaxy.html" title="{GalaxyXML::SGalaxy\n|# data\l|+ SGalaxy()\l+ SGalaxy()\l+ SGalaxy()\l+ writeGalaxy()\l+ writeSector()\l+ processGalaxy()\l+ processSystem()\l+ ~SGalaxy()\l+ getVariable()\l+ getRandSystem()\land 8 more...\l# operator=()\l}" alt="" coords="35,287,183,525"/>
+<area shape="rect" id="node3" href="$dd/d3e/classGalaxyXML_1_1SubHeirarchy.html" title="{GalaxyXML::SubHeirarchy\n||}" alt="" coords="20,147,197,224"/>
+</map>

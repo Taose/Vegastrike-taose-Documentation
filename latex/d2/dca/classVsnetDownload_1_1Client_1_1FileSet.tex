@@ -1,0 +1,44 @@
+\hypertarget{classVsnetDownload_1_1Client_1_1FileSet}{}\section{Vsnet\+Download\+:\+:Client\+:\+:File\+Set Class Reference}
+\label{classVsnetDownload_1_1Client_1_1FileSet}\index{Vsnet\+Download\+::\+Client\+::\+File\+Set@{Vsnet\+Download\+::\+Client\+::\+File\+Set}}
+
+
+{\ttfamily \#include $<$vsnet\+\_\+notify.\+h$>$}
+
+
+
+Collaboration diagram for Vsnet\+Download\+:\+:Client\+:\+:File\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{d1/d72/classVsnetDownload_1_1Client_1_1FileSet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classVsnetDownload_1_1Client_1_1FileSet_1_1NotifyConclusion}{Notify\+Conclusion}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries File\+Set} (boost\+::shared\+\_\+ptr$<$ \hyperlink{classVsnetDownload_1_1Client_1_1Manager}{Manager} $>$mgr, \hyperlink{classSOCKETALT}{S\+O\+C\+K\+E\+T\+A\+LT} sock, std\+::list$<$ std\+::string $>$filesnames, std\+::string localbasepath)\hypertarget{classVsnetDownload_1_1Client_1_1FileSet_a0686d2715e5e2878266a4f37c7868bbc}{}\label{classVsnetDownload_1_1Client_1_1FileSet_a0686d2715e5e2878266a4f37c7868bbc}
+
+\item 
+bool {\bfseries is\+Done} () const \hypertarget{classVsnetDownload_1_1Client_1_1FileSet_a88a941eccb688b88ce8b1b21969bb400}{}\label{classVsnetDownload_1_1Client_1_1FileSet_a88a941eccb688b88ce8b1b21969bb400}
+
+\item 
+void {\bfseries update} (std\+::string s, bool v)\hypertarget{classVsnetDownload_1_1Client_1_1FileSet_af6a456de28ce47893babba9c13b12686}{}\label{classVsnetDownload_1_1Client_1_1FileSet_af6a456de28ce47893babba9c13b12686}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+We can\textquotesingle{}t really support blocking until a set of files has been downloaded inside this class. The problem is that the variables that we must wait for exist in netserver, netclient and accountserver, and they are called in several places and potentially several threads. Therefore the waiting itself should be handled in those classes. This helper class allows a simple check.
+
+Create a \hyperlink{classVsnetDownload_1_1Client_1_1FileSet}{File\+Set} with the appropriate \hyperlink{classVsnetDownload_1_1Client_1_1Manager}{Manager}, the socket to the remote side that you want to use, the list of filenames as string, and the existing(!) directory where you want to store the files. Then call is\+Done() a couple of times. If it returns true, the downloads are all completed (but they may have failed -\/ if you need to check that, add a function for reading the int values from the member variable \+\_\+files, 1 success, 0 failure). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/lowlevel/vsnet\+\_\+notify.\+h\item 
+networking/lowlevel/vsnet\+\_\+notify.\+cpp\end{DoxyCompactItemize}

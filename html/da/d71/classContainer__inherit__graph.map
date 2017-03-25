@@ -1,0 +1,9 @@
+<map id="Container" name="Container">
+<area shape="rect" id="node2" href="$db/d63/classCollisionFaces.html" title="{CollisionFaces\n||+ CollisionFaces()\l+ ~CollisionFaces()\l+ GetNbFaces()\l+ GetFaces()\l+ Reset()\l+ AddFace()\l}" alt="" coords="5,307,141,457"/>
+<area shape="rect" id="node3" href="$d1/dee/classOpcode_1_1CollisionFaces.html" title="{Opcode::CollisionFaces\n||+ CollisionFaces()\l+ ~CollisionFaces()\l+ GetNbFaces()\l+ GetFaces()\l+ Reset()\l+ AddFace()\l}" alt="" coords="166,307,327,457"/>
+<area shape="rect" id="node4" href="$d8/dfb/classOpcode_1_1TriangleList.html" title="{Opcode::TriangleList\n||+ TriangleList()\l+ ~TriangleList()\l+ GetNbTriangles()\l+ GetTriangles()\l+ AddTriangle()\l+ AddTriangle()\l}" alt="" coords="351,307,494,457"/>
+<area shape="rect" id="node5" href="$d0/da8/classOpcode_1_1TriList.html" title="{Opcode::TriList\n||+ TriList()\l+ ~TriList()\l+ GetNbTriangles()\l+ GetTriangles()\l+ AddTri()\l+ AddTri()\l}" alt="" coords="519,307,652,457"/>
+<area shape="rect" id="node6" href="$d1/dc0/classPairs.html" title="{Pairs\n||+ Pairs()\l+ ~Pairs()\l+ GetNbPairs()\l+ GetPairs()\l+ GetPair()\l+ HasPairs()\l+ ResetPairs()\l+ DeleteLastPair()\l+ AddPair()\l+ AddPair()\l}" alt="" coords="676,277,804,487"/>
+<area shape="rect" id="node7" href="$d7/d4c/classTriangleList.html" title="{TriangleList\n||+ TriangleList()\l+ ~TriangleList()\l+ GetNbTriangles()\l+ GetTriangles()\l+ AddTriangle()\l+ AddTriangle()\l}" alt="" coords="828,307,961,457"/>
+<area shape="rect" id="node8" href="$df/d4a/classTriList.html" title="{TriList\n||+ TriList()\l+ ~TriList()\l+ GetNbTriangles()\l+ GetTriangles()\l+ AddTri()\l+ AddTri()\l}" alt="" coords="985,307,1119,457"/>
+</map>

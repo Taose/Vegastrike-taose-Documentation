@@ -1,0 +1,4 @@
+<map id="BaseInterface::Room::BaseVSSprite" name="BaseInterface::Room::BaseVSSprite">
+<area shape="rect" id="node3" href="$d4/d85/classBaseInterface_1_1Room_1_1BaseVSMovie.html" title="{BaseInterface::Room\l::BaseVSMovie\n||+ ~BaseVSMovie()\l+ BaseVSMovie()\l+ SetMovie()\l+ GetTime()\l+ SetTime()\l+ GetHidePointer()\l+ SetHidePointer()\l+ getCallback()\l+ setCallback()\l+ Draw()\l}" alt="" coords="5,461,152,685"/>
+<area shape="rect" id="node2" href="$df/db7/classBaseInterface_1_1Room_1_1BaseObj.html" title="{BaseInterface::Room\l::BaseObj\n|+ index\l|+ Draw()\l+ ~BaseObj()\l+ BaseObj()\l}" alt="" coords="5,5,152,127"/>
+</map>

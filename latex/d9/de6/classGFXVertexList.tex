@@ -1,0 +1,205 @@
+\hypertarget{classGFXVertexList}{}\section{G\+F\+X\+Vertex\+List Class Reference}
+\label{classGFXVertexList}\index{G\+F\+X\+Vertex\+List@{G\+F\+X\+Vertex\+List}}
+
+
+{\ttfamily \#include $<$gfxlib\+\_\+struct.\+h$>$}
+
+
+
+Inheritance diagram for G\+F\+X\+Vertex\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/d83/classGFXVertexList__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+F\+X\+Vertex\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d22/classGFXVertexList__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionGFXVertexList_1_1INDEX}{I\+N\+D\+EX}
+\item 
+union \hyperlink{unionGFXVertexList_1_1VDAT}{V\+D\+AT}
+\begin{DoxyCompactList}\small\item\em Vertices and colors stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGFXVertexList_a5887f1abe7988692a2df354816b6e06a}{Refresh\+Display\+List} ()\hypertarget{classGFXVertexList_a5887f1abe7988692a2df354816b6e06a}{}\label{classGFXVertexList_a5887f1abe7988692a2df354816b6e06a}
+
+\begin{DoxyCompactList}\small\item\em Propagates modifications to the display list. \end{DoxyCompactList}\item 
+\hyperlink{classGFXVertexList_a6f14bb2fb013285f9ef4adc83688c7b1}{G\+F\+X\+Vertex\+List} (enum P\+O\+L\+Y\+T\+Y\+PE poly, int num\+Vertices, const \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$vertices, int numindices, bool Mutable=false, unsigned int $\ast$index=0)\hypertarget{classGFXVertexList_a6f14bb2fb013285f9ef4adc83688c7b1}{}\label{classGFXVertexList_a6f14bb2fb013285f9ef4adc83688c7b1}
+
+\begin{DoxyCompactList}\small\item\em creates a vertex list with 1 polytype and a given number of vertices \end{DoxyCompactList}\item 
+\hyperlink{classGFXVertexList_af0c30a3d3f0387f27ebb38c7b27ff967}{G\+F\+X\+Vertex\+List} (enum P\+O\+L\+Y\+T\+Y\+PE $\ast$poly, int num\+Vertices, const \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$vertices, int \hyperlink{classGFXVertexList_a50b552e54f117f7456f3cb618c076190}{numlists}, int $\ast$\hyperlink{classGFXVertexList_a0310e1bd4dbc7bfb1240b200368ce8c9}{offsets}, bool Mutable=false, unsigned int $\ast$index=0)\hypertarget{classGFXVertexList_af0c30a3d3f0387f27ebb38c7b27ff967}{}\label{classGFXVertexList_af0c30a3d3f0387f27ebb38c7b27ff967}
+
+\begin{DoxyCompactList}\small\item\em Creates a vertex list with an arbitrary number of poly types and given vertices, num list and offsets (see above) \end{DoxyCompactList}\item 
+\hyperlink{classGFXVertexList_a4ef3c36add97917cf1b713de9b2eb7e6}{G\+F\+X\+Vertex\+List} (enum P\+O\+L\+Y\+T\+Y\+PE poly, int num\+Vertices, const \hyperlink{structGFXColorVertex}{G\+F\+X\+Color\+Vertex} $\ast$colors, int numindices, bool Mutable=false, unsigned int $\ast$index=0)\hypertarget{classGFXVertexList_a4ef3c36add97917cf1b713de9b2eb7e6}{}\label{classGFXVertexList_a4ef3c36add97917cf1b713de9b2eb7e6}
+
+\begin{DoxyCompactList}\small\item\em Creates a vertex list with 1 poly type and color information to boot. \end{DoxyCompactList}\item 
+\hyperlink{classGFXVertexList_a0cf5dcc57c95a7d3823f03be44384602}{G\+F\+X\+Vertex\+List} (enum P\+O\+L\+Y\+T\+Y\+PE $\ast$poly, int num\+Vertices, const \hyperlink{structGFXColorVertex}{G\+F\+X\+Color\+Vertex} $\ast$colors, int \hyperlink{classGFXVertexList_a50b552e54f117f7456f3cb618c076190}{numlists}, int $\ast$\hyperlink{classGFXVertexList_a0310e1bd4dbc7bfb1240b200368ce8c9}{offsets}, bool Mutable=false, unsigned int $\ast$index=0)\hypertarget{classGFXVertexList_a0cf5dcc57c95a7d3823f03be44384602}{}\label{classGFXVertexList_a0cf5dcc57c95a7d3823f03be44384602}
+
+\begin{DoxyCompactList}\small\item\em Creates a vertex list with an arbitrary number of poly types and color. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classGFXVertexList_af0ca7d06410f649c6d1d506121c4f6da}{num\+Tris} () const \hypertarget{classGFXVertexList_af0ca7d06410f649c6d1d506121c4f6da}{}\label{classGFXVertexList_af0ca7d06410f649c6d1d506121c4f6da}
+
+\begin{DoxyCompactList}\small\item\em Returns number of Triangles in vertex list (counts tri strips) \end{DoxyCompactList}\item 
+virtual int \hyperlink{classGFXVertexList_a1ccb94d8563c3ba9f041c42449af9f39}{num\+Quads} () const \hypertarget{classGFXVertexList_a1ccb94d8563c3ba9f041c42449af9f39}{}\label{classGFXVertexList_a1ccb94d8563c3ba9f041c42449af9f39}
+
+\begin{DoxyCompactList}\small\item\em Returns number of Quads in vertex list (counts quad strips) \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classGFXVertexList_adab1c9a190a15884b699aef9d5fc22ea}{Get\+Index} (int offset) const \hypertarget{classGFXVertexList_adab1c9a190a15884b699aef9d5fc22ea}{}\label{classGFXVertexList_adab1c9a190a15884b699aef9d5fc22ea}
+
+\begin{DoxyCompactList}\small\item\em Looks up the index in the appropriate short, char or int array. \end{DoxyCompactList}\item 
+P\+O\+L\+Y\+T\+Y\+PE $\ast$ {\bfseries Get\+Poly\+Type} () const \hypertarget{classGFXVertexList_a497d36c60d6297b7e3801568c40145fc}{}\label{classGFXVertexList_a497d36c60d6297b7e3801568c40145fc}
+
+\item 
+int $\ast$ {\bfseries Get\+Offsets} () const \hypertarget{classGFXVertexList_ad3b66984e35a59a630d858f63f8695b9}{}\label{classGFXVertexList_ad3b66984e35a59a630d858f63f8695b9}
+
+\item 
+int {\bfseries Get\+Num\+Lists} () const \hypertarget{classGFXVertexList_a9599981c4a21cf3725e50cb55c1958d2}{}\label{classGFXVertexList_a9599981c4a21cf3725e50cb55c1958d2}
+
+\item 
+bool {\bfseries has\+Color} () const \hypertarget{classGFXVertexList_a6da0fb8c8c8ecf314fd6847068c4a84d}{}\label{classGFXVertexList_a6da0fb8c8c8ecf314fd6847068c4a84d}
+
+\item 
+int {\bfseries Get\+Num\+Vertices} () const \hypertarget{classGFXVertexList_aa63a7c23344da154250d7feb15f7cd7a}{}\label{classGFXVertexList_aa63a7c23344da154250d7feb15f7cd7a}
+
+\item 
+virtual \hyperlink{unionGFXVertexList_1_1VDAT}{V\+D\+AT} $\ast$ {\bfseries Map} (bool read, bool write)\hypertarget{classGFXVertexList_ad46d07e494df460116bbda27b2d87957}{}\label{classGFXVertexList_ad46d07e494df460116bbda27b2d87957}
+
+\item 
+void {\bfseries Un\+Map} ()\hypertarget{classGFXVertexList_a100c64319a28d1639a69235c3ea16fc8}{}\label{classGFXVertexList_a100c64319a28d1639a69235c3ea16fc8}
+
+\item 
+virtual \hyperlink{unionGFXVertexList_1_1VDAT}{V\+D\+AT} $\ast$ \hyperlink{classGFXVertexList_ab795d3c64cc6b281edc46008fe193fa5}{Begin\+Mutate} (int offset)\hypertarget{classGFXVertexList_ab795d3c64cc6b281edc46008fe193fa5}{}\label{classGFXVertexList_ab795d3c64cc6b281edc46008fe193fa5}
+
+\begin{DoxyCompactList}\small\item\em Returns the array of vertices to be mutated. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classGFXVertexList_a811ff18855d2b128e973ed72c263f0f1}{End\+Mutate} (int newsize=0)\hypertarget{classGFXVertexList_a811ff18855d2b128e973ed72c263f0f1}{}\label{classGFXVertexList_a811ff18855d2b128e973ed72c263f0f1}
+
+\begin{DoxyCompactList}\small\item\em Ends mutation and refreshes display list. \end{DoxyCompactList}\item 
+void \hyperlink{classGFXVertexList_ad73454fc1dd64087da2015202989ff0d}{Load\+Draw\+State} ()\hypertarget{classGFXVertexList_ad73454fc1dd64087da2015202989ff0d}{}\label{classGFXVertexList_ad73454fc1dd64087da2015202989ff0d}
+
+\begin{DoxyCompactList}\small\item\em Loads the draw state (what is active) of a given vlist for mass drawing. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classGFXVertexList_adf3bac4d8b6c7c2941d046007a0bdaf5}{Begin\+Draw\+State} (G\+F\+X\+B\+O\+OL lock=G\+F\+X\+T\+R\+UE)\hypertarget{classGFXVertexList_adf3bac4d8b6c7c2941d046007a0bdaf5}{}\label{classGFXVertexList_adf3bac4d8b6c7c2941d046007a0bdaf5}
+
+\begin{DoxyCompactList}\small\item\em Specifies array pointers and loads the draw state of a given vlist for mass drawing. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classGFXVertexList_a3b255f67295ad39da053bfac48af19ac}{Draw} ()\hypertarget{classGFXVertexList_a3b255f67295ad39da053bfac48af19ac}{}\label{classGFXVertexList_a3b255f67295ad39da053bfac48af19ac}
+
+\begin{DoxyCompactList}\small\item\em Draws a single copy of the mass-\/loaded vlist. \end{DoxyCompactList}\item 
+void {\bfseries Draw} (enum P\+O\+L\+Y\+T\+Y\+PE poly, int numV)\hypertarget{classGFXVertexList_a02d7a8d42ac6c63db2fd13e042c30201}{}\label{classGFXVertexList_a02d7a8d42ac6c63db2fd13e042c30201}
+
+\item 
+void {\bfseries Draw} (enum P\+O\+L\+Y\+T\+Y\+PE poly, int numV, unsigned char $\ast$index)\hypertarget{classGFXVertexList_a3021fa8f97d1f4bab4c3156e651a9772}{}\label{classGFXVertexList_a3021fa8f97d1f4bab4c3156e651a9772}
+
+\item 
+void {\bfseries Draw} (enum P\+O\+L\+Y\+T\+Y\+PE poly, int numV, unsigned short $\ast$index)\hypertarget{classGFXVertexList_a27d7f40bfc939090064ea9cba1e71796}{}\label{classGFXVertexList_a27d7f40bfc939090064ea9cba1e71796}
+
+\item 
+void {\bfseries Draw} (enum P\+O\+L\+Y\+T\+Y\+PE poly, int numV, unsigned int $\ast$index)\hypertarget{classGFXVertexList_ad0cdfb78e8720c2aa3166d522e43753e}{}\label{classGFXVertexList_ad0cdfb78e8720c2aa3166d522e43753e}
+
+\item 
+void \hyperlink{classGFXVertexList_a965e59eb121d7ba4a0626cf9b5f0dcc1}{Draw\+Once} ()\hypertarget{classGFXVertexList_a965e59eb121d7ba4a0626cf9b5f0dcc1}{}\label{classGFXVertexList_a965e59eb121d7ba4a0626cf9b5f0dcc1}
+
+\begin{DoxyCompactList}\small\item\em Loads draw state and prepares to draw only once. \end{DoxyCompactList}\item 
+virtual void {\bfseries End\+Draw\+State} (G\+F\+X\+B\+O\+OL lock=G\+F\+X\+T\+R\+UE)\hypertarget{classGFXVertexList_a71b8f6132eb44a75a932ca7b6f55c547}{}\label{classGFXVertexList_a71b8f6132eb44a75a932ca7b6f55c547}
+
+\item 
+virtual void \hyperlink{classGFXVertexList_a59a08674ffc8cad57e0961b05110333e}{Get\+Polys} (\hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$$\ast$vert, int $\ast$num\+Polys, int $\ast$\hyperlink{classGFXVertexList_af0ca7d06410f649c6d1d506121c4f6da}{num\+Tris})\hypertarget{classGFXVertexList_a59a08674ffc8cad57e0961b05110333e}{}\label{classGFXVertexList_a59a08674ffc8cad57e0961b05110333e}
+
+\begin{DoxyCompactList}\small\item\em returns a packed vertex list with number of polys and number of tries to passed in arguments. Useful for getting vertex info from a mesh \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$ \hyperlink{classGFXVertexList_aaa9bfa28a3bf3c0d19b2d779754e7364}{Get\+Vertex} (int index) const \hypertarget{classGFXVertexList_aaa9bfa28a3bf3c0d19b2d779754e7364}{}\label{classGFXVertexList_aaa9bfa28a3bf3c0d19b2d779754e7364}
+
+\begin{DoxyCompactList}\small\item\em Num vertices allocated. \end{DoxyCompactList}\item 
+const \hyperlink{structGFXColorVertex}{G\+F\+X\+Color\+Vertex} $\ast$ {\bfseries Get\+Color\+Vertex} (int index) const \hypertarget{classGFXVertexList_ad5cc08c44fdecd01048d98c02be8af6c}{}\label{classGFXVertexList_ad5cc08c44fdecd01048d98c02be8af6c}
+
+\item 
+void \hyperlink{classGFXVertexList_a07293ea055c210e97471c7836e466537}{Init} (enum P\+O\+L\+Y\+T\+Y\+PE $\ast$poly, int num\+Vertices, const \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$vert, const \hyperlink{structGFXColorVertex}{G\+F\+X\+Color\+Vertex} $\ast$colors, int \hyperlink{classGFXVertexList_a50b552e54f117f7456f3cb618c076190}{numlists}, int $\ast$\hyperlink{classGFXVertexList_a0310e1bd4dbc7bfb1240b200368ce8c9}{offsets}, bool Mutable, unsigned int $\ast$indices)\hypertarget{classGFXVertexList_a07293ea055c210e97471c7836e466537}{}\label{classGFXVertexList_a07293ea055c210e97471c7836e466537}
+
+\begin{DoxyCompactList}\small\item\em Init function (call from construtor) \end{DoxyCompactList}\item 
+virtual void {\bfseries Draw} (enum P\+O\+L\+Y\+T\+Y\+PE $\ast$poly, const \hyperlink{unionGFXVertexList_1_1INDEX}{I\+N\+D\+EX} index, const int num\+Lists, const int $\ast$\hyperlink{classGFXVertexList_a0310e1bd4dbc7bfb1240b200368ce8c9}{offsets})\hypertarget{classGFXVertexList_aed3abd3fc8ce0f1f17c1ffba249f89b2}{}\label{classGFXVertexList_aed3abd3fc8ce0f1f17c1ffba249f89b2}
+
+\item 
+void {\bfseries Renormalize\+Normals} ()\hypertarget{classGFXVertexList_afb18a6de62ade4d4f2e9d0b97f477e25}{}\label{classGFXVertexList_afb18a6de62ade4d4f2e9d0b97f477e25}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classGFXVertexList_a50cd52a8a59f2b99ecfbb9cfb66c1d8a}{Vtx\+Copy} (\hyperlink{classGFXVertexList}{G\+F\+X\+Vertex\+List} $\ast$thus, \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$dst, int offset, int howmany)\hypertarget{classGFXVertexList_a50cd52a8a59f2b99ecfbb9cfb66c1d8a}{}\label{classGFXVertexList_a50cd52a8a59f2b99ecfbb9cfb66c1d8a}
+
+\begin{DoxyCompactList}\small\item\em copies nonindexed vertices to dst vertex array \end{DoxyCompactList}\item 
+static void \hyperlink{classGFXVertexList_a51596d25644bb93d46d923c5a3422278}{Col\+Vtx\+Copy} (\hyperlink{classGFXVertexList}{G\+F\+X\+Vertex\+List} $\ast$thus, \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$dst, int offset, int howmany)\hypertarget{classGFXVertexList_a51596d25644bb93d46d923c5a3422278}{}\label{classGFXVertexList_a51596d25644bb93d46d923c5a3422278}
+
+\begin{DoxyCompactList}\small\item\em Copies nonindex colored vertices to dst vertex array. \end{DoxyCompactList}\item 
+static void \hyperlink{classGFXVertexList_a6fc0c87585b9d5765b03ef8a21378f75}{Col\+Ind\+Vtx\+Copy} (\hyperlink{classGFXVertexList}{G\+F\+X\+Vertex\+List} $\ast$thus, \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$dst, int offset, int howmany)\hypertarget{classGFXVertexList_a6fc0c87585b9d5765b03ef8a21378f75}{}\label{classGFXVertexList_a6fc0c87585b9d5765b03ef8a21378f75}
+
+\begin{DoxyCompactList}\small\item\em Copies indexed colored vertices to dst vertex array. \end{DoxyCompactList}\item 
+static void \hyperlink{classGFXVertexList_a091b1a0152e67f664d5bb58dcb772600}{Ind\+Vtx\+Copy} (\hyperlink{classGFXVertexList}{G\+F\+X\+Vertex\+List} $\ast$thus, \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$dst, int offset, int howmany)\hypertarget{classGFXVertexList_a091b1a0152e67f664d5bb58dcb772600}{}\label{classGFXVertexList_a091b1a0152e67f664d5bb58dcb772600}
+
+\begin{DoxyCompactList}\small\item\em Copies indexed vertices to dst vertex array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries num\+Vertices}\hypertarget{classGFXVertexList_a06d823718d174da3f29e0c51581ed43e}{}\label{classGFXVertexList_a06d823718d174da3f29e0c51581ed43e}
+
+\item 
+union \hyperlink{unionGFXVertexList_1_1VDAT}{G\+F\+X\+Vertex\+List\+::\+V\+D\+AT} {\bfseries data}\hypertarget{classGFXVertexList_abfc802c05f439d9466149d4d2100077e}{}\label{classGFXVertexList_abfc802c05f439d9466149d4d2100077e}
+
+\item 
+union \hyperlink{unionGFXVertexList_1_1INDEX}{G\+F\+X\+Vertex\+List\+::\+I\+N\+D\+EX} {\bfseries index}\hypertarget{classGFXVertexList_aa14c94ea8236d9f75eda0af2baeeb5dc}{}\label{classGFXVertexList_aa14c94ea8236d9f75eda0af2baeeb5dc}
+
+\item 
+enum P\+O\+L\+Y\+T\+Y\+PE $\ast$ \hyperlink{classGFXVertexList_af5a1158f2be60e95d24093a6d930c6a3}{mode}\hypertarget{classGFXVertexList_af5a1158f2be60e95d24093a6d930c6a3}{}\label{classGFXVertexList_af5a1158f2be60e95d24093a6d930c6a3}
+
+\begin{DoxyCompactList}\small\item\em Array of modes that vertices will be drawn with. \end{DoxyCompactList}\item 
+bool {\bfseries unique\+\_\+mode}\hypertarget{classGFXVertexList_a19827e0e7e4a715b5e693b544a1fa8ce}{}\label{classGFXVertexList_a19827e0e7e4a715b5e693b544a1fa8ce}
+
+\item 
+int \hyperlink{classGFXVertexList_a9b76a564361a63b71b846a79ef07ec29}{display\+\_\+list}\hypertarget{classGFXVertexList_a9b76a564361a63b71b846a79ef07ec29}{}\label{classGFXVertexList_a9b76a564361a63b71b846a79ef07ec29}
+
+\begin{DoxyCompactList}\small\item\em Display list number if list is indeed active. 0 otherwise. \end{DoxyCompactList}\item 
+int {\bfseries vbo\+\_\+data}\hypertarget{classGFXVertexList_a2f7aec434935bfb31fa71ba7914643b4}{}\label{classGFXVertexList_a2f7aec434935bfb31fa71ba7914643b4}
+
+\item 
+int \hyperlink{classGFXVertexList_a50b552e54f117f7456f3cb618c076190}{numlists}\hypertarget{classGFXVertexList_a50b552e54f117f7456f3cb618c076190}{}\label{classGFXVertexList_a50b552e54f117f7456f3cb618c076190}
+
+\begin{DoxyCompactList}\small\item\em number of different mode, drawn lists \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classGFXVertexList_a0310e1bd4dbc7bfb1240b200368ce8c9}{offsets}
+\item 
+char \hyperlink{classGFXVertexList_a3d7999f82e16363e359e77f44175bc48}{changed}\hypertarget{classGFXVertexList_a3d7999f82e16363e359e77f44175bc48}{}\label{classGFXVertexList_a3d7999f82e16363e359e77f44175bc48}
+
+\begin{DoxyCompactList}\small\item\em If vertex list has been mutated since last draw. Low 3 bits store the stride of the index list (if avail). another bit for if color is presnet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries G\+F\+X\+Sphere\+Vertex\+List}\hypertarget{classGFXVertexList_a318d264f73ad682e0de493cce9fde224}{}\label{classGFXVertexList_a318d264f73ad682e0de493cce9fde224}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A vertex list is a list of any conglomeration of P\+O\+LY T\+Y\+P\+ES. It is held for storage in an array of \hyperlink{structGFXVertex}{G\+F\+X\+Vertex} but attempts to use a display list to hold information if possible 
+
+\subsection{Member Data Documentation}
+\index{G\+F\+X\+Vertex\+List@{G\+F\+X\+Vertex\+List}!offsets@{offsets}}
+\index{offsets@{offsets}!G\+F\+X\+Vertex\+List@{G\+F\+X\+Vertex\+List}}
+\subsubsection[{\texorpdfstring{offsets}{offsets}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ G\+F\+X\+Vertex\+List\+::offsets\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classGFXVertexList_a0310e1bd4dbc7bfb1240b200368ce8c9}{}\label{classGFXVertexList_a0310e1bd4dbc7bfb1240b200368ce8c9}
+number of vertices in each individual mode. 2 triangles 3 quads and 2 lines would be \{6,12,4\} as the offsets 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfxlib\+\_\+struct.\+h\item 
+gfxlib\+\_\+struct.\+cpp\item 
+gfxlib\+\_\+struct\+\_\+server.\+cpp\item 
+gldrv/gl\+\_\+vertex\+\_\+list.\+cpp\end{DoxyCompactItemize}

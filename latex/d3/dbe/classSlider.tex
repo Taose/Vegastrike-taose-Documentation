@@ -1,0 +1,123 @@
+\hypertarget{classSlider}{}\section{Slider Class Reference}
+\label{classSlider}\index{Slider@{Slider}}
+
+
+Inheritance diagram for Slider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d7c/classSlider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Slider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/ddc/classSlider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+Max\+Min} (int max, int min=0)\hypertarget{classSlider_a3dc7c04fc2a84a6147ce0a4eaf4a548e}{}\label{classSlider_a3dc7c04fc2a84a6147ce0a4eaf4a548e}
+
+\item 
+void {\bfseries set\+Thumb\+Length} (float len)\hypertarget{classSlider_a3c8449732a5e30e1a00ff884ab9ccfa0}{}\label{classSlider_a3c8449732a5e30e1a00ff884ab9ccfa0}
+
+\item 
+void {\bfseries set\+Page\+Size} (int s)\hypertarget{classSlider_a35154f532e345746c99298fa19f9b0a2}{}\label{classSlider_a35154f532e345746c99298fa19f9b0a2}
+
+\item 
+int {\bfseries position} (void)\hypertarget{classSlider_a10b896097dbdb0483b11fbc0d9ceb83e}{}\label{classSlider_a10b896097dbdb0483b11fbc0d9ceb83e}
+
+\item 
+void {\bfseries set\+Position} (int pos)\hypertarget{classSlider_a5de4c8c7734849a48d0daecbcee4bd9b}{}\label{classSlider_a5de4c8c7734849a48d0daecbcee4bd9b}
+
+\item 
+void {\bfseries set\+Thumb\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&color, const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&outline)\hypertarget{classSlider_ab3d080b0c11eda79fdbcfb40d61a1e49}{}\label{classSlider_ab3d080b0c11eda79fdbcfb40d61a1e49}
+
+\item 
+void {\bfseries set\+Thumb\+Color\+Based\+On\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classSlider_a54822471dde14fc15317eab11ea50fb7}{}\label{classSlider_a54822471dde14fc15317eab11ea50fb7}
+
+\item 
+virtual void {\bfseries draw} (void)\hypertarget{classSlider_a742c3b003bdc8bf76c4215169a007875}{}\label{classSlider_a742c3b003bdc8bf76c4215169a007875}
+
+\item 
+virtual void {\bfseries set\+Rect} (const \hyperlink{classRect}{Rect} \&r)\hypertarget{classSlider_a7cdbb79bcde3d79a7a37e161f77936cb}{}\label{classSlider_a7cdbb79bcde3d79a7a37e161f77936cb}
+
+\item 
+virtual void {\bfseries set\+Color} (const \hyperlink{structGFXColor}{G\+F\+X\+Color} \&c)\hypertarget{classSlider_a58380f19d1788710ee6d6d3c36be46be}{}\label{classSlider_a58380f19d1788710ee6d6d3c36be46be}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Down} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classSlider_ad49c0c4c50447f0d446376b30b8123d4}{}\label{classSlider_ad49c0c4c50447f0d446376b30b8123d4}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Up} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classSlider_a5e9412c8aed648ceda212c22cc7daf0d}{}\label{classSlider_a5e9412c8aed648ceda212c22cc7daf0d}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Drag} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classSlider_ab6d044c17baa58b4ca86ee73af831cdf}{}\label{classSlider_ab6d044c17baa58b4ca86ee73af831cdf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Mouse\+State} \{ {\bfseries M\+O\+U\+S\+E\+\_\+\+N\+O\+NE}, 
+{\bfseries M\+O\+U\+S\+E\+\_\+\+P\+A\+G\+E\+\_\+\+UP}, 
+{\bfseries M\+O\+U\+S\+E\+\_\+\+P\+A\+G\+E\+\_\+\+D\+O\+WN}, 
+{\bfseries M\+O\+U\+S\+E\+\_\+\+T\+H\+U\+M\+B\+\_\+\+D\+R\+AG}
+ \}\hypertarget{classSlider_a099e51ac0b390d8c4d88f61438a8e8cb}{}\label{classSlider_a099e51ac0b390d8c4d88f61438a8e8cb}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries m\+\_\+min\+Value}\hypertarget{classSlider_a84edf59ddaa7ab97a36d6a1ddb73a77b}{}\label{classSlider_a84edf59ddaa7ab97a36d6a1ddb73a77b}
+
+\item 
+int {\bfseries m\+\_\+max\+Value}\hypertarget{classSlider_a393ba2cefa5d20e4274375f6cc6f874d}{}\label{classSlider_a393ba2cefa5d20e4274375f6cc6f874d}
+
+\item 
+float {\bfseries m\+\_\+thumb\+Length}\hypertarget{classSlider_a1c7103d35675567e874483534c57cb93}{}\label{classSlider_a1c7103d35675567e874483534c57cb93}
+
+\item 
+float {\bfseries m\+\_\+original\+Thumb\+Length}\hypertarget{classSlider_a74d37267136edd8f7213cb875e3cdc1f}{}\label{classSlider_a74d37267136edd8f7213cb875e3cdc1f}
+
+\item 
+int {\bfseries m\+\_\+page\+Size}\hypertarget{classSlider_a9aa1e89328c38ae508a2c5b1eed0a86c}{}\label{classSlider_a9aa1e89328c38ae508a2c5b1eed0a86c}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+thumb\+Color}\hypertarget{classSlider_ac84f80dddcb38992ce34910f45796f6b}{}\label{classSlider_ac84f80dddcb38992ce34910f45796f6b}
+
+\item 
+\hyperlink{structGFXColor}{G\+F\+X\+Color} {\bfseries m\+\_\+thumb\+Outline\+Color}\hypertarget{classSlider_a8bbe34930a75129a79193274bb12e3a6}{}\label{classSlider_a8bbe34930a75129a79193274bb12e3a6}
+
+\item 
+int {\bfseries m\+\_\+position}\hypertarget{classSlider_af651841a7ea06c964f173f6bde8ce53c}{}\label{classSlider_af651841a7ea06c964f173f6bde8ce53c}
+
+\item 
+bool {\bfseries m\+\_\+vertical}\hypertarget{classSlider_a72d9b37ed21cfbadf7fb33db084df8f4}{}\label{classSlider_a72d9b37ed21cfbadf7fb33db084df8f4}
+
+\item 
+Mouse\+State {\bfseries m\+\_\+mouse\+State}\hypertarget{classSlider_acb82751e9b4188d12edff1481d2b7611}{}\label{classSlider_acb82751e9b4188d12edff1481d2b7611}
+
+\item 
+float {\bfseries m\+\_\+button\+Down\+Mouse}\hypertarget{classSlider_aa712f7ac2214374d785cb9eae8e504fd}{}\label{classSlider_aa712f7ac2214374d785cb9eae8e504fd}
+
+\item 
+int {\bfseries m\+\_\+button\+Down\+Position}\hypertarget{classSlider_ace7e45ee45536e951c6ce0709e86a265}{}\label{classSlider_ace7e45ee45536e951c6ce0709e86a265}
+
+\item 
+\hyperlink{classRect}{Rect} {\bfseries m\+\_\+thumb\+Rect}\hypertarget{classSlider_a1032dd42016d750527ac1d97e161e35d}{}\label{classSlider_a1032dd42016d750527ac1d97e161e35d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/slider.\+h\item 
+gui/slider.\+cpp\end{DoxyCompactItemize}

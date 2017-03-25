@@ -1,0 +1,170 @@
+\hypertarget{classMount}{}\section{Mount Class Reference}
+\label{classMount}\index{Mount@{Mount}}
+
+
+Collaboration diagram for Mount\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d80/classMount__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionMount_1_1REF}{R\+EF}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries M\+O\+U\+N\+T\+S\+T\+A\+T\+US} \{ \\*
+{\bfseries R\+E\+Q\+U\+E\+S\+T\+ED}, 
+{\bfseries A\+C\+C\+E\+P\+T\+ED}, 
+{\bfseries P\+R\+O\+C\+E\+S\+S\+ED}, 
+{\bfseries U\+N\+F\+I\+R\+ED}, 
+\\*
+{\bfseries F\+I\+R\+ED}
+ \}\hypertarget{classMount_a6fd8fbe3a8088121a30ddfc65486ac56}{}\label{classMount_a6fd8fbe3a8088121a30ddfc65486ac56}
+
+\item 
+enum {\bfseries S\+T\+A\+T\+US} \{ {\bfseries A\+C\+T\+I\+VE}, 
+{\bfseries I\+N\+A\+C\+T\+I\+VE}, 
+{\bfseries D\+E\+S\+T\+R\+O\+Y\+ED}, 
+{\bfseries U\+N\+C\+H\+O\+S\+EN}
+ \}\hypertarget{classMount_a778c45e2da092b9c69a09023452351cb}{}\label{classMount_a778c45e2da092b9c69a09023452351cb}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries Compute\+Animated\+Frame} (\hyperlink{classMesh}{Mesh} $\ast$gun)\hypertarget{classMount_a1af741f61d1950aa0af0ff8043efc24a}{}\label{classMount_a1af741f61d1950aa0af0ff8043efc24a}
+
+\item 
+void {\bfseries Replace\+Mounts} (\hyperlink{classUnit}{Unit} $\ast$unit, const \hyperlink{classMount}{Mount} $\ast$other)\hypertarget{classMount_ac6f68287b8ac4fe18fe3bed62fa0e542}{}\label{classMount_ac6f68287b8ac4fe18fe3bed62fa0e542}
+
+\item 
+double {\bfseries Percentage} (const \hyperlink{classMount}{Mount} $\ast$newammo) const \hypertarget{classMount_a95ef31e557563aa4b01a899402563315}{}\label{classMount_a95ef31e557563aa4b01a899402563315}
+
+\item 
+{\bfseries Mount} (const std\+::string \&name, int ammo, int volume, float xyscale, float zscale, float functionality, float maxfunctionality, bool banked)\hypertarget{classMount_a139c8f8bdc34d4a96045fc04e786261e}{}\label{classMount_a139c8f8bdc34d4a96045fc04e786261e}
+
+\item 
+void {\bfseries Activate} (bool \hyperlink{classMissile}{Missile})\hypertarget{classMount_afaa408264dbcefad50d3ba9c658e5215}{}\label{classMount_afaa408264dbcefad50d3ba9c658e5215}
+
+\item 
+void \hyperlink{classMount_ac0ea3cddae54a2528e451a0e2ff9d2a7}{De\+Active} (bool \hyperlink{classMissile}{Missile})\hypertarget{classMount_ac0ea3cddae54a2528e451a0e2ff9d2a7}{}\label{classMount_ac0ea3cddae54a2528e451a0e2ff9d2a7}
+
+\begin{DoxyCompactList}\small\item\em Sets this gun to inactive, unless unchosen or destroyed. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Mount\+Position} (const Vector \&)\hypertarget{classMount_a261a6a850a7fbdb3c430e05b2b421700}{}\label{classMount_a261a6a850a7fbdb3c430e05b2b421700}
+
+\item 
+void {\bfseries Set\+Mount\+Orientation} (const \hyperlink{structQuaternion}{Quaternion} \&)\hypertarget{classMount_ab388ca6e5d707831f7949a8417e099bc}{}\label{classMount_ab388ca6e5d707831f7949a8417e099bc}
+
+\item 
+const Vector \& {\bfseries Get\+Mount\+Location} () const \hypertarget{classMount_aaf28415cee9f91b45239592a99e9351d}{}\label{classMount_aaf28415cee9f91b45239592a99e9351d}
+
+\item 
+const \hyperlink{structQuaternion}{Quaternion} \& {\bfseries Get\+Mount\+Orientation} () const \hypertarget{classMount_afc0a0af268fe6ad42a89046685b8e794}{}\label{classMount_afc0a0af268fe6ad42a89046685b8e794}
+
+\item 
+void {\bfseries Un\+Fire} ()\hypertarget{classMount_a7a84cc512796fddaac1b75a6042be61f}{}\label{classMount_a7a84cc512796fddaac1b75a6042be61f}
+
+\item 
+void \hyperlink{classMount_a55fd3c8e4edb651a2c5196f418a997aa}{Physics\+Aligned\+Unfire} ()
+\item 
+bool {\bfseries Physics\+Aligned\+Fire} (\hyperlink{classUnit}{Unit} $\ast$caller, const \hyperlink{structTransformation}{Transformation} \&Cumulative, const \hyperlink{classMatrix}{Matrix} \&mat, const Vector \&Velocity, void $\ast$owner, \hyperlink{classUnit}{Unit} $\ast$target, signed char autotrack, float trackingcone, \hyperlink{classCollidable}{Collide\+Map\+::iterator} hint\mbox{[}$\,$\mbox{]})\hypertarget{classMount_a65fe7de3587b10747310b94636975919}{}\label{classMount_a65fe7de3587b10747310b94636975919}
+
+\item 
+bool {\bfseries Next\+Mount\+Closer} (\hyperlink{classMount}{Mount} $\ast$nextmount, \hyperlink{classUnit}{Unit} $\ast$)\hypertarget{classMount_a86ba36a44f9ef5b572174b1face8e89f}{}\label{classMount_a86ba36a44f9ef5b572174b1face8e89f}
+
+\item 
+bool {\bfseries Fire} (\hyperlink{classUnit}{Unit} $\ast$firer, void $\ast$owner, bool \hyperlink{classMissile}{Missile}=false, bool collide\+\_\+only\+\_\+with\+\_\+target=false)\hypertarget{classMount_a2b9057f1f0199464388f6126b060e8e0}{}\label{classMount_a2b9057f1f0199464388f6126b060e8e0}
+
+\item 
+bool {\bfseries Is\+Empty} () const \hypertarget{classMount_ad1ee281e3ad579ee03e97f90db9e9324}{}\label{classMount_ad1ee281e3ad579ee03e97f90db9e9324}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Obj\+Serial {\bfseries serial}\hypertarget{classMount_aed60748f13012140c81c1b26f9f52b8b}{}\label{classMount_aed60748f13012140c81c1b26f9f52b8b}
+
+\item 
+float {\bfseries xyscale}\hypertarget{classMount_aa5b5a1f0d2213ab81e78ea5c36f392d6}{}\label{classMount_aa5b5a1f0d2213ab81e78ea5c36f392d6}
+
+\item 
+float {\bfseries zscale}\hypertarget{classMount_af2be64bcaab83abaa12dd97becc1c34e}{}\label{classMount_af2be64bcaab83abaa12dd97becc1c34e}
+
+\item 
+union \hyperlink{unionMount_1_1REF}{Mount\+::\+R\+EF} {\bfseries ref}\hypertarget{classMount_a1e1a4d37df3a135dd32bc78592d6300d}{}\label{classMount_a1e1a4d37df3a135dd32bc78592d6300d}
+
+\item 
+unsigned int {\bfseries size}\hypertarget{classMount_aea90805976c2a847ab4f0269ff4de3e7}{}\label{classMount_aea90805976c2a847ab4f0269ff4de3e7}
+
+\item 
+int {\bfseries ammo}\hypertarget{classMount_a38d65d224d018d86cc82aeab68353738}{}\label{classMount_a38d65d224d018d86cc82aeab68353738}
+
+\item 
+int {\bfseries volume}\hypertarget{classMount_a42dc7489340340f5832ceefb5f817b93}{}\label{classMount_a42dc7489340340f5832ceefb5f817b93}
+
+\item 
+enum Mount\+::\+M\+O\+U\+N\+T\+S\+T\+A\+T\+US {\bfseries processed}\hypertarget{classMount_a96f250319419143ea5c4e72c057c3285}{}\label{classMount_a96f250319419143ea5c4e72c057c3285}
+
+\item 
+enum Mount\+::\+S\+T\+A\+T\+US {\bfseries status}\hypertarget{classMount_ae3a614e61f6921e3705aa16af147f3a6}{}\label{classMount_ae3a614e61f6921e3705aa16af147f3a6}
+
+\item 
+bool {\bfseries bank}\hypertarget{classMount_a0354bc20a16743b46b3e8022e44364ca}{}\label{classMount_a0354bc20a16743b46b3e8022e44364ca}
+
+\item 
+const \hyperlink{structweapon__info}{weapon\+\_\+info} $\ast$ {\bfseries type}\hypertarget{classMount_a54a53819b8dfc13c188f39de0cb689c4}{}\label{classMount_a54a53819b8dfc13c188f39de0cb689c4}
+
+\item 
+float {\bfseries functionality}\hypertarget{classMount_aba480ec3705c4ea23a1193963c15936a}{}\label{classMount_aba480ec3705c4ea23a1193963c15936a}
+
+\item 
+float {\bfseries maxfunctionality}\hypertarget{classMount_aa47668f56fc40bd28c0c11cf2a2bfa5f}{}\label{classMount_aa47668f56fc40bd28c0c11cf2a2bfa5f}
+
+\item 
+int {\bfseries sound}\hypertarget{classMount_a5d391f5f507dcbaf3379befc19e7db5d}{}\label{classMount_a5d391f5f507dcbaf3379befc19e7db5d}
+
+\item 
+float {\bfseries time\+\_\+to\+\_\+lock}\hypertarget{classMount_a92a27c1d8a8fecdb6530fd63f48151a9}{}\label{classMount_a92a27c1d8a8fecdb6530fd63f48151a9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Replace\+Sound} ()\hypertarget{classMount_af24d6860b43b280b47a129c020edd364}{}\label{classMount_af24d6860b43b280b47a129c020edd364}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector {\bfseries pos}\hypertarget{classMount_a956fffd39ba9a1cc34d4eeb6a628c0a2}{}\label{classMount_a956fffd39ba9a1cc34d4eeb6a628c0a2}
+
+\item 
+\hyperlink{structQuaternion}{Quaternion} {\bfseries orient}\hypertarget{classMount_a40d2d5f0c9094284b5134cf0cc3605d8}{}\label{classMount_a40d2d5f0c9094284b5134cf0cc3605d8}
+
+\item 
+double {\bfseries last\+\_\+sound\+\_\+refire\+\_\+time}\hypertarget{classMount_a92c86d80973da1da8099f148f5a68fcc}{}\label{classMount_a92c86d80973da1da8099f148f5a68fcc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Mount@{Mount}!Physics\+Aligned\+Unfire@{Physics\+Aligned\+Unfire}}
+\index{Physics\+Aligned\+Unfire@{Physics\+Aligned\+Unfire}!Mount@{Mount}}
+\subsubsection[{\texorpdfstring{Physics\+Aligned\+Unfire()}{PhysicsAlignedUnfire()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mount\+::\+Physics\+Aligned\+Unfire (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMount_a55fd3c8e4edb651a2c5196f418a997aa}{}\label{classMount_a55fd3c8e4edb651a2c5196f418a997aa}
+Fires a beam when the firing unit is at the Cumulative location/transformation owner (won\textquotesingle{}t crash into) as owner and target as missile target. bool \hyperlink{classMissile}{Missile} indicates if it is a missile should it fire 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/unit\+\_\+generic.\+h\item 
+cmd/mount.\+cpp\item 
+cmd/unit\+\_\+generic.\+cpp\end{DoxyCompactItemize}

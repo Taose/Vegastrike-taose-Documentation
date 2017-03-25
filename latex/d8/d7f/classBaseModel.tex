@@ -1,0 +1,238 @@
+\hypertarget{classBaseModel}{}\section{Base\+Model Class Reference}
+\label{classBaseModel}\index{Base\+Model@{Base\+Model}}
+
+
+Inheritance diagram for Base\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{dd/d1e/classBaseModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/db0/classBaseModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classBaseModel_ab2692ac2ec9c0c8c452d73f3a0bd341b}{Build} (const \hyperlink{structOPCODECREATE}{O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+TE} \&create)=0
+\item 
+virtual \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classBaseModel_a714251e9cd861e4e304f5740c75a5b74}{Get\+Used\+Bytes} () const =0
+\item 
+virtual bool \hyperlink{classBaseModel_a5776072914754d8ba95856d27ce24a6d}{Refit} ()
+\item 
+inline\+\_\+ const \hyperlink{classAABBTree}{A\+A\+B\+B\+Tree} $\ast$ \hyperlink{classBaseModel_a9a72077f4535987b8bcca9d8fd4322ff}{Get\+Source\+Tree} () const 
+\item 
+inline\+\_\+ const \hyperlink{classAABBOptimizedTree}{A\+A\+B\+B\+Optimized\+Tree} $\ast$ \hyperlink{classBaseModel_abc95fd0dde58d8c9468f6772c1e085f2}{Get\+Tree} () const 
+\item 
+inline\+\_\+ \hyperlink{classAABBOptimizedTree}{A\+A\+B\+B\+Optimized\+Tree} $\ast$ \hyperlink{classBaseModel_ac278bb341163cec3d71026f4e7f7f29e}{Get\+Tree} ()
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classBaseModel_a511257faf2505c41f70c41ddee13a22d}{Get\+Nb\+Nodes} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classBaseModel_a6e6e9719dd522561c1473997db74c260}{Has\+Leaf\+Nodes} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classBaseModel_a8403c6e8982a6aec5d10615391e5c74f}{Is\+Quantized} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{classBaseModel_a2bd8daf07f806dd18d248547295673ce}{Has\+Single\+Node} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classBaseModel_a70e5ef1ac02803b27ab5ac24ee8fea2f}{Get\+Model\+Code} () const 
+\item 
+inline\+\_\+ const \hyperlink{classMeshInterface}{Mesh\+Interface} $\ast$ \hyperlink{classBaseModel_a0fb2f7fb04cfa2187e1168d328736c48}{Get\+Mesh\+Interface} () const 
+\item 
+inline\+\_\+ void \hyperlink{classBaseModel_a3ee9dff2e45def7842c8a96133b62c3c}{Set\+Mesh\+Interface} (const \hyperlink{classMeshInterface}{Mesh\+Interface} $\ast$imesh)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Release\+Base} ()\hypertarget{classBaseModel_ac0b331eda307bebf1c2b0ed568cd0b65}{}\label{classBaseModel_ac0b331eda307bebf1c2b0ed568cd0b65}
+
+\item 
+bool {\bfseries Create\+Tree} (bool no\+\_\+leaf, bool quantized)\hypertarget{classBaseModel_acd802b59a4199af81a6b629c386bd950}{}\label{classBaseModel_acd802b59a4199af81a6b629c386bd950}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classMeshInterface}{Mesh\+Interface} $\ast$ \hyperlink{classBaseModel_abdbd9a2d7c59d2b3161a118a15780a50}{m\+I\+Mesh}\hypertarget{classBaseModel_abdbd9a2d7c59d2b3161a118a15780a50}{}\label{classBaseModel_abdbd9a2d7c59d2b3161a118a15780a50}
+
+\begin{DoxyCompactList}\small\item\em User-\/defined mesh interface. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classBaseModel_a93494cf2cdf224e416a095c9a2a44be0}{m\+Model\+Code}\hypertarget{classBaseModel_a93494cf2cdf224e416a095c9a2a44be0}{}\label{classBaseModel_a93494cf2cdf224e416a095c9a2a44be0}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classModel}{Model} code = combination of Model\+Flag(s) \end{DoxyCompactList}\item 
+\hyperlink{classAABBTree}{A\+A\+B\+B\+Tree} $\ast$ \hyperlink{classBaseModel_a8dba99d0c67cf49ab0ba23f5028ba392}{m\+Source}\hypertarget{classBaseModel_a8dba99d0c67cf49ab0ba23f5028ba392}{}\label{classBaseModel_a8dba99d0c67cf49ab0ba23f5028ba392}
+
+\begin{DoxyCompactList}\small\item\em Original source tree. \end{DoxyCompactList}\item 
+\hyperlink{classAABBOptimizedTree}{A\+A\+B\+B\+Optimized\+Tree} $\ast$ \hyperlink{classBaseModel_ab08d18ef9386b3dc40ea2de23ca73b44}{m\+Tree}\hypertarget{classBaseModel_ab08d18ef9386b3dc40ea2de23ca73b44}{}\label{classBaseModel_ab08d18ef9386b3dc40ea2de23ca73b44}
+
+\begin{DoxyCompactList}\small\item\em Optimized tree owned by the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The base class for collision models.
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May, 18, 2003 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Base\+Model@{Base\+Model}!Build@{Build}}
+\index{Build@{Build}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Build(const O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+T\+E \&create)=0}{Build(const OPCODECREATE &create)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\+Model\+::\+Build (
+\begin{DoxyParamCaption}
+\item[{const {\bf O\+P\+C\+O\+D\+E\+C\+R\+E\+A\+TE} \&}]{create}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classBaseModel_ab2692ac2ec9c0c8c452d73f3a0bd341b}{}\label{classBaseModel_ab2692ac2ec9c0c8c452d73f3a0bd341b}
+Builds a collision model. 
+\begin{DoxyParams}{Parameters}
+{\em create} & \mbox{[}in\mbox{]} model creation structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Get\+Mesh\+Interface@{Get\+Mesh\+Interface}}
+\index{Get\+Mesh\+Interface@{Get\+Mesh\+Interface}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Mesh\+Interface() const }{GetMeshInterface() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ const {\bf Mesh\+Interface}$\ast$ Base\+Model\+::\+Get\+Mesh\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_a0fb2f7fb04cfa2187e1168d328736c48}{}\label{classBaseModel_a0fb2f7fb04cfa2187e1168d328736c48}
+Gets the mesh interface. \begin{DoxyReturn}{Returns}
+mesh interface 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Get\+Model\+Code@{Get\+Model\+Code}}
+\index{Get\+Model\+Code@{Get\+Model\+Code}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Model\+Code() const }{GetModelCode() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Base\+Model\+::\+Get\+Model\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_a70e5ef1ac02803b27ab5ac24ee8fea2f}{}\label{classBaseModel_a70e5ef1ac02803b27ab5ac24ee8fea2f}
+Gets the model\textquotesingle{}s code. \begin{DoxyReturn}{Returns}
+model\textquotesingle{}s code 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Get\+Nb\+Nodes@{Get\+Nb\+Nodes}}
+\index{Get\+Nb\+Nodes@{Get\+Nb\+Nodes}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Nodes() const }{GetNbNodes() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf udword} Base\+Model\+::\+Get\+Nb\+Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_a511257faf2505c41f70c41ddee13a22d}{}\label{classBaseModel_a511257faf2505c41f70c41ddee13a22d}
+Gets the number of nodes in the tree. Should be 2$\ast$\+N-\/1 for normal trees and N-\/1 for optimized ones. \begin{DoxyReturn}{Returns}
+number of nodes 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Get\+Source\+Tree@{Get\+Source\+Tree}}
+\index{Get\+Source\+Tree@{Get\+Source\+Tree}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Source\+Tree() const }{GetSourceTree() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ const {\bf A\+A\+B\+B\+Tree}$\ast$ Base\+Model\+::\+Get\+Source\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_a9a72077f4535987b8bcca9d8fd4322ff}{}\label{classBaseModel_a9a72077f4535987b8bcca9d8fd4322ff}
+Gets the source tree. \begin{DoxyReturn}{Returns}
+generic tree 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Get\+Tree@{Get\+Tree}}
+\index{Get\+Tree@{Get\+Tree}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Tree() const }{GetTree() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ const {\bf A\+A\+B\+B\+Optimized\+Tree}$\ast$ Base\+Model\+::\+Get\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_abc95fd0dde58d8c9468f6772c1e085f2}{}\label{classBaseModel_abc95fd0dde58d8c9468f6772c1e085f2}
+Gets the tree. \begin{DoxyReturn}{Returns}
+the collision tree 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Get\+Tree@{Get\+Tree}}
+\index{Get\+Tree@{Get\+Tree}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Tree()}{GetTree()}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf A\+A\+B\+B\+Optimized\+Tree}$\ast$ Base\+Model\+::\+Get\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_ac278bb341163cec3d71026f4e7f7f29e}{}\label{classBaseModel_ac278bb341163cec3d71026f4e7f7f29e}
+Gets the tree. \begin{DoxyReturn}{Returns}
+the collision tree 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Get\+Used\+Bytes@{Get\+Used\+Bytes}}
+\index{Get\+Used\+Bytes@{Get\+Used\+Bytes}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Get\+Used\+Bytes() const =0}{GetUsedBytes() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf udword} Base\+Model\+::\+Get\+Used\+Bytes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classBaseModel_a714251e9cd861e4e304f5740c75a5b74}{}\label{classBaseModel_a714251e9cd861e4e304f5740c75a5b74}
+Gets the number of bytes used by the tree. \begin{DoxyReturn}{Returns}
+amount of bytes used 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Has\+Leaf\+Nodes@{Has\+Leaf\+Nodes}}
+\index{Has\+Leaf\+Nodes@{Has\+Leaf\+Nodes}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Has\+Leaf\+Nodes() const }{HasLeafNodes() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Base\+Model\+::\+Has\+Leaf\+Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_a6e6e9719dd522561c1473997db74c260}{}\label{classBaseModel_a6e6e9719dd522561c1473997db74c260}
+Checks whether the tree has leaf nodes or not. \begin{DoxyReturn}{Returns}
+true if the tree has leaf nodes (normal tree), else false (optimized tree) 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Has\+Single\+Node@{Has\+Single\+Node}}
+\index{Has\+Single\+Node@{Has\+Single\+Node}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Has\+Single\+Node() const }{HasSingleNode() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Base\+Model\+::\+Has\+Single\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_a2bd8daf07f806dd18d248547295673ce}{}\label{classBaseModel_a2bd8daf07f806dd18d248547295673ce}
+Checks whether the model has a single node or not. This special case must be handled separately. \begin{DoxyReturn}{Returns}
+true if the model has only 1 node 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Is\+Quantized@{Is\+Quantized}}
+\index{Is\+Quantized@{Is\+Quantized}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Quantized() const }{IsQuantized() const }}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ {\bf B\+O\+OL} Base\+Model\+::\+Is\+Quantized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_a8403c6e8982a6aec5d10615391e5c74f}{}\label{classBaseModel_a8403c6e8982a6aec5d10615391e5c74f}
+Checks whether the tree is quantized or not. \begin{DoxyReturn}{Returns}
+true if the tree is quantized 
+\end{DoxyReturn}
+\index{Base\+Model@{Base\+Model}!Refit@{Refit}}
+\index{Refit@{Refit}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Refit()}{Refit()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\+Model\+::\+Refit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classBaseModel_a5776072914754d8ba95856d27ce24a6d}{}\label{classBaseModel_a5776072914754d8ba95856d27ce24a6d}
+Refits the collision model. This can be used to handle dynamic meshes. Usage is\+:
+\begin{DoxyEnumerate}
+\item modify your mesh vertices (keep the topology constant!)
+\item refit the tree (call this method) \begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+
+\end{DoxyEnumerate}\index{Base\+Model@{Base\+Model}!Set\+Mesh\+Interface@{Set\+Mesh\+Interface}}
+\index{Set\+Mesh\+Interface@{Set\+Mesh\+Interface}!Base\+Model@{Base\+Model}}
+\subsubsection[{\texorpdfstring{Set\+Mesh\+Interface(const Mesh\+Interface $\ast$imesh)}{SetMeshInterface(const MeshInterface *imesh)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ void Base\+Model\+::\+Set\+Mesh\+Interface (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mesh\+Interface} $\ast$}]{imesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBaseModel_a3ee9dff2e45def7842c8a96133b62c3c}{}\label{classBaseModel_a3ee9dff2e45def7842c8a96133b62c3c}
+Sets the mesh interface. 
+\begin{DoxyParams}{Parameters}
+{\em imesh} & \mbox{[}in\mbox{]} mesh interface \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{OPC__BaseModel_8h}{O\+P\+C\+\_\+\+Base\+Model.\+h}\end{DoxyCompactItemize}

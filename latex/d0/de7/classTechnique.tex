@@ -1,0 +1,170 @@
+\hypertarget{classTechnique}{}\section{Technique Class Reference}
+\label{classTechnique}\index{Technique@{Technique}}
+
+
+Collaboration diagram for Technique\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{df/dbb/classTechnique__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classTechnique_1_1Pass}{Pass}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTechnique_a6ec998ae20fed03ff4ade4f9f7b00aa1}{Technique} (const std\+::string \&name)
+\item 
+\hyperlink{classTechnique_ae264b85d6b6e13a99d9e9e5a6de7685b}{Technique} (const \hyperlink{classTechnique}{Technique} \&src)
+\item 
+const std\+::string \& {\bfseries get\+Name} () const \hypertarget{classTechnique_a87196dbad9850c93b6cb2841ca9da246}{}\label{classTechnique_a87196dbad9850c93b6cb2841ca9da246}
+
+\item 
+const std\+::string \& {\bfseries get\+Fallback} () const \hypertarget{classTechnique_aba9c8a25dbe5dcdde06382ad290865b2}{}\label{classTechnique_aba9c8a25dbe5dcdde06382ad290865b2}
+
+\item 
+bool \hyperlink{classTechnique_a2825c12a76cea39071b5aed141e0be1e}{is\+Compiled} () const 
+\item 
+bool \hyperlink{classTechnique_a0ad1df3b45f3bb1af6b8f1a45ee4f303}{is\+Compiled} (int program\+Version) const 
+\item 
+void {\bfseries compile} ()\hypertarget{classTechnique_a59d75c659a493c34bc50bff073d3c618}{}\label{classTechnique_a59d75c659a493c34bc50bff073d3c618}
+
+\item 
+int {\bfseries get\+Num\+Passes} () const \hypertarget{classTechnique_a32cec6389ba41c49a217763943d3bfea}{}\label{classTechnique_a32cec6389ba41c49a217763943d3bfea}
+
+\item 
+const \hyperlink{classTechnique_1_1Pass}{Pass} \& {\bfseries get\+Pass} (int idx) const \hypertarget{classTechnique_aa871113528c92b7fadf0c4b8a338fa0a}{}\label{classTechnique_aa871113528c92b7fadf0c4b8a338fa0a}
+
+\item 
+\hyperlink{classTechnique_1_1Pass}{Pass} \& {\bfseries get\+Pass} (int idx)\hypertarget{classTechnique_a67fa278c69126eb2e49e0326eaf08a1a}{}\label{classTechnique_a67fa278c69126eb2e49e0326eaf08a1a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Technique\+Ptr \hyperlink{classTechnique_a0e3aa18e00f5c00377000abf9f557d8e}{get\+Technique} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \hyperlink{classTechnique_1_1Pass}{Pass} $>$ {\bfseries Pass\+List}\hypertarget{classTechnique_a76a66182f42522d791610c03e4a7c1a3}{}\label{classTechnique_a76a66182f42522d791610c03e4a7c1a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Pass\+List {\bfseries passes}\hypertarget{classTechnique_a671e5e8be0c7d0fe5baada3166a2dfb6}{}\label{classTechnique_a671e5e8be0c7d0fe5baada3166a2dfb6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Technique@{Technique}!Technique@{Technique}}
+\index{Technique@{Technique}!Technique@{Technique}}
+\subsubsection[{\texorpdfstring{Technique(const std\+::string \&name)}{Technique(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}Technique\+::\+Technique (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classTechnique_a6ec998ae20fed03ff4ade4f9f7b00aa1}{}\label{classTechnique_a6ec998ae20fed03ff4ade4f9f7b00aa1}
+Create a technique by loading and parsing the definition in \mbox{[}name\mbox{]}.technique 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/de7/classTechnique_a6ec998ae20fed03ff4ade4f9f7b00aa1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/de7/classTechnique_a6ec998ae20fed03ff4ade4f9f7b00aa1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Technique@{Technique}!Technique@{Technique}}
+\index{Technique@{Technique}!Technique@{Technique}}
+\subsubsection[{\texorpdfstring{Technique(const Technique \&src)}{Technique(const Technique &src)}}]{\setlength{\rightskip}{0pt plus 5cm}Technique\+::\+Technique (
+\begin{DoxyParamCaption}
+\item[{const {\bf Technique} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classTechnique_ae264b85d6b6e13a99d9e9e5a6de7685b}{}\label{classTechnique_ae264b85d6b6e13a99d9e9e5a6de7685b}
+Create a technique by copying another technique 
+
+\subsection{Member Function Documentation}
+\index{Technique@{Technique}!get\+Technique@{get\+Technique}}
+\index{get\+Technique@{get\+Technique}!Technique@{Technique}}
+\subsubsection[{\texorpdfstring{get\+Technique(const std\+::string \&name)}{getTechnique(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}Technique\+Ptr Technique\+::get\+Technique (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classTechnique_a0e3aa18e00f5c00377000abf9f557d8e}{}\label{classTechnique_a0e3aa18e00f5c00377000abf9f557d8e}
+Cached technique factory function 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/de7/classTechnique_a0e3aa18e00f5c00377000abf9f557d8e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/de7/classTechnique_a0e3aa18e00f5c00377000abf9f557d8e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Technique@{Technique}!is\+Compiled@{is\+Compiled}}
+\index{is\+Compiled@{is\+Compiled}!Technique@{Technique}}
+\subsubsection[{\texorpdfstring{is\+Compiled() const }{isCompiled() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Technique\+::is\+Compiled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTechnique_a2825c12a76cea39071b5aed141e0be1e}{}\label{classTechnique_a2825c12a76cea39071b5aed141e0be1e}
+returns true if the technique has been compiled \index{Technique@{Technique}!is\+Compiled@{is\+Compiled}}
+\index{is\+Compiled@{is\+Compiled}!Technique@{Technique}}
+\subsubsection[{\texorpdfstring{is\+Compiled(int program\+Version) const }{isCompiled(int programVersion) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Technique\+::is\+Compiled (
+\begin{DoxyParamCaption}
+\item[{int}]{program\+Version}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTechnique_a0ad1df3b45f3bb1af6b8f1a45ee4f303}{}\label{classTechnique_a0ad1df3b45f3bb1af6b8f1a45ee4f303}
+returns true if the technique has been compiled with a matching program version 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/de7/classTechnique_a0ad1df3b45f3bb1af6b8f1a45ee4f303_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/technique.\+h\item 
+gfx/technique.\+cpp\end{DoxyCompactItemize}

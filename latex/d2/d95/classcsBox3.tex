@@ -1,0 +1,702 @@
+\hypertarget{classcsBox3}{}\section{cs\+Box3 Class Reference}
+\label{classcsBox3}\index{cs\+Box3@{cs\+Box3}}
+
+
+{\ttfamily \#include $<$opbox.\+h$>$}
+
+
+
+Collaboration diagram for cs\+Box3\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{d8/de4/classcsBox3__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcsBox3_1_1bEdge}{b\+Edge}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classcsBox3_a1684d10b3de0888c02113376bcf491b4}{MinX} () const \hypertarget{classcsBox3_a1684d10b3de0888c02113376bcf491b4}{}\label{classcsBox3_a1684d10b3de0888c02113376bcf491b4}
+
+\begin{DoxyCompactList}\small\item\em Get the minimum X value of the box. \end{DoxyCompactList}\item 
+float \hyperlink{classcsBox3_a73cdfa54c11dca6eb943bda4a2b7e79c}{MinY} () const \hypertarget{classcsBox3_a73cdfa54c11dca6eb943bda4a2b7e79c}{}\label{classcsBox3_a73cdfa54c11dca6eb943bda4a2b7e79c}
+
+\begin{DoxyCompactList}\small\item\em Get the minimum Y value of the box. \end{DoxyCompactList}\item 
+float \hyperlink{classcsBox3_a0ad994d08b9aeb5be8adf9a2eaefb605}{MinZ} () const \hypertarget{classcsBox3_a0ad994d08b9aeb5be8adf9a2eaefb605}{}\label{classcsBox3_a0ad994d08b9aeb5be8adf9a2eaefb605}
+
+\begin{DoxyCompactList}\small\item\em Get the minimum Z value of the box. \end{DoxyCompactList}\item 
+float \hyperlink{classcsBox3_ac19067966974b9291d26295852e3add7}{MaxX} () const \hypertarget{classcsBox3_ac19067966974b9291d26295852e3add7}{}\label{classcsBox3_ac19067966974b9291d26295852e3add7}
+
+\begin{DoxyCompactList}\small\item\em Get the maximum X value of the box. \end{DoxyCompactList}\item 
+float \hyperlink{classcsBox3_ac0738f597a36b7c8c17701e6fe48d5a2}{MaxY} () const \hypertarget{classcsBox3_ac0738f597a36b7c8c17701e6fe48d5a2}{}\label{classcsBox3_ac0738f597a36b7c8c17701e6fe48d5a2}
+
+\begin{DoxyCompactList}\small\item\em Get the maximum Y value of the box. \end{DoxyCompactList}\item 
+float \hyperlink{classcsBox3_ac391f4928f19f28e077442fe90a02f56}{MaxZ} () const \hypertarget{classcsBox3_ac391f4928f19f28e077442fe90a02f56}{}\label{classcsBox3_ac391f4928f19f28e077442fe90a02f56}
+
+\begin{DoxyCompactList}\small\item\em Get the maximum Z value of the box. \end{DoxyCompactList}\item 
+float \hyperlink{classcsBox3_aaee257765252b6978de14c635995f31f}{Min} (int idx) const \hypertarget{classcsBox3_aaee257765252b6978de14c635995f31f}{}\label{classcsBox3_aaee257765252b6978de14c635995f31f}
+
+\begin{DoxyCompactList}\small\item\em Get Min component for 0 (x), 1 (y), or 2 (z). \end{DoxyCompactList}\item 
+float \hyperlink{classcsBox3_a77ef61cc6b6d9d6bca11e7dd03199d31}{Max} (int idx) const \hypertarget{classcsBox3_a77ef61cc6b6d9d6bca11e7dd03199d31}{}\label{classcsBox3_a77ef61cc6b6d9d6bca11e7dd03199d31}
+
+\begin{DoxyCompactList}\small\item\em Get Max component for 0 (x), 1 (y), or 2 (z). \end{DoxyCompactList}\item 
+const \hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsBox3_a57e7ebc42b8d8e0379dbde60a1443122}{Min} () const \hypertarget{classcsBox3_a57e7ebc42b8d8e0379dbde60a1443122}{}\label{classcsBox3_a57e7ebc42b8d8e0379dbde60a1443122}
+
+\begin{DoxyCompactList}\small\item\em Get the 3d vector of minimum (x, y, z) values. \end{DoxyCompactList}\item 
+const \hyperlink{classcsVector3}{cs\+Vector3} \& \hyperlink{classcsBox3_a3086d59f7c2dd2d5ad71f5d0d911f001}{Max} () const \hypertarget{classcsBox3_a3086d59f7c2dd2d5ad71f5d0d911f001}{}\label{classcsBox3_a3086d59f7c2dd2d5ad71f5d0d911f001}
+
+\begin{DoxyCompactList}\small\item\em Get the 3d vector of maximum (x, y, z) values. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsBox3_a414acf5fe1fee22d056e65fd0aa89fd8}{Get\+Corner} (int corner) const 
+\item 
+void \hyperlink{classcsBox3_a7dd86bf643bb17b8059dd75b93a11f76}{Get\+Edge\+Info} (int edge, int \&v1, int \&v2, int \&fleft, int \&fright) const 
+\item 
+uint8 $\ast$ \hyperlink{classcsBox3_ae2c05ca56f6200bc93d373a0866357db}{Get\+Face\+Edges} (int face) const 
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsBox3_a3bb267ed23f663a3c24da8b74727ce8c}{Get\+Center} () const 
+\item 
+void \hyperlink{classcsBox3_a81d9340a00e6c1c6a06e5aa7fc23434b}{Set\+Center} (const \hyperlink{classcsVector3}{cs\+Vector3} \&c)
+\item 
+void \hyperlink{classcsBox3_a7045c1e7c84379c62797f52ee8b66109}{Set\+Size} (const \hyperlink{classcsVector3}{cs\+Vector3} \&s)
+\item 
+int \hyperlink{classcsBox3_a8387b45783c4a8b3721016691d54947e}{Get\+Visible\+Sides} (const \hyperlink{classcsVector3}{cs\+Vector3} \&pos, int $\ast$visible\+\_\+sides) const 
+\item 
+bool \hyperlink{classcsBox3_afd1f8ba93d546d19e9c00edaa855943c}{In} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float z) const 
+\begin{DoxyCompactList}\small\item\em Test if the given coordinate is in this box. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_ad8e8a62251204aae1b1898534e21a759}{In} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v) const \hypertarget{classcsBox3_ad8e8a62251204aae1b1898534e21a759}{}\label{classcsBox3_ad8e8a62251204aae1b1898534e21a759}
+
+\begin{DoxyCompactList}\small\item\em Test if the given coordinate is in this box. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_acba21deeca4e73ac49e175ec9077bb9b}{Overlap} (const \hyperlink{classcsBox3}{cs\+Box3} \&box) const \hypertarget{classcsBox3_acba21deeca4e73ac49e175ec9077bb9b}{}\label{classcsBox3_acba21deeca4e73ac49e175ec9077bb9b}
+
+\begin{DoxyCompactList}\small\item\em Test if this box overlaps with the given box. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_a07627740a824d7ab267b47d84cc941c3}{Contains} (const \hyperlink{classcsBox3}{cs\+Box3} \&box) const \hypertarget{classcsBox3_a07627740a824d7ab267b47d84cc941c3}{}\label{classcsBox3_a07627740a824d7ab267b47d84cc941c3}
+
+\begin{DoxyCompactList}\small\item\em Test if this box contains the other box. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_a5f5ea5715fcd1c3f6e872bd738003c46}{Empty} () const \hypertarget{classcsBox3_a5f5ea5715fcd1c3f6e872bd738003c46}{}\label{classcsBox3_a5f5ea5715fcd1c3f6e872bd738003c46}
+
+\begin{DoxyCompactList}\small\item\em Test if this box is empty. \end{DoxyCompactList}\item 
+void \hyperlink{classcsBox3_a80242120b00afc06f7279bef87f08845}{Start\+Bounding\+Box} ()\hypertarget{classcsBox3_a80242120b00afc06f7279bef87f08845}{}\label{classcsBox3_a80242120b00afc06f7279bef87f08845}
+
+\begin{DoxyCompactList}\small\item\em Initialize this box to empty. \end{DoxyCompactList}\item 
+void \hyperlink{classcsBox3_ad75ddae9c8600e2d34ac29cfaa37c1a0}{Start\+Bounding\+Box} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsBox3_ad75ddae9c8600e2d34ac29cfaa37c1a0}{}\label{classcsBox3_ad75ddae9c8600e2d34ac29cfaa37c1a0}
+
+\begin{DoxyCompactList}\small\item\em Initialize this box to one vertex. \end{DoxyCompactList}\item 
+void \hyperlink{classcsBox3_a8b6848ac4bfe8795d6f412cea3700368}{Add\+Bounding\+Vertex} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float z)\hypertarget{classcsBox3_a8b6848ac4bfe8795d6f412cea3700368}{}\label{classcsBox3_a8b6848ac4bfe8795d6f412cea3700368}
+
+\begin{DoxyCompactList}\small\item\em Add a new vertex and recalculate the bounding box. \end{DoxyCompactList}\item 
+void \hyperlink{classcsBox3_a9afd44e57fa7ad90e6636029c570014d}{Add\+Bounding\+Vertex} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsBox3_a9afd44e57fa7ad90e6636029c570014d}{}\label{classcsBox3_a9afd44e57fa7ad90e6636029c570014d}
+
+\begin{DoxyCompactList}\small\item\em Add a new vertex and recalculate the bounding box. \end{DoxyCompactList}\item 
+void \hyperlink{classcsBox3_a9bb79f738a03a5b2713cbf4488048641}{Add\+Bounding\+Vertex\+Smart} (float x, float \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}, float z)
+\item 
+void \hyperlink{classcsBox3_afb321a08d1fa8449acb0205b9ca009e5}{Add\+Bounding\+Vertex\+Smart} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)
+\item 
+\hyperlink{classcsBox3_a470b19b9c15cb52381d58eeff54ed19b}{cs\+Box3} ()\hypertarget{classcsBox3_a470b19b9c15cb52381d58eeff54ed19b}{}\label{classcsBox3_a470b19b9c15cb52381d58eeff54ed19b}
+
+\begin{DoxyCompactList}\small\item\em Initialize this box to empty. \end{DoxyCompactList}\item 
+\hyperlink{classcsBox3_a026a5a0f026acad91c35b33293d21ccf}{cs\+Box3} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v)\hypertarget{classcsBox3_a026a5a0f026acad91c35b33293d21ccf}{}\label{classcsBox3_a026a5a0f026acad91c35b33293d21ccf}
+
+\begin{DoxyCompactList}\small\item\em Initialize this box with one point. \end{DoxyCompactList}\item 
+\hyperlink{classcsBox3_ac707c7ef8d72029ae8995ed9bb1cd4b9}{cs\+Box3} (const \hyperlink{classcsVector3}{cs\+Vector3} \&v1, const \hyperlink{classcsVector3}{cs\+Vector3} \&v2)\hypertarget{classcsBox3_ac707c7ef8d72029ae8995ed9bb1cd4b9}{}\label{classcsBox3_ac707c7ef8d72029ae8995ed9bb1cd4b9}
+
+\begin{DoxyCompactList}\small\item\em Initialize this box with two points. \end{DoxyCompactList}\item 
+\hyperlink{classcsBox3_afdfeab82d5b2bd4730515ebd964f1280}{cs\+Box3} (float x1, float y1, float z1, float x2, float y2, float z2)\hypertarget{classcsBox3_afdfeab82d5b2bd4730515ebd964f1280}{}\label{classcsBox3_afdfeab82d5b2bd4730515ebd964f1280}
+
+\begin{DoxyCompactList}\small\item\em Initialize this box with the given values. \end{DoxyCompactList}\item 
+void \hyperlink{classcsBox3_a5d2a0176797feec906f6d37849861f02}{Set} (const \hyperlink{classcsVector3}{cs\+Vector3} \&bmin, const \hyperlink{classcsVector3}{cs\+Vector3} \&bmax)\hypertarget{classcsBox3_a5d2a0176797feec906f6d37849861f02}{}\label{classcsBox3_a5d2a0176797feec906f6d37849861f02}
+
+\begin{DoxyCompactList}\small\item\em Sets the bounds of the box with the given values. \end{DoxyCompactList}\item 
+void \hyperlink{classcsBox3_add1fd1473a613636e920f0659b2fd22b}{Set} (float x1, float y1, float z1, float x2, float y2, float z2)\hypertarget{classcsBox3_add1fd1473a613636e920f0659b2fd22b}{}\label{classcsBox3_add1fd1473a613636e920f0659b2fd22b}
+
+\begin{DoxyCompactList}\small\item\em Sets the bounds of the box with the given values. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_a68d9c65cbf3a97bdc1fc61913aa009b5}{AdjacentX} (const \hyperlink{classcsBox3}{cs\+Box3} \&other) const 
+\item 
+bool \hyperlink{classcsBox3_a34ead7c3742758e1d7afd3b8da9fa089}{AdjacentY} (const \hyperlink{classcsBox3}{cs\+Box3} \&other) const 
+\item 
+bool \hyperlink{classcsBox3_ad1a515d501609c5a877c12e6516861b1}{AdjacentZ} (const \hyperlink{classcsBox3}{cs\+Box3} \&other) const 
+\item 
+int \hyperlink{classcsBox3_a3ff96830825b85f7cd517c16ae3c9746}{Adjacent} (const \hyperlink{classcsBox3}{cs\+Box3} \&other) const 
+\item 
+void \hyperlink{classcsBox3_a480419ab9fd05251a381323a664097ea}{Get\+Convex\+Outline} (const \hyperlink{classcsVector3}{cs\+Vector3} \&pos, \hyperlink{classcsVector3}{cs\+Vector3} $\ast$array, int \&num\+\_\+array, bool b\+Visible=false) const 
+\item 
+bool \hyperlink{classcsBox3_aa5f168cfb01d4b76875c022529f23059}{Between} (const \hyperlink{classcsBox3}{cs\+Box3} \&box1, const \hyperlink{classcsBox3}{cs\+Box3} \&box2) const 
+\item 
+void \hyperlink{classcsBox3_a067ec5b8e9f6c16ba14ae2ab113972cd}{Manhattan\+Distance} (const \hyperlink{classcsBox3}{cs\+Box3} \&other, \hyperlink{classcsVector3}{cs\+Vector3} \&dist) const 
+\item 
+float \hyperlink{classcsBox3_ac42856d771e6be888c110cc644cd9f15}{Squared\+Origin\+Dist} () const 
+\item 
+float \hyperlink{classcsBox3_ab797ab62f59fc71e913168dd29b36799}{Squared\+Origin\+Max\+Dist} () const 
+\item 
+\hyperlink{classcsBox3}{cs\+Box3} \& \hyperlink{classcsBox3_ae8bc7303e469c5ba05d717e279b3501d}{operator+=} (const \hyperlink{classcsBox3}{cs\+Box3} \&box)\hypertarget{classcsBox3_ae8bc7303e469c5ba05d717e279b3501d}{}\label{classcsBox3_ae8bc7303e469c5ba05d717e279b3501d}
+
+\begin{DoxyCompactList}\small\item\em Compute the union of two bounding boxes. \end{DoxyCompactList}\item 
+\hyperlink{classcsBox3}{cs\+Box3} \& \hyperlink{classcsBox3_a8563bc98cd089efd92f72505e239b07a}{operator+=} (const \hyperlink{classcsVector3}{cs\+Vector3} \&point)\hypertarget{classcsBox3_a8563bc98cd089efd92f72505e239b07a}{}\label{classcsBox3_a8563bc98cd089efd92f72505e239b07a}
+
+\begin{DoxyCompactList}\small\item\em Compute the union of a point with this bounding box. \end{DoxyCompactList}\item 
+\hyperlink{classcsBox3}{cs\+Box3} \& \hyperlink{classcsBox3_a1c65f5be2cb89647cb94b9f81bffad21}{operator$\ast$=} (const \hyperlink{classcsBox3}{cs\+Box3} \&box)\hypertarget{classcsBox3_a1c65f5be2cb89647cb94b9f81bffad21}{}\label{classcsBox3_a1c65f5be2cb89647cb94b9f81bffad21}
+
+\begin{DoxyCompactList}\small\item\em Compute the intersection of two bounding boxes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classcsBox3_ad62b3cb9b9765edd9146eadc2f5ed2de}{Other\+Side} (int side)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8 {\bfseries b\+Face}\mbox{[}4\mbox{]}\hypertarget{classcsBox3_afe14501543994e0e1c0b61e0d29213f8}{}\label{classcsBox3_afe14501543994e0e1c0b61e0d29213f8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsBox3_a587f32cdcb29f9b068df8b6c873d4f87}{minbox}\hypertarget{classcsBox3_a587f32cdcb29f9b068df8b6c873d4f87}{}\label{classcsBox3_a587f32cdcb29f9b068df8b6c873d4f87}
+
+\begin{DoxyCompactList}\small\item\em The top-\/left of this bounding box. \end{DoxyCompactList}\item 
+\hyperlink{classcsVector3}{cs\+Vector3} \hyperlink{classcsBox3_a400fc087f1cf85700dec0f1d48e2842b}{maxbox}\hypertarget{classcsBox3_a400fc087f1cf85700dec0f1d48e2842b}{}\label{classcsBox3_a400fc087f1cf85700dec0f1d48e2842b}
+
+\begin{DoxyCompactList}\small\item\em The bottom-\/right. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structcsBox3_1_1bEdge}{b\+Edge} {\bfseries edges} \mbox{[}24\mbox{]}
+\item 
+static b\+Face {\bfseries faces} \mbox{[}6\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsBox3}{cs\+Box3} \hyperlink{classcsBox3_ad98ee83b7eb1d53cc48697562e274103}{operator+} (const \hyperlink{classcsBox3}{cs\+Box3} \&box1, const \hyperlink{classcsBox3}{cs\+Box3} \&box2)\hypertarget{classcsBox3_ad98ee83b7eb1d53cc48697562e274103}{}\label{classcsBox3_ad98ee83b7eb1d53cc48697562e274103}
+
+\begin{DoxyCompactList}\small\item\em Compute the union of two bounding boxes. \end{DoxyCompactList}\item 
+\hyperlink{classcsBox3}{cs\+Box3} \hyperlink{classcsBox3_a07e11249f0a94add75fc8bc865070ce9}{operator+} (const \hyperlink{classcsBox3}{cs\+Box3} \&box, const \hyperlink{classcsVector3}{cs\+Vector3} \&point)\hypertarget{classcsBox3_a07e11249f0a94add75fc8bc865070ce9}{}\label{classcsBox3_a07e11249f0a94add75fc8bc865070ce9}
+
+\begin{DoxyCompactList}\small\item\em Compute the union of a bounding box and a point. \end{DoxyCompactList}\item 
+\hyperlink{classcsBox3}{cs\+Box3} \hyperlink{classcsBox3_ade58ae162d62682f1f66a8e9cbddfd47}{operator$\ast$} (const \hyperlink{classcsBox3}{cs\+Box3} \&box1, const \hyperlink{classcsBox3}{cs\+Box3} \&box2)\hypertarget{classcsBox3_ade58ae162d62682f1f66a8e9cbddfd47}{}\label{classcsBox3_ade58ae162d62682f1f66a8e9cbddfd47}
+
+\begin{DoxyCompactList}\small\item\em Compute the intersection of two bounding boxes. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_a31e84ae705a79224f140d629f68a612b}{operator==} (const \hyperlink{classcsBox3}{cs\+Box3} \&box1, const \hyperlink{classcsBox3}{cs\+Box3} \&box2)\hypertarget{classcsBox3_a31e84ae705a79224f140d629f68a612b}{}\label{classcsBox3_a31e84ae705a79224f140d629f68a612b}
+
+\begin{DoxyCompactList}\small\item\em Tests if two bounding boxes are equal. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_ae4c5328bb5179aae216fd1af2816abdb}{operator!=} (const \hyperlink{classcsBox3}{cs\+Box3} \&box1, const \hyperlink{classcsBox3}{cs\+Box3} \&box2)\hypertarget{classcsBox3_ae4c5328bb5179aae216fd1af2816abdb}{}\label{classcsBox3_ae4c5328bb5179aae216fd1af2816abdb}
+
+\begin{DoxyCompactList}\small\item\em Tests if two bounding boxes are unequal. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_ad4a3f86a7260aa0f58c63a8b362dfd1a}{operator$<$} (const \hyperlink{classcsBox3}{cs\+Box3} \&box1, const \hyperlink{classcsBox3}{cs\+Box3} \&box2)\hypertarget{classcsBox3_ad4a3f86a7260aa0f58c63a8b362dfd1a}{}\label{classcsBox3_ad4a3f86a7260aa0f58c63a8b362dfd1a}
+
+\begin{DoxyCompactList}\small\item\em Tests if box1 is a subset of box2. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_a800db4b5b562663918a8481d7b41be21}{operator$>$} (const \hyperlink{classcsBox3}{cs\+Box3} \&box1, const \hyperlink{classcsBox3}{cs\+Box3} \&box2)\hypertarget{classcsBox3_a800db4b5b562663918a8481d7b41be21}{}\label{classcsBox3_a800db4b5b562663918a8481d7b41be21}
+
+\begin{DoxyCompactList}\small\item\em Tests if box1 is a superset of box2. \end{DoxyCompactList}\item 
+bool \hyperlink{classcsBox3_a54f2ca4591081159072cb78b5e5c43c1}{operator$<$} (const \hyperlink{classcsVector3}{cs\+Vector3} \&point, const \hyperlink{classcsBox3}{cs\+Box3} \&box)\hypertarget{classcsBox3_a54f2ca4591081159072cb78b5e5c43c1}{}\label{classcsBox3_a54f2ca4591081159072cb78b5e5c43c1}
+
+\begin{DoxyCompactList}\small\item\em Tests if a point is contained in a box. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A bounding box in 3D space. In order to operate correctly, this bounding box assumes that all values entered or compared against lie within the range (-\/\+C\+S\+\_\+\+B\+O\+U\+N\+D\+I\+N\+G\+B\+O\+X\+\_\+\+M\+A\+X\+V\+A\+L\+UE, C\+S\+\_\+\+B\+O\+U\+N\+D\+I\+N\+G\+B\+O\+X\+\_\+\+M\+A\+X\+V\+A\+L\+UE). It is not recommended to use points outside of this range. 
+
+\subsection{Member Function Documentation}
+\index{cs\+Box3@{cs\+Box3}!Add\+Bounding\+Vertex\+Smart@{Add\+Bounding\+Vertex\+Smart}}
+\index{Add\+Bounding\+Vertex\+Smart@{Add\+Bounding\+Vertex\+Smart}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Add\+Bounding\+Vertex\+Smart(float x, float y, float z)}{AddBoundingVertexSmart(float x, float y, float z)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Box3\+::\+Add\+Bounding\+Vertex\+Smart (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsBox3_a9bb79f738a03a5b2713cbf4488048641}{}\label{classcsBox3_a9bb79f738a03a5b2713cbf4488048641}
+Add a new vertex and recalculate the bounding box. This version is a little more optimal. It assumes however that at least one point has been added to the bounding box. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d95/classcsBox3_a9bb79f738a03a5b2713cbf4488048641_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Add\+Bounding\+Vertex\+Smart@{Add\+Bounding\+Vertex\+Smart}}
+\index{Add\+Bounding\+Vertex\+Smart@{Add\+Bounding\+Vertex\+Smart}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Add\+Bounding\+Vertex\+Smart(const cs\+Vector3 \&v)}{AddBoundingVertexSmart(const csVector3 &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Box3\+::\+Add\+Bounding\+Vertex\+Smart (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsBox3_afb321a08d1fa8449acb0205b9ca009e5}{}\label{classcsBox3_afb321a08d1fa8449acb0205b9ca009e5}
+Add a new vertex and recalculate the bounding box. This version is a little more optimal. It assumes however that at least one point has been added to the bounding box. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d95/classcsBox3_afb321a08d1fa8449acb0205b9ca009e5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Adjacent@{Adjacent}}
+\index{Adjacent@{Adjacent}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Adjacent(const cs\+Box3 \&other) const }{Adjacent(const csBox3 &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}int cs\+Box3\+::\+Adjacent (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Box3} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_a3ff96830825b85f7cd517c16ae3c9746}{}\label{classcsBox3_a3ff96830825b85f7cd517c16ae3c9746}
+Test if this box is adjacent to the other one. Return -\/1 if not adjacent or else any of the B\+O\+X\+\_\+\+S\+I\+D\+E\+\_\+??? flags to indicate the side of this box that the other box is adjacent with. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{d2/d95/classcsBox3_a3ff96830825b85f7cd517c16ae3c9746_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{d2/d95/classcsBox3_a3ff96830825b85f7cd517c16ae3c9746_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!AdjacentX@{AdjacentX}}
+\index{AdjacentX@{AdjacentX}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Adjacent\+X(const cs\+Box3 \&other) const }{AdjacentX(const csBox3 &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool cs\+Box3\+::\+AdjacentX (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Box3} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_a68d9c65cbf3a97bdc1fc61913aa009b5}{}\label{classcsBox3_a68d9c65cbf3a97bdc1fc61913aa009b5}
+Test if this box is adjacent to the other on the X side. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{d2/d95/classcsBox3_a68d9c65cbf3a97bdc1fc61913aa009b5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{d2/d95/classcsBox3_a68d9c65cbf3a97bdc1fc61913aa009b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!AdjacentY@{AdjacentY}}
+\index{AdjacentY@{AdjacentY}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Adjacent\+Y(const cs\+Box3 \&other) const }{AdjacentY(const csBox3 &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool cs\+Box3\+::\+AdjacentY (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Box3} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_a34ead7c3742758e1d7afd3b8da9fa089}{}\label{classcsBox3_a34ead7c3742758e1d7afd3b8da9fa089}
+Test if this box is adjacent to the other on the Y side. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{d2/d95/classcsBox3_a34ead7c3742758e1d7afd3b8da9fa089_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{d2/d95/classcsBox3_a34ead7c3742758e1d7afd3b8da9fa089_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!AdjacentZ@{AdjacentZ}}
+\index{AdjacentZ@{AdjacentZ}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Adjacent\+Z(const cs\+Box3 \&other) const }{AdjacentZ(const csBox3 &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool cs\+Box3\+::\+AdjacentZ (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Box3} \&}]{other}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_ad1a515d501609c5a877c12e6516861b1}{}\label{classcsBox3_ad1a515d501609c5a877c12e6516861b1}
+Test if this box is adjacent to the other on the Z side. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{d2/d95/classcsBox3_ad1a515d501609c5a877c12e6516861b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{d2/d95/classcsBox3_ad1a515d501609c5a877c12e6516861b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Between@{Between}}
+\index{Between@{Between}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Between(const cs\+Box3 \&box1, const cs\+Box3 \&box2) const }{Between(const csBox3 &box1, const csBox3 &box2) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool cs\+Box3\+::\+Between (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Box3} \&}]{box1, }
+\item[{const {\bf cs\+Box3} \&}]{box2}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_aa5f168cfb01d4b76875c022529f23059}{}\label{classcsBox3_aa5f168cfb01d4b76875c022529f23059}
+Test if this box is between two others. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{d2/d95/classcsBox3_aa5f168cfb01d4b76875c022529f23059_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Get\+Center@{Get\+Center}}
+\index{Get\+Center@{Get\+Center}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Get\+Center() const }{GetCenter() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} cs\+Box3\+::\+Get\+Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsBox3_a3bb267ed23f663a3c24da8b74727ce8c}{}\label{classcsBox3_a3bb267ed23f663a3c24da8b74727ce8c}
+Get the center of this box. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d2/d95/classcsBox3_a3bb267ed23f663a3c24da8b74727ce8c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Get\+Convex\+Outline@{Get\+Convex\+Outline}}
+\index{Get\+Convex\+Outline@{Get\+Convex\+Outline}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Get\+Convex\+Outline(const cs\+Vector3 \&pos, cs\+Vector3 $\ast$array, int \&num\+\_\+array, bool b\+Visible=false) const }{GetConvexOutline(const csVector3 &pos, csVector3 *array, int &num_array, bool bVisible=false) const }}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Box3\+::\+Get\+Convex\+Outline (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{pos, }
+\item[{{\bf cs\+Vector3} $\ast$}]{array, }
+\item[{int \&}]{num\+\_\+array, }
+\item[{bool}]{b\+Visible = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_a480419ab9fd05251a381323a664097ea}{}\label{classcsBox3_a480419ab9fd05251a381323a664097ea}
+Get a convex outline (not a polygon unless projected to 2D) for for this box as seen from the given position. The coordinates returned are world space coordinates. Note that you need place for at least six vectors in the array. If you set b\+Visible true, you will get all visible corners -\/ this could be up to 7. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{d2/d95/classcsBox3_a480419ab9fd05251a381323a664097ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Get\+Corner@{Get\+Corner}}
+\index{Get\+Corner@{Get\+Corner}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Get\+Corner(int corner) const }{GetCorner(int corner) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Vector3} cs\+Box3\+::\+Get\+Corner (
+\begin{DoxyParamCaption}
+\item[{int}]{corner}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_a414acf5fe1fee22d056e65fd0aa89fd8}{}\label{classcsBox3_a414acf5fe1fee22d056e65fd0aa89fd8}
+Return every corner of this bounding box from 0 to 7. This contrasts with \hyperlink{classcsBox3_aaee257765252b6978de14c635995f31f}{Min()} and \hyperlink{classcsBox3_a77ef61cc6b6d9d6bca11e7dd03199d31}{Max()} because those are only the min and max corners. Corner 0 = xyz, 1 = xyZ, 2 = x\+Yz, 3 = x\+YZ, 4 = Xyz, 5 = XyZ, 6 = X\+Yz, 7 = X\+YZ. Use B\+O\+X\+\_\+\+C\+O\+R\+N\+E\+R\+\_\+??? defines. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{d2/d95/classcsBox3_a414acf5fe1fee22d056e65fd0aa89fd8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Get\+Edge\+Info@{Get\+Edge\+Info}}
+\index{Get\+Edge\+Info@{Get\+Edge\+Info}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Get\+Edge\+Info(int edge, int \&v1, int \&v2, int \&fleft, int \&fright) const }{GetEdgeInfo(int edge, int &v1, int &v2, int &fleft, int &fright) const }}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Box3\+::\+Get\+Edge\+Info (
+\begin{DoxyParamCaption}
+\item[{int}]{edge, }
+\item[{int \&}]{v1, }
+\item[{int \&}]{v2, }
+\item[{int \&}]{fleft, }
+\item[{int \&}]{fright}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsBox3_a7dd86bf643bb17b8059dd75b93a11f76}{}\label{classcsBox3_a7dd86bf643bb17b8059dd75b93a11f76}
+Given an edge index (B\+O\+X\+\_\+\+E\+D\+G\+E\+\_\+???) return the two vertices (index B\+O\+X\+\_\+\+C\+O\+R\+N\+E\+R\+\_\+???) and left/right faces (B\+O\+X\+\_\+\+S\+I\+D\+E\+\_\+???). \index{cs\+Box3@{cs\+Box3}!Get\+Face\+Edges@{Get\+Face\+Edges}}
+\index{Get\+Face\+Edges@{Get\+Face\+Edges}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Get\+Face\+Edges(int face) const }{GetFaceEdges(int face) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8$\ast$ cs\+Box3\+::\+Get\+Face\+Edges (
+\begin{DoxyParamCaption}
+\item[{int}]{face}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsBox3_ae2c05ca56f6200bc93d373a0866357db}{}\label{classcsBox3_ae2c05ca56f6200bc93d373a0866357db}
+Given a face index (B\+O\+X\+\_\+\+S\+I\+D\+E\+\_\+???) return the four edges oriented clockwise around this face (B\+O\+X\+\_\+\+E\+D\+G\+E\+\_\+???). \index{cs\+Box3@{cs\+Box3}!Get\+Visible\+Sides@{Get\+Visible\+Sides}}
+\index{Get\+Visible\+Sides@{Get\+Visible\+Sides}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Get\+Visible\+Sides(const cs\+Vector3 \&pos, int $\ast$visible\+\_\+sides) const }{GetVisibleSides(const csVector3 &pos, int *visible_sides) const }}]{\setlength{\rightskip}{0pt plus 5cm}int cs\+Box3\+::\+Get\+Visible\+Sides (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{pos, }
+\item[{int $\ast$}]{visible\+\_\+sides}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_a8387b45783c4a8b3721016691d54947e}{}\label{classcsBox3_a8387b45783c4a8b3721016691d54947e}
+Get a side of this box as a 2D box. Use B\+O\+X\+\_\+\+S\+I\+D\+E\+\_\+??? defines.
+
+cs\+Box2 Get\+Side (int side) const; Fill the array (which should be three long at least) with all visible sides (B\+O\+X\+\_\+\+S\+I\+D\+E\+\_\+??? defines) as seen from the given point. Returns the number of visible sides. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d2/d95/classcsBox3_a8387b45783c4a8b3721016691d54947e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!In@{In}}
+\index{In@{In}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{In(float x, float y, float z) const }{In(float x, float y, float z) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool cs\+Box3\+::\+In (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcsBox3_afd1f8ba93d546d19e9c00edaa855943c}{}\label{classcsBox3_afd1f8ba93d546d19e9c00edaa855943c}
+
+
+Test if the given coordinate is in this box. 
+
+Return every edge (segment) of this bounding box from 0 to 23 (use one of the B\+O\+X\+\_\+\+E\+D\+G\+E\+\_\+??? indices). The returned edge is undefined for any other index.
+
+cs\+Segment3 Get\+Edge (int edge) const \{ return cs\+Segment3 (Get\+Corner (edges\mbox{[}edge\mbox{]}.v1), Get\+Corner (edges\mbox{[}edge\mbox{]}.v2)); \} Return every edge (segment) of this bounding box from 0 to 23 (use one of the B\+O\+X\+\_\+\+E\+D\+G\+E\+\_\+??? indices). The returned edge is undefined for any other index.
+
+void Get\+Edge (int edge, cs\+Segment3\& e) const \{ e.\+Set\+Start (Get\+Corner (edges\mbox{[}edge\mbox{]}.v1)); e.\+Set\+End (Get\+Corner (edges\mbox{[}edge\mbox{]}.v2)); \} 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{d2/d95/classcsBox3_afd1f8ba93d546d19e9c00edaa855943c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Manhattan\+Distance@{Manhattan\+Distance}}
+\index{Manhattan\+Distance@{Manhattan\+Distance}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Manhattan\+Distance(const cs\+Box3 \&other, cs\+Vector3 \&dist) const }{ManhattanDistance(const csBox3 &other, csVector3 &dist) const }}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Box3\+::\+Manhattan\+Distance (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Box3} \&}]{other, }
+\item[{{\bf cs\+Vector3} \&}]{dist}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_a067ec5b8e9f6c16ba14ae2ab113972cd}{}\label{classcsBox3_a067ec5b8e9f6c16ba14ae2ab113972cd}
+Calculate the minimum manhattan distance between this box and another one. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{d2/d95/classcsBox3_a067ec5b8e9f6c16ba14ae2ab113972cd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{d2/d95/classcsBox3_a067ec5b8e9f6c16ba14ae2ab113972cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Other\+Side@{Other\+Side}}
+\index{Other\+Side@{Other\+Side}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Other\+Side(int side)}{OtherSide(int side)}}]{\setlength{\rightskip}{0pt plus 5cm}static int cs\+Box3\+::\+Other\+Side (
+\begin{DoxyParamCaption}
+\item[{int}]{side}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classcsBox3_ad62b3cb9b9765edd9146eadc2f5ed2de}{}\label{classcsBox3_ad62b3cb9b9765edd9146eadc2f5ed2de}
+Static function to get the \textquotesingle{}other\textquotesingle{} side (i.\+e. B\+O\+X\+\_\+\+S\+I\+D\+E\+\_\+X to B\+O\+X\+\_\+\+S\+I\+D\+E\+\_\+x, ...). 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{d2/d95/classcsBox3_ad62b3cb9b9765edd9146eadc2f5ed2de_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Set\+Center@{Set\+Center}}
+\index{Set\+Center@{Set\+Center}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Set\+Center(const cs\+Vector3 \&c)}{SetCenter(const csVector3 &c)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Box3\+::\+Set\+Center (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{classcsBox3_a81d9340a00e6c1c6a06e5aa7fc23434b}{}\label{classcsBox3_a81d9340a00e6c1c6a06e5aa7fc23434b}
+Set the center of this box. This will not change the size of the box but just relocate the center. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{d2/d95/classcsBox3_a81d9340a00e6c1c6a06e5aa7fc23434b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Set\+Size(const cs\+Vector3 \&s)}{SetSize(const csVector3 &s)}}]{\setlength{\rightskip}{0pt plus 5cm}void cs\+Box3\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf cs\+Vector3} \&}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classcsBox3_a7045c1e7c84379c62797f52ee8b66109}{}\label{classcsBox3_a7045c1e7c84379c62797f52ee8b66109}
+Set the size of the box but keep the center intact. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{d2/d95/classcsBox3_a7045c1e7c84379c62797f52ee8b66109_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Squared\+Origin\+Dist@{Squared\+Origin\+Dist}}
+\index{Squared\+Origin\+Dist@{Squared\+Origin\+Dist}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Squared\+Origin\+Dist() const }{SquaredOriginDist() const }}]{\setlength{\rightskip}{0pt plus 5cm}float cs\+Box3\+::\+Squared\+Origin\+Dist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_ac42856d771e6be888c110cc644cd9f15}{}\label{classcsBox3_ac42856d771e6be888c110cc644cd9f15}
+Calculate the squared distance between (0,0,0) and the box This routine is extremely efficient. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{d2/d95/classcsBox3_ac42856d771e6be888c110cc644cd9f15_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cs\+Box3@{cs\+Box3}!Squared\+Origin\+Max\+Dist@{Squared\+Origin\+Max\+Dist}}
+\index{Squared\+Origin\+Max\+Dist@{Squared\+Origin\+Max\+Dist}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{Squared\+Origin\+Max\+Dist() const }{SquaredOriginMaxDist() const }}]{\setlength{\rightskip}{0pt plus 5cm}float cs\+Box3\+::\+Squared\+Origin\+Max\+Dist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classcsBox3_ab797ab62f59fc71e913168dd29b36799}{}\label{classcsBox3_ab797ab62f59fc71e913168dd29b36799}
+Calculate the squared distance between (0,0,0) and the point on the box which is furthest away from (0,0,0). This routine is extremely efficient. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{d2/d95/classcsBox3_ab797ab62f59fc71e913168dd29b36799_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{cs\+Box3@{cs\+Box3}!edges@{edges}}
+\index{edges@{edges}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{edges}{edges}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cs\+Box3\+::b\+Edge} cs\+Box3\+::edges\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classcsBox3_aa5d77f927fe13973395a52424cd8798f}{}\label{classcsBox3_aa5d77f927fe13973395a52424cd8798f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+  \{
+    \{ BOX\_CORNER\_Xyz, BOX\_CORNER\_xyz, BOX\_SIDE\_y, BOX\_SIDE\_z \},
+    \{ BOX\_CORNER\_xyz, BOX\_CORNER\_Xyz, BOX\_SIDE\_z, BOX\_SIDE\_y \},
+    \{ BOX\_CORNER\_xyz, BOX\_CORNER\_xYz, BOX\_SIDE\_x, BOX\_SIDE\_z \},
+    \{ BOX\_CORNER\_xYz, BOX\_CORNER\_xyz, BOX\_SIDE\_z, BOX\_SIDE\_x \},
+    \{ BOX\_CORNER\_xYz, BOX\_CORNER\_XYz, BOX\_SIDE\_Y, BOX\_SIDE\_z \},
+    \{ BOX\_CORNER\_XYz, BOX\_CORNER\_xYz, BOX\_SIDE\_z, BOX\_SIDE\_Y \},
+    \{ BOX\_CORNER\_XYz, BOX\_CORNER\_Xyz, BOX\_SIDE\_X, BOX\_SIDE\_z \},
+    \{ BOX\_CORNER\_Xyz, BOX\_CORNER\_XYz, BOX\_SIDE\_z, BOX\_SIDE\_X \},
+
+    \{ BOX\_CORNER\_Xyz, BOX\_CORNER\_XyZ, BOX\_SIDE\_X, BOX\_SIDE\_y \},
+    \{ BOX\_CORNER\_XyZ, BOX\_CORNER\_Xyz, BOX\_SIDE\_y, BOX\_SIDE\_X \},
+    \{ BOX\_CORNER\_XyZ, BOX\_CORNER\_XYZ, BOX\_SIDE\_X, BOX\_SIDE\_Z \},
+    \{ BOX\_CORNER\_XYZ, BOX\_CORNER\_XyZ, BOX\_SIDE\_Z, BOX\_SIDE\_X \},
+    \{ BOX\_CORNER\_XYZ, BOX\_CORNER\_XYz, BOX\_SIDE\_X, BOX\_SIDE\_Y \},
+    \{ BOX\_CORNER\_XYz, BOX\_CORNER\_XYZ, BOX\_SIDE\_Y, BOX\_SIDE\_X \},
+    \{ BOX\_CORNER\_XYZ, BOX\_CORNER\_xYZ, BOX\_SIDE\_Y, BOX\_SIDE\_Z \},
+    \{ BOX\_CORNER\_xYZ, BOX\_CORNER\_XYZ, BOX\_SIDE\_Z, BOX\_SIDE\_Y \},
+
+    \{ BOX\_CORNER\_xYZ, BOX\_CORNER\_xYz, BOX\_SIDE\_Y, BOX\_SIDE\_x \},
+    \{ BOX\_CORNER\_xYz, BOX\_CORNER\_xYZ, BOX\_SIDE\_x, BOX\_SIDE\_Y \},
+    \{ BOX\_CORNER\_xYZ, BOX\_CORNER\_xyZ, BOX\_SIDE\_x, BOX\_SIDE\_Z \},
+    \{ BOX\_CORNER\_xyZ, BOX\_CORNER\_xYZ, BOX\_SIDE\_Z, BOX\_SIDE\_x \},
+    \{ BOX\_CORNER\_xyZ, BOX\_CORNER\_xyz, BOX\_SIDE\_x, BOX\_SIDE\_y \},
+    \{ BOX\_CORNER\_xyz, BOX\_CORNER\_xyZ, BOX\_SIDE\_y, BOX\_SIDE\_x \},
+    \{ BOX\_CORNER\_xyZ, BOX\_CORNER\_XyZ, BOX\_SIDE\_y, BOX\_SIDE\_Z \},
+    \{ BOX\_CORNER\_XyZ, BOX\_CORNER\_xyZ, BOX\_SIDE\_Z, BOX\_SIDE\_y \}
+  \}
+\end{DoxyCode}
+\index{cs\+Box3@{cs\+Box3}!faces@{faces}}
+\index{faces@{faces}!cs\+Box3@{cs\+Box3}}
+\subsubsection[{\texorpdfstring{faces}{faces}}]{\setlength{\rightskip}{0pt plus 5cm}cs\+Box3\+::b\+Face cs\+Box3\+::faces\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classcsBox3_a32f9a6acf0712aacec04638bfba9ceae}{}\label{classcsBox3_a32f9a6acf0712aacec04638bfba9ceae}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+  \{
+    \{ BOX\_EDGE\_xyz\_xyZ, BOX\_EDGE\_xyZ\_xYZ, BOX\_EDGE\_xYZ\_xYz, BOX\_EDGE\_xYz\_xyz \},
+    \{ BOX\_EDGE\_XYz\_XYZ, BOX\_EDGE\_XYZ\_XyZ, BOX\_EDGE\_XyZ\_Xyz, BOX\_EDGE\_Xyz\_XYz \},
+    \{ BOX\_EDGE\_xyz\_Xyz, BOX\_EDGE\_Xyz\_XyZ, BOX\_EDGE\_XyZ\_xyZ, BOX\_EDGE\_xyZ\_xyz \},
+    \{ BOX\_EDGE\_xYZ\_XYZ, BOX\_EDGE\_XYZ\_XYz, BOX\_EDGE\_XYz\_xYz, BOX\_EDGE\_xYz\_xYZ \},
+    \{ BOX\_EDGE\_xYz\_XYz, BOX\_EDGE\_XYz\_Xyz, BOX\_EDGE\_Xyz\_xyz, BOX\_EDGE\_xyz\_xYz \},
+    \{ BOX\_EDGE\_XYZ\_xYZ, BOX\_EDGE\_xYZ\_xyZ, BOX\_EDGE\_xyZ\_XyZ, BOX\_EDGE\_XyZ\_XYZ \}
+  \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/csgeom2/opbox.\+h\item 
+cmd/collide2/csgeom2/opbox.\+cpp\end{DoxyCompactItemize}

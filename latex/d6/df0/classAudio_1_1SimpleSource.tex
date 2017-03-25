@@ -1,0 +1,197 @@
+\hypertarget{classAudio_1_1SimpleSource}{}\section{Audio\+:\+:Simple\+Source Class Reference}
+\label{classAudio_1_1SimpleSource}\index{Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}}
+
+
+{\ttfamily \#include $<$Simple\+Source.\+h$>$}
+
+
+
+Inheritance diagram for Audio\+:\+:Simple\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d37/classAudio_1_1SimpleSource__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Audio\+:\+:Simple\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d89/classAudio_1_1SimpleSource__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_1_1SimpleSource_af84b29bdf8c509de3c627412eaf8b460}{Simple\+Source} (Shared\+Ptr$<$ \hyperlink{classAudio_1_1Sound}{Sound} $>$ sound, bool looping=false)  throw ()
+\item 
+void \hyperlink{classAudio_1_1SimpleSource_ac92cd8634385604a60eaf5a037b32fb5}{notify\+Scene\+Attached} (\hyperlink{classAudio_1_1SimpleScene}{Simple\+Scene} $\ast$scene)  throw ()
+\item 
+\hyperlink{classAudio_1_1SimpleScene}{Simple\+Scene} $\ast$ \hyperlink{classAudio_1_1SimpleSource_aaae13dd5bac1972a0d80637595e52dc9}{get\+Scene} () const   throw ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAudio_1_1SimpleSource_a8aa133d72148aabedb8bdfa885e74b6b}{start\+Playing\+Impl} (Timestamp start)  throw (\+Exception)
+\item 
+virtual void \hyperlink{classAudio_1_1SimpleSource_a364dea7e215b115dee978f1d53e752fc}{stop\+Playing\+Impl} ()  throw (\+Exception)
+\item 
+virtual bool \hyperlink{classAudio_1_1SimpleSource_ae5971c20ed378c1886bf66d7b5d82699}{is\+Playing\+Impl} () const   throw (\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAudio_1_1SimpleSource}{Simple\+Source} implementation of the \hyperlink{classAudio_1_1Source}{Source} interface for the basic \hyperlink{classAudio_1_1SceneManager}{Scene\+Manager}
+
+\begin{DoxyRemark}{Remarks}
+This implementation merely tracks playing state with a boolean, and notifies the attached scene of any changes. It also keeps track of the scene to which it is attached through a raw pointer, to avoid circular references. 
+\end{DoxyRemark}
+\begin{DoxyParagraph}{The scene attached must be a Simple\+Scene derivative, since the scene itself is}
+responsible for detaching itself when destroyed. 
+\end{DoxyParagraph}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}!Simple\+Source@{Simple\+Source}}
+\index{Simple\+Source@{Simple\+Source}!Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}}
+\subsubsection[{\texorpdfstring{Simple\+Source(\+Shared\+Ptr$<$ Sound $>$ sound, bool looping=false)}{SimpleSource(SharedPtr< Sound > sound, bool looping=false)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Simple\+Source\+::\+Simple\+Source (
+\begin{DoxyParamCaption}
+\item[{Shared\+Ptr$<$ {\bf Sound} $>$}]{sound, }
+\item[{bool}]{looping = {\ttfamily false}}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SimpleSource_af84b29bdf8c509de3c627412eaf8b460}{}\label{classAudio_1_1SimpleSource_af84b29bdf8c509de3c627412eaf8b460}
+Construct a simple source 
+
+\subsection{Member Function Documentation}
+\index{Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}!get\+Scene@{get\+Scene}}
+\index{get\+Scene@{get\+Scene}!Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}}
+\subsubsection[{\texorpdfstring{get\+Scene() const }{getScene() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Simple\+Scene} $\ast$ Audio\+::\+Simple\+Source\+::get\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) }\hypertarget{classAudio_1_1SimpleSource_aaae13dd5bac1972a0d80637595e52dc9}{}\label{classAudio_1_1SimpleSource_aaae13dd5bac1972a0d80637595e52dc9}
+Get the scene to which it is attached 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{d6/df0/classAudio_1_1SimpleSource_aaae13dd5bac1972a0d80637595e52dc9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}!is\+Playing\+Impl@{is\+Playing\+Impl}}
+\index{is\+Playing\+Impl@{is\+Playing\+Impl}!Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}}
+\subsubsection[{\texorpdfstring{is\+Playing\+Impl() const }{isPlayingImpl() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\+::\+Simple\+Source\+::is\+Playing\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1SimpleSource_ae5971c20ed378c1886bf66d7b5d82699}{}\label{classAudio_1_1SimpleSource_ae5971c20ed378c1886bf66d7b5d82699}
+
+
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_aaceb400c059019233ace3b0c10206548}{is\+Playing}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1Source_ab9f6505b3317358970cd16f2b1469ea9}{Audio\+::\+Source}.
+
+\index{Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}!notify\+Scene\+Attached@{notify\+Scene\+Attached}}
+\index{notify\+Scene\+Attached@{notify\+Scene\+Attached}!Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}}
+\subsubsection[{\texorpdfstring{notify\+Scene\+Attached(\+Simple\+Scene $\ast$scene)}{notifySceneAttached(SimpleScene *scene)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Source\+::notify\+Scene\+Attached (
+\begin{DoxyParamCaption}
+\item[{{\bf Simple\+Scene} $\ast$}]{scene}
+\end{DoxyParamCaption}
+) throw  ) }\hypertarget{classAudio_1_1SimpleSource_ac92cd8634385604a60eaf5a037b32fb5}{}\label{classAudio_1_1SimpleSource_ac92cd8634385604a60eaf5a037b32fb5}
+Notify attachment to a scene 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/df0/classAudio_1_1SimpleSource_ac92cd8634385604a60eaf5a037b32fb5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}!start\+Playing\+Impl@{start\+Playing\+Impl}}
+\index{start\+Playing\+Impl@{start\+Playing\+Impl}!Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}}
+\subsubsection[{\texorpdfstring{start\+Playing\+Impl(\+Timestamp start)}{startPlayingImpl(Timestamp start)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Source\+::start\+Playing\+Impl (
+\begin{DoxyParamCaption}
+\item[{Timestamp}]{start}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1SimpleSource_a8aa133d72148aabedb8bdfa885e74b6b}{}\label{classAudio_1_1SimpleSource_a8aa133d72148aabedb8bdfa885e74b6b}
+
+
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_a4a6604d3195d16bdfc53b85a98c60f4d}{start\+Playing} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The starting position. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAudio_1_1Source_ac0ae6f4f2c2e568a18bf3627b755922e}{Audio\+::\+Source}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/df0/classAudio_1_1SimpleSource_a8aa133d72148aabedb8bdfa885e74b6b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}!stop\+Playing\+Impl@{stop\+Playing\+Impl}}
+\index{stop\+Playing\+Impl@{stop\+Playing\+Impl}!Audio\+::\+Simple\+Source@{Audio\+::\+Simple\+Source}}
+\subsubsection[{\texorpdfstring{stop\+Playing\+Impl()}{stopPlayingImpl()}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::\+Simple\+Source\+::stop\+Playing\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  {\bf Exception}) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classAudio_1_1SimpleSource_a364dea7e215b115dee978f1d53e752fc}{}\label{classAudio_1_1SimpleSource_a364dea7e215b115dee978f1d53e752fc}
+
+
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAudio_1_1Source_a91de7bc95ce5c4cfc0d7050215829373}{stop\+Playing}. 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classAudio_1_1Source_ac91bbbcdfac9f75e31143ed8ce721f64}{Audio\+::\+Source}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/df0/classAudio_1_1SimpleSource_a364dea7e215b115dee978f1d53e752fc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+audio/Simple\+Source.\+h\item 
+audio/Simple\+Source.\+cpp\end{DoxyCompactItemize}

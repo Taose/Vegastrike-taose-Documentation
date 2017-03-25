@@ -1,0 +1,128 @@
+\hypertarget{classOpcode_1_1AABBTreeNode}{}\section{Opcode\+:\+:A\+A\+B\+B\+Tree\+Node Class Reference}
+\label{classOpcode_1_1AABBTreeNode}\index{Opcode\+::\+A\+A\+B\+B\+Tree\+Node@{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}}
+
+
+Inheritance diagram for Opcode\+:\+:A\+A\+B\+B\+Tree\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d5/d98/classOpcode_1_1AABBTreeNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Opcode\+:\+:A\+A\+B\+B\+Tree\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{d9/df3/classOpcode_1_1AABBTreeNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ {\bfseries Get\+Primitives} () const \hypertarget{classOpcode_1_1AABBTreeNode_aa1171a159544b7ba5a4867078d6779ad}{}\label{classOpcode_1_1AABBTreeNode_aa1171a159544b7ba5a4867078d6779ad}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Get\+Nb\+Primitives} () const \hypertarget{classOpcode_1_1AABBTreeNode_aff39cd631d8de320ea7cfb8a1aa717ed}{}\label{classOpcode_1_1AABBTreeNode_aff39cd631d8de320ea7cfb8a1aa717ed}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1AABBTreeNode_aefc4588f956b98d324b26d9dbecc20f8}{Split} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} axis, \hyperlink{classOpcode_1_1AABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\item 
+bool \hyperlink{classOpcode_1_1AABBTreeNode_a30febc55e0cd39f7114f02395e2a69f5}{Subdivide} (\hyperlink{classOpcode_1_1AABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\item 
+void \hyperlink{classOpcode_1_1AABBTreeNode_acf08af7ca37efb06780ef3ff433effcd}{\+\_\+\+Build\+Hierarchy} (\hyperlink{classOpcode_1_1AABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\item 
+void \hyperlink{classOpcode_1_1AABBTreeNode_a9b07d0707b9b2d043a60672f3c9cb47a}{\+\_\+\+Refit} (\hyperlink{classOpcode_1_1AABBTreeBuilder}{A\+A\+B\+B\+Tree\+Builder} $\ast$builder)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{classOpcode_1_1AABBTreeNode_a491abd9c69cc731cee5cb9189a93e8e5}{m\+Node\+Primitives}\hypertarget{classOpcode_1_1AABBTreeNode_a491abd9c69cc731cee5cb9189a93e8e5}{}\label{classOpcode_1_1AABBTreeNode_a491abd9c69cc731cee5cb9189a93e8e5}
+
+\begin{DoxyCompactList}\small\item\em Node-\/related primitives (shortcut to a position in m\+Indices below) \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classOpcode_1_1AABBTreeNode_ac4ab77883ac393f3421dd434ff15ec76}{m\+Nb\+Primitives}\hypertarget{classOpcode_1_1AABBTreeNode_ac4ab77883ac393f3421dd434ff15ec76}{}\label{classOpcode_1_1AABBTreeNode_ac4ab77883ac393f3421dd434ff15ec76}
+
+\begin{DoxyCompactList}\small\item\em Number of primitives for this node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree\+Node@{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}!\+\_\+\+Build\+Hierarchy@{\+\_\+\+Build\+Hierarchy}}
+\index{\+\_\+\+Build\+Hierarchy@{\+\_\+\+Build\+Hierarchy}!Opcode\+::\+A\+A\+B\+B\+Tree\+Node@{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Build\+Hierarchy(\+A\+A\+B\+B\+Tree\+Builder $\ast$builder)}{_BuildHierarchy(AABBTreeBuilder *builder)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Node\+::\+\_\+\+Build\+Hierarchy (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1AABBTreeNode_acf08af7ca37efb06780ef3ff433effcd}{}\label{classOpcode_1_1AABBTreeNode_acf08af7ca37efb06780ef3ff433effcd}
+Recursive hierarchy building in a top-\/down fashion. 
+\begin{DoxyParams}{Parameters}
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree\+Node@{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}!\+\_\+\+Refit@{\+\_\+\+Refit}}
+\index{\+\_\+\+Refit@{\+\_\+\+Refit}!Opcode\+::\+A\+A\+B\+B\+Tree\+Node@{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Refit(\+A\+A\+B\+B\+Tree\+Builder $\ast$builder)}{_Refit(AABBTreeBuilder *builder)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+A\+B\+B\+Tree\+Node\+::\+\_\+\+Refit (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1AABBTreeNode_a9b07d0707b9b2d043a60672f3c9cb47a}{}\label{classOpcode_1_1AABBTreeNode_a9b07d0707b9b2d043a60672f3c9cb47a}
+Refits the tree (top-\/down). 
+\begin{DoxyParams}{Parameters}
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree\+Node@{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}!Split@{Split}}
+\index{Split@{Split}!Opcode\+::\+A\+A\+B\+B\+Tree\+Node@{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{Split(udword axis, A\+A\+B\+B\+Tree\+Builder $\ast$builder)}{Split(udword axis, AABBTreeBuilder *builder)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} A\+A\+B\+B\+Tree\+Node\+::\+Split (
+\begin{DoxyParamCaption}
+\item[{{\bf udword}}]{axis, }
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1AABBTreeNode_aefc4588f956b98d324b26d9dbecc20f8}{}\label{classOpcode_1_1AABBTreeNode_aefc4588f956b98d324b26d9dbecc20f8}
+Splits the node along a given axis. The list of indices is reorganized according to the split values. 
+\begin{DoxyParams}{Parameters}
+{\em axis} & \mbox{[}in\mbox{]} splitting axis index \\
+\hline
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of primitives assigned to the first child 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this method reorganizes the internal list of primitives 
+\end{DoxyWarning}
+\index{Opcode\+::\+A\+A\+B\+B\+Tree\+Node@{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}!Subdivide@{Subdivide}}
+\index{Subdivide@{Subdivide}!Opcode\+::\+A\+A\+B\+B\+Tree\+Node@{Opcode\+::\+A\+A\+B\+B\+Tree\+Node}}
+\subsubsection[{\texorpdfstring{Subdivide(\+A\+A\+B\+B\+Tree\+Builder $\ast$builder)}{Subdivide(AABBTreeBuilder *builder)}}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Tree\+Node\+::\+Subdivide (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+A\+B\+B\+Tree\+Builder} $\ast$}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1AABBTreeNode_a30febc55e0cd39f7114f02395e2a69f5}{}\label{classOpcode_1_1AABBTreeNode_a30febc55e0cd39f7114f02395e2a69f5}
+Subdivides the node. \begin{DoxyVerb}      N
+    /   \
+  /       \
+\end{DoxyVerb}
+ N/2 N/2 / \textbackslash{} / \textbackslash{} N/4 N/4 N/4 N/4 (etc)
+
+A well-\/balanced tree should have a O(log n) depth. A degenerate tree would have a O(n) depth. Note a perfectly-\/balanced tree is not well-\/suited to collision detection anyway.
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & \mbox{[}in\mbox{]} the tree builder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\hyperlink{OPC__AABBTree_8cpp}{O\+P\+C\+\_\+\+A\+A\+B\+B\+Tree.\+cpp}\end{DoxyCompactItemize}

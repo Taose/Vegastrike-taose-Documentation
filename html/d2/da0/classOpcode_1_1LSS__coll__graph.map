@@ -1,0 +1,4 @@
+<map id="Opcode::LSS" name="Opcode::LSS">
+<area shape="rect" id="node2" href="$da/d94/classOpcode_1_1Segment.html" title="{Opcode::Segment\n||+ Segment()\l+ Segment()\l+ Segment()\l+ ~Segment()\l+ GetOrigin()\l+ ComputeDirection()\l+ ComputeDirection()\l+ ComputeLength()\l+ ComputeSquareLength()\l+ SetOriginDirection()\l+ ComputePoint()\l+ SquareDistance()\l+ Distance()\l}" alt="" coords="18,336,193,589"/>
+<area shape="rect" id="node3" href="$de/daf/classOpcode_1_1Point.html" title="{Opcode::Point\n|+ x\l+ y\l+ z\l|+ Point()\l+ Point()\l+ Point()\l+ Point()\l+ ~Point()\l+ Zero()\l+ SetPlusInfinity()\l+ SetMinusInfinity()\l+ PositiveUnitRandomVector()\l+ UnitRandomVector()\land 87 more...\l}" alt="" coords="5,5,205,259"/>
+</map>

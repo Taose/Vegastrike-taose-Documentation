@@ -1,0 +1,154 @@
+\hypertarget{classRadixSort}{}\section{Radix\+Sort Class Reference}
+\label{classRadixSort}\index{Radix\+Sort@{Radix\+Sort}}
+
+
+Collaboration diagram for Radix\+Sort\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{d8/de3/classRadixSort__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRadixSort_a92fec8f9bb15493736ca119f92fbaea9}{Radix\+Sort} ()
+\item 
+\hyperlink{classRadixSort_ac477ade290104f955836b4750c521cb6}{$\sim$\+Radix\+Sort} ()
+\item 
+\hyperlink{classRadixSort}{Radix\+Sort} \& \hyperlink{classRadixSort_a815a222b3f7d555bf741bff989a32d27}{Sort} (const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$input, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb, \hyperlink{IceRevisitedRadix_8h_acf223d4d688c445c2088d9b2d9aee8d0}{Radix\+Hint} hint=\hyperlink{IceRevisitedRadix_8h_acf223d4d688c445c2088d9b2d9aee8d0a91fa3afcca04aadade3caad8b46d511b}{R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+ED})
+\item 
+\hyperlink{classRadixSort}{Radix\+Sort} \& \hyperlink{classRadixSort_a07ce3c442cb8443012cab92f94351246}{Sort} (const float $\ast$input, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nb)
+\item 
+inline\+\_\+ const \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{classRadixSort_a705769648fdad72220225ca543b18f2d}{Get\+Ranks} () const \hypertarget{classRadixSort_a705769648fdad72220225ca543b18f2d}{}\label{classRadixSort_a705769648fdad72220225ca543b18f2d}
+
+\begin{DoxyCompactList}\small\item\em Access to results. m\+Ranks is a list of indices in sorted order, i.\+e. in the order you may further process your data. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$ \hyperlink{classRadixSort_a953a9429075bb3350b1d372972ca0d30}{Get\+Recyclable} () const \hypertarget{classRadixSort_a953a9429075bb3350b1d372972ca0d30}{}\label{classRadixSort_a953a9429075bb3350b1d372972ca0d30}
+
+\begin{DoxyCompactList}\small\item\em m\+Indices2 gets trashed on calling the sort routine, but otherwise you can recycle it the way you want. \end{DoxyCompactList}\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classRadixSort_afc66aa956bc2e5078697d75436f9553b}{Get\+Used\+Ram} () const 
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classRadixSort_a3872636cd420e073d23b247bc00fa818}{Get\+Nb\+Total\+Calls} () const \hypertarget{classRadixSort_a3872636cd420e073d23b247bc00fa818}{}\label{classRadixSort_a3872636cd420e073d23b247bc00fa818}
+
+\begin{DoxyCompactList}\small\item\em Returns the total number of calls to the radix sorter. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classRadixSort_ac69a0a1cc27abac0bd986233dd5fc12a}{Get\+Nb\+Hits} () const \hypertarget{classRadixSort_ac69a0a1cc27abac0bd986233dd5fc12a}{}\label{classRadixSort_ac69a0a1cc27abac0bd986233dd5fc12a}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of eraly exits due to temporal coherence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Revisited Radix Sort. This is my new radix routine\+:
+\begin{DoxyItemize}
+\item it uses indices and doesn\textquotesingle{}t recopy the values anymore, hence wasting less ram
+\item it creates all the histograms in one run instead of four
+\item it sorts words faster than dwords and bytes faster than words
+\item it correctly sorts negative floating-\/point values by patching the offsets
+\item it automatically takes advantage of temporal coherence
+\item multiple keys support is a side effect of temporal coherence
+\item it may be worth recoding in asm... (mainly to use F\+C\+O\+MI, F\+C\+M\+OV, etc) \mbox{[}it\textquotesingle{}s probably memory-\/bound anyway\mbox{]}
+\end{DoxyItemize}
+
+History\+:
+\begin{DoxyItemize}
+\item 08.\+15.\+98\+: very first version
+\item 04.\+04.\+00\+: recoded for the radix article
+\item 12.\+xx.\+00\+: code lifting
+\item 09.\+18.\+01\+: faster C\+H\+E\+C\+K\+\_\+\+P\+A\+S\+S\+\_\+\+V\+A\+L\+I\+D\+I\+TY thanks to Mark D. Shattuck (who provided other tips, not included here)
+\item 10.\+11.\+01\+: added local ram support
+\item 01.\+20.\+02\+: bugfix! In very particular cases the last pass was skipped in the float code-\/path, leading to incorrect sorting......
+\item 01.\+02.\+02\+: -\/ \char`\"{}m\+Indices\char`\"{} renamed =$>$ \char`\"{}m\+Ranks\char`\"{}. That\textquotesingle{}s a rank sorter after all.
+\begin{DoxyItemize}
+\item ranks are not \char`\"{}reset\char`\"{} anymore, but implicit on first calls
+\end{DoxyItemize}
+\item 07.\+05.\+02\+: -\/ offsets rewritten with one less indirection.
+\item 11.\+03.\+02\+: -\/ \char`\"{}bool\char`\"{} replaced with Radix\+Hint enum
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+August, 15, 1998 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Radix\+Sort@{Radix\+Sort}!Radix\+Sort@{Radix\+Sort}}
+\index{Radix\+Sort@{Radix\+Sort}!Radix\+Sort@{Radix\+Sort}}
+\subsubsection[{\texorpdfstring{Radix\+Sort()}{RadixSort()}}]{\setlength{\rightskip}{0pt plus 5cm}Radix\+Sort\+::\+Radix\+Sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRadixSort_a92fec8f9bb15493736ca119f92fbaea9}{}\label{classRadixSort_a92fec8f9bb15493736ca119f92fbaea9}
+Constructor. \index{Radix\+Sort@{Radix\+Sort}!````~Radix\+Sort@{$\sim$\+Radix\+Sort}}
+\index{````~Radix\+Sort@{$\sim$\+Radix\+Sort}!Radix\+Sort@{Radix\+Sort}}
+\subsubsection[{\texorpdfstring{$\sim$\+Radix\+Sort()}{~RadixSort()}}]{\setlength{\rightskip}{0pt plus 5cm}Radix\+Sort\+::$\sim$\+Radix\+Sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRadixSort_ac477ade290104f955836b4750c521cb6}{}\label{classRadixSort_ac477ade290104f955836b4750c521cb6}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{Radix\+Sort@{Radix\+Sort}!Get\+Used\+Ram@{Get\+Used\+Ram}}
+\index{Get\+Used\+Ram@{Get\+Used\+Ram}!Radix\+Sort@{Radix\+Sort}}
+\subsubsection[{\texorpdfstring{Get\+Used\+Ram() const }{GetUsedRam() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf udword} Radix\+Sort\+::\+Get\+Used\+Ram (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classRadixSort_afc66aa956bc2e5078697d75436f9553b}{}\label{classRadixSort_afc66aa956bc2e5078697d75436f9553b}
+Gets the ram used. \begin{DoxyReturn}{Returns}
+memory used in bytes 
+\end{DoxyReturn}
+\index{Radix\+Sort@{Radix\+Sort}!Sort@{Sort}}
+\index{Sort@{Sort}!Radix\+Sort@{Radix\+Sort}}
+\subsubsection[{\texorpdfstring{Sort(const udword $\ast$input, udword nb, Radix\+Hint hint=\+R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+E\+D)}{Sort(const udword *input, udword nb, RadixHint hint=RADIX_SIGNED)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Radix\+Sort} \& Radix\+Sort\+::\+Sort (
+\begin{DoxyParamCaption}
+\item[{const {\bf udword} $\ast$}]{input, }
+\item[{{\bf udword}}]{nb, }
+\item[{{\bf Radix\+Hint}}]{hint = {\ttfamily {\bf R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+ED}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classRadixSort_a815a222b3f7d555bf741bff989a32d27}{}\label{classRadixSort_a815a222b3f7d555bf741bff989a32d27}
+Main sort routine. This one is for integer values. After the call, m\+Ranks contains a list of indices in sorted order, i.\+e. in the order you may process your data. 
+\begin{DoxyParams}{Parameters}
+{\em input} & \mbox{[}in\mbox{]} a list of integer values to sort \\
+\hline
+{\em nb} & \mbox{[}in\mbox{]} number of values to sort, must be $<$ 2$^\wedge$31 \\
+\hline
+{\em hint} & \mbox{[}in\mbox{]} R\+A\+D\+I\+X\+\_\+\+S\+I\+G\+N\+ED to handle negative values, R\+A\+D\+I\+X\+\_\+\+U\+N\+S\+I\+G\+N\+ED if you know your input buffer only contains positive values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Self-\/\+Reference 
+\end{DoxyReturn}
+\index{Radix\+Sort@{Radix\+Sort}!Sort@{Sort}}
+\index{Sort@{Sort}!Radix\+Sort@{Radix\+Sort}}
+\subsubsection[{\texorpdfstring{Sort(const float $\ast$input, udword nb)}{Sort(const float *input, udword nb)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Radix\+Sort} \& Radix\+Sort\+::\+Sort (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{input2, }
+\item[{{\bf udword}}]{nb}
+\end{DoxyParamCaption}
+)}\hypertarget{classRadixSort_a07ce3c442cb8443012cab92f94351246}{}\label{classRadixSort_a07ce3c442cb8443012cab92f94351246}
+Main sort routine. This one is for floating-\/point values. After the call, m\+Ranks contains a list of indices in sorted order, i.\+e. in the order you may process your data. 
+\begin{DoxyParams}{Parameters}
+{\em input} & \mbox{[}in\mbox{]} a list of floating-\/point values to sort \\
+\hline
+{\em nb} & \mbox{[}in\mbox{]} number of values to sort, must be $<$ 2$^\wedge$31 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Self-\/\+Reference 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+only sorts I\+E\+EE floating-\/point values 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IceRevisitedRadix_8h}{Ice\+Revisited\+Radix.\+h}\item 
+cmd/collide2/\+Ice/\hyperlink{IceRevisitedRadix_8cpp}{Ice\+Revisited\+Radix.\+cpp}\end{DoxyCompactItemize}

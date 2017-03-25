@@ -1,0 +1,8 @@
+<map id="DrawContext" name="DrawContext">
+<area shape="rect" id="node2" href="$d9/de6/classGFXVertexList.html" title="{GFXVertexList\n|# numVertices\l# mode\l# unique_mode\l# display_list\l# vbo_data\l# numlists\l# offsets\l# changed\l|+ RefreshDisplayList()\l+ GFXVertexList()\l+ GFXVertexList()\l+ GFXVertexList()\l+ GFXVertexList()\l+ ~GFXVertexList()\l+ numTris()\l+ numQuads()\l+ GetIndex()\l+ GetPolyType()\land 18 more...\l# GetVertex()\l# GetColorVertex()\l# Init()\l# Draw()\l# RenormalizeNormals()\l# GFXVertexList()\l# VtxCopy()\l# ColVtxCopy()\l# ColIndVtxCopy()\l# IndVtxCopy()\l}" alt="" coords="215,667,377,1140"/>
+<area shape="rect" id="node3" href="$de/dac/unionGFXVertexList_1_1VDAT.html" title="Vertices and colors stored. " alt="" coords="85,512,237,589"/>
+<area shape="rect" id="node4" href="$d6/d21/structGFXVertex.html" title="Vertex, Normal, Texture, and (deprecated) Environment Mapping T2F_N3F_V3F format. ..." alt="" coords="5,5,149,435"/>
+<area shape="rect" id="node5" href="$d2/dd1/structGFXColorVertex.html" title="This vertex is used for the interleaved array argument for color based arrays T2F_C4F_N3F_V3F. " alt="" coords="173,20,317,420"/>
+<area shape="rect" id="node6" href="$d0/dd1/unionGFXVertexList_1_1INDEX.html" title="{GFXVertexList::INDEX\n|+ b\l+ s\l+ i\l|+ INDEX()\l}" alt="" coords="262,497,421,604"/>
+<area shape="rect" id="node7" href="$d3/d3f/classMatrix.html" title="{Matrix\n|+ r\l+ p\l|+ Matrix()\l+ netswap()\l+ getR()\l+ getQ()\l+ getP()\l+ Matrix()\l+ InvertRotationInto()\l+ Matrix()\l+ Matrix()\l+ operator*()\l}" alt="" coords="401,791,548,1015"/>
+</map>

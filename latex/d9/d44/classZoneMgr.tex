@@ -1,0 +1,117 @@
+\hypertarget{classZoneMgr}{}\section{Zone\+Mgr Class Reference}
+\label{classZoneMgr}\index{Zone\+Mgr@{Zone\+Mgr}}
+
+
+Collaboration diagram for Zone\+Mgr\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{d8/dac/classZoneMgr__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Snapshot\+Sub\+Command} \{ \\*
+{\bfseries End} =0, 
+{\bfseries Pos\+Update} =1, 
+{\bfseries Full\+Update} =2, 
+{\bfseries Damage\+Update} =8, 
+\\*
+{\bfseries S\+P\+E\+C\+Update} =16
+ \}\hypertarget{classZoneMgr_a431e70600201aeb0409c4c4ee9d0a82b}{}\label{classZoneMgr_a431e70600201aeb0409c4c4ee9d0a82b}
+
+\item 
+enum {\bfseries Add\+Client\+Id} \{ \\*
+{\bfseries Add\+Client} =1, 
+{\bfseries Add\+Unit} =2, 
+{\bfseries Add\+Nebula} =3, 
+{\bfseries Add\+Planet} =4, 
+\\*
+{\bfseries Add\+Asteroid} =5, 
+{\bfseries Add\+Missile} =6
+ \}\hypertarget{classZoneMgr_ac899ecb9860c6545af19b334e85c2e7d}{}\label{classZoneMgr_ac899ecb9860c6545af19b334e85c2e7d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries add\+System} (string \&sysname, string \&system)\hypertarget{classZoneMgr_a7ed9c6dd0c7c7dcc3d764cbe2051b859}{}\label{classZoneMgr_a7ed9c6dd0c7c7dcc3d764cbe2051b859}
+
+\item 
+string {\bfseries get\+System} (string \&name)\hypertarget{classZoneMgr_ad543cb968e3ab6af80870e3f25f0b0c8}{}\label{classZoneMgr_ad543cb968e3ab6af80870e3f25f0b0c8}
+
+\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries add\+Zone} (string starsys)\hypertarget{classZoneMgr_acb247072696062e22eeeef28b80a205a}{}\label{classZoneMgr_acb247072696062e22eeeef28b80a205a}
+
+\item 
+\hyperlink{classZoneInfo}{Zone\+Info} $\ast$ {\bfseries Get\+Zone\+Info} (int serial)\hypertarget{classZoneMgr_afec6d6633a09d78c4c6119ec516f697f}{}\label{classZoneMgr_afec6d6633a09d78c4c6119ec516f697f}
+
+\item 
+Client\+List $\ast$ {\bfseries Get\+Zone} (int serial)\hypertarget{classZoneMgr_a04bb37a47748379118027259136a3a8d}{}\label{classZoneMgr_a04bb37a47748379118027259136a3a8d}
+
+\item 
+\hyperlink{classUnit}{Unit} $\ast$ {\bfseries get\+Unit} (Obj\+Serial unserial, unsigned short zone)\hypertarget{classZoneMgr_a7c24d53c0e228c36b0c0f32121a7488e}{}\label{classZoneMgr_a7c24d53c0e228c36b0c0f32121a7488e}
+
+\item 
+void {\bfseries get\+Zone\+Buffer} (unsigned short zoneid, \hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf)\hypertarget{classZoneMgr_a129a9c62d8272d6c9dcb18944d186dab}{}\label{classZoneMgr_a129a9c62d8272d6c9dcb18944d186dab}
+
+\item 
+\hyperlink{classStarSystem}{Star\+System} $\ast$ {\bfseries add\+Client} (Client\+Ptr clt, string starsys, unsigned short \&num\+\_\+zone)\hypertarget{classZoneMgr_ae168efd6955ee541dd512c8596b61ffe}{}\label{classZoneMgr_ae168efd6955ee541dd512c8596b61ffe}
+
+\item 
+void {\bfseries remove\+Client} (Client\+Ptr clt)\hypertarget{classZoneMgr_af7a78e23bb74847431a1cc18ee06c7fd}{}\label{classZoneMgr_af7a78e23bb74847431a1cc18ee06c7fd}
+
+\item 
+void {\bfseries broadcast} (Client\+Ptr clt, \hyperlink{classPacket}{Packet} $\ast$pckt, bool is\+Tcp, unsigned short min\+Ver=0, unsigned short max\+Ver=65535)\hypertarget{classZoneMgr_aa9088e73ea52cf287737d709a1145614}{}\label{classZoneMgr_aa9088e73ea52cf287737d709a1145614}
+
+\item 
+void {\bfseries broadcast} (int zone, Obj\+Serial serial, \hyperlink{classPacket}{Packet} $\ast$pckt, bool is\+Tcp, unsigned short min\+Ver=0, unsigned short max\+Ver=65535)\hypertarget{classZoneMgr_a0904e780990264f07e30982ace224d2a}{}\label{classZoneMgr_a0904e780990264f07e30982ace224d2a}
+
+\item 
+void {\bfseries broadcast\+No\+Self} (int zone, Obj\+Serial serial, \hyperlink{classPacket}{Packet} $\ast$pckt, bool is\+Tcp)\hypertarget{classZoneMgr_aa8b1aabff53e9d45d491531d9851c9a9}{}\label{classZoneMgr_aa8b1aabff53e9d45d491531d9851c9a9}
+
+\item 
+void {\bfseries broadcast\+Sample} (int zone, Obj\+Serial serial, \hyperlink{classPacket}{Packet} $\ast$pckt, float frequency)\hypertarget{classZoneMgr_a749e15f42086d96dcea134b41d316dd3}{}\label{classZoneMgr_a749e15f42086d96dcea134b41d316dd3}
+
+\item 
+void {\bfseries broadcast\+Text} (int zone, Obj\+Serial serial, \hyperlink{classPacket}{Packet} $\ast$pckt, float frequency)\hypertarget{classZoneMgr_a6d7e4c223189cbcc5887df5e1bbf0c7c}{}\label{classZoneMgr_a6d7e4c223189cbcc5887df5e1bbf0c7c}
+
+\item 
+void {\bfseries broadcast\+Snapshots} (bool update\+\_\+planets=false)\hypertarget{classZoneMgr_a0ac5c7bb0c1ec793d042b6dc5b29b2d9}{}\label{classZoneMgr_a0ac5c7bb0c1ec793d042b6dc5b29b2d9}
+
+\item 
+void {\bfseries add\+Damage} (\hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, \hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classZoneMgr_a75e1e067f3f9b7d0c0cac2bdc5300f91}{}\label{classZoneMgr_a75e1e067f3f9b7d0c0cac2bdc5300f91}
+
+\item 
+bool {\bfseries add\+Position} (Client\+Ptr k, \hyperlink{classNetBuffer}{Net\+Buffer} \&netbuf, \hyperlink{classUnit}{Unit} $\ast$un, \hyperlink{classClientState}{Client\+State} \&un\+\_\+cs)\hypertarget{classZoneMgr_a9fd395edc1366c2e40bdbed2755b2e56}{}\label{classZoneMgr_a9fd395edc1366c2e40bdbed2755b2e56}
+
+\item 
+void {\bfseries broadcast\+Damage} ()\hypertarget{classZoneMgr_a64ee760dcee06363efee4db7d6d803fe}{}\label{classZoneMgr_a64ee760dcee06363efee4db7d6d803fe}
+
+\item 
+double {\bfseries is\+Visible} (\hyperlink{structQuaternion}{Quaternion} orient, Q\+Vector src\+\_\+pos, Q\+Vector tar\+\_\+pos)\hypertarget{classZoneMgr_ac5433d191751f71c3c80fe45aaed5ad8}{}\label{classZoneMgr_ac5433d191751f71c3c80fe45aaed5ad8}
+
+\item 
+void {\bfseries display\+N\+P\+Cs} ()\hypertarget{classZoneMgr_a3f4b83cffa09daaa5221ff78fef9437a}{}\label{classZoneMgr_a3f4b83cffa09daaa5221ff78fef9437a}
+
+\item 
+void {\bfseries display\+Stats} ()\hypertarget{classZoneMgr_ac70dfa549ef8dd36a56c4ecaafba8fa8}{}\label{classZoneMgr_ac70dfa549ef8dd36a56c4ecaafba8fa8}
+
+\item 
+int {\bfseries display\+Memory} ()\hypertarget{classZoneMgr_af095b2732134d67b585e50672e34a0e0}{}\label{classZoneMgr_af095b2732134d67b585e50672e34a0e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Zone\+Map {\bfseries zones}\hypertarget{classZoneMgr_a80e3e6023998cb903d855fa6e19f44ce}{}\label{classZoneMgr_a80e3e6023998cb903d855fa6e19f44ce}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+networking/zonemgr.\+h\item 
+networking/zonemgr.\+cpp\end{DoxyCompactItemize}

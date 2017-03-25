@@ -1,0 +1,133 @@
+\hypertarget{classQuadTree}{}\section{Quad\+Tree Class Reference}
+\label{classQuadTree}\index{Quad\+Tree@{Quad\+Tree}}
+
+
+{\ttfamily \#include $<$quadtree.\+h$>$}
+
+
+
+Inheritance diagram for Quad\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{df/d2f/classQuadTree__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Quad\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{d8/db1/classQuadTree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Quad\+Tree} (const char $\ast$filename, const Vector \&scales, const float Radius)\hypertarget{classQuadTree_aecf5c7730ffa33cdef22e58ab5cac6f4}{}\label{classQuadTree_aecf5c7730ffa33cdef22e58ab5cac6f4}
+
+\item 
+void {\bfseries Render} ()\hypertarget{classQuadTree_a60c6c4ded3374e548a395d22b7e98b15}{}\label{classQuadTree_a60c6c4ded3374e548a395d22b7e98b15}
+
+\item 
+void {\bfseries Set\+Neighbors} (\hyperlink{classQuadTree}{Quad\+Tree} $\ast$east, \hyperlink{classQuadTree}{Quad\+Tree} $\ast$north, \hyperlink{classQuadTree}{Quad\+Tree} $\ast$west, \hyperlink{classQuadTree}{Quad\+Tree} $\ast$south)\hypertarget{classQuadTree_ad291ca87d51043e770d6d19ab0ead038}{}\label{classQuadTree_ad291ca87d51043e770d6d19ab0ead038}
+
+\item 
+void {\bfseries Update} (unsigned short numstages, unsigned short whichstage, updateparity $\ast$updateorder=identityparity)\hypertarget{classQuadTree_a4be8581789e7297c4bc0ac6d143708fb}{}\label{classQuadTree_a4be8581789e7297c4bc0ac6d143708fb}
+
+\item 
+void {\bfseries Set\+Transformation} (const \hyperlink{classMatrix}{Matrix} \&transformation)\hypertarget{classQuadTree_a143d464cd4a87991f6882d8c5fe48763}{}\label{classQuadTree_a143d464cd4a87991f6882d8c5fe48763}
+
+\item 
+float \hyperlink{classQuadTree_ab33708100d1f520c1babd5eef4b1c9e1}{Get\+Height} (Vector Location, Vector \&normal, const \hyperlink{classMatrix}{Matrix} \&transform, float Total\+Terrain\+SizeX=0, float Total\+Terrain\+SizeZ=0) const 
+\item 
+void {\bfseries begin\+Element} (const std\+::string \&name, const \hyperlink{classXMLSupport_1_1AttributeList}{X\+M\+L\+Support\+::\+Attribute\+List} \&attributes)\hypertarget{classQuadTree_a09a741c09faa70334ddf1f59d8a590fa}{}\label{classQuadTree_a09a741c09faa70334ddf1f59d8a590fa}
+
+\item 
+void {\bfseries end\+Element} (const std\+::string \&name)\hypertarget{classQuadTree_ad448901c264535c39643bb65f214a6a0}{}\label{classQuadTree_ad448901c264535c39643bb65f214a6a0}
+
+\item 
+float {\bfseries getminX} () const \hypertarget{classQuadTree_afadaca606f7cfb62b1bfaf894de6363b}{}\label{classQuadTree_afadaca606f7cfb62b1bfaf894de6363b}
+
+\item 
+float {\bfseries getminZ} () const \hypertarget{classQuadTree_a7d0d259f8d98535fa969794917763e91}{}\label{classQuadTree_a7d0d259f8d98535fa969794917763e91}
+
+\item 
+float {\bfseries getmaxX} () const \hypertarget{classQuadTree_af0591ccd3f89cac3b308958f159e99b1}{}\label{classQuadTree_af0591ccd3f89cac3b308958f159e99b1}
+
+\item 
+float {\bfseries getmaxZ} () const \hypertarget{classQuadTree_a82279d324bc7f4e5ff1c0bb27e956eaf}{}\label{classQuadTree_a82279d324bc7f4e5ff1c0bb27e956eaf}
+
+\item 
+float {\bfseries get\+SizeX} () const \hypertarget{classQuadTree_a67fb3f0333e9343e52e101f7977bcb15}{}\label{classQuadTree_a67fb3f0333e9343e52e101f7977bcb15}
+
+\item 
+float {\bfseries get\+SizeZ} () const \hypertarget{classQuadTree_a0e57918a9fdfa5e22b3be44241f58019}{}\label{classQuadTree_a0e57918a9fdfa5e22b3be44241f58019}
+
+\item 
+void {\bfseries Static\+Cull\+Data} (const float detail)\hypertarget{classQuadTree_ab8d3a3429afc8665e3d223947391539f}{}\label{classQuadTree_ab8d3a3429afc8665e3d223947391539f}
+
+\item 
+bool {\bfseries Get\+Ground\+Pos} (Q\+Vector \&Location, Vector \&norm, float T\+T\+SX=0, float T\+T\+SZ=0) const \hypertarget{classQuadTree_a9b091ec4fee8842dde296c0fb1fa83e0}{}\label{classQuadTree_a9b091ec4fee8842dde296c0fb1fa83e0}
+
+\item 
+bool {\bfseries Get\+Ground\+Pos} (Q\+Vector \&Location, Vector \&norm, const \hyperlink{classMatrix}{Matrix} \&trans, float Total\+Terrain\+SizeX=0, float Total\+Terrain\+SizeZ=0) const \hypertarget{classQuadTree_a60954dce3c0ea10b71602b3bf1686f8a}{}\label{classQuadTree_a60954dce3c0ea10b71602b3bf1686f8a}
+
+\item 
+Vector {\bfseries Get\+Normal} (const Vector \&position, const Vector \&requestednorm) const \hypertarget{classQuadTree_adbdf0de4d109c8733cd0ba401a3f801c}{}\label{classQuadTree_adbdf0de4d109c8733cd0ba401a3f801c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries begin\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name, const X\+M\+L\+\_\+\+Char $\ast$$\ast$atts)\hypertarget{classQuadTree_afc3bad3adf873d0efa1b0afb6e3e9821}{}\label{classQuadTree_afc3bad3adf873d0efa1b0afb6e3e9821}
+
+\item 
+static void {\bfseries end\+Element} (void $\ast$user\+Data, const X\+M\+L\+\_\+\+Char $\ast$name)\hypertarget{classQuadTree_a3433a67cc6a78391560b01ef0640ba5d}{}\label{classQuadTree_a3433a67cc6a78391560b01ef0640ba5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix}{Matrix} {\bfseries transformation}\hypertarget{classQuadTree_a394b600aad893147bd35fe3168762a54}{}\label{classQuadTree_a394b600aad893147bd35fe3168762a54}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a wrapper class for quadsquare It takes care of activating textures, having possession of the vlist and having posession of the static vars that get set 
+
+\subsection{Member Function Documentation}
+\index{Quad\+Tree@{Quad\+Tree}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!Quad\+Tree@{Quad\+Tree}}
+\subsubsection[{\texorpdfstring{Get\+Height(\+Vector Location, Vector \&normal, const Matrix \&transform, float Total\+Terrain\+Size\+X=0, float Total\+Terrain\+Size\+Z=0) const }{GetHeight(Vector Location, Vector &normal, const Matrix &transform, float TotalTerrainSizeX=0, float TotalTerrainSizeZ=0) const }}]{\setlength{\rightskip}{0pt plus 5cm}float Quad\+Tree\+::\+Get\+Height (
+\begin{DoxyParamCaption}
+\item[{Vector}]{Location, }
+\item[{Vector \&}]{normal, }
+\item[{const {\bf Matrix} \&}]{transform, }
+\item[{float}]{Total\+Terrain\+SizeX = {\ttfamily 0}, }
+\item[{float}]{Total\+Terrain\+SizeZ = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classQuadTree_ab33708100d1f520c1babd5eef4b1c9e1}{}\label{classQuadTree_ab33708100d1f520c1babd5eef4b1c9e1}
+\} 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dae/classQuadTree_ab33708100d1f520c1babd5eef4b1c9e1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/quadtree.\+h\item 
+gfx/quadtree.\+cpp\item 
+gfx/quadtree\+\_\+xml.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+<map id="Unit::getSubUnits" name="Unit::getSubUnits">
+<area shape="rect" id="node2" href="$d8/d4d/classOrders_1_1TurretAI.html#aa919eb810238b31331c1b22d32c0d0a7" title="The function that gets called and executes all queued suborders. " alt="" coords="189,5,361,32"/>
+<area shape="rect" id="node3" href="$df/dd9/classUnit.html#a01d9c8985fdb16b02765a7374c5e8201" title="Unit::Unit" alt="" coords="235,56,314,83"/>
+<area shape="rect" id="node4" href="$df/dd9/classUnit.html#a255f7adad1ce1ad8a29799e278e66cad" title="Unit::FireEngines" alt="" coords="213,107,336,133"/>
+<area shape="rect" id="node5" href="$df/dd9/classUnit.html#af7dc49d6e2d3d0e91ea042c5ee0543b8" title="Unit::ProcessDeleteQueue" alt="" coords="185,157,364,184"/>
+<area shape="rect" id="node13" href="$d2/d68/classMount.html#ac0ea3cddae54a2528e451a0e2ff9d2a7" title="Sets this gun to inactive, unless unchosen or destroyed. " alt="" coords="215,208,335,235"/>
+<area shape="rect" id="node14" href="$df/dd9/classUnit.html#aec19392b9fba96570b5e8fe8918bcfb4" title="Unit::UpgradeSubUnitsWith\lFactory" alt="" coords="183,259,367,301"/>
+<area shape="rect" id="node16" href="$df/dd9/classUnit.html#a0a0dbb25c02ab3e89fe8f0c818a26513" title="Unit::GetManifest" alt="" coords="212,325,337,352"/>
+<area shape="rect" id="node17" href="$d9/dba/classCockpit.html#a4315ca8cdf10b2a20a8768b35bf963f3" title="Destructs cockpit info for new loading. " alt="" coords="218,376,331,403"/>
+<area shape="rect" id="node21" href="$da/dea/classStarSystem.html#a13fddd8b91153dd5d32e23f428f91e6b" title="The Light Map corresponding for the BP for spheremapping. " alt="" coords="180,427,369,469"/>
+<area shape="rect" id="node6" href="$da/dea/classStarSystem.html#a4c1430d5d251a5cd8d51e1818e819309" title="Requeues the unit so that it is simulated ASAP. " alt="" coords="659,115,853,141"/>
+<area shape="rect" id="node7" href="$da/dea/classStarSystem.html#a761562b9400fa14e0442557eb5d6e64e" title="update a simulation atom ExecuteDirector must be false if star system is just loaded before mission i..." alt="" coords="443,165,585,192"/>
+<area shape="rect" id="node8" href="$d9/dba/classCockpit.html#a77661eaba99c97a4bcb0192adaee01be" title="Draws Cockpit then restores viewport. " alt="" coords="703,165,809,192"/>
+<area shape="rect" id="node11" href="$dc/dce/classUniverse.html#a0c93df0a193723c26f031fa81cde3b2a" title="Wrapper function for Star System. " alt="" coords="671,216,841,243"/>
+<area shape="rect" id="node12" href="$dc/dce/classUniverse.html#a18722326f55b37627846cb7652b4dfff" title="Begins a scene. " alt="" coords="685,267,827,293"/>
+<area shape="rect" id="node9" href="$d5/d38/classGameStarSystem.html#a22a64a77861767b3503b7c6b5ab0b786" title="GameStarSystem::Draw" alt="" coords="901,165,1067,192"/>
+<area shape="rect" id="node10" href="$d5/d38/classGameStarSystem.html#a08724f59ce670c81fd5c43aef06401c1" title="activates the light map texture " alt="" coords="1115,165,1313,192"/>
+<area shape="rect" id="node15" href="$df/dd9/classUnit.html#a0856ef106b785e733a077f3be09376da" title="Unit::UpgradeMounts" alt="" coords="441,267,587,293"/>
+<area shape="rect" id="node18" href="$dd/d50/classGameCockpit.html#ac6830c42b8dab613f34a7415fd936811" title="Loads cockpit info...just as constructor. " alt="" coords="692,325,820,352"/>
+<area shape="rect" id="node19" href="$d9/dba/classCockpit.html#a4203dc3421c88348938455a73b3726bd" title="Loads cockpit info...just as constructor. " alt="" coords="467,376,561,403"/>
+<area shape="rect" id="node20" href="$dd/d50/classGameCockpit.html#a558479694454a63b1ec53f2df316e1ae" title="Draws Cockpit then restores viewport. " alt="" coords="685,376,827,403"/>
+<area shape="rect" id="node22" href="$d5/d38/classGameStarSystem.html#adc47d08069caab62564ed07668457d5d" title="GameStarSystem::GameStar\lSystem" alt="" coords="417,427,611,469"/>
+<area shape="rect" id="node23" href="$da/dea/classStarSystem.html#a0bc8d41a7815ffaa5ba60fd70cfb9f71" title="StarSystem::StarSystem" alt="" coords="430,493,598,520"/>
+</map>

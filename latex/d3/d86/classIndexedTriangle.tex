@@ -1,0 +1,116 @@
+\hypertarget{classIndexedTriangle}{}\section{Indexed\+Triangle Class Reference}
+\label{classIndexedTriangle}\index{Indexed\+Triangle@{Indexed\+Triangle}}
+
+
+Collaboration diagram for Indexed\+Triangle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{d9/de1/classIndexedTriangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ \hyperlink{classIndexedTriangle_ac90c80ffc51dfa77d1bd9ca619cece86}{Indexed\+Triangle} ()\hypertarget{classIndexedTriangle_ac90c80ffc51dfa77d1bd9ca619cece86}{}\label{classIndexedTriangle_ac90c80ffc51dfa77d1bd9ca619cece86}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classIndexedTriangle_a220b47bc4a43331b97cb40568f3e6943}{Indexed\+Triangle} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r1, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} r2)\hypertarget{classIndexedTriangle_a220b47bc4a43331b97cb40568f3e6943}{}\label{classIndexedTriangle_a220b47bc4a43331b97cb40568f3e6943}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classIndexedTriangle_a8353fbe1e859fd657fef6e53afbd6715}{Indexed\+Triangle} (const \hyperlink{classIndexedTriangle}{Indexed\+Triangle} \&triangle)\hypertarget{classIndexedTriangle_a8353fbe1e859fd657fef6e53afbd6715}{}\label{classIndexedTriangle_a8353fbe1e859fd657fef6e53afbd6715}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+inline\+\_\+ \hyperlink{classIndexedTriangle_ac942c3fa7f0b31c0f8794f14f76afd3d}{$\sim$\+Indexed\+Triangle} ()\hypertarget{classIndexedTriangle_ac942c3fa7f0b31c0f8794f14f76afd3d}{}\label{classIndexedTriangle_ac942c3fa7f0b31c0f8794f14f76afd3d}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void {\bfseries Flip} ()\hypertarget{classIndexedTriangle_a1f62befd6484bee954f067d5738c38a5}{}\label{classIndexedTriangle_a1f62befd6484bee954f067d5738c38a5}
+
+\item 
+float {\bfseries Area} (const \hyperlink{classPoint}{Point} $\ast$verts) const \hypertarget{classIndexedTriangle_a726d46253ceaef9e3724d195374c1050}{}\label{classIndexedTriangle_a726d46253ceaef9e3724d195374c1050}
+
+\item 
+float {\bfseries Perimeter} (const \hyperlink{classPoint}{Point} $\ast$verts) const \hypertarget{classIndexedTriangle_ab089bb99995ef572f42401d65868104f}{}\label{classIndexedTriangle_ab089bb99995ef572f42401d65868104f}
+
+\item 
+float {\bfseries Compacity} (const \hyperlink{classPoint}{Point} $\ast$verts) const \hypertarget{classIndexedTriangle_aa6fc9a36d7d895f5b23de439d7474e94}{}\label{classIndexedTriangle_aa6fc9a36d7d895f5b23de439d7474e94}
+
+\item 
+void {\bfseries Normal} (const \hyperlink{classPoint}{Point} $\ast$verts, \hyperlink{classPoint}{Point} \&normal) const \hypertarget{classIndexedTriangle_aec07600ca093248c4e49d02b3f2f7a36}{}\label{classIndexedTriangle_aec07600ca093248c4e49d02b3f2f7a36}
+
+\item 
+void {\bfseries Denormalized\+Normal} (const \hyperlink{classPoint}{Point} $\ast$verts, \hyperlink{classPoint}{Point} \&normal) const \hypertarget{classIndexedTriangle_a6077f4cb876cdbbef181d4501d5b28f7}{}\label{classIndexedTriangle_a6077f4cb876cdbbef181d4501d5b28f7}
+
+\item 
+void {\bfseries Center} (const \hyperlink{classPoint}{Point} $\ast$verts, \hyperlink{classPoint}{Point} \&center) const \hypertarget{classIndexedTriangle_a773a19dac0e1b35913f94b8ec08f638d}{}\label{classIndexedTriangle_a773a19dac0e1b35913f94b8ec08f638d}
+
+\item 
+void {\bfseries Centered\+Normal} (const \hyperlink{classPoint}{Point} $\ast$verts, \hyperlink{classPoint}{Point} \&normal) const \hypertarget{classIndexedTriangle_a307ff86b3dcb63701e4805ced9a21730}{}\label{classIndexedTriangle_a307ff86b3dcb63701e4805ced9a21730}
+
+\item 
+void {\bfseries Random\+Point} (const \hyperlink{classPoint}{Point} $\ast$verts, \hyperlink{classPoint}{Point} \&random) const \hypertarget{classIndexedTriangle_ad2fc2080a0d1ead335836991822eeca2}{}\label{classIndexedTriangle_ad2fc2080a0d1ead335836991822eeca2}
+
+\item 
+bool {\bfseries Is\+Visible} (const \hyperlink{classPoint}{Point} $\ast$verts, const \hyperlink{classPoint}{Point} \&source) const \hypertarget{classIndexedTriangle_a6fc8b09c9cc16ce1e7c0b3fd825ddbf2}{}\label{classIndexedTriangle_a6fc8b09c9cc16ce1e7c0b3fd825ddbf2}
+
+\item 
+bool {\bfseries Backface\+Culling} (const \hyperlink{classPoint}{Point} $\ast$verts, const \hyperlink{classPoint}{Point} \&source) const \hypertarget{classIndexedTriangle_acac72a5c7e3a7e7963a9e9bc4ed2a3e8}{}\label{classIndexedTriangle_acac72a5c7e3a7e7963a9e9bc4ed2a3e8}
+
+\item 
+float {\bfseries Compute\+Occlusion\+Potential} (const \hyperlink{classPoint}{Point} $\ast$verts, const \hyperlink{classPoint}{Point} \&view) const \hypertarget{classIndexedTriangle_a4df6adef9fba2d9426e13f03a12b0ea1}{}\label{classIndexedTriangle_a4df6adef9fba2d9426e13f03a12b0ea1}
+
+\item 
+bool {\bfseries Replace\+Vertex} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} oldref, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} newref)\hypertarget{classIndexedTriangle_af5a5f522cb0b97eb27fc5bb62e6fc4e7}{}\label{classIndexedTriangle_af5a5f522cb0b97eb27fc5bb62e6fc4e7}
+
+\item 
+bool {\bfseries Is\+Degenerate} () const \hypertarget{classIndexedTriangle_a5ddd2c34c037481e0ba2b36b39e3f9ac}{}\label{classIndexedTriangle_a5ddd2c34c037481e0ba2b36b39e3f9ac}
+
+\item 
+bool {\bfseries Has\+Vertex} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} ref) const \hypertarget{classIndexedTriangle_a5044242b46d49fd7b728f96b8d945e10}{}\label{classIndexedTriangle_a5044242b46d49fd7b728f96b8d945e10}
+
+\item 
+bool {\bfseries Has\+Vertex} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} ref, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$index) const \hypertarget{classIndexedTriangle_a3698519a215745600e9a40ce49eca410}{}\label{classIndexedTriangle_a3698519a215745600e9a40ce49eca410}
+
+\item 
+\hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{ubyte} {\bfseries Find\+Edge} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} vref0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} vref1) const \hypertarget{classIndexedTriangle_aa8fc0c2b6623832647fa880e98de23b7}{}\label{classIndexedTriangle_aa8fc0c2b6623832647fa880e98de23b7}
+
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Opposite\+Vertex} (\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} vref0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} vref1) const \hypertarget{classIndexedTriangle_a0c7351a54375f0a939bc3707c28508c8}{}\label{classIndexedTriangle_a0c7351a54375f0a939bc3707c28508c8}
+
+\item 
+inline\+\_\+ \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} {\bfseries Opposite\+Vertex} (\hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{ubyte} edgenb) const \hypertarget{classIndexedTriangle_ae86a63f6f634c0c67833e2f86b968c53}{}\label{classIndexedTriangle_ae86a63f6f634c0c67833e2f86b968c53}
+
+\item 
+void {\bfseries Get\+V\+Refs} (\hyperlink{IceTypes_8h_a5dd4f281954ce1405c92d62a427f839a}{ubyte} edgenb, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&vref0, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&vref1, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \&vref2) const \hypertarget{classIndexedTriangle_a8aa9652bf4799555773d2ecdf3da3291}{}\label{classIndexedTriangle_a8aa9652bf4799555773d2ecdf3da3291}
+
+\item 
+float {\bfseries Min\+Edge\+Length} (const \hyperlink{classPoint}{Point} $\ast$verts) const \hypertarget{classIndexedTriangle_a6b2352d5b214898c58f5c5bca7a360ec}{}\label{classIndexedTriangle_a6b2352d5b214898c58f5c5bca7a360ec}
+
+\item 
+float {\bfseries Max\+Edge\+Length} (const \hyperlink{classPoint}{Point} $\ast$verts) const \hypertarget{classIndexedTriangle_abad2f26ec2a8cee0c2753d094e87fb9c}{}\label{classIndexedTriangle_abad2f26ec2a8cee0c2753d094e87fb9c}
+
+\item 
+void {\bfseries Compute\+Point} (const \hyperlink{classPoint}{Point} $\ast$verts, float u, float v, \hyperlink{classPoint}{Point} \&pt, \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} $\ast$nearvtx=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}) const \hypertarget{classIndexedTriangle_a4acfb3e8e81f5b8d7b59365d8d0d1897}{}\label{classIndexedTriangle_a4acfb3e8e81f5b8d7b59365d8d0d1897}
+
+\item 
+float {\bfseries Angle} (const \hyperlink{classIndexedTriangle}{Indexed\+Triangle} \&tri, const \hyperlink{classPoint}{Point} $\ast$verts) const \hypertarget{classIndexedTriangle_a876ee32ea917ca66141fe867a29ecbb4}{}\label{classIndexedTriangle_a876ee32ea917ca66141fe867a29ecbb4}
+
+\item 
+inline\+\_\+ \hyperlink{classPlane}{Plane} {\bfseries Plane\+Equation} (const \hyperlink{classPoint}{Point} $\ast$verts) const \hypertarget{classIndexedTriangle_a14e2d37a22733d895df30b14d82b7ee3}{}\label{classIndexedTriangle_a14e2d37a22733d895df30b14d82b7ee3}
+
+\item 
+bool {\bfseries Equal} (const \hyperlink{classIndexedTriangle}{Indexed\+Triangle} \&tri) const \hypertarget{classIndexedTriangle_a15b576c437f90be4d6b9e015006deb75}{}\label{classIndexedTriangle_a15b576c437f90be4d6b9e015006deb75}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} \hyperlink{classIndexedTriangle_a1d3a5d08862ea2cdaf4ed3e15aa19166}{m\+V\+Ref} \mbox{[}3\mbox{]}\hypertarget{classIndexedTriangle_a1d3a5d08862ea2cdaf4ed3e15aa19166}{}\label{classIndexedTriangle_a1d3a5d08862ea2cdaf4ed3e15aa19166}
+
+\begin{DoxyCompactList}\small\item\em Vertex-\/references. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\+Ice/\hyperlink{IceIndexedTriangle_8h}{Ice\+Indexed\+Triangle.\+h}\end{DoxyCompactItemize}

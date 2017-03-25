@@ -1,0 +1,131 @@
+\hypertarget{classcommandI}{}\section{commandI Class Reference}
+\label{classcommandI}\index{commandI@{commandI}}
+
+
+Inheritance diagram for commandI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/db3/classcommandI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for commandI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{d7/d43/classcommandI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries getmenumode} () const \hypertarget{classcommandI_a416a2ab310c8982665d1a94193462d03}{}\label{classcommandI_a416a2ab310c8982665d1a94193462d03}
+
+\item 
+void {\bfseries help} (std\+::string \&d)\hypertarget{classcommandI_acf0766f9a6ee1b75b9dc97686bf6d292}{}\label{classcommandI_acf0766f9a6ee1b75b9dc97686bf6d292}
+
+\item 
+void {\bfseries add\+Command} (\hyperlink{classTFunctor}{T\+Functor} $\ast$com, const char $\ast$name)\hypertarget{classcommandI_af8697724746b2c0bc3edc08463be65fc}{}\label{classcommandI_af8697724746b2c0bc3edc08463be65fc}
+
+\item 
+void {\bfseries rem\+Command} (char $\ast$name)\hypertarget{classcommandI_a2af7b3ff8d4c1147ab3dc3ff7ea52e34}{}\label{classcommandI_a2af7b3ff8d4c1147ab3dc3ff7ea52e34}
+
+\item 
+void {\bfseries rem\+Command} (\hyperlink{classTFunctor}{T\+Functor} $\ast$com)\hypertarget{classcommandI_a7cb338a958c432ba728c5acb4a741af0}{}\label{classcommandI_a7cb338a958c432ba728c5acb4a741af0}
+
+\item 
+void {\bfseries dummy} (std\+::vector$<$ std\+::string $\ast$ $>$ $\ast$d)\hypertarget{classcommandI_afd106682e3c13c65b86edcabb696e2be}{}\label{classcommandI_afd106682e3c13c65b86edcabb696e2be}
+
+\item 
+void {\bfseries prompt} ()\hypertarget{classcommandI_aa81dc096135efb83be067a53e1d25399}{}\label{classcommandI_aa81dc096135efb83be067a53e1d25399}
+
+\item 
+void {\bfseries pcommands} ()\hypertarget{classcommandI_a3a4ab15e2fe0087a1c4e0aa5dd302899}{}\label{classcommandI_a3a4ab15e2fe0087a1c4e0aa5dd302899}
+
+\item 
+bool \hyperlink{classcommandI_a4918f1f16c279d905e3ca8c3c1c22f74}{execute} (std\+::string $\ast$incommand, bool is\+Down, int sock\+\_\+in=0)\hypertarget{classcommandI_a4918f1f16c279d905e3ca8c3c1c22f74}{}\label{classcommandI_a4918f1f16c279d905e3ca8c3c1c22f74}
+
+\begin{DoxyCompactList}\small\item\em \}\}\} \end{DoxyCompactList}\item 
+bool {\bfseries fexecute} (std\+::string $\ast$incommand, bool is\+Down, int sock\+\_\+in=0)\hypertarget{classcommandI_a0806b8b86073d973d0077c760bfdc021}{}\label{classcommandI_a0806b8b86073d973d0077c760bfdc021}
+
+\item 
+bool {\bfseries exec\+Command} (std\+::string $\ast$string, bool is\+Down)\hypertarget{classcommandI_af8c50972789602de8887644174ac7f84}{}\label{classcommandI_af8c50972789602de8887644174ac7f84}
+
+\item 
+bool {\bfseries add\+Menu} (\hyperlink{classmenu}{menu} $\ast$menu2add)\hypertarget{classcommandI_a139847064175c83ad620c1588da2b271}{}\label{classcommandI_a139847064175c83ad620c1588da2b271}
+
+\item 
+bool {\bfseries add\+Menu\+Item} (\hyperlink{classmItem}{m\+Item} $\ast$mitem2add, \hyperlink{classmenu}{menu} $\ast$=N\+U\+LL)\hypertarget{classcommandI_ac0d225c450873f89466bb07ef8cb83d9}{}\label{classcommandI_ac0d225c450873f89466bb07ef8cb83d9}
+
+\item 
+bool {\bfseries call\+Menu} (char $\ast$name, char $\ast$args, std\+::string \&s2manip)\hypertarget{classcommandI_a95dee376e4e42a9011ef08886af1be18}{}\label{classcommandI_a95dee376e4e42a9011ef08886af1be18}
+
+\item 
+std\+::string {\bfseries set\+Menu} (std\+::string name)\hypertarget{classcommandI_a67f350774bd122797ccf390edd13fe48}{}\label{classcommandI_a67f350774bd122797ccf390edd13fe48}
+
+\item 
+std\+::string {\bfseries displaymenu} ()\hypertarget{classcommandI_ab01af6d09f26b2594619d5bab88e78c2}{}\label{classcommandI_ab01af6d09f26b2594619d5bab88e78c2}
+
+\item 
+void {\bfseries breakmenu} ()\hypertarget{classcommandI_a9fd6c025b73a4c96627b6a8de1bec1a4}{}\label{classcommandI_a9fd6c025b73a4c96627b6a8de1bec1a4}
+
+\item 
+virtual std\+::string {\bfseries display} (std\+::string \&s)\hypertarget{classcommandI_a1c2f548d92f094a84f33a4c655d697a0}{}\label{classcommandI_a1c2f548d92f094a84f33a4c655d697a0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classcommandI_a552b20a9099915545e5c66f070a6e939}{keypress} (int code, int modifiers, bool is\+Down, int x, int \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries console}\hypertarget{classcommandI_aa2aad5a8b9dafdc89dd9168800140bef}{}\label{classcommandI_aa2aad5a8b9dafdc89dd9168800140bef}
+
+\item 
+bool {\bfseries immortal}\hypertarget{classcommandI_a5fd79a41264f14de74694185d35c9dbe}{}\label{classcommandI_a5fd79a41264f14de74694185d35c9dbe}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{commandI@{commandI}!keypress@{keypress}}
+\index{keypress@{keypress}!commandI@{commandI}}
+\subsubsection[{\texorpdfstring{keypress(int code, int modifiers, bool is\+Down, int x, int y)}{keypress(int code, int modifiers, bool isDown, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void command\+I\+::keypress (
+\begin{DoxyParamCaption}
+\item[{int}]{code, }
+\item[{int}]{modifiers, }
+\item[{bool}]{is\+Down, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcommandI_a552b20a9099915545e5c66f070a6e939}{}\label{classcommandI_a552b20a9099915545e5c66f070a6e939}
+New input wrapper for new Command Processor S\+DL version \begin{DoxyAuthor}{Author}
+Rogue 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created\+: 2005-\/8-\/16 
+\end{DoxyDate}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{d9/d07/classcommandI_a552b20a9099915545e5c66f070a6e939_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+command.\+h\item 
+command.\+cpp\end{DoxyCompactItemize}

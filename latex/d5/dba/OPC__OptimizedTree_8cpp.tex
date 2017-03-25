@@ -1,0 +1,115 @@
+\hypertarget{OPC__OptimizedTree_8cpp}{}\section{cmd/collide2/\+O\+P\+C\+\_\+\+Optimized\+Tree.cpp File Reference}
+\label{OPC__OptimizedTree_8cpp}\index{cmd/collide2/\+O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp@{cmd/collide2/\+O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}}
+{\ttfamily \#include \char`\"{}Stdafx.\+h\char`\"{}}\\*
+Include dependency graph for O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/db6/OPC__OptimizedTree_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries F\+I\+N\+D\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+U\+ES}
+\item 
+\#define {\bfseries I\+N\+I\+T\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+A\+T\+I\+ON}
+\item 
+\#define {\bfseries P\+E\+R\+F\+O\+R\+M\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+A\+T\+I\+ON}\hypertarget{OPC__OptimizedTree_8cpp_aaa0debf21a4655abd0595c533f2ae136}{}\label{OPC__OptimizedTree_8cpp_aaa0debf21a4655abd0595c533f2ae136}
+
+\item 
+\#define {\bfseries R\+E\+M\+A\+P\+\_\+\+D\+A\+TA}(member)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+inline\+\_\+ void {\bfseries O\+P\+Compute\+Min\+Max} (\hyperlink{classOpcode_1_1Point}{Point} \&min, \hyperlink{classOpcode_1_1Point}{Point} \&max, const \hyperlink{structOpcode_1_1VertexPointers}{Vertex\+Pointers} \&vp)\hypertarget{OPC__OptimizedTree_8cpp_a0cab6e9872bc93b29dad3bef2d33ebd5}{}\label{OPC__OptimizedTree_8cpp_a0cab6e9872bc93b29dad3bef2d33ebd5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains code for optimized trees. Implements 4 trees\+:
+\begin{DoxyItemize}
+\item normal
+\item no leaf
+\item quantized
+\item no leaf / quantized
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Pierre Terdiman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March, 20, 2001 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp@{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}!F\+I\+N\+D\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+U\+ES@{F\+I\+N\+D\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+U\+ES}}
+\index{F\+I\+N\+D\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+U\+ES@{F\+I\+N\+D\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+U\+ES}!O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp@{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}}
+\subsubsection[{\texorpdfstring{F\+I\+N\+D\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+U\+ES}{FIND_MAX_VALUES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+N\+D\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+U\+ES}\hypertarget{OPC__OptimizedTree_8cpp_a5e51f389324b6a69a604ad49c2b2e3a8}{}\label{OPC__OptimizedTree_8cpp_a5e51f389324b6a69a604ad49c2b2e3a8}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Get max values */}                                                                        \(\backslash\)
+    Point CMax(\hyperlink{IceTypes_8h_aa8c94465432b7039917e4bf10d848d04}{MIN\_FLOAT}, \hyperlink{IceTypes_8h_aa8c94465432b7039917e4bf10d848d04}{MIN\_FLOAT}, \hyperlink{IceTypes_8h_aa8c94465432b7039917e4bf10d848d04}{MIN\_FLOAT});                                             
+      \(\backslash\)
+    Point EMax(\hyperlink{IceTypes_8h_aa8c94465432b7039917e4bf10d848d04}{MIN\_FLOAT}, \hyperlink{IceTypes_8h_aa8c94465432b7039917e4bf10d848d04}{MIN\_FLOAT}, \hyperlink{IceTypes_8h_aa8c94465432b7039917e4bf10d848d04}{MIN\_FLOAT});                                             
+      \(\backslash\)
+    for(i=0;i<mNbNodes;i++)                                                             \(\backslash\)
+    \{                                                                                           \(\backslash\)
+        if(fabsf(Nodes[i].mAABB.mCenter.x)>CMax.x)  CMax.x = fabsf(Nodes[i].mAABB.mCenter.x);   \(\backslash\)
+        if(fabsf(Nodes[i].mAABB.mCenter.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})>CMax.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y})    CMax.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} = fabsf(Nodes[i].mAABB.mCenter.
+      \hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y});    \(\backslash\)
+        if(fabsf(Nodes[i].mAABB.mCenter.z)>CMax.z)  CMax.z = fabsf(Nodes[i].mAABB.mCenter.z);   \(\backslash\)
+        if(fabsf(Nodes[i].mAABB.mExtents.x)>EMax.x) EMax.x = fabsf(Nodes[i].mAABB.mExtents.x);  \(\backslash\)
+        if(fabsf(Nodes[i].mAABB.mExtents.y)>EMax.y) EMax.y = fabsf(Nodes[i].mAABB.mExtents.y);  \(\backslash\)
+        if(fabsf(Nodes[i].mAABB.mExtents.z)>EMax.z) EMax.z = fabsf(Nodes[i].mAABB.mExtents.z);  \(\backslash\)
+    \}
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp@{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}!I\+N\+I\+T\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+A\+T\+I\+ON@{I\+N\+I\+T\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+A\+T\+I\+ON}}
+\index{I\+N\+I\+T\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+A\+T\+I\+ON@{I\+N\+I\+T\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+A\+T\+I\+ON}!O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp@{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+N\+I\+T\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+A\+T\+I\+ON}{INIT_QUANTIZATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+I\+T\+\_\+\+Q\+U\+A\+N\+T\+I\+Z\+A\+T\+I\+ON}\hypertarget{OPC__OptimizedTree_8cpp_affc1e4006517845cc53f9d2431a45d97}{}\label{OPC__OptimizedTree_8cpp_affc1e4006517845cc53f9d2431a45d97}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{udword} nbc=15;    \textcolor{comment}{/* Keep one bit for sign */}                             
+      \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{\(\backslash\)}
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{    udword} nbe=15;   \textcolor{comment}{/* Keep one bit for fix */}                              \(\backslash\)
+    if(!gFixQuantized) nbe++;                                               \(\backslash\)
+                                                                            \(\backslash\)
+    \textcolor{comment}{/* Compute quantization coeffs */}                                       \(\backslash\)
+    \hyperlink{classOpcode_1_1Point}{Point} CQuantCoeff, EQuantCoeff;                                            \(\backslash\)
+    CQuantCoeff.x = CMax.x!=0.0f ? \textcolor{keywordtype}{float}((1<<nbc)-1)/CMax.x : 0.0f;         \(\backslash\)
+    CQuantCoeff.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} = CMax.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}!=0.0f ? \textcolor{keywordtype}{float}((1<<nbc)-1)/CMax.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} : 0.0f;          \(\backslash\)
+    CQuantCoeff.z = CMax.z!=0.0f ? \textcolor{keywordtype}{float}((1<<nbc)-1)/CMax.z : 0.0f;         \(\backslash\)
+    EQuantCoeff.x = EMax.x!=0.0f ? \textcolor{keywordtype}{float}((1<<nbe)-1)/EMax.x : 0.0f;         \(\backslash\)
+    EQuantCoeff.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} = EMax.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}!=0.0f ? \textcolor{keywordtype}{float}((1<<nbe)-1)/EMax.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} : 0.0f;          \(\backslash\)
+    EQuantCoeff.z = EMax.z!=0.0f ? \textcolor{keywordtype}{float}((1<<nbe)-1)/EMax.z : 0.0f;         \(\backslash\)
+    \textcolor{comment}{/* Compute and save dequantization coeffs */}                            \(\backslash\)
+    mCenterCoeff.x = CQuantCoeff.x!=0.0f ? 1.0f / CQuantCoeff.x : 0.0f;     \(\backslash\)
+    mCenterCoeff.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} = CQuantCoeff.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}!=0.0f ? 1.0f / CQuantCoeff.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} : 0.0f;      \(\backslash\)
+    mCenterCoeff.z = CQuantCoeff.z!=0.0f ? 1.0f / CQuantCoeff.z : 0.0f;     \(\backslash\)
+    mExtentsCoeff.x = EQuantCoeff.x!=0.0f ? 1.0f / EQuantCoeff.x : 0.0f;    \(\backslash\)
+    mExtentsCoeff.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} = EQuantCoeff.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y}!=0.0f ? 1.0f / EQuantCoeff.\hyperlink{IceUtils_8h_aa7ffaed69623192258fb8679569ff9ba}{y} : 0.0f; \(\backslash\)
+    mExtentsCoeff.z = EQuantCoeff.z!=0.0f ? 1.0f / EQuantCoeff.z : 0.0f;    \(\backslash\)
+\end{DoxyCode}
+\index{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp@{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}!R\+E\+M\+A\+P\+\_\+\+D\+A\+TA@{R\+E\+M\+A\+P\+\_\+\+D\+A\+TA}}
+\index{R\+E\+M\+A\+P\+\_\+\+D\+A\+TA@{R\+E\+M\+A\+P\+\_\+\+D\+A\+TA}!O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp@{O\+P\+C\+\_\+\+Optimized\+Tree.\+cpp}}
+\subsubsection[{\texorpdfstring{R\+E\+M\+A\+P\+\_\+\+D\+A\+TA}{REMAP_DATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+M\+A\+P\+\_\+\+D\+A\+TA(
+\begin{DoxyParamCaption}
+\item[{}]{member}
+\end{DoxyParamCaption}
+)}\hypertarget{OPC__OptimizedTree_8cpp_ae7a64eb88867b06840a343987c9af727}{}\label{OPC__OptimizedTree_8cpp_ae7a64eb88867b06840a343987c9af727}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{comment}{/* Fix data */}                                  \(\backslash\)
+    Data = Nodes[i].member;                             \(\backslash\)
+    if(!(Data&1))                                   \(\backslash\)
+    \{                                       \(\backslash\)
+        \textcolor{comment}{/* Compute box number */}                        \hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{\(\backslash\)}
+\hyperlink{IceTypes_8h_a44c6f1920ba5551225fb534f9d1a1733}{        udword} Nb = (Data - uintptr\_t(Nodes))/Nodes[i].GetNodeSize();   \(\backslash\)
+        Data = uintptr\_t(&mNodes[Nb]);                      \(\backslash\)
+    \}                                       \(\backslash\)
+    \textcolor{comment}{/* ...remapped */}                               \(\backslash\)
+    mNodes[i].member = Data;
+\end{DoxyCode}

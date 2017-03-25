@@ -1,0 +1,99 @@
+\hypertarget{classGFXSphereVertexList}{}\section{G\+F\+X\+Sphere\+Vertex\+List Class Reference}
+\label{classGFXSphereVertexList}\index{G\+F\+X\+Sphere\+Vertex\+List@{G\+F\+X\+Sphere\+Vertex\+List}}
+
+
+Inheritance diagram for G\+F\+X\+Sphere\+Vertex\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d9a/classGFXSphereVertexList__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+F\+X\+Sphere\+Vertex\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d46/classGFXSphereVertexList__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGFXSphereVertexList_a2aae4cdb061f80611bfa0c7570cc7f41}{G\+F\+X\+Sphere\+Vertex\+List} (float \hyperlink{classGFXSphereVertexList_af159c8d27cfd8958c62847c7b0a0ef72}{radius}, int detail, bool insideout, bool reverse\+\_\+normals)\hypertarget{classGFXSphereVertexList_a2aae4cdb061f80611bfa0c7570cc7f41}{}\label{classGFXSphereVertexList_a2aae4cdb061f80611bfa0c7570cc7f41}
+
+\begin{DoxyCompactList}\small\item\em creates a vertex list with 1 polytype and a given number of vertices \end{DoxyCompactList}\item 
+virtual \hyperlink{unionGFXVertexList_1_1VDAT}{V\+D\+AT} $\ast$ \hyperlink{classGFXSphereVertexList_a81443dc562b004991ca0b6c0c897248f}{Begin\+Mutate} (int offset)\hypertarget{classGFXSphereVertexList_a81443dc562b004991ca0b6c0c897248f}{}\label{classGFXSphereVertexList_a81443dc562b004991ca0b6c0c897248f}
+
+\begin{DoxyCompactList}\small\item\em Returns the array of vertices to be mutated. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classGFXSphereVertexList_a3533d6a1549db39bce69bb681c8baaff}{End\+Mutate} (int newsize=0)\hypertarget{classGFXSphereVertexList_a3533d6a1549db39bce69bb681c8baaff}{}\label{classGFXSphereVertexList_a3533d6a1549db39bce69bb681c8baaff}
+
+\begin{DoxyCompactList}\small\item\em Ends mutation and refreshes display list. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classGFXSphereVertexList_af80a8ac097f61c86aed76ee7b12968e4}{Begin\+Draw\+State} (G\+F\+X\+B\+O\+OL lock=G\+F\+X\+T\+R\+UE)
+\item 
+virtual void \hyperlink{classGFXSphereVertexList_a015ab21af69ce3201dbdfc2ff2285082}{Draw} ()\hypertarget{classGFXSphereVertexList_a015ab21af69ce3201dbdfc2ff2285082}{}\label{classGFXSphereVertexList_a015ab21af69ce3201dbdfc2ff2285082}
+
+\begin{DoxyCompactList}\small\item\em Draws a single copy of the mass-\/loaded vlist. \end{DoxyCompactList}\item 
+virtual void {\bfseries End\+Draw\+State} (G\+F\+X\+B\+O\+OL lock=G\+F\+X\+T\+R\+UE)\hypertarget{classGFXSphereVertexList_a51b4ea78f0d21958aa342b3a46dc7f30}{}\label{classGFXSphereVertexList_a51b4ea78f0d21958aa342b3a46dc7f30}
+
+\item 
+virtual void \hyperlink{classGFXSphereVertexList_a4088433d33f095b6a441a7c77c9f75e4}{Get\+Polys} (\hyperlink{structGFXVertex}{G\+F\+X\+Vertex} $\ast$$\ast$vert, int $\ast$num\+Polys, int $\ast$\hyperlink{classGFXVertexList_af0ca7d06410f649c6d1d506121c4f6da}{num\+Tris})\hypertarget{classGFXSphereVertexList_a4088433d33f095b6a441a7c77c9f75e4}{}\label{classGFXSphereVertexList_a4088433d33f095b6a441a7c77c9f75e4}
+
+\begin{DoxyCompactList}\small\item\em returns a packed vertex list with number of polys and number of tries to passed in arguments. Useful for getting vertex info from a mesh \end{DoxyCompactList}\item 
+virtual void \hyperlink{classGFXSphereVertexList_a76d93b953b1cc9fda46cb58a359e2cb0}{Procedural\+Modification} ()\hypertarget{classGFXSphereVertexList_a76d93b953b1cc9fda46cb58a359e2cb0}{}\label{classGFXSphereVertexList_a76d93b953b1cc9fda46cb58a359e2cb0}
+
+\begin{DoxyCompactList}\small\item\em generates procedural planetdata to the actual detaillevel with the \char`\"{}plasma method\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Draw} (enum P\+O\+L\+Y\+T\+Y\+PE $\ast$poly, const \hyperlink{unionGFXVertexList_1_1INDEX}{I\+N\+D\+EX} index, const int num\+Lists, const int $\ast$\hyperlink{classGFXVertexList_a0310e1bd4dbc7bfb1240b200368ce8c9}{offsets})\hypertarget{classGFXSphereVertexList_ae16a2d54788c580593414574a8e866d4}{}\label{classGFXSphereVertexList_ae16a2d54788c580593414574a8e866d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classGFXSphereVertexList_af159c8d27cfd8958c62847c7b0a0ef72}{radius}\hypertarget{classGFXSphereVertexList_af159c8d27cfd8958c62847c7b0a0ef72}{}\label{classGFXSphereVertexList_af159c8d27cfd8958c62847c7b0a0ef72}
+
+\begin{DoxyCompactList}\small\item\em Num vertices allocated. \end{DoxyCompactList}\item 
+\hyperlink{classGFXVertexList}{G\+F\+X\+Vertex\+List} $\ast$ {\bfseries sphere}\hypertarget{classGFXSphereVertexList_aa609a7a8457f38d299d6115d33c66c49}{}\label{classGFXSphereVertexList_aa609a7a8457f38d299d6115d33c66c49}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{G\+F\+X\+Sphere\+Vertex\+List@{G\+F\+X\+Sphere\+Vertex\+List}!Begin\+Draw\+State@{Begin\+Draw\+State}}
+\index{Begin\+Draw\+State@{Begin\+Draw\+State}!G\+F\+X\+Sphere\+Vertex\+List@{G\+F\+X\+Sphere\+Vertex\+List}}
+\subsubsection[{\texorpdfstring{Begin\+Draw\+State(\+G\+F\+X\+B\+O\+O\+L lock=\+G\+F\+X\+T\+R\+U\+E)}{BeginDrawState(GFXBOOL lock=GFXTRUE)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+F\+X\+Sphere\+Vertex\+List\+::\+Begin\+Draw\+State (
+\begin{DoxyParamCaption}
+\item[{G\+F\+X\+B\+O\+OL}]{lock = {\ttfamily GFXTRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classGFXSphereVertexList_af80a8ac097f61c86aed76ee7b12968e4}{}\label{classGFXSphereVertexList_af80a8ac097f61c86aed76ee7b12968e4}
+Loads the draw state (what is active) of a given vlist for mass drawing Specifies array pointers and loads the draw state of a given vlist for mass drawing 
+
+Reimplemented from \hyperlink{classGFXVertexList_adf3bac4d8b6c7c2941d046007a0bdaf5}{G\+F\+X\+Vertex\+List}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d56/classGFXSphereVertexList_af80a8ac097f61c86aed76ee7b12968e4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfxlib\+\_\+struct.\+h\item 
+gfxlib\+\_\+struct.\+cpp\item 
+gfxlib\+\_\+struct\+\_\+server.\+cpp\item 
+gldrv/gl\+\_\+sphere\+\_\+list.\+cpp\item 
+gldrv/gl\+\_\+sphere\+\_\+list\+\_\+server.\+cpp\end{DoxyCompactItemize}

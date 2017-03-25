@@ -1,0 +1,67 @@
+\hypertarget{classSphereMesh}{}\section{Sphere\+Mesh Class Reference}
+\label{classSphereMesh}\index{Sphere\+Mesh@{Sphere\+Mesh}}
+
+
+Inheritance diagram for Sphere\+Mesh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d6/d0e/classSphereMesh__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sphere\+Mesh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d7a/classSphereMesh__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int {\bfseries Mesh\+Type} () const \hypertarget{classSphereMesh_a72257849456a09227173357379c35a7f}{}\label{classSphereMesh_a72257849456a09227173357379c35a7f}
+
+\item 
+virtual void \hyperlink{classSphereMesh_ac2189ac6e54ba796fb7072b490dd4184}{Select\+Cull\+Face} (int whichdrawqueue)\hypertarget{classSphereMesh_ac2189ac6e54ba796fb7072b490dd4184}{}\label{classSphereMesh_ac2189ac6e54ba796fb7072b490dd4184}
+
+\begin{DoxyCompactList}\small\item\em Will draw all undrawn far meshes beyond the range of zbuffer (better be convex). \end{DoxyCompactList}\item 
+virtual void {\bfseries Restore\+Cull\+Face} (int whichdrawqueue)\hypertarget{classSphereMesh_abe5eeaeea76f30c8adbbd5d38fece2da}{}\label{classSphereMesh_abe5eeaeea76f30c8adbbd5d38fece2da}
+
+\item 
+{\bfseries Sphere\+Mesh} (float radius, int stacks, int slices, const char $\ast$texture, const std\+::string \&\hyperlink{classMesh_a987e568f336befda6be200200a92509b}{technique}, const char $\ast$alpha=N\+U\+LL, bool insideout=false, const B\+L\+E\+N\+D\+F\+U\+NC a=O\+NE, const B\+L\+E\+N\+D\+F\+U\+NC b=Z\+E\+RO, bool env\+Map=false, float rho\+\_\+min=0.\+0, float rho\+\_\+max=M\+\_\+\+PI, float theta\+\_\+min=0.\+0, float theta\+\_\+max=2 $\ast$M\+\_\+\+PI, F\+I\+L\+T\+ER mipmap=M\+I\+P\+M\+AP, bool reverse\+\_\+normals=false)\hypertarget{classSphereMesh_a9fa23394c46f52d8be0298ee242736d9}{}\label{classSphereMesh_a9fa23394c46f52d8be0298ee242736d9}
+
+\item 
+void {\bfseries Draw} (float lod, bool centered=false, const \hyperlink{classMatrix}{Matrix} \&m=identity\+\_\+matrix)\hypertarget{classSphereMesh_a9960fdc54be0bdf7ce37520c1cf1c455}{}\label{classSphereMesh_a9960fdc54be0bdf7ce37520c1cf1c455}
+
+\item 
+virtual void {\bfseries Process\+Draw\+Queue} (int whichpass, int which, bool zsort, const Q\+Vector \&sortctr)\hypertarget{classSphereMesh_a2c6ac83f7f95a3e8bc76ac674414e734}{}\label{classSphereMesh_a2c6ac83f7f95a3e8bc76ac674414e734}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float {\bfseries GetT} (float rho, float rho\+\_\+min, float rho\+\_\+max) const \hypertarget{classSphereMesh_a549cbb450adc009a75ab07bb319db5a8}{}\label{classSphereMesh_a549cbb450adc009a75ab07bb319db5a8}
+
+\item 
+virtual float {\bfseries GetS} (float theta, float theta\+\_\+min, float theta\+\_\+max) const \hypertarget{classSphereMesh_a19933aed6fe874239770fc0f5239dc47}{}\label{classSphereMesh_a19933aed6fe874239770fc0f5239dc47}
+
+\item 
+virtual \hyperlink{classMesh}{Mesh} $\ast$ {\bfseries Alloc\+New\+Meshes\+Each\+In\+Sizeof\+Mesh\+Space} (int num)\hypertarget{classSphereMesh_a289429ca0178303d94a0984fdae4d1f1}{}\label{classSphereMesh_a289429ca0178303d94a0984fdae4d1f1}
+
+\item 
+void {\bfseries Init\+Sphere} (float radius, int stacks, int slices, const char $\ast$texture, const std\+::string \&\hyperlink{classMesh_a987e568f336befda6be200200a92509b}{technique}, const char $\ast$alpha=N\+U\+LL, bool insideout=false, const B\+L\+E\+N\+D\+F\+U\+NC a=O\+NE, const B\+L\+E\+N\+D\+F\+U\+NC b=Z\+E\+RO, bool env\+Map=false, float rho\+\_\+min=0.\+0, float rho\+\_\+max=M\+\_\+\+PI, float theta\+\_\+min=0.\+0, float theta\+\_\+max=2 $\ast$M\+\_\+\+PI, F\+I\+L\+T\+ER mipmap=M\+I\+P\+M\+AP, bool reverse\+\_\+normals=false, bool subclass=false)\hypertarget{classSphereMesh_a7047857961815d3a931b23aaf335147e}{}\label{classSphereMesh_a7047857961815d3a931b23aaf335147e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gfx/sphere.\+h\item 
+gfx/sphere.\+cpp\item 
+gfx/sphere\+\_\+generic.\+cpp\item 
+gfx/sphere\+\_\+server.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{classContinuousTerrain}{}\section{Continuous\+Terrain Class Reference}
+\label{classContinuousTerrain}\index{Continuous\+Terrain@{Continuous\+Terrain}}
+
+
+Collaboration diagram for Continuous\+Terrain\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{d6/d7e/classContinuousTerrain__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Continuous\+Terrain} (const char $\ast$filename\+UL, const Vector \&Scales=Vector(0, 0, 0), const float mass=0)\hypertarget{classContinuousTerrain_a6b7b5e03f7833802ce6a00d19c1661be}{}\label{classContinuousTerrain_a6b7b5e03f7833802ce6a00d19c1661be}
+
+\item 
+void {\bfseries Set\+Transformation} (const \hyperlink{classMatrix}{Matrix} \&transformation)\hypertarget{classContinuousTerrain_a91910ffa8cb76ac130827ba49394f4fe}{}\label{classContinuousTerrain_a91910ffa8cb76ac130827ba49394f4fe}
+
+\item 
+void \hyperlink{classContinuousTerrain_a62d328b085bbc744966ebed9ea18c599}{Adjust\+Terrain} (\hyperlink{classStarSystem}{Star\+System} $\ast$)
+\item 
+void {\bfseries Adjust\+Terrain} (\hyperlink{classMatrix}{Matrix} \&transform, const \hyperlink{classMatrix}{Matrix} \&transformation, const Q\+Vector \&unitpos, int i)\hypertarget{classContinuousTerrain_ac87094d827b107b62b6a9de548c1c204}{}\label{classContinuousTerrain_ac87094d827b107b62b6a9de548c1c204}
+
+\item 
+void {\bfseries Disable\+Draw} ()\hypertarget{classContinuousTerrain_a6da3eb8f52b4b8b67c2ab653433f5298}{}\label{classContinuousTerrain_a6da3eb8f52b4b8b67c2ab653433f5298}
+
+\item 
+void {\bfseries Enable\+Draw} ()\hypertarget{classContinuousTerrain_a121ce24866e76cb80585ba2dbd8722e8}{}\label{classContinuousTerrain_a121ce24866e76cb80585ba2dbd8722e8}
+
+\item 
+void {\bfseries Disable\+Update} ()\hypertarget{classContinuousTerrain_a77d0a5f6211c6899be06c3dd1103d1b8}{}\label{classContinuousTerrain_a77d0a5f6211c6899be06c3dd1103d1b8}
+
+\item 
+void {\bfseries Enable\+Update} ()\hypertarget{classContinuousTerrain_afa4e086c0c5d75c14d034887d774843e}{}\label{classContinuousTerrain_afa4e086c0c5d75c14d034887d774843e}
+
+\item 
+void {\bfseries Draw} ()\hypertarget{classContinuousTerrain_a13b90d3ec94ea0fd20b543a72db7a5f8}{}\label{classContinuousTerrain_a13b90d3ec94ea0fd20b543a72db7a5f8}
+
+\item 
+Q\+Vector {\bfseries Get\+Ground\+Pos\+Ident\+Trans} (Q\+Vector Ship\+Pos, Vector \&norm)\hypertarget{classContinuousTerrain_ad2fe5d33086b4417a65d00f422835a99}{}\label{classContinuousTerrain_ad2fe5d33086b4417a65d00f422835a99}
+
+\item 
+Q\+Vector {\bfseries Get\+Ground\+Pos} (Q\+Vector Ship\+Pos, Vector \&norm)\hypertarget{classContinuousTerrain_abcde9fe0731878dd87f372c947c11194}{}\label{classContinuousTerrain_abcde9fe0731878dd87f372c947c11194}
+
+\item 
+Vector {\bfseries Get\+Up\+Vector} (const Vector \&pos)\hypertarget{classContinuousTerrain_a695fe5803a9248a3cb15614239980959}{}\label{classContinuousTerrain_a695fe5803a9248a3cb15614239980959}
+
+\item 
+void {\bfseries Collide} (\hyperlink{classUnit}{Unit} $\ast$un, \hyperlink{classMatrix}{Matrix} trans)\hypertarget{classContinuousTerrain_afadffede286522c6de77bb229fd96ce7}{}\label{classContinuousTerrain_afadffede286522c6de77bb229fd96ce7}
+
+\item 
+void {\bfseries Collide} (\hyperlink{classUnit}{Unit} $\ast$un)\hypertarget{classContinuousTerrain_af8048ea5ebdef9d2a3801cfffe698aec}{}\label{classContinuousTerrain_af8048ea5ebdef9d2a3801cfffe698aec}
+
+\item 
+void {\bfseries Collide} ()\hypertarget{classContinuousTerrain_ae8dc78399fe4c2ab10d38595439b453f}{}\label{classContinuousTerrain_ae8dc78399fe4c2ab10d38595439b453f}
+
+\item 
+void {\bfseries Get\+Total\+Size} (float \&X, float \&Z)\hypertarget{classContinuousTerrain_a5def9441bdce138a24a7137eb7e07ca4}{}\label{classContinuousTerrain_a5def9441bdce138a24a7137eb7e07ca4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Continuous\+Terrain@{Continuous\+Terrain}!Adjust\+Terrain@{Adjust\+Terrain}}
+\index{Adjust\+Terrain@{Adjust\+Terrain}!Continuous\+Terrain@{Continuous\+Terrain}}
+\subsubsection[{\texorpdfstring{Adjust\+Terrain(\+Star\+System $\ast$)}{AdjustTerrain(StarSystem *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Continuous\+Terrain\+::\+Adjust\+Terrain (
+\begin{DoxyParamCaption}
+\item[{{\bf Star\+System} $\ast$}]{ss}
+\end{DoxyParamCaption}
+)}\hypertarget{classContinuousTerrain_a62d328b085bbc744966ebed9ea18c599}{}\label{classContinuousTerrain_a62d328b085bbc744966ebed9ea18c599}
+Centers terrain around camera 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{dd/d00/classContinuousTerrain_a62d328b085bbc744966ebed9ea18c599_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/cont\+\_\+terrain.\+h\item 
+cmd/cont\+\_\+terrain.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\hypertarget{classFont}{}\section{Font Class Reference}
+\label{classFont}\index{Font@{Font}}
+
+
+Collaboration diagram for Font\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{d2/d28/classFont__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries size} (void) const \hypertarget{classFont_aa1f92bd535e70a3ddec63b1562f13f20}{}\label{classFont_aa1f92bd535e70a3ddec63b1562f13f20}
+
+\item 
+void {\bfseries set\+Size} (float s)\hypertarget{classFont_a9b71d856ceaa3b2ad2b499168d8e46eb}{}\label{classFont_a9b71d856ceaa3b2ad2b499168d8e46eb}
+
+\item 
+float {\bfseries stroke\+Weight} (void) const \hypertarget{classFont_ada7ce5b68054ffec0b73a139dd1aea4b}{}\label{classFont_ada7ce5b68054ffec0b73a139dd1aea4b}
+
+\item 
+void {\bfseries set\+Stroke\+Weight} (float w)\hypertarget{classFont_a6ae112827c60ca12c975373ae65a040b}{}\label{classFont_a6ae112827c60ca12c975373ae65a040b}
+
+\item 
+float {\bfseries draw\+Char} (char c) const \hypertarget{classFont_a50f43bb75d949fc657020cf43676964c}{}\label{classFont_a50f43bb75d949fc657020cf43676964c}
+
+\item 
+double {\bfseries char\+Width} (char c) const \hypertarget{classFont_ab44f83c7831e439c2f3908141d01769d}{}\label{classFont_ab44f83c7831e439c2f3908141d01769d}
+
+\item 
+double {\bfseries string\+Width} (const std\+::string \&str) const \hypertarget{classFont_afee9cd456595ba05ad116f02ae2fb75b}{}\label{classFont_afee9cd456595ba05ad116f02ae2fb75b}
+
+\item 
+double {\bfseries vertical\+Scaling} (void) const \hypertarget{classFont_a914a935eeb540581c1568e88687854e6}{}\label{classFont_a914a935eeb540581c1568e88687854e6}
+
+\item 
+double {\bfseries horizontal\+Scaling} (void) const \hypertarget{classFont_ab6f63e8febfd6f8ab470ad0b5b677bd2}{}\label{classFont_ab6f63e8febfd6f8ab470ad0b5b677bd2}
+
+\item 
+{\bfseries Font} (float newsize=.\+1, float weight=N\+O\+R\+M\+A\+L\+\_\+\+S\+T\+R\+O\+KE)\hypertarget{classFont_a92929701abd36716e5e33fbde41f4c10}{}\label{classFont_a92929701abd36716e5e33fbde41f4c10}
+
+\item 
+double {\bfseries stroke\+Width} (void) const \hypertarget{classFont_a1fc0aff1181216101f3fba9cd182132e}{}\label{classFont_a1fc0aff1181216101f3fba9cd182132e}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{classFont}{Font} \&other)\hypertarget{classFont_af3d7892204120c7f7363fa94e44c0fcb}{}\label{classFont_af3d7892204120c7f7363fa94e44c0fcb}
+
+\item 
+bool {\bfseries operator!=} (const \hyperlink{classFont}{Font} \&other)\hypertarget{classFont_a90b10c4891689a1fe14fd645be2bc5e0}{}\label{classFont_a90b10c4891689a1fe14fd645be2bc5e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries calc\+Metrics} (void)\hypertarget{classFont_a00798e79cc476774b00f6b541ed2c8c2}{}\label{classFont_a00798e79cc476774b00f6b541ed2c8c2}
+
+\item 
+void {\bfseries calc\+Metrics\+If\+Needed} (void) const \hypertarget{classFont_ad88cb3405a0aa457f583fab7ea359503}{}\label{classFont_ad88cb3405a0aa457f583fab7ea359503}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries m\+\_\+size}\hypertarget{classFont_ae486ccbfea0edbb501f6a6bced528e5f}{}\label{classFont_ae486ccbfea0edbb501f6a6bced528e5f}
+
+\item 
+float {\bfseries m\+\_\+stroke\+Weight}\hypertarget{classFont_a3fa8629d3db1db583920bee2c070b324}{}\label{classFont_a3fa8629d3db1db583920bee2c070b324}
+
+\item 
+bool {\bfseries m\+\_\+need\+Metrics}\hypertarget{classFont_a8a5cee982178a3fbaea1df6cd11fbb1d}{}\label{classFont_a8a5cee982178a3fbaea1df6cd11fbb1d}
+
+\item 
+double {\bfseries m\+\_\+stroke\+Width}\hypertarget{classFont_a2cf1d258de7089376b109ae766f944dd}{}\label{classFont_a2cf1d258de7089376b109ae766f944dd}
+
+\item 
+double {\bfseries m\+\_\+extra\+Char\+Width}\hypertarget{classFont_a466abcbe811cd531491b68c349a2ba94}{}\label{classFont_a466abcbe811cd531491b68c349a2ba94}
+
+\item 
+double {\bfseries m\+\_\+space\+Char\+Fixup}\hypertarget{classFont_a1aa27d37be126f5db9a8e5c7e3411a90}{}\label{classFont_a1aa27d37be126f5db9a8e5c7e3411a90}
+
+\item 
+double {\bfseries m\+\_\+vertical\+Scaling}\hypertarget{classFont_a8321146126cfa5a1f81c3c424bfb7874}{}\label{classFont_a8321146126cfa5a1f81c3c424bfb7874}
+
+\item 
+double {\bfseries m\+\_\+horizontal\+Scaling}\hypertarget{classFont_a422ec7bc502b57586b0a91e2b4a9e9c5}{}\label{classFont_a422ec7bc502b57586b0a91e2b4a9e9c5}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/font.\+h\item 
+gui/font.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,317 @@
+\hypertarget{classOpcode_1_1LSSCollider}{}\section{Opcode\+:\+:L\+S\+S\+Collider Class Reference}
+\label{classOpcode_1_1LSSCollider}\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+
+
+Inheritance diagram for Opcode\+:\+:L\+S\+S\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d1/dcd/classOpcode_1_1LSSCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Opcode\+:\+:L\+S\+S\+Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/d46/classOpcode_1_1LSSCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1LSSCollider_a4d249606834d6c0ad1ffb3e350b6fcc8}{L\+S\+S\+Collider} ()
+\item 
+virtual \hyperlink{classOpcode_1_1LSSCollider_a51b4c522fb19188b11858d884aec2c55}{$\sim$\+L\+S\+S\+Collider} ()
+\item 
+bool \hyperlink{classOpcode_1_1LSSCollider_a4c4ff9f48a8b7b2b01b71beea04ee261}{Collide} (\hyperlink{structOpcode_1_1LSSCache}{L\+S\+S\+Cache} \&cache, const \hyperlink{classOpcode_1_1LSS}{L\+SS} \&lss, const \hyperlink{classOpcode_1_1Model}{Model} \&model, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldl=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\item 
+bool \hyperlink{classOpcode_1_1LSSCollider_a3e68e9b2ecdbed62116fec0b3ec8d4cd}{Collide} (\hyperlink{structOpcode_1_1LSSCache}{L\+S\+S\+Cache} \&cache, const \hyperlink{classOpcode_1_1LSS}{L\+SS} \&lss, const \hyperlink{classOpcode_1_1AABBTree}{A\+A\+B\+B\+Tree} $\ast$tree)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classOpcode_1_1LSSCollider_a74b9eb6e39c8b4859acf2d3ca081c0d4}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1LSSCollider_a9792bff52aa3bf2649985effc4d9ad70}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1LSSCollider_ad825f62a1d2526c2e99a2af5914fa0a8}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1LSSCollider_abf5c28e72380d3c823f3dbbb235bd14d}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1LSSCollider_a9f2c81b73391ff1cc32c0ee4c4bc7aca}{\+\_\+\+Collide} (const \hyperlink{classOpcode_1_1AABBTreeNode}{A\+A\+B\+B\+Tree\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1LSSCollider_a1bf5401f4728c864a6b147d72b29dcc7}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBCollisionNode}{A\+A\+B\+B\+Collision\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1LSSCollider_ab262f0ff938684510baddd1974867e90}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBNoLeafNode}{A\+A\+B\+B\+No\+Leaf\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1LSSCollider_a8bb347360fc20fe78652713c039da096}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBQuantizedNode}{A\+A\+B\+B\+Quantized\+Node} $\ast$node)
+\item 
+void \hyperlink{classOpcode_1_1LSSCollider_a056188eaa9ebd253545261b848c85178}{\+\_\+\+Collide\+No\+Primitive\+Test} (const \hyperlink{classOpcode_1_1AABBQuantizedNoLeafNode}{A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$node)
+\item 
+inline\+\_\+ bool \hyperlink{classOpcode_1_1LSSCollider_aa94af15eb2e56b0ab8c9bfdcfb3f8a8f}{L\+S\+S\+Contains\+Box} (const \hyperlink{classOpcode_1_1Point}{Point} \&bc, const \hyperlink{classOpcode_1_1Point}{Point} \&be)
+\item 
+inline\+\_\+ bool {\bfseries L\+S\+S\+A\+A\+B\+B\+Overlap} (const \hyperlink{classOpcode_1_1Point}{Point} \&center, const \hyperlink{classOpcode_1_1Point}{Point} \&extents)\hypertarget{classOpcode_1_1LSSCollider_a6b241d8f90a8d62be0e4dfaeaaf3663e}{}\label{classOpcode_1_1LSSCollider_a6b241d8f90a8d62be0e4dfaeaaf3663e}
+
+\item 
+inline\+\_\+ bool {\bfseries L\+S\+S\+Tri\+Overlap} (const \hyperlink{classOpcode_1_1Point}{Point} \&vert0, const \hyperlink{classOpcode_1_1Point}{Point} \&vert1, const \hyperlink{classOpcode_1_1Point}{Point} \&vert2)\hypertarget{classOpcode_1_1LSSCollider_a30a79d8f1f7ed8e4636a0435d44c5183}{}\label{classOpcode_1_1LSSCollider_a30a79d8f1f7ed8e4636a0435d44c5183}
+
+\item 
+bool \hyperlink{classOpcode_1_1LSSCollider_ae4fbd3111a8d0b680b8c6a3cfa0e4884}{Init\+Query} (\hyperlink{structOpcode_1_1LSSCache}{L\+S\+S\+Cache} \&cache, const \hyperlink{classOpcode_1_1LSS}{L\+SS} \&lss, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldl=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}, const \hyperlink{classOpcode_1_1Matrix4x4}{Matrix4x4} $\ast$worldm=\hyperlink{IceTypes_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOpcode_1_1Segment}{Segment} \hyperlink{classOpcode_1_1LSSCollider_ae3d52d77955e3a0a811b1d46c941b254}{m\+Seg}\hypertarget{classOpcode_1_1LSSCollider_ae3d52d77955e3a0a811b1d46c941b254}{}\label{classOpcode_1_1LSSCollider_ae3d52d77955e3a0a811b1d46c941b254}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1Segment}{Segment}. \end{DoxyCompactList}\item 
+float \hyperlink{classOpcode_1_1LSSCollider_a5536bbc8db3b11dbcb3bc5b44ba9249a}{m\+Radius2}\hypertarget{classOpcode_1_1LSSCollider_a5536bbc8db3b11dbcb3bc5b44ba9249a}{}\label{classOpcode_1_1LSSCollider_a5536bbc8db3b11dbcb3bc5b44ba9249a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classOpcode_1_1LSS}{L\+SS} radius squared. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!L\+S\+S\+Collider@{L\+S\+S\+Collider}}
+\index{L\+S\+S\+Collider@{L\+S\+S\+Collider}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{L\+S\+S\+Collider()}{LSSCollider()}}]{\setlength{\rightskip}{0pt plus 5cm}L\+S\+S\+Collider\+::\+L\+S\+S\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1LSSCollider_a4d249606834d6c0ad1ffb3e350b6fcc8}{}\label{classOpcode_1_1LSSCollider_a4d249606834d6c0ad1ffb3e350b6fcc8}
+Constructor. \index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!````~L\+S\+S\+Collider@{$\sim$\+L\+S\+S\+Collider}}
+\index{````~L\+S\+S\+Collider@{$\sim$\+L\+S\+S\+Collider}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{$\sim$\+L\+S\+S\+Collider()}{~LSSCollider()}}]{\setlength{\rightskip}{0pt plus 5cm}L\+S\+S\+Collider\+::$\sim$\+L\+S\+S\+Collider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classOpcode_1_1LSSCollider_a51b4c522fb19188b11858d884aec2c55}{}\label{classOpcode_1_1LSSCollider_a51b4c522fb19188b11858d884aec2c55}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Collision\+Node $\ast$node)}{_Collide(const AABBCollisionNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_a74b9eb6e39c8b4859acf2d3ca081c0d4}{}\label{classOpcode_1_1LSSCollider_a74b9eb6e39c8b4859acf2d3ca081c0d4}
+Recursive collision query for normal \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+No\+Leaf\+Node $\ast$node)}{_Collide(const AABBNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_a9792bff52aa3bf2649985effc4d9ad70}{}\label{classOpcode_1_1LSSCollider_a9792bff52aa3bf2649985effc4d9ad70}
+Recursive collision query for no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Quantized\+Node $\ast$node)}{_Collide(const AABBQuantizedNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_ad825f62a1d2526c2e99a2af5914fa0a8}{}\label{classOpcode_1_1LSSCollider_ad825f62a1d2526c2e99a2af5914fa0a8}
+Recursive collision query for quantized \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Quantized\+No\+Leaf\+Node $\ast$node)}{_Collide(const AABBQuantizedNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_abf5c28e72380d3c823f3dbbb235bd14d}{}\label{classOpcode_1_1LSSCollider_abf5c28e72380d3c823f3dbbb235bd14d}
+Recursive collision query for quantized no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!\+\_\+\+Collide@{\+\_\+\+Collide}}
+\index{\+\_\+\+Collide@{\+\_\+\+Collide}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide(const A\+A\+B\+B\+Tree\+Node $\ast$node)}{_Collide(const AABBTreeNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+Collider\+::\+\_\+\+Collide (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Tree\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_a9f2c81b73391ff1cc32c0ee4c4bc7aca}{}\label{classOpcode_1_1LSSCollider_a9f2c81b73391ff1cc32c0ee4c4bc7aca}
+Recursive collision query for vanilla \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+Collision\+Node $\ast$node)}{_CollideNoPrimitiveTest(const AABBCollisionNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Collision\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_a1bf5401f4728c864a6b147d72b29dcc7}{}\label{classOpcode_1_1LSSCollider_a1bf5401f4728c864a6b147d72b29dcc7}
+Recursive collision query for normal \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+No\+Leaf\+Node $\ast$node)}{_CollideNoPrimitiveTest(const AABBNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_ab262f0ff938684510baddd1974867e90}{}\label{classOpcode_1_1LSSCollider_ab262f0ff938684510baddd1974867e90}
+Recursive collision query for no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+Quantized\+Node $\ast$node)}{_CollideNoPrimitiveTest(const AABBQuantizedNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_a8bb347360fc20fe78652713c039da096}{}\label{classOpcode_1_1LSSCollider_a8bb347360fc20fe78652713c039da096}
+Recursive collision query for quantized \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}}
+\index{\+\_\+\+Collide\+No\+Primitive\+Test@{\+\_\+\+Collide\+No\+Primitive\+Test}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Collide\+No\+Primitive\+Test(const A\+A\+B\+B\+Quantized\+No\+Leaf\+Node $\ast$node)}{_CollideNoPrimitiveTest(const AABBQuantizedNoLeafNode *node)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+S\+Collider\+::\+\_\+\+Collide\+No\+Primitive\+Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+A\+B\+B\+Quantized\+No\+Leaf\+Node} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_a056188eaa9ebd253545261b848c85178}{}\label{classOpcode_1_1LSSCollider_a056188eaa9ebd253545261b848c85178}
+Recursive collision query for quantized no-\/leaf \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees, without primitive tests. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \mbox{[}in\mbox{]} current collision node \\
+\hline
+\end{DoxyParams}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(\+L\+S\+S\+Cache \&cache, const L\+S\+S \&lss, const Model \&model, const Matrix4x4 $\ast$worldl=null, const Matrix4x4 $\ast$worldm=null)}{Collide(LSSCache &cache, const LSS &lss, const Model &model, const Matrix4x4 *worldl=null, const Matrix4x4 *worldm=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool L\+S\+S\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+S\+S\+Cache} \&}]{cache, }
+\item[{const {\bf L\+SS} \&}]{lss, }
+\item[{const {\bf Model} \&}]{model, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldl = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1LSSCollider_a4c4ff9f48a8b7b2b01b71beea04ee261}{}\label{classOpcode_1_1LSSCollider_a4c4ff9f48a8b7b2b01b71beea04ee261}
+Generic collision query for generic O\+P\+C\+O\+DE models. After the call, access the results\+:
+\begin{DoxyItemize}
+\item with \hyperlink{classOpcode_1_1Collider_a7d8c3e6a85be417ac7505930f14f141c}{Get\+Contact\+Status()}
+\item with \hyperlink{classOpcode_1_1VolumeCollider_ab4ab03fdecae438e89ef98433b7fc6c1}{Get\+Nb\+Touched\+Primitives()}
+\item with \hyperlink{classOpcode_1_1VolumeCollider_ac85a0c717bc3d3424af31becc7abbebd}{Get\+Touched\+Primitives()}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} an lss cache \\
+\hline
+{\em lss} & \mbox{[}in\mbox{]} collision lss in local space \\
+\hline
+{\em model} & \mbox{[}in\mbox{]} Opcode model to collide with \\
+\hline
+{\em worldl} & \mbox{[}in\mbox{]} lss world matrix, or null \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!Collide@{Collide}}
+\index{Collide@{Collide}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{Collide(\+L\+S\+S\+Cache \&cache, const L\+S\+S \&lss, const A\+A\+B\+B\+Tree $\ast$tree)}{Collide(LSSCache &cache, const LSS &lss, const AABBTree *tree)}}]{\setlength{\rightskip}{0pt plus 5cm}bool L\+S\+S\+Collider\+::\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+S\+S\+Cache} \&}]{cache, }
+\item[{const {\bf L\+SS} \&}]{lss, }
+\item[{const {\bf A\+A\+B\+B\+Tree} $\ast$}]{tree}
+\end{DoxyParamCaption}
+)}\hypertarget{classOpcode_1_1LSSCollider_a3e68e9b2ecdbed62116fec0b3ec8d4cd}{}\label{classOpcode_1_1LSSCollider_a3e68e9b2ecdbed62116fec0b3ec8d4cd}
+Collision query for vanilla \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} trees. 
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} an lss cache \\
+\hline
+{\em lss} & \mbox{[}in\mbox{]} collision lss in world space \\
+\hline
+{\em tree} & \mbox{[}in\mbox{]} \hyperlink{classOpcode_1_1AABB}{A\+A\+BB} tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success 
+\end{DoxyReturn}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!Init\+Query@{Init\+Query}}
+\index{Init\+Query@{Init\+Query}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{Init\+Query(\+L\+S\+S\+Cache \&cache, const L\+S\+S \&lss, const Matrix4x4 $\ast$worldl=null, const Matrix4x4 $\ast$worldm=null)}{InitQuery(LSSCache &cache, const LSS &lss, const Matrix4x4 *worldl=null, const Matrix4x4 *worldm=null)}}]{\setlength{\rightskip}{0pt plus 5cm}bool L\+S\+S\+Collider\+::\+Init\+Query (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+S\+S\+Cache} \&}]{cache, }
+\item[{const {\bf L\+SS} \&}]{lss, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldl = {\ttfamily {\bf null}}, }
+\item[{const {\bf Matrix4x4} $\ast$}]{worldm = {\ttfamily {\bf null}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_ae4fbd3111a8d0b680b8c6a3cfa0e4884}{}\label{classOpcode_1_1LSSCollider_ae4fbd3111a8d0b680b8c6a3cfa0e4884}
+Initializes a collision query \+:
+\begin{DoxyItemize}
+\item reset stats \& contact status
+\item setup matrices
+\item check temporal coherence
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & \mbox{[}in/out\mbox{]} an lss cache \\
+\hline
+{\em lss} & \mbox{[}in\mbox{]} lss in local space \\
+\hline
+{\em worldl} & \mbox{[}in\mbox{]} lss world matrix, or null \\
+\hline
+{\em worldm} & \mbox{[}in\mbox{]} model\textquotesingle{}s world matrix, or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if we can return immediately 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+S\+C\+A\+LE N\+OT S\+U\+P\+P\+O\+R\+T\+ED. The matrices must contain rotation \& translation parts only. 
+\end{DoxyWarning}
+\index{Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}!L\+S\+S\+Contains\+Box@{L\+S\+S\+Contains\+Box}}
+\index{L\+S\+S\+Contains\+Box@{L\+S\+S\+Contains\+Box}!Opcode\+::\+L\+S\+S\+Collider@{Opcode\+::\+L\+S\+S\+Collider}}
+\subsubsection[{\texorpdfstring{L\+S\+S\+Contains\+Box(const Point \&bc, const Point \&be)}{LSSContainsBox(const Point &bc, const Point &be)}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+\_\+ bool L\+S\+S\+Collider\+::\+L\+S\+S\+Contains\+Box (
+\begin{DoxyParamCaption}
+\item[{const {\bf Point} \&}]{bc, }
+\item[{const {\bf Point} \&}]{be}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classOpcode_1_1LSSCollider_aa94af15eb2e56b0ab8c9bfdcfb3f8a8f}{}\label{classOpcode_1_1LSSCollider_aa94af15eb2e56b0ab8c9bfdcfb3f8a8f}
+Checks the \hyperlink{classOpcode_1_1LSS}{L\+SS} completely contains the box. In which case we can end the query sooner. 
+\begin{DoxyParams}{Parameters}
+{\em bc} & \mbox{[}in\mbox{]} box center \\
+\hline
+{\em be} & \mbox{[}in\mbox{]} box extents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \hyperlink{classOpcode_1_1LSS}{L\+SS} contains the whole box 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cmd/collide2/\hyperlink{Opcode_8h}{Opcode.\+h}\item 
+cmd/collide2/\hyperlink{OPC__LSSCollider_8cpp}{O\+P\+C\+\_\+\+L\+S\+S\+Collider.\+cpp}\end{DoxyCompactItemize}

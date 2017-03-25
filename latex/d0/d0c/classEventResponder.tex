@@ -1,0 +1,73 @@
+\hypertarget{classEventResponder}{}\section{Event\+Responder Class Reference}
+\label{classEventResponder}\index{Event\+Responder@{Event\+Responder}}
+
+
+Inheritance diagram for Event\+Responder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d59/classEventResponder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Event\+Responder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d1/d5e/classEventResponder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool {\bfseries process\+Command} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classEventResponder_aac5500c8e381375cbf714e926c77230b}{}\label{classEventResponder_aac5500c8e381375cbf714e926c77230b}
+
+\item 
+virtual bool {\bfseries process\+Key\+Down} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classEventResponder_a5dc846dde6aeb6e6bc261cf92a9341d2}{}\label{classEventResponder_a5dc846dde6aeb6e6bc261cf92a9341d2}
+
+\item 
+virtual bool {\bfseries process\+Key\+Up} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classEventResponder_a0ca7cdc9476b0814c2b5726c8806fe74}{}\label{classEventResponder_a0ca7cdc9476b0814c2b5726c8806fe74}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Down} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classEventResponder_a689e9eb7b3f075dfd19ba663fec0451d}{}\label{classEventResponder_a689e9eb7b3f075dfd19ba663fec0451d}
+
+\item 
+virtual void {\bfseries process\+Unfocus} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classEventResponder_ab434ad26278f99a7002e8ace5cae3412}{}\label{classEventResponder_ab434ad26278f99a7002e8ace5cae3412}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Up} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classEventResponder_ad616e1b2a5ba8f082bf750e3b10b8bcc}{}\label{classEventResponder_ad616e1b2a5ba8f082bf750e3b10b8bcc}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Move} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classEventResponder_a032ba2f0a13002708662b73fad412ec7}{}\label{classEventResponder_a032ba2f0a13002708662b73fad412ec7}
+
+\item 
+virtual bool {\bfseries process\+Mouse\+Drag} (const \hyperlink{structInputEvent}{Input\+Event} \&event)\hypertarget{classEventResponder_a2e23a9cc196342c3db715aace31c11d7}{}\label{classEventResponder_a2e23a9cc196342c3db715aace31c11d7}
+
+\item 
+virtual void {\bfseries send\+Command} (const Event\+Command\+Id \&command, \hyperlink{classControl}{Control} $\ast$control)\hypertarget{classEventResponder_a60bd5ddf50537193dd62e87cd89501f7}{}\label{classEventResponder_a60bd5ddf50537193dd62e87cd89501f7}
+
+\item 
+virtual void {\bfseries set\+Command\+Target} (\hyperlink{classEventResponder}{Event\+Responder} $\ast$responder)\hypertarget{classEventResponder_af646a872cede20dcc5fbbc61dd0a722a}{}\label{classEventResponder_af646a872cede20dcc5fbbc61dd0a722a}
+
+\item 
+virtual void {\bfseries set\+Modal} (bool modal)\hypertarget{classEventResponder_a1d702b9eb291481aaac1370162633d60}{}\label{classEventResponder_a1d702b9eb291481aaac1370162633d60}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries m\+\_\+modal}\hypertarget{classEventResponder_a7bce5b9ab602d3d7edb3a71d89b924f6}{}\label{classEventResponder_a7bce5b9ab602d3d7edb3a71d89b924f6}
+
+\item 
+\hyperlink{classEventResponder}{Event\+Responder} $\ast$ {\bfseries m\+\_\+command\+Target}\hypertarget{classEventResponder_a5cdaf677fe2dafaab9513ab1d68f6267}{}\label{classEventResponder_a5cdaf677fe2dafaab9513ab1d68f6267}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/eventresponder.\+h\item 
+gui/eventresponder.\+cpp\end{DoxyCompactItemize}

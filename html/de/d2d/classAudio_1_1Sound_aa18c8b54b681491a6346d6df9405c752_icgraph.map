@@ -1,0 +1,6 @@
+<map id="Audio::Sound::waitLoad" name="Audio::Sound::waitLoad">
+<area shape="rect" id="node2" href="$de/d2d/classAudio_1_1Sound.html#a916b66e6374afd61e5bef2963e8c6def" title="Audio::Sound::load" alt="" coords="221,5,353,32"/>
+<area shape="rect" id="node3" href="$de/d2d/classAudio_1_1Sound.html#a1ab35988befedcd4946381f4fa34b4aa" title="Audio::Sound::isStreaming" alt="" coords="408,56,585,83"/>
+<area shape="rect" id="node4" href="$de/d2d/classAudio_1_1Sound.html#a949ed40b63466d4117766c2f7997a4cc" title="Audio::Sound::unload" alt="" coords="213,107,360,133"/>
+<area shape="rect" id="node5" href="$de/d2d/classAudio_1_1Sound.html#a8afa9a6f45a6bad39739b7c921e6ad3b" title="Audio::Sound::Sound" alt="" coords="424,107,569,133"/>
+</map>
